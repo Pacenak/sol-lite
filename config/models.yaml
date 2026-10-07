@@ -1,0 +1,25 @@
+provider:
+  type: ollama
+  endpoint: "http://127.0.0.1:11434"
+
+profiles:
+  fast:
+    model: "qwen3.5:9b"
+    temperature: 0.2
+    timeout_seconds: 180
+  engineer:
+    model: "qwen3-coder:30b"
+    temperature: 0.15
+    timeout_seconds: 600
+  reviewer:
+    model: "qwen3.5:27b"
+    temperature: 0.15
+    timeout_seconds: 600
+  embedding:
+    model: "nomic-embed-text:latest"
+    temperature: 0.0
+    timeout_seconds: 180
+
+fallbacks:
+  enabled: false
+  models: []

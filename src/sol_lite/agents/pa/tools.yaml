@@ -1,0 +1,12 @@
+tools:
+  - inventory_workspace
+  - list_project_structure
+  - find_workspace_files
+  - read_workspace_file
+  - read_workspace_files
+  - search_codebase
+  - analyze_architecture_drift
+  - get_workspace_file_metadata
+  - write_workspace_file
+  - execute_terminal_command
+  - searxng_search

@@ -1,0 +1,10 @@
+searxng:
+  # Set this to your private SearXNG base URL. Example only; do not copy blindly.
+  url: ""
+  enabled: false
+  timeout_seconds: 15
+  max_results: 8
+  categories: "general"
+  language: "en"
+  safesearch: 1
+  engines: ""

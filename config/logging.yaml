@@ -1,0 +1,4 @@
+logging:
+  level: INFO
+  console: true
+  file: "./logs/sol-lite.log"

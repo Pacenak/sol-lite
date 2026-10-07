@@ -1,0 +1,93 @@
+permissions:
+  filesystem:
+    read: {enabled: true, approval_required: false}
+    write: {enabled: true, approval_required: true}
+    move: {enabled: true, approval_required: true}
+    delete: {enabled: false, approval_required: true}
+
+  terminal:
+    enabled: true
+    approval_required: false
+    allowed_commands:
+      - python
+      - python3
+      - git
+      - ls
+      - dir
+      - pwd
+      - Get-ChildItem
+      - Get-Location
+      - find
+      - grep
+      - rg
+      - cat
+      - type
+      - Get-Content
+      - head
+      - tail
+      - Select-Object
+      - which
+      - where
+      - Get-Command
+      - whoami
+      - uname
+      - sw_vers
+      - system_profiler
+      - tasklist
+      - Get-Process
+      - ps
+      - printenv
+      - env
+      - set
+      - echo
+      - mkdir
+      - md
+      - New-Item
+      - cp
+      - copy
+      - Copy-Item
+      - mv
+      - move
+      - Move-Item
+      - touch
+      - pip
+      - pip3
+      - npm
+      - pnpm
+      - yarn
+      - uv
+      - cargo
+      - brew
+    blocked_commands:
+      - rm
+      - del
+      - erase
+      - rmdir
+      - Remove-Item
+      - format
+      - diskpart
+      - sudo
+      - shutdown
+      - reboot
+      - halt
+      - mkfs
+      - chmod
+      - chown
+      - "git reset --hard"
+      - "git clean -fdx"
+
+  terminal.read: {enabled: true, approval_required: false}
+  terminal.write: {enabled: true, approval_required: true}
+  network: {enabled: true, approval_required: true}
+  applications: {enabled: false, approval_required: true}
+  macos: {enabled: false, approval_required: true}
+  windows: {enabled: false, approval_required: true}
+  skills:
+    inspect: {enabled: true, approval_required: false}
+    install: {enabled: true, approval_required: true}
+    execute: {enabled: false, approval_required: true}
+    bridge: {enabled: false, approval_required: true}
+  repository:
+    read: {enabled: true, approval_required: false}
+    write: {enabled: true, approval_required: true}
+    remote: {enabled: false, approval_required: true}

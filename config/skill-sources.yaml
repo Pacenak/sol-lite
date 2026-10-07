@@ -1,0 +1,129 @@
+sources:
+- name: VoltAgent/awesome-agent-skills
+  url: https://github.com/VoltAgent/awesome-agent-skills
+  mapped_builtin_skills:
+  - agent-skill-curation
+- name: anthropics/skills
+  url: https://github.com/anthropics/skills
+  mapped_builtin_skills:
+  - documentation-engineering
+  - book-to-skill
+- name: DietrichGebert/ponytail
+  url: https://github.com/DietrichGebert/ponytail
+  mapped_builtin_skills:
+  - agent-evaluation
+  - planning-and-estimation
+- name: NousResearch/hermes-agent
+  url: https://github.com/NousResearch/hermes-agent
+  mapped_builtin_skills:
+  - agent-evaluation
+  - prompt-engineering
+- name: mattpocock/skills
+  url: https://github.com/mattpocock/skills
+  mapped_builtin_skills:
+  - repository-analysis
+  - test-engineering
+- name: obra/superpowers
+  url: https://github.com/obra/superpowers
+  mapped_builtin_skills:
+  - systematic-debugging
+  - planning-and-estimation
+  - test-engineering
+- name: cathrynlavery/diagram-design
+  url: https://github.com/cathrynlavery/diagram-design
+  mapped_builtin_skills:
+  - diagram-design
+- name: alibaba/open-code-review
+  url: https://github.com/alibaba/open-code-review
+  mapped_builtin_skills:
+  - open-code-review
+- name: github/awesome-copilot
+  url: https://github.com/github/awesome-copilot
+  mapped_builtin_skills:
+  - copilot-patterns
+- name: virgiliojr94/book-to-skill
+  url: https://github.com/virgiliojr94/book-to-skill
+  mapped_builtin_skills:
+  - book-to-skill
+- name: github/topics/agent-skills
+  url: https://github.com/topics/agent-skills
+  mapped_builtin_skills:
+  - agent-skill-curation
+- name: sickn33/agentic-awesome-skills
+  url: https://github.com/sickn33/agentic-awesome-skills
+  mapped_builtin_skills:
+  - agent-skill-curation
+- name: blefnk/awesome-cursor-rules
+  url: https://github.com/blefnk/awesome-cursor-rules
+  mapped_builtin_skills:
+  - copilot-patterns
+  - prompt-engineering
+- name: instructa/ai-prompts
+  url: https://github.com/instructa/ai-prompts
+  mapped_builtin_skills:
+  - prompt-engineering
+- name: addyosmani/agent-skills
+  url: https://github.com/addyosmani/agent-skills
+  mapped_builtin_skills:
+  - debugging-error-recovery
+  - agent-evaluation
+- name: DevelopersGlobal/ai-agent-skills
+  url: https://github.com/DevelopersGlobal/ai-agent-skills
+  mapped_builtin_skills:
+  - debugging-methodology
+- name: MengTo/skills
+  url: https://github.com/MengTo/skills
+  mapped_builtin_skills:
+  - ui-ux-design
+- name: blader/humanizer
+  url: https://github.com/blader/humanizer
+  mapped_builtin_skills:
+  - humanizer
+- name: career-ops-hq/career-ops
+  url: https://github.com/career-ops-hq/career-ops
+  mapped_builtin_skills:
+  - career-operations
+- name: ComposioHQ/awesome-claude-skills
+  url: https://github.com/ComposioHQ/awesome-claude-skills
+  mapped_builtin_skills:
+  - agent-skill-curation
+- name: tt-a1i/archify
+  url: https://github.com/tt-a1i/archify
+  mapped_builtin_skills:
+  - architecture-design
+  - diagram-design
+- name: imxv/Pretty-mermaid-skills
+  url: https://github.com/imxv/Pretty-mermaid-skills
+  mapped_builtin_skills:
+  - mermaid-diagrams
+- name: M2LabOrg/agent-skills
+  url: https://github.com/M2LabOrg/agent-skills
+  mapped_builtin_skills:
+  - mermaid-diagrams
+- name: product-on-purpose/pm-skills
+  url: https://github.com/product-on-purpose/pm-skills
+  mapped_builtin_skills:
+  - product-management
+  - product-discovery
+- name: assimovt/productskills
+  url: https://github.com/assimovt/productskills
+  mapped_builtin_skills:
+  - product-management
+- name: phuryn/pm-skills
+  url: https://github.com/phuryn/pm-skills
+  mapped_builtin_skills:
+  - product-management
+  - product-discovery
+- name: igmarin/agnostic-planning-skills
+  url: https://github.com/igmarin/agnostic-planning-skills
+  mapped_builtin_skills:
+  - planning-and-estimation
+  - agile-sprint-planning
+- name: mcpmarket/agile-sprint-planner
+  url: https://mcpmarket.com/tools/skills/agile-sprint-planner
+  mapped_builtin_skills:
+  - agile-sprint-planning
+- name: 'Medium: complete guide for agent skills for agile'
+  url: https://aradsouza.medium.com/the-complete-guide-to-agent-skills-for-agile-four-skills-for-better-scrum-592e1193f2a0
+  mapped_builtin_skills:
+  - agile-sprint-planning

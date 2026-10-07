@@ -1,0 +1,38 @@
+agents:
+  sol_pa:
+    name: SOL PA
+    enabled: true
+    role: primary
+    description: >
+      Primary user-facing assistant responsible for coordination, planning,
+      scheduling, communication, research, and delegation.
+    capabilities: [planning, scheduling, prioritisation, research, delegation]
+    can_delegate_to: [sol_business, sol_docs, sol_engineer]
+    model_profile: fast
+
+  sol_business:
+    name: SOL Business
+    enabled: true
+    role: specialist
+    description: Business operations, projects, reporting, planning, administration, analysis.
+    capabilities: [business_operations, project_management, reporting, analysis, administration]
+    can_delegate_to: [sol_docs, sol_engineer]
+    model_profile: reviewer
+
+  sol_docs:
+    name: SOL Docs
+    enabled: true
+    role: specialist
+    description: Document ingestion, classification, metadata, organisation, indexing and extraction.
+    capabilities: [document_classification, metadata, organisation, indexing, extraction, rag]
+    can_delegate_to: []
+    model_profile: reviewer
+
+  sol_engineer:
+    name: SOL Engineer
+    enabled: true
+    role: specialist
+    description: Full-stack engineering, automation, debugging, architecture, testing and devops.
+    capabilities: [software_engineering, frontend, backend, full_stack, automation, debugging, testing, architecture, devops, git]
+    can_delegate_to: [sol_docs]
+    model_profile: engineer

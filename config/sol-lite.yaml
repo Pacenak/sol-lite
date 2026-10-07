@@ -1,0 +1,65 @@
+application:
+  name: SOL-Lite
+  version: "0.2.5"
+  environment: development
+
+runtime:
+  mode: assisted
+  max_concurrent_agents: 4
+  max_tool_calls_per_task: 40
+  task_timeout_seconds: 900
+  status_heartbeat_seconds: 1
+  slow_threshold_seconds: 45
+  stall_threshold_seconds: 90
+
+skills:
+  builtin_root: "skills"
+  user_root: null
+  workspace_roots: [".agents/skills", ".claude/skills", ".codex/skills", "skills"]
+  import_max_files: 1000
+  import_max_file_bytes: 10485760
+
+workspace:
+  root: "./workspace"
+  directories:
+    business: "./workspace/business"
+    projects: "./workspace/projects"
+    documents: "./workspace/documents"
+    engineering: "./workspace/engineering"
+    shared: "./workspace/shared"
+    inbox: "./workspace/inbox"
+
+data:
+  root: "./data"
+  directories:
+    memory: "./data/memory"
+    rag: "./data/rag"
+    indexes: "./data/indexes"
+    audit: "./data/audit"
+    faults: "./data/faults"
+    tasks: "./data/tasks"
+    state: "./data/state"
+
+logging:
+  level: INFO
+  console: true
+  file: "./logs/sol-lite.log"
+
+background:
+  enabled: false
+  allow_after_hours: false
+
+macos:
+  integrations_enabled: false
+
+windows:
+  integrations_enabled: false
+
+nas:
+  enabled: false
+  path: null
+
+bridge:
+  enabled: false
+  listen_host: "127.0.0.1"
+  listen_port: 8787

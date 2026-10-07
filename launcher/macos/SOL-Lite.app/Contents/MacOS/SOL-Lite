@@ -1,0 +1,23 @@
+#!/bin/zsh
+set -e
+APP_BUNDLE="${0:A:h:h}"
+ROOT_FILE="$APP_BUNDLE/Contents/Resources/install-root.txt"
+if [[ -f "$ROOT_FILE" ]]; then
+  ROOT="$(<"$ROOT_FILE")"
+else
+  ROOT="${0:A:h:h:h:h:h:h}"
+fi
+PYTHON="$ROOT/.venv/bin/python"
+if [[ ! -x "$PYTHON" ]]; then
+  osascript <<'APPLESCRIPT'
+tell application "Terminal" to do script "echo SOL-Lite is not installed. Run install/macos/install.command from the SOL-Lite source directory."
+APPLESCRIPT
+  exit 1
+fi
+export SOL_LITE_ROOT="$ROOT"
+export SOL_LITE_PYTHON="$PYTHON"
+osascript <<'APPLESCRIPT'
+tell application "Terminal"
+    do script "cd \"$SOL_LITE_ROOT\" && \"$SOL_LITE_PYTHON\" -m sol_lite start"
+end tell
+APPLESCRIPT
