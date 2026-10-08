@@ -1,25 +1,39 @@
+# Explicit providers only. SOL-Lite never scans the LAN automatically.
 provider:
+  name: ollama-local
   type: ollama
   endpoint: "http://127.0.0.1:11434"
+  trusted: true
+
+# Optional explicit network providers:
+# providers:
+#   - name: ollama-lab
+#     type: ollama
+#     endpoint: "http://10.10.81.20:11434"
+#     trusted: true
 
 profiles:
   fast:
     model: "qwen3.5:9b"
     temperature: 0.2
     timeout_seconds: 180
+    locality: host
+    capabilities: [tool_calling, coding]
   engineer:
     model: "qwen3-coder:30b"
     temperature: 0.15
     timeout_seconds: 600
+    locality: host
+    capabilities: [tool_calling, coding, reasoning]
   reviewer:
     model: "qwen3.5:27b"
     temperature: 0.15
     timeout_seconds: 600
+    locality: host
+    capabilities: [tool_calling, coding, reasoning]
   embedding:
     model: "nomic-embed-text:latest"
     temperature: 0.0
     timeout_seconds: 180
-
-fallbacks:
-  enabled: false
-  models: []
+    locality: host
+    capabilities: []

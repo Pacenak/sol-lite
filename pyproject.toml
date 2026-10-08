@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sol-lite"
 version = "0.2.5"
-description = "SOL-Lite — local-first multi-agent assistant for Windows and macOS"
+description = "SOL-Lite — local-first multi-agent assistant for Windows, macOS, and Linux"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "Proprietary"}
@@ -39,7 +39,7 @@ addopts = "-ra"
 markers = [
     "integration: local integration tests",
     "ollama: requires running Ollama",
-    "battle: adversarial safety/recovery tests"
+    "battle: adversarial safety/recovery tests",
 ]
 
 [tool.ruff]
