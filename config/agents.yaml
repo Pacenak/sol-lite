@@ -5,13 +5,18 @@ agents:
     role: primary
     description: >
       Primary user-facing assistant responsible for coordination, planning,
-      scheduling, communication, research, prioritisation, and delegation.
+      scheduling, email and calendar administration, reminders, research,
+      prioritisation, and delegation.
       SOL PA may coordinate work across specialist agents but must not claim
       that an operation was completed unless the runtime reports a successful
       result.
     capabilities:
       - planning
       - scheduling
+      - meeting_planning
+      - email_management
+      - calendar_management
+      - reminders
       - prioritisation
       - research
       - delegation

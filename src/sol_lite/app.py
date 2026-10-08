@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import importlib.metadata
 import json
 import os
@@ -63,6 +64,19 @@ def build_parser():
         "diagnose",
         help="Diagnose Ollama and configured models.",
     )
+
+    pair = sub.add_parser("connect", help="Pair SOL-Lite with SOL-Command.")
+    pair.add_argument("--command-url", required=True)
+    pair.add_argument("--invite-code", required=True)
+    pair.add_argument("--name", default="SOL-Lite")
+
+    sub.add_parser("disconnect", help="Remove the saved SOL-Command credential from the OS keyring.")
+    sub.add_parser("command-status", help="Check the paired SOL-Command connection.")
+    sub.add_parser("sync-skills", help="Download assigned SOL skills into local pending review.")
+    google_connect = sub.add_parser("google-connect", help="Connect a Google account for Gmail and Calendar.")
+    google_connect.add_argument("--client-secrets", default=None, help="Google OAuth Desktop client JSON; defaults to SOL_GOOGLE_OAUTH_CLIENT_SECRETS.")
+    sub.add_parser("google-disconnect", help="Remove the saved Google authorization from the OS keyring.")
+    sub.add_parser("google-status", help="Check whether Google Workspace is connected.")
 
     battle = sub.add_parser(
         "battle-test",
@@ -194,6 +208,132 @@ def main():
         print(
             f"SOL-Lite {__version__}"
         )
+        return
+
+    if args.command == "google-connect":
+        from .credentials.manager import CredentialManager, KeyringBackend
+        from .integrations.google_workspace import GoogleWorkspaceClient
+        client_secrets = args.client_secrets or os.environ.get("SOL_GOOGLE_OAUTH_CLIENT_SECRETS")
+        if not client_secrets:
+            print("Set SOL_GOOGLE_OAUTH_CLIENT_SECRETS to the Google OAuth Desktop client JSON path.", file=sys.stderr)
+            raise SystemExit(2)
+        try:
+            GoogleWorkspaceClient.connect(client_secrets, CredentialManager(KeyringBackend()))
+        except Exception as exc:
+            print(f"Google connection failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print("Google Workspace connected. SOL-Lite stores the authorization in the OS keyring.")
+        return
+
+    if args.command == "google-disconnect":
+        from .credentials.manager import CredentialManager, KeyringBackend
+        from .integrations.google_workspace import GoogleWorkspaceClient
+        GoogleWorkspaceClient.disconnect(CredentialManager(KeyringBackend()))
+        print("Removed saved Google authorization from the OS keyring.")
+        return
+
+    if args.command == "google-status":
+        try:
+            from .credentials.manager import CredentialManager, KeyringBackend
+            from .integrations.google_workspace import GoogleWorkspaceClient
+            client = GoogleWorkspaceClient.from_keyring(CredentialManager(KeyringBackend()))
+        except Exception as exc:
+            print(f"Google connection unavailable: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        if client is None:
+            print("Google Workspace is not connected. Run 'sol-lite google-connect'.")
+            raise SystemExit(1)
+        print("Google authorization is saved in the OS keyring. API access is checked when a user-approved action runs.")
+        return
+
+    if args.command == "connect":
+        from .integrations.sol_command import SolCommandClient
+        try:
+            result = SolCommandClient.pair(args.command_url, args.invite_code, name=args.name)
+        except Exception as exc:
+            print(f"SOL-Command connection failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(f"Paired with SOL-Command as instance {result['instance_id']}.")
+        print("Assigned sectors: " + (", ".join(result.get("sectors") or []) or "none"))
+        return
+
+    if args.command == "disconnect":
+        from .integrations.sol_command import SolCommandClient
+        SolCommandClient.disconnect()
+        print("Removed saved SOL-Command credentials from the OS keyring.")
+        return
+
+    if args.command == "command-status":
+        runtime = bootstrap(root)
+        if runtime.tool_context.sol_command is None:
+            print("SOL-Lite is not paired with SOL-Command.")
+            raise SystemExit(1)
+        try:
+            status = runtime.tool_context.sol_command.status()
+        except Exception as exc:
+            print(f"SOL-Command unavailable: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(json.dumps(status, indent=2, ensure_ascii=False))
+        return
+
+    if args.command == "sync-skills":
+        import re
+
+        import yaml
+        runtime = bootstrap(root)
+        client = runtime.tool_context.sol_command
+        if client is None:
+            print("SOL-Lite is not paired with SOL-Command.", file=sys.stderr)
+            raise SystemExit(1)
+        try:
+            payload = client.sync_pack_bodies()
+        except Exception as exc:
+            print(f"SOL skill sync failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        pending_root = runtime.data_root / "state" / "skills" / "pending" / "sol-command"
+        pending_root.mkdir(parents=True, exist_ok=True)
+        pending_root = pending_root.resolve()
+        discovered = []
+        for sector_id, entry in (payload.get("packs_sync") or {}).get("sectors", {}).items():
+            if not isinstance(entry, dict) or not isinstance(entry.get("body"), dict):
+                continue
+            sector_slug = re.sub(r"[^a-z0-9._-]+", "-", str(sector_id).lower()).strip("-._")
+            if not sector_slug or sector_slug != str(sector_id).lower():
+                continue
+            for skill in entry["body"].get("skills") or []:
+                if not isinstance(skill, dict):
+                    continue
+                name = str(skill.get("name") or skill.get("title") or "").strip()
+                slug = re.sub(r"[^a-z0-9._-]+", "-", name.lower()).strip("-._")
+                if not slug:
+                    continue
+                description = str(skill.get("description") or skill.get("summary") or name).strip()
+                if len(description) > 2000:
+                    description = description[:2000]
+                steps = skill.get("procedure") or skill.get("steps") or []
+                body_lines = [f"# {name}", "", description, ""]
+                if isinstance(steps, list):
+                    body_lines.extend(f"{idx}. {str(step)[:4000]}" for idx, step in enumerate(steps[:200], 1))
+                elif isinstance(steps, str):
+                    body_lines.append(steps)
+                refs = skill.get("references")
+                if isinstance(refs, list) and refs:
+                    body_lines.extend(["", "## References", ""])
+                    body_lines.extend(f"- {ref!s}" for ref in refs)
+                frontmatter = yaml.safe_dump({"name": slug, "description": description,
+                    "source": "sol-command", "sector": str(sector_id)}, sort_keys=False).strip()
+                content = f"---\n{frontmatter}\n---\n\n" + "\n".join(body_lines)
+                version = hashlib.sha256(content.encode("utf-8")).hexdigest()[:12]
+                destination = pending_root / sector_slug / slug / version
+                if not destination.resolve().is_relative_to(pending_root):
+                    continue
+                destination.mkdir(parents=True, exist_ok=True)
+                skill_file = destination / "SKILL.md"
+                if not skill_file.exists():
+                    skill_file.write_text(content, encoding="utf-8")
+                discovered.append(str(destination))
+        print(f"Downloaded {len(discovered)} SOL skill(s) to pending review: {pending_root}")
+        print("Review and install each skill with /skills discover and /skills import. Nothing was activated automatically.")
         return
 
     root = (

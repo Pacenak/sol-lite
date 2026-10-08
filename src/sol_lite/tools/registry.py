@@ -43,6 +43,7 @@ _MUTATING = {
     "repository_clone_remote",
     "repository_clone_local",
     "skill_install",
+    "sol_jarvis_propose",
 }
 
 

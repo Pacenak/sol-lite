@@ -29,7 +29,10 @@ PHASES = {
 }
 
 
-WORKSPACE_TOOL_NAMES = {
+# Only successful inspection operations establish workspace evidence. Mutating
+# repository operations and arbitrary terminal commands may change state, but
+# they do not prove that the agent inspected the workspace before responding.
+WORKSPACE_EVIDENCE_TOOL_NAMES = {
     "inventory_workspace",
     "list_project_structure",
     "find_workspace_files",
@@ -43,24 +46,8 @@ WORKSPACE_TOOL_NAMES = {
     "repository_log",
     "repository_branches",
     "repository_remotes",
-    "repository_create_branch",
-    "repository_checkout",
-    "repository_stage",
-    "repository_commit",
-    "repository_create_bundle",
-    "repository_import_bundle",
-    "repository_create_patch",
-    "repository_apply_patch",
-    "repository_merge_import",
-    "repository_set_remote",
-    "repository_fetch",
-    "repository_push",
-    "repository_clone_remote",
-    "repository_clone_local",
     "runtime_get_context",
-    "execute_terminal_command",
 }
-
 
 WORKSPACE_EVIDENCE_PATTERNS = (
     r"\bworkspace\b",
@@ -170,7 +157,7 @@ class AgentRuntime:
     @staticmethod
     def _workspace_tool_was_used(tool_names):
         return any(
-            name in WORKSPACE_TOOL_NAMES
+            name in WORKSPACE_EVIDENCE_TOOL_NAMES
             for name in tool_names
         )
 
@@ -233,6 +220,7 @@ class AgentRuntime:
         tool_failures = 0
         native_calls = 0
         raw_tool_like = False
+        tool_format_retries = 0
 
         required_workspace_evidence = (
             self._requires_workspace_evidence(
@@ -343,6 +331,30 @@ class AgentRuntime:
                     )
 
                     if raw_tool_like:
+                        # Never parse or execute markup emitted in ordinary
+                        # content. Some local models occasionally ignore the
+                        # native tool channel on their first response; give
+                        # them one bounded chance to correct the format.
+                        if tool_format_retries < 1:
+                            tool_format_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Your last response did not use the native structured tool interface. "
+                                    "Do not write a textual or markup representation of a tool call. "
+                                    "Continue the original request and, when a tool is needed, call it "
+                                    "using the provided native tool interface. If you cannot do that, "
+                                    "explain the limitation in ordinary text."
+                                ),
+                            })
+                            self.status.touch("Retrying with native tool interface")
+                            self._emit(
+                                "agent.tool_format_retry",
+                                round=number,
+                                retry=tool_format_retries,
+                            )
+                            continue
+
                         code = (
                             "RAW_JSON_IN_CONTENT"
                             if self._looks_like_raw_tool_json(
@@ -547,10 +559,10 @@ class AgentRuntime:
                         )
 
                         self.status.touch(
-                            (
+                            
                                 "No progress detected; "
                                 "tool result returned to model"
-                            )
+                            
                         )
 
                         self._emit(
@@ -763,7 +775,7 @@ class AgentRuntime:
 
                     if (
                         successful
-                        and name in WORKSPACE_TOOL_NAMES
+                        and name in WORKSPACE_EVIDENCE_TOOL_NAMES
                     ):
                         workspace_tools_used.add(
                             name

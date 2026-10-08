@@ -6,6 +6,8 @@ bypass, raw JSON tool syntax, repeated tools, maximum rounds and corrupted fault
 
 Ollama integration is opt-in with `SOL_RUN_OLLAMA_TESTS=1`.
 
+Interns doing end-to-end manual validation should follow the [Intern Battle-Test Guide](battle-test-guide.md), which includes disposable test setup, expected safety behavior, optional integrations, and a defect-report template.
+
 
 ## Pack integrity audit
 

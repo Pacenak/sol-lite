@@ -20,6 +20,8 @@ class ToolContext:
     authorized_resources: Any = None
     credential_manager: Any = None
     agent_id: str | None = None
+    sol_command: Any = None
+    google_workspace: Any = None
 
     def for_workspace(self, workspace_root, *, session_id: str | None = None,
                       project_root=None, agent_id: str | None = None):
@@ -29,6 +31,8 @@ class ToolContext:
             skill_manager=self.skill_manager, search_config=self.search_config,
             authorized_resources=self.authorized_resources,
             credential_manager=self.credential_manager, agent_id=agent_id,
+            sol_command=self.sol_command,
+            google_workspace=self.google_workspace,
         )
 
 @dataclass(slots=True)

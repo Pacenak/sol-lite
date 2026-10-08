@@ -20,6 +20,8 @@ SOL-Lite is a local-first, multi-agent engineering runtime for Windows and macOS
 All flow diagrams are Mermaid source and can be edited directly.
 
 - [SearXNG integration](integrations/searxng.md)
+- [SOL-Command integration](integrations/sol-command.md)
+- [Google Workspace integration](integrations/google-workspace.md)
 - [Skill catalog](architecture/skills-catalog.md)
 - [Use cases](getting-started/use-cases.md)
 - [Full battle test](testing/battle-test-guide.md)

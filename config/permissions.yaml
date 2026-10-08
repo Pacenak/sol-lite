@@ -79,6 +79,10 @@ permissions:
   terminal.read: {enabled: true, approval_required: false}
   terminal.write: {enabled: true, approval_required: true}
   network: {enabled: true, approval_required: true}
+  google:
+    read: {enabled: true, approval_required: true}
+    send: {enabled: true, approval_required: true}
+    calendar_write: {enabled: true, approval_required: true}
   applications: {enabled: false, approval_required: true}
   macos: {enabled: false, approval_required: true}
   windows: {enabled: false, approval_required: true}

@@ -1,8 +1,8 @@
 searxng:
   # Set this to your private SearXNG base URL. Example only; do not copy blindly.
-  url: ""
+  url: "http://10.10.40.10:30053/"
   enabled: false
-  timeout_seconds: 15
+  timeout_seconds: 30
   max_results: 8
   categories: "general"
   language: "en"

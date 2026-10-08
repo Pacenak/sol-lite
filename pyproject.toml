@@ -16,6 +16,7 @@ dependencies = [
     "python-dotenv>=1.0",
     "ollama>=0.6.3",
     "rich>=13.0",
+    "keyring>=25.0",
 ]
 
 [project.optional-dependencies]
@@ -24,6 +25,12 @@ dev = [
     "pytest-cov>=5.0",
     "ruff>=0.6",
     "mypy>=1.10",
+]
+google = [
+    "google-api-python-client>=2.130",
+    "google-auth>=2.29",
+    "google-auth-oauthlib>=1.2",
+    "google-auth-httplib2>=0.2",
 ]
 
 [project.scripts]

@@ -1,6 +1,7 @@
 """SOL-Lite bootstrap and service composition."""
 from __future__ import annotations
 
+import json
 import os
 from dataclasses import dataclass
 from pathlib import Path
@@ -15,6 +16,7 @@ from .config.user_settings import UserSettingsStore, deep_merge
 from .core.runtime import Runtime, RuntimeConfig
 from .core.session import SessionManager, WorkspaceManager
 from .faults.log import FaultLog
+from .integrations.sol_command import SolCommandClient, SolCommandConfig
 from .models.manager import ModelManager
 from .permissions.approvals import ApprovalManager
 from .permissions.engine import PermissionEngine
@@ -371,6 +373,8 @@ def bootstrap(
         project_root=runtime.workspace_root,
         skill_manager=skill_manager,
         search_config=search_config,
+        sol_command=_sol_command_client(),
+        google_workspace=_google_workspace_client(),
     )
 
     workspace_manager = WorkspaceManager(
@@ -406,3 +410,44 @@ def bootstrap(
     )
 
     return runtime
+
+
+def _sol_command_client():
+    """Build the optional Command client from process environment only.
+
+    Instance credentials are resolved only from the OS keyring; environment
+    variables may select the paired host but cannot supply a secret.
+    """
+    url = (os.environ.get("SOL_COMMAND_URL") or "").strip()
+    instance_id = instance_key = ""
+    try:
+        from .credentials.manager import CredentialManager, KeyringBackend
+        manager = CredentialManager(KeyringBackend())
+        credential = manager.resolve(manager.reference("SOL-Lite", "sol-command"))
+        saved = json.loads(str(credential))
+        saved_url = str(saved.get("command_url") or "").rstrip("/")
+        if url and saved_url and url.rstrip("/") != saved_url:
+            raise ValueError("SOL_COMMAND_URL does not match the paired Command host; disconnect and pair again to change hosts.")
+        url = saved_url or url
+        instance_id = str(saved.get("instance_id") or "")
+        instance_key = str(saved.get("api_key") or "")
+    except (ImportError, RuntimeError, KeyError):
+        pass
+    if os.environ.get("SOL_INSTANCE_ID") or os.environ.get("SOL_INSTANCE_KEY"):
+        raise ValueError("SOL instance secrets are read only from the OS keyring. Use 'sol-lite connect' to pair.")
+    if not instance_id and not instance_key:
+        return None
+    if not all((url, instance_id, instance_key)):
+        raise ValueError("Set SOL_COMMAND_URL, SOL_INSTANCE_ID and SOL_INSTANCE_KEY together.")
+    return SolCommandClient(SolCommandConfig(url, instance_id, instance_key))
+
+
+def _google_workspace_client():
+    """Load Google authorization from the OS keyring, if the user connected it."""
+    from .credentials.manager import CredentialManager, KeyringBackend
+    from .integrations.google_workspace import GoogleWorkspaceClient
+    manager = CredentialManager(KeyringBackend())
+    try:
+        return GoogleWorkspaceClient.from_keyring(manager)
+    except (KeyError, RuntimeError):
+        return None

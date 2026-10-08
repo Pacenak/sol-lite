@@ -10,3 +10,9 @@ tools:
   - write_workspace_file
   - execute_terminal_command
   - searxng_search
+  - google_email_search
+  - google_email_read
+  - google_email_send
+  - google_calendar_list
+  - google_calendar_create
+  - google_calendar_reminder

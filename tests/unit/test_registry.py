@@ -14,4 +14,5 @@ def test_implemented_tool_manifest():
         "repository_apply_patch", "repository_merge_import", "repository_set_remote",
         "repository_fetch",
         "repository_push", "repository_clone_remote", "repository_clone_local", "runtime_get_context", "skill_discover", "skill_install", "searxng_search",
+        "sol_command_status", "sol_shared_memories", "sol_shared_rag_search", "sol_jarvis_propose",
     }
