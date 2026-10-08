@@ -1,4 +1,13 @@
 """Tool registry."""
+
+from __future__ import annotations
+
+from ..core.exceptions import (
+    SOLLiteError,
+    ToolExecutionError,
+)
+
+
 class ToolRegistry:
     def __init__(self):
         self._tools = {}
@@ -16,11 +25,28 @@ class ToolRegistry:
 
     def ollama_schemas(self):
         return [
-            {"type": "function", "function": {
-                "name": t.name, "description": t.description, "parameters": t.parameters
-            }}
-            for t in self._tools.values()
+            {
+                "type": "function",
+                "function": {
+                    "name": tool.name,
+                    "description": tool.description,
+                    "parameters": tool.parameters,
+                },
+            }
+            for tool in self._tools.values()
         ]
 
     def execute(self, name, arguments, context):
-        return self.get(name).handler(context, arguments)
+        try:
+            return self.get(name).handler(context, arguments)
+        except SOLLiteError:
+            raise
+        except (
+            FileExistsError,
+            FileNotFoundError,
+            IsADirectoryError,
+            NotADirectoryError,
+            RuntimeError,
+            ValueError,
+        ) as exc:
+            raise ToolExecutionError(str(exc)) from exc

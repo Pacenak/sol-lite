@@ -1,4 +1,5 @@
 """Ollama provider using the official Python client."""
+from __future__ import annotations
 
 from ..core.exceptions import ModelError
 from .base import ModelProvider
@@ -7,21 +8,38 @@ from .base import ModelProvider
 class OllamaProvider(ModelProvider):
     def __init__(self, host):
         self.host = host.rstrip("/")
-        self.client = None
+        self._clients = {}
 
-    def _client(self):
-        if self.client is None:
+    @staticmethod
+    def _client_key(timeout):
+        return None if timeout is None else float(timeout)
+
+    def _client(self, timeout):
+        key = self._client_key(timeout)
+
+        if key not in self._clients:
             try:
                 import ollama
             except ImportError as exc:
-                raise ModelError("The 'ollama' Python package is not installed.") from exc
-            self.client = ollama.Client(host=self.host)
-        return self.client
+                raise ModelError(
+                    "The 'ollama' Python package is not installed."
+                ) from exc
+
+            kwargs = {"host": self.host}
+
+            if timeout is not None:
+                kwargs["timeout"] = timeout
+
+            self._clients[key] = ollama.Client(**kwargs)
+
+        return self._clients[key]
 
     def chat(self, model, messages, tools, temperature, timeout):
         try:
-            return self._client().chat(
-                model=model, messages=messages, tools=tools,
+            return self._client(timeout).chat(
+                model=model,
+                messages=messages,
+                tools=tools,
                 options={"temperature": temperature},
             )
         except ModelError:

@@ -1,1496 +1,1298 @@
 {
-  "application": "SOL-Lite",
+  "format": 2,
+  "project": "SOL-Lite",
   "version": "0.2.5",
-  "file_count": 298,
   "files": [
     {
       "path": ".env.example",
-      "size_bytes": 611,
       "sha256": "f16de26120162c4dd93898b4e5fbc7707de243efec5bbaca38e413aafe728e8a"
     },
     {
       "path": ".gitignore",
-      "size_bytes": 357,
       "sha256": "e11cc85af4495578078cd70973cf7b8d76812b27b66df3eb441952eb247725f9"
     },
     {
+      "path": "apply-updates.ps1",
+      "sha256": "75d90be9766f5c902891326911b3b2f8ee036b9383babe22637a89bb1b2a5567"
+    },
+    {
+      "path": "apply-updates.sh",
+      "sha256": "70d4cb1e6196539d421f68d3dde300201aa2fdeaf0f49b2860b1a395c0ff6838"
+    },
+    {
       "path": "CHANGELOG.md",
-      "size_bytes": 4184,
       "sha256": "5fe3bc4024b9f350b6414c0637ad8be6ae2ff2b15ba5e7c47aabec9f68ca9945"
     },
     {
-      "path": "LICENSE",
-      "size_bytes": 66,
-      "sha256": "cc9755677e89cbd2b0d7b370c5d02c5211e786a762524feedb1b0402161152ea"
-    },
-    {
-      "path": "Makefile",
-      "size_bytes": 745,
-      "sha256": "be6421e44bebf60ef771d256763f719e985f7cee187e7c5058ec54c51740761b"
-    },
-    {
-      "path": "PROJECT_FILES.txt",
-      "size_bytes": 9176,
-      "sha256": "f6a731c3631532d200ff28663b67f88ef018ee3609c600a0f79f54ec8fadadf9"
-    },
-    {
-      "path": "README.md",
-      "size_bytes": 4177,
-      "sha256": "356d67478c37d1977f29681776db9c5a77a011a1b5c3e26c5612d3237c6771d5"
-    },
-    {
       "path": "config/agents.yaml",
-      "size_bytes": 1421,
       "sha256": "ee063a17970e5defc4be689c9bfb509f9dd29d2a4c23db34e82b630f1224b0a0"
     },
     {
       "path": "config/logging.yaml",
-      "size_bytes": 69,
       "sha256": "69aafb3abfbce9dbe47cc425ea0cf5cbb6e989c5630070e94d71af484b5ad701"
     },
     {
       "path": "config/models.yaml",
-      "size_bytes": 461,
       "sha256": "cfab56be9888da87dbc23f7d605101c35f34373294285125def0fa93ceaf0c46"
     },
     {
       "path": "config/permissions.yaml",
-      "size_bytes": 2038,
       "sha256": "36b3f047d388098d0c321c08de6e8cd52d3402a069d100c8836afe9fc6be1a61"
     },
     {
       "path": "config/schedules.yaml",
-      "size_bytes": 39,
       "sha256": "3dfe6a87f150387abcc8b38c21c8878ab039a2aa78ed5c419cfbbeda109cd919"
     },
     {
       "path": "config/searxng.yaml",
-      "size_bytes": 228,
       "sha256": "5ca15962a87769459040e9b306484857d8860a1b987c63d8befd9a5087d7eb6b"
     },
     {
       "path": "config/skill-sources.yaml",
-      "size_bytes": 4183,
       "sha256": "a0e5513e4201121275f5155acbfe5464df8a47048e7b90779920ae7993c251fa"
     },
     {
       "path": "config/sol-lite.yaml",
-      "size_bytes": 1279,
       "sha256": "fd96a614f41a127d774bccd1725a36847401d0dd88b63f287e9a2d51e61c8b53"
     },
     {
-      "path": "data/faults/.gitkeep",
-      "size_bytes": 0,
+      "path": "conftest.py",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "docs/README.md",
-      "size_bytes": 1004,
-      "sha256": "28f51c6db96a3229ae31c4168e3079108cbcb349a756ddcdc12aa67010f38b36"
+      "path": "data/faults/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "docs/architecture/agent-runtime.md",
-      "size_bytes": 851,
       "sha256": "aa1211f043b8534a6d57a1715ab00127c486c401678c97e59a65c6bb9d4b26ad"
     },
     {
       "path": "docs/architecture/agents.md",
-      "size_bytes": 658,
       "sha256": "513ede7e2b3e70f0b873b55815b7ca0a81b847c17099d343d6c3a6db59e114b0"
     },
     {
+      "path": "docs/architecture/bridge.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/architecture/command-security.md",
-      "size_bytes": 419,
       "sha256": "427d1f9bc2f5879aa8e55b3f5bc2e46e30bcfdd6f0f92cb94a9a2317103cc475"
     },
     {
       "path": "docs/architecture/configuration.md",
-      "size_bytes": 437,
       "sha256": "fbf442f4fd3f50b51f030556a0c517369ce6869f108704899e179105d6aaa583"
     },
     {
       "path": "docs/architecture/event-system.md",
-      "size_bytes": 752,
       "sha256": "4eb90418c0938d669159262682969d09a256f575fd9be71501654b0c051c6eab"
     },
     {
       "path": "docs/architecture/launcher-and-installation.md",
-      "size_bytes": 606,
       "sha256": "609babb4bf5ed330d8d1ce5416e50a0f766ecba40df1e8fde7d73eddead7902d"
     },
     {
+      "path": "docs/architecture/memory.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/architecture/model-layer.md",
-      "size_bytes": 281,
       "sha256": "0e6fdfd009f5a42e79f6023715b0f255af5112f45f7bea48c07fe1607409515a"
     },
     {
       "path": "docs/architecture/overview.md",
-      "size_bytes": 881,
       "sha256": "f575e4edf6aa3927877d683ea9a8c9fd00b5a7fd4ba2dbb83f9e460fb14e1cba"
     },
     {
       "path": "docs/architecture/permissions.md",
-      "size_bytes": 551,
       "sha256": "a2e3f480f2ddec0f8170042b21e865b9cc646799891c23270aaeb1c6d42e9395"
     },
     {
       "path": "docs/architecture/persistence.md",
-      "size_bytes": 309,
       "sha256": "34856c72b94f54c577a554716a1c579d83b9cd0bc2b818ff6ac08966a53118bf"
     },
     {
       "path": "docs/architecture/runtime.md",
-      "size_bytes": 353,
       "sha256": "8e8039f3df0a215bffad912a1be296ac0ff18fa74c947cfd4ec8c6b0d58b6caf"
     },
     {
       "path": "docs/architecture/security.md",
-      "size_bytes": 1025,
       "sha256": "f0e2b2d7ce9ad17f0d4fe4cda790e32e9fdfe26b87c8fb63bd7c0882e940aee0"
     },
     {
       "path": "docs/architecture/sessions-and-workspaces.md",
-      "size_bytes": 504,
       "sha256": "9adc4819d080e2fb769e051201c27db4f4ba3682c0b42606b2f1daa6518b3b13"
     },
     {
       "path": "docs/architecture/skills-catalog.md",
-      "size_bytes": 1066,
       "sha256": "1661e46dd9cfa337f04fa9fb7a5635986c1982896610035230364a93ad5135de"
     },
     {
       "path": "docs/architecture/skills.md",
-      "size_bytes": 522,
       "sha256": "89c97371787f1d168e03ecd05db92180cd94cf23b12bd0f9278b3236bcd14745"
     },
     {
       "path": "docs/architecture/task-manager.md",
-      "size_bytes": 622,
       "sha256": "999096ab5b48001cbc0a653ccc358742eda3d651d86df56f6ae5ebb977805d74"
     },
     {
       "path": "docs/architecture/terminal-ui.md",
-      "size_bytes": 272,
       "sha256": "c555523414276630b2121ce8618baf93d18fb186ecf709bb54a4cf29f4af322a"
     },
     {
       "path": "docs/architecture/terminal.md",
-      "size_bytes": 1098,
       "sha256": "ea2c3cf4ef647ecfa71198695d2a9a2abfb43ffb6f3c2eeaa469eacddf346c72"
     },
     {
       "path": "docs/architecture/tool-system.md",
-      "size_bytes": 331,
       "sha256": "570b437362314864f52b40827267947e897273a5786eff63069b36492e29fdbe"
     },
     {
+      "path": "docs/blank.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/debugging/debugging-overview.md",
-      "size_bytes": 655,
       "sha256": "4f190e2c907197a99e155b71f650c1226673f91a09e684c0f64215a1f76facb9"
     },
     {
       "path": "docs/debugging/logs-and-audit.md",
-      "size_bytes": 288,
       "sha256": "911acde00a229f474fbfe52c2b36f4ab3e487eb3cf79694558b7fe939bd96a95"
     },
     {
       "path": "docs/debugging/model-failures.md",
-      "size_bytes": 256,
       "sha256": "7fe1a7a205a73faa623f62442bfe0e4d72084f2413b30ba3550adec6c565c459"
     },
     {
       "path": "docs/debugging/permission-failures.md",
-      "size_bytes": 290,
       "sha256": "c020d594ed7c9155cbe3f47517d37c062a4f780b8608acafb22ef7ac55b6ab6d"
     },
     {
       "path": "docs/debugging/release-audit-v0.2.2.md",
-      "size_bytes": 2674,
       "sha256": "1f3ac050f0cc6381db1bfc512effe5a228dfba3019782adb2af64e05febc462a"
     },
     {
       "path": "docs/debugging/skill-failures.md",
-      "size_bytes": 232,
       "sha256": "aba5cf6ef440bb6da4a493c2a321944b28b99c15eef90bac6c20089a9d7327e6"
     },
     {
       "path": "docs/debugging/startup-failures.md",
-      "size_bytes": 246,
       "sha256": "1250cd96881536c615bea460ade79c81869c81ab708cd5217544640fc893653b"
     },
     {
       "path": "docs/debugging/task-failures.md",
-      "size_bytes": 208,
       "sha256": "9a6f86cdf34740c85f43074a18de739b6106314b6a859354f023ddaf7148b9ef"
     },
     {
       "path": "docs/debugging/tool-failures.md",
-      "size_bytes": 256,
       "sha256": "c9316b24d31fbed5b30f8ec2f2bf1429836871ffba3831c9bb2e51ad3899d221"
     },
     {
       "path": "docs/debugging/workspace-failures.md",
-      "size_bytes": 265,
       "sha256": "cdda36299c11a4a3c5d823c0d806b6d119930395153e96d3fd156ebdd734acc6"
     },
     {
       "path": "docs/design/colour-system.md",
-      "size_bytes": 2237,
       "sha256": "07d1d643ed893d5b2b30034fe31fcefaa6b4744db0307a136075b26d95c0c208"
     },
     {
       "path": "docs/design/colour-wheel-reference.md",
-      "size_bytes": 2401,
       "sha256": "bf3f024e75696397a5c279f49036bfb0b87a56b645c62b19d9becf5c10300c67"
     },
     {
       "path": "docs/design/colour-wheel-source.md",
-      "size_bytes": 2401,
       "sha256": "bf3f024e75696397a5c279f49036bfb0b87a56b645c62b19d9becf5c10300c67"
     },
     {
       "path": "docs/development/adding-a-platform.md",
-      "size_bytes": 328,
       "sha256": "b114de65c771157201c1da7bfb70b7fc5e645c2ea971c9f9685ee414143e3900"
     },
     {
       "path": "docs/development/adding-a-skill.md",
-      "size_bytes": 276,
       "sha256": "04f7201c37b9bf2e77ba76ca690f09f871b17d3e0a7aab8de7201abc6a7169a2"
     },
     {
       "path": "docs/development/adding-a-tool.md",
-      "size_bytes": 369,
       "sha256": "c5ddf44dd941954b49b11b03f31b7c03e66adaaec4b3a7062b7016e3caddf472"
     },
     {
       "path": "docs/development/adding-an-agent.md",
-      "size_bytes": 362,
       "sha256": "bb9c521c8d4a275c6bdd028a3cd647590aa3458876ea211d8552a4b608ca069c"
     },
     {
       "path": "docs/development/code-organisation.md",
-      "size_bytes": 570,
       "sha256": "f563917383ebd72c131dd0a6e3fc6ffd2138e3267e5a3e4424400bb141dcbfef"
     },
     {
       "path": "docs/development/modifying-permissions.md",
-      "size_bytes": 248,
       "sha256": "bf2e56b10cf759e2849a30e4e15d9200d172075af2a0082a29e5aba30c24c7cc"
     },
     {
       "path": "docs/development/modifying-terminal-ui.md",
-      "size_bytes": 332,
       "sha256": "de98f0438eb14326612172c3fed5c41e66d03471bb8d8300d08830eb561d9bec"
     },
     {
       "path": "docs/development/release-process.md",
-      "size_bytes": 376,
       "sha256": "8eff8bfbd995e47581d6a90a133a579258e9d65e9c2bd1347fc621c3a6071ffb"
     },
     {
       "path": "docs/development/repository-map.md",
-      "size_bytes": 1380,
       "sha256": "e130fe3bdbd594709b894877d2a9afa755954981c74942e3ac2601830e38525b"
     },
     {
       "path": "docs/development/testing.md",
-      "size_bytes": 347,
       "sha256": "96188e999ae925ab79abd02e71811a7e878fa47b944f5c9512eb73841b58ed7b"
     },
     {
       "path": "docs/diagrams/agent-loop.md",
-      "size_bytes": 267,
       "sha256": "a63bf2aed5eea1d881a178f12c0790e22e80d46a3290a580d05e60a3bfa7e5ea"
     },
     {
       "path": "docs/diagrams/approval-flow.md",
-      "size_bytes": 210,
       "sha256": "74bf0d2c3b8c217fc26ec769dc2ebed0594ccdcd018fedd39a916cf7b3948f06"
     },
     {
       "path": "docs/diagrams/background-task-flow.md",
-      "size_bytes": 259,
       "sha256": "252aa593b5abf4b243be284024edb229cc8bbd6c8d4733ab5cabadec466533d6"
     },
     {
       "path": "docs/diagrams/event-flow.md",
-      "size_bytes": 140,
       "sha256": "658b85af59a3757dfd7aaa8f15cdc051e22ce26af280416fa901980fde353f60"
     },
     {
       "path": "docs/diagrams/shell-security-flow.md",
-      "size_bytes": 116,
       "sha256": "6d6da1984153dd71cfaf05a1534bf13a048fcddf8edeb54fe20669282c917d65"
     },
     {
       "path": "docs/diagrams/skill-flow.md",
-      "size_bytes": 204,
       "sha256": "7c9ee8b20908e92edd2ca621daa88a8132ad23249a4388c12aa644176792453b"
     },
     {
       "path": "docs/diagrams/startup-flow.md",
-      "size_bytes": 263,
       "sha256": "61dc530c7b9e3dbb639c646240a3da802264113412c903cab56f1b3f32b9c4d3"
     },
     {
       "path": "docs/diagrams/system-overview.md",
-      "size_bytes": 346,
       "sha256": "7f28bf19b2915ef4f63ba2ef42248d35fdf321c70966aa9de44f282901924795"
     },
     {
       "path": "docs/diagrams/tool-execution.md",
-      "size_bytes": 135,
       "sha256": "b7d1929b710bd0622f6b03cda3c0c63a9f4c18fe17fda845ff812a201d9da1db"
     },
     {
       "path": "docs/diagrams/workspace-flow.md",
-      "size_bytes": 214,
       "sha256": "88f821586e2508356332454c5f8cc252cec4c7555dca1c90ac7ea7544acb7569"
     },
     {
       "path": "docs/getting-started/first-run.md",
-      "size_bytes": 1295,
       "sha256": "a7f1be0e9b6e2b13cb95703aa564e7e6345941429c687ceed0fb1447d80aaef0"
     },
     {
       "path": "docs/getting-started/full-setup-first-run.md",
-      "size_bytes": 7312,
       "sha256": "a63bd9ffd47ea83121a20aad22bb56fb41550e7f4eaf0273cc058b18c6c3cf53"
     },
     {
       "path": "docs/getting-started/installation.md",
-      "size_bytes": 1321,
       "sha256": "baa7fedd08a1a61dd703f9bab69da6df96a792905dbf82d8cf8d2debebac4d20"
     },
     {
       "path": "docs/getting-started/macos.md",
-      "size_bytes": 1620,
       "sha256": "ac26877ff7366015f8eca4c0ba40d6d1cf295b13a3dbc0089fca8268b583e6f0"
     },
     {
       "path": "docs/getting-started/repairing.md",
-      "size_bytes": 407,
       "sha256": "5f8935f548799998b74271089127b35f2124aaa3723e2017cc61142663e65fea"
     },
     {
       "path": "docs/getting-started/upgrading.md",
-      "size_bytes": 496,
       "sha256": "660eb1262a57c7d872033de8fa647a54c3e7d64673f3969ca434c2d2398eb279"
     },
     {
       "path": "docs/getting-started/use-cases.md",
-      "size_bytes": 1473,
       "sha256": "0ba051123d69693a3a344e326912d78211a69ed4b1d156be75badfc9a8c0066e"
     },
     {
       "path": "docs/getting-started/windows.md",
-      "size_bytes": 1920,
       "sha256": "3e840d422ac81c3b1336127e7dfa1c00821a58f41e6ca082d1688f5a042982e1"
     },
     {
       "path": "docs/integrations/searxng.md",
-      "size_bytes": 3288,
       "sha256": "5a47d4311eb80c32557901c1f087ac947f57a1695fb7ecae83277b33eee83e56"
     },
     {
+      "path": "docs/operations/backup.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/operations/configuration.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/operations/installation.md",
-      "size_bytes": 1799,
       "sha256": "9d000191e7addeda291fb605b35471a6d0afb648ea734d884574f5f8014455d5"
     },
     {
+      "path": "docs/operations/recovery.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/operations/repository-workflows.md",
-      "size_bytes": 2902,
       "sha256": "664fd5dca7b24aeb9b2e07dd8daace828494d7ff963a29b5dab286236b775984"
     },
     {
       "path": "docs/operations/runtime-and-battle-testing.md",
-      "size_bytes": 2381,
       "sha256": "4ef8f8b17fdc046604862cf91ee42c697a4f09d7db3ff2c70e6a015af1dc7121"
     },
     {
       "path": "docs/operations/terminal-and-skills.md",
-      "size_bytes": 927,
       "sha256": "a71a4b29e6421e9174cdcdf4213700430140855b40019c99f606ba9140b6ff54"
     },
     {
+      "path": "docs/operations/troubleshooting.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "28f51c6db96a3229ae31c4168e3079108cbcb349a756ddcdc12aa67010f38b36"
+    },
+    {
       "path": "docs/security/approval-model.md",
-      "size_bytes": 553,
       "sha256": "ef0820f3603b6e3a74d979d9b714ea00fdf5150b0fe373a5cd71eeaf3e6c8cca"
     },
     {
       "path": "docs/security/filesystem-security.md",
-      "size_bytes": 232,
       "sha256": "cb2078b8e2d3f547cf868af65cb74a1048f30165893333aa19a13a33b69fa67b"
     },
     {
       "path": "docs/security/security-model.md",
-      "size_bytes": 412,
       "sha256": "5d6ab9877dfdb06359cea9e71a66864f597bca9de50aff7d0bc425c15f73bab4"
     },
     {
       "path": "docs/security/shell-security.md",
-      "size_bytes": 856,
       "sha256": "3d9b5047e61fe9fe9f185f9caf86fda8ccea891cdad092a9d1fd76c72b218bb5"
     },
     {
       "path": "docs/security/skill-provenance.md",
-      "size_bytes": 232,
       "sha256": "50614bef5104f6a56b932ee8e49891e26158a753c143bb490a0789796c431d96"
     },
     {
       "path": "docs/testing/battle-test-guide.md",
-      "size_bytes": 2639,
       "sha256": "f30e7a304b62b9f71c1437feacb9b19d97e29fe3b34fd4b982610470daaa8a1b"
     },
     {
+      "path": "docs/testing/battle-testing.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/testing/failure-matrix.md",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "docs/testing/testing-strategy.md",
-      "size_bytes": 631,
       "sha256": "d428c3b7eb07bb768fb4211daec1f4a1fbf412eaa4fd59cc1a60e10399637889"
     },
     {
       "path": "docs/user/agents.md",
-      "size_bytes": 435,
       "sha256": "b2c609f6407754d40963d5d5f9e99c93e58dffc7a77942e3fe789c179de405de"
     },
     {
       "path": "docs/user/approvals.md",
-      "size_bytes": 267,
       "sha256": "f27aa1ce6a032f06335b0164db41e84646ae48b4802c00c3a910220a91c52307"
     },
     {
       "path": "docs/user/background-tasks.md",
-      "size_bytes": 594,
       "sha256": "83670b93173dedfa52b18ef4e41e547d0d840614f5db341016bf659b2923246a"
     },
     {
       "path": "docs/user/commands.md",
-      "size_bytes": 789,
       "sha256": "ef0b163969ba15724c8376b06bee090968c1c50f55a87cf851349bdde8afefed"
     },
     {
       "path": "docs/user/dummies-command-list.md",
-      "size_bytes": 9565,
       "sha256": "be7f4698d4600f0dfa6a319ceb7d1975806a8b4259137be03591d08a592a0e9d"
     },
     {
       "path": "docs/user/permissions.md",
-      "size_bytes": 338,
       "sha256": "2404b7492d732837d7dfc3b18d1b733ed043dc54142ab3a455b270c231f8ad5f"
     },
     {
       "path": "docs/user/sessions.md",
-      "size_bytes": 286,
       "sha256": "5ca5b3c406e199fe61becc24326288bb9c8faecd71ce1d50482d0094f2851aca"
     },
     {
       "path": "docs/user/skills-full-catalog.md",
-      "size_bytes": 16085,
       "sha256": "d720b2e7bea7c7de110896c2cc73e9304e57f7644a2f1025b2b4cfaa653a3fe8"
     },
     {
       "path": "docs/user/skills.md",
-      "size_bytes": 699,
       "sha256": "0ffcb8aee3702e69338db91350fe50d85407287022243f8b8fb1f819e4314c12"
     },
     {
       "path": "docs/user/terminal.md",
-      "size_bytes": 660,
       "sha256": "6b15fab5a46a82981bb2b89cb9d57fec0f044aef691c2ec510a0c0a8aef5ecf8"
     },
     {
       "path": "docs/user/troubleshooting.md",
-      "size_bytes": 924,
       "sha256": "dae12800ecdeb40428aefe2ef531bc8f08144fba10767e2abde6cf2da6db7e60"
     },
     {
       "path": "docs/user/workspaces.md",
-      "size_bytes": 396,
       "sha256": "49861b773358a005070be400247f088a4d23bc62307114c5621c06e4511ad78d"
     },
     {
       "path": "install/common/install.py",
-      "size_bytes": 2872,
       "sha256": "3a3d427ee14d96d83f6c83396ea30669a2c601f70ecc4185945170b8c537e97f"
     },
     {
       "path": "install/macos/install.command",
-      "size_bytes": 489,
-      "sha256": "335e19b66e8535e51f9ac8ea7584a433faf2409b110deee73fee78eb9ea93cf5"
+      "sha256": "60ae62612ead097cc609d2fe0c215be6868f30d327d634bc6c7e2e66acb7f833"
     },
     {
       "path": "install/macos/repair.command",
-      "size_bytes": 486,
       "sha256": "b492d66c633687c8d581f1a0ba3dbc85bcb367754a7ec0e0b4ba6960be117bd1"
     },
     {
       "path": "install/macos/uninstall.command",
-      "size_bytes": 390,
       "sha256": "08f713f2052f5353c51d30b19c31b34e994faf2bbd428c4c303476f6d9449b99"
     },
     {
       "path": "install/windows/install.ps1",
-      "size_bytes": 1015,
       "sha256": "6695b285aeda6d5668b200c1658f5cdf869d62a1ad4df3d46060de8f83a3095f"
     },
     {
       "path": "install/windows/repair.ps1",
-      "size_bytes": 930,
       "sha256": "e8af0546586864ecdd477220f537e74d525eddef59ce238b7aeecacaf7a66a4a"
     },
     {
       "path": "install/windows/uninstall.ps1",
-      "size_bytes": 550,
       "sha256": "6c279cad9e8ac3d6c61f03219c265528c9effb5d3198e0465585792577ce29fa"
     },
     {
       "path": "launcher/macos/SOL-Lite.app/Contents/Info.plist",
-      "size_bytes": 576,
-      "sha256": "db7a72b4a8d0170b8996a09cb5539d1b552220ee1015ebd1e766f7ec93f37335"
+      "sha256": "1b0168f5c4f3cd3ca4a7ac873658407cf7a92c91cde3f73c436d1955cacee44d"
     },
     {
       "path": "launcher/macos/SOL-Lite.app/Contents/MacOS/SOL-Lite",
-      "size_bytes": 671,
-      "sha256": "31732a5a7a15130ce263ee3cf9041f22a659655c433dbb25599d2993370294a5"
+      "sha256": "ce60c688a6afe30c8bb5c5359b7a0d4dc5afba94746931e184da5ed452ad2049"
     },
     {
       "path": "launcher/windows/SOL-Lite-Doctor.cmd",
-      "size_bytes": 224,
       "sha256": "3d7450fafc4f32b8d0413effde66199efd948e5ea75df7f3c338219744f30a32"
     },
     {
       "path": "launcher/windows/SOL-Lite.cmd",
-      "size_bytes": 226,
       "sha256": "c021c8f898f5033d9143a6bfe90aca1e953689f1c48f78dc8bbb632975a5ea92"
     },
     {
+      "path": "LICENSE",
+      "sha256": "cc9755677e89cbd2b0d7b370c5d02c5211e786a762524feedb1b0402161152ea"
+    },
+    {
+      "path": "LICENSE.md",
+      "sha256": "56d49bada1227b02dc907c34d52f2d1c7bb671c067855cc8b637a8dceae0fc92"
+    },
+    {
       "path": "logs/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "Makefile",
+      "sha256": "be6421e44bebf60ef771d256763f719e985f7cee187e7c5058ec54c51740761b"
+    },
+    {
+      "path": "PLG_LOCAL_AGENT_SETUP.md",
+      "sha256": "f5099a84205454fe883159efcad82d4fa4aed964cf11e18360d91037848cf26e"
+    },
+    {
+      "path": "PROJECT_FILES.txt",
+      "sha256": "f6a731c3631532d200ff28663b67f88ef018ee3609c600a0f79f54ec8fadadf9"
+    },
+    {
       "path": "prompts/00_workspace_discovery.md",
-      "size_bytes": 1245,
       "sha256": "50b9a4babb6406dab784b6eb2676e33e5dac0b2a820498fa20674d89291a098b"
     },
     {
+      "path": "prompts/01_verification_pass.md",
+      "sha256": "ab112877b8ca4833f3b758055878b09f512649c6c3bf0e283f41b581fc5bcdd5"
+    },
+    {
       "path": "prompts/01_verification_reproduction.md",
-      "size_bytes": 768,
       "sha256": "e6bb701a1d880e652ac286679ca1da3b1e58583e71a6999760a700bde71833f0"
     },
     {
+      "path": "prompts/02_root_cause.md",
+      "sha256": "e21a28f55801a0078c2223c962b40c2e733e0c8483d2283bba493f757975f85b"
+    },
+    {
       "path": "prompts/02_root_cause_investigation.md",
-      "size_bytes": 956,
       "sha256": "bc82f03fa961917005b2b835393c3ac451a45144526cb2d21adbb903d1d63f75"
     },
     {
+      "path": "prompts/03_fix_plan.md",
+      "sha256": "528df0ab0063de8e9413adad0c871052aa541b26612bd91b90a9395066690c8d"
+    },
+    {
       "path": "prompts/03_fix_planning.md",
-      "size_bytes": 861,
       "sha256": "0f1ec568e34ee97d90c0013c629ffc0a21999900ad8c205e8293856be9aef281"
     },
     {
       "path": "prompts/04_implementation.md",
-      "size_bytes": 1137,
       "sha256": "e6674bf6a7402120ef14a55ca370c86de263c2608a3357bb260e6bec948bc646"
     },
     {
       "path": "prompts/05_validation.md",
-      "size_bytes": 778,
       "sha256": "6c760932943f05be1be56d19a2b51711d839de473a6c6b234109a8a5752dc42a"
     },
     {
+      "path": "prompts/06_end-to-end_proof.md",
+      "sha256": "d5e067b404492795d7157eca0c3f60927c91a452deb9af6e2ba9065fb253cba2"
+    },
+    {
       "path": "prompts/06_end_to_end_proof.md",
-      "size_bytes": 782,
       "sha256": "0e17e74c4f3936e52f0c62fd300314925b1c0994875fbce7ae0094ba5cdcd300"
     },
     {
       "path": "prompts/07_final_engineering_report.md",
-      "size_bytes": 937,
       "sha256": "84fc886fe3015f8db23c38e06195b42496e2499a3676f9dd4604ca0d5595d1af"
     },
     {
       "path": "pyproject.toml",
-      "size_bytes": 1126,
       "sha256": "58381d8c2f6614c10c864fe6ec07477c0fec6a227e1518aee00c6e4c217f8113"
     },
     {
+      "path": "README.md",
+      "sha256": "356d67478c37d1977f29681776db9c5a77a011a1b5c3e26c5612d3237c6771d5"
+    },
+    {
       "path": "references/agent-skill-sources.md",
-      "size_bytes": 3504,
       "sha256": "0f126dc572a56c999e582328b30eefc979429333ed7074b8612f6f07db2e5792"
     },
     {
       "path": "references/colour-wheel.md",
-      "size_bytes": 2401,
       "sha256": "bf3f024e75696397a5c279f49036bfb0b87a56b645c62b19d9becf5c10300c67"
     },
     {
       "path": "requirements.txt",
-      "size_bytes": 144,
       "sha256": "31aea9f5a2556899b90faacfe8890cd8c1f162ba0ddf4bb84ce4e7ee248c6bb7"
     },
     {
       "path": "scripts/audit-pack.py",
-      "size_bytes": 4045,
-      "sha256": "d86996894e4f48b764b57b326bfbb9b457c647e70d272364606678d985cfa0e3"
+      "sha256": "f6c626435b30b549711d9a1ef05de0d29777971ac65c138b035c4a4f246582be"
     },
     {
       "path": "scripts/battle-live.bat",
-      "size_bytes": 255,
       "sha256": "fb6f33a77b76edd4d67b62a7393f326fa9a2d98300f4be9f4de459d6e3d3d5a4"
     },
     {
       "path": "scripts/battle-live.command",
-      "size_bytes": 111,
       "sha256": "ed275b16642f50646bb236af33f54004f27a223fc197bd4da1ab2db8057daa80"
     },
     {
       "path": "scripts/battle-test.bat",
-      "size_bytes": 227,
       "sha256": "658347d846d53d21a19cb41c20aa606f885a38b0ff2338e99aaa33e781b14991"
     },
     {
       "path": "scripts/battle-test.command",
-      "size_bytes": 83,
       "sha256": "6c58a623ea1e64260fbad91b9ff79b6942f39d06218f964bafdc72c2a077c8c0"
     },
     {
       "path": "scripts/battle-test.ps1",
-      "size_bytes": 325,
       "sha256": "3dcb6d5c0458c26a773800762651593b734f888292781a9b1b1ce0d136ec62b3"
     },
     {
+      "path": "scripts/build-manifest.json",
+      "sha256": "99468ff7df9a491692fdac1b03a413a4dbe935b359a2a98a410734ea13f9e00d"
+    },
+    {
+      "path": "scripts/build-manifest.py",
+      "sha256": "4a0630c7795d2d67014aafeb3976526e7881b91a908a09a749216b2bba374738"
+    },
+    {
       "path": "scripts/doctor.ps1",
-      "size_bytes": 126,
       "sha256": "4f5ce0b5fa67b839a72bc5c522ec8156b81fe4a5fd089db302fdd75f5d9c1b09"
     },
     {
       "path": "scripts/doctor.sh",
-      "size_bytes": 98,
       "sha256": "eca15a941e8f6cc31f19b6dd51913d62debeba8d19393fdcacd7461c39f3c0a7"
     },
     {
       "path": "scripts/install.ps1",
-      "size_bytes": 141,
       "sha256": "9c855c64ede627543d5cb1199ec2bbdb21a52822c5beae5cdc2d48525cab70ea"
     },
     {
       "path": "scripts/install.sh",
-      "size_bytes": 122,
       "sha256": "badce2852fd64abb6a319552a573407589fe73593d6cd3ddaa4ddc4b8485a0ea"
     },
     {
       "path": "scripts/preflight.py",
-      "size_bytes": 2369,
       "sha256": "563216a64b98cf52a234abb27e3871afd9b2f67485945eca0892cac73893a2b3"
     },
     {
       "path": "scripts/repair.bat",
-      "size_bytes": 139,
       "sha256": "d911bf90c33e87e527a448bb136e412a5841fc8ac5362c7d60239199ad3fcf4a"
     },
     {
       "path": "scripts/repair.command",
-      "size_bytes": 78,
       "sha256": "2d312895a85ed7b7a6fe2f9757795513e0fb76e4081dd3e46dee2b4fee4e6b59"
     },
     {
       "path": "scripts/repair.ps1",
-      "size_bytes": 140,
       "sha256": "0bbe6ad8f1e8b247e76e8d973d690c1198fdd27182e40cd51853617bf54ca502"
     },
     {
+      "path": "scripts/reset_dev.sh",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "scripts/setup.bat",
-      "size_bytes": 458,
       "sha256": "737b4197c02d6555e8c2c0dc8ff087dbc56d3575d6ea2fa566e33df457819049"
     },
     {
       "path": "scripts/setup.command",
-      "size_bytes": 79,
-      "sha256": "1e666dea6eef187f748ff0aba9a589ecabbfc02b49d0d06d470fec480dd3fd9a"
+      "sha256": "90f166ea01596aa3e93c4e11b883ea6fffe3233fc60e1c5d3674fbd5bdbb7fbf"
     },
     {
       "path": "scripts/start.bat",
-      "size_bytes": 308,
       "sha256": "f43db21fe237e83da66c21dc1a8b642e6c2f07ae83cc251a95bee0414a4e485b"
     },
     {
       "path": "scripts/start.command",
-      "size_bytes": 293,
       "sha256": "6b7a415e8f596274ec46b49ea392e4f1ba59ad02afcf2faa7737578d475e9b46"
     },
     {
       "path": "scripts/start.ps1",
-      "size_bytes": 319,
       "sha256": "8e95601f469e607328746a8f65e0a4caa7cadc69eae4b6a06d4024df959c4cf6"
     },
     {
       "path": "scripts/start.sh",
-      "size_bytes": 91,
       "sha256": "f37e14dd2d6bdaf08effc18cb7d3cfbd30fe193ce36cccc2332f04e519c77b48"
     },
     {
+      "path": "scripts/stop.sh",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "scripts/test.bat",
-      "size_bytes": 212,
       "sha256": "aa76152ea8e98a4a2132498c11ba4c5e59c1240beefe0aa23c4c062f2fbec37a"
     },
     {
       "path": "scripts/test.command",
-      "size_bytes": 72,
       "sha256": "a004362166122238dcc3d148548942f37a57e2d6122f5356c843b19b813bae03"
     },
     {
       "path": "scripts/test.ps1",
-      "size_bytes": 214,
       "sha256": "61e8df5997f31d308a53b9e2ed16f43e4c5e446af88c49d38a41225d636c5039"
     },
     {
       "path": "scripts/test.sh",
-      "size_bytes": 172,
       "sha256": "6a2a244de510f2c9485917fb15cc6813c6ba3ea7fb7f2e610df2e9e20234d7db"
     },
     {
       "path": "scripts/uninstall.ps1",
-      "size_bytes": 143,
       "sha256": "deaaeba658623a742eb919ab25c9dd1c6bdf9780a16e66277bfab1919fcdfb27"
     },
     {
+      "path": "scripts/uninstall.sh",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "skills/agent-evaluation/SKILL.md",
-      "size_bytes": 611,
       "sha256": "6b080d35fe85d6a737369f2d1518a55248448e5f02dbdfd400be25292cb2a19f"
     },
     {
       "path": "skills/agent-skill-curation/SKILL.md",
-      "size_bytes": 682,
       "sha256": "0bf0d6b06efd5c25a673df1f71aa62e9dd348a60f4f4a59e8a722f9bc6060c3f"
     },
     {
       "path": "skills/agile-sprint-planning/SKILL.md",
-      "size_bytes": 643,
       "sha256": "ed3162416cf798ae3a1f479607798c0e94ec1721317407a740063a07dae52fd2"
     },
     {
       "path": "skills/architecture-design/SKILL.md",
-      "size_bytes": 695,
       "sha256": "efddef6e53a352cb8681f09311e7c06179980e9cf9cc91f861cc1f52fafa9b96"
     },
     {
       "path": "skills/book-to-skill/SKILL.md",
-      "size_bytes": 675,
       "sha256": "584602a947d6f0ef3f46366760aa8bdd0c87ffd418f26d2c52531c27a8f9b41a"
     },
     {
       "path": "skills/career-operations/SKILL.md",
-      "size_bytes": 573,
       "sha256": "287748ecd00335b9729e4410d765eb62d5c665e8ac722af1185da90199d9d7ae"
     },
     {
       "path": "skills/code-review/SKILL.md",
-      "size_bytes": 349,
       "sha256": "4feddde0f95048adc5dcb72a8a6404dc11cca7eb8f0378e646fc5093ba6c73a2"
     },
     {
       "path": "skills/copilot-patterns/SKILL.md",
-      "size_bytes": 603,
       "sha256": "e0dc6e81f86f37906938dcd183a1e2c077237bf5cf125233825052aa80bafa7c"
     },
     {
       "path": "skills/debugging-error-recovery/SKILL.md",
-      "size_bytes": 915,
       "sha256": "08ffca36d55a566f30749428cffd4a2015cc9c31c870562a1fe0b1bd0aca4bbb"
     },
     {
       "path": "skills/debugging-methodology/SKILL.md",
-      "size_bytes": 692,
       "sha256": "1dd404dd1107615a6e2f90f1f76435eb38bdcc6b5c4afdb6a4169a11ba5d91ff"
     },
     {
       "path": "skills/diagram-design/SKILL.md",
-      "size_bytes": 641,
       "sha256": "6aa9b5c63e369af779fcc8746d9bc7c11100479e6e4064adb9b6987759c61515"
     },
     {
       "path": "skills/documentation-engineering/SKILL.md",
-      "size_bytes": 269,
       "sha256": "e2c02211dc6d590fc6048261f99580e5a74cba520b770b9bbd1d00205a47962f"
     },
     {
       "path": "skills/git-workflow/SKILL.md",
-      "size_bytes": 281,
       "sha256": "9da989a0286025d38590bb6d4e05aaca9b84708856d7670fa8b3f85b7499b60e"
     },
     {
       "path": "skills/handoff/SKILL.md",
-      "size_bytes": 260,
       "sha256": "1e20597fbc010e3ccf606d67cd6141fdb97cee2ab5cddc852f7230699ca79bd2"
     },
     {
       "path": "skills/harness-audit/SKILL.md",
-      "size_bytes": 264,
       "sha256": "5b78735889d30bfdb2a5b6a0725ad7b0227f3660541afc42793886afbe13f3b4"
     },
     {
       "path": "skills/humanizer/SKILL.md",
-      "size_bytes": 610,
       "sha256": "b23f73b04586443a8466935bad423805033aa7088130014ef78d3268e705908f"
     },
     {
       "path": "skills/mermaid-diagrams/SKILL.md",
-      "size_bytes": 599,
       "sha256": "1c445d985e8710a4c9a0f01e674242f44776b4296e6663fe8b0967f509f74af9"
     },
     {
       "path": "skills/open-code-review/SKILL.md",
-      "size_bytes": 682,
       "sha256": "e5dca8aac9045d48677052279c307cfd164ae0c3ec0f07f4be4645c8fc3e5d1f"
     },
     {
       "path": "skills/performance-investigation/SKILL.md",
-      "size_bytes": 294,
       "sha256": "c3cf48d27a8519bf67b525fd7cad51a29e3d293fac758f8e3a3703d9e5aa8e59"
     },
     {
       "path": "skills/planning-and-estimation/SKILL.md",
-      "size_bytes": 607,
       "sha256": "86491dc6a9fb4290a05cb85b37745ad44a9340ef9eab419dba43da4f86d1f4d5"
     },
     {
       "path": "skills/product-discovery/SKILL.md",
-      "size_bytes": 619,
       "sha256": "4d8974edf472ff1e9168db027e9cf241693bc027c4b134c1b4676abd7f89ee71"
     },
     {
       "path": "skills/product-management/SKILL.md",
-      "size_bytes": 620,
       "sha256": "74dcb6eb519c6c494592048957134ac3e6e90a24e4be21d27c912945a540df20"
     },
     {
       "path": "skills/prompt-engineering/SKILL.md",
-      "size_bytes": 654,
       "sha256": "53ae6f501b7e8aefd476052def0294db60ee358f5458e02b6ab4970764085136"
     },
     {
       "path": "skills/refactoring/SKILL.md",
-      "size_bytes": 210,
       "sha256": "9f36b686913534e97b3a4b2d5fe9a09ea15318f3498bb99b2c2203e71903e7fc"
     },
     {
       "path": "skills/repository-analysis/SKILL.md",
-      "size_bytes": 308,
       "sha256": "6d108c3fd4cca234fdbd8d60d2b2361c9c0b378c091fd835dcb8247a4a9f7ca6"
     },
     {
       "path": "skills/security-audit/SKILL.md",
-      "size_bytes": 289,
       "sha256": "a7807b347bef086ee1afa856d9b3948cbfd06e9a7c908f3a17434e8d6863dc34"
     },
     {
       "path": "skills/shell-engineering/SKILL.md",
-      "size_bytes": 357,
       "sha256": "31aa89d75114eb3c1745b51aa56bd744fc996789ae1095ae90831f508df6895d"
     },
     {
       "path": "skills/skill-import/SKILL.md",
-      "size_bytes": 408,
       "sha256": "6c024ae51dbf3452fd513194243e4560bc11f520ee3af0d08be8288baa82e039"
     },
     {
       "path": "skills/systematic-debugging/SKILL.md",
-      "size_bytes": 511,
       "sha256": "6e65bdad1b087d4ff56e40771b4d3f593ca61cfb11a5ddb24c1dd5511e1ce2aa"
     },
     {
       "path": "skills/test-engineering/SKILL.md",
-      "size_bytes": 320,
       "sha256": "b8ce9ddec7061a689224185ada53b89ced4bd2b78969608b14a9fc2aa10d064c"
     },
     {
       "path": "skills/ui-ux-design/SKILL.md",
-      "size_bytes": 624,
       "sha256": "a0c4d8fa55b6e602cbd81056d9ee02b0a73f23ebb890dfab761b9b1361c17dd5"
     },
     {
       "path": "skills/web-research-searxng/SKILL.md",
-      "size_bytes": 1108,
       "sha256": "0182d7cac5da39e7825bb30e445e4714099c98a93860a7a545ad5c7e1fdc288e"
     },
     {
       "path": "skills/web-source-verification/SKILL.md",
-      "size_bytes": 628,
       "sha256": "a3ba830672d77bd9a7078a628152366eab2105213ceb1326c59863d9d00eafc2"
     },
     {
+      "path": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
       "path": "src/sol_lite/__init__.py",
-      "size_bytes": 133,
       "sha256": "8aaba31dde4e26bb0069157887cf8f42241cb6f2f9068d6bc949f7c541483c1b"
     },
     {
       "path": "src/sol_lite/__main__.py",
-      "size_bytes": 87,
       "sha256": "e49e9a19c4c8a2d821d68d0c2837394be765a1cf4b42ab8e914d68b7d9f9528c"
     },
     {
       "path": "src/sol_lite/agents/__init__.py",
-      "size_bytes": 375,
       "sha256": "5ea3031a5f5a4abc3673faedb41a507c63e47523ac496336036e71a9b81eb46d"
     },
     {
       "path": "src/sol_lite/agents/base.py",
-      "size_bytes": 298,
       "sha256": "cc84bdb0065f8a2663c84a9391648a29eb5f95e2ffe530fd9b7274d10e3f61f8"
     },
     {
       "path": "src/sol_lite/agents/business/__init__.py",
-      "size_bytes": 32,
       "sha256": "7e2703ea8564b314cf61f23a4f65c09544a27c5dcbde971e96040d335f1fa038"
     },
     {
       "path": "src/sol_lite/agents/business/agent.py",
-      "size_bytes": 93,
       "sha256": "8d2eba5b8e50a906770a7416e53d380e6c315720e4cdd3af497bd7dc22fa429b"
     },
     {
       "path": "src/sol_lite/agents/business/prompt.md",
-      "size_bytes": 604,
       "sha256": "eff51d136b2ddd00f644e027a702f3825d4dfd473e9429c29162c2804fcd3c3b"
     },
     {
       "path": "src/sol_lite/agents/business/tools.yaml",
-      "size_bytes": 288,
       "sha256": "bbab32f9958f56b03924500086da44652e62414e4f915732bb0334455a262c6c"
     },
     {
       "path": "src/sol_lite/agents/docs/__init__.py",
-      "size_bytes": 28,
       "sha256": "aa196b0e01a5b89537125ab0c24970ca36f39a2454b35751254be17883218c9b"
     },
     {
       "path": "src/sol_lite/agents/docs/agent.py",
-      "size_bytes": 85,
       "sha256": "9c18c45f8ba2ee7ec5ed8412f41ad0544da6852e52eaba8166e4c9b583c21807"
     },
     {
       "path": "src/sol_lite/agents/docs/prompt.md",
-      "size_bytes": 600,
       "sha256": "2a9ec11885be0e2744acdcad6354cbddfb9bb23b645ac359e9205d9e32226d75"
     },
     {
       "path": "src/sol_lite/agents/docs/tools.yaml",
-      "size_bytes": 288,
       "sha256": "bbab32f9958f56b03924500086da44652e62414e4f915732bb0334455a262c6c"
     },
     {
       "path": "src/sol_lite/agents/engineer/__init__.py",
-      "size_bytes": 32,
       "sha256": "9d482fc3e2f7c5cf2e00a17482cba00d700d6d16b6bf87fa4037eaa4fc3d944c"
     },
     {
       "path": "src/sol_lite/agents/engineer/agent.py",
-      "size_bytes": 93,
       "sha256": "3fda538d3ad1767248023476e8713cc88b54c5301d1a1b001475ebf561be95db"
     },
     {
       "path": "src/sol_lite/agents/engineer/prompt.md",
-      "size_bytes": 4048,
-      "sha256": "6a5af5e156115591089e4b1ca33a165e4782764d0a1313fa6aa9399e76875db0"
+      "sha256": "2dcb6bd5a8a1876055a1ed4b19b2af8e78e698fe946b2b9338095b88cf6b891c"
     },
     {
       "path": "src/sol_lite/agents/engineer/tools.yaml",
-      "size_bytes": 699,
       "sha256": "6d367b604cc99d9e55403874c955b3fd27d0681547c2c023f667a3e2da7a824a"
     },
     {
       "path": "src/sol_lite/agents/manager.py",
-      "size_bytes": 271,
       "sha256": "b503a6c0f63dc003d4b2b042d71a3adc1e22929f9f50a8532b21c05d2158b2ba"
     },
     {
       "path": "src/sol_lite/agents/pa/__init__.py",
-      "size_bytes": 26,
       "sha256": "59eddfe660c94fcba894960e051c4512dceb80970a8f7e20414adbc43237dd2e"
     },
     {
       "path": "src/sol_lite/agents/pa/agent.py",
-      "size_bytes": 77,
       "sha256": "bfc34b46204cdc7fc85c587ae495cb34e75a9386b6b700d30c6cb3535fa86c65"
     },
     {
       "path": "src/sol_lite/agents/pa/prompt.md",
-      "size_bytes": 598,
       "sha256": "bb8ff97675d4536bd7eb54cf02d71cf8d7c1c8f805202362f1e9ef6d60bd7e4a"
     },
     {
       "path": "src/sol_lite/agents/pa/tools.yaml",
-      "size_bytes": 288,
       "sha256": "bbab32f9958f56b03924500086da44652e62414e4f915732bb0334455a262c6c"
     },
     {
       "path": "src/sol_lite/agents/registry.py",
-      "size_bytes": 805,
       "sha256": "1f1069fde2a3399be028d703d3644a4dd7b9ee8de39415c549e7dcaf5d792d5f"
     },
     {
       "path": "src/sol_lite/agents/repeat_guard.py",
-      "size_bytes": 582,
       "sha256": "1da12e0fafeb98006f57cbafb262c49466ef0b2cfe7182ad7a00f933a9e912dc"
     },
     {
       "path": "src/sol_lite/agents/runtime.py",
-      "size_bytes": 13009,
-      "sha256": "478598e240012bcdea0c62a4588017a064e2f38945a9a2e13da4a3f18a8809a3"
+      "sha256": "5e1a55b4dcf72fbe15989b8bbc3c018996c3446cb05f934cf4e5dbc6658aac95"
     },
     {
       "path": "src/sol_lite/agents/shell.py",
-      "size_bytes": 21092,
       "sha256": "6dae769e58b43817159ff4ad877564184a151761d42aa8d426be7796fa08ce9b"
     },
     {
       "path": "src/sol_lite/agents/status.py",
-      "size_bytes": 4520,
       "sha256": "ce61d1882afdc9473810aec12afa61e2d9f59f44c1dce31bde3473da22197547"
     },
     {
       "path": "src/sol_lite/app.py",
-      "size_bytes": 7061,
       "sha256": "35fb81d0e73268c292130889ea8e7bcb969b5106888a1adfe3962b5433c6a5ba"
     },
     {
       "path": "src/sol_lite/audit/__init__.py",
-      "size_bytes": 73,
       "sha256": "7fb5dc3328fa6decb795966c0cd991daca04fe74d96d48c755feda756176b449"
     },
     {
       "path": "src/sol_lite/audit/logger.py",
-      "size_bytes": 566,
       "sha256": "b525aadf7ba02e0501e3245c7f295f0c84019e031b25108de0834a9eee7a9e6b"
     },
     {
       "path": "src/sol_lite/bootstrap.py",
-      "size_bytes": 4866,
       "sha256": "4a87b0116decf74a18626b6b527a766a4e584dccc412197fc9b6104a585f9ba6"
     },
     {
       "path": "src/sol_lite/bridge/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/core/__init__.py",
-      "size_bytes": 154,
       "sha256": "f0489adf2cd5ec4707f32db017f42a276818d8f0071a195b75f30196f58c2519"
     },
     {
       "path": "src/sol_lite/core/event_bus.py",
-      "size_bytes": 866,
       "sha256": "8b5a7c2ad2c920490dd92414c0595208954d6898a91fe5650c963aab95956219"
     },
     {
       "path": "src/sol_lite/core/exceptions.py",
-      "size_bytes": 555,
       "sha256": "d05bdde1f16f0e4ad2009a2532c2a12a703c933cacfa4aca06a13fcb7a81ad2e"
     },
     {
       "path": "src/sol_lite/core/health.py",
-      "size_bytes": 475,
       "sha256": "c7ace1b96292a741b5faa6de7299a71c2580d483b39b6f25ce6383d7d5ad2a83"
     },
     {
       "path": "src/sol_lite/core/lifecycle.py",
-      "size_bytes": 234,
       "sha256": "2b65c04c07522e47c30f04dfe01c34a969caf74f5f68899b40ab63436475fe65"
     },
     {
       "path": "src/sol_lite/core/runtime.py",
-      "size_bytes": 3571,
       "sha256": "c607260ca8a5e4e32f4f8d493abf400132d6d294cec998c0e1fe4fc4c8c05958"
     },
     {
       "path": "src/sol_lite/core/session.py",
-      "size_bytes": 4873,
       "sha256": "3757183e34e8defda8267d8ea646bf1b9048ef3dd10f8af3b4d29e1056b7caea"
     },
     {
       "path": "src/sol_lite/core/tasks.py",
-      "size_bytes": 3166,
-      "sha256": "cbd5b0aef7d380bcf2df1abbad74a04c87a15454de9bb48b1881cfa31f77dcba"
+      "sha256": "2a78a2ece205a93ca363f876a0b0b12e28345b7757cc18eeebdb1b0381788232"
     },
     {
       "path": "src/sol_lite/documents/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/faults/__init__.py",
-      "size_bytes": 72,
       "sha256": "6ee77984f5458c5f84c7ca72371edd12b9da6ca44157a877073e8dd5c79127b3"
     },
     {
       "path": "src/sol_lite/faults/log.py",
-      "size_bytes": 1727,
       "sha256": "525d520867f9212328ee3bccd6647721066885597bf7cfdf7c041dab8548bbb8"
     },
     {
       "path": "src/sol_lite/integrations/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/memory/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/models/__init__.py",
-      "size_bytes": 196,
       "sha256": "9243f4e6feb3fb7393f4d326caf71da8381e0785b197777d5233ffa870add278"
     },
     {
       "path": "src/sol_lite/models/base.py",
-      "size_bytes": 217,
       "sha256": "201e3ede02409c73da60b313f9e824d9fd7720e24af075840fb8f87401341642"
     },
     {
       "path": "src/sol_lite/models/health.py",
-      "size_bytes": 2563,
       "sha256": "817adace63573d80fda0b847f51d0202e9ab87ff0956adeca4de8354e2f24844"
     },
     {
       "path": "src/sol_lite/models/manager.py",
-      "size_bytes": 491,
       "sha256": "67c18e7e6803cf555ae97efeb172ae50011eba1b584de9c91926b430646cb1c9"
     },
     {
       "path": "src/sol_lite/models/ollama.py",
-      "size_bytes": 974,
-      "sha256": "8d00ce89d925df67ef735731acd9b3b286bbc0cbdfecbfed89777cbb224b2a53"
+      "sha256": "7a30d9215675228cfc8ddfaf68f740b4cbe3bd14963e78023a2e675beaec18f3"
     },
     {
       "path": "src/sol_lite/models/profiles.py",
-      "size_bytes": 519,
       "sha256": "4859ac51ab84c8b12ded62ba2bcd9be0fab9535e1980aeb1cb39ff26bffacfef"
     },
     {
       "path": "src/sol_lite/permissions/__init__.py",
-      "size_bytes": 250,
       "sha256": "ea5408dea32371710914efda7acbe28bf2f409d4e2393371c6518be990bcd58c"
     },
     {
       "path": "src/sol_lite/permissions/approvals.py",
-      "size_bytes": 1369,
       "sha256": "38541647c434c759650aadb393bd5449b5452ec971a735c25f4cb85ff67e6553"
     },
     {
       "path": "src/sol_lite/permissions/engine.py",
-      "size_bytes": 1291,
       "sha256": "590b4d2e6138da16dbb909c6ddfca4d7e68656ceeff7f742f73b6d26b8649832"
     },
     {
       "path": "src/sol_lite/permissions/policy.py",
-      "size_bytes": 884,
       "sha256": "a3cf2b0eeece8e03ba6be527b3974af91661d7fa98a1a81882a9479f5774c206"
     },
     {
       "path": "src/sol_lite/permissions/scopes.py",
-      "size_bytes": 424,
       "sha256": "2a21c94eb04c824105ef2c241df3221662e7bbc048e5424e29ed3b840886294e"
     },
     {
       "path": "src/sol_lite/platform/__init__.py",
-      "size_bytes": 525,
       "sha256": "395ad464389f9eceeb4ed083e743d3ac68a7150a3c873139bbf2b17d896eed1e"
     },
     {
       "path": "src/sol_lite/platform/base.py",
-      "size_bytes": 386,
       "sha256": "df7f92440754b8b0b8632600c2ab0f9c9d3277a54a4ac16dff9a45d99fdcc0cf"
     },
     {
       "path": "src/sol_lite/platform/macos.py",
-      "size_bytes": 1150,
       "sha256": "cf59cf9f99d33bbd480a1ac5bc9474afd3be7a0b6666bbb770c0e3224dabe809"
     },
     {
       "path": "src/sol_lite/platform/windows.py",
-      "size_bytes": 1376,
       "sha256": "402be0e2243c004fe20ec40ff3827ca416ffbc281b3d7dd2e6cb4aa6968d83d2"
     },
     {
       "path": "src/sol_lite/prompts.py",
-      "size_bytes": 1360,
       "sha256": "235818012cbe87b4f43fc3f8eac933609d796e926a08f230e1696a1f0e5530fd"
     },
     {
       "path": "src/sol_lite/scheduling/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/security/__init__.py",
-      "size_bytes": 218,
       "sha256": "87529fdbce2490fed91379cab78e75f7563867604b704a576ae1e356502ed924"
     },
     {
       "path": "src/sol_lite/security/command_guard.py",
-      "size_bytes": 3918,
       "sha256": "b64c20e6e62d1175f2bd0f0ce3be1e3d3ac8b0cac15e6799c29a65c37909c26d"
     },
     {
       "path": "src/sol_lite/security/path_guard.py",
-      "size_bytes": 940,
       "sha256": "2d7fcb91f60b3fbb3c87d4b54f7f2e7d508991669f88aa1b96f5fc53e648008f"
     },
     {
       "path": "src/sol_lite/skills/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "src/sol_lite/skills/manager.py",
-      "size_bytes": 12165,
-      "sha256": "f431e5f0579afff841df326e6c061626f71c2f60e5b924bf3f299d05dcfb6e49"
+      "sha256": "94a2c4b6a5d8e507c834e2432ad5c97fc1b3e6f3faf118ac0a2415cbb7022dcb"
     },
     {
       "path": "src/sol_lite/terminal_ui.py",
-      "size_bytes": 9081,
       "sha256": "1cbad4080d3b72eb975a176d2e55d99c0062a58ed4a66712af290a1559b3a73d"
     },
     {
       "path": "src/sol_lite/tools/__init__.py",
-      "size_bytes": 751,
       "sha256": "b4fb5e3f800c11071147dca554633183267acd191d96602427c78a69ff75e273"
     },
     {
       "path": "src/sol_lite/tools/base.py",
-      "size_bytes": 1022,
       "sha256": "bdcae10e2af75c364622108e04292f489c904b17b104741f467277e8b3b73464"
     },
     {
       "path": "src/sol_lite/tools/context.py",
-      "size_bytes": 1288,
       "sha256": "990bf7dda8cf1645735c8cebfab233c0a31e541412ce3f9ca9041f2cd12bf660"
     },
     {
       "path": "src/sol_lite/tools/filesystem.py",
-      "size_bytes": 6218,
       "sha256": "201599f0312627203a841f4ba0e063243c291a996dcf92a7334469857f8b56fd"
     },
     {
       "path": "src/sol_lite/tools/registry.py",
-      "size_bytes": 732,
-      "sha256": "a0433039247a2c3a53547ad8c4f1ca565315e4edf1803abe342baf1e7119db83"
+      "sha256": "585996efcbe57f1a5f320e4b40c9b0a3cd8932ff97a51c5eeae564a31aad1787"
     },
     {
       "path": "src/sol_lite/tools/repository.py",
-      "size_bytes": 27245,
       "sha256": "53047a6dfa063bb7dd8b047d22a10f8e9e8575ceb2a99d291a9b5aa10e7b8ff1"
     },
     {
       "path": "src/sol_lite/tools/runtime_context.py",
-      "size_bytes": 122,
       "sha256": "8f4dd1382020b255908e21ca2b2d7d2f0bef8e8d2bd33ab95ef6ddeaf2936ea7"
     },
     {
       "path": "src/sol_lite/tools/search.py",
-      "size_bytes": 2677,
       "sha256": "e17f10a302fd5f5e8e1a4ddee15ee3cd82fbb52329ca8f1c6c93cf75fd724917"
     },
     {
       "path": "src/sol_lite/tools/searxng.py",
-      "size_bytes": 3698,
       "sha256": "a6a0d129d3e09fb6dc237cc77dcbf72f40b0c79f5fe8ac5a40126d94f09203d5"
     },
     {
       "path": "src/sol_lite/tools/skills.py",
-      "size_bytes": 3441,
       "sha256": "674c11ff31d4b4929b3b6dcdd9321945918803459e3992bf497c1fd5460bcf6c"
     },
     {
       "path": "src/sol_lite/tools/terminal.py",
-      "size_bytes": 3082,
       "sha256": "97237fd9fe420762777c281e92058299fe7aeacc08cc0a09564577cbe04ea0be"
     },
     {
       "path": "src/sol_lite/ui/__init__.py",
-      "size_bytes": 161,
       "sha256": "6be647d0706cfada334c009cb4a0220f74f2db09c6509de6ed5cdbcaa90ffd2a"
     },
     {
       "path": "src/sol_lite/ui/theme.py",
-      "size_bytes": 2096,
       "sha256": "705e20a3cf1f084dfd9e9ca9d164ae05934730afe8ad0cf70a08ba841c20574f"
     },
     {
       "path": "src/sol_lite/version.py",
-      "size_bytes": 22,
       "sha256": "5ec6b76b238c5648545a6e2dd3a61ec871346a98e965e7f12c7e32969d020ed5"
     },
     {
       "path": "tests/battle/test_raw_json.py",
-      "size_bytes": 317,
       "sha256": "49fde354f43d0b568532518c15c0a3d16cb526f91f33fa44f0e7aff6fecbc23e"
     },
     {
       "path": "tests/battle/test_recovery.py",
-      "size_bytes": 291,
       "sha256": "8a4281cf5d1720a78b27e173beb37906890b27bd2e0dc4ad4f032df7551dd0b0"
     },
     {
       "path": "tests/battle/test_repeat_limits.py",
-      "size_bytes": 427,
       "sha256": "33aaa6fcaebd0d1e1842e0662d84c1081c40e428c16978a922052544f8dc8b38"
     },
     {
       "path": "tests/battle/test_security.py",
-      "size_bytes": 709,
       "sha256": "beaa8083516553f10bbd27bc4d62ccc1f3d71bc48f1c8789186a3f55b0e4a3ac"
     },
     {
       "path": "tests/battle/test_tool_like_content.py",
-      "size_bytes": 308,
       "sha256": "0af699110ae43c9a82167b2b9e6da3ef9930b2b62d0e6d79232f40d910246a5d"
     },
     {
+      "path": "tests/battle/test_workspace_evidence.py",
+      "sha256": "b3f24138122ab36b7ef914a7387ec77756dfcd2c4e0ac946ed4c78b582a7a90f"
+    },
+    {
       "path": "tests/conftest.py",
-      "size_bytes": 1505,
       "sha256": "331a948e6ec23a0eb013554c5e338e765dcea6c2389f3671dd15f928d853d375"
     },
     {
       "path": "tests/integration/test_agent_runtime_wiring.py",
-      "size_bytes": 491,
       "sha256": "aed0a7c381a5bb7a51f6edb877ffbd2c864ad4f9c58bada53031c3adad394e5f"
     },
     {
       "path": "tests/integration/test_filesystem_tools.py",
-      "size_bytes": 1263,
       "sha256": "0271b7105b45e6d0d510f4df75866857c88105446a338bb204a83cd0aa424b78"
     },
     {
       "path": "tests/integration/test_runtime.py",
-      "size_bytes": 506,
       "sha256": "723036c7e2a9b4e8ed9b19ead6508759472ee3fac7c93efb464428fdc746f8c8"
     },
     {
       "path": "tests/unit/bridge/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "tests/unit/memory/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "tests/unit/scheduling/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "tests/unit/skills/.gitkeep",
-      "size_bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "path": "tests/unit/test_agent_runtime_live_path.py",
-      "size_bytes": 3204,
-      "sha256": "3394dfd2e1bc632d157820eb32d23418546f5ef2588faa1e2ca9973f7b00be25"
+      "sha256": "ce9b2b35668281cee493cdf9f39cbc09a723ca4a510b38f1f431f1987d968e2e"
     },
     {
       "path": "tests/unit/test_agent_safety.py",
-      "size_bytes": 1236,
       "sha256": "1905ada054954552e88bd15959ad9d2c3a524e44bc3404fb64c0be866cfa45fb"
     },
     {
       "path": "tests/unit/test_approval_callback.py",
-      "size_bytes": 2009,
       "sha256": "a952b0f78742234d443facaa2a4a952154f90b3f14a4edf375e2c4a71f9ae3b0"
     },
     {
       "path": "tests/unit/test_approvals.py",
-      "size_bytes": 664,
       "sha256": "885543269ebc81fc40afc7caf9c28d5b1b727dcb666d7e01a41b6395d36ac44d"
     },
     {
       "path": "tests/unit/test_background_task_wiring.py",
-      "size_bytes": 1181,
       "sha256": "861ff1a8d92ccca2dfd14128a0395363481fb6538732e648f9c67fac3e4030e5"
     },
     {
       "path": "tests/unit/test_cli.py",
-      "size_bytes": 311,
       "sha256": "0c1d88e64adaed72fa7610bd0b97678c2877ddd8e8627916242eb1417f263dfc"
     },
     {
       "path": "tests/unit/test_command_guard.py",
-      "size_bytes": 1248,
       "sha256": "4fc3aa3ec09bb7d2d6b9f15da867c4a60736a7524672531bf3ac31158f7b75a5"
     },
     {
       "path": "tests/unit/test_installation.py",
-      "size_bytes": 692,
       "sha256": "94f94388a1a0709576134d82e4d7bc8504bd9274f0859598e8ac84cd709a8bc4"
     },
     {
       "path": "tests/unit/test_path_guard.py",
-      "size_bytes": 755,
       "sha256": "c1d58bd50a61314d610d75d959f976f9aa84608363b6a1d5b2ee7c9d0de3ad5f"
     },
     {
       "path": "tests/unit/test_prompt_loader.py",
-      "size_bytes": 479,
       "sha256": "024985fd4b1e0be63507394e92d2486f38d925939cbf254f88909cf1f7e3dcdc"
     },
     {
       "path": "tests/unit/test_registry.py",
-      "size_bytes": 1018,
       "sha256": "5cc7082e7d4842aeaa65cf385303f78ecd189e310d171678b8a6ab7dc3f08393"
     },
     {
       "path": "tests/unit/test_repeat_guard.py",
-      "size_bytes": 237,
       "sha256": "f098f7745c5b44176249c2f6593521889fcc8b80ea65172a850023565ad3b462"
     },
     {
       "path": "tests/unit/test_repository.py",
-      "size_bytes": 7071,
       "sha256": "d7e464a57261b671679fbc7c032ab4fdc90b53efaa28266d211badf7ca368e50"
     },
     {
       "path": "tests/unit/test_runtime_context.py",
-      "size_bytes": 688,
       "sha256": "833dd952e1bf2929a07f5f8cd7f27288ce47e4337e62af77218c4b21de2b2baa"
     },
     {
       "path": "tests/unit/test_searxng.py",
-      "size_bytes": 2144,
       "sha256": "4596bd438b84e5ff0fc857b68c9819e2d6c9dc7116b56d58f17156d610182a09"
     },
     {
       "path": "tests/unit/test_shell_wiring.py",
-      "size_bytes": 3068,
       "sha256": "31bdf27846ee2e7129fdba8c802d3c5f9889fd840043d4342b39d0746fbe2f0e"
     },
     {
       "path": "tests/unit/test_skill_manager.py",
-      "size_bytes": 1534,
       "sha256": "02f06f7ab311cee551b6ec7d07157475a066dac6ede587133967a4992d4a9343"
     },
     {
       "path": "tests/unit/test_skill_network_gate.py",
-      "size_bytes": 1040,
       "sha256": "055d793e279cb0c59200aeb19c3bdc635e192d66d2ef6006547bbf8d0f277888"
     },
     {
       "path": "tests/unit/test_status.py",
-      "size_bytes": 367,
       "sha256": "24e8b9f64a2a5513a4e6f67a458b7038241c6b5b0fa6349bcba9c86bc33df40b"
     },
     {
       "path": "tests/unit/test_terminal_ui.py",
-      "size_bytes": 1138,
-      "sha256": "f557808ffef9f8213f9529004397d790a4512c30bff60bcf1469f5d14351b81c"
+      "sha256": "977a57f7a465045ec19d5a5e699a4c7ec54b38cfbcd1e70d88ea96654964ca76"
     },
     {
       "path": "tests/unit/test_workspace_sessions.py",
-      "size_bytes": 940,
       "sha256": "15514c805f70a67cb56ee57eb2e78615ee81a2af4a6c372325aebff624e9ae43"
     }
   ]
