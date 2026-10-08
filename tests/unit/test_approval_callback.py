@@ -12,14 +12,30 @@ class FakeProvider:
 
     def chat(self, **kwargs):
         self.calls += 1
+
         if self.calls == 1:
-            return SimpleNamespace(message=SimpleNamespace(
-                content="",
-                tool_calls=[SimpleNamespace(function=SimpleNamespace(
-                    name="mutate", arguments={"plan": "change one"}
-                ))],
-            ))
-        return SimpleNamespace(message=SimpleNamespace(content="done", tool_calls=[]))
+            return SimpleNamespace(
+                message=SimpleNamespace(
+                    content="",
+                    tool_calls=[
+                        SimpleNamespace(
+                            function=SimpleNamespace(
+                                name="mutate",
+                                arguments={
+                                    "plan": "change one"
+                                },
+                            )
+                        )
+                    ],
+                )
+            )
+
+        return SimpleNamespace(
+            message=SimpleNamespace(
+                content="done",
+                tool_calls=[],
+            )
+        )
 
 
 class FakeModels:
@@ -34,31 +50,101 @@ class FakeModels:
     def profile(self, name):
         return self.Profile()
 
+    def chat(
+        self,
+        profile,
+        messages,
+        tools,
+    ):
+        profile_obj = self.profile(profile)
+
+        return self.provider.chat(
+            model=profile_obj.model,
+            messages=messages,
+            tools=tools,
+            temperature=profile_obj.temperature,
+            timeout=profile_obj.timeout_seconds,
+        )
+
 
 class FakeTools:
     def __init__(self):
         self.calls = []
 
     def ollama_schemas(self):
-        return [{"type": "function", "function": {
-            "name": "mutate", "description": "test", "parameters": {}
-        }}]
+        return [
+            {
+                "type": "function",
+                "function": {
+                    "name": "mutate",
+                    "description": "test",
+                    "parameters": {},
+                },
+            }
+        ]
 
-    def execute(self, name, arguments, context):
+    def execute(
+        self,
+        name,
+        arguments,
+        context,
+    ):
         self.calls.append(arguments)
+
         if "approval_id" not in arguments:
-            raise ApprovalRequired("approval", request=SimpleNamespace(approval_id="a1"))
-        return {"ok": True}
+            raise ApprovalRequired(
+                "approval",
+                request=SimpleNamespace(
+                    approval_id="a1"
+                ),
+            )
+
+        return {
+            "ok": True
+        }
 
 
-def test_agent_runtime_can_use_exact_approval_callback(tmp_path):
+def test_agent_runtime_can_use_exact_approval_callback(
+    tmp_path,
+):
     tools = FakeTools()
-    faults = FaultLog(tmp_path / "faults.json")
-    runner = AgentRuntime(
-        FakeModels(), tools, object(), faults,
-        status=StatusTracker(heartbeat_interval=0.01),
-        approval_callback=lambda request: request.approval_id,
+
+    faults = FaultLog(
+        tmp_path / "faults.json"
     )
-    result = runner.run(profile="engineer", messages=[{"role": "user", "content": "go"}])
+
+    runner = AgentRuntime(
+        FakeModels(),
+        tools,
+        object(),
+        faults,
+        status=StatusTracker(
+            heartbeat_interval=0.01
+        ),
+        approval_callback=(
+            lambda request:
+            request.approval_id
+        ),
+    )
+
+    result = runner.run(
+        profile="engineer",
+        messages=[
+            {
+                "role": "user",
+                "content": "go",
+            }
+        ],
+    )
+
     assert result.content == "done"
-    assert tools.calls == [{"plan": "change one"}, {"plan": "change one", "approval_id": "a1"}]
+
+    assert tools.calls == [
+        {
+            "plan": "change one"
+        },
+        {
+            "plan": "change one",
+            "approval_id": "a1",
+        },
+    ]

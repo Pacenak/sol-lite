@@ -52,9 +52,27 @@ _FORBIDDEN_USER_SECTIONS = frozenset(
 
 def deep_merge(
     base: dict[str, Any],
-    override: dict[str, Any],
+    override: dict[str, Any] | None,
 ) -> dict[str, Any]:
-    """Return a recursive merge without mutating either input mapping."""
+    """Return a recursive merge without mutating either input mapping.
+
+    ``None`` represents an absent configuration override and therefore
+    produces an independent copy of ``base``. Any other non-mapping
+    override is rejected at the configuration boundary.
+    """
+    if not isinstance(base, dict):
+        raise TypeError(
+            "Configuration base must be a mapping."
+        )
+
+    if override is None:
+        return copy.deepcopy(base)
+
+    if not isinstance(override, dict):
+        raise TypeError(
+            "Configuration override must be a mapping or None."
+        )
+
     result = copy.deepcopy(base)
 
     for key, value in override.items():
@@ -63,7 +81,10 @@ def deep_merge(
             and isinstance(result[key], dict)
             and isinstance(value, dict)
         ):
-            result[key] = deep_merge(result[key], value)
+            result[key] = deep_merge(
+                result[key],
+                value,
+            )
         else:
             result[key] = copy.deepcopy(value)
 
@@ -328,7 +349,11 @@ class UserSettingsStore:
         temporary_path = Path(temporary_name)
 
         try:
-            with os.fdopen(fd, "w", encoding="utf-8") as handle:
+            with os.fdopen(
+                fd,
+                "w",
+                encoding="utf-8",
+            ) as handle:
                 handle.write(payload)
                 handle.flush()
                 os.fsync(handle.fileno())
@@ -354,7 +379,9 @@ class UserSettingsStore:
         or other protected configuration into the runtime.
         """
         if not isinstance(repository_config, dict):
-            raise TypeError("Repository configuration must be a mapping.")
+            raise TypeError(
+                "Repository configuration must be a mapping."
+            )
 
         filtered = {
             key: value
@@ -362,9 +389,15 @@ class UserSettingsStore:
             if key in SUPPORTED_USER_SECTIONS
         }
 
-        return deep_merge(repository_config, filtered)
+        return deep_merge(
+            repository_config,
+            filtered,
+        )
 
-    def _validate_section_name(self, section: str) -> None:
+    def _validate_section_name(
+        self,
+        section: str,
+    ) -> None:
         if section in _FORBIDDEN_USER_SECTIONS:
             raise ValueError(
                 f"Configuration section '{section}' is protected."

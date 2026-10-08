@@ -28,6 +28,22 @@ def test_workspace_request_requires_native_workspace_tool(
         def profile(self, name):
             return self.Profile()
 
+        def chat(
+            self,
+            profile,
+            messages,
+            tools,
+        ):
+            profile_obj = self.profile(profile)
+
+            return self.provider.chat(
+                model=profile_obj.model,
+                messages=messages,
+                tools=tools,
+                temperature=profile_obj.temperature,
+                timeout=profile_obj.timeout_seconds,
+            )
+
     class Tools:
         def ollama_schemas(self):
             return []

@@ -46,7 +46,10 @@ def load_yaml(path: Path) -> dict[str, Any]:
             f"Configuration file not found: {path}"
         )
 
-    with path.open("r", encoding="utf-8") as handle:
+    with path.open(
+        "r",
+        encoding="utf-8",
+    ) as handle:
         data = yaml.safe_load(handle)
 
     if not isinstance(data, dict):
@@ -57,20 +60,38 @@ def load_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def load_config(root: Path | None = None) -> LoadedConfig:
-    root = (root or application_root()).resolve()
+def load_config(
+    root: Path | None = None,
+) -> LoadedConfig:
+    root = (
+        root or application_root()
+    ).resolve()
 
     load_dotenv(root / ".env")
 
     c = root / "config"
 
-    application = load_yaml(c / "sol-lite.yaml")
-    permissions = load_yaml(c / "permissions.yaml")
-    agents = load_yaml(c / "agents.yaml")
-    models = load_yaml(c / "models.yaml")
-    schedules = load_yaml(c / "schedules.yaml")
-    logging = load_yaml(c / "logging.yaml")
-    searxng = load_yaml(c / "searxng.yaml")
+    application = load_yaml(
+        c / "sol-lite.yaml"
+    )
+    permissions = load_yaml(
+        c / "permissions.yaml"
+    )
+    agents = load_yaml(
+        c / "agents.yaml"
+    )
+    models = load_yaml(
+        c / "models.yaml"
+    )
+    schedules = load_yaml(
+        c / "schedules.yaml"
+    )
+    logging = load_yaml(
+        c / "logging.yaml"
+    )
+    searxng = load_yaml(
+        c / "searxng.yaml"
+    )
 
     user_settings = UserSettingsStore()
 
@@ -98,21 +119,37 @@ def load_config(root: Path | None = None) -> LoadedConfig:
 
     agents = deep_merge(
         agents,
-        {"agents": user_settings.get("agents", {})},
+        user_settings.get(
+            "agents",
+            default={},
+        ),
     )
 
     models = deep_merge(
         models,
-        user_settings.get("models", {}),
+        user_settings.get(
+            "models",
+            default={},
+        ),
     )
 
     searxng = deep_merge(
         searxng,
-        user_settings.get("searxng", {}),
+        user_settings.get(
+            "searxng",
+            default={},
+        ),
     )
 
-    logging_override = user_settings.get("logging", {})
-    if isinstance(logging_override, dict):
+    logging_override = user_settings.get(
+        "logging",
+        default={},
+    )
+
+    if isinstance(
+        logging_override,
+        dict,
+    ):
         logging = deep_merge(
             logging,
             logging_override,
@@ -130,55 +167,99 @@ def load_config(root: Path | None = None) -> LoadedConfig:
     )
 
 
-def build_runtime_config(c: LoadedConfig) -> RuntimeConfig:
+def build_runtime_config(
+    c: LoadedConfig,
+) -> RuntimeConfig:
     application = c.application
 
     workspace = dict(
-        application.get("workspace", {})
+        application.get(
+            "workspace",
+            {},
+        )
     )
 
     data = dict(
-        application.get("data", {})
+        application.get(
+            "data",
+            {},
+        )
     )
 
-    if os.environ.get("SOL_WORKSPACE_ROOT"):
-        workspace["root"] = os.environ["SOL_WORKSPACE_ROOT"]
+    if os.environ.get(
+        "SOL_WORKSPACE_ROOT"
+    ):
+        workspace["root"] = os.environ[
+            "SOL_WORKSPACE_ROOT"
+        ]
 
-    if os.environ.get("SOL_DATA_ROOT"):
-        data["root"] = os.environ["SOL_DATA_ROOT"]
+    if os.environ.get(
+        "SOL_DATA_ROOT"
+    ):
+        data["root"] = os.environ[
+            "SOL_DATA_ROOT"
+        ]
 
     return RuntimeConfig(
         application=dict(
-            application.get("application", {})
+            application.get(
+                "application",
+                {},
+            )
         ),
         runtime=dict(
-            application.get("runtime", {})
+            application.get(
+                "runtime",
+                {},
+            )
         ),
         workspace=workspace,
         data=data,
         logging=dict(
-            application.get("logging", {})
+            application.get(
+                "logging",
+                {},
+            )
         ),
         background=dict(
-            application.get("background", {})
+            application.get(
+                "background",
+                {},
+            )
         ),
         macos=dict(
-            application.get("macos", {})
+            application.get(
+                "macos",
+                {},
+            )
         ),
         nas=dict(
-            application.get("nas", {})
+            application.get(
+                "nas",
+                {},
+            )
         ),
         bridge=dict(
-            application.get("bridge", {})
+            application.get(
+                "bridge",
+                {},
+            )
         ),
         windows=dict(
-            application.get("windows", {})
+            application.get(
+                "windows",
+                {},
+            )
         ),
     )
 
 
-def bootstrap(root: Path | None = None) -> Runtime:
-    root = (root or application_root()).resolve()
+def bootstrap(
+    root: Path | None = None,
+) -> Runtime:
+    root = (
+        root or application_root()
+    ).resolve()
 
     config = load_config(root)
 
@@ -201,12 +282,16 @@ def bootstrap(root: Path | None = None) -> Runtime:
         ),
     )
 
-    agents = AgentRegistry(config.agents)
+    agents = AgentRegistry(
+        config.agents
+    )
 
     approvals = ApprovalManager()
 
     permissions = PermissionEngine(
-        PermissionPolicy(config.permissions),
+        PermissionPolicy(
+            config.permissions
+        ),
         approvals,
     )
 
@@ -222,7 +307,10 @@ def bootstrap(root: Path | None = None) -> Runtime:
                 "file",
                 "./logs/sol-lite-audit.jsonl",
             )
-            if isinstance(log_setting, dict)
+            if isinstance(
+                log_setting,
+                dict,
+            )
             else "logs/sol-lite-audit.jsonl"
         )
     )
@@ -234,7 +322,9 @@ def bootstrap(root: Path | None = None) -> Runtime:
         / "faults.json"
     )
 
-    platform_adapter = get_platform_adapter()
+    platform_adapter = (
+        get_platform_adapter()
+    )
 
     skill_manager = SkillManager(
         runtime.root,
@@ -250,12 +340,16 @@ def bootstrap(root: Path | None = None) -> Runtime:
         )
     )
 
-    if os.environ.get("SOL_SEARXNG_URL"):
+    if os.environ.get(
+        "SOL_SEARXNG_URL"
+    ):
         search_config["url"] = os.environ[
             "SOL_SEARXNG_URL"
         ]
 
-    if os.environ.get("SOL_SEARXNG_ENABLED"):
+    if os.environ.get(
+        "SOL_SEARXNG_ENABLED"
+    ):
         search_config["enabled"] = (
             os.environ[
                 "SOL_SEARXNG_ENABLED"
@@ -298,9 +392,17 @@ def bootstrap(root: Path | None = None) -> Runtime:
     runtime.tools = tools
     runtime.tool_context = context
     runtime.platform = platform_adapter
-    runtime.workspace_manager = workspace_manager
-    runtime.session_manager = session_manager
-    runtime.skill_manager = skill_manager
-    runtime.user_settings = config.user_settings
+    runtime.workspace_manager = (
+        workspace_manager
+    )
+    runtime.session_manager = (
+        session_manager
+    )
+    runtime.skill_manager = (
+        skill_manager
+    )
+    runtime.user_settings = (
+        config.user_settings
+    )
 
     return runtime
