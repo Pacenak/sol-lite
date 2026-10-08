@@ -22,7 +22,7 @@ try:
         TextContent,
         Tool,
     )
-except ImportError:  # pragma: no cover - exercised when optional dependency is absent
+except ImportError:  # pragma: no cover - optional dependency
     MCPError = None
     Server = None
 
@@ -30,9 +30,9 @@ except ImportError:  # pragma: no cover - exercised when optional dependency is 
 class SOLMCPServer:
     """Expose an explicit SOL-Lite capability allow-list through MCP.
 
-    The MCP layer never becomes a permission bypass. Every capability must be
-    selected by policy and, for non-read-only operations, authorized by the
-    supplied callback before execution.
+    The MCP layer never becomes a permission bypass. Every capability must
+    satisfy exposure policy and, where required, receive an explicit
+    authorization decision before execution.
     """
 
     def __init__(
@@ -55,8 +55,13 @@ class SOLMCPServer:
         self.registry = registry
         self.dispatcher = dispatcher
         self.context = context
-        self.policy = policy or MCPExposurePolicy()
+        self.policy = (
+            policy
+            or MCPExposurePolicy()
+        )
         self.authorize = authorize
+        self.transport = "stdio"
+
         self.server = Server(
             name,
             version=version,
@@ -64,10 +69,40 @@ class SOLMCPServer:
             on_call_tool=self._call_tool,
         )
 
+    def _authorized(
+        self,
+        capability,
+        arguments: dict[str, Any],
+        ctx: Any,
+    ) -> bool:
+        if self.authorize is None:
+            return False
+
+        return bool(
+            self.authorize(
+                capability.identity,
+                arguments,
+                ctx,
+            )
+        )
+
     def _exposed(self):
         return [
-            cap for cap in self.registry.values()
-            if self.policy.allows(cap)
+            cap
+            for cap in self.registry.values()
+            if self.policy.allows(
+                cap,
+                transport=self.transport,
+                authorized=False,
+            )
+            or (
+                self.authorize is not None
+                and self.policy.allows(
+                    cap,
+                    transport=self.transport,
+                    authorized=True,
+                )
+            )
         ]
 
     async def _list_tools(
@@ -80,7 +115,9 @@ class SOLMCPServer:
                 Tool(
                     name=cap.identity,
                     description=cap.description,
-                    input_schema=dict(cap.input_schema),
+                    input_schema=dict(
+                        cap.input_schema
+                    ),
                     output_schema=(
                         dict(cap.output_schema)
                         if cap.output_schema
@@ -97,37 +134,34 @@ class SOLMCPServer:
         params: CallToolRequestParams,
     ) -> CallToolResult:
         try:
-            cap = self.registry.get(params.name)
+            cap = self.registry.get(
+                params.name
+            )
         except KeyError as exc:
             raise MCPError(
                 INVALID_PARAMS,
                 f"Unknown capability: {params.name}",
             ) from exc
 
-        if not self.policy.allows(cap):
+        arguments = dict(
+            params.arguments or {}
+        )
+
+        authorized = self._authorized(
+            cap,
+            arguments,
+            ctx,
+        )
+
+        if not self.policy.allows(
+            cap,
+            transport=self.transport,
+            authorized=authorized,
+        ):
             raise MCPError(
                 INVALID_PARAMS,
-                f"Capability is not exposed: {params.name}",
-            )
-
-        arguments = dict(params.arguments or {})
-
-        if (
-            self.policy.require_authorization
-            and RiskClass.READ_ONLY not in cap.risk
-            and (
-                self.authorize is None
-                or not self.authorize(cap.identity, arguments, ctx)
-            )
-        ):
-            return CallToolResult(
-                content=[
-                    TextContent(
-                        type="text",
-                        text="SOL-Lite authorization denied.",
-                    )
-                ],
-                is_error=True,
+                f"Capability is not exposed: "
+                f"{params.name}",
             )
 
         try:
@@ -141,13 +175,17 @@ class SOLMCPServer:
                 content=[
                     TextContent(
                         type="text",
-                        text=f"Capability execution failed: {exc}",
+                        text=(
+                            "Capability execution failed: "
+                            f"{exc}"
+                        ),
                     )
                 ],
                 is_error=True,
             )
 
         payload = result.value
+
         text = (
             payload
             if isinstance(payload, str)
@@ -159,10 +197,24 @@ class SOLMCPServer:
         )
 
         return CallToolResult(
-            content=[TextContent(type="text", text=text)],
+            content=[
+                TextContent(
+                    type="text",
+                    text=text,
+                )
+            ],
             is_error=not result.success,
         )
 
-    def run(self, *, transport: str = "stdio", **kwargs: Any) -> None:
+    def run(
+        self,
+        *,
+        transport: str = "stdio",
+        **kwargs: Any,
+    ) -> None:
         """Run the MCP server using an SDK-supported transport."""
-        self.server.run(transport=transport, **kwargs)
+        self.transport = transport
+        self.server.run(
+            transport=transport,
+            **kwargs,
+        )

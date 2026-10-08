@@ -29,8 +29,10 @@ class DiscoveredEndpoint:
 def _normalize_endpoint(endpoint: str) -> str:
     value = endpoint.strip().rstrip("/")
     parsed = urlparse(value)
+
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         raise ValueError(f"Invalid model endpoint: {endpoint!r}")
+
     return value
 
 
@@ -61,11 +63,16 @@ def classify_locality(endpoint: str) -> str:
 
 def _get_json(endpoint: str, path: str, timeout: float) -> dict:
     request = Request(endpoint + path, method="GET")
+
     with urlopen(request, timeout=timeout) as response:
-        payload = json.loads(response.read().decode("utf-8"))
+        payload = json.loads(
+            response.read().decode("utf-8")
+        )
 
     if not isinstance(payload, dict):
-        raise TypeError(f"Unexpected JSON response from {endpoint}{path}")
+        raise TypeError(
+            f"Unexpected JSON response from {endpoint}{path}"
+        )
 
     return payload
 
@@ -79,16 +86,31 @@ def discover_ollama(
 ) -> DiscoveredEndpoint:
     normalized = _normalize_endpoint(endpoint)
     locality = classify_locality(normalized)
-    effective_trust = locality == "host" if trusted is None else bool(trusted)
+
+    effective_trust = (
+        locality == "host"
+        if trusted is None
+        else bool(trusted)
+    )
 
     try:
-        _get_json(normalized, "/api/version", timeout)
-        tags = _get_json(normalized, "/api/tags", timeout)
+        _get_json(
+            normalized,
+            "/api/version",
+            timeout,
+        )
+
+        tags = _get_json(
+            normalized,
+            "/api/tags",
+            timeout,
+        )
 
         models = tuple(
             DiscoveredModel(str(item["name"]))
             for item in tags.get("models", ())
-            if isinstance(item, dict) and item.get("name")
+            if isinstance(item, dict)
+            and item.get("name")
         )
 
         return DiscoveredEndpoint(
@@ -100,12 +122,14 @@ def discover_ollama(
             effective_trust,
             models,
         )
+
     except (
         HTTPError,
         URLError,
         OSError,
         TimeoutError,
         ValueError,
+        TypeError,
         json.JSONDecodeError,
     ) as exc:
         return DiscoveredEndpoint(
@@ -130,29 +154,67 @@ def discover_configured_endpoints(
     if isinstance(provider, dict) and provider.get("endpoint"):
         endpoints.append(
             (
-                str(provider.get("name", "ollama-local")),
-                str(provider.get("type", "ollama")),
+                str(
+                    provider.get(
+                        "name",
+                        "ollama-local",
+                    )
+                ),
+                str(
+                    provider.get(
+                        "type",
+                        "ollama",
+                    )
+                ),
                 str(provider["endpoint"]),
-                bool(provider.get("trusted", False)),
+                bool(
+                    provider.get(
+                        "trusted",
+                        False,
+                    )
+                ),
             )
         )
 
     for item in config.get("providers", ()):
-        if not isinstance(item, dict) or not item.get("endpoint"):
+        if (
+            not isinstance(item, dict)
+            or not item.get("endpoint")
+        ):
             continue
 
         endpoints.append(
             (
-                str(item.get("name", f"provider-{len(endpoints)}")),
-                str(item.get("type", "ollama")),
+                str(
+                    item.get(
+                        "name",
+                        f"provider-{len(endpoints)}",
+                    )
+                ),
+                str(
+                    item.get(
+                        "type",
+                        "ollama",
+                    )
+                ),
                 str(item["endpoint"]),
-                bool(item.get("trusted", False)),
+                bool(
+                    item.get(
+                        "trusted",
+                        False,
+                    )
+                ),
             )
         )
 
     discovered = []
 
-    for name, provider_type, endpoint, trusted in endpoints:
+    for (
+        name,
+        provider_type,
+        endpoint,
+        trusted,
+    ) in endpoints:
         if provider_type.casefold() == "ollama":
             discovered.append(
                 discover_ollama(

@@ -5,6 +5,7 @@ from typing import Any
 
 from ..core.exceptions import ModelError
 
+
 _LOCALITY_RANK = {
     "host": 300,
     "network": 200,
@@ -30,7 +31,9 @@ class ModelRouter:
 
         for name, provider in self.providers.items():
             endpoint = provider.endpoint()
-            locality = str(endpoint.locality).casefold()
+            locality = str(
+                endpoint.locality
+            ).casefold()
 
             if locality not in _LOCALITY_RANK:
                 continue
@@ -40,7 +43,11 @@ class ModelRouter:
             # explicit trust attribute. Network and external endpoints
             # remain untrusted unless they explicitly opt in.
             trusted = bool(
-                getattr(endpoint, "trusted", locality == "host")
+                getattr(
+                    endpoint,
+                    "trusted",
+                    locality == "host",
+                )
             )
 
             if locality != "host" and not trusted:
@@ -55,12 +62,20 @@ class ModelRouter:
             ):
                 continue
 
-            capabilities = getattr(endpoint, "capabilities", None)
+            capabilities = getattr(
+                endpoint,
+                "capabilities",
+                None,
+            )
 
             missing = [
                 capability
                 for capability in profile.capabilities
-                if not getattr(capabilities, capability, False)
+                if not getattr(
+                    capabilities,
+                    capability,
+                    False,
+                )
             ]
 
             if missing:
@@ -71,7 +86,9 @@ class ModelRouter:
             if trusted:
                 score += 25
 
-            reasons = [f"locality={locality}"]
+            reasons = [
+                f"locality={locality}",
+            ]
 
             if trusted:
                 reasons.append("trusted")
@@ -103,9 +120,15 @@ class ModelRouter:
 
         if not candidates:
             raise ModelError(
-                f"No eligible model provider for profile '{profile.name}'."
+                f"No eligible model provider for profile "
+                f"'{profile.name}'."
             )
 
         chosen = candidates[0]
 
-        return self.providers[chosen.provider_name], chosen
+        return (
+            self.providers[
+                chosen.provider_name
+            ],
+            chosen,
+        )

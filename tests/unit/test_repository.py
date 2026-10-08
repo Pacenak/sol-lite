@@ -14,7 +14,9 @@ from sol_lite.tools.base import ToolContext
 def repository_context(tmp_path):
     root = tmp_path / "workspace"
     root.mkdir()
+
     (root / "src").mkdir()
+
     (root / "src" / "example.py").write_text(
         "answer = 42\n",
         encoding="utf-8",
@@ -47,8 +49,12 @@ def repository_context(tmp_path):
             policy,
             ApprovalManager(),
         ),
-        audit=AuditLogger(tmp_path / "audit.jsonl"),
-        fault_log=FaultLog(tmp_path / "faults.json"),
+        audit=AuditLogger(
+            tmp_path / "audit.jsonl"
+        ),
+        fault_log=FaultLog(
+            tmp_path / "faults.json"
+        ),
         platform=SimpleNamespace(),
     )
 
@@ -65,13 +71,21 @@ def _git(cwd, *args):
     )
 
 
-def _approve(ctx, operation, target, arguments, plan):
-    request = ctx.permission_engine.approvals.request(
-        operation,
-        target,
-        arguments,
-        plan,
-        capability=operation,
+def _approve(
+    ctx,
+    operation,
+    target,
+    arguments,
+    plan,
+):
+    request = (
+        ctx.permission_engine.approvals.request(
+            operation,
+            target,
+            arguments,
+            plan,
+            capability=operation,
+        )
     )
 
     return request.approval_id
