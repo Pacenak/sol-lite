@@ -248,12 +248,10 @@ class AgentRuntime:
                     round=number,
                 )
 
-                response = self.model_manager.provider.chat(
-                    model=profile_obj.model,
-                    messages=current,
-                    tools=self.tools.ollama_schemas(),
-                    temperature=profile_obj.temperature,
-                    timeout=profile_obj.timeout_seconds,
+                response = self.model_manager.chat(
+                    profile,
+                    current,
+                    self.tools.ollama_schemas(),
                 )
 
                 message = getattr(
