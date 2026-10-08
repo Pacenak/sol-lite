@@ -226,8 +226,6 @@ class SettingsMenu:
             header_style="sol_core_bold",
         )
 
-        overrides = self.store.settings
-
         for path, value, source in entries:
             table.add_row(
                 Text(path, style="sol_identity"),
