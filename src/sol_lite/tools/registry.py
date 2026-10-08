@@ -75,9 +75,7 @@ class ToolRegistry:
                     "filesystem.write",
                 )
 
-            elif (
-                tool.name in _REPOSITORY_REMOTE
-            ):
+            elif tool.name in _REPOSITORY_REMOTE:
                 tool.permissions = (
                     "repository.remote",
                 )
@@ -92,10 +90,7 @@ class ToolRegistry:
                     "repository.write",
                 )
 
-            elif (
-                tool.name
-                == "execute_terminal_command"
-            ):
+            elif tool.name == "execute_terminal_command":
                 tool.permissions = (
                     "terminal.write",
                 )
@@ -119,10 +114,7 @@ class ToolRegistry:
                     RiskClass.READ_ONLY,
                 )
 
-            elif (
-                tool.name
-                in _REPOSITORY_REMOTE
-            ):
+            elif tool.name in _REPOSITORY_REMOTE:
                 tool.risk = (
                     RiskClass.MUTATING,
                     RiskClass.REMOTE,
@@ -212,12 +204,18 @@ class ToolRegistry:
         except SOLLiteError:
             raise
 
+        except KeyError as exc:
+            raise ToolExecutionError(
+                f"Unknown native tool: {name}"
+            ) from exc
+
         except (
             FileExistsError,
             FileNotFoundError,
             IsADirectoryError,
             NotADirectoryError,
             RuntimeError,
+            TypeError,
             ValueError,
             PermissionError,
         ) as exc:

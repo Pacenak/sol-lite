@@ -91,7 +91,9 @@ def run_live_smoke(runtime, agent_id):
             f"Unknown agent: {agent_id}"
         )
 
-    agent = runtime.agents.get(agent_id)
+    agent = runtime.agents.get(
+        agent_id
+    )
 
     status = StatusTracker(
         heartbeat_interval=5,
@@ -116,7 +118,7 @@ def run_live_smoke(runtime, agent_id):
         "Use inventory_workspace exactly once, "
         "do not modify files, then report the number "
         "of files found. Native structured tool calls only. "
-        "Never emit tool JSON or <function=...> as ordinary text."
+        "Never represent a tool invocation as ordinary text."
     )
 
     audit_before = (
@@ -144,7 +146,10 @@ def run_live_smoke(runtime, agent_id):
         ],
     )
 
-    if result.cancelled or result.stopped_reason:
+    if (
+        result.cancelled
+        or result.stopped_reason
+    ):
         raise RuntimeError(
             "Live agent stopped: "
             f"{result.stopped_reason}"
@@ -369,15 +374,21 @@ def main():
             default_agent = "sol_pa"
 
             if runtime.user_settings is not None:
-                configured_agent = runtime.user_settings.get(
-                    "general",
-                    "default_agent",
-                    default_agent,
+                configured_agent = (
+                    runtime.user_settings.get(
+                        "general",
+                        "default_agent",
+                        default_agent,
+                    )
                 )
 
                 if (
-                    isinstance(configured_agent, str)
-                    and configured_agent in runtime.agents.names()
+                    isinstance(
+                        configured_agent,
+                        str,
+                    )
+                    and configured_agent
+                    in runtime.agents.names()
                 ):
                     default_agent = configured_agent
 
@@ -394,16 +405,23 @@ def main():
                 tools=runtime.tools,
                 tool_context=runtime.tool_context,
                 fault_log=runtime.fault_log,
-                workspace_manager=runtime.workspace_manager,
-                session_manager=runtime.session_manager,
-                skill_manager=runtime.skill_manager,
+                workspace_manager=(
+                    runtime.workspace_manager
+                ),
+                session_manager=(
+                    runtime.session_manager
+                ),
+                skill_manager=(
+                    runtime.skill_manager
+                ),
                 task_manager=runtime.tasks,
                 initial_agent=initial_agent,
                 initial_workspace=args.workspace,
                 verbose=(
                     args.verbose
                     or (
-                        runtime.user_settings is not None
+                        runtime.user_settings
+                        is not None
                         and runtime.user_settings.get(
                             "display",
                             "mode",

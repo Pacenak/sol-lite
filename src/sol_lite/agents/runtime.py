@@ -8,7 +8,12 @@ import threading
 from dataclasses import dataclass
 
 from ..core.event_bus import Event
-from ..core.exceptions import AgentError, ApprovalRequired, ToolExecutionError
+from ..core.exceptions import (
+    AgentError,
+    ApprovalRequired,
+    PermissionDenied,
+    ToolExecutionError,
+)
 from .repeat_guard import RepeatToolGuard
 from .status import MAX_TOOL_ROUNDS, StatusTracker
 
@@ -80,7 +85,10 @@ WORKSPACE_EVIDENCE_PATTERNS = (
 
 
 def phase_from_prompt_name(name):
-    return PHASES.get(os.path.basename(name)[:2], "INTERACTIVE")
+    return PHASES.get(
+        os.path.basename(name)[:2],
+        "INTERACTIVE",
+    )
 
 
 @dataclass(slots=True)
@@ -127,7 +135,11 @@ class AgentRuntime:
     def _emit(self, event_type, **data):
         if self.event_bus is not None:
             self.event_bus.publish(
-                Event(event_type, "agent_runtime", data)
+                Event(
+                    event_type,
+                    "agent_runtime",
+                    data,
+                )
             )
 
     def cancel(self):
@@ -140,12 +152,18 @@ class AgentRuntime:
         user_text = "\n".join(
             str(message.get("content", ""))
             for message in messages
-            if isinstance(message, dict)
-            and message.get("role") == "user"
+            if (
+                isinstance(message, dict)
+                and message.get("role") == "user"
+            )
         )
 
         return any(
-            re.search(pattern, user_text, re.IGNORECASE)
+            re.search(
+                pattern,
+                user_text,
+                re.IGNORECASE,
+            )
             for pattern in WORKSPACE_EVIDENCE_PATTERNS
         )
 
@@ -156,7 +174,13 @@ class AgentRuntime:
             for name in tool_names
         )
 
-    def run(self, *, profile, messages, prompt_name=""):
+    def run(
+        self,
+        *,
+        profile,
+        messages,
+        prompt_name="",
+    ):
         self._cancel_event.clear()
         self._last_status_event = None
 
@@ -173,7 +197,9 @@ class AgentRuntime:
                 self._last_status_event = "STALLED"
                 self._emit("agent.stalled")
 
-        self.status.start(callback=status_update)
+        self.status.start(
+            callback=status_update
+        )
 
         self.status.begin(
             phase_from_prompt_name(prompt_name),
@@ -186,7 +212,10 @@ class AgentRuntime:
             prompt_name=prompt_name,
         )
 
-        guard = RepeatToolGuard(self.repeat_tool_threshold)
+        guard = RepeatToolGuard(
+            self.repeat_tool_threshold
+        )
+
         current = list(messages)
 
         if self.skill_context:
@@ -196,7 +225,9 @@ class AgentRuntime:
                 f"{self.skill_context}"
             ).strip()
 
-        profile_obj = self.model_manager.profile(profile)
+        profile_obj = self.model_manager.profile(
+            profile
+        )
 
         tool_calls_total = 0
         tool_failures = 0
@@ -204,7 +235,9 @@ class AgentRuntime:
         raw_tool_like = False
 
         required_workspace_evidence = (
-            self._requires_workspace_evidence(messages)
+            self._requires_workspace_evidence(
+                messages
+            )
         )
 
         workspace_tools_used = set()
@@ -260,11 +293,13 @@ class AgentRuntime:
                     None,
                 )
 
-                if message is None and isinstance(
-                    response,
-                    dict,
+                if (
+                    message is None
+                    and isinstance(response, dict)
                 ):
-                    message = response.get("message")
+                    message = response.get(
+                        "message"
+                    )
 
                 if message is None:
                     raise AgentError(
@@ -272,12 +307,20 @@ class AgentRuntime:
                     )
 
                 content = (
-                    getattr(message, "content", "")
+                    getattr(
+                        message,
+                        "content",
+                        "",
+                    )
                     or ""
                 )
 
                 calls = (
-                    getattr(message, "tool_calls", None)
+                    getattr(
+                        message,
+                        "tool_calls",
+                        None,
+                    )
                     or []
                 )
 
@@ -294,13 +337,17 @@ class AgentRuntime:
                 # ---------------------------------------------------------
                 if not calls:
                     raw_tool_like = (
-                        self._looks_like_tool_like_content(content)
+                        self._looks_like_tool_like_content(
+                            content
+                        )
                     )
 
                     if raw_tool_like:
                         code = (
                             "RAW_JSON_IN_CONTENT"
-                            if self._looks_like_raw_tool_json(content)
+                            if self._looks_like_raw_tool_json(
+                                content
+                            )
                             else "TOOL_LIKE_CONTENT"
                         )
 
@@ -318,7 +365,10 @@ class AgentRuntime:
 
                         self.status.finish(
                             "FAILED",
-                            "Model emitted tool-like text instead of a native tool call",
+                            (
+                                "Model emitted tool-like text "
+                                "instead of a native tool call"
+                            ),
                         )
 
                         return AgentResult(
@@ -332,14 +382,6 @@ class AgentRuntime:
                             True,
                         )
 
-                    # -----------------------------------------------------
-                    # Workspace evidence gate.
-                    #
-                    # This is deliberately enforced in the runtime rather
-                    # than relying only on the prompt. A model cannot claim
-                    # repository analysis without an actual native workspace
-                    # tool having executed.
-                    # -----------------------------------------------------
                     if (
                         required_workspace_evidence
                         and not self._workspace_tool_was_used(
@@ -359,7 +401,10 @@ class AgentRuntime:
 
                         self.status.finish(
                             "FAILED",
-                            "Workspace evidence is required before completing this task",
+                            (
+                                "Workspace evidence is required "
+                                "before completing this task"
+                            ),
                         )
 
                         return AgentResult(
@@ -379,7 +424,10 @@ class AgentRuntime:
                     ):
                         self.status.finish(
                             "FAILED",
-                            "Model returned no tool call and no final response",
+                            (
+                                "Model returned no tool call "
+                                "and no final response"
+                            ),
                         )
 
                         self.fault_log.log(
@@ -427,6 +475,20 @@ class AgentRuntime:
 
                 # ---------------------------------------------------------
                 # Native structured tool calls.
+                #
+                # CRITICAL:
+                #
+                # Preserve the exact provider-native assistant message.
+                # Do not reconstruct it into an OpenAI-shaped dictionary.
+                #
+                # Ollama's Message object can contain fields such as:
+                #   role
+                #   content
+                #   thinking
+                #   tool_calls
+                #
+                # The continuation must contain that exact assistant
+                # message followed by role=tool results.
                 # ---------------------------------------------------------
                 native_calls += len(calls)
 
@@ -435,7 +497,11 @@ class AgentRuntime:
                 )
 
                 for call in calls:
-                    name, args = self._normalize_tool_call(call)
+                    name, args = (
+                        self._normalize_tool_call(
+                            call
+                        )
+                    )
 
                     tool_calls_total += 1
 
@@ -446,22 +512,31 @@ class AgentRuntime:
                         round=number,
                     )
 
-                    if name in WORKSPACE_TOOL_NAMES:
-                        workspace_tools_used.add(name)
-
+                    # -----------------------------------------------------
+                    # Repeat protection.
+                    #
+                    # A native tool call still requires a corresponding
+                    # tool result. Injecting a user message here would
+                    # leave the assistant tool call structurally unmatched.
+                    # -----------------------------------------------------
                     if guard.record(name, args):
-                        warning = (
-                            "The same tool operation has repeated "
-                            "without new evidence. "
-                            "Do not repeat it. Reassess the task "
-                            "using existing evidence."
-                        )
+                        result = {
+                            "ok": False,
+                            "error": (
+                                "The same tool operation was repeated "
+                                "without new evidence."
+                            ),
+                            "tool": name,
+                            "reason": "repeat_guard",
+                        }
+
+                        tool_failures += 1
 
                         current.append(
-                            {
-                                "role": "user",
-                                "content": warning,
-                            }
+                            self._tool_result_message(
+                                name,
+                                result,
+                            )
                         )
 
                         self.fault_log.log(
@@ -472,7 +547,10 @@ class AgentRuntime:
                         )
 
                         self.status.touch(
-                            "No progress detected; corrective instruction sent"
+                            (
+                                "No progress detected; "
+                                "tool result returned to model"
+                            )
                         )
 
                         self._emit(
@@ -521,16 +599,21 @@ class AgentRuntime:
                         )
 
                         if (
-                            self.approval_callback is not None
+                            self.approval_callback
+                            is not None
                             and exc.request is not None
                         ):
-                            approval_id = self.approval_callback(
-                                exc.request
+                            approval_id = (
+                                self.approval_callback(
+                                    exc.request
+                                )
                             )
 
                         if approval_id:
                             approved_args = dict(args)
-                            approved_args["approval_id"] = approval_id
+                            approved_args[
+                                "approval_id"
+                            ] = approval_id
 
                             self.status.touch(
                                 f"Approved · executing {name}"
@@ -542,27 +625,43 @@ class AgentRuntime:
                             )
 
                             try:
-                                result = self.tools.execute(
-                                    name,
-                                    approved_args,
-                                    self.tool_context,
+                                result = (
+                                    self.tools.execute(
+                                        name,
+                                        approved_args,
+                                        self.tool_context,
+                                    )
                                 )
 
-                            except ToolExecutionError as approved_exc:
+                            except (
+                                ToolExecutionError,
+                                PermissionDenied,
+                            ) as approved_exc:
                                 tool_failures += 1
                                 self.status.error()
 
                                 self.fault_log.log(
                                     category="tool",
-                                    code="TOOL_EXECUTION_ERROR",
+                                    code=(
+                                        "TOOL_EXECUTION_ERROR"
+                                        if isinstance(
+                                            approved_exc,
+                                            ToolExecutionError,
+                                        )
+                                        else "PERMISSION_DENIED"
+                                    ),
                                     tool=name,
                                     arguments=approved_args,
-                                    error=str(approved_exc),
+                                    error=str(
+                                        approved_exc
+                                    ),
                                 )
 
                                 result = {
                                     "ok": False,
-                                    "error": str(approved_exc),
+                                    "error": str(
+                                        approved_exc
+                                    ),
                                     "tool": name,
                                 }
 
@@ -587,6 +686,31 @@ class AgentRuntime:
                                 "tool": name,
                             }
 
+                    except PermissionDenied as exc:
+                        tool_failures += 1
+                        self.status.error()
+
+                        self.fault_log.log(
+                            category="permission",
+                            code="PERMISSION_DENIED",
+                            tool=name,
+                            arguments=args,
+                            error=str(exc),
+                        )
+
+                        self._emit(
+                            "tool.rejected",
+                            tool=name,
+                            reason="permission_denied",
+                        )
+
+                        result = {
+                            "ok": False,
+                            "error": str(exc),
+                            "permission_denied": True,
+                            "tool": name,
+                        }
+
                     except ToolExecutionError as exc:
                         tool_failures += 1
                         self.status.error()
@@ -610,22 +734,49 @@ class AgentRuntime:
                             "tool.completed",
                             tool=name,
                             failed=(
-                                isinstance(result, dict)
-                                and result.get("ok") is False
+                                isinstance(
+                                    result,
+                                    dict,
+                                )
+                                and result.get("ok")
+                                is False
                             ),
                         )
 
-                        self.status.tool_complete(name)
+                        self.status.tool_complete(
+                            name
+                        )
 
+                    # -----------------------------------------------------
+                    # Workspace evidence is only valid after the tool
+                    # actually returned successfully.
+                    #
+                    # A requested/attempted tool call is not evidence.
+                    # -----------------------------------------------------
+                    successful = not (
+                        isinstance(
+                            result,
+                            dict,
+                        )
+                        and result.get("ok") is False
+                    )
+
+                    if (
+                        successful
+                        and name in WORKSPACE_TOOL_NAMES
+                    ):
+                        workspace_tools_used.add(
+                            name
+                        )
+
+                    # -----------------------------------------------------
+                    # Every native tool call gets exactly one tool result.
+                    # -----------------------------------------------------
                     current.append(
-                        {
-                            "role": "tool",
-                            "tool_name": name,
-                            "content": json.dumps(
-                                result,
-                                ensure_ascii=False,
-                            ),
-                        }
+                        self._tool_result_message(
+                            name,
+                            result,
+                        )
                     )
 
             self.status.finish(
@@ -697,7 +848,10 @@ class AgentRuntime:
     def _looks_like_raw_tool_json(content):
         text = content.strip()
 
-        if not text.startswith("{") or not text.endswith("}"):
+        if (
+            not text.startswith("{")
+            or not text.endswith("}")
+        ):
             return False
 
         try:
@@ -715,7 +869,9 @@ class AgentRuntime:
     def _looks_like_tool_like_content(content):
         text = content.strip()
 
-        if AgentRuntime._looks_like_raw_tool_json(text):
+        if AgentRuntime._looks_like_raw_tool_json(
+            text
+        ):
             return True
 
         return bool(
@@ -763,7 +919,10 @@ class AgentRuntime:
                 "Unsupported Ollama native tool-call structure."
             )
 
-        if not isinstance(name, str) or not name:
+        if not isinstance(
+            name,
+            str,
+        ) or not name:
             raise AgentError(
                 "Native tool call has no valid function name."
             )
@@ -785,31 +944,27 @@ class AgentRuntime:
 
     @staticmethod
     def _assistant_message(message):
-        calls = (
-            getattr(message, "tool_calls", None)
-            or []
-        )
+        """Return the provider-native assistant message unchanged.
 
-        normalized = [
-            AgentRuntime._normalize_tool_call(call)
-            for call in calls
-        ]
+        Ollama's tool-calling protocol requires the assistant response
+        returned by the provider to be placed back into the conversation.
+        Rebuilding that response into another provider's message format can
+        discard provider-specific fields such as thinking and can corrupt
+        the continuation protocol.
 
+        The native Ollama Message object is accepted directly by the
+        official Python client, so no normalization is performed here.
+        """
+        return message
+
+    @staticmethod
+    def _tool_result_message(name, result):
+        """Build the native Ollama-compatible tool result message."""
         return {
-            "role": "assistant",
-            "content": getattr(
-                message,
-                "content",
-                "",
-            ) or "",
-            "tool_calls": [
-                {
-                    "type": "function",
-                    "function": {
-                        "name": name,
-                        "arguments": args,
-                    },
-                }
-                for name, args in normalized
-            ],
+            "role": "tool",
+            "tool_name": name,
+            "content": json.dumps(
+                result,
+                ensure_ascii=False,
+            ),
         }
