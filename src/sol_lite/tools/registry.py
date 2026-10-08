@@ -5,7 +5,6 @@ from ..capabilities.risk import RiskClass
 from ..core.exceptions import SOLLiteError, ToolExecutionError
 from .base import ToolDefinition
 
-
 _READ = {
     "inventory_workspace",
     "list_project_structure",

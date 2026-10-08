@@ -6,7 +6,7 @@ import re
 import shutil
 import subprocess
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urlparse, urlsplit, urlunparse
 
 from ..core.exceptions import ToolExecutionError
 from ..permissions.scopes import REPOSITORY_READ, REPOSITORY_REMOTE, REPOSITORY_WRITE
@@ -89,16 +89,44 @@ def _has_commit(repo: Path) -> bool:
     return True
 
 
-def _safe_remote(value: str) -> str:
-    parsed = urlsplit(value)
-    if parsed.scheme and parsed.netloc:
-        host = parsed.hostname or ""
-        if parsed.port:
-            host = f"{host}:{parsed.port}"
-        return urlunsplit((parsed.scheme, host, parsed.path, "", ""))
-    if "@" in value and ":" in value.split("@", 1)[0]:
-        return value.split("@", 1)[1]
-    return value
+def _safe_remote(remote: str) -> str:
+    """Return a credential-free representation of a Git remote."""
+    value = remote.strip()
+
+    if "://" not in value:
+        if "@" in value and ":" in value:
+            _, remainder = value.split("@", 1)
+            return remainder.split("#", 1)[0].split("?", 1)[0]
+
+        return value.split("#", 1)[0].split("?", 1)[0]
+
+    parsed = urlparse(value)
+
+    hostname = parsed.hostname or ""
+
+    if not hostname:
+        return value.split("#", 1)[0].split("?", 1)[0]
+
+    if ":" in hostname and not hostname.startswith("["):
+        host = f"[{hostname}]"
+    else:
+        host = hostname
+
+    if parsed.port is not None:
+        host = f"{host}:{parsed.port}"
+
+    path = parsed.path or ""
+
+    return urlunparse(
+        (
+            parsed.scheme,
+            host,
+            path,
+            "",
+            "",
+            "",
+        )
+    )
 
 
 def _reject_embedded_credentials(value: str) -> None:

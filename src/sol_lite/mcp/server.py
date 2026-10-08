@@ -6,7 +6,6 @@ from typing import Any
 
 from ..capabilities.dispatcher import CapabilityDispatcher
 from ..capabilities.registry import CapabilityRegistry
-from ..capabilities.risk import RiskClass
 from ..core.exceptions import SOLLiteError
 from .security import AuthorizationCallback, MCPExposurePolicy
 

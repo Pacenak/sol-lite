@@ -70,14 +70,11 @@ class MCPExposurePolicy:
 
         # Mutating / privileged / remote / network / destructive /
         # credential-sensitive capabilities require explicit authorization.
-        if (
+        return not (
             self.require_authorization
             and not read_only
             and not authorized
-        ):
-            return False
-
-        return True
+        )
 
 
 AuthorizationCallback = Callable[

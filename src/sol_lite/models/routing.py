@@ -5,7 +5,6 @@ from typing import Any
 
 from ..core.exceptions import ModelError
 
-
 _LOCALITY_RANK = {
     "host": 300,
     "network": 200,
