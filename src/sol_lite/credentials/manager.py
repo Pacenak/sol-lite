@@ -1,7 +1,10 @@
 """Credential manager. Secrets never cross into model-facing context."""
 from __future__ import annotations
+
 from dataclasses import dataclass
 from typing import Protocol
+
+
 @dataclass(frozen=True, slots=True)
 class CredentialReference:
     provider: str

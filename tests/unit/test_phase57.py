@@ -1,6 +1,8 @@
 from pathlib import Path
-from sol_lite.guides import Guide, GuideResolver, build_plan
+
+from sol_lite.guides import GuideResolver, build_plan
 from sol_lite.orchestration import OperationPlan, Transaction, TransactionEngine
+
 
 def test_guide_resolver(tmp_path: Path):
     root=tmp_path/"guides"; root.mkdir()

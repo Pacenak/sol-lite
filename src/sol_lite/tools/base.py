@@ -1,8 +1,10 @@
 """Tool types and capability metadata."""
 from __future__ import annotations
+
 from collections.abc import Callable
 from dataclasses import dataclass, field
 from typing import Any
+
 
 @dataclass(slots=True)
 class ToolContext:
@@ -47,7 +49,11 @@ class ToolDefinition:
     provenance: dict[str, Any] = field(default_factory=dict)
 
     def as_capability(self):
-        from ..capabilities.definition import CapabilityDefinition, CapabilityLocality, CapabilityProvider
+        from ..capabilities.definition import (
+            CapabilityDefinition,
+            CapabilityLocality,
+            CapabilityProvider,
+        )
         from ..capabilities.risk import RiskClass
         risks = frozenset(r if isinstance(r, RiskClass) else RiskClass(r) for r in self.risk)
         return CapabilityDefinition(

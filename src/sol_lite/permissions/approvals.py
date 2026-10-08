@@ -1,8 +1,12 @@
 """Exact, expiring, identity-bound operation approvals."""
 from __future__ import annotations
-import hashlib,json,secrets
+
+import hashlib
+import json
+import secrets
 from dataclasses import dataclass
-from datetime import UTC,datetime,timedelta
+from datetime import UTC, datetime, timedelta
+
 
 @dataclass(frozen=True,slots=True)
 class ApprovalRequest:

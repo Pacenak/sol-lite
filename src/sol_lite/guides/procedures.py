@@ -1,7 +1,11 @@
 """Guide procedure planning without executing instructions."""
 from __future__ import annotations
+
 from dataclasses import dataclass
+
 from .models import Guide
+
+
 @dataclass(frozen=True, slots=True)
 class ProcedurePlan:
     guide_identity: str

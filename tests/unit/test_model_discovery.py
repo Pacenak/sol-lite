@@ -1,5 +1,6 @@
 from sol_lite.models.discovery import classify_locality, discover_configured_endpoints
 
+
 def test_locality_classification():
     assert classify_locality("http://127.0.0.1:11434") == "host"
     assert classify_locality("http://10.10.81.20:11434") == "network"

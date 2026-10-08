@@ -1,6 +1,6 @@
-from sol_lite.mcp.security import MCPExposurePolicy
 from sol_lite.capabilities.definition import CapabilityDefinition
 from sol_lite.capabilities.risk import RiskClass
+from sol_lite.mcp.security import MCPExposurePolicy
 
 
 def test_mcp_policy_defaults_to_read_only():

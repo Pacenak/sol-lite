@@ -33,7 +33,7 @@
     },
     {
       "path": "config/models.yaml",
-      "sha256": "cfab56be9888da87dbc23f7d605101c35f34373294285125def0fa93ceaf0c46"
+      "sha256": "963fcdd418049a5da4f8bd069269bdb7c014c9de6710c641465e5b54592f378b"
     },
     {
       "path": "config/permissions.yaml",
@@ -500,6 +500,22 @@
       "sha256": "be6421e44bebf60ef771d256763f719e985f7cee187e7c5058ec54c51740761b"
     },
     {
+      "path": "MCP-PHASE11-12-README.md",
+      "sha256": "da4db9e3deedff13f51760b8c2fcb0d66ad7d25f54be9647ddf5043871a76bb7"
+    },
+    {
+      "path": "PHASE13-README.md",
+      "sha256": "58bbccbfc78b928b98f3b38544b8fd9ee738dadd1a27ea0356f0690504e1d8f3"
+    },
+    {
+      "path": "PHASE14-README.md",
+      "sha256": "c6a7955845d61e67cffd92dc90f52b444006001430b47e40541ccf93f9535257"
+    },
+    {
+      "path": "PHASE8-10-README.md",
+      "sha256": "5a3c13b749ae8c35eeda654d5c7755ede4c36e1556d21a7153cc69c6caad516f"
+    },
+    {
       "path": "PLG_LOCAL_AGENT_SETUP.md",
       "sha256": "f5099a84205454fe883159efcad82d4fa4aed964cf11e18360d91037848cf26e"
     },
@@ -557,7 +573,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "58381d8c2f6614c10c864fe6ec07477c0fec6a227e1518aee00c6e4c217f8113"
+      "sha256": "ee61d1311aaeb33d2bda4801f519994aca240a704c2ed4fbf7bfe43c11204614"
     },
     {
       "path": "README.md",
@@ -653,7 +669,7 @@
     },
     {
       "path": "scripts/start.bat",
-      "sha256": "f43db21fe237e83da66c21dc1a8b642e6c2f07ae83cc251a95bee0414a4e485b"
+      "sha256": "87da1e7dfe5fe451f3481a12bd75b4f1e04c03e94fce1a9a279cc9261c42dd39"
     },
     {
       "path": "scripts/start.command",
@@ -889,7 +905,7 @@
     },
     {
       "path": "src/sol_lite/agents/engineer/prompt.md",
-      "sha256": "2dcb6bd5a8a1876055a1ed4b19b2af8e78e698fe946b2b9338095b88cf6b891c"
+      "sha256": "c27162eb60742de0c19e69e327345add71bc726704437cc424a842d907b30d6c"
     },
     {
       "path": "src/sol_lite/agents/engineer/tools.yaml",
@@ -929,7 +945,7 @@
     },
     {
       "path": "src/sol_lite/agents/shell.py",
-      "sha256": "6dae769e58b43817159ff4ad877564184a151761d42aa8d426be7796fa08ce9b"
+      "sha256": "71b300e9cf9ba261e2d90ad43d584d60d7b225b4fe38701219d41df6334cf27c"
     },
     {
       "path": "src/sol_lite/agents/status.py",
@@ -956,6 +972,30 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
+      "path": "src/sol_lite/capabilities/__init__.py",
+      "sha256": "1ce3c7fc61a3c3d959956a19fc251bfb0a29595c988aa2b68049b27e977d8155"
+    },
+    {
+      "path": "src/sol_lite/capabilities/definition.py",
+      "sha256": "dba1ce7e424814fd06ae06724c898f9fa7eba600a60d5c7e2229aac89dcdeb54"
+    },
+    {
+      "path": "src/sol_lite/capabilities/dispatcher.py",
+      "sha256": "462b443ea7e572d12c3dd79a2c2f07bc967930f345bc1f3d00cc25b166e805c6"
+    },
+    {
+      "path": "src/sol_lite/capabilities/evidence.py",
+      "sha256": "abb82558ff8ff7cc43e96e8d033b0744a66baf2bd0a8dd15b4c75b8f956b711b"
+    },
+    {
+      "path": "src/sol_lite/capabilities/registry.py",
+      "sha256": "eb715c616003ec35d4b3a9041a1c3837aff442482526ee0c54ca8e551e4012d7"
+    },
+    {
+      "path": "src/sol_lite/capabilities/risk.py",
+      "sha256": "256737e75cab9672802a75176917f053703fbab88c9bb3eaa0fe9e9d44f6bd55"
+    },
+    {
       "path": "src/sol_lite/core/__init__.py",
       "sha256": "f0489adf2cd5ec4707f32db017f42a276818d8f0071a195b75f30196f58c2519"
     },
@@ -965,7 +1005,7 @@
     },
     {
       "path": "src/sol_lite/core/exceptions.py",
-      "sha256": "d05bdde1f16f0e4ad2009a2532c2a12a703c933cacfa4aca06a13fcb7a81ad2e"
+      "sha256": "985979cf1f168590b6ba1a65abd9e996886bd7942111e6286a65dd6214c2a2ee"
     },
     {
       "path": "src/sol_lite/core/health.py",
@@ -981,11 +1021,19 @@
     },
     {
       "path": "src/sol_lite/core/session.py",
-      "sha256": "3757183e34e8defda8267d8ea646bf1b9048ef3dd10f8af3b4d29e1056b7caea"
+      "sha256": "86d02478450c24fe36a8144c36cfc25836ee293be3cd0ae87942ad91f1dd4440"
     },
     {
       "path": "src/sol_lite/core/tasks.py",
       "sha256": "2a78a2ece205a93ca363f876a0b0b12e28345b7757cc18eeebdb1b0381788232"
+    },
+    {
+      "path": "src/sol_lite/credentials/__init__.py",
+      "sha256": "4d218c16a00f06027d100b43f3cbd727d80545d6c53d20252304d7e5ec04449d"
+    },
+    {
+      "path": "src/sol_lite/credentials/manager.py",
+      "sha256": "18009a689ef5bc015a3ea926f2c0d4b67bfcfe8d7799b7eb9cb217a80397d036"
     },
     {
       "path": "src/sol_lite/documents/.gitkeep",
@@ -1000,8 +1048,44 @@
       "sha256": "525d520867f9212328ee3bccd6647721066885597bf7cfdf7c041dab8548bbb8"
     },
     {
+      "path": "src/sol_lite/guides/__init__.py",
+      "sha256": "41a145fa94da8d9302228172cda4dda52b12b3f10fbb3320c46425182e2684c6"
+    },
+    {
+      "path": "src/sol_lite/guides/models.py",
+      "sha256": "081519e646e15de48c61a3d9486e417676b47c9b12f37c3831c218512b319a66"
+    },
+    {
+      "path": "src/sol_lite/guides/procedures.py",
+      "sha256": "a24f19ab1d0023fdca9f46ac4acf67995f55e297be4908119a259584c8b2b30a"
+    },
+    {
+      "path": "src/sol_lite/guides/resolver.py",
+      "sha256": "1d2f1b071b35bd525b7a63ed1d560bc84345918b4f50a0f0bc4cf7ed312d22e2"
+    },
+    {
       "path": "src/sol_lite/integrations/.gitkeep",
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/sol_lite/mcp/__init__.py",
+      "sha256": "03045527faf25f66de835ca1b88ba02418231923ab7065028f3c4a4f2ab34f80"
+    },
+    {
+      "path": "src/sol_lite/mcp/client.py",
+      "sha256": "7482c12df893ae25734ef58d8166bbc8518b015267f7cfefad9a6d62f26bcef4"
+    },
+    {
+      "path": "src/sol_lite/mcp/security.py",
+      "sha256": "d1ffd6a5a12ddbe60de65354fb52824adab39ee9f54d58ad06daa2fbcc951641"
+    },
+    {
+      "path": "src/sol_lite/mcp/server.py",
+      "sha256": "8c7a97c0fc843fc33404a4bbfd4616605c3cee5fba7d317f451ff5fa128b8b0c"
+    },
+    {
+      "path": "src/sol_lite/mcp/transport.py",
+      "sha256": "fd903f8187d6e01f391fa4605cc5ae80c172d1ee1dace5dfb37b3e86009fd3a3"
     },
     {
       "path": "src/sol_lite/memory/.gitkeep",
@@ -1009,11 +1093,19 @@
     },
     {
       "path": "src/sol_lite/models/__init__.py",
-      "sha256": "9243f4e6feb3fb7393f4d326caf71da8381e0785b197777d5233ffa870add278"
+      "sha256": "1dc28860f646e646ea170cdb2f1ecb1b755578a56b791d37448fb150e73d0f44"
     },
     {
       "path": "src/sol_lite/models/base.py",
-      "sha256": "201e3ede02409c73da60b313f9e824d9fd7720e24af075840fb8f87401341642"
+      "sha256": "1fcba33618e116df4caa47be9e3c9b55b4cee0073c119ce4c2b3ae6f095e48c7"
+    },
+    {
+      "path": "src/sol_lite/models/discovery.py",
+      "sha256": "19b31e175190b594baa166d6684820901ada0c05873fd46ef718ef8394a667b7"
+    },
+    {
+      "path": "src/sol_lite/models/gateway.py",
+      "sha256": "90852640af0d164e682665457bca7169796f6dfd5b22e30ac7c209b1e25107fc"
     },
     {
       "path": "src/sol_lite/models/health.py",
@@ -1021,15 +1113,39 @@
     },
     {
       "path": "src/sol_lite/models/manager.py",
-      "sha256": "67c18e7e6803cf555ae97efeb172ae50011eba1b584de9c91926b430646cb1c9"
+      "sha256": "238e3e3dc8f776177160db4b00c94bc91fc2fb92635f8a0efcb3b1c2c460f962"
     },
     {
       "path": "src/sol_lite/models/ollama.py",
-      "sha256": "7a30d9215675228cfc8ddfaf68f740b4cbe3bd14963e78023a2e675beaec18f3"
+      "sha256": "26b2466211cfeedd327f35bed8f357b776342db424335c5fae012cb76bbdadc8"
     },
     {
       "path": "src/sol_lite/models/profiles.py",
-      "sha256": "4859ac51ab84c8b12ded62ba2bcd9be0fab9535e1980aeb1cb39ff26bffacfef"
+      "sha256": "1c2dca006eb1e68eaa805f7a8232a4c0d73677a19051c146edc9deebb44a2c1b"
+    },
+    {
+      "path": "src/sol_lite/models/routing.py",
+      "sha256": "c924874f92bcb4e11795388ba5bb024dd829b4903cc0fc317b3f62fab340525b"
+    },
+    {
+      "path": "src/sol_lite/orchestration/__init__.py",
+      "sha256": "3577931ea2761fcc96147996dd752d0028d1ce3e4fbe405b64be32b460e906aa"
+    },
+    {
+      "path": "src/sol_lite/orchestration/context.py",
+      "sha256": "b29a9d8e3eec54bd74d8dd0abf19d040653c9dbf81039efe01cffe694ff5e83c"
+    },
+    {
+      "path": "src/sol_lite/orchestration/events.py",
+      "sha256": "19dd72a952847d6bd2c47eeee15d467eba2e279dbfec23850e637eb4a22f5827"
+    },
+    {
+      "path": "src/sol_lite/orchestration/evidence.py",
+      "sha256": "c5239cf50837546bb9133d5dfe0b5be8d683c07522ec3dedc2620df98a037f78"
+    },
+    {
+      "path": "src/sol_lite/orchestration/transaction.py",
+      "sha256": "dc9b09439b545e23c5c3c411a08627ac4b9e681104a2f07b930483a013e5ea40"
     },
     {
       "path": "src/sol_lite/permissions/__init__.py",
@@ -1037,11 +1153,11 @@
     },
     {
       "path": "src/sol_lite/permissions/approvals.py",
-      "sha256": "38541647c434c759650aadb393bd5449b5452ec971a735c25f4cb85ff67e6553"
+      "sha256": "509b60200e019740edd6627baa3635cc45edf258a6c650860b3a36440a58f79f"
     },
     {
       "path": "src/sol_lite/permissions/engine.py",
-      "sha256": "590b4d2e6138da16dbb909c6ddfca4d7e68656ceeff7f742f73b6d26b8649832"
+      "sha256": "06a1d5a6ca531a85eb57586348d7f09273c2a4eddbbfc84097c78127acf075dc"
     },
     {
       "path": "src/sol_lite/permissions/policy.py",
@@ -1053,11 +1169,15 @@
     },
     {
       "path": "src/sol_lite/platform/__init__.py",
-      "sha256": "395ad464389f9eceeb4ed083e743d3ac68a7150a3c873139bbf2b17d896eed1e"
+      "sha256": "7ab96c81580c056420cb424992e377304ccd72db5e33b04f85eb86ddb943331f"
     },
     {
       "path": "src/sol_lite/platform/base.py",
       "sha256": "df7f92440754b8b0b8632600c2ab0f9c9d3277a54a4ac16dff9a45d99fdcc0cf"
+    },
+    {
+      "path": "src/sol_lite/platform/linux.py",
+      "sha256": "f6ae79c8436ce1768d626e3d9a2263147496de4ee824124b3e659adacfaebdf2"
     },
     {
       "path": "src/sol_lite/platform/macos.py",
@@ -1070,6 +1190,30 @@
     {
       "path": "src/sol_lite/prompts.py",
       "sha256": "235818012cbe87b4f43fc3f8eac933609d796e926a08f230e1696a1f0e5530fd"
+    },
+    {
+      "path": "src/sol_lite/remote/__init__.py",
+      "sha256": "6b6cd5852645081ff4d2cc0b5645af716f41259f17e79bcc93c5a61dd56dbcf9"
+    },
+    {
+      "path": "src/sol_lite/remote/credentials.py",
+      "sha256": "32377f2f2a2f2f004456e42f44fb9c069961968a8c5527efbc8b4c82ced93042"
+    },
+    {
+      "path": "src/sol_lite/remote/manager.py",
+      "sha256": "68ab12998e5d14997f78dd87f48bf6ae9e489d62375a1d354366843dfccb1033"
+    },
+    {
+      "path": "src/sol_lite/remote/nodes.py",
+      "sha256": "068e8b6b2a35895141ffa7053a07e874b89103ea7a810f79d0587b100a57068d"
+    },
+    {
+      "path": "src/sol_lite/remote/powershell.py",
+      "sha256": "5fb2cd67925a0b7b058b9e0ab95aaf0d500afde1bb730faa0407206e42420bb3"
+    },
+    {
+      "path": "src/sol_lite/remote/ssh.py",
+      "sha256": "0f172080f5d163ad70f188f0839178c99d7ce7ce88cb0783c925f673f12db321"
     },
     {
       "path": "src/sol_lite/scheduling/.gitkeep",
@@ -1085,7 +1229,7 @@
     },
     {
       "path": "src/sol_lite/security/path_guard.py",
-      "sha256": "2d7fcb91f60b3fbb3c87d4b54f7f2e7d508991669f88aa1b96f5fc53e648008f"
+      "sha256": "23198afcda470a3152918cc6045e64a6c4c679ef7189d0db9ab114065545250f"
     },
     {
       "path": "src/sol_lite/skills/.gitkeep",
@@ -1094,6 +1238,18 @@
     {
       "path": "src/sol_lite/skills/manager.py",
       "sha256": "94a2c4b6a5d8e507c834e2432ad5c97fc1b3e6f3faf118ac0a2415cbb7022dcb"
+    },
+    {
+      "path": "src/sol_lite/storage/__init__.py",
+      "sha256": "123f409ab0f8c58e7ed97a8a4484cd89eb3d887f5a915d43a796926eed8eeb44"
+    },
+    {
+      "path": "src/sol_lite/storage/authorization.py",
+      "sha256": "4ff49a0c4daccaf461e25448208d759b67851a01689e9801657533c307e95832"
+    },
+    {
+      "path": "src/sol_lite/storage/network.py",
+      "sha256": "5b28860437ec2c7822341099294f87bbfed3d38254d20f810f3b17ade321372e"
     },
     {
       "path": "src/sol_lite/terminal_ui.py",
@@ -1105,7 +1261,7 @@
     },
     {
       "path": "src/sol_lite/tools/base.py",
-      "sha256": "bdcae10e2af75c364622108e04292f489c904b17b104741f467277e8b3b73464"
+      "sha256": "4f2a07f02a8c50fa88d62e4af092e503e22fb12e53ad3f5d506fae41b1ab31fa"
     },
     {
       "path": "src/sol_lite/tools/context.py",
@@ -1117,7 +1273,7 @@
     },
     {
       "path": "src/sol_lite/tools/registry.py",
-      "sha256": "585996efcbe57f1a5f320e4b40c9b0a3cd8932ff97a51c5eeae564a31aad1787"
+      "sha256": "f69a2df88a096f70a7df76848673168b460b543e255389d9d3430d82000026b2"
     },
     {
       "path": "src/sol_lite/tools/repository.py",
@@ -1232,6 +1388,10 @@
       "sha256": "861ff1a8d92ccca2dfd14128a0395363481fb6538732e648f9c67fac3e4030e5"
     },
     {
+      "path": "tests/unit/test_capabilities.py",
+      "sha256": "1c6d0505f6adfe325da1408b1d945ec073c9047eed87e875f9a20be9c569e800"
+    },
+    {
       "path": "tests/unit/test_cli.py",
       "sha256": "0c1d88e64adaed72fa7610bd0b97678c2877ddd8e8627916242eb1417f263dfc"
     },
@@ -1244,8 +1404,36 @@
       "sha256": "94f94388a1a0709576134d82e4d7bc8504bd9274f0859598e8ac84cd709a8bc4"
     },
     {
+      "path": "tests/unit/test_mcp_contract.py",
+      "sha256": "bcfb7d8faa507afb16d5ca1e4bc604eda2b6135c762c9c4fced5aab8f92aaf15"
+    },
+    {
+      "path": "tests/unit/test_model_discovery.py",
+      "sha256": "b28a088b24d2ebd6363e366b66d18931c02d134a55c46d8f9d100c1bb5411dbf"
+    },
+    {
+      "path": "tests/unit/test_model_gateway.py",
+      "sha256": "98e773c2c0b1d29444ffa27326c2b780fce5e051f7934b15c7c48c268bb45bac"
+    },
+    {
+      "path": "tests/unit/test_model_routing.py",
+      "sha256": "5ae84e3be559cdc789cbedd652ce27b8cf3922e3e1d43dac37b7d4c2ee9a6b88"
+    },
+    {
       "path": "tests/unit/test_path_guard.py",
       "sha256": "c1d58bd50a61314d610d75d959f976f9aa84608363b6a1d5b2ee7c9d0de3ad5f"
+    },
+    {
+      "path": "tests/unit/test_phase57.py",
+      "sha256": "533b7297f3c9813c1807619f8ad5d10c8837ca08fef039e6321d02f166c93532"
+    },
+    {
+      "path": "tests/unit/test_phase8_10.py",
+      "sha256": "4e47231eca2073b83032514fc31accc7558736775a864b1657715fbf3e213bff"
+    },
+    {
+      "path": "tests/unit/test_platform_adapters.py",
+      "sha256": "76370ea47ce5cf4d7e9cba8f402083661714a3c1accd7ae2bbd956bc869ae80e"
     },
     {
       "path": "tests/unit/test_prompt_loader.py",
@@ -1254,6 +1442,10 @@
     {
       "path": "tests/unit/test_registry.py",
       "sha256": "5cc7082e7d4842aeaa65cf385303f78ecd189e310d171678b8a6ab7dc3f08393"
+    },
+    {
+      "path": "tests/unit/test_remote_infrastructure.py",
+      "sha256": "34df92a9d5ef398625314fe9ee04fd6c451c4521a6657f7aee89859e490ec173"
     },
     {
       "path": "tests/unit/test_repeat_guard.py",
@@ -1286,6 +1478,10 @@
     {
       "path": "tests/unit/test_status.py",
       "sha256": "24e8b9f64a2a5513a4e6f67a458b7038241c6b5b0fa6349bcba9c86bc33df40b"
+    },
+    {
+      "path": "tests/unit/test_storage_authorization.py",
+      "sha256": "191b879b90581c29a71ccd2434d59b5eedcba42fa7acb11c114b4cb1085ada6c"
     },
     {
       "path": "tests/unit/test_terminal_ui.py",

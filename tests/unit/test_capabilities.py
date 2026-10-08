@@ -1,5 +1,12 @@
-from sol_lite.capabilities import CapabilityDefinition, CapabilityDispatcher, CapabilityProvider, CapabilityRegistry, RiskClass
+from sol_lite.capabilities import (
+    CapabilityDefinition,
+    CapabilityDispatcher,
+    CapabilityProvider,
+    CapabilityRegistry,
+    RiskClass,
+)
 from sol_lite.orchestration import ContextManager, EvidenceLedger, TaskContext
+
 
 class Context:
     session_id = "session-1"

@@ -1,9 +1,16 @@
 """Session/workspace state with task-scoped explicit resource bindings."""
 from __future__ import annotations
-import json, os, platform, threading, uuid
+
+import json
+import os
+import platform
+import threading
+import uuid
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 from time import time
+
+
 @dataclass(slots=True)
 class Workspace:
     workspace_id:str; name:str; root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time)

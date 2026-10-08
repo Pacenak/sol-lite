@@ -1,9 +1,12 @@
 """Deterministic guide resolver over configured document sources."""
 from __future__ import annotations
+
 import json
 import re
 from pathlib import Path
+
 from .models import Guide, GuideMatch
+
 
 class GuideResolver:
     def __init__(self, roots: list[str | Path] | None = None):

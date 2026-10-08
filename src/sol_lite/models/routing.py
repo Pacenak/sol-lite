@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
+
 from ..core.exceptions import ModelError
 
 _LOCALITY_RANK = {"host": 300, "network": 200, "external": 100}

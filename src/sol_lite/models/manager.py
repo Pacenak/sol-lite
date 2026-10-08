@@ -6,6 +6,7 @@ from .health import diagnose_ollama
 from .ollama import OllamaProvider
 from .profiles import load_profiles
 
+
 class ModelManager:
     def __init__(self, config, host):
         self.config = dict(config)

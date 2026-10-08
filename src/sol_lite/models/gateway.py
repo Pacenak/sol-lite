@@ -2,8 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from typing import Any
+
 from ..core.exceptions import ModelError
 from .routing import ModelRouter
+
 
 @dataclass(frozen=True, slots=True)
 class ModelRoute:

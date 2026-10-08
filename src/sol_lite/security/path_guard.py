@@ -1,7 +1,10 @@
 """Filesystem containment."""
 import os
 from pathlib import Path
+
 from ..core.exceptions import SecurityError
+
+
 def is_within_directory(path,base_directory):
     target=os.path.realpath(os.path.abspath(os.fspath(path))); base=os.path.realpath(os.path.abspath(os.fspath(base_directory)))
     try: return os.path.commonpath([target,base])==base

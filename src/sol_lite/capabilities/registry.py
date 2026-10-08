@@ -1,5 +1,6 @@
 """Canonical capability registry."""
 from __future__ import annotations
+
 from .definition import CapabilityDefinition
 
 

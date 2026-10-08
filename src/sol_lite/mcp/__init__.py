@@ -3,4 +3,4 @@
 from .client import MCPClient, MCPClientConfig, MCPToolInfo
 from .server import MCPExposurePolicy, SOLMCPServer
 
-__all__ = ["MCPClient", "MCPClientConfig", "MCPToolInfo", "MCPExposurePolicy", "SOLMCPServer"]
+__all__ = ["MCPClient", "MCPClientConfig", "MCPExposurePolicy", "MCPToolInfo", "SOLMCPServer"]

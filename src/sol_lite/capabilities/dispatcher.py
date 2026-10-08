@@ -1,8 +1,10 @@
 """Central capability execution boundary."""
 from __future__ import annotations
+
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from typing import Any
+
 from ..core.exceptions import SOLLiteError, ToolExecutionError
 from .evidence import EvidenceRecord
 

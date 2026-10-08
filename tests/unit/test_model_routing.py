@@ -1,7 +1,9 @@
 from dataclasses import dataclass
+
 from sol_lite.models.base import ModelCapabilities, ModelEndpoint
 from sol_lite.models.profiles import load_profiles
 from sol_lite.models.routing import ModelRouter
+
 
 @dataclass
 class Provider:

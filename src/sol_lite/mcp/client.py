@@ -1,5 +1,6 @@
 """SOL-Lite MCP client wrapper around the official MCP Python SDK v2."""
 from __future__ import annotations
+
 from dataclasses import dataclass
 from typing import Any
 

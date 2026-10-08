@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 import ipaddress
 import json
+from dataclasses import dataclass
 from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
 from urllib.parse import urlparse
+from urllib.request import Request, urlopen
 
 
 @dataclass(frozen=True, slots=True)
@@ -55,7 +55,7 @@ def _get_json(endpoint: str, path: str, timeout: float) -> dict:
     with urlopen(request, timeout=timeout) as response:
         payload = json.loads(response.read().decode("utf-8"))
     if not isinstance(payload, dict):
-        raise ValueError(f"Unexpected JSON response from {endpoint}{path}")
+        raise TypeError(f"Unexpected JSON response from {endpoint}{path}")
     return payload
 
 

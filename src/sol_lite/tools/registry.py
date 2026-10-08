@@ -1,5 +1,6 @@
 """Native tool registry backed by canonical capability definitions."""
 from __future__ import annotations
+
 from ..capabilities.risk import RiskClass
 from ..core.exceptions import SOLLiteError, ToolExecutionError
 from .base import ToolDefinition

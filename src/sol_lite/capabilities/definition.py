@@ -1,9 +1,11 @@
 """Canonical capability definition shared by execution providers."""
 from __future__ import annotations
+
 from collections.abc import Callable, Mapping
 from dataclasses import dataclass, field
 from enum import StrEnum
 from typing import Any
+
 from .risk import RiskClass
 
 

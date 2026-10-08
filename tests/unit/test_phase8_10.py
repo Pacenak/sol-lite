@@ -4,6 +4,7 @@ from sol_lite.storage.authorization import ResourceAuthorizer
 from sol_lite.tools.base import ToolDefinition
 from sol_lite.tools.registry import ToolRegistry
 
+
 def test_tool_definition_keeps_old_constructor_and_exposes_capability():
     tool=ToolDefinition("x","test",{"type":"object"},lambda c,a:{"ok":True}); cap=tool.as_capability()
     assert cap.name=="x" and cap.parameters=={"type":"object"}

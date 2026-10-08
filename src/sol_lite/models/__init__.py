@@ -1,4 +1,9 @@
-from .discovery import DiscoveredEndpoint, DiscoveredModel, discover_configured_endpoints, discover_ollama
+from .discovery import (
+    DiscoveredEndpoint,
+    DiscoveredModel,
+    discover_configured_endpoints,
+    discover_ollama,
+)
 from .gateway import ModelGateway, ModelRoute
 from .manager import ModelManager
 from .ollama import OllamaProvider
