@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from ..core.exceptions import ModelError
-from .base import ModelProvider
+from .base import ModelCapabilities, ModelEndpoint, ModelProvider
 
 
 class OllamaProvider(ModelProvider):
@@ -16,23 +16,26 @@ class OllamaProvider(ModelProvider):
 
     def _client(self, timeout):
         key = self._client_key(timeout)
-
         if key not in self._clients:
             try:
                 import ollama
             except ImportError as exc:
-                raise ModelError(
-                    "The 'ollama' Python package is not installed."
-                ) from exc
-
+                raise ModelError("The 'ollama' Python package is not installed.") from exc
             kwargs = {"host": self.host}
-
             if timeout is not None:
                 kwargs["timeout"] = timeout
-
             self._clients[key] = ollama.Client(**kwargs)
-
         return self._clients[key]
+
+    def endpoint(self):
+        locality = "host" if self.host in {"http://127.0.0.1:11434", "http://localhost:11434"} else "network"
+        return ModelEndpoint(
+            provider="ollama",
+            endpoint=self.host,
+            locality=locality,
+            trusted=locality == "host",
+            capabilities=ModelCapabilities(tool_calling=True, coding=True, reasoning=True),
+        )
 
     def chat(self, model, messages, tools, temperature, timeout):
         try:
