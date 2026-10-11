@@ -7,6 +7,7 @@ from .base import ToolDefinition
 
 _READ = {
     "inventory_workspace",
+    "list_workspace_directories",
     "list_project_structure",
     "find_workspace_files",
     "read_workspace_file",
@@ -22,6 +23,8 @@ _READ = {
     "repository_remotes",
     "searxng_search",
     "skill_discover",
+    "procedure_load",
+    "procedure_status",
 }
 
 
@@ -44,6 +47,10 @@ _MUTATING = {
     "repository_clone_local",
     "skill_install",
     "sol_jarvis_propose",
+    "google_email_send",
+    "google_calendar_create",
+    "google_calendar_reminder",
+    "remote_execute",
 }
 
 
@@ -127,8 +134,8 @@ class ToolRegistry:
                     RiskClass.MUTATING,
                 )
 
-        tool.mutability = (
-            tool.name in _MUTATING
+        tool.mutability = bool(
+            tool.mutability or tool.name in _MUTATING
         )
 
         self._tools[tool.name] = tool
@@ -150,10 +157,14 @@ class ToolRegistry:
             for name, tool in self._tools.items()
         }
 
-    def ollama_schemas(self):
+    def ollama_schemas(self, names=None):
+        tools = self._tools.values()
+        if names is not None:
+            allowed = set(names)
+            tools = [tool for tool in self._tools.values() if tool.name in allowed]
         return [
             tool.as_capability().as_ollama_schema()
-            for tool in self._tools.values()
+            for tool in tools
         ]
 
     def execute(

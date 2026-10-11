@@ -37,7 +37,7 @@ class GoogleWorkspaceClient:
 
     @classmethod
     def connect(cls, client_secrets: str, credential_manager):
-        Credentials, InstalledAppFlow, _ = _google_modules()
+        _Credentials, InstalledAppFlow, _ = _google_modules()
         secrets_path = os.path.expanduser(client_secrets)
         if not os.path.isfile(secrets_path):
             raise FileNotFoundError(

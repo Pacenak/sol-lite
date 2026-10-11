@@ -18,6 +18,7 @@ data/audit/
 data/faults/
 data/tasks/
 data/state/
+data/tts/
 data/memory/
 data/rag/
 data/indexes/

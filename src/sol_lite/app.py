@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import importlib.metadata
 import json
 import os
@@ -77,6 +76,15 @@ def build_parser():
     google_connect.add_argument("--client-secrets", default=None, help="Google OAuth Desktop client JSON; defaults to SOL_GOOGLE_OAUTH_CLIENT_SECRETS.")
     sub.add_parser("google-disconnect", help="Remove the saved Google authorization from the OS keyring.")
     sub.add_parser("google-status", help="Check whether Google Workspace is connected.")
+    jira_connect = sub.add_parser("jira-connect", help="Connect a Jira site and the project keys SOL-Lite may use.")
+    jira_connect.add_argument("--name", default=None)
+    jira_connect.add_argument("--base-url", default=None)
+    jira_connect.add_argument("--email", default=None)
+    jira_connect.add_argument("--projects", default=None, help="Comma-separated Jira project keys.")
+    jira_disconnect = sub.add_parser("jira-disconnect", help="Remove one saved Jira connection and its API token.")
+    jira_disconnect.add_argument("--name", required=True)
+    sub.add_parser("jira-status", help="Probe saved Jira sites and list granted projects and boards.")
+    sub.add_parser("voice-status", help="Show local speech-to-text and text-to-speech readiness.")
 
     battle = sub.add_parser(
         "battle-test",
@@ -203,6 +211,7 @@ def run_live_smoke(runtime, agent_id):
 
 def main():
     args = build_parser().parse_args()
+    root = Path(__file__).resolve().parents[2]
 
     if args.command == "version":
         print(
@@ -246,6 +255,60 @@ def main():
         print("Google authorization is saved in the OS keyring. API access is checked when a user-approved action runs.")
         return
 
+    if args.command == "jira-connect":
+        import getpass
+
+        from .credentials.manager import CredentialManager, KeyringBackend
+        from .integrations.jira import JiraCatalog
+        name = args.name or input("Connection name: ").strip()
+        base_url = args.base_url or input("Jira site URL: ").strip()
+        email = args.email or input("Atlassian account email: ").strip()
+        projects = args.projects or input("Project keys (comma separated): ").strip()
+        token = os.environ.get("SOL_JIRA_API_TOKEN") or getpass.getpass("API token: ")
+        catalog = JiraCatalog(root / "data" / "state" / "jira.json", CredentialManager(KeyringBackend()))
+        try:
+            saved = catalog.connect(name, base_url, email, token, [projects])
+        except Exception as exc:
+            print(f"Jira connection failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(
+            f"Connected {saved['name']} for {', '.join(saved['allowed_projects'])}. "
+            "The API token is in the OS keyring."
+        )
+        return
+
+    if args.command == "jira-disconnect":
+        from .credentials.manager import CredentialManager, KeyringBackend
+        from .integrations.jira import JiraCatalog
+        catalog = JiraCatalog(root / "data" / "state" / "jira.json", CredentialManager(KeyringBackend()))
+        try:
+            catalog.disconnect(args.name)
+        except Exception as exc:
+            print(f"Jira disconnect failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(f"Removed Jira connection {args.name} and its API token from the OS keyring.")
+        return
+
+    if args.command == "jira-status":
+        from .credentials.manager import CredentialManager, KeyringBackend
+        from .integrations.jira import JiraCatalog
+        catalog = JiraCatalog(root / "data" / "state" / "jira.json", CredentialManager(KeyringBackend()))
+        try:
+            status = catalog.probe()
+        except Exception as exc:
+            print(f"Jira status failed: {exc}", file=sys.stderr)
+            raise SystemExit(1) from exc
+        print(json.dumps(status, indent=2))
+        if not status.get("ok"):
+            raise SystemExit(1)
+        return
+
+    if args.command == "voice-status":
+        from .voice.probe import voice_doctor_lines
+        for line in voice_doctor_lines(root / "data"):
+            print(line)
+        return
+
     if args.command == "connect":
         from .integrations.sol_command import SolCommandClient
         try:
@@ -277,9 +340,7 @@ def main():
         return
 
     if args.command == "sync-skills":
-        import re
-
-        import yaml
+        from .integrations.sol_command import stage_synced_skills
         runtime = bootstrap(root)
         client = runtime.tool_context.sol_command
         if client is None:
@@ -291,56 +352,10 @@ def main():
             print(f"SOL skill sync failed: {exc}", file=sys.stderr)
             raise SystemExit(1) from exc
         pending_root = runtime.data_root / "state" / "skills" / "pending" / "sol-command"
-        pending_root.mkdir(parents=True, exist_ok=True)
-        pending_root = pending_root.resolve()
-        discovered = []
-        for sector_id, entry in (payload.get("packs_sync") or {}).get("sectors", {}).items():
-            if not isinstance(entry, dict) or not isinstance(entry.get("body"), dict):
-                continue
-            sector_slug = re.sub(r"[^a-z0-9._-]+", "-", str(sector_id).lower()).strip("-._")
-            if not sector_slug or sector_slug != str(sector_id).lower():
-                continue
-            for skill in entry["body"].get("skills") or []:
-                if not isinstance(skill, dict):
-                    continue
-                name = str(skill.get("name") or skill.get("title") or "").strip()
-                slug = re.sub(r"[^a-z0-9._-]+", "-", name.lower()).strip("-._")
-                if not slug:
-                    continue
-                description = str(skill.get("description") or skill.get("summary") or name).strip()
-                if len(description) > 2000:
-                    description = description[:2000]
-                steps = skill.get("procedure") or skill.get("steps") or []
-                body_lines = [f"# {name}", "", description, ""]
-                if isinstance(steps, list):
-                    body_lines.extend(f"{idx}. {str(step)[:4000]}" for idx, step in enumerate(steps[:200], 1))
-                elif isinstance(steps, str):
-                    body_lines.append(steps)
-                refs = skill.get("references")
-                if isinstance(refs, list) and refs:
-                    body_lines.extend(["", "## References", ""])
-                    body_lines.extend(f"- {ref!s}" for ref in refs)
-                frontmatter = yaml.safe_dump({"name": slug, "description": description,
-                    "source": "sol-command", "sector": str(sector_id)}, sort_keys=False).strip()
-                content = f"---\n{frontmatter}\n---\n\n" + "\n".join(body_lines)
-                version = hashlib.sha256(content.encode("utf-8")).hexdigest()[:12]
-                destination = pending_root / sector_slug / slug / version
-                if not destination.resolve().is_relative_to(pending_root):
-                    continue
-                destination.mkdir(parents=True, exist_ok=True)
-                skill_file = destination / "SKILL.md"
-                if not skill_file.exists():
-                    skill_file.write_text(content, encoding="utf-8")
-                discovered.append(str(destination))
-        print(f"Downloaded {len(discovered)} SOL skill(s) to pending review: {pending_root}")
+        discovered = stage_synced_skills(payload, pending_root)
+        print(f"Downloaded {len(discovered)} SOL skill(s) to pending review: {pending_root.resolve()}")
         print("Review and install each skill with /skills discover and /skills import. Nothing was activated automatically.")
         return
-
-    root = (
-        Path(__file__)
-        .resolve()
-        .parents[2]
-    )
 
     if args.command == "doctor":
         runtime = bootstrap(root)
@@ -362,6 +377,22 @@ def main():
         print(
             f"  Venv: {root / '.venv'}"
         )
+        print(
+            "  SOL-Command: "
+            + (
+                "paired"
+                if runtime.tool_context.sol_command is not None
+                else "not paired (standalone)"
+            )
+        )
+        jira = getattr(runtime.tool_context, "jira", None)
+        jira_state = "not connected"
+        if jira is not None:
+            jira_state = str(jira.local_status().get("state") or "not_connected").replace("_", " ")
+        print(f"  Jira: {jira_state}")
+        from .voice.probe import voice_doctor_lines
+        for line in voice_doctor_lines(runtime.data_root):
+            print(f"  {line}")
 
         try:
             print(
@@ -572,6 +603,11 @@ def main():
                 ),
                 event_bus=runtime.events,
                 settings_store=runtime.user_settings,
+                settings_repository=getattr(
+                    runtime,
+                    "settings_repository",
+                    None,
+                ),
             )
 
             shell.run()

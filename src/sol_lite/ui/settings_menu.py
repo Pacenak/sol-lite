@@ -11,6 +11,7 @@ from rich.table import Table
 from rich.text import Text
 
 from ..config.user_settings import UserSettingsStore
+from ..core.exceptions import ShellCommandInterrupt
 
 
 class SettingsMenu:
@@ -23,11 +24,13 @@ class SettingsMenu:
         repository_config: dict[str, Any],
         console,
         display_mode_callback: Callable[[str], None] | None = None,
+        data_root=None,
     ):
         self.store = store
         self.repository_config = repository_config
         self.console = console
         self.display_mode_callback = display_mode_callback
+        self.data_root = data_root
 
     def _effective(self) -> dict[str, Any]:
         return self.store.effective(self.repository_config)
@@ -60,11 +63,31 @@ class SettingsMenu:
         return value if isinstance(value, dict) else {}
 
     @staticmethod
+    def _searxng_fields(section: Any) -> dict[str, Any]:
+        """Return SearXNG fields from either the nested document or flat overrides."""
+        if not isinstance(section, dict):
+            return {}
+
+        nested = section.get("searxng")
+        flat = {
+            key: value
+            for key, value in section.items()
+            if key != "searxng"
+        }
+
+        if isinstance(nested, dict):
+            merged = copy.deepcopy(nested)
+            merged.update(flat)
+            return merged
+
+        return copy.deepcopy(section)
+
+    @staticmethod
     def _searxng_section(
         config: dict[str, Any],
     ) -> dict[str, Any]:
         value = config.get("searxng", {})
-        return value if isinstance(value, dict) else {}
+        return SettingsMenu._searxng_fields(value)
 
     def _repository_root_config(self) -> dict[str, Any]:
         """Build the logical application config used by the menu."""
@@ -101,6 +124,9 @@ class SettingsMenu:
             ).strip()
         except (EOFError, KeyboardInterrupt):
             return ""
+
+        if answer.startswith("/"):
+            raise ShellCommandInterrupt(answer)
 
         if not answer and default is not None:
             return default
@@ -456,7 +482,7 @@ class SettingsMenu:
 
             answer = self._input("Select option").casefold()
 
-            if answer == "b":
+            if answer in {"", "b"}:
                 return
 
             if answer == "1":
@@ -575,15 +601,27 @@ class SettingsMenu:
 
         answer = self._input("Select profile").casefold()
 
-        if answer == "b":
+        if answer in {"", "b"}:
             return
 
         if not answer.isdigit():
+            self.console.print(
+                Text(
+                    "Unknown settings option.",
+                    style="sol_warning",
+                )
+            )
             return
 
         index = int(answer)
 
         if not 1 <= index <= len(names):
+            self.console.print(
+                Text(
+                    "Unknown settings option.",
+                    style="sol_warning",
+                )
+            )
             return
 
         name = names[index - 1]
@@ -727,15 +765,27 @@ class SettingsMenu:
 
         answer = self._input("Select option").casefold()
 
-        if answer == "b":
+        if answer in {"", "b"}:
             return
 
         if not answer.isdigit():
+            self.console.print(
+                Text(
+                    "Unknown settings option.",
+                    style="sol_warning",
+                )
+            )
             return
 
         index = int(answer)
 
         if not 1 <= index <= len(fields):
+            self.console.print(
+                Text(
+                    "Unknown settings option.",
+                    style="sol_warning",
+                )
+            )
             return
 
         name, current = fields[index - 1]
@@ -821,7 +871,7 @@ class SettingsMenu:
 
         answer = self._input("Select option").casefold()
 
-        if answer == "b":
+        if answer in {"", "b"}:
             return
 
         if answer == "1":
@@ -872,8 +922,24 @@ class SettingsMenu:
                     style="sol_dim",
                 )
             )
+            return
+
+        self.console.print(
+            Text(
+                "Unknown settings option.",
+                style="sol_warning",
+            )
+        )
 
     def _search(self) -> None:
+        while self._search_once():
+            pass
+
+    def _search_once(self) -> bool:
+        """Edit one SearXNG setting.
+
+        Returns False when the user leaves the menu.
+        """
         effective = self._effective()
         search = self._searxng_section(effective)
 
@@ -931,8 +997,8 @@ class SettingsMenu:
 
         answer = self._input("Select option").casefold()
 
-        if answer == "b":
-            return
+        if answer in {"", "b"}:
+            return False
 
         mapping = {
             "1": ("enabled", "bool"),
@@ -948,7 +1014,13 @@ class SettingsMenu:
         selected = mapping.get(answer)
 
         if selected is None:
-            return
+            self.console.print(
+                Text(
+                    "Unknown settings option.",
+                    style="sol_warning",
+                )
+            )
+            return True
 
         name, kind = selected
         current = search.get(name)
@@ -959,9 +1031,14 @@ class SettingsMenu:
                 bool(current),
             )
         elif kind == "int":
+            try:
+                current_int = int(current)
+            except (TypeError, ValueError):
+                current_int = 0
+
             value = self._integer(
                 name,
-                int(current),
+                current_int,
                 0,
             )
         else:
@@ -971,14 +1048,16 @@ class SettingsMenu:
             )
 
         if value is None:
-            return
+            return True
 
         self.store.set_path(
             "searxng",
-            (name,),
+            ("searxng", name),
             value,
         )
+        self.store.remove("searxng", name)
         self._save()
+        return True
 
     def _integrations(self) -> None:
         effective = self._effective()
@@ -1063,7 +1142,7 @@ class SettingsMenu:
 
         answer = self._input("Select option").casefold()
 
-        if answer == "b":
+        if answer in {"", "b"}:
             return
 
         bool_fields = {
@@ -1138,6 +1217,14 @@ class SettingsMenu:
                     value,
                 )
                 self._save()
+            return
+
+        self.console.print(
+            Text(
+                "Unknown settings option.",
+                style="sol_warning",
+            )
+        )
 
     def _display(self) -> None:
         current = str(
@@ -1269,6 +1356,90 @@ class SettingsMenu:
         if self.display_mode_callback is not None:
             self.display_mode_callback("normal")
 
+    def _require_data_root(self):
+        if self.data_root is None:
+            self.console.print("This setting is unavailable until SOL-Lite has a data directory.")
+            return None
+        return self.data_root
+
+    def _jira(self) -> None:
+        import getpass
+
+        from ..credentials.manager import CredentialManager, KeyringBackend
+        from ..integrations.jira import JiraCatalog, JiraError
+
+        data_root = self._require_data_root()
+        if data_root is None:
+            return
+        try:
+            catalog = JiraCatalog(data_root / "state" / "jira.json", CredentialManager(KeyringBackend()))
+        except (OSError, RuntimeError) as exc:
+            self.console.print(f"Jira settings are unavailable: {exc}")
+            return
+        status = catalog.local_status()
+        if status["connections"]:
+            table = Table("Connection", "Site", "Projects", "Token", border_style="sol_border")
+            for item in status["connections"]:
+                table.add_row(
+                    item["name"],
+                    item["base_url"],
+                    ", ".join(item["allowed_projects"]),
+                    "saved" if item.get("token_saved") else "missing",
+                )
+            self.console.print(table)
+        else:
+            self.console.print("No Jira sites are connected.")
+        answer = self._input("1 connect, 2 disconnect, or Enter to go back")
+        if answer in {"", "b"}:
+            return
+        try:
+            if answer == "1":
+                name = self._input("Connection name")
+                base_url = self._input("Jira site URL")
+                email = self._input("Atlassian account email")
+                projects = self._input("Project keys, comma separated")
+                if not all([name, base_url, email, projects]):
+                    return
+                token = getpass.getpass("API token: ")
+                saved = catalog.connect(name, base_url, email, token, [projects])
+                self.console.print(
+                    f"Connected {saved['name']} for {', '.join(saved['allowed_projects'])}. "
+                    "The API token is in the OS keyring."
+                )
+            elif answer == "2":
+                name = self._input("Connection name to remove")
+                if not name:
+                    return
+                catalog.disconnect(name)
+                self.console.print(f"Removed {name}. The API token was deleted from the OS keyring.")
+        except (JiraError, OSError, RuntimeError, ValueError) as exc:
+            self.console.print(f"Jira settings failed: {exc}")
+
+    def _voice(self) -> None:
+        from ..voice.probe import voice_doctor_lines
+        from ..voice.settings import load_settings, toggle_speak
+
+        data_root = self._require_data_root()
+        if data_root is None:
+            return
+        for line in voice_doctor_lines(data_root):
+            self.console.print(line)
+        settings = load_settings(data_root)
+        self.console.print(
+            f"Speech-to-text: {settings['stt_provider']}. "
+            f"Text-to-speech: {settings['tts_provider']}. "
+            f"Spoken replies: {'on' if settings.get('speak') else 'off'}."
+        )
+        answer = self._input("Toggle spoken replies? [y/n]")
+        if answer.casefold() not in {"y", "yes"}:
+            return
+        try:
+            enabled = toggle_speak(data_root)
+        except RuntimeError as exc:
+            self.console.print(str(exc))
+            return
+        self.console.print("Spoken replies are on." if enabled else "Spoken replies are off.")
+
     def run(self) -> bool:
         """Run the menu.
 
@@ -1323,6 +1494,14 @@ class SettingsMenu:
                 "Reset User Settings",
             )
             table.add_row(
+                "J",
+                "Jira",
+            )
+            table.add_row(
+                "V",
+                "Voice",
+            )
+            table.add_row(
                 "B",
                 "Back",
             )
@@ -1338,12 +1517,22 @@ class SettingsMenu:
                 )
             )
 
-            answer = self._input(
-                "Select settings category",
-            ).casefold()
+            try:
+                answer = self.console.input(
+                    "[sol_prompt]Select settings category ❯ [/sol_prompt]"
+                ).strip()
+            except (EOFError, KeyboardInterrupt):
+                return True
+            if answer.startswith("/"):
+                raise ShellCommandInterrupt(answer)
+            answer = answer.casefold()
 
             try:
-                if answer == "1":
+                if answer in {"b", "back"}:
+                    return True
+                if not answer:
+                    continue
+                elif answer == "1":
                     self._general()
                 elif answer == "2":
                     self._agents()
@@ -1363,8 +1552,10 @@ class SettingsMenu:
                     self._view()
                 elif answer == "r":
                     self._reset()
-                elif answer == "b":
-                    return True
+                elif answer == "j":
+                    self._jira()
+                elif answer == "v":
+                    self._voice()
                 else:
                     self.console.print(
                         Text(

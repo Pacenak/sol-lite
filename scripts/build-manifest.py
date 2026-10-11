@@ -30,10 +30,24 @@ FORBIDDEN_FILES = {
     "faults.json",
 }
 
+# Keep this list identical to scripts/audit-pack.py.
 FORBIDDEN_PREFIXES = (
     "old-Script-version/",
-    "data/state/",
     "src/sol_lite.egg-info/",
+    "workspace/",
+    "logs/",
+    "data/state/",
+    "data/logs/",
+    "data/audit/",
+    "data/faults/",
+    "data/tasks/",
+    "data/tts/",
+    "data/memory/",
+    "data/rag/",
+    "data/indexes/",
+    "skills/installed/",
+    "skills/pending/",
+    "skills/quarantine/",
 )
 
 

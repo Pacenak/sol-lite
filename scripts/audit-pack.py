@@ -36,10 +36,25 @@ FORBIDDEN_FILES = {
     "faults.json",
 }
 
+# Local runtime output. These directories are gitignored and must not
+# enter the source pack, or a voice cache or log fails every battle test.
 FORBIDDEN_PREFIXES = (
     "old-Script-version/",
-    "data/state/",
     "src/sol_lite.egg-info/",
+    "workspace/",
+    "logs/",
+    "data/state/",
+    "data/logs/",
+    "data/audit/",
+    "data/faults/",
+    "data/tasks/",
+    "data/tts/",
+    "data/memory/",
+    "data/rag/",
+    "data/indexes/",
+    "skills/installed/",
+    "skills/pending/",
+    "skills/quarantine/",
 )
 
 

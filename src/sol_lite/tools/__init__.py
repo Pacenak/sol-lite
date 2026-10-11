@@ -1,8 +1,13 @@
 """Tool layer."""
+from .artifacts import artifact_tools
 from .base import ToolContext, ToolDefinition
 from .filesystem import filesystem_tools
 from .google_workspace import google_workspace_tools
+from .jira import jira_tools
+from .notes import notes_tools
+from .procedure import procedure_tools
 from .registry import ToolRegistry
+from .remote import remote_tools
 from .repository import repository_tools
 from .runtime_context import runtime_context_tools
 from .search import search_tools
@@ -14,10 +19,14 @@ from .terminal import terminal_tools
 
 def build_tool_registry():
     registry = ToolRegistry()
-    tools = (filesystem_tools() + search_tools() + terminal_tools() + repository_tools()
+    tools = (filesystem_tools() + notes_tools() + search_tools() + terminal_tools() + repository_tools()
              + runtime_context_tools() + skill_tools() + searxng_tools())
     tools += sol_command_tools()
     tools += google_workspace_tools()
+    tools += jira_tools()
+    tools += remote_tools()
+    tools += procedure_tools()
+    tools += artifact_tools()
     for tool in tools:
         registry.register(tool)
     return registry

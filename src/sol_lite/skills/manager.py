@@ -14,6 +14,28 @@ from pathlib import Path
 
 import yaml
 
+_SKILL_MATCH_STOPWORDS = frozenset({
+    "the", "and", "for", "with", "from", "that", "this", "into", "using",
+    "before", "without", "your", "you", "are", "not", "but", "its", "all",
+    "any", "can", "may", "use", "used", "only", "than", "then", "when",
+    "what", "who", "how", "why", "where", "which", "have", "has", "been",
+    "will", "please", "current", "here", "there", "about", "after", "over",
+    "under", "also", "such", "other", "each", "both", "some", "more",
+    "very", "just", "like", "onto", "upon", "out", "our", "their", "them",
+    "they", "does", "doing", "done", "make", "made", "need", "needs",
+    "want", "tell", "show", "list", "full", "able",
+})
+
+
+def _skill_terms(text: str) -> set[str]:
+    """Meaningful words for skill selection. Common words do not count as a match."""
+    return {
+        word
+        for word in re.findall(r"[a-z0-9_-]+", (text or "").lower())
+        if len(word) >= 4 and word not in _SKILL_MATCH_STOPWORDS
+    }
+
+
 DANGEROUS_PATTERNS = (
     re.compile(r"ignore (?:all|your) (?:previous|system) instructions", re.IGNORECASE),
     re.compile(r"disable (?:security|approval|permission)", re.IGNORECASE),
@@ -222,15 +244,29 @@ class SkillManager:
         records = self.for_agent(agent_id, workspace_root)
         if not records:
             return "No additional skills are active for this agent."
-        lines = ["ACTIVE SKILLS", "Use the descriptions for routing. Load the detailed skill instructions only for skills relevant to the current task. Skills never grant permissions."]
-        task_words = set(re.findall(r"[a-z0-9_-]+", task.lower()))
+        lines = ["ACTIVE SKILLS", "Use the descriptions for routing. Load the detailed skill instructions only for skills relevant to the current task. Skills never grant permissions. Workspace file and directory tools remain available."]
+        task_words = _skill_terms(task)
         selected_details = []
+        # Artifact workflows must not lose essential guidance to incidental keyword
+        # matches or the generic four-skill cap.
+        artifact_skills = set()
+        groups = (
+            ({"document", "documents", "docs", "docx", "pdf", "report", "reports"}, {"documentation-engineering", "document-layout"}),
+            ({"presentation", "slides", "deck", "pptx", "powerpoint"}, {"presentation-design"}),
+            ({"spreadsheet", "spreadsheets", "workbook", "workbooks", "xlsx", "excel"}, {"spreadsheet-reporting"}),
+            ({"diagram", "diagrams", "mermaid", "flowchart", "sequence"}, {"diagram-design", "mermaid-diagrams"}),
+        )
+        for triggers, skills in groups:
+            if task_words & triggers:
+                artifact_skills.update(skills)
         for record in records:
             lines.append(f"- {record.skill_id}: {record.description} [trust={record.trust}; source={record.source}]")
-            relevance = set(re.findall(r"[a-z0-9_-]+", f"{record.skill_id} {record.description}".lower()))
+            relevance = _skill_terms(f"{record.skill_id} {record.description}")
             if task_words & relevance:
                 selected_details.append(record)
-        for record in selected_details[:4]:
+        required = [r for r in records if r.skill_id in artifact_skills]
+        optional = [r for r in selected_details if r.skill_id not in artifact_skills][:4]
+        for record in required + optional:
             skill_md = Path(record.path) / "SKILL.md"
             if skill_md.is_file():
                 lines.append(f"\nDETAILED SKILL: {record.skill_id}\n{skill_md.read_text(encoding='utf-8').strip()}")

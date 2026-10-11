@@ -15,4 +15,4 @@ Repair is the first response to dependency or launcher problems.
 ./install/macos/repair.command
 ```
 
-Repair creates the venv only when missing, updates pip, installs `.[dev]`, runs Doctor, updates installation state and refreshes the macOS application bundle.
+Repair creates the venv only when missing, updates pip, installs `.[dev,voice]`, runs Doctor, updates installation state and refreshes the macOS application bundle.

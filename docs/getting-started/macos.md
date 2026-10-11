@@ -31,6 +31,16 @@ The repository-local launcher is also available:
 ./scripts/start.command
 ```
 
+## Voice
+
+Setup installs the `voice` extra. When Homebrew is available it also installs `espeak-ng`. Kokoro local text-to-speech is included on Python 3.11 and 3.12. Python 3.13 and newer still get faster-whisper speech-to-text; Kokoro is not published for those versions. Model downloads that fail do not fail setup. Check readiness with:
+
+```bash
+.venv/bin/sol-lite voice-status
+```
+
+In the shell, `/listen` records until silence or Enter and sends the transcript as your message. `/speak` turns spoken replies on or off. Settings option V shows the same status.
+
 ## Repair and uninstall
 
 ```bash

@@ -1,4 +1,4 @@
-# SOL-Lite v0.2.5
+# SOL-Lite v0.2.6
 
 Cross-platform, local-first multi-agent engineering runtime for **Windows and macOS**.
 
@@ -50,10 +50,14 @@ Platform launchers also provide Doctor. Repair is explicit.
 
 - `sol_pa` — coordination, planning, research, scheduling and delegation.
 - `sol_business` — business operations, projects, reporting and analysis.
-- `sol_docs` — document workflows, metadata, indexing and extraction.
+- `sol_docs` — premium documents, presentations, spreadsheets, diagrams, metadata, indexing and extraction.
 - `sol_engineer` — software engineering, debugging, testing, Git, automation and technical operations.
 
 ## Sessions and workspaces
+
+All agents can create editable DOCX, PPTX, XLSX and Mermaid artifacts with optional
+PDF and SVG/PNG exports. Windows and macOS require no Microsoft Office.
+See [artifact setup and quality review](docs/user/artifacts.md).
 
 ```text
 SOL-Lite
@@ -155,4 +159,4 @@ sol-lite command-status
 sol-lite sync-skills
 ```
 
-The pairing credential is stored in the operating system keyring. Shared-memory and RAG tools use only the paired instance identity and the sectors currently assigned by Command. SOL skills are saved to `data/state/skills/pending/sol-command/`; review/import each skill explicitly. Jarvis proposals require an administrator grant in Command and remain pending for Command-side approval. Disconnect with `sol-lite disconnect`. See [SOL-Command integration](docs/integrations/sol-command.md).
+The pairing credential is stored in the operating system keyring. Shared-memory and RAG tools use only the paired instance identity and the sectors currently assigned by Command. SOL skills are saved to `data/state/skills/pending/sol-command/`; review/import each skill explicitly. Jarvis proposals require an administrator grant in Command and remain pending for Command-side approval. Disconnect with `sol-lite disconnect`. Standalone setup and the optional link are in the [SOL-Lite integration guide](docs/integrations/sol-lite.md).

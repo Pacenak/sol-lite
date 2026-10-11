@@ -8,3 +8,7 @@ class AgentError(SOLLiteError): pass
 class ModelError(SOLLiteError): pass
 class TaskError(SOLLiteError): pass
 class SecurityError(SOLLiteError): pass
+class ShellCommandInterrupt(SOLLiteError):
+    def __init__(self, command):
+        super().__init__(command)
+        self.command = command

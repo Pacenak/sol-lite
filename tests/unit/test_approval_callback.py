@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 from sol_lite.agents.runtime import AgentRuntime
 from sol_lite.agents.status import StatusTracker
-from sol_lite.core.exceptions import ApprovalRequired
+from sol_lite.core.exceptions import ApprovalRequired, ShellCommandInterrupt
 from sol_lite.faults.log import FaultLog
 
 
@@ -148,3 +148,72 @@ def test_agent_runtime_can_use_exact_approval_callback(
             "approval_id": "a1",
         },
     ]
+
+
+def test_slash_command_during_approval_cancels_before_another_model_turn(tmp_path):
+    def interrupt(_request):
+        raise ShellCommandInterrupt("/settings")
+
+    tools = FakeTools()
+    runner = AgentRuntime(
+        FakeModels(),
+        tools,
+        object(),
+        FaultLog(tmp_path / "faults.json"),
+        approval_callback=interrupt,
+    )
+    result = runner.run(
+        profile="engineer",
+        messages=[{"role": "user", "content": "go"}],
+    )
+    assert result.cancelled is True
+    assert result.shell_command == "/settings"
+    assert result.stopped_reason == "shell_command"
+    assert runner.model_manager.provider.calls == 1
+    assert len(tools.calls) == 1
+
+
+def test_approval_callback_error_does_not_stop_the_turn(tmp_path):
+    def boom(_request):
+        raise RuntimeError("prompt failed")
+
+    tools = FakeTools()
+    runner = AgentRuntime(
+        FakeModels(),
+        tools,
+        object(),
+        FaultLog(tmp_path / "faults.json"),
+        approval_callback=boom,
+    )
+    result = runner.run(
+        profile="engineer",
+        messages=[{"role": "user", "content": "go"}],
+    )
+    assert result.stopped_reason is None
+    assert result.content == "done"
+
+
+def test_second_approval_requirement_stays_inside_the_tool_loop(tmp_path):
+    class AlwaysRequired(FakeTools):
+        def execute(self, name, arguments, context):
+            self.calls.append(arguments)
+            raise ApprovalRequired(
+                "Approval required for jira_status targeting Jira.",
+                request=SimpleNamespace(approval_id="a1"),
+            )
+
+    tools = AlwaysRequired()
+    runner = AgentRuntime(
+        FakeModels(),
+        tools,
+        object(),
+        FaultLog(tmp_path / "faults.json"),
+        approval_callback=lambda request: request.approval_id,
+    )
+    result = runner.run(
+        profile="engineer",
+        messages=[{"role": "user", "content": "go"}],
+    )
+    assert result.stopped_reason is None
+    assert result.content == "done"
+    assert len(tools.calls) == 2

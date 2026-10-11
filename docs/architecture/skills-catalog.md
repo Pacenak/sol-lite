@@ -33,6 +33,9 @@ SOL-Lite keeps built-in skills local and auditable. External repositories are re
 - web-research-searxng
 - web-source-verification
 - documentation-engineering
+- document-layout
+- presentation-design
+- spreadsheet-reporting
 - book-to-skill
 - diagram-design
 - mermaid-diagrams

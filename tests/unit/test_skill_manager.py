@@ -33,5 +33,5 @@ def test_builtin_skill_catalog_is_available_to_agent(tmp_path):
     manager = SkillManager(tmp_path / "app", tmp_path / "state")
     manager.root = Path(__file__).resolve().parents[2]
     records = manager.for_agent("sol_engineer", tmp_path)
-    assert len([r for r in records if r.source_type == "builtin"]) == 33
+    assert len([r for r in records if r.source_type == "builtin"]) == 37
     assert any(r.skill_id == "systematic-debugging" for r in records)

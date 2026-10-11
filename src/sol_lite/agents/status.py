@@ -71,6 +71,20 @@ class StatusTracker:
             if activity:
                 self._a.activity = activity
 
+    def await_approval(self, activity):
+        with self._lock:
+            self._a.status = "AWAITING_APPROVAL"
+            self._a.activity = activity
+            self._a.last_activity_at = time.monotonic()
+
+    def resume_work(self, activity=None):
+        with self._lock:
+            if self._a.status == "AWAITING_APPROVAL":
+                self._a.status = "WORKING"
+            self._a.last_activity_at = time.monotonic()
+            if activity:
+                self._a.activity = activity
+
     def set_round(self, number):
         with self._lock:
             self._a.round_number = number
@@ -107,6 +121,8 @@ class StatusTracker:
 
     def state(self):
         a = self.snapshot()
+        if a.status == "AWAITING_APPROVAL":
+            return "AWAITING_APPROVAL"
         if a.status != "WORKING" or a.last_activity_at is None:
             return a.status
         age = time.monotonic() - a.last_activity_at

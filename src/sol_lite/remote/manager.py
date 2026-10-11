@@ -4,7 +4,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 from ..core.exceptions import PermissionDenied
-from ..permissions.scopes import NETWORK
+from ..permissions.scopes import REMOTE_EXECUTE
 from .nodes import RemoteNode, RemoteTransport
 from .powershell import PowerShellTransport
 from .ssh import RemoteCommandResult, SSHTransport
@@ -17,6 +17,7 @@ class RemoteExecutionRequest:
     command: str
     plan: str
     approval_id: str | None = None
+    timeout_seconds: float = 120.0
 
 
 class RemoteNodeManager:
@@ -45,21 +46,22 @@ class RemoteNodeManager:
         node = self.get(request.node_id)
         target = f"{node.id}@{node.hostname}"
         self.permission_engine.check(
-            NETWORK,
+            REMOTE_EXECUTE,
             approval_id=request.approval_id,
             operation="remote_execute",
             target=target,
             arguments={"node_id": node.id, "command": request.command},
             plan=request.plan,
         )
+        timeout = float(request.timeout_seconds or 120.0)
         if node.transport is RemoteTransport.SSH:
             if self._ssh is None:
                 self._ssh = SSHTransport()
-            result = self._ssh.run(node, request.command)
+            result = self._ssh.run(node, request.command, timeout=timeout)
         elif node.transport is RemoteTransport.POWERSHELL:
             if self._powershell is None:
                 self._powershell = PowerShellTransport()
-            result = self._powershell.run(node, request.command)
+            result = self._powershell.run(node, request.command, timeout=timeout)
         else:
             raise NotImplementedError(f"Remote transport not implemented: {node.transport}")
         self.audit.record("remote.execute", node=node.id, command=request.command,

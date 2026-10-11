@@ -2,29 +2,136 @@
 
 import fnmatch
 import os
+from collections import Counter
 from pathlib import Path
 
 from ..permissions.scopes import READ, WRITE
 from ..security.path_guard import resolve_workspace_path
 from .base import ToolDefinition
 
+_OVERVIEW_CAP = 200
+_MANIFEST_DEPTH = 3
+_MANIFEST_NAMES = frozenset({
+    "readme",
+    "readme.md",
+    "readme.txt",
+    "readme.rst",
+    "package.json",
+    "pyproject.toml",
+    "cargo.toml",
+    "go.mod",
+    "composer.json",
+    "gemfile",
+    "pom.xml",
+    "build.gradle",
+    "build.gradle.kts",
+    "cmakelists.txt",
+    "makefile",
+    "setup.py",
+    "setup.cfg",
+})
+_MANIFEST_SUFFIXES = (".sln", ".csproj", ".fsproj")
+_TRUNCATION_NOTE = (
+    "File list omitted because count exceeds "
+    f"{_OVERVIEW_CAP}. Use list_project_structure with a path, "
+    "find_workspace_files, or read_workspace_file to inspect a part of the tree."
+)
+
 
 def _rel(path, root):
     return path.relative_to(root).as_posix()
 
+
+def _is_manifest(rel):
+    parts = rel.split("/")
+    if len(parts) - 1 > _MANIFEST_DEPTH:
+        return False
+    name = parts[-1].casefold()
+    return name in _MANIFEST_NAMES or name.endswith(_MANIFEST_SUFFIXES)
+
+
 def inventory_workspace(ctx, args):
     root = Path(ctx.workspace_root).resolve()
     ctx.permission_engine.check(READ)
-    files = []
+    count = 0
+    sample = []
+    extensions = Counter()
+    manifests = []
+    top_level = []
     for current_root, dirs, names in os.walk(root, followlinks=False):
         current = Path(current_root)
         dirs[:] = sorted(d for d in dirs if not (current / d).is_symlink())
+        file_names = []
         for name in sorted(names):
             path = current / name
-            if not path.is_symlink():
-                files.append(_rel(path, root))
-    ctx.audit.record("workspace.inventory", count=len(files))
-    return {"root": str(root), "files": files, "count": len(files)}
+            if path.is_symlink():
+                continue
+            rel = _rel(path, root)
+            count += 1
+            if len(sample) < _OVERVIEW_CAP:
+                sample.append(rel)
+            suffix = Path(name).suffix.lower() or "(none)"
+            extensions[suffix] += 1
+            if len(manifests) < 40 and _is_manifest(rel):
+                manifests.append(rel)
+            file_names.append(name)
+        if current == root:
+            top_level = sorted(dirs + file_names)
+    truncated = count > _OVERVIEW_CAP
+    result = {
+        "root": str(root),
+        "count": count,
+        "top_level": top_level,
+        "truncated": truncated,
+        "extensions": dict(extensions.most_common(20)),
+        "manifests": manifests,
+    }
+    if truncated:
+        result["note"] = _TRUNCATION_NOTE
+    else:
+        result["files"] = sample
+    ctx.audit.record("workspace.inventory", count=count, truncated=truncated)
+    return result
+
+
+def list_workspace_directories(ctx, args):
+    root = Path(ctx.workspace_root).resolve()
+    target = resolve_workspace_path(args.get("path", "."), root, must_exist=True)
+    ctx.permission_engine.check(READ)
+    if not target.is_dir():
+        raise NotADirectoryError(target)
+    max_depth = max(1, min(int(args.get("max_depth", 2)), 8))
+    levels = {depth: [] for depth in range(1, max_depth + 1)}
+    for current_root, dirs, _names in os.walk(target, followlinks=False):
+        current = Path(current_root)
+        dirs[:] = sorted(name for name in dirs if not (current / name).is_symlink())
+        depth_here = len(current.relative_to(target).parts)
+        if depth_here >= max_depth:
+            dirs[:] = []
+            continue
+        for name in dirs:
+            levels[depth_here + 1].append(_rel(current / name, root))
+    directories = []
+    truncated = False
+    for depth in range(1, max_depth + 1):
+        rows = sorted(levels[depth])
+        room = _OVERVIEW_CAP - len(directories)
+        if room <= 0:
+            truncated = True
+            break
+        if len(rows) > room:
+            directories.extend(rows[:room])
+            truncated = True
+            break
+        directories.extend(rows)
+    ctx.audit.record("workspace.directories", count=len(directories), truncated=truncated)
+    return {
+        "root": str(root),
+        "directories": directories,
+        "count": len(directories),
+        "truncated": truncated,
+        "max_depth": max_depth,
+    }
 
 def list_project_structure(ctx, args):
     root = Path(ctx.workspace_root).resolve()
@@ -32,9 +139,10 @@ def list_project_structure(ctx, args):
     ctx.permission_engine.check(READ)
     if not target.is_dir():
         raise NotADirectoryError(target)
-    max_depth = int(args.get("max_depth", 4))
+    max_depth = int(args.get("max_depth", 2))
     base = len(target.parts)
     output = []
+    truncated = False
     for current_root, dirs, names in os.walk(target, followlinks=False):
         current = Path(current_root)
         depth = len(current.parts) - base
@@ -42,9 +150,16 @@ def list_project_structure(ctx, args):
             dirs[:] = []
         dirs[:] = sorted(d for d in dirs if not (current / d).is_symlink())
         indent = "  " * depth
-        output.extend(f"{indent}{d}/" for d in dirs)
-        output.extend(f"{indent}{n}" for n in sorted(names))
-    return {"path": _rel(target, root), "tree": output}
+        lines = [f"{indent}{d}/" for d in dirs]
+        lines.extend(f"{indent}{n}" for n in sorted(names))
+        for line in lines:
+            if len(output) >= _OVERVIEW_CAP:
+                truncated = True
+                break
+            output.append(line)
+        if truncated:
+            break
+    return {"path": _rel(target, root), "tree": output, "truncated": truncated}
 
 def find_workspace_files(ctx, args):
     root = Path(ctx.workspace_root).resolve()
@@ -101,9 +216,14 @@ def write_workspace_file(ctx, args):
 
 def filesystem_tools():
     return [
-        ToolDefinition("inventory_workspace", "Recursively inventory approved workspace.",
+        ToolDefinition("inventory_workspace", "Summarize the approved workspace: file count, top-level names, and manifest paths. The full file list is included only for a small tree. Use this first when asked what a workspace or its files are.",
                         {"type": "object", "properties": {}}, inventory_workspace),
-        ToolDefinition("list_project_structure", "List a bounded workspace tree.",
+        ToolDefinition("list_workspace_directories", "List the approved workspace folders and their immediate subfolders, one level at a time. Does not walk into a folder before its siblings are listed. Pass path to open one folder, and max_depth to go deeper than 2.",
+                        {"type": "object", "properties": {
+                            "path": {"type": "string"},
+                            "max_depth": {"type": "integer", "minimum": 1, "maximum": 8},
+                        }}, list_workspace_directories),
+        ToolDefinition("list_project_structure", "Browse one folder in the approved workspace, up to 200 lines. path is relative to the workspace root; do not request paths outside it.",
                         {"type": "object", "properties": {
                             "path": {"type": "string"},
                             "max_depth": {"type": "integer", "minimum": 0, "maximum": 20},
@@ -112,7 +232,7 @@ def filesystem_tools():
                         {"type": "object", "properties": {
                             "pattern": {"type": "string"}}, "required": ["pattern"]},
                         find_workspace_files),
-        ToolDefinition("read_workspace_file", "Read one UTF-8 workspace file.",
+        ToolDefinition("read_workspace_file", "Read one UTF-8 file inside the approved workspace. path is relative to the workspace root.",
                         {"type": "object", "properties": {
                             "path": {"type": "string"}}, "required": ["path"]},
                         read_workspace_file),

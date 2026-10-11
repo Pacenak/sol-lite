@@ -11,11 +11,80 @@ from ..core.event_bus import Event
 from ..core.exceptions import (
     AgentError,
     ApprovalRequired,
+    ModelError,
     PermissionDenied,
+    SecurityError,
+    ShellCommandInterrupt,
     ToolExecutionError,
+)
+from .project_brief import (
+    build_project_brief,
+    format_project_brief,
+    identity_answer_misses,
 )
 from .repeat_guard import RepeatToolGuard
 from .status import MAX_TOOL_ROUNDS, StatusTracker
+from .task_fit import (
+    DIRECTORY_LISTING_TOOL_NAMES,
+    GIT_READ_TOOL_NAMES,
+    WORKSPACE_EVIDENCE_PATTERNS,
+    WORKSPACE_EVIDENCE_TOOL_NAMES,
+    apply_jira_workspace_gate,
+    directory_evidence,
+    invented_directory_paths,
+    matching_tasks,
+    permitted_tools,
+)
+
+_PROCEDURE_REQUEST = re.compile(
+    r"\b(?:follow (?:the |this )?(?:studio |infrastructure )?(?:procedure|checklist|runbook|docs?|manual|volume)|procedure|checklist|runbook)\b",
+    re.IGNORECASE,
+)
+_PROCEDURE_CLAIM = re.compile(
+    r"\b(?:complete|completed|finished)\b",
+    re.IGNORECASE,
+)
+_PROCEDURE_DIRECT_TOOLS = frozenset({
+    "execute_terminal_command",
+    "write_workspace_file",
+    "remote_execute",
+})
+_EXPLAIN_WORKSPACE = re.compile(
+    r"\bwhat (?:is|are)\b|\bfiles? (?:are|is) for\b|\banaly[sz]e\b|\boverview\b",
+    re.IGNORECASE,
+)
+_TOOL_ERROR_ANSWER = re.compile(
+    r"not a git repository|fatal:\s|git .+ failed \(|tool execution failed",
+    re.IGNORECASE,
+)
+_OVERVIEW_TOOL_NAMES = frozenset({
+    "inventory_workspace",
+    "list_workspace_directories",
+    "list_project_structure",
+})
+_CONTENTS_OVERVIEW = re.compile(
+    r"\b(?:analy[sz]e|list|show|inspect)\b[\s\S]{0,120}\b(?:contents?|folders?|director(?:y|ies)|workspace)\b",
+    re.IGNORECASE,
+)
+_DONE_CLAIM = re.compile(
+    r"\b(?:done|fixed|implemented|tests pass)\b",
+    re.IGNORECASE,
+)
+_BLOCKED_ANSWER = re.compile(r"\bblocked\b", re.IGNORECASE)
+_EMPTY_WORKSPACE_CLAIM = re.compile(
+    r"\b(?:is empty|empty workspace|0 files?|0 director(?:y|ies)|zero files|zero directories)\b",
+    re.IGNORECASE,
+)
+_MODEL_XML_ERROR = re.compile(
+    r"XML syntax|</parameter>|element <function>",
+    re.IGNORECASE,
+)
+_MODEL_TIMEOUT = re.compile(r"timed out|timeout", re.IGNORECASE)
+_PROOF_TOOLS = frozenset({
+    "write_workspace_file",
+    "execute_terminal_command",
+})
+_FILE_EVIDENCE_TOOL_NAMES = WORKSPACE_EVIDENCE_TOOL_NAMES | GIT_READ_TOOL_NAMES
 
 PHASES = {
     "00": "WORKSPACE DISCOVERY",
@@ -29,53 +98,50 @@ PHASES = {
 }
 
 
-# Only successful inspection operations establish workspace evidence. Mutating
-# repository operations and arbitrary terminal commands may change state, but
-# they do not prove that the agent inspected the workspace before responding.
-WORKSPACE_EVIDENCE_TOOL_NAMES = {
-    "inventory_workspace",
-    "list_project_structure",
-    "find_workspace_files",
-    "read_workspace_file",
-    "read_workspace_files",
-    "get_workspace_file_metadata",
-    "search_codebase",
-    "analyze_architecture_drift",
-    "repository_status",
-    "repository_diff",
-    "repository_log",
-    "repository_branches",
-    "repository_remotes",
-    "runtime_get_context",
-}
-
-WORKSPACE_EVIDENCE_PATTERNS = (
-    r"\bworkspace\b",
-    r"\brepository\b",
-    r"\brepo\b",
-    r"\bcodebase\b",
-    r"\bsource\b",
-    r"\bfolder\b",
-    r"\bdirectory\b",
-    r"\bfiles?\b",
-    r"\bcontents?\b",
-    r"\banaly[sz]e\b",
-    r"\binspect\b",
-    r"\breview\b",
-    r"\baudit\b",
-    r"\bdebug\b",
-    r"\bunderstand\b",
-    r"\btrace\b",
-    r"\binvestigate\b",
-    r"\bfix\b",
-)
-
-
 def phase_from_prompt_name(name):
     return PHASES.get(
         os.path.basename(name)[:2],
         "INTERACTIVE",
     )
+
+
+def _format_directories(paths, truncated):
+    body = "\n".join(paths)
+    if truncated:
+        note = (
+            "Truncated. Open one folder by calling "
+            "list_workspace_directories with its path."
+        )
+        body = f"{body}\n\n{note}" if body else note
+    return body or "No directories."
+
+
+def _format_inventory(result):
+    lines = [f"Files: {result.get('count', 0)}", "Top level:"]
+    top = [item for item in result.get("top_level") or [] if isinstance(item, str)]
+    lines.extend(f"- {name}" for name in top)
+    if not top:
+        lines.append("- (none)")
+    manifests = [item for item in result.get("manifests") or [] if isinstance(item, str)]
+    if manifests:
+        lines.append("Manifests:")
+        lines.extend(f"- {path}" for path in manifests)
+    note = result.get("note")
+    if result.get("truncated") and note:
+        lines.append(str(note))
+    return "\n".join(lines)
+
+
+def _answer_only_restates_tool_error(content, top_level):
+    """True when the draft is a tool failure and does not name the overview."""
+    if not _TOOL_ERROR_ANSWER.search(content or ""):
+        return False
+    lowered = (content or "").casefold()
+    for name in top_level:
+        token = str(name).strip().strip("/").casefold()
+        if token and token in lowered:
+            return False
+    return True
 
 
 @dataclass(slots=True)
@@ -88,6 +154,7 @@ class AgentResult:
     tool_failures: int = 0
     native_tool_calls: int = 0
     raw_tool_like_content: bool = False
+    shell_command: str | None = None
 
 
 class AgentRuntime:
@@ -104,10 +171,12 @@ class AgentRuntime:
         approval_callback=None,
         skill_context="",
         event_bus=None,
+        tool_names=None,
     ):
         self.model_manager = model_manager
         self.tools = tools
         self.tool_context = tool_context
+        self.tool_names = tool_names
         self.fault_log = fault_log
         self.status = status or StatusTracker()
         self.max_tool_rounds = max_tool_rounds
@@ -134,16 +203,18 @@ class AgentRuntime:
         self.status.cancel()
 
     @staticmethod
+    def _latest_user_text(messages):
+        """The newest user sentence. Earlier turns must not retarget the tools."""
+        latest = ""
+        for message in messages or []:
+            if isinstance(message, dict) and message.get("role") == "user":
+                latest = str(message.get("content", ""))
+        return latest
+
+    @staticmethod
     def _requires_workspace_evidence(messages):
         """Determine whether the user's request requires actual workspace evidence."""
-        user_text = "\n".join(
-            str(message.get("content", ""))
-            for message in messages
-            if (
-                isinstance(message, dict)
-                and message.get("role") == "user"
-            )
-        )
+        user_text = AgentRuntime._latest_user_text(messages)
 
         return any(
             re.search(
@@ -157,7 +228,7 @@ class AgentRuntime:
     @staticmethod
     def _workspace_tool_was_used(tool_names):
         return any(
-            name in WORKSPACE_EVIDENCE_TOOL_NAMES
+            name in _FILE_EVIDENCE_TOOL_NAMES
             for name in tool_names
         )
 
@@ -167,9 +238,11 @@ class AgentRuntime:
         profile,
         messages,
         prompt_name="",
+        allowed_tools=None,
     ):
         self._cancel_event.clear()
         self._last_status_event = None
+        self.secret_redactions = []
 
         def status_update(line):
             if self.status_callback is not None:
@@ -221,6 +294,7 @@ class AgentRuntime:
         native_calls = 0
         raw_tool_like = False
         tool_format_retries = 0
+        model_error_retries = 0
 
         required_workspace_evidence = (
             self._requires_workspace_evidence(
@@ -228,7 +302,67 @@ class AgentRuntime:
             )
         )
 
+        request_text = self._latest_user_text(messages)
+        tasks = matching_tasks(request_text)
+        requires_directory_listing = "directory_listing" in tasks
+        if allowed_tools is not None:
+            active_allowlist = frozenset(allowed_tools)
+        elif self.tool_names is not None:
+            active_allowlist = frozenset(self.tool_names)
+        else:
+            active_allowlist = None
+        task_permitted = apply_jira_workspace_gate(
+            request_text,
+            permitted_tools(
+                request_text,
+                active_allowlist,
+            ),
+            getattr(self.tool_context, "jira_projects", ()),
+        )
+
         workspace_tools_used = set()
+        directory_tool_succeeded = False
+        directory_paths = set()
+        directory_root = None
+        allowlist_mismatches = 0
+        task_mismatches = 0
+        grounding_retries = 0
+        overview_succeeded = False
+        overview_top = []
+        files_read = []
+        error_answer_retries = 0
+        missing_tool_retries = 0
+        directory_answer_paths = []
+        directory_truncated = False
+        notes_written = False
+        change_proved = False
+        identity_answer_retries = 0
+        notes_answer_retries = 0
+        validation_retries = 0
+        empty_claim_retries = 0
+        inventory_snapshot = None
+        contents_overview = bool(_CONTENTS_OVERVIEW.search(request_text))
+        explains_workspace = (
+            "workspace_inspection" in tasks
+            and bool(_EXPLAIN_WORKSPACE.search(request_text))
+        )
+        identity_question = "identity" in tasks
+        notes_question = "notes" in tasks
+        change_question = "change" in tasks
+        project_brief = None
+        if identity_question and getattr(self.tool_context, "workspace_root", None):
+            try:
+                project_brief = build_project_brief(self.tool_context)
+            except (
+                OSError,
+                PermissionDenied,
+                SecurityError,
+                ToolExecutionError,
+                TypeError,
+                ValueError,
+                AttributeError,
+            ):
+                project_brief = None
 
         try:
             for number in range(
@@ -269,11 +403,75 @@ class AgentRuntime:
                     round=number,
                 )
 
-                response = self.model_manager.chat(
-                    profile,
-                    current,
-                    self.tools.ollama_schemas(),
-                )
+                schema_names = None
+                if task_permitted is not None:
+                    schema_names = task_permitted
+                elif active_allowlist is not None:
+                    schema_names = active_allowlist
+                try:
+                    schemas = (
+                        self.tools.ollama_schemas(tuple(schema_names))
+                        if schema_names is not None
+                        else self.tools.ollama_schemas()
+                    )
+                except TypeError:
+                    schemas = self.tools.ollama_schemas()
+                try:
+                    response = self.model_manager.chat(
+                        profile,
+                        current,
+                        schemas,
+                    )
+                except ModelError as exc:
+                    text = str(exc)
+                    xml_error = _MODEL_XML_ERROR.search(text) is not None
+                    timed_out = _MODEL_TIMEOUT.search(text) is not None
+                    if xml_error or timed_out:
+                        if model_error_retries < 1:
+                            model_error_retries += 1
+                            if xml_error:
+                                current.append({
+                                    "role": "user",
+                                    "content": (
+                                        "The previous model call failed because the tool markup was invalid. "
+                                        "Use the native structured tool interface. "
+                                        "Do not write XML, markdown fences, or a textual tool call."
+                                    ),
+                                })
+                                self.status.touch("Retrying after invalid tool markup")
+                            else:
+                                current.append({
+                                    "role": "user",
+                                    "content": (
+                                        "The previous model call timed out. "
+                                        "Answer briefly. Use a native tool only if one is required."
+                                    ),
+                                })
+                                self.status.touch("Retrying after timeout")
+                            continue
+                        short = (
+                            "The model could not complete that turn because its tool call was invalid. "
+                            "Send the request again."
+                            if xml_error
+                            else "The model timed out before it could answer. Send the request again."
+                        )
+                        self.status.finish("COMPLETED", "Response complete")
+                        self._emit(
+                            "agent.completed",
+                            rounds=number,
+                            tool_calls=tool_calls_total,
+                        )
+                        return AgentResult(
+                            short,
+                            number,
+                            False,
+                            None,
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            raw_tool_like,
+                        )
+                    raise
 
                 message = getattr(
                     response,
@@ -335,16 +533,18 @@ class AgentRuntime:
                         # content. Some local models occasionally ignore the
                         # native tool channel on their first response; give
                         # them one bounded chance to correct the format.
-                        if tool_format_retries < 1:
+                        if tool_format_retries < 2:
                             tool_format_retries += 1
                             current.append({
                                 "role": "user",
                                 "content": (
                                     "Your last response did not use the native structured tool interface. "
-                                    "Do not write a textual or markup representation of a tool call. "
-                                    "Continue the original request and, when a tool is needed, call it "
-                                    "using the provided native tool interface. If you cannot do that, "
-                                    "explain the limitation in ordinary text."
+                                    "Do not write XML, markdown fences, or a textual tool call. "
+                                    "Continue the original request and invoke a provided tool such as "
+                                    "list_workspace_directories, inventory_workspace, "
+                                    "list_project_structure, or read_workspace_file "
+                                    "through the native tool interface. "
+                                    "If you cannot do that, explain the limitation in ordinary text."
                                 ),
                             })
                             self.status.touch("Retrying with native tool interface")
@@ -395,11 +595,307 @@ class AgentRuntime:
                         )
 
                     if (
+                        requires_directory_listing
+                        and not directory_tool_succeeded
+                    ):
+                        if missing_tool_retries < 1:
+                            missing_tool_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Call list_workspace_directories now through "
+                                    "the native tool interface. The workspace "
+                                    "tools are already available. Do not say you "
+                                    "cannot access folders, and do not ask the "
+                                    "user to paste a tree."
+                                ),
+                            })
+                            self.status.touch("Requesting directory listing")
+                            continue
+                        listed = self._overview_result("list_workspace_directories")
+                        if listed is not None:
+                            tool_calls_total += 1
+                            paths = [
+                                path for path in listed.get("directories") or []
+                                if isinstance(path, str)
+                            ]
+                            self.status.finish("COMPLETED", "Response complete")
+                            self._emit(
+                                "agent.completed",
+                                rounds=number,
+                                tool_calls=tool_calls_total,
+                            )
+                            return AgentResult(
+                                _format_directories(
+                                    paths,
+                                    bool(listed.get("truncated")),
+                                ),
+                                number,
+                                False,
+                                None,
+                                tool_calls_total,
+                                tool_failures,
+                                native_calls,
+                                False,
+                            )
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="WORKSPACE_EVIDENCE_REQUIRED",
+                            content=content,
+                        )
+                        self._emit(
+                            "agent.failed",
+                            reason="workspace_evidence_required",
+                        )
+                        self.status.finish(
+                            "FAILED",
+                            (
+                                "Workspace evidence is required "
+                                "before completing this task"
+                            ),
+                        )
+                        return AgentResult(
+                            "",
+                            number,
+                            False,
+                            "workspace_evidence_required",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        requires_directory_listing
+                        and directory_tool_succeeded
+                    ):
+                        invented = invented_directory_paths(
+                            content,
+                            directory_paths,
+                            directory_root,
+                        )
+                        if invented:
+                            if grounding_retries < 1:
+                                grounding_retries += 1
+                                shown = "\n".join(directory_answer_paths[:40])
+                                current.append({
+                                    "role": "user",
+                                    "content": (
+                                        "The directory tool already returned the "
+                                        "folders. Reply with only those directory "
+                                        "paths, one per line. Do not say the user "
+                                        "pasted a list. Do not add paths that were "
+                                        "not returned.\n"
+                                        + shown
+                                    ),
+                                })
+                                self.status.touch(
+                                    "Correcting ungrounded directory paths"
+                                )
+                                continue
+                            self.status.finish(
+                                "COMPLETED",
+                                "Response complete",
+                            )
+                            self._emit(
+                                "agent.completed",
+                                rounds=number,
+                                tool_calls=tool_calls_total,
+                            )
+                            return AgentResult(
+                                _format_directories(
+                                    directory_answer_paths,
+                                    directory_truncated,
+                                ),
+                                number,
+                                False,
+                                None,
+                                tool_calls_total,
+                                tool_failures,
+                                native_calls,
+                                False,
+                            )
+
+                    if notes_question and not notes_written:
+                        if notes_answer_retries < 1:
+                            notes_answer_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Save what the program is and how to edit it "
+                                    "with workspace_notes_write before you finish. "
+                                    "Do not say the notes are written until that "
+                                    "tool succeeds."
+                                ),
+                            })
+                            self.status.touch("Requesting workspace notes")
+                            continue
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="NOTES_REQUIRED",
+                            content=content,
+                        )
+                        self._emit("agent.failed", reason="notes_required")
+                        self.status.finish(
+                            "FAILED",
+                            "Workspace notes are required before completing this task",
+                        )
+                        return AgentResult(
+                            "",
+                            number,
+                            False,
+                            "notes_required",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        change_question
+                        and _DONE_CLAIM.search(content or "")
+                        and not change_proved
+                    ):
+                        if validation_retries < 1:
+                            validation_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Do not claim the change is done unless "
+                                    "write_workspace_file or execute_terminal_command "
+                                    "succeeded on this turn. If you cannot do the "
+                                    "work, say what is blocked without claiming "
+                                    "it is done, fixed, implemented, or that tests pass."
+                                ),
+                            })
+                            self.status.touch("Requesting proof of the change")
+                            continue
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="VALIDATION_REQUIRED",
+                            content=content,
+                        )
+                        self._emit("agent.failed", reason="validation_required")
+                        self.status.finish(
+                            "FAILED",
+                            "A write or validation command is required before claiming completion",
+                        )
+                        return AgentResult(
+                            "",
+                            number,
+                            False,
+                            "validation_required",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        change_question
+                        and _BLOCKED_ANSWER.search(content or "")
+                        and not _DONE_CLAIM.search(content or "")
+                    ):
+                        self.status.finish("COMPLETED", "Response complete")
+                        self._emit(
+                            "agent.completed",
+                            rounds=number,
+                            tool_calls=tool_calls_total,
+                        )
+                        return AgentResult(
+                            content,
+                            number,
+                            False,
+                            None,
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        identity_question
+                        and project_brief is not None
+                        and identity_answer_misses(content, project_brief)
+                    ):
+                        shown = format_project_brief(project_brief)
+                        if identity_answer_retries < 1:
+                            identity_answer_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Your answer does not describe the project. "
+                                    "Answer from this brief. Do not say the user "
+                                    "pasted a file list. A Git failure is not the "
+                                    "description of the program.\n"
+                                    + shown
+                                ),
+                            })
+                            self.status.touch("Correcting ungrounded project answer")
+                            continue
+                        self.status.finish("COMPLETED", "Response complete")
+                        self._emit(
+                            "agent.completed",
+                            rounds=number,
+                            tool_calls=tool_calls_total,
+                        )
+                        return AgentResult(
+                            shown,
+                            number,
+                            False,
+                            None,
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
                         required_workspace_evidence
+                        and not requires_directory_listing
+                        and not change_proved
+                        and not (notes_question and notes_written)
                         and not self._workspace_tool_was_used(
                             workspace_tools_used
                         )
                     ):
+                        if missing_tool_retries < 1:
+                            missing_tool_retries += 1
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Call inventory_workspace now through the "
+                                    "native tool interface. Workspace file tools "
+                                    "are already available. A skill does not remove "
+                                    "them. Do not say you cannot access the "
+                                    "workspace, and do not ask the user to paste files."
+                                ),
+                            })
+                            self.status.touch("Requesting workspace inventory")
+                            continue
+                        if contents_overview:
+                            inventoried = self._overview_result("inventory_workspace")
+                            if inventoried is not None:
+                                tool_calls_total += 1
+                                self.status.finish(
+                                    "COMPLETED",
+                                    "Response complete",
+                                )
+                                self._emit(
+                                    "agent.completed",
+                                    rounds=number,
+                                    tool_calls=tool_calls_total,
+                                )
+                                return AgentResult(
+                                    _format_inventory(inventoried),
+                                    number,
+                                    False,
+                                    None,
+                                    tool_calls_total,
+                                    tool_failures,
+                                    native_calls,
+                                    False,
+                                )
                         self.fault_log.log(
                             category="agent_runtime",
                             code="WORKSPACE_EVIDENCE_REQUIRED",
@@ -420,7 +916,95 @@ class AgentRuntime:
                         )
 
                         return AgentResult(
+                            "",
+                            number,
+                            False,
+                            "workspace_evidence_required",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if self._procedure_claim_blocked(
+                        messages,
+                        content,
+                    ):
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="PROCEDURE_NOT_VERIFIED",
+                            content=content,
+                        )
+                        self._emit(
+                            "agent.failed",
+                            reason="procedure_not_verified",
+                        )
+                        self.status.finish(
+                            "FAILED",
+                            (
+                                "Procedure evidence is required "
+                                "before claiming completion"
+                            ),
+                        )
+                        return AgentResult(
                             content,
+                            number,
+                            False,
+                            "procedure_not_verified",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        explains_workspace
+                        and overview_succeeded
+                        and _answer_only_restates_tool_error(
+                            content,
+                            overview_top,
+                        )
+                    ):
+                        if error_answer_retries < 1:
+                            error_answer_retries += 1
+                            shown = ", ".join(overview_top) or "(none)"
+                            read = ", ".join(files_read) or "(none)"
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Your answer only restates a tool error. "
+                                    "Describe the workspace from the file overview. "
+                                    f"Top-level entries: {shown}. "
+                                    f"Files already read: {read}. "
+                                    "Say what those files are for. "
+                                    "A Git failure is not the description of the program. "
+                                    "If the overview is truncated, give the file count "
+                                    "and the top-level areas. "
+                                    "Do not claim every file was read."
+                                ),
+                            })
+                            self.status.touch(
+                                "Correcting tool-error answer"
+                            )
+                            continue
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="WORKSPACE_EVIDENCE_REQUIRED",
+                            content=content,
+                        )
+                        self._emit(
+                            "agent.failed",
+                            reason="workspace_evidence_required",
+                        )
+                        self.status.finish(
+                            "FAILED",
+                            (
+                                "Workspace evidence is required "
+                                "before completing this task"
+                            ),
+                        )
+                        return AgentResult(
+                            "",
                             number,
                             False,
                             "workspace_evidence_required",
@@ -457,6 +1041,46 @@ class AgentRuntime:
                             number,
                             False,
                             "no_tool_call_or_response",
+                            tool_calls_total,
+                            tool_failures,
+                            native_calls,
+                            False,
+                        )
+
+                    if (
+                        overview_succeeded
+                        and overview_top
+                        and _EMPTY_WORKSPACE_CLAIM.search(content or "")
+                    ):
+                        if empty_claim_retries < 1:
+                            empty_claim_retries += 1
+                            shown = ", ".join(overview_top)
+                            current.append({
+                                "role": "user",
+                                "content": (
+                                    "Your answer says the workspace is empty. "
+                                    "The inventory is not empty. "
+                                    f"Top-level entries: {shown}. "
+                                    "Describe those entries. Do not say there are "
+                                    "0 files or 0 directories."
+                                ),
+                            })
+                            self.status.touch("Correcting empty workspace answer")
+                            continue
+                        self.status.finish("COMPLETED", "Response complete")
+                        self._emit(
+                            "agent.completed",
+                            rounds=number,
+                            tool_calls=tool_calls_total,
+                        )
+                        return AgentResult(
+                            _format_inventory(inventory_snapshot or {
+                                "count": len(overview_top),
+                                "top_level": list(overview_top),
+                            }),
+                            number,
+                            False,
+                            None,
                             tool_calls_total,
                             tool_failures,
                             native_calls,
@@ -517,10 +1141,20 @@ class AgentRuntime:
 
                     tool_calls_total += 1
 
+                    if name == "jira_save_workspace":
+                        token = str((args or {}).get("token") or "")
+                        if len(token) >= 8 and token not in self.secret_redactions:
+                            self.secret_redactions.append(token)
+
+                    logged_args = args
+                    if name == "jira_save_workspace" and isinstance(args, dict) and args.get("token"):
+                        logged_args = dict(args)
+                        logged_args["token"] = "[redacted]"
+
                     self._emit(
                         "tool.requested",
                         tool=name,
-                        arguments=args,
+                        arguments=logged_args,
                         round=number,
                     )
 
@@ -573,6 +1207,82 @@ class AgentRuntime:
 
                         continue
 
+                    blocked = self._policy_block(
+                        name,
+                        active_allowlist,
+                        task_permitted,
+                    )
+                    if blocked is not None:
+                        reason = blocked["reason"]
+                        if reason == "tool_not_allowed":
+                            allowlist_mismatches += 1
+                            exceeded = allowlist_mismatches > 1
+                        else:
+                            task_mismatches += 1
+                            exceeded = task_mismatches > 1
+                        tool_failures += 1
+                        current.append(
+                            self._tool_result_message(
+                                name,
+                                blocked,
+                            )
+                        )
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code=reason.upper(),
+                            tool=name,
+                            arguments=args,
+                        )
+                        self._emit(
+                            "tool.rejected",
+                            tool=name,
+                            reason=reason,
+                        )
+                        self.status.touch(blocked["error"])
+                        if exceeded:
+                            self.status.finish(
+                                "FAILED",
+                                blocked["error"],
+                            )
+                            self._emit(
+                                "agent.failed",
+                                reason=reason,
+                            )
+                            return AgentResult(
+                                "",
+                                number,
+                                False,
+                                reason,
+                                tool_calls_total,
+                                tool_failures,
+                                native_calls,
+                                raw_tool_like,
+                            )
+                        continue
+
+                    procedure_block = self._procedure_direct_block(name)
+                    if procedure_block is not None:
+                        tool_failures += 1
+                        current.append(
+                            self._tool_result_message(
+                                name,
+                                procedure_block,
+                            )
+                        )
+                        self.fault_log.log(
+                            category="agent_runtime",
+                            code="PROCEDURE_STEP_REQUIRED",
+                            tool=name,
+                            arguments=args,
+                        )
+                        self._emit(
+                            "tool.rejected",
+                            tool=name,
+                            reason="procedure_step_required",
+                        )
+                        self.status.touch(procedure_block["error"])
+                        continue
+
                     self.status.tool_start(name)
 
                     self._emit(
@@ -591,7 +1301,7 @@ class AgentRuntime:
                         )
 
                     except ApprovalRequired as exc:
-                        self.status.touch(
+                        self.status.await_approval(
                             f"Approval required · {name}"
                         )
 
@@ -599,11 +1309,12 @@ class AgentRuntime:
                             category="permission",
                             code="APPROVAL_REQUIRED",
                             tool=name,
-                            arguments=args,
+                            arguments=logged_args,
                             error=str(exc),
                         )
 
                         approval_id = None
+                        callback_error = None
 
                         self._emit(
                             "approval.requested",
@@ -615,11 +1326,42 @@ class AgentRuntime:
                             is not None
                             and exc.request is not None
                         ):
-                            approval_id = (
-                                self.approval_callback(
-                                    exc.request
+                            try:
+                                approval_id = (
+                                    self.approval_callback(
+                                        exc.request
+                                    )
                                 )
-                            )
+                            except ShellCommandInterrupt as interrupted:
+                                self.status.resume_work(
+                                    "Shell command"
+                                )
+                                self.cancel()
+                                self._emit(
+                                    "agent.cancelled",
+                                    reason="shell_command",
+                                    command=interrupted.command,
+                                )
+                                return AgentResult(
+                                    "",
+                                    number,
+                                    True,
+                                    "shell_command",
+                                    tool_calls_total,
+                                    tool_failures,
+                                    native_calls,
+                                    raw_tool_like,
+                                    interrupted.command,
+                                )
+                            except Exception as callback_exc:  # noqa: BLE001
+                                approval_id = None
+                                callback_error = str(callback_exc)
+                                self.fault_log.log(
+                                    category="permission",
+                                    code="APPROVAL_CALLBACK_FAILED",
+                                    tool=name,
+                                    error=callback_error,
+                                )
 
                         if approval_id:
                             approved_args = dict(args)
@@ -627,7 +1369,7 @@ class AgentRuntime:
                                 "approval_id"
                             ] = approval_id
 
-                            self.status.touch(
+                            self.status.resume_work(
                                 f"Approved · executing {name}"
                             )
 
@@ -648,6 +1390,7 @@ class AgentRuntime:
                             except (
                                 ToolExecutionError,
                                 PermissionDenied,
+                                ApprovalRequired,
                             ) as approved_exc:
                                 tool_failures += 1
                                 self.status.error()
@@ -656,29 +1399,28 @@ class AgentRuntime:
                                     category="tool",
                                     code=(
                                         "TOOL_EXECUTION_ERROR"
-                                        if isinstance(
-                                            approved_exc,
-                                            ToolExecutionError,
-                                        )
+                                        if isinstance(approved_exc, ToolExecutionError)
+                                        else "APPROVAL_REQUIRED"
+                                        if isinstance(approved_exc, ApprovalRequired)
                                         else "PERMISSION_DENIED"
                                     ),
                                     tool=name,
                                     arguments=approved_args,
-                                    error=str(
-                                        approved_exc
-                                    ),
+                                    error=str(approved_exc),
                                 )
 
                                 result = {
                                     "ok": False,
-                                    "error": str(
-                                        approved_exc
-                                    ),
+                                    "error": str(approved_exc),
                                     "tool": name,
+                                    "approval_required": isinstance(approved_exc, ApprovalRequired),
                                 }
 
                         else:
                             tool_failures += 1
+                            self.status.resume_work(
+                                f"Approval denied · {name}"
+                            )
 
                             self._emit(
                                 "approval.denied",
@@ -693,7 +1435,7 @@ class AgentRuntime:
 
                             result = {
                                 "ok": False,
-                                "error": str(exc),
+                                "error": callback_error or str(exc),
                                 "approval_required": True,
                                 "tool": name,
                             }
@@ -775,11 +1517,65 @@ class AgentRuntime:
 
                     if (
                         successful
-                        and name in WORKSPACE_EVIDENCE_TOOL_NAMES
+                        and name in _FILE_EVIDENCE_TOOL_NAMES
                     ):
                         workspace_tools_used.add(
                             name
                         )
+
+                    if successful and name == "workspace_notes_write":
+                        notes_written = True
+                    if successful and name in _PROOF_TOOLS:
+                        change_proved = True
+
+                    if successful and isinstance(result, dict):
+                        if name in _OVERVIEW_TOOL_NAMES:
+                            overview_succeeded = True
+                        if name == "inventory_workspace":
+                            top = result.get("top_level") or []
+                            if isinstance(top, list):
+                                overview_top = [
+                                    item for item in top
+                                    if isinstance(item, str)
+                                ]
+                            inventory_snapshot = {
+                                "count": result.get("count", len(overview_top)),
+                                "top_level": list(overview_top),
+                                "manifests": [
+                                    item for item in result.get("manifests") or []
+                                    if isinstance(item, str)
+                                ],
+                                "truncated": bool(result.get("truncated")),
+                                "note": result.get("note"),
+                            }
+                        if name == "read_workspace_file":
+                            path = result.get("path")
+                            if isinstance(path, str) and path not in files_read:
+                                files_read.append(path)
+
+                    if (
+                        successful
+                        and name in DIRECTORY_LISTING_TOOL_NAMES
+                    ):
+                        found, root = directory_evidence(
+                            name,
+                            result,
+                        )
+                        directory_paths.update(found)
+                        if root:
+                            directory_root = root
+                        directory_tool_succeeded = True
+                        if name == "list_workspace_directories":
+                            directory_answer_paths = [
+                                path for path in result.get("directories") or []
+                                if isinstance(path, str)
+                            ]
+                            directory_truncated = bool(result.get("truncated"))
+                        elif not directory_answer_paths:
+                            directory_answer_paths = sorted(found)
+                            directory_truncated = bool(
+                                isinstance(result, dict) and result.get("truncated")
+                            )
 
                     # -----------------------------------------------------
                     # Every native tool call gets exactly one tool result.
@@ -855,6 +1651,72 @@ class AgentRuntime:
 
         finally:
             self.status.stop()
+
+    def _overview_result(self, name):
+        try:
+            result = self.tools.execute(name, {}, self.tool_context)
+        except (ToolExecutionError, PermissionDenied, OSError, TypeError, ValueError):
+            return None
+        if not isinstance(result, dict) or result.get("ok") is False:
+            return None
+        return result
+
+    def _procedure_claim_blocked(self, messages, content):
+        request = "\n".join(
+            str(message.get("content", ""))
+            for message in messages
+            if isinstance(message, dict) and message.get("role") == "user"
+        )
+        if not _PROCEDURE_REQUEST.search(request or ""):
+            return False
+        if not _PROCEDURE_CLAIM.search(content or ""):
+            return False
+        session = getattr(self.tool_context, "procedure_session", None)
+        if session is None:
+            return True
+        status = session.status()
+        return not bool(status.get("complete"))
+
+    def _procedure_direct_block(self, name):
+        session = getattr(self.tool_context, "procedure_session", None)
+        if session is None or name not in _PROCEDURE_DIRECT_TOOLS:
+            return None
+        return {
+            "ok": False,
+            "error": (
+                "A studio procedure is active. "
+                "Call procedure_advance for the current row."
+            ),
+            "tool": name,
+            "reason": "procedure_step_required",
+        }
+
+    @staticmethod
+    def _policy_block(name, allowlist, task_permitted):
+        if allowlist is not None and name not in allowlist:
+            allowed = ", ".join(sorted(allowlist)) or "none"
+            return {
+                "ok": False,
+                "error": (
+                    "Tool is not available to this agent. "
+                    f"Allowed tools: {allowed}."
+                ),
+                "tool": name,
+                "reason": "tool_not_allowed",
+            }
+        if task_permitted is not None and name not in task_permitted:
+            required = ", ".join(sorted(task_permitted)) or "none"
+            return {
+                "ok": False,
+                "error": (
+                    f"This request does not allow {name}. "
+                    f"Call one of: {required}."
+                ),
+                "tool": name,
+                "reason": "task_tool_mismatch",
+                "required_tools": sorted(task_permitted),
+            }
+        return None
 
     @staticmethod
     def _looks_like_raw_tool_json(content):

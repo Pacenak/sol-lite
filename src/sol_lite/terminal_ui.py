@@ -11,7 +11,29 @@ from rich.panel import Panel
 from rich.table import Table
 from rich.text import Text
 
+from .core.exceptions import ShellCommandInterrupt
 from .ui.theme import SOL_LITE_THEME
+
+_SECRET_ARGUMENT_KEYS = frozenset({
+    "token",
+    "api_token",
+    "api_key",
+    "password",
+    "secret",
+})
+
+
+def _display_arguments(arguments):
+    """Show approval arguments without printing a saved API token."""
+    if not isinstance(arguments, dict):
+        return repr(arguments)
+    shown = {}
+    for key, value in arguments.items():
+        if str(key).casefold() in _SECRET_ARGUMENT_KEYS and value:
+            shown[key] = "[redacted]"
+        else:
+            shown[key] = value
+    return repr(shown)
 
 
 class TerminalUI:
@@ -52,6 +74,7 @@ class TerminalUI:
     def _status_style(status: str) -> str:
         return {
             "WORKING": "sol_core_bold",
+            "AWAITING_APPROVAL": "sol_command",
             "SLOW": "sol_warning",
             "STALLED": "sol_error",
             "COMPLETED": "sol_success",
@@ -67,6 +90,7 @@ class TerminalUI:
     def _status_symbol(status: str) -> str:
         return {
             "WORKING": "◐",
+            "AWAITING_APPROVAL": "?",
             "SLOW": "◌",
             "STALLED": "⚠",
             "COMPLETED": "✓",
@@ -386,6 +410,16 @@ class TerminalUI:
         )
 
     def approval(self, request):
+        paused = self._live is not None and getattr(self._live, "is_started", False)
+        if paused:
+            self._live.stop()
+        try:
+            return self._approval_prompt(request)
+        finally:
+            if paused and self._live is not None:
+                self._live.start(refresh=True)
+
+    def _approval_prompt(self, request):
         table = Table.grid(
             padding=(0, 1)
         )
@@ -418,7 +452,7 @@ class TerminalUI:
                 style="sol_dim",
             ),
             Text(
-                repr(request.arguments),
+                _display_arguments(request.arguments),
                 style="sol_neutral",
             ),
         )
@@ -453,7 +487,7 @@ class TerminalUI:
                 "Approve this exact operation? [y/N] "
                 "❯ "
                 "[/sol_command]"
-            ).strip().lower()
+            ).strip()
 
         except (
             EOFError,
@@ -461,9 +495,12 @@ class TerminalUI:
         ):
             return None
 
+        if answer.startswith("/"):
+            raise ShellCommandInterrupt(answer)
+
         return (
             request.approval_id
-            if answer in {
+            if answer.casefold() in {
                 "y",
                 "yes",
             }
@@ -544,6 +581,10 @@ class TerminalUI:
                 "Run a task concurrently and keep chatting",
             ),
             (
+                "/follow <path>",
+                "Classify a studio checklist without running approval-gated commands",
+            ),
+            (
                 "/tasks",
                 "List background tasks",
             ),
@@ -565,7 +606,15 @@ class TerminalUI:
             ),
             (
                 "/doctor",
-                "Ollama/runtime diagnostics",
+                "Ollama, Jira, and voice diagnostics",
+            ),
+            (
+                "/listen",
+                "Record speech and send it as your message",
+            ),
+            (
+                "/speak",
+                "Turn spoken replies on or off",
             ),
             (
                 "/quit",

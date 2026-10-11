@@ -29,13 +29,13 @@ def test_remote_execution_requires_network_permission_and_routes(monkeypatch):
     ])
 
     class FakeSSH:
-        def run(self, node, command):
+        def run(self, node, command, timeout=120):
             return SimpleNamespace(command=command, exit_code=0, stdout="ok", stderr="")
 
     manager._ssh = FakeSSH()
     result = manager.execute(RemoteExecutionRequest("s1", "linux1", "uname -a", "inspect host", "approval"))
     assert result.stdout == "ok"
-    assert permissions.calls[0][0][0] == "network"
+    assert permissions.calls[0][0][0] == "remote.execute"
     assert audit.records[0][0] == "remote.execute"
 
 

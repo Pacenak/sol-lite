@@ -1,0 +1,13 @@
+# Named hosts agents may use through remote_list_nodes / remote_execute.
+# Authentication uses the local OpenSSH agent/config or Windows remoting.
+# Never put passwords, tokens or private keys in this file.
+nodes: []
+# Example:
+# nodes:
+#   - id: lab-linux
+#     hostname: 10.10.81.20
+#     platform: linux
+#     transport: ssh
+#     username: dev
+#     port: 22
+#     enabled: true

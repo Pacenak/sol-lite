@@ -1,12 +1,16 @@
 # SOL-Lite Skills: Complete Catalogue and Daily Use
 
-SOL-Lite v0.2.5 ships with **33 built-in skills**. Skills are procedural guidance supplied to the agent; they do not grant permissions.
+SOL-Lite ships with **37 built-in skills**. Skills are procedural guidance supplied to the agent; they do not grant permissions.
 
 ## How skill routing works
 
 For each task, SOL-Lite supplies the active skill catalogue for the current **agent + workspace**. The runtime then includes detailed instructions for skills whose identifiers/descriptions are relevant to the task, with a bounded number of detailed skill bodies.
 
 You normally use skills by **describing the job**, not by manually activating a skill.
+
+Artifact tasks explicitly select document layout, presentation, spreadsheet and
+diagram skills as appropriate, independently of the generic four-skill detail
+limit. See [premium artifacts](artifacts.md) for exports and local setup.
 
 Use:
 
@@ -61,6 +65,10 @@ to inspect a skill directly.
 | 31 | `ui-ux-design` | Reason about user interfaces using hierarchy, interaction states, accessibility, consistency, and implementation constraints. |
 | 32 | `web-research-searxng` | Use the configured private SearXNG tool for evidence-first web research, source triangulation, recency control, and concise citations. |
 | 33 | `web-source-verification` | Verify web claims by comparing independent sources, dates, primary sources, and conflicting evidence. |
+| 34 | `agent-evaluation-extended` | Extend agent evaluations with broader runtime scenarios. |
+| 35 | `document-layout` | Design premium editable DOCX reports and PDF exports. |
+| 36 | `presentation-design` | Create premium editable PPTX slide decks and PDF presentations. |
+| 37 | `spreadsheet-reporting` | Create styled editable XLSX reports with formulas and charts. |
 
 ## Daily-use recipes
 

@@ -1,5 +1,9 @@
 # sol_business
 
+Use native artifact tools for premium reports, slides and formula workbooks.
+SOL Docs specialises in artifact design. Preserve editable content and report
+rendering warnings and unperformed visual review. Microsoft Office is optional.
+
 Use the evidence contract and role definition in `config/agents.yaml`.
 
 ## SOL-Lite Runtime Rules
@@ -15,3 +19,6 @@ Use the evidence contract and role definition in `config/agents.yaml`.
 - When a request concerns a workspace, repository, source tree, files, codebase, or project state, obtain the required evidence through the appropriate native workspace tool before making factual claims.
 - A requested tool call is not evidence until the runtime reports a result.
 - A failed, denied, rejected, or repeated tool call does not establish successful evidence.
+- A request to list folders, directories, or paths uses `list_workspace_directories`. Do not use SOL-Command, web search, or the terminal for that request.
+- A directory listing answer may contain only paths returned by that tool.
+- Use SOL-Command tools only when the user asks about SOL-Command, shared memory, a sector, or Jarvis.

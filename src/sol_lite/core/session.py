@@ -13,10 +13,10 @@ from time import time
 
 @dataclass(slots=True)
 class Workspace:
-    workspace_id:str; name:str; root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time)
+    workspace_id:str; name:str; root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); jira_projects:list[str]=field(default_factory=list)
 @dataclass(slots=True)
 class Session:
-    session_id:str; agent_id:str; workspace_id:str; workspace_root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); status:str="IDLE"; task:str=""; authorized_resource_ids:set[str]=field(default_factory=set)
+    session_id:str; agent_id:str; workspace_id:str; workspace_root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); status:str="IDLE"; task:str=""; authorized_resource_ids:set[str]=field(default_factory=set); transcript:list=field(default_factory=list)
 class WorkspaceManager:
     def __init__(self,state_path:Path): self.state_path=Path(state_path); self._lock=threading.RLock(); self._workspaces={}; self._load()
     @staticmethod
@@ -40,6 +40,13 @@ class WorkspaceManager:
         with self._lock: return sorted(self._workspaces.values(),key=lambda w:w.last_used_at,reverse=True)
     def recent(self): return self.list()
     def get(self,workspace_id): return self._workspaces[workspace_id]
+    def set_jira_projects(self, workspace_id, projects):
+        keys = [str(project).strip().upper() for project in projects or [] if str(project).strip()]
+        with self._lock:
+            workspace = self._workspaces[workspace_id]
+            workspace.jira_projects = keys
+            self._save()
+            return list(workspace.jira_projects)
 class SessionManager:
     def __init__(self,workspace_manager): self.workspace_manager=workspace_manager; self._sessions={}; self._lock=threading.RLock()
     def create(self,agent_id,workspace):
@@ -47,6 +54,16 @@ class SessionManager:
         with self._lock: self._sessions[s.session_id]=s
         return s
     def get(self,session_id): return self._sessions[session_id]
+    def remember_turn(self, session_id, user_text, assistant_text):
+        with self._lock:
+            session = self._sessions[session_id]
+            session.transcript.append({
+                "user": str(user_text),
+                "assistant": str(assistant_text),
+            })
+            del session.transcript[:-6]
+            session.last_used_at = time()
+            return session
     def update(self,session_id,**changes):
         with self._lock:
             s=self._sessions[session_id]

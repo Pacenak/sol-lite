@@ -1,9 +1,16 @@
 tools:
+  - artifact_dependencies
+  - artifact_create
+  - artifact_render
+  - artifact_validate
   - inventory_workspace
   - list_project_structure
+  - list_workspace_directories
   - find_workspace_files
   - read_workspace_file
   - read_workspace_files
+  - workspace_notes_read
+  - workspace_notes_write
   - search_codebase
   - analyze_architecture_drift
   - get_workspace_file_metadata
@@ -16,3 +23,6 @@ tools:
   - google_calendar_list
   - google_calendar_create
   - google_calendar_reminder
+  - runtime_get_context
+  - remote_list_nodes
+  - remote_execute

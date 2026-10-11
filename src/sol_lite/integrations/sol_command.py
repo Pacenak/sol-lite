@@ -6,15 +6,19 @@ instance's current sector assignment on every request.
 """
 from __future__ import annotations
 
+import hashlib
 import json
+import re
 import secrets
 import socket
 import time
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any
 from urllib.parse import quote, urlsplit
 
 import httpx
+import yaml
 
 
 @dataclass(frozen=True, slots=True)
@@ -48,13 +52,14 @@ class SolCommandClient:
 
     @staticmethod
     def pair(base_url: str, invite_code: str, *, name: str = "SOL-Lite",
-             wait_seconds: int = 600) -> dict[str, Any]:
+             wait_seconds: int = 600, transport: httpx.BaseTransport | None = None,
+             poll_interval: float = 3.0) -> dict[str, Any]:
         """Register, await Command approval, claim once, and save in OS keyring."""
         config = SolCommandConfig(base_url, "pairing", "pairing")
         token, nonce = secrets.token_urlsafe(32), secrets.token_urlsafe(32)
         headers = {"Accept": "application/json"}
         try:
-            with httpx.Client(timeout=15.0, follow_redirects=False) as client:
+            with httpx.Client(timeout=15.0, follow_redirects=False, transport=transport) as client:
                 response = client.post(f"{config.base_url}/api/hub/pair/register",
                     headers=headers,
                     json={"token": token, "claim_nonce": nonce, "invite_code": invite_code,
@@ -88,7 +93,7 @@ class SolCommandClient:
                         )
                         return {"ok": True, "instance_id": stored["instance_id"],
                                 "sectors": credentials.get("sectors") or []}
-                    time.sleep(3)
+                    time.sleep(max(0.05, min(float(poll_interval), 15.0)))
         except httpx.HTTPStatusError as exc:
             raise RuntimeError(f"SOL-Command pairing returned HTTP {exc.response.status_code}.") from exc
         except httpx.HTTPError as exc:
@@ -102,8 +107,9 @@ class SolCommandClient:
         reference = manager.reference("SOL-Lite", "sol-command")
         try:
             manager.delete(reference)
-        except Exception:
-            pass
+        except Exception as exc:
+            if not isinstance(exc, KeyError) and "not found" not in str(exc).casefold():
+                raise
 
     def _request(self, method: str, path: str, *, params=None, json=None) -> dict[str, Any]:
         headers = {
@@ -129,7 +135,7 @@ class SolCommandClient:
         except (httpx.HTTPError, ValueError) as exc:
             raise RuntimeError(f"SOL-Command request failed: {type(exc).__name__}.") from exc
         if not isinstance(payload, dict):
-            raise RuntimeError("SOL-Command returned an invalid response.")
+            raise RuntimeError("SOL-Command returned an invalid response.")  # noqa: TRY004
         if payload.get("ok") is False:
             raise RuntimeError(str(payload.get("error") or "SOL-Command rejected the request."))
         return payload
@@ -167,3 +173,62 @@ class SolCommandClient:
         sector = quote(sector_id, safe="")
         return self._request("POST", f"/api/lite/v1/sectors/{sector}/jarvis/proposals",
                              json={"title": title, "body": body, "domain": domain})
+
+
+def _safe_slug(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9._-]+", "-", str(value).lower()).strip("-._")
+    if not slug or ".." in slug:
+        return ""
+    return slug
+
+
+def stage_synced_skills(payload: dict[str, Any], pending_root: Path) -> list[str]:
+    """Write Command pack skills into a pending-review tree. Never activates them."""
+    root = pending_root.resolve()
+    root.mkdir(parents=True, exist_ok=True)
+    discovered: list[str] = []
+    sectors = (payload.get("packs_sync") or {}).get("sectors") or {}
+    if not isinstance(sectors, dict):
+        return discovered
+    for sector_id, entry in sectors.items():
+        if not isinstance(entry, dict) or not isinstance(entry.get("body"), dict):
+            continue
+        sector_slug = _safe_slug(str(sector_id))
+        if not sector_slug:
+            continue
+        for skill in entry["body"].get("skills") or []:
+            if not isinstance(skill, dict):
+                continue
+            name = str(skill.get("name") or skill.get("title") or "").strip()
+            slug = _safe_slug(name)
+            if not slug:
+                continue
+            description = str(skill.get("description") or skill.get("summary") or name).strip()
+            if len(description) > 2000:
+                description = description[:2000]
+            steps = skill.get("procedure") or skill.get("steps") or []
+            body_lines = [f"# {name}", "", description, ""]
+            if isinstance(steps, list):
+                body_lines.extend(f"{idx}. {str(step)[:4000]}" for idx, step in enumerate(steps[:200], 1))
+            elif isinstance(steps, str):
+                body_lines.append(steps)
+            refs = skill.get("references")
+            if isinstance(refs, list) and refs:
+                body_lines.extend(["", "## References", ""])
+                body_lines.extend(f"- {ref!s}" for ref in refs)
+            frontmatter = yaml.safe_dump(
+                {"name": slug, "description": description, "source": "sol-command",
+                 "sector": str(sector_id)},
+                sort_keys=False,
+            ).strip()
+            content = f"---\n{frontmatter}\n---\n\n" + "\n".join(body_lines)
+            version = hashlib.sha256(content.encode("utf-8")).hexdigest()[:12]
+            destination = root / sector_slug / slug / version
+            if not destination.resolve().is_relative_to(root):
+                continue
+            destination.mkdir(parents=True, exist_ok=True)
+            skill_file = destination / "SKILL.md"
+            if not skill_file.exists():
+                skill_file.write_text(content, encoding="utf-8")
+            discovered.append(str(destination))
+    return discovered

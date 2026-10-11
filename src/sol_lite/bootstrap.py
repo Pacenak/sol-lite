@@ -12,7 +12,11 @@ from dotenv import load_dotenv
 
 from .agents.registry import AgentRegistry
 from .audit.logger import AuditLogger
-from .config.user_settings import UserSettingsStore, deep_merge
+from .config.user_settings import (
+    UserSettingsStore,
+    deep_merge,
+    merge_searxng_settings,
+)
 from .core.runtime import Runtime, RuntimeConfig
 from .core.session import SessionManager, WorkspaceManager
 from .faults.log import FaultLog
@@ -35,6 +39,7 @@ class LoadedConfig:
     schedules: dict[str, Any]
     logging: dict[str, Any]
     searxng: dict[str, Any]
+    remote_nodes: dict[str, Any]
     user_settings: UserSettingsStore | None = None
 
 
@@ -94,6 +99,8 @@ def load_config(
     searxng = load_yaml(
         c / "searxng.yaml"
     )
+    remote_nodes_path = c / "remote-nodes.yaml"
+    remote_nodes = load_yaml(remote_nodes_path) if remote_nodes_path.is_file() else {"nodes": []}
 
     user_settings = UserSettingsStore()
 
@@ -135,7 +142,7 @@ def load_config(
         ),
     )
 
-    searxng = deep_merge(
+    searxng = merge_searxng_settings(
         searxng,
         user_settings.get(
             "searxng",
@@ -165,6 +172,7 @@ def load_config(
         schedules=schedules,
         logging=logging,
         searxng=searxng,
+        remote_nodes=remote_nodes,
         user_settings=user_settings,
     )
 
@@ -375,6 +383,9 @@ def bootstrap(
         search_config=search_config,
         sol_command=_sol_command_client(),
         google_workspace=_google_workspace_client(),
+        jira=_jira_catalog(runtime.data_root),
+        remote_manager=_remote_node_manager(config.remote_nodes, permissions, audit),
+        memory_root=runtime.data_root / "memory",
     )
 
     workspace_manager = WorkspaceManager(
@@ -408,38 +419,57 @@ def bootstrap(
     runtime.user_settings = (
         config.user_settings
     )
+    runtime.settings_repository = {
+        **config.application,
+        "models": config.models,
+        "agents": config.agents,
+        "searxng": config.searxng,
+    }
 
     return runtime
 
 
 def _sol_command_client():
-    """Build the optional Command client from process environment only.
+    """Build the optional Command client from the OS keyring.
 
-    Instance credentials are resolved only from the OS keyring; environment
-    variables may select the paired host but cannot supply a secret.
+    Environment variables may name the paired host but cannot supply a secret.
     """
     url = (os.environ.get("SOL_COMMAND_URL") or "").strip()
     instance_id = instance_key = ""
+    saved = None
     try:
         from .credentials.manager import CredentialManager, KeyringBackend
         manager = CredentialManager(KeyringBackend())
         credential = manager.resolve(manager.reference("SOL-Lite", "sol-command"))
         saved = json.loads(str(credential))
+    except (ImportError, RuntimeError, KeyError, TypeError, json.JSONDecodeError):
+        saved = None
+    if isinstance(saved, dict):
         saved_url = str(saved.get("command_url") or "").rstrip("/")
         if url and saved_url and url.rstrip("/") != saved_url:
             raise ValueError("SOL_COMMAND_URL does not match the paired Command host; disconnect and pair again to change hosts.")
         url = saved_url or url
         instance_id = str(saved.get("instance_id") or "")
         instance_key = str(saved.get("api_key") or "")
-    except (ImportError, RuntimeError, KeyError):
-        pass
     if os.environ.get("SOL_INSTANCE_ID") or os.environ.get("SOL_INSTANCE_KEY"):
         raise ValueError("SOL instance secrets are read only from the OS keyring. Use 'sol-lite connect' to pair.")
     if not instance_id and not instance_key:
         return None
     if not all((url, instance_id, instance_key)):
-        raise ValueError("Set SOL_COMMAND_URL, SOL_INSTANCE_ID and SOL_INSTANCE_KEY together.")
+        raise ValueError("Saved SOL-Command pairing is incomplete. Run 'sol-lite disconnect' then 'sol-lite connect'.")
     return SolCommandClient(SolCommandConfig(url, instance_id, instance_key))
+
+
+def _jira_catalog(data_root):
+    """Load saved Jira sites. Tokens stay in the OS keyring and are not probed here."""
+    from .credentials.manager import CredentialManager, KeyringBackend
+    from .integrations.jira import JiraCatalog
+    manager = None
+    try:
+        manager = CredentialManager(KeyringBackend())
+    except (ImportError, RuntimeError):
+        manager = None
+    return JiraCatalog(data_root / "state" / "jira.json", manager)
 
 
 def _google_workspace_client():
@@ -449,5 +479,32 @@ def _google_workspace_client():
     manager = CredentialManager(KeyringBackend())
     try:
         return GoogleWorkspaceClient.from_keyring(manager)
-    except (KeyError, RuntimeError):
+    except (KeyError, RuntimeError, TypeError, json.JSONDecodeError, ValueError):
         return None
+
+
+def _remote_node_manager(raw, permissions, audit):
+    from .remote import RemoteNode, RemoteNodeManager, RemoteTransport
+
+    nodes = []
+    for item in raw.get("nodes") or []:
+        if not isinstance(item, dict):
+            continue
+        node_id = str(item.get("id") or "").strip()
+        hostname = str(item.get("hostname") or "").strip()
+        if not node_id or not hostname:
+            continue
+        transport = str(item.get("transport") or "ssh").strip().casefold()
+        if transport not in {member.value for member in RemoteTransport}:
+            raise ValueError(f"Unsupported remote transport for {node_id}: {transport}")
+        port = item.get("port")
+        nodes.append(RemoteNode(
+            id=node_id,
+            hostname=hostname,
+            platform=str(item.get("platform") or "linux"),
+            transport=RemoteTransport(transport),
+            port=int(port) if port not in (None, "") else None,
+            username=(str(item.get("username")).strip() or None) if item.get("username") else None,
+            enabled=bool(item.get("enabled", True)),
+        ))
+    return RemoteNodeManager(permissions, audit, nodes)

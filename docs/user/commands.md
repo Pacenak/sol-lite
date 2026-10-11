@@ -18,7 +18,9 @@
 | `/debug` | debug display |
 | `/normal` | normal display |
 | `/tools` | tool inventory |
-| `/doctor` | Ollama diagnostics |
+| `/doctor` | Ollama, Jira, and voice diagnostics |
+| `/listen` | record speech and send it as your message |
+| `/speak` | turn spoken replies on or off |
 | `/quit` | exit |
 
 

@@ -22,9 +22,17 @@ class ToolContext:
     agent_id: str | None = None
     sol_command: Any = None
     google_workspace: Any = None
+    jira: Any = None
+    remote_manager: Any = None
+    procedure_session: Any = None
+    memory_root: Any = None
+    workspace_id: str | None = None
+    workspace_manager: Any = None
+    jira_projects: tuple[str, ...] = ()
 
     def for_workspace(self, workspace_root, *, session_id: str | None = None,
-                      project_root=None, agent_id: str | None = None):
+                      project_root=None, agent_id: str | None = None,
+                      workspace_id: str | None = None):
         return ToolContext(
             workspace_root, self.permission_engine, self.audit, self.fault_log,
             self.platform, session_id=session_id, project_root=project_root,
@@ -33,6 +41,13 @@ class ToolContext:
             credential_manager=self.credential_manager, agent_id=agent_id,
             sol_command=self.sol_command,
             google_workspace=self.google_workspace,
+            jira=self.jira,
+            remote_manager=self.remote_manager,
+            procedure_session=self.procedure_session,
+            memory_root=self.memory_root,
+            workspace_id=workspace_id if workspace_id is not None else self.workspace_id,
+            workspace_manager=self.workspace_manager,
+            jira_projects=tuple(self.jira_projects or ()),
         )
 
 @dataclass(slots=True)

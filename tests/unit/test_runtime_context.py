@@ -19,4 +19,5 @@ def test_runtime_context_reports_authoritative_paths(tmp_path):
     assert result["session_id"] == "s1"
     assert result["approved_workspace"] == str(tmp_path.resolve())
     assert result["project_root"] == str(tmp_path.resolve())
+    assert result["process_working_directory_note"].startswith("SOL-Lite program directory")
     assert "process_working_directory" in result

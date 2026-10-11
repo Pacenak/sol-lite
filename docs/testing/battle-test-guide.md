@@ -2,7 +2,7 @@
 
 This runbook is for interns doing a thorough, repeatable hands-on validation. Work from a disposable checkout and disposable workspaces. The goal is to find and record defects, not to make a release look green. A full run includes automated checks, manual product checks, and (when available) live integrations.
 
-Use [Testing Strategy](testing-strategy.md) for test-suite boundaries and [Full setup and first run](../getting-started/full-setup-first-run.md) for installation details.
+Use [Testing Strategy](testing-strategy.md) for test-suite boundaries and [Full setup and first run](../getting-started/full-setup-first-run.md) for installation details. Workspace identity, notes, proof-before-done, per-OS shells, SSH and PowerShell remoting, and the terminal co-pilot runbook are in the [Competence and Terminal Co-Pilot Battle Guide](competence-terminal-battle-guide.md).
 
 ## Ground rules and safety
 

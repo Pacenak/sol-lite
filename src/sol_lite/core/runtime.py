@@ -93,5 +93,7 @@ class Runtime:
         except OSError as exc:
             errors.append(f"Runtime roots are not usable: {exc}")
         if self.config.bridge.get("enabled"):
-            warnings.append("SOL-Command bridge is enabled; verify the paired connection with 'sol-lite command-status'.")
+            warnings.append(
+                "The local bridge listener is enabled. SOL-Command pairing is separate; use 'sol-lite command-status'."
+            )
         return HealthResult.failure(errors, warnings) if errors else HealthResult.success(warnings)

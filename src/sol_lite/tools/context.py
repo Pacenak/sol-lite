@@ -21,6 +21,10 @@ def runtime_get_context(ctx, args):
         "session_id": ctx.session_id,
         "platform": platform.system().lower(),
         "process_working_directory": str(Path.cwd().resolve()),
+        "process_working_directory_note": (
+            "SOL-Lite program directory, not a workspace. "
+            "The approved workspace is the only place to inspect or modify."
+        ),
         "approved_workspace": str(workspace),
         "project_root": str(project),
         "workspace_exists": workspace.is_dir(),
@@ -31,7 +35,7 @@ def runtime_get_context(ctx, args):
 def runtime_tools():
     return [ToolDefinition(
         "runtime_get_context",
-        "Read the authoritative current SOL-Lite session, approved workspace, project root, process working directory, platform, and available shells.",
+        "Read the authoritative current SOL-Lite session, approved workspace, project root, SOL-Lite program directory, platform, and available shells. The program directory is not a workspace.",
         {"type": "object", "properties": {}},
         runtime_get_context,
     )]

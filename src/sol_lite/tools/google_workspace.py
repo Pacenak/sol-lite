@@ -24,7 +24,7 @@ def _authorize(ctx, scope, operation, target, arguments, plan, approval_id=None)
 
 def _timestamp(value, label):
     try:
-        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))  # noqa: FURB162
     except (ValueError, AttributeError) as exc:
         raise ValueError(f"{label} must be an ISO 8601 timestamp") from exc
     if parsed.tzinfo is None:

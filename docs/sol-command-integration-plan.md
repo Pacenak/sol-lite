@@ -1,12 +1,14 @@
 # SOL-Lite and SOL-Command integration
 
+The operator guide for standalone SOL-Lite and the optional link is [docs/integrations/sol-lite.md](integrations/sol-lite.md). The slice below is implemented: connect, command-status, disconnect, sync-skills, assigned-sector memory and RAG reads, and opt-in Jarvis proposals. Background sync, shared-data writes, and automatic skill install are still out of scope.
+
 ## Purpose
 
 SOL-Lite remains an independently installable, local-first application. Pairing it with SOL-Command adds an optional network connection for Command-approved sector context, skills, policy and Jarvis services. When Command is unavailable or Lite is unpaired, local sessions, models, workspaces, memory, tools and skills continue to work.
 
 ## Current implementation boundary
 
-SOL-Lite has a `bridge` settings section, but `Runtime.health_check()` reports that the bridge is not implemented. Its MCP client/server and credential abstractions are not yet composed into a SOL-Command connection. The skill manager supports inspection, provenance, quarantine and approval-oriented installation, but the app does not sync SOL packs.
+SOL-Lite pairs through `sol-lite connect` and keeps the instance key in the OS keyring. `command-status`, assigned-sector memory and RAG reads, `sync-skills`, and opt-in Jarvis proposals are implemented. The `bridge` block in `config/sol-lite.yaml` is a local listener switch, separate from pairing. `sol-lite doctor` does not call Command. Skill sync stages files for review and does not activate them.
 
 SOL-Command already has device pairing, instance credentials, sector assignment, and paired-instance pack/fleet sync routes. Its shared-data routes currently mix user-authenticated and instance-authenticated access: some operations allow an instance credential, while memories and RAG reads require an authenticated user. Its Jarvis Evolve routes require user privileges. Do not treat an instance key as a user identity or grant it those routes implicitly.
 

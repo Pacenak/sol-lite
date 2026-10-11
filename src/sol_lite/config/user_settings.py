@@ -91,6 +91,22 @@ def deep_merge(
     return result
 
 
+def merge_searxng_settings(repository: dict[str, Any], override: dict[str, Any] | None) -> dict[str, Any]:
+    """Merge user SearXNG overrides onto repository defaults.
+
+    Accepts either a flat mapping or a nested ``{"searxng": {...}}`` block so
+    stored user settings cannot flatten over the canonical config shape.
+    """
+    raw = copy.deepcopy(repository.get("searxng") or {})
+    inner = dict(raw.get("searxng") or raw)
+    extra = dict(override or {})
+    nested = extra.pop("searxng", None)
+    if isinstance(nested, dict):
+        inner.update(nested)
+    inner.update(extra)
+    return {"searxng": inner}
+
+
 class UserSettingsStore:
     """Load, validate, edit, save and reset user-owned settings."""
 

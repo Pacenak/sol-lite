@@ -20,6 +20,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+artifacts = [
+    "python-docx>=1.1",
+    "python-pptx>=1.0",
+    "openpyxl>=3.1",
+    "PyMuPDF>=1.24",
+]
 dev = [
     "pytest>=8.0",
     "pytest-cov>=5.0",
@@ -31,6 +37,15 @@ google = [
     "google-auth>=2.29",
     "google-auth-oauthlib>=1.2",
     "google-auth-httplib2>=0.2",
+]
+voice = [
+    "faster-whisper>=1.0",
+    # Kokoro 0.8+ is published only for Python >=3.10,<3.13. On 3.13+ this extra
+    # still installs speech-to-text; local Kokoro text-to-speech stays unavailable.
+    "kokoro>=0.9; python_version < '3.13'",
+    "soundfile>=0.12",
+    "sounddevice>=0.5",
+    "numpy>=1.26",
 ]
 
 [project.scripts]
