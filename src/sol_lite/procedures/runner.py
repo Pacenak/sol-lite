@@ -49,6 +49,24 @@ class ProcedureSession:
             self.stop_reason = step.classification
             return self.status()
 
+        if step.classification == "human_gate":
+            if not step.evidence.get("asked_turn"):
+                step.evidence["asked_turn"] = int(step.evidence.pop("pending_turn", 0) or 1)
+            step.outcome = "awaiting_user"
+            self.stop_reason = "awaiting_user"
+            status = self.status()
+            status["ask"] = (
+                f"Step {step.step_id} needs you before the next step: {step.action}"
+            )
+            return status
+
+        if step.classification == "candidate":
+            step.outcome = "candidate"
+            self.stop_reason = "candidate"
+            status = self.status()
+            status["ask"] = f"Step {step.step_id} is a manual candidate and was not run."
+            return status
+
         if step.classification == "needs_approval" and not approval_id:
             step.outcome = "approval_required"
             self.stop_reason = "approval_required"
@@ -82,6 +100,63 @@ class ProcedureSession:
         step.outcome = "verified"
         self.stop_reason = None
         return self.status()
+
+    def acknowledge(self, step_id: str, user_text: str, turn_id: int) -> dict:
+        step = self._current()
+        status = self.status()
+        if step is None or step.step_id != step_id:
+            status["ok"] = False
+            status["error"] = "That step is not the current row."
+            return status
+        if step.classification != "human_gate":
+            status["ok"] = False
+            status["error"] = "Only a human gate can be acknowledged."
+            return status
+        asked = int(step.evidence.get("asked_turn") or 0)
+        if asked <= 0 or int(turn_id) <= asked:
+            status["ok"] = False
+            status["error"] = "The gate was asked this turn. Wait for the next reply."
+            return status
+        from ..studio.gate import explicit_completion
+        if not explicit_completion(user_text):
+            status["ok"] = False
+            status["error"] = "The reply is not an explicit completion."
+            return status
+        step.outcome = "human_gate"
+        self.stop_reason = None
+        status = self.status()
+        status["ok"] = True
+        return status
+
+    def snapshot_state(self, source: str) -> dict:
+        return {
+            "source": source,
+            "stop_reason": self.stop_reason,
+            "steps": [
+                {
+                    "step_id": step.step_id,
+                    "outcome": step.outcome,
+                    "evidence": dict(step.evidence),
+                }
+                for step in self.document.steps
+            ],
+        }
+
+    def restore(self, payload: dict) -> None:
+        saved = {
+            item["step_id"]: item
+            for item in payload.get("steps") or []
+            if isinstance(item, dict) and item.get("step_id")
+        }
+        for step in self.document.steps:
+            item = saved.get(step.step_id)
+            if not item:
+                continue
+            outcome = str(item.get("outcome") or "")
+            if outcome in {"verified", "human_gate", "awaiting_user", "failed", "candidate"}:
+                step.outcome = outcome
+                step.evidence = dict(item.get("evidence") or {})
+        self.stop_reason = payload.get("stop_reason")
 
     def _current(self):
         for step in self.document.steps:

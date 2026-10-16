@@ -20,6 +20,8 @@
 
 Agents can request `cmd`, `powershell`, `pwsh`, `bash`, or `zsh` only when the runtime detects that shell. Shell selection is explicit.
 
+Studio manuals are loaded with `procedure_load`. Fenced command blocks are not executed. File creates, edits, and quarantines go through `studio_create`, `studio_edit`, and `studio_quarantine`. Copies of files that are not in Git are written under `data/state/backups/`. The staff page is [Studio change gate](../user/studio-change.md).
+
 ## Skill commands
 
 - `/skills list`

@@ -1,5 +1,7 @@
 # SOL-Lite Intern Battle-Test Guide
 
+For the current source-aligned beginner sequence, use [First full battle run](first-full-battle-run.md). It corrects historical assumptions below about universal write popups, current skill count, live-smoke workspace selection and pack-manifest gating. Role-path writes may run without a popup; the current 39/40 preflight mismatch must be resolved before a bundled battle can pass.
+
 This runbook is for interns doing a thorough, repeatable hands-on validation. Work from a disposable checkout and disposable workspaces. The goal is to find and record defects, not to make a release look green. A full run includes automated checks, manual product checks, and (when available) live integrations.
 
 Use [Testing Strategy](testing-strategy.md) for test-suite boundaries and [Full setup and first run](../getting-started/full-setup-first-run.md) for installation details. Workspace identity, notes, proof-before-done, per-OS shells, SSH and PowerShell remoting, and the terminal co-pilot runbook are in the [Competence and Terminal Co-Pilot Battle Guide](competence-terminal-battle-guide.md).
@@ -104,6 +106,7 @@ Run only in the disposable workspace/repository. Begin with harmless commands su
 - Request a destructive command aimed at a dummy file, deny approval, and verify the file remains. Never approve broad deletion.
 - In a disposable Git repository, inspect status/diff and make a small local change. Confirm tools stay inside it. Never push or publish.
 - Confirm denied commands are reported as not run.
+- Studio change gate: `python -m pytest -q tests/battle/test_studio_change_gate.py`. Staff rules for manuals, hosts, secrets, and backups are in [Studio change gate](../user/studio-change.md). A fenced manual step does not run. An existing path is left in place. An untracked edit leaves a hash-matched copy under `data/state/backups/`. `rm` on a remote host is denied. A production node accepts a read and refuses an edit.
 
 Platform coverage requires testing on the actual target OS.
 
@@ -146,6 +149,18 @@ Use only a dedicated lab instance and its [integration guide](../integrations/so
 - Run `sol-lite sync-skills` against the lab instance. Confirm skills arrive in local pending-review/staging and do not activate automatically.
 - Check Jarvis only under admin-approved test policy: deny without an explicit grant; with a grant, verify the supported action creates a proposal pending review, not an unapproved external action.
 - Disconnect and verify status reflects it. Never test against production data.
+
+### Studio Odoo import pack
+
+Follow the [Studio Odoo integration guide](../integrations/studio-odoo.md) and the [beginner guide](../user/dummies-studio-odoo.md). Use a disposable workspace outside the studio checkout. Bind only a checkout you were given. Do not point the test at production books.
+
+- `studio_odoo_status` before bind reports `bound: false` and does not invent a path.
+- After an approved bind, `templates_ok` is true and `odoo_api` is `not used`.
+- A source CSV with a different header is rejected by `studio_odoo_adopt_source` and no import file is written.
+- `tco-kwh.csv`, when written from a real source row, returns `odoo_import: false`.
+- Confirm the import directory is under the disposable workspace and not inside `plg-odooacc`.
+
+Mark the case `BLOCKED` when the studio checkout is not on the machine. Do not record IRD or GST numbers in the score sheet.
 
 ### MCP and remote services
 

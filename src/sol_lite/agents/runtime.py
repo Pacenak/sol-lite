@@ -30,6 +30,7 @@ from .task_fit import (
     WORKSPACE_EVIDENCE_PATTERNS,
     WORKSPACE_EVIDENCE_TOOL_NAMES,
     apply_jira_workspace_gate,
+    apply_studio_workspace_gate,
     directory_evidence,
     invented_directory_paths,
     matching_tasks,
@@ -303,6 +304,13 @@ class AgentRuntime:
         )
 
         request_text = self._latest_user_text(messages)
+        context = self.tool_context
+        if context is not None:
+            try:
+                context.user_text = request_text
+                context.turn_id = int(getattr(context, "turn_id", 0) or 0) + 1
+            except AttributeError:
+                pass
         tasks = matching_tasks(request_text)
         requires_directory_listing = "directory_listing" in tasks
         if allowed_tools is not None:
@@ -311,13 +319,17 @@ class AgentRuntime:
             active_allowlist = frozenset(self.tool_names)
         else:
             active_allowlist = None
-        task_permitted = apply_jira_workspace_gate(
+        task_permitted = apply_studio_workspace_gate(
             request_text,
-            permitted_tools(
+            apply_jira_workspace_gate(
                 request_text,
-                active_allowlist,
+                permitted_tools(
+                    request_text,
+                    active_allowlist,
+                ),
+                getattr(self.tool_context, "jira_projects", ()),
             ),
-            getattr(self.tool_context, "jira_projects", ()),
+            getattr(self.tool_context, "studio_root", ""),
         )
 
         workspace_tools_used = set()

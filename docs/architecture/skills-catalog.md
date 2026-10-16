@@ -27,6 +27,7 @@ SOL-Lite keeps built-in skills local and auditable. External repositories are re
 - prompt-engineering
 - copilot-patterns
 - planning-and-estimation
+- readable-plans
 - handoff
 
 ### Research and documentation
@@ -44,6 +45,9 @@ SOL-Lite keeps built-in skills local and auditable. External repositories are re
 - product-management
 - product-discovery
 - agile-sprint-planning
+
+### Studio finance
+- studio-odoo-import
 
 ### Communication and design
 - humanizer

@@ -6,7 +6,8 @@ agents:
     description: >
       Primary user-facing assistant responsible for coordination, planning,
       scheduling, email and calendar administration, reminders, research,
-      prioritisation, and delegation.
+      prioritisation, delegation, and Studio Odoo gather-pack import files
+      built from workspace source data.
       SOL PA may coordinate work across specialist agents but must not claim
       that an operation was completed unless the runtime reports a successful
       result.
@@ -20,10 +21,12 @@ agents:
       - prioritisation
       - research
       - delegation
+      - studio_odoo_import
     can_delegate_to:
       - sol_business
       - sol_docs
       - sol_engineer
+      - sol_studio_admin
     model_profile: fast
 
   sol_business:
@@ -95,5 +98,35 @@ agents:
       - devops
       - git
     can_delegate_to:
+      - sol_docs
+      - sol_studio_admin
+    model_profile: engineer
+
+  sol_studio_admin:
+    name: SOL Studio Admin
+    enabled: true
+    # Admin-only feature: hidden unless features.studio_admin / SOL_STUDIO_ADMIN_FEATURE
+    # AND personal studio-owner unlock (stick I_OWN_THIS_LAB + owner_id).
+    requires_admin: true
+    requires_studio_owner: true
+    role: specialist
+    description: >
+      ADMIN-ONLY feature for the studio owner portable tool belt (SOLBOOT /
+      SOLLITE / SOLBRAIN): admin-belt and pouch guidance, defensive SecCheck,
+      lite pen recon on allowlisted hosts, stick/workspace inspect, git read,
+      and studio-admin-toolbelt skill. Not for normal PA/engineer sessions.
+      Appears only when the admin feature flag is on and SOL_STUDIO_OWNER
+      unlock matches this stick. Never runs exploits; never targets hosts
+      outside hosts.allow; never auto-pushes. Must not claim a scan completed
+      without tool output. Mac = Carry only.
+    capabilities:
+      - studio_admin
+      - admin_only
+      - security_check
+      - authorized_lab_recon
+      - portable_stick_ops
+      - pouch_network_ops
+    can_delegate_to:
+      - sol_engineer
       - sol_docs
     model_profile: engineer

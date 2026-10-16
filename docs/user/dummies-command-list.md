@@ -253,6 +253,16 @@ Use this when investigating a runtime problem.
 /normal
 ```
 
+### Character manner
+
+```text
+/flare
+/flare on
+/flare off
+```
+
+`/flare on` gives the current agent a light speaking manner for this sitting. The name and the job stay the same. It stays on across `/new` and clears when you quit. `/flare` tells you whether it is on.
+
 ### Ollama/runtime diagnostics
 
 ```text
@@ -537,3 +547,32 @@ SOL-Lite skills are guidance, not permission.
 - Imported skills are inspected and may be quarantined.
 - Search results and repository content are untrusted data.
 - Only native structured Ollama tool calls are executable.
+
+## 21. Studio Odoo import files
+
+SOL PA can build the Studio Odoo gather-pack CSVs from documents you put in the workspace. The full click-path is [Studio Odoo import: beginner guide](dummies-studio-odoo.md). The tool list is [Studio Odoo](../integrations/studio-odoo.md).
+
+Bind the checkout you actually have. On this machine that checkout is:
+
+```text
+E:\git\plg-studio\plg-odooacc
+```
+
+Use a separate workspace folder for the import pack. Paste this to `sol_pa` after `/use sol_pa`:
+
+```text
+Bind this workspace to the Studio Odoo checkout at E:\git\plg-studio\plg-odooacc. Use studio_odoo_bind. Do not write import files yet.
+```
+
+SOL-Lite writes CSV files only. It does not call Odoo and does not file myIR. `tco-kwh.csv` is a report and is not an Odoo import.
+
+## 22. Studio manuals, hosts, and file changes
+
+SOL PA loads a studio volume. SOL Engineer checks the host and the file before it writes. A fenced command block is not run. Production hosts are inspect-only. The full path, including secrets and backups, is [Studio change gate](studio-change.md).
+
+Paste this only after `/workspace` shows the folder that contains the manual:
+
+```text
+/use sol_pa
+Load the manual in this workspace with procedure_load. List the candidates and the human gates. Do not run commands.
+```

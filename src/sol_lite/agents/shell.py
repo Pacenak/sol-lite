@@ -13,8 +13,11 @@ from ..core.exceptions import (
 from ..memory.notes import read_notes
 from ..permissions.scopes import NETWORK, SKILL_INSPECT, SKILL_INSTALL
 from ..prompts import PromptLoader
-from ..terminal_ui import TerminalUI
+from ..permissions.scopes import scope_for_operation
+from ..terminal_ui import SESSION_APPROVAL, TerminalUI
+from ..ui.composer import read_message
 from ..ui.settings_menu import SettingsMenu
+from .flare import flare_note
 from .runtime import AgentRuntime
 from .status import StatusTracker
 from .tool_allowlist import resolve_session_tools
@@ -100,6 +103,7 @@ class AgentShell:
         self.event_bus = event_bus
         self.status = StatusTracker()
         self._queued_utterance = None
+        self.flare = False
 
         self.workspace = self._select_workspace(initial_workspace)
         self.session = self.session_manager.create(
@@ -129,7 +133,7 @@ class AgentShell:
             self.fault_log,
             status=self.status,
             status_callback=self._status_callback,
-            approval_callback=self.ui.approval,
+            approval_callback=self._approval_callback,
             skill_context=self.skill_manager.prompt_context(
                 self.active_agent,
                 Path(self.workspace.root),
@@ -138,9 +142,27 @@ class AgentShell:
             tool_names=self._session_tool_names(),
         )
 
-    def _prompt(self, prompt: str, *, interrupt_commands: bool = False) -> str:
-        """Read one answer. Nested prompts hand slash commands back to the shell."""
-        answer = self.ui.console.input(prompt).strip()
+    def _approval_callback(self, request):
+        decision = self.ui.approval(request)
+        if decision != SESSION_APPROVAL:
+            return decision
+        scope = scope_for_operation(getattr(request, "operation", ""))
+        session_id = getattr(request, "session_id", None) or getattr(self.session, "session_id", None)
+        agent_id = getattr(request, "agent_id", None) or self.active_agent
+        self.context.permission_engine.approvals.grant_session(
+            session_id=session_id,
+            scope=scope,
+            agent_id=agent_id,
+        )
+        return getattr(request, "approval_id", None)
+
+    def _prompt(self, prompt: str, *, interrupt_commands: bool = False, compose: bool = False) -> str:
+        """Read one answer. The chat composer keeps line breaks; other prompts stay one line."""
+        if compose:
+            answer = read_message(self.ui.console, prompt)
+        else:
+            answer = self.ui.console.input(prompt)
+        answer = answer.strip()
         if (
             interrupt_commands
             and self._accept_commands
@@ -149,9 +171,94 @@ class AgentShell:
             raise ShellCommandInterrupt(answer)
         return answer
 
+    def _git_toplevel(self, root):
+        """Return the Git working-tree root if ``root`` is inside one."""
+        import shutil
+        import subprocess
+
+        git = shutil.which("git")
+        if not git:
+            return None
+        path = Path(root)
+        if not path.is_dir():
+            return None
+        try:
+            completed = subprocess.run(
+                [git, "-C", str(path), "rev-parse", "--show-toplevel"],
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=15,
+                check=False,
+            )
+        except (OSError, subprocess.SubprocessError, TimeoutError):
+            return None
+        if completed.returncode != 0:
+            return None
+        toplevel = completed.stdout.strip()
+        return Path(toplevel) if toplevel else None
+
+    def _offer_host_git_trust(self, workspace):
+        """First-run: allowlist+confirm remotes for an opened host Git repo."""
+        trust = getattr(self.base_context, "repository_trust", None)
+        if trust is None:
+            return workspace
+        root = Path(workspace.root)
+        if trust.is_trusted(root):
+            return workspace
+        print(
+            "This workspace is a Git repository on the host machine.\n"
+            "Trust remotes for this path so pull/push and GitHub PR tools "
+            "work without repeated remote approvals?"
+        )
+        answer = self._prompt(
+            "Trust remotes for this repo? [y/N] ❯ ",
+            interrupt_commands=True,
+        )
+        if answer.lower() in {"y", "yes"}:
+            try:
+                trust.confirm(root, allowlist_exact=True)
+                print(f"Trusted remotes for {root}")
+            except PermissionError as exc:
+                print(str(exc))
+        else:
+            print(
+                "Remotes stay approval-gated. Add repository.trusted_roots "
+                "in config/sol-lite.yaml or re-open and answer yes."
+            )
+        return workspace
+
+    def _register_workspace_path(self, path):
+        """Register a host path, preferring the Git toplevel when present."""
+        candidate = Path(path).expanduser()
+        toplevel = self._git_toplevel(candidate)
+        if toplevel is not None:
+            try:
+                resolved = candidate.resolve()
+            except OSError:
+                resolved = candidate
+            if toplevel.resolve() != resolved:
+                print(
+                    f"Detected Git repository root: {toplevel}\n"
+                    "Open the repository root so Git tools stay inside the workspace."
+                )
+                answer = self._prompt(
+                    "Use Git root as workspace? [Y/n] ❯ ",
+                    interrupt_commands=True,
+                )
+                if answer.lower() not in {"n", "no"}:
+                    candidate = toplevel
+            else:
+                candidate = toplevel
+        workspace = self.workspace_manager.register(candidate)
+        if self._git_toplevel(workspace.root) is not None:
+            self._offer_host_git_trust(workspace)
+        return workspace
+
     def _select_workspace(self, requested):
         if requested:
-            return self.workspace_manager.register(requested)
+            return self._register_workspace_path(requested)
 
         recent = self.workspace_manager.recent()
 
@@ -174,12 +281,12 @@ class AgentShell:
                 answer.isdigit()
                 and 1 <= int(answer) <= min(9, len(recent))
             ):
-                return self.workspace_manager.register(
+                return self._register_workspace_path(
                     recent[int(answer) - 1].root
                 )
 
             if answer and answer.lower() != "n":
-                return self.workspace_manager.register(answer)
+                return self._register_workspace_path(answer)
 
         path = self._prompt(
             "Workspace directory ❯ ",
@@ -191,7 +298,7 @@ class AgentShell:
                 "A workspace must be selected before starting an agent chat."
             )
 
-        return self.workspace_manager.register(path)
+        return self._register_workspace_path(path)
 
     def _status_callback(self, line):
         self.ui.update_live_status(self.status)
@@ -285,7 +392,10 @@ class AgentShell:
             "call and result. Skills never grant permissions. "
             "Read-only shell operations may run when policy allows; "
             "mutating operations require exact approval; "
-            "destructive operations are blocked.\n\n"
+            "destructive operations are blocked. "
+            "Studio file changes use studio_inspect, studio_create, studio_edit, "
+            "and studio_quarantine. A file that is not in Git is copied to the "
+            "backup store before it is edited. Production hosts are inspect-only.\n\n"
             "Workspace authority: the approved workspace above is the "
             "authoritative workspace for this conversation. "
             "The approved workspace is the only place to inspect or modify. "
@@ -298,7 +408,32 @@ class AgentShell:
             "making claims about the repository.\n\n"
             + role_prompt.strip()
             + notes_block
+            + self._flare_block()
         )
+
+    def _flare_block(self) -> str:
+        if not getattr(self, "flare", False):
+            return ""
+        note = flare_note(self.active_agent)
+        if not note:
+            return ""
+        return "\n\n" + note
+
+    def _flare_command(self, argument: str) -> None:
+        choice = argument.casefold()
+        if not choice:
+            state = "on" if self.flare else "off"
+            print(f"Flare is {state}.")
+            return
+        if choice == "on":
+            self.flare = True
+            print("Flare is on for this sitting.")
+            return
+        if choice == "off":
+            self.flare = False
+            print("Flare is off.")
+            return
+        print("Usage: /flare [on|off]")
 
     def _context_for_session(self, session):
         context = self.base_context.for_workspace(
@@ -306,11 +441,13 @@ class AgentShell:
             session_id=session.session_id,
             project_root=self.workspace.root,
             workspace_id=self.workspace.workspace_id,
+            agent_id=self.active_agent,
         )
         context.workspace_manager = self.workspace_manager
         context.jira_projects = tuple(
             getattr(self.workspace, "jira_projects", ()) or ()
         )
+        context.studio_root = str(getattr(self.workspace, "studio_root", "") or "")
         return context
 
     def _messages_for(self, line: str):
@@ -425,7 +562,7 @@ class AgentShell:
 
             if 1 <= index <= len(recent):
                 self._switch_workspace(
-                    self.workspace_manager.register(
+                    self._register_workspace_path(
                         recent[index - 1].root
                     )
                 )
@@ -438,7 +575,7 @@ class AgentShell:
 
         try:
             self._switch_workspace(
-                self.workspace_manager.register(argument)
+                self._register_workspace_path(argument)
             )
         except (FileNotFoundError, OSError) as exc:
             print(
@@ -848,7 +985,7 @@ class AgentShell:
             context,
             self.fault_log,
             status=tracker,
-            approval_callback=self.ui.approval,
+            approval_callback=self._approval_callback,
             tool_names=self._session_tool_names(),
             skill_context=self.skill_manager.prompt_context(
                 self.active_agent,
@@ -1130,6 +1267,7 @@ class AgentShell:
                 self.session.session_id,
                 agent_id=agent_id,
             )
+            self.context = self._context_for_session(self.session)
             self.runtime = self._make_runtime()
             self.print_banner()
             return "handled"
@@ -1168,6 +1306,10 @@ class AgentShell:
 
         if command == "/status":
             self.ui.status(self.status)
+            return "handled"
+
+        if command == "/flare":
+            self._flare_command(argument)
             return "handled"
 
         if command == "/verbose":
@@ -1234,7 +1376,8 @@ class AgentShell:
                         self.ui.prompt(
                             self.active_agent,
                             self.workspace.name,
-                        )
+                        ),
+                        compose=True,
                     )
                 else:
                     line = queued

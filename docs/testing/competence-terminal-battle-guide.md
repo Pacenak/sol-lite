@@ -1,5 +1,7 @@
 # Competence Loop and Terminal Co-Pilot Battle Guide
 
+**Historical contract document:** the current dispatcher does not implement `/shell operator` or `/shell session`. Those cases are desired capabilities, not available privilege switches. Destructive/nested-shell commands remain blocked; an approval cannot enable them. Role-path writes can also run without a popup. For an executable beginner sequence matching current code, use [First full battle run](first-full-battle-run.md), including its current preflight and manifest blockers.
+
 This is the hands-on battle run for two contracts:
 
 1. The agent competence loop: answer from the project files, remember notes, keep the conversation, and refuse a “done” claim that has no write or validation command.

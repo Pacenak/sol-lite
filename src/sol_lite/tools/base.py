@@ -29,6 +29,11 @@ class ToolContext:
     workspace_id: str | None = None
     workspace_manager: Any = None
     jira_projects: tuple[str, ...] = ()
+    studio_root: str = ""
+    state_root: Any = None
+    repository_trust: Any = None
+    turn_id: int = 0
+    user_text: str = ""
 
     def for_workspace(self, workspace_root, *, session_id: str | None = None,
                       project_root=None, agent_id: str | None = None,
@@ -48,6 +53,11 @@ class ToolContext:
             workspace_id=workspace_id if workspace_id is not None else self.workspace_id,
             workspace_manager=self.workspace_manager,
             jira_projects=tuple(self.jira_projects or ()),
+            studio_root=str(self.studio_root or ""),
+            state_root=self.state_root,
+            repository_trust=self.repository_trust,
+            turn_id=self.turn_id,
+            user_text=self.user_text,
         )
 
 @dataclass(slots=True)

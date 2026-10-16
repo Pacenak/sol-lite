@@ -86,15 +86,25 @@ def test_placeholder_and_planned_rows_are_not_executed():
     assert calls == []
 
 
-def test_bitwarden_row_is_a_human_gate_and_later_read_only_can_run():
+def test_bitwarden_row_waits_until_a_later_reply():
     calls, execute = _executor({})
     session = _session(HUMAN)
 
-    result = session.advance(execute)
-    assert result["steps"][0]["classification"] == "human_gate"
-    assert result["steps"][0]["outcome"] == "human_gate"
+    waiting = session.advance(execute)
+    assert waiting["stop_reason"] == "awaiting_user"
+    assert waiting["steps"][0]["classification"] == "human_gate"
+    assert waiting["steps"][0]["outcome"] == "awaiting_user"
+    assert calls == []
+
+    same_turn = session.acknowledge("S1", "done", 1)
+    assert same_turn["ok"] is False
+    assert calls == []
+
+    later = session.acknowledge("S1", "done", 2)
+    assert later["ok"] is True
+    finished = session.advance(execute)
     assert calls == ["echo alpha", "echo ok"]
-    assert result["complete"] is True
+    assert finished["complete"] is True
 
 
 def test_needs_approval_does_not_run_without_an_approval_id():

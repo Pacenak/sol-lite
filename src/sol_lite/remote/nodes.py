@@ -21,3 +21,4 @@ class RemoteNode:
     username: str | None = None
     metadata: dict[str, str] = field(default_factory=dict)
     enabled: bool = True
+    environment: str = ""

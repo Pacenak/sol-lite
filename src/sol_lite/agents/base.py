@@ -12,3 +12,5 @@ class AgentDefinition:
     capabilities: tuple[str, ...] = ()
     can_delegate_to: tuple[str, ...] = ()
     model_profile: str = "engineer"
+    requires_admin: bool = False
+    requires_studio_owner: bool = False

@@ -15,6 +15,7 @@ tools:
   - analyze_architecture_drift
   - get_workspace_file_metadata
   - write_workspace_file
+  - edit_workspace_file
   - execute_terminal_command
   - repository_status
   - repository_diff
@@ -28,11 +29,18 @@ tools:
   - repository_create_bundle
   - repository_import_bundle
   - repository_apply_patch
+  - repository_pull
+  - repository_merge
+  - repository_conflict_status
+  - repository_resolve_and_continue
   - repository_set_remote
   - repository_fetch
   - repository_push
   - repository_clone_local
   - repository_clone_remote
+  - hosting_pr_create
+  - hosting_pr_status
+  - hosting_pr_merge
   - runtime_get_context
   - skill_discover
   - skill_install
@@ -40,6 +48,11 @@ tools:
   - procedure_load
   - procedure_status
   - procedure_advance
+  - procedure_acknowledge
+  - studio_inspect
+  - studio_create
+  - studio_edit
+  - studio_quarantine
   - remote_list_nodes
   - remote_execute
   - jira_status

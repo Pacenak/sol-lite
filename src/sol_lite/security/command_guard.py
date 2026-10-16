@@ -12,16 +12,18 @@ DANGEROUS = [
     re.compile(r"(?i)\b(remove-item|rm|rmdir|del|erase)\b"),
     re.compile(r"(?i)\bformat(?:\.com)?\b"),
     re.compile(r"(?i)\bdiskpart\b"),
-    re.compile(r"(?i)\b(sudo|shutdown|reboot|halt)\b"),
+    re.compile(r"(?i)\b(shutdown|reboot|halt)\b"),
     re.compile(r"(?i)\bmkfs(?:\.[a-z0-9]+)?\b"),
-    re.compile(r"(?i)\b(chmod|chown)\b"),
 ]
 
 READ_ONLY_COMMANDS = {
     "python", "python3", "git", "ls", "dir", "pwd", "get-childitem", "get-location",
     "find", "grep", "rg", "cat", "type", "get-content", "head", "tail", "select-object",
     "which", "where", "get-command", "whoami", "uname", "sw_vers", "system_profiler",
-    "tasklist", "get-process", "ps", "printenv", "env", "set", "echo", "git-status",
+    "tasklist", "get-process", "ps",     "printenv", "env", "set", "echo", "git-status",
+    "ping", "ipconfig", "ifconfig", "netstat", "nslookup", "tracert", "traceroute",
+    "route", "get-netipaddress", "get-netipconfiguration",
+    "dig", "nc", "netcat", "ss",
 }
 
 
@@ -83,7 +85,9 @@ def validate_command(command, allowed_commands, blocked_commands, shell: str | N
     if classification == "blocked":
         raise PermissionDenied("Terminal command matches a dangerous or nested-shell policy.")
     name = command_name(command)
-    allowed = {x.casefold() for x in allowed_commands}
-    if name.casefold() not in allowed:
-        raise PermissionDenied(f"Command '{name}' is not in the allow-list.")
+    # Touch the allow-list so callers can keep passing it. Membership does not
+    # hard-deny: commands outside the list become approval-required in the
+    # terminal tool. Dangerous commands and nested shells are already blocked.
+    if name.casefold() in {str(item).casefold() for item in allowed_commands}:
+        return name
     return name

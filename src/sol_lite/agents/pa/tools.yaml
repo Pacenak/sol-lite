@@ -15,6 +15,7 @@ tools:
   - analyze_architecture_drift
   - get_workspace_file_metadata
   - write_workspace_file
+  - edit_workspace_file
   - execute_terminal_command
   - searxng_search
   - google_email_search
@@ -26,6 +27,9 @@ tools:
   - runtime_get_context
   - remote_list_nodes
   - remote_execute
+  - procedure_load
+  - procedure_status
+  - procedure_acknowledge
   - sol_command_status
   - sol_shared_memories
   - sol_shared_rag_search
@@ -43,3 +47,10 @@ tools:
   - jira_update
   - jira_comment
   - jira_transition
+  - studio_odoo_status
+  - studio_odoo_bind
+  - studio_odoo_schema
+  - studio_odoo_inventory
+  - studio_odoo_copy_catalogs
+  - studio_odoo_adopt_source
+  - studio_odoo_write_import

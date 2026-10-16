@@ -27,6 +27,7 @@ from .permissions.engine import PermissionEngine
 from .permissions.policy import PermissionPolicy
 from .platform import get_platform_adapter
 from .skills.manager import SkillManager
+from .repository.trust import RepositoryTrust
 from .tools import ToolContext, build_tool_registry
 
 
@@ -293,7 +294,10 @@ def bootstrap(
     )
 
     agents = AgentRegistry(
-        config.agents
+        config.agents,
+        data_root=runtime.data_root,
+        workspace_root=runtime.workspace_root,
+        application_config=config.application,
     )
 
     approvals = ApprovalManager()
@@ -372,6 +376,16 @@ def bootstrap(
             }
         )
 
+    repository_section = config.application.get("repository") or {}
+    trusted_roots = []
+    if isinstance(repository_section, dict):
+        trusted_roots = list(repository_section.get("trusted_roots") or [])
+
+    repository_trust = RepositoryTrust(
+        trusted_roots,
+        runtime.data_root / "state" / "trusted-repos.json",
+    )
+
     context = ToolContext(
         runtime.workspace_root,
         permissions,
@@ -386,6 +400,8 @@ def bootstrap(
         jira=_jira_catalog(runtime.data_root),
         remote_manager=_remote_node_manager(config.remote_nodes, permissions, audit),
         memory_root=runtime.data_root / "memory",
+        state_root=runtime.data_root / "state",
+        repository_trust=repository_trust,
     )
 
     workspace_manager = WorkspaceManager(
@@ -483,6 +499,13 @@ def _google_workspace_client():
         return None
 
 
+def _remote_environment(node_id: str, raw) -> str:
+    environment = str(raw or "").strip().casefold()
+    if environment not in {"", "lab", "production"}:
+        raise ValueError(f"Remote node {node_id} environment must be lab or production.")
+    return environment
+
+
 def _remote_node_manager(raw, permissions, audit):
     from .remote import RemoteNode, RemoteNodeManager, RemoteTransport
 
@@ -506,5 +529,6 @@ def _remote_node_manager(raw, permissions, audit):
             port=int(port) if port not in (None, "") else None,
             username=(str(item.get("username")).strip() or None) if item.get("username") else None,
             enabled=bool(item.get("enabled", True)),
+            environment=_remote_environment(node_id, item.get("environment")),
         ))
     return RemoteNodeManager(permissions, audit, nodes)

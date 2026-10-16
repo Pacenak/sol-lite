@@ -5,8 +5,11 @@ import os
 from collections import Counter
 from pathlib import Path
 
+from ..core.exceptions import PermissionDenied, ToolExecutionError
 from ..permissions.scopes import READ, WRITE
 from ..security.path_guard import resolve_workspace_path
+from ..security.role_files import path_in_role
+from ..studio.gate import snapshot_untracked
 from .base import ToolDefinition
 
 _OVERVIEW_CAP = 200
@@ -195,24 +198,99 @@ def get_workspace_file_metadata(ctx, args):
     return {"path": _rel(path, root), "size": stat.st_size, "is_file": path.is_file(),
             "is_dir": path.is_dir(), "modified_ns": stat.st_mtime_ns}
 
+def _approve_workspace_write(ctx, path, root, *, operation, arguments, plan, approval_id):
+    """Role-path writes run when filesystem.write is enabled.
+
+    Paths outside the agent role still need an exact approval (or stay blocked
+    until the human says yes). Unbound tool contexts (no agent_id) keep the
+    approval gate so ad-hoc callers are not wide open.
+    """
+    try:
+        rel = _rel(path.resolve(), root.resolve())
+    except ValueError:
+        rel = str(path)
+    agent_id = getattr(ctx, "agent_id", None)
+    in_role = bool(agent_id) and path_in_role(agent_id, rel)
+    if in_role:
+        rule = ctx.permission_engine.policy.rule(*WRITE.split("."))
+        if not rule.enabled:
+            raise PermissionDenied(f"Permission scope disabled: {WRITE}")
+        return
+    ctx.permission_engine.check(
+        WRITE,
+        approval_id=approval_id,
+        operation=operation,
+        target=str(path),
+        arguments=arguments,
+        plan=plan,
+        session_id=getattr(ctx, "session_id", None),
+        agent_id=agent_id,
+        allow_session=bool(agent_id) and path_in_role(agent_id, rel),
+    )
+
+
 def write_workspace_file(ctx, args):
     root = Path(ctx.workspace_root).resolve()
     path = resolve_workspace_path(args["path"], root)
     content = str(args.get("content", ""))
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
-    ctx.permission_engine.check(
-        WRITE,
-        approval_id=approval_id,
+    _approve_workspace_write(
+        ctx,
+        path,
+        root,
         operation="write_workspace_file",
-        target=str(path),
         arguments={"path": str(path), "content": content},
         plan=plan,
+        approval_id=approval_id,
     )
+    snapshot = snapshot_untracked(ctx, path) if path.is_file() else None
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
     ctx.audit.record("workspace.write", path=str(path), bytes=len(content.encode("utf-8")))
-    return {"path": _rel(path, root), "bytes": len(content.encode("utf-8"))}
+    result = {"path": _rel(path, root), "bytes": len(content.encode("utf-8"))}
+    if snapshot:
+        result["snapshot"] = snapshot
+    return result
+
+
+def edit_workspace_file(ctx, args):
+    root = Path(ctx.workspace_root).resolve()
+    path = resolve_workspace_path(args["path"], root, must_exist=True)
+    if not path.is_file():
+        raise IsADirectoryError(path)
+    old = str(args.get("old_string", ""))
+    new = str(args.get("new_string", ""))
+    if not old:
+        raise ToolExecutionError("edit_workspace_file: old_string is required")
+    text = path.read_text(encoding="utf-8")
+    count = text.count(old)
+    if count == 0:
+        raise ToolExecutionError("edit_workspace_file: old_string was not found")
+    replace_all = bool(args.get("replace_all"))
+    if count > 1 and not replace_all:
+        raise ToolExecutionError(
+            "edit_workspace_file: old_string matched more than once; pass replace_all or a longer snippet"
+        )
+    updated = text.replace(old, new) if replace_all else text.replace(old, new, 1)
+    plan = str(args.get("plan", ""))
+    approval_id = args.get("approval_id")
+    _approve_workspace_write(
+        ctx,
+        path,
+        root,
+        operation="edit_workspace_file",
+        arguments={"path": str(path), "old_string": old, "new_string": new},
+        plan=plan,
+        approval_id=approval_id,
+    )
+    snapshot = snapshot_untracked(ctx, path)
+    path.write_text(updated, encoding="utf-8")
+    ctx.audit.record("workspace.edit", path=str(path), replacements=count if replace_all else 1)
+    result = {"path": _rel(path, root), "replacements": count if replace_all else 1}
+    if snapshot:
+        result["snapshot"] = snapshot
+    return result
 
 def filesystem_tools():
     return [
@@ -244,12 +322,41 @@ def filesystem_tools():
                         {"type": "object", "properties": {
                             "path": {"type": "string"}}, "required": ["path"]},
                         get_workspace_file_metadata),
-        ToolDefinition("write_workspace_file", "Write a file after exact human approval.",
-                        {"type": "object", "properties": {
-                            "path": {"type": "string"},
-                            "content": {"type": "string"},
-                            "plan": {"type": "string"},
-                            "approval_id": {"type": "string"}},
-                         "required": ["path", "content", "plan", "approval_id"]},
-                        write_workspace_file),
+        ToolDefinition(
+            "write_workspace_file",
+            "Create or overwrite a workspace file when the user asks. "
+            "Paths under this agent's role (docs/, plans/, notes/, src/, …) "
+            "run without a human click. Paths outside the role need approval "
+            "of that exact file. Use a short plan describing the change.",
+            {
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"},
+                    "content": {"type": "string"},
+                    "plan": {"type": "string"},
+                    "approval_id": {"type": "string"},
+                },
+                "required": ["path", "content"],
+            },
+            write_workspace_file,
+        ),
+        ToolDefinition(
+            "edit_workspace_file",
+            "Edit an existing workspace file by exact text replacement. "
+            "Use write_workspace_file to create a file. Role paths run without "
+            "a human click; outside-role paths need approval of that exact file.",
+            {
+                "type": "object",
+                "properties": {
+                    "path": {"type": "string"},
+                    "old_string": {"type": "string"},
+                    "new_string": {"type": "string"},
+                    "replace_all": {"type": "boolean"},
+                    "plan": {"type": "string"},
+                    "approval_id": {"type": "string"},
+                },
+                "required": ["path", "old_string", "new_string"],
+            },
+            edit_workspace_file,
+        ),
     ]

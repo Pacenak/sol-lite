@@ -18,9 +18,7 @@ class ProcedureStep:
     evidence: dict = field(default_factory=dict)
 
     def __post_init__(self):
-        if self.classification == "human_gate":
-            self.outcome = "human_gate"
-        elif self.classification == "blocked":
+        if self.classification == "blocked":
             self.outcome = "blocked"
         elif self.classification == "unverifiable":
             self.outcome = "unverifiable"

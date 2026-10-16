@@ -1,6 +1,6 @@
 # SOL-Lite Skills: Complete Catalogue and Daily Use
 
-SOL-Lite ships with **37 built-in skills**. Skills are procedural guidance supplied to the agent; they do not grant permissions.
+This checkout contains **40 built-in skill files**, while preflight still requires 39. That source-contract mismatch must be reconciled by a maintainer before a full gate can pass. Skills are procedural guidance supplied to the agent; they do not grant permissions. See [First full battle run](../testing/first-full-battle-run.md#10-all-built-in-skills) for enumeration and per-skill evidence.
 
 ## How skill routing works
 
@@ -69,6 +69,8 @@ to inspect a skill directly.
 | 35 | `document-layout` | Design premium editable DOCX reports and PDF exports. |
 | 36 | `presentation-design` | Create premium editable PPTX slide decks and PDF presentations. |
 | 37 | `spreadsheet-reporting` | Create styled editable XLSX reports with formulas and charts. |
+| 38 | `studio-odoo-import` | Build Studio Odoo gather-pack CSVs from workspace sources using the bound plg-odooacc templates. |
+| 39 | `readable-plans` | Write an implementation route a person can read and approve before coding. |
 
 ## Daily-use recipes
 
@@ -114,7 +116,7 @@ Primary skills: `architecture-design`, `diagram-design`, `mermaid-diagrams`.
 Turn this goal into an implementation plan. Include prerequisites, ordered work, dependencies, acceptance criteria, verification commands, rollback/recovery notes, risks and uncertainty. Do not implement it yet.
 ```
 
-Primary skills: `planning-and-estimation`, `product-management`, `prompt-engineering`.
+Primary skills: `readable-plans`, `planning-and-estimation`, `product-management`, `prompt-engineering`.
 
 ### 6. Run a sprint
 
@@ -260,6 +262,16 @@ Prepare an agent handoff containing current status, exact changes, evidence, tes
 
 Primary skill: `handoff`.
 
+### 24. Studio Odoo import pack
+
+Use when workspace files should become Studio Odoo gather-pack CSVs.
+
+```text
+Use the studio-odoo-import skill. Bind only the studio checkout path I give you. Read studio_odoo_schema before writing any CSV. Copy catalog files unchanged. Leave a data file unwritten when a required cell is not in studio-odoo/sources. Do not call Odoo and do not file myIR.
+```
+
+Primary skill: `studio-odoo-import`.
+
 ## Skill families by job
 
 | Job | Start here | Add when needed |
@@ -285,6 +297,7 @@ Primary skill: `handoff`.
 | Book/reference | `book-to-skill` | `documentation-engineering` |
 | Agent QA | `agent-evaluation` | `test-engineering`, `security-audit` |
 | Handoff | `handoff` | `documentation-engineering` |
+| Studio Odoo import | `studio-odoo-import` | `spreadsheet-reporting` |
 
 ## Workspace-scoped skills
 

@@ -58,6 +58,21 @@ JIRA_LOCAL_TOOL_NAMES = frozenset({
 
 JIRA_TOOL_NAMES = JIRA_NETWORK_TOOL_NAMES | JIRA_LOCAL_TOOL_NAMES
 
+STUDIO_BOUND_TOOL_NAMES = frozenset({
+    "studio_odoo_schema",
+    "studio_odoo_inventory",
+    "studio_odoo_copy_catalogs",
+    "studio_odoo_adopt_source",
+    "studio_odoo_write_import",
+})
+
+STUDIO_LOCAL_TOOL_NAMES = frozenset({
+    "studio_odoo_status",
+    "studio_odoo_bind",
+})
+
+STUDIO_TOOL_NAMES = STUDIO_BOUND_TOOL_NAMES | STUDIO_LOCAL_TOOL_NAMES
+
 WEB_TOOL_NAMES = frozenset({"searxng_search"})
 
 TERMINAL_TOOL_NAMES = frozenset({"execute_terminal_command"})
@@ -71,6 +86,11 @@ PROCEDURE_TOOL_NAMES = frozenset({
     "procedure_load",
     "procedure_status",
     "procedure_advance",
+    "procedure_acknowledge",
+    "studio_inspect",
+    "studio_create",
+    "studio_edit",
+    "studio_quarantine",
 })
 
 GIT_READ_TOOL_NAMES = frozenset({
@@ -79,6 +99,8 @@ GIT_READ_TOOL_NAMES = frozenset({
     "repository_log",
     "repository_branches",
     "repository_remotes",
+    "repository_conflict_status",
+    "hosting_pr_status",
 })
 
 GIT_WRITE_TOOL_NAMES = frozenset({
@@ -91,11 +113,16 @@ GIT_WRITE_TOOL_NAMES = frozenset({
     "repository_create_patch",
     "repository_apply_patch",
     "repository_merge_import",
+    "repository_pull",
+    "repository_merge",
+    "repository_resolve_and_continue",
     "repository_set_remote",
     "repository_fetch",
     "repository_push",
     "repository_clone_remote",
     "repository_clone_local",
+    "hosting_pr_create",
+    "hosting_pr_merge",
 })
 
 NOTES_TOOL_NAMES = frozenset({
@@ -106,13 +133,21 @@ NOTES_TOOL_NAMES = frozenset({
 CHANGE_TOOL_NAMES = (
     WORKSPACE_EVIDENCE_TOOL_NAMES
     | TERMINAL_TOOL_NAMES
-    | frozenset({"write_workspace_file"})
+    | frozenset({
+        "write_workspace_file",
+        "edit_workspace_file",
+        "studio_inspect",
+        "studio_create",
+        "studio_edit",
+        "studio_quarantine",
+    })
 )
 
 OPT_IN_TOOL_NAMES = (
     COMMAND_TOOL_NAMES
     | GOOGLE_TOOL_NAMES
     | JIRA_TOOL_NAMES
+    | STUDIO_TOOL_NAMES
     | WEB_TOOL_NAMES
     | TERMINAL_TOOL_NAMES
     | GIT_WRITE_TOOL_NAMES
@@ -126,6 +161,7 @@ _TASK_TOOLS = {
     "sol_command": COMMAND_TOOL_NAMES,
     "google": GOOGLE_TOOL_NAMES,
     "jira": JIRA_TOOL_NAMES,
+    "studio_odoo": STUDIO_TOOL_NAMES,
     "web": WEB_TOOL_NAMES,
     "terminal": TERMINAL_TOOL_NAMES,
     "git_write": GIT_WRITE_TOOL_NAMES,
@@ -170,6 +206,15 @@ _JIRA_PATTERNS = (
     r"\bbacklogs?\b",
 )
 
+_STUDIO_PATTERNS = (
+    r"\bodoo\b",
+    r"\bgather[- ]pack\b",
+    r"\bgst101a\b",
+    r"\bstudio[- ]odoo\b",
+    r"\bplg-odooacc\b",
+    r"\bmyir\b",
+)
+
 _WEB_PATTERNS = (
     r"\bsearxng\b",
     r"\bsearch the web\b",
@@ -197,16 +242,23 @@ _PROCEDURE_PATTERNS = (
     r"\bprocedure\b",
     r"\bchecklist\b",
     r"\brunbook\b",
+    r"\binfrastructure\b",
+    r"\bonboarding\b",
+    r"\bstudio (?:setup|creation|hosts?)\b",
 )
 
 _GIT_WRITE_PATTERNS = (
     r"\bcommit\b",
     r"\bpush\b",
+    r"\bpull\b",
+    r"\bmerge\b",
     r"\bcheckout\b",
     r"\bstage\b",
     r"\bclone\b",
     r"\bfetch\b",
     r"\bcreate (?:a )?branch\b",
+    r"\bpull request\b",
+    r"\bpr\b",
 )
 
 _GIT_READ_PATTERNS = (
@@ -215,6 +267,7 @@ _GIT_READ_PATTERNS = (
     r"\bbranch(?:es)?\b",
     r"\bdiffs?\b",
     r"\bhistory\b",
+    r"\bconflict\b",
 )
 
 WORKSPACE_EVIDENCE_PATTERNS = (
@@ -295,6 +348,7 @@ _CLASS_PATTERNS = (
     ("sol_command", _COMMAND_PATTERNS),
     ("google", _GOOGLE_PATTERNS),
     ("jira", _JIRA_PATTERNS),
+    ("studio_odoo", _STUDIO_PATTERNS),
     ("web", _WEB_PATTERNS),
     ("terminal", _TERMINAL_PATTERNS),
     ("git_write", _GIT_WRITE_PATTERNS),
@@ -354,6 +408,15 @@ def apply_jira_workspace_gate(user_text, permitted, workspace_projects):
     if projects and jira_read_now(user_text):
         return permitted
     return frozenset(permitted) - JIRA_NETWORK_TOOL_NAMES
+
+
+def apply_studio_workspace_gate(user_text, permitted, studio_root):
+    """Hide Studio import tools until this workspace has a verified studio root."""
+    if permitted is None or "studio_odoo" not in matching_tasks(user_text):
+        return permitted
+    if str(studio_root or "").strip():
+        return permitted
+    return frozenset(permitted) - STUDIO_BOUND_TOOL_NAMES
 
 
 def permitted_tools(user_text: str, allowlist: frozenset[str] | None) -> frozenset[str] | None:

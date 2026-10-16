@@ -1,0 +1,11 @@
+# Copy to settings.yaml on the BRAIN volume (optional).
+# Launchers set SOL_LITE_SETTINGS_FILE when settings.yaml exists.
+#
+# Do not put API tokens or passwords in this file.
+# Studio-owner unlock uses sec/I_OWN_THIS_LAB + owner_id (not this file).
+
+general: {}
+runtime: {}
+workspace: {}
+data: {}
+display: {}

@@ -15,6 +15,16 @@ def test_terminal_palette_matches_pacen_plg_reference():
     assert PALETTE.ai_purple == "#7c6a9a"
 
 
+def test_help_documents_enter_to_send_and_shift_enter_to_edit():
+    console = Console(file=StringIO(), highlight=False)
+    ui = TerminalUI(console=console)
+    ui.print_help()
+    output = console.file.getvalue()
+    assert "Shift+Enter" in output
+    assert "Shift+Return" in output
+    assert "approval popup" in output
+
+
 def test_terminal_ui_applies_theme_to_supplied_console():
     console = Console(file=StringIO(), highlight=False)
     ui = TerminalUI(console=console)

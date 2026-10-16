@@ -13,7 +13,7 @@ from time import time
 
 @dataclass(slots=True)
 class Workspace:
-    workspace_id:str; name:str; root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); jira_projects:list[str]=field(default_factory=list)
+    workspace_id:str; name:str; root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); jira_projects:list[str]=field(default_factory=list); studio_root:str=""
 @dataclass(slots=True)
 class Session:
     session_id:str; agent_id:str; workspace_id:str; workspace_root:str; created_at:float=field(default_factory=time); last_used_at:float=field(default_factory=time); status:str="IDLE"; task:str=""; authorized_resource_ids:set[str]=field(default_factory=set); transcript:list=field(default_factory=list)
@@ -47,6 +47,13 @@ class WorkspaceManager:
             workspace.jira_projects = keys
             self._save()
             return list(workspace.jira_projects)
+    def set_studio_root(self, workspace_id, studio_root):
+        path = str(studio_root or "").strip()
+        with self._lock:
+            workspace = self._workspaces[workspace_id]
+            workspace.studio_root = path
+            self._save()
+            return workspace.studio_root
 class SessionManager:
     def __init__(self,workspace_manager): self.workspace_manager=workspace_manager; self._sessions={}; self._lock=threading.RLock()
     def create(self,agent_id,workspace):

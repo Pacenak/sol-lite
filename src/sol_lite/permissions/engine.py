@@ -62,6 +62,7 @@ class PermissionEngine:
         agent_id=None,
         capability=None,
         risk=(),
+        allow_session=True,
     ):
         ctx = _EXECUTION.get() or {}
 
@@ -97,6 +98,17 @@ class PermissionEngine:
             )
 
         capability = capability or operation
+
+        if allow_session and self.approvals.session_allows(
+            session_id=session_id,
+            scope=scope,
+            agent_id=agent_id,
+        ):
+            return PermissionDecision(
+                True,
+                True,
+                "Session approval covers this scope.",
+            )
 
         if approval_id and self.approvals.consume(
             approval_id,

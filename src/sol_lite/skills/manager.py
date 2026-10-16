@@ -255,12 +255,35 @@ class SkillManager:
             ({"presentation", "slides", "deck", "pptx", "powerpoint"}, {"presentation-design"}),
             ({"spreadsheet", "spreadsheets", "workbook", "workbooks", "xlsx", "excel"}, {"spreadsheet-reporting"}),
             ({"diagram", "diagrams", "mermaid", "flowchart", "sequence"}, {"diagram-design", "mermaid-diagrams"}),
+            ({"odoo", "gst101a", "gather", "myir", "plg-odooacc"}, {"studio-odoo-import"}),
+            (
+                {
+                    "toolbelt",
+                    "solboot",
+                    "sollite",
+                    "solbrain",
+                    "seccheck",
+                    "lite-pen",
+                    "litepen",
+                    "pouch",
+                    "e3531",
+                    "mifi",
+                    "athen",
+                    "admin-stick",
+                    "studio-admin",
+                },
+                {"studio-admin-toolbelt"},
+            ),
         )
+        specialist = set()
         for triggers, skills in groups:
+            specialist.update(skills)
             if task_words & triggers:
                 artifact_skills.update(skills)
         for record in records:
             lines.append(f"- {record.skill_id}: {record.description} [trust={record.trust}; source={record.source}]")
+            if record.skill_id in specialist:
+                continue
             relevance = _skill_terms(f"{record.skill_id} {record.description}")
             if task_words & relevance:
                 selected_details.append(record)

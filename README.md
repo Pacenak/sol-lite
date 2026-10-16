@@ -94,8 +94,13 @@ First launch without `--workspace` asks the user to select a recent workspace or
 /normal
 /tools
 /doctor
+/listen
+/speak
+/flare [on|off]
 /quit
 ```
+
+Shell commands (`sol-lite doctor`, integrations, battle-test): see `docs/user/cli-reference.md`. Copy `.env.example` to `.env` for supported environment overrides.
 
 ## Skills
 
@@ -149,3 +154,14 @@ Start at `docs/README.md`. Documentation covers installation, first run, users, 
 
 SOL-Lite can use a private SearXNG instance through the `searxng_search` agent tool. Configure `config/searxng.yaml` or `SOL_SEARXNG_URL`; see `docs/integrations/searxng.md`.
 
+## Optional SOL-Command connection
+
+SOL-Lite can remain standalone or pair with SOL-Command as a separately managed client. Pair with a Command invite (an administrator must approve the instance), then check status or download assigned-sector skills for review:
+
+```powershell
+sol-lite connect --command-url https://sol-command.corp.pacenlife.com --invite-code YOUR_INVITE
+sol-lite command-status
+sol-lite sync-skills
+```
+
+The pairing credential is stored in the operating system keyring. Shared-memory and RAG tools use only the paired instance identity and the sectors currently assigned by Command. SOL skills are saved to `data/state/skills/pending/sol-command/`; review/import each skill explicitly. Jarvis proposals require an administrator grant in Command and remain pending for Command-side approval. Disconnect with `sol-lite disconnect`. Standalone setup and the optional link are in the [SOL-Lite integration guide](docs/integrations/sol-lite.md).

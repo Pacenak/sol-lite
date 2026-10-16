@@ -53,6 +53,8 @@ def synthesize(text: str, settings: dict, data_root) -> bytes:
     provider = str(settings.get("tts_provider") or "disabled")
     if provider == "local":
         return _synthesize_local(spoken, settings, data_root)
+    if provider == "platform":
+        return _synthesize_platform(spoken)
     if provider.startswith("endpoint:"):
         return _synthesize_endpoint(spoken, settings, provider)
     raise RuntimeError("Text-to-speech is disabled. Run the SOL-Lite installer or sol-lite voice-status.")
@@ -118,6 +120,54 @@ def _synthesize_local(text: str, settings: dict, data_root) -> bytes:
     if not chunks:
         raise RuntimeError("Kokoro returned no audio")
     return _wav_bytes(chunks)
+
+
+def _synthesize_platform(text: str) -> bytes:
+    """Speak with Windows SAPI, macOS say, or espeak-ng when Kokoro is unavailable."""
+    import shutil
+    import subprocess
+    import sys
+
+    with tempfile.TemporaryDirectory() as directory:
+        suffix = ".aiff" if sys.platform == "darwin" else ".wav"
+        path = Path(directory) / f"speech{suffix}"
+        if sys.platform == "win32":
+            _sapi_to_file(text, path)
+        elif sys.platform == "darwin":
+            subprocess.run(["say", "-o", str(path), text], check=False, timeout=30, capture_output=True)
+        else:
+            espeak = shutil.which("espeak-ng") or shutil.which("espeak")
+            if not espeak:
+                raise RuntimeError("Text-to-speech is not available. Run sol-lite voice-status.")
+            subprocess.run([espeak, "-w", str(path), text], check=False, timeout=30, capture_output=True)
+        if not path.is_file() or path.stat().st_size <= 44:
+            raise RuntimeError("The operating system voice returned no audio")
+        return path.read_bytes()
+
+
+def _sapi_to_file(text: str, path: Path) -> None:
+    import os
+    import subprocess
+
+    env = os.environ.copy()
+    env["SOL_LITE_SPEECH_WAV"] = str(path)
+    script = (
+        "Add-Type -AssemblyName System.Speech; "
+        "$synth = New-Object System.Speech.Synthesis.SpeechSynthesizer; "
+        "$synth.SetOutputToWaveFile($env:SOL_LITE_SPEECH_WAV); "
+        "$text = [Console]::In.ReadToEnd(); "
+        "if ($text) { $synth.Speak($text) }; "
+        "$synth.Dispose()"
+    )
+    subprocess.run(
+        ["powershell", "-NoProfile", "-NonInteractive", "-Command", script],
+        input=text,
+        text=True,
+        capture_output=True,
+        env=env,
+        timeout=30,
+        check=False,
+    )
 
 
 def _wav_bytes(chunks) -> bytes:

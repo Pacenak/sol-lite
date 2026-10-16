@@ -10,4 +10,5 @@ nodes: []
 #     transport: ssh
 #     username: dev
 #     port: 22
+#     environment: lab   # lab may change; production and a missing value are inspect-only
 #     enabled: true

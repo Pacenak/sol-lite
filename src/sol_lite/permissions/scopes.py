@@ -14,3 +14,13 @@ REPOSITORY_WRITE = "repository.write"
 REPOSITORY_REMOTE = "repository.remote"
 SKILL_INSPECT = "skills.inspect"
 SKILL_INSTALL = "skills.install"
+
+
+def scope_for_operation(operation: str) -> str:
+    """Map a tool operation name to the session-grant scope it spends."""
+    op = str(operation or "").strip().lower()
+    if "terminal" in op or op == "execute_terminal_command":
+        return TERMINAL_WRITE
+    if op in {"write_workspace_file", "edit_workspace_file"} or "write" in op or "edit" in op:
+        return WRITE
+    return op or WRITE

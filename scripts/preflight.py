@@ -56,8 +56,8 @@ def main() -> int:
     ui.final_failure("preflight")
 
     skill_count = len(list((root / "skills").glob("*/SKILL.md")))
-    if skill_count != 37:
-        fail(f"expected 37 built-in skills, found {skill_count}")
+    if skill_count != 39:
+        fail(f"expected 39 built-in skills, found {skill_count}")
 
     print(f"SOL-Lite preflight: PASS (version={version}, Rich={rich_version}, skills={skill_count})")
     return 0

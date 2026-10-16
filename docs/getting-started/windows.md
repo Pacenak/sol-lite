@@ -38,7 +38,7 @@ No venv activation or package installation is required on subsequent starts.
 
 ## Voice
 
-Setup installs the `voice` extra and tries to install `espeak-ng` with winget. Kokoro local text-to-speech is included on Python 3.11 and 3.12. Python 3.13 and newer still get faster-whisper speech-to-text; Kokoro is not published for those versions. Model downloads that fail do not fail setup. Check readiness with:
+Setup installs the `voice` extra and tries to install `espeak-ng` with winget. Kokoro local text-to-speech is included on Python 3.11 and 3.12. Python 3.13 and newer still get faster-whisper speech-to-text. Kokoro is not published for those versions, so spoken replies use the Windows voice. Model downloads that fail do not fail setup. Check readiness with:
 
 ```powershell
 .\.venv\Scripts\sol-lite.exe voice-status

@@ -1,0 +1,39 @@
+# sol_studio_admin — admin-only portable tool belt
+# Unlock: features.studio_admin + I_OWN_THIS_LAB / studio_owner.unlock
+# No repository_push / hosting_pr_* — those stay on host Outpost / project-git with Yes.
+tools:
+  # Unlock + sec (allowlisted)
+  - studio_owner_status
+  - studio_seccheck
+  - studio_lite_pen
+  # Stick / workspace navigation (admin-belt, pouch docs, hosts.allow)
+  - inventory_workspace
+  - list_workspace_directories
+  - list_project_structure
+  - find_workspace_files
+  - read_workspace_file
+  - read_workspace_files
+  - get_workspace_file_metadata
+  - search_codebase
+  - analyze_architecture_drift
+  - workspace_notes_read
+  - workspace_notes_write
+  - write_workspace_file
+  - edit_workspace_file
+  # Local inspect + pouch network diagnostics (permission-gated)
+  - execute_terminal_command
+  - runtime_get_context
+  - remote_list_nodes
+  # Git inspect only (remind: push/merge on host with confirmation)
+  - repository_status
+  - repository_diff
+  - repository_log
+  - repository_branches
+  - repository_remotes
+  # Skills / procedures
+  - skill_discover
+  - skill_install
+  - procedure_load
+  - procedure_status
+  - procedure_advance
+  - procedure_acknowledge

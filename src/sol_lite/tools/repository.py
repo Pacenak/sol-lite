@@ -72,6 +72,45 @@ def _approval(ctx, scope: str, *, approval_id, operation, target, arguments, pla
     )
 
 
+def _require_remote(ctx, repo: Path, *, approval_id, operation, target, arguments, plan) -> None:
+    """Require remote permission unless the workspace repo is trusted."""
+    trust = getattr(ctx, "repository_trust", None)
+    if trust is not None and trust.is_trusted(repo):
+        _audit(
+            ctx,
+            "repository.remote_trusted",
+            repository=str(repo),
+            operation=operation,
+        )
+        return
+    if trust is not None and not trust.is_allowlisted(repo):
+        raise ToolExecutionError(trust.explain_denial(repo))
+    if trust is not None and not trust.is_confirmed(repo):
+        raise ToolExecutionError(trust.explain_denial(repo))
+    _approval(
+        ctx,
+        REPOSITORY_REMOTE,
+        approval_id=approval_id,
+        operation=operation,
+        target=target,
+        arguments=arguments,
+        plan=plan,
+    )
+
+
+def _porcelain_dirty(repo: Path) -> bool:
+    status = _run_git(["-C", str(repo), "status", "--porcelain"], cwd=repo).stdout
+    return bool(status.strip())
+
+
+def _conflicted_paths(repo: Path) -> list[str]:
+    result = _run_git(
+        ["-C", str(repo), "diff", "--name-only", "--diff-filter=U"],
+        cwd=repo,
+    )
+    return [line.strip() for line in result.stdout.splitlines() if line.strip()]
+
+
 def _branch(repo: Path) -> str | None:
     result = _run_git(["-C", str(repo), "symbolic-ref", "--quiet", "--short", "HEAD"], cwd=repo)
     return result.stdout.strip() or None
@@ -388,6 +427,194 @@ def repository_apply_patch(ctx, args):
     return {"repository": str(repo), "patch": str(patch), "applied": True, "staged": True}
 
 
+def repository_pull(ctx, args):
+    repo = _repo_path(ctx, args.get("path"))
+    remote = str(args.get("remote", "origin"))
+    strategy = str(args.get("strategy", "ff-only")).strip().lower() or "ff-only"
+    if strategy not in {"ff-only", "merge"}:
+        raise ValueError("strategy must be 'ff-only' or 'merge'.")
+    if _porcelain_dirty(repo):
+        raise ToolExecutionError(
+            "Refusing pull with a dirty worktree; commit or clean the tree first."
+        )
+    plan = str(args.get("plan", ""))
+    approval_id = args.get("approval_id")
+    arguments = {"path": str(repo), "remote": remote, "strategy": strategy}
+    _require_remote(
+        ctx,
+        repo,
+        approval_id=approval_id,
+        operation="repository_pull",
+        target=remote,
+        arguments=arguments,
+        plan=plan,
+    )
+    if strategy == "merge":
+        _approval(
+            ctx,
+            REPOSITORY_WRITE,
+            approval_id=approval_id,
+            operation="repository_pull",
+            target=str(repo),
+            arguments=arguments,
+            plan=plan,
+        )
+    _run_git(["-C", str(repo), "fetch", "--prune", remote], cwd=repo)
+    branch = _branch(repo)
+    if not branch:
+        raise ToolExecutionError("Cannot pull while HEAD is detached.")
+    try:
+        if strategy == "ff-only":
+            _run_git(
+                ["-C", str(repo), "merge", "--ff-only", f"{remote}/{branch}"],
+                cwd=repo,
+            )
+        else:
+            _run_git(["-C", str(repo), "merge", f"{remote}/{branch}"], cwd=repo)
+    except ToolExecutionError as exc:
+        conflicts = _conflicted_paths(repo)
+        if conflicts:
+            return {
+                "repository": str(repo),
+                "remote": remote,
+                "branch": branch,
+                "pulled": False,
+                "conflicts": conflicts,
+                "error": str(exc),
+            }
+        raise
+    conflicts = _conflicted_paths(repo)
+    if conflicts:
+        return {
+            "repository": str(repo),
+            "remote": remote,
+            "branch": branch,
+            "pulled": False,
+            "conflicts": conflicts,
+        }
+    commit = _current_commit(repo) if _has_commit(repo) else None
+    _audit(ctx, "repository.pull", repository=str(repo), remote=remote, branch=branch)
+    return {
+        "repository": str(repo),
+        "remote": remote,
+        "branch": branch,
+        "commit": commit,
+        "pulled": True,
+        "strategy": strategy,
+    }
+
+
+def repository_merge(ctx, args):
+    repo = _repo_path(ctx, args.get("path"))
+    ref = str(args["ref"]).strip()
+    if not ref:
+        raise ValueError("A merge ref is required.")
+    if _porcelain_dirty(repo):
+        raise ToolExecutionError(
+            "Refusing merge with a dirty worktree; commit or clean the tree first."
+        )
+    plan = str(args.get("plan", ""))
+    approval_id = args.get("approval_id")
+    arguments = {"path": str(repo), "ref": ref}
+    _approval(
+        ctx,
+        REPOSITORY_WRITE,
+        approval_id=approval_id,
+        operation="repository_merge",
+        target=str(repo),
+        arguments=arguments,
+        plan=plan,
+    )
+    try:
+        _run_git(["-C", str(repo), "merge", "--no-edit", ref], cwd=repo)
+    except ToolExecutionError as exc:
+        conflicts = _conflicted_paths(repo)
+        if conflicts:
+            return {
+                "repository": str(repo),
+                "ref": ref,
+                "merged": False,
+                "conflicts": conflicts,
+                "error": str(exc),
+            }
+        raise
+    conflicts = _conflicted_paths(repo)
+    if conflicts:
+        return {
+            "repository": str(repo),
+            "ref": ref,
+            "merged": False,
+            "conflicts": conflicts,
+        }
+    commit = _current_commit(repo)
+    _audit(ctx, "repository.merge", repository=str(repo), ref=ref, commit=commit)
+    return {
+        "repository": str(repo),
+        "ref": ref,
+        "commit": commit,
+        "merged": True,
+        "branch": _branch(repo),
+    }
+
+
+def repository_conflict_status(ctx, args):
+    repo = _repo_path(ctx, args.get("path"))
+    _approval(
+        ctx,
+        REPOSITORY_READ,
+        approval_id=None,
+        operation="repository_conflict_status",
+        target=str(repo),
+        arguments={"path": str(repo)},
+        plan="",
+    )
+    conflicts = _conflicted_paths(repo)
+    merge_head = repo / ".git" / "MERGE_HEAD"
+    return {
+        "repository": str(repo),
+        "in_merge": merge_head.is_file(),
+        "conflicts": conflicts,
+        "dirty": _porcelain_dirty(repo),
+    }
+
+
+def repository_resolve_and_continue(ctx, args):
+    repo = _repo_path(ctx, args.get("path"))
+    conflicts = _conflicted_paths(repo)
+    if conflicts:
+        raise ToolExecutionError(
+            "Unresolved conflicts remain: " + ", ".join(conflicts)
+        )
+    merge_head = repo / ".git" / "MERGE_HEAD"
+    if not merge_head.is_file():
+        raise ToolExecutionError("No in-progress merge to continue.")
+    plan = str(args.get("plan", ""))
+    approval_id = args.get("approval_id")
+    diff = _run_git(
+        ["-C", str(repo), "diff", "--cached", "--no-ext-diff"],
+        cwd=repo,
+    ).stdout
+    arguments = {"path": str(repo), "staged_diff": diff[:4000]}
+    _approval(
+        ctx,
+        REPOSITORY_WRITE,
+        approval_id=approval_id,
+        operation="repository_resolve_and_continue",
+        target=str(repo),
+        arguments=arguments,
+        plan=plan,
+    )
+    _run_git(["-C", str(repo), "commit", "--no-edit"], cwd=repo)
+    commit = _current_commit(repo)
+    _audit(ctx, "repository.merge_continue", repository=str(repo), commit=commit)
+    return {
+        "repository": str(repo),
+        "commit": commit,
+        "branch": _branch(repo),
+        "continued": True,
+    }
+
+
 def repository_set_remote(ctx, args):
     repo = _repo_path(ctx, args.get("path"))
     name = str(args["name"])
@@ -399,7 +626,7 @@ def repository_set_remote(ctx, args):
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
     arguments = {"path": str(repo), "name": name, "url": safe_url}
-    _approval(ctx, REPOSITORY_REMOTE, approval_id=approval_id, operation="repository_set_remote",
+    _require_remote(ctx, repo, approval_id=approval_id, operation="repository_set_remote",
               target=safe_url, arguments=arguments, plan=plan)
     remotes = _run_git(["-C", str(repo), "remote"], cwd=repo).stdout.splitlines()
     if name in remotes:
@@ -416,7 +643,7 @@ def repository_fetch(ctx, args):
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
     arguments = {"path": str(repo), "remote": remote}
-    _approval(ctx, REPOSITORY_REMOTE, approval_id=approval_id, operation="repository_fetch",
+    _require_remote(ctx, repo, approval_id=approval_id, operation="repository_fetch",
               target=remote, arguments=arguments, plan=plan)
     _run_git(["-C", str(repo), "fetch", "--prune", remote], cwd=repo)
     _audit(ctx, "repository.fetch", repository=str(repo), remote=remote)
@@ -432,7 +659,7 @@ def repository_push(ctx, args):
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
     arguments = {"path": str(repo), "remote": remote, "branch": branch}
-    _approval(ctx, REPOSITORY_REMOTE, approval_id=approval_id, operation="repository_push",
+    _require_remote(ctx, repo, approval_id=approval_id, operation="repository_push",
               target=remote, arguments=arguments, plan=plan)
     _run_git(["-C", str(repo), "push", remote, branch], cwd=repo)
     _audit(ctx, "repository.push", repository=str(repo), remote=remote, branch=branch)
@@ -468,8 +695,12 @@ def repository_clone_remote(ctx, args):
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
     arguments = {"url": _safe_remote(url), "destination": str(destination)}
-    _approval(ctx, REPOSITORY_REMOTE, approval_id=approval_id, operation="repository_clone_remote",
-              target=_safe_remote(url), arguments=arguments, plan=plan)
+    trust = getattr(ctx, "repository_trust", None)
+    if trust is not None and trust.is_trusted(root):
+        _audit(ctx, "repository.remote_trusted", repository=str(root), operation="repository_clone_remote")
+    else:
+        _approval(ctx, REPOSITORY_REMOTE, approval_id=approval_id, operation="repository_clone_remote",
+                  target=_safe_remote(url), arguments=arguments, plan=plan)
     destination.parent.mkdir(parents=True, exist_ok=True)
     _run_git(["clone", url, str(destination)], cwd=root)
     _audit(ctx, "repository.clone_remote", destination=str(destination), remote=_safe_remote(url))
@@ -535,6 +766,26 @@ def repository_tools():
                         {"type": "object", "properties": {
                             "path": {"type": "string"}, "patch": {"type": "string"}, **approval,
                         }, "required": ["patch", "plan", "approval_id"]}, repository_apply_patch),
+        ToolDefinition("repository_pull", "Fetch and integrate the upstream branch; ff-only by default.",
+                        {"type": "object", "properties": {
+                            "path": {"type": "string"}, "remote": {"type": "string"},
+                            "strategy": {"type": "string", "enum": ["ff-only", "merge"]}, **approval,
+                        }, "required": ["plan", "approval_id"]}, repository_pull),
+        ToolDefinition("repository_merge", "Merge a local or remote-tracking ref into the current branch.",
+                        {"type": "object", "properties": {
+                            "path": {"type": "string"}, "ref": {"type": "string"}, **approval,
+                        }, "required": ["ref", "plan", "approval_id"]}, repository_merge),
+        ToolDefinition("repository_conflict_status", "List conflicted paths for an in-progress merge.",
+                        {"type": "object", "properties": {"path": {"type": "string"}}},
+                        repository_conflict_status),
+        ToolDefinition(
+            "repository_resolve_and_continue",
+            "After conflicts are resolved in the tree, complete the in-progress merge with approval.",
+            {"type": "object", "properties": {
+                "path": {"type": "string"}, **approval,
+            }, "required": ["plan", "approval_id"]},
+            repository_resolve_and_continue,
+        ),
         ToolDefinition("repository_set_remote", "Add or update a Git remote after remote approval.",
                         {"type": "object", "properties": {
                             "path": {"type": "string"}, "name": {"type": "string"},

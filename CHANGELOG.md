@@ -1,7 +1,15 @@
 # Changelog
 
+## 0.2.6
+
+- SOL PA can bind a Studio Odoo checkout and build gather-pack import CSVs from workspace source files.
+- Column names and catalog codes are read from the bound `plg-odooacc` templates. SOL-Lite does not call Odoo or file myIR.
+- Added the `studio-odoo-import` skill, the beginner guide, and the integration interface.
+
+
 ## 0.2.5
 
+- Added the `readable-plans` skill so implementation plans stay a short route a person can approve before coding.
 - Corrected Rich Panel API usage so Rich 15 renders all SOL-Lite panels without `title_style` errors.
 - Added regression coverage for user, agent, failure, and approval panels.
 - Corrected installer and macOS bundle version metadata to 0.2.5.

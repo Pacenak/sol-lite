@@ -85,6 +85,69 @@ def test_shell_accepts_task_manager_and_event_bus(tmp_path):
     assert shell.event_bus is not None
 
 
+def test_shell_context_uses_the_active_agent(tmp_path):
+    seen = {}
+
+    class Recording(Context):
+        def for_workspace(self, *args, **kwargs):
+            seen.update(kwargs)
+            return self
+
+    shell = AgentShell(
+        root=tmp_path,
+        agents=Agents(),
+        models=Models(),
+        tools=Tools(),
+        tool_context=Recording(),
+        fault_log=FaultLog(),
+        workspace_manager=WorkspaceManager(tmp_path),
+        session_manager=SessionManager(),
+        skill_manager=SkillManager(),
+        task_manager=TaskManager(),
+        event_bus=object(),
+        initial_agent="sol_docs",
+        initial_workspace=str(tmp_path),
+    )
+    assert shell.active_agent == "sol_docs"
+    assert seen.get("agent_id") == "sol_docs"
+    assert seen.get("session_id") == "s1"
+
+
+def test_use_command_rebuilds_context_for_new_agent(tmp_path):
+    seen = []
+
+    class Recording(Context):
+        def for_workspace(self, *args, **kwargs):
+            seen.append(dict(kwargs))
+            return self
+
+    class SwitchAgents(Agents):
+        def names(self):
+            return ["sol_docs", "sol_engineer"]
+
+        def get(self, agent_id):
+            return AgentDefinition(agent_id, agent_id, "test", "test", model_profile="engineer")
+
+    shell = AgentShell(
+        root=tmp_path,
+        agents=SwitchAgents(),
+        models=Models(),
+        tools=Tools(),
+        tool_context=Recording(),
+        fault_log=FaultLog(),
+        workspace_manager=WorkspaceManager(tmp_path),
+        session_manager=SessionManager(),
+        skill_manager=SkillManager(),
+        task_manager=TaskManager(),
+        event_bus=object(),
+        initial_agent="sol_docs",
+        initial_workspace=str(tmp_path),
+    )
+    assert shell.handle_command("/use sol_engineer") == "handled"
+    assert shell.active_agent == "sol_engineer"
+    assert seen[-1].get("agent_id") == "sol_engineer"
+
+
 def test_shell_skill_listing_uses_active_agent_context(tmp_path, capsys):
     class SkillRecord:
         skill_id = "systematic-debugging"

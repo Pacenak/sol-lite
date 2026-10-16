@@ -40,6 +40,28 @@ permissions:
       - env
       - set
       - echo
+      - ping
+      - ipconfig
+      - ifconfig
+      - netstat
+      - nslookup
+      - tracert
+      - traceroute
+      - route
+      - Get-NetIPAddress
+      - Get-NetIPConfiguration
+      - dig
+      - nc
+      - netcat
+      - ss
+      - ip
+      - nmcli
+      - ethtool
+      - mmcli
+      - hostnamectl
+      - curl
+      - iwconfig
+      - iw
       - mkdir
       - md
       - New-Item
@@ -66,13 +88,10 @@ permissions:
       - Remove-Item
       - format
       - diskpart
-      - sudo
       - shutdown
       - reboot
       - halt
       - mkfs
-      - chmod
-      - chown
       - "git reset --hard"
       - "git clean -fdx"
     read: {enabled: true, approval_required: false}
@@ -89,6 +108,9 @@ permissions:
   jira:
     read: {enabled: true, approval_required: true}
     write: {enabled: true, approval_required: true}
+  studio:
+    read: {enabled: true, approval_required: true}
+    write: {enabled: true, approval_required: true}
   applications: {enabled: false, approval_required: true}
   macos: {enabled: false, approval_required: true}
   windows: {enabled: false, approval_required: true}
@@ -100,4 +122,6 @@ permissions:
   repository:
     read: {enabled: true, approval_required: false}
     write: {enabled: true, approval_required: true}
-    remote: {enabled: false, approval_required: true}
+    # Enabled for host remotes; untrusted workspaces still need approval.
+    # Trusted+confirmed roots skip repeated remote approval (see RepositoryTrust).
+    remote: {enabled: true, approval_required: true}

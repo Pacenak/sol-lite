@@ -38,6 +38,7 @@ class ApprovalManager:
 
         self.default_ttl_seconds = default_ttl_seconds
         self._requests: dict[str, ApprovalRequest] = {}
+        self._session_grants: set[tuple[str, str, str | None]] = set()
         self._lock = RLock()
 
     @staticmethod
@@ -150,6 +151,34 @@ class ApprovalManager:
             del self._requests[approval_id]
             return True
 
+    def grant_session(self, *, session_id, scope, agent_id=None):
+        """Remember a scope for the rest of this session.
+
+        Exact approvals stay single-use. A session grant covers later calls
+        of the same scope for this session (and this agent, when set).
+        """
+        sid = str(session_id or "").strip()
+        scope_name = str(scope or "").strip()
+        if not sid or not scope_name:
+            raise ValueError("session_id and scope are required")
+        agent = str(agent_id).strip() if agent_id else None
+        with self._lock:
+            self._session_grants.add((sid, scope_name, agent))
+
+    def session_allows(self, *, session_id, scope, agent_id=None) -> bool:
+        sid = str(session_id or "").strip()
+        scope_name = str(scope or "").strip()
+        if not sid or not scope_name:
+            return False
+        agent = str(agent_id).strip() if agent_id else None
+        with self._lock:
+            if (sid, scope_name, None) in self._session_grants:
+                return True
+            if agent and (sid, scope_name, agent) in self._session_grants:
+                return True
+        return False
+
     def clear(self):
         with self._lock:
             self._requests.clear()
+            self._session_grants.clear()

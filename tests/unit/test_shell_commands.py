@@ -356,6 +356,15 @@ def test_settings_typed_during_approval_opens_the_menu(tmp_path):
     assert shell.ui.console.answers == []
 
 
+def test_composed_chat_keeps_paragraph_breaks(tmp_path, monkeypatch):
+    shell = _shell(tmp_path)
+    monkeypatch.setattr(
+        "sol_lite.agents.shell.read_message",
+        lambda console, prompt: "  first\n\nsecond  ",
+    )
+    assert shell._prompt("SOL ❯ ", compose=True) == "first\n\nsecond"
+
+
 def test_settings_without_store_reports_unavailable(tmp_path, capsys):
     shell = _shell(tmp_path)
     shell.settings_store = None

@@ -2,13 +2,15 @@
 
 Initial registry:
 
-- SOL PA
+- SOL PA, including the Studio Odoo gather-pack import tools
 - SOL Business
 - SOL Docs
 - SOL Engineer
 
 `config/agents.yaml` is runtime/content configuration. Executable runtime is under
 `src/sol_lite/agents/`. The registry connects configuration to runtime.
+
+SOL PA loads studio manuals and acknowledges human gates. SOL Engineer inspects, then creates, edits, or quarantines through the studio change tools. The staff procedure is [Studio change gate](../user/studio-change.md).
 
 SOL Engineer is repository-aware. Its engineering workflow distinguishes:
 

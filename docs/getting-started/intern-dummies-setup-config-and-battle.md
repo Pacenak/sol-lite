@@ -1,6 +1,8 @@
 # SOL-Lite intern guide: configure, set up, and run the first full battle
 
-This is the copy-paste path for a new intern. It covers a standalone SOL-Lite install, the configuration you are allowed to check, and the first battle of all four agents and all 37 built-in skills.
+**Updated entry point:** use [Zero-to-battle](zero-to-battle-noob-runbook.md) and [First full battle run](../testing/first-full-battle-run.md) for current terminal setup, gate order, logging and all-feature checks. This older chapter retains useful skill prompts, but its 39-skill count is historical: this checkout has 40 while preflight still expects 39. Do not mark a pass or remove a skill to hide that mismatch. Role-path writes can occur without an approval popup, and saved integration status is not a live-operation pass.
+
+This is the copy-paste path for a new intern. It covers a standalone SOL-Lite install, the configuration you are allowed to check, and the first battle of all four agents and all 39 built-in skills.
 
 SOL-Command is not required. Leave it unpaired for this battle.
 
@@ -157,15 +159,17 @@ Four agents are enabled. Do not add an agent for this battle.
 | `sol_pa` | SOL PA | `fast` | Planning, research, handoffs |
 | `sol_business` | SOL Business | `reviewer` | Project and product planning |
 | `sol_docs` | SOL Docs | `reviewer` | Documents, slides, sheets, diagrams |
-| `sol_engineer` | SOL Engineer | `engineer` | Code, tests, Git inspection, shell |
+| `sol_engineer` | SOL Engineer | `engineer` | Code, tests, Git inspection, shell, studio file changes |
 
 Built-in skills are available to every agent. You still switch to the agent in the table so the battle uses the intended model.
+
+Studio manuals, lab and production hosts, and file backups are a separate staff path: [Studio change gate](../user/studio-change.md). Do not point that work at a production host during the first battle.
 
 ### `config/searxng.yaml` and `.env.example`
 
 SearXNG starts disabled (`enabled: false`). Leave it disabled unless a senior gives you a private SearXNG URL. The web-research skill row is `BLOCKED` when it is disabled.
 
-`.env.example` shows optional variables. You do not need a `.env` file for the first battle. If `SOL_WORKSPACE_ROOT` is already set in your shell, know that the live smoke uses it. Set it yourself in section 6 so the smoke reads the disposable folder.
+`.env.example` lists **environment variables the runtime actually reads** (paths, Ollama, SearXNG, integration CLI helpers, CI flags). Model names and approval policy stay in `config/models.yaml` and `config/permissions.yaml` — not in `.env`. You do not need a `.env` file for the first battle. If `SOL_WORKSPACE_ROOT` is already set in your shell, know that the live smoke uses it. Set it yourself in section 6 so the smoke reads the disposable folder. Full reference: [Configuration](../architecture/configuration.md).
 
 ### Files you do not edit
 
@@ -215,7 +219,7 @@ macOS automated gate:
 This runs, in order, and stops at the first failure:
 
 1. `scripts/audit-pack.py`
-2. `scripts/preflight.py` (version match and 37 built-in skills)
+2. `scripts/preflight.py` (version match and 39 built-in skills)
 3. `python -m compileall -q src tests`
 4. `python -m pytest -q`
 5. `python -m ruff check src tests`
@@ -345,7 +349,7 @@ Inspect sample.py. Explain the bug in add. Propose the one-line fix. Do not modi
 
 ## 9. First battle of every built-in skill
 
-There are 37 skills. The folder name and the `name` in `SKILL.md` match. Preflight fails if that count is not 37.
+There are 39 skills. The folder name and the `name` in `SKILL.md` match. Preflight fails if that count is not 39.
 
 For every row: `/use` the agent, `/skills show` the skill id, paste the prompt, then mark the score sheet.
 
@@ -412,6 +416,14 @@ Use the web-source-verification skill. I claim hello.txt contains battle-marker-
 ```
 
 `PASS` requires the file check. A web search is optional and stays `BLOCKED` when SearXNG is off.
+
+`studio-odoo-import`
+
+```text
+Use the studio-odoo-import skill. This workspace has no Studio Odoo source files and no studio root. Name the first tool you would call. Say that you will not invent a studio path, a tax code, or an import row. Do not bind a path. Do not write files.
+```
+
+`PASS`: the answer names `studio_odoo_bind` or says the studio root is missing, and `hello.txt` is unchanged. A guessed tax code or a written CSV is `FAIL`.
 
 ### SOL Business skills
 
@@ -599,9 +611,10 @@ Mark these `NOT RUN` unless a senior hands you a lab account. They are outside t
 | SearXNG | enabled private URL | A search tool result lists sources. |
 | Google | `sol-lite google-connect` | `sol-lite google-status` shows the lab account. |
 | Jira | `sol-lite jira-connect` | `sol-lite jira-status` lists the granted lab project. |
+| Studio Odoo | bind a lab checkout from [the beginner guide](../user/dummies-studio-odoo.md) | `studio_odoo_status` shows `templates_ok` and `odoo_api: not used`. No IRD values in the score sheet. |
 | Voice | `sol-lite voice-status` | The command prints readiness without a traceback. |
 
-Do not paste invite codes, tokens, or personal mail into the score sheet. The standalone guide for those connections is [SOL-Lite integration](../integrations/sol-lite.md).
+Do not paste invite codes, tokens, or personal mail into the score sheet. The beginner pairing runbook is [Link SOL-Lite to SOL-Command](../user/dummies-command-link.md). Technical detail is in [SOL-Lite integration](../integrations/sol-lite.md).
 
 ## 11. Score sheet
 
@@ -648,20 +661,22 @@ Copy this table into your notes. Use only `PASS`, `FAIL`, `BLOCKED`, or `NOT RUN
 | 37 | `product-discovery` | | |
 | 38 | `product-management` | | |
 | 39 | `prompt-engineering` | | |
-| 40 | `refactoring` | | |
-| 41 | `repository-analysis` | | |
-| 42 | `security-audit` | | |
-| 43 | `shell-engineering` | | |
-| 44 | `skill-import` | | |
-| 45 | `spreadsheet-reporting` | | |
-| 46 | `systematic-debugging` | | |
-| 47 | `test-engineering` | | |
-| 48 | `ui-ux-design` | | |
-| 49 | `web-research-searxng` | | |
-| 50 | `web-source-verification` | | |
-| 51 | `hello.txt` still says `battle-marker-intern` | | |
-| 52 | `sample.py` still returns `a - b` | | |
+| 40 | `readable-plans` | | |
+| 41 | `refactoring` | | |
+| 42 | `repository-analysis` | | |
+| 43 | `security-audit` | | |
+| 44 | `shell-engineering` | | |
+| 45 | `skill-import` | | |
+| 46 | `spreadsheet-reporting` | | |
+| 47 | `studio-odoo-import` | | |
+| 48 | `systematic-debugging` | | |
+| 49 | `test-engineering` | | |
+| 50 | `ui-ux-design` | | |
+| 51 | `web-research-searxng` | | |
+| 52 | `web-source-verification` | | |
+| 53 | `hello.txt` still says `battle-marker-intern` | | |
+| 54 | `sample.py` still returns `a - b` | | |
 
-The first battle is complete when rows 1–13 and 51–52 are filled, and every skill row from 14–50 is `PASS`, `FAIL`, or `BLOCKED` with a sentence of evidence. `NOT RUN` is allowed only for a skill your senior told you to skip, and for the optional services in section 10.
+The first battle is complete when rows 1–13 and 53–54 are filled, and every skill row from 14–52 is `PASS`, `FAIL`, or `BLOCKED` with a sentence of evidence. `NOT RUN` is allowed only for a skill your senior told you to skip, and for the optional services in section 10.
 
 Hand the lab sheet, this score sheet, and the automated battle output to your senior. Do not commit product changes from this run.

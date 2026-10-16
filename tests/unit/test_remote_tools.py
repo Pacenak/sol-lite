@@ -41,6 +41,32 @@ def test_remote_list_and_execute_use_configured_nodes():
     assert perm.calls[-1][0][0] == "remote.execute"
 
 
+def test_remote_rm_is_denied_before_ssh_even_with_approval():
+    from sol_lite.core.exceptions import PermissionDenied
+
+    called = []
+    perm = Perm()
+    manager = RemoteNodeManager(perm, Audit(), [
+        RemoteNode("lab", "10.0.0.5", "linux", RemoteTransport.SSH, username="dev", environment="lab"),
+    ])
+    manager._ssh = SimpleNamespace(run=lambda *args, **kwargs: called.append(args))
+    ctx = SimpleNamespace(
+        remote_manager=manager,
+        permission_engine=perm,
+        audit=Audit(),
+        session_id="s1",
+        credential_manager=None,
+    )
+    with pytest.raises(PermissionDenied):
+        _execute(ctx, {
+            "node_id": "lab",
+            "command": "rm -rf /",
+            "plan": "do not",
+            "approval_id": "approved",
+        })
+    assert called == []
+
+
 def test_remote_execute_requires_plan_and_rejects_unconfigured_runtime():
     ctx = SimpleNamespace(
         remote_manager=None,

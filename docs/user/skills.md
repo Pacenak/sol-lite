@@ -18,4 +18,4 @@ Supported sources include local directories, `SKILL.md`, ZIP archives and GitHub
 Imported scripts are never executed during inspection. Suspicious content is quarantined. Skills cannot grant permissions.
 
 
-For all 33 built-in skills, descriptions, routing and daily-use prompt recipes, see [Complete Skills Catalogue and Daily Use](skills-full-catalog.md).
+For all 39 built-in skills, descriptions, routing and daily-use prompt recipes, see [Complete Skills Catalogue and Daily Use](skills-full-catalog.md).

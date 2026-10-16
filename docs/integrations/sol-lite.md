@@ -12,7 +12,7 @@ SOL-Lite runs completely without SOL-Command. Pairing is optional. It does not c
 | Git | Recommended | Repository workflows and external skill sources |
 | Ollama | Yes, for agents | Local model provider |
 | SOL-Command | No | Optional shared sectors, pack skills, and Jarvis proposals |
-| SearXNG, Google, Jira | No | Separate optional integrations. None of them is the Command link |
+| SearXNG, Google, Jira, Studio Odoo | No | Separate optional integrations. None of them is the Command link |
 
 The install and first-run sequence is in [Full setup and first run](../getting-started/full-setup-first-run.md). Platform notes are in [Windows](../getting-started/windows.md) and [macOS](../getting-started/macos.md).
 
@@ -57,8 +57,13 @@ The terminal commands for local work are:
 /normal
 /tools
 /doctor
+/listen
+/speak
+/flare [on|off]
 /quit
 ```
+
+`/listen` and `/speak` use local or platform voice engines when install created `data/state/voice.json`. Check `sol-lite voice-status` before relying on them in automation.
 
 Agents:
 
@@ -78,14 +83,17 @@ These work on an unpaired Lite install:
 - Private web search through SearXNG. See [SearXNG](searxng.md).
 - Gmail and Calendar for the PA. See [Google Workspace](google-workspace.md). Connect with `sol-lite google-connect`.
 - Jira Cloud boards for the PA and Engineer. See [Jira](jira.md). Connect with `sol-lite jira-connect`.
+- Studio Odoo gather-pack CSVs for the PA. See [Studio Odoo](studio-odoo.md). The PA binds a local `plg-odooacc` checkout. There is no Odoo API call and no myIR filing.
 
 Each of those stores its own credential in the operating system keyring. None of them creates a SOL-Command instance.
 
 ## Optional SOL-Command link
 
+For a copy/paste Admin + Operator runbook (interns and engineers, BookStack-ready), use [Link SOL-Lite to SOL-Command](../user/dummies-command-link.md).
+
 Pair when this Lite machine should read Command sectors assigned to it, download those sectors' applied skill packs for local review, or submit a Jarvis proposal. Command remains the authority for instance identity, sector assignment, and Jarvis grants. Lite keeps local approval, audit, sessions, and workspaces.
 
-Use HTTPS for any Command host that is not loopback. HTTP is accepted only for `localhost`, `127.0.0.1`, or `::1`. The URL is a base URL: no user, password, query, or fragment.
+Use HTTPS for any Command host that is not loopback. HTTP is accepted only for `localhost`, `127.0.0.1`, or `::1`. The URL is a base URL: no user, password, query, or fragment. On the studio network that base URL is `https://sol-command.corp.pacenlife.com` (plg-core01 proxy, no port).
 
 ### Pair
 
@@ -93,11 +101,11 @@ Use HTTPS for any Command host that is not loopback. HTTP is accepted only for `
 2. On the Lite machine, run:
 
 ```powershell
-.\.venv\Scripts\sol-lite.exe connect --command-url https://sol-command.example --invite-code YOUR_INVITE
+.\.venv\Scripts\sol-lite.exe connect --command-url https://sol-command.corp.pacenlife.com --invite-code YOUR_INVITE
 ```
 
 ```bash
-.venv/bin/sol-lite connect --command-url https://sol-command.example --invite-code YOUR_INVITE
+.venv/bin/sol-lite connect --command-url https://sol-command.corp.pacenlife.com --invite-code YOUR_INVITE
 ```
 
 `--name` defaults to `SOL-Lite`. The command registers `client_type: sol-lite`, then waits for an administrator to approve the pending instance. Approval has to happen in Command. Lite cannot approve itself.

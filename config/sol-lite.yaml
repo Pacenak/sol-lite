@@ -63,3 +63,18 @@ bridge:
   enabled: false
   listen_host: "127.0.0.1"
   listen_port: 8787
+
+# Host Git remotes / PRs. Paths are compared after realpath normalize.
+# First-run can also allowlist+confirm the exact opened repo via the trust prompt.
+# Example:
+#   trusted_roots:
+#     - "E:/git"
+#     - "/Users/you/Projects"
+repository:
+  trusted_roots: []
+
+# Admin-only portable tool-belt / SecCheck / lite-pen agent.
+# Default off. Stick launcher sets SOL_STUDIO_ADMIN_FEATURE=1 with owner unlock.
+features:
+  studio_admin: false
+

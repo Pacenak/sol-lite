@@ -71,6 +71,15 @@ def _weights_present(data_root) -> bool:
     return hf_home.is_dir() and any(path.is_file() for path in hf_home.rglob("*"))
 
 
+def _platform_speech_available() -> bool:
+    """True when the operating system can speak without Kokoro."""
+    if sys.platform == "win32":
+        return True
+    if sys.platform == "darwin":
+        return shutil.which("say") is not None
+    return bool(ensure_espeak_on_path())
+
+
 def probe_voice(data_root=None) -> dict:
     espeak = ensure_espeak_on_path()
     voices = hf_home = ""
@@ -90,6 +99,7 @@ def probe_voice(data_root=None) -> dict:
         "voices_dir": voices,
         "hf_home": hf_home,
         "weights_on_disk": weights,
+        "platform_speech": _platform_speech_available(),
     }
 
 
@@ -102,6 +112,8 @@ def readiness(probe: dict) -> dict:
         stt, stt_detail = "degraded", "faster-whisper is not installed"
     if probe.get("kokoro_import") and probe.get("espeak_ok") and probe.get("weights_on_disk"):
         tts, tts_detail = "ready", ""
+    elif probe.get("platform_speech"):
+        tts, tts_detail = "ready", "using the operating system voice"
     elif not probe.get("kokoro_import"):
         if sys.version_info >= (3, 13):
             detail = (
@@ -119,6 +131,9 @@ def readiness(probe: dict) -> dict:
 
 
 def voice_doctor_lines(data_root) -> list[str]:
+    from .settings import ensure_voice_settings
+
+    ensure_voice_settings(data_root)
     report = readiness(probe_voice(data_root))
     lines = []
     for label, state, detail in (

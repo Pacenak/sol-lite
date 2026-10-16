@@ -4,6 +4,7 @@ from __future__ import annotations
 from ..capabilities.risk import RiskClass
 from ..permissions.scopes import REMOTE_EXECUTE, REMOTE_LIST
 from ..remote.manager import RemoteExecutionRequest
+from ..security.secrets import redact, resolve_command
 from .base import ToolDefinition
 
 
@@ -32,6 +33,7 @@ def _list_nodes(ctx, _args):
             "port": node.port,
             "username": node.username,
             "enabled": node.enabled,
+            "environment": node.environment,
         })
     ctx.audit.record("remote.list", count=len(nodes))
     return {"nodes": nodes, "count": len(nodes)}
@@ -45,6 +47,7 @@ def _execute(ctx, args):
         raise ValueError("node_id, command and plan are required")
     if len(command) > 8000 or "\x00" in command:
         raise ValueError("Remote command is empty, too large, or contains NUL")
+    template, rendered, secrets = resolve_command(command, ctx)
     timeout = float(args.get("timeout_seconds") or 120)
     if not 1 <= timeout <= 900:
         raise ValueError("timeout_seconds must be between 1 and 900")
@@ -52,17 +55,19 @@ def _execute(ctx, args):
     result = manager.execute(RemoteExecutionRequest(
         session_id=str(getattr(ctx, "session_id", "") or ""),
         node_id=node_id,
-        command=command,
+        command=template,
         plan=plan,
         approval_id=args.get("approval_id"),
         timeout_seconds=timeout,
+        audit_command=template,
+        rendered_command=rendered,
     ))
     return {
         "node_id": node_id,
-        "command": result.command,
+        "command": template,
         "exit_code": result.exit_code,
-        "stdout": result.stdout,
-        "stderr": result.stderr,
+        "stdout": redact(result.stdout, secrets),
+        "stderr": redact(result.stderr, secrets),
     }
 
 

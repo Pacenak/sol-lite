@@ -5,7 +5,7 @@ import io
 import threading
 
 from .engines import synthesize, transcribe
-from .settings import load_settings
+from .settings import ensure_voice_settings, load_settings
 
 
 def listen(data_root, *, recorder=None, transcriber=None) -> str:
@@ -21,7 +21,7 @@ def listen(data_root, *, recorder=None, transcriber=None) -> str:
 
 
 def speak_reply(data_root, text: str, *, player=None, synthesizer=None) -> None:
-    settings = load_settings(data_root)
+    settings = ensure_voice_settings(data_root)
     if not settings.get("speak") or not settings.get("tts_enabled"):
         return
     audio = (synthesizer or synthesize)(text, settings, data_root)

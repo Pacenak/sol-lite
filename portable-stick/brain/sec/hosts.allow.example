@@ -1,0 +1,10 @@
+# Studio hosts you own / are authorized to test. One host or IP per line.
+# Copy to hosts.allow on the BRAIN stick (not committed with real IPs if public).
+#
+# Examples (replace with your LAN):
+# 192.168.1.10
+# command.studio.local
+# outpost.studio.local
+# git.corp.pacenlife.com
+
+127.0.0.1

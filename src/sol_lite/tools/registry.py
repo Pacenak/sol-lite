@@ -21,10 +21,15 @@ _READ = {
     "repository_log",
     "repository_branches",
     "repository_remotes",
+    "repository_conflict_status",
     "searxng_search",
     "skill_discover",
     "procedure_load",
     "procedure_status",
+    "hosting_pr_status",
+    "studio_owner_status",
+    "studio_seccheck",
+    "studio_lite_pen",
 }
 
 
@@ -40,11 +45,16 @@ _MUTATING = {
     "repository_create_patch",
     "repository_apply_patch",
     "repository_merge_import",
+    "repository_pull",
+    "repository_merge",
+    "repository_resolve_and_continue",
     "repository_set_remote",
     "repository_fetch",
     "repository_push",
     "repository_clone_remote",
     "repository_clone_local",
+    "hosting_pr_create",
+    "hosting_pr_merge",
     "skill_install",
     "sol_jarvis_propose",
     "google_email_send",
@@ -59,6 +69,10 @@ _REPOSITORY_REMOTE = {
     "repository_fetch",
     "repository_push",
     "repository_clone_remote",
+    "repository_pull",
+    "hosting_pr_create",
+    "hosting_pr_status",
+    "hosting_pr_merge",
 }
 
 

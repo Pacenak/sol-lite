@@ -14,6 +14,8 @@ from rich.text import Text
 from .core.exceptions import ShellCommandInterrupt
 from .ui.theme import SOL_LITE_THEME
 
+SESSION_APPROVAL = "session"
+
 _SECRET_ARGUMENT_KEYS = frozenset({
     "token",
     "api_token",
@@ -325,6 +327,15 @@ class TerminalUI:
             style="sol_neutral",
         )
 
+        body.append("\n")
+
+        body.append(
+            "Enter sends messages and approval popups. "
+            "Shift+Enter inserts a line. Press it again for a paragraph, "
+            "or use Shift+Return on the keypad.",
+            style="sol_dim",
+        )
+
         self.console.print(
             Panel(
                 body,
@@ -478,13 +489,18 @@ class TerminalUI:
                 title_align="left",
                 border_style="sol_command",
                 padding=(0, 1),
+                subtitle=Text(
+                    "Enter submits",
+                    style="sol_dim",
+                ),
+                subtitle_align="left",
             )
         )
 
         try:
             answer = self.console.input(
                 "[sol_command]"
-                "Approve this exact operation? [y/N] "
+                "Approve? y = this once, s = this session, N = deny "
                 "❯ "
                 "[/sol_command]"
             ).strip()
@@ -498,14 +514,12 @@ class TerminalUI:
         if answer.startswith("/"):
             raise ShellCommandInterrupt(answer)
 
-        return (
-            request.approval_id
-            if answer.casefold() in {
-                "y",
-                "yes",
-            }
-            else None
-        )
+        choice = answer.casefold()
+        if choice in {"s", "session"}:
+            return SESSION_APPROVAL
+        if choice in {"y", "yes"}:
+            return request.approval_id
+        return None
 
     def final_failure(self, reason):
         self.console.print(
@@ -532,6 +546,18 @@ class TerminalUI:
         )
 
         rows = [
+            (
+                "Enter",
+                "Send the message, or answer an approval popup",
+            ),
+            (
+                "Shift+Enter",
+                "Insert a new line",
+            ),
+            (
+                "Shift+Return",
+                "Insert a paragraph (keypad Enter, or Shift+Enter twice)",
+            ),
             (
                 "/help",
                 "Show commands",
@@ -615,6 +641,10 @@ class TerminalUI:
             (
                 "/speak",
                 "Turn spoken replies on or off",
+            ),
+            (
+                "/flare [on|off]",
+                "Session character manner",
             ),
             (
                 "/quit",

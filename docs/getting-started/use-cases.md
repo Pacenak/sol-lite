@@ -33,3 +33,24 @@ Start independent tasks in separate sessions/workspaces. Monitor with `/tasks`; 
 ## 8. Multi-workspace use
 
 Each session selects its own workspace. Use `/new`, `/workspace`, `/workspaces`, and `/sessions` to keep project contexts separate.
+
+## 9. Studio manual and lab hosts
+
+Load an infrastructure or runbook Markdown file inside the workspace with `procedure_load` (PA) and advance rows with `procedure_advance` (Engineer). Human gates and studio file tools are described in [Studio change gate](../user/studio-change.md). Name SSH targets in `config/remote-nodes.yaml` before using `remote_list_nodes` or `remote_execute`.
+
+## 10. Integrations (all optional on standalone Lite)
+
+| Need | Setup |
+|---|---|
+| Private web search | [SearXNG](../integrations/searxng.md), `SOL_SEARXNG_*` or `config/searxng.yaml` |
+| Gmail / Calendar | [Google Workspace](../integrations/google-workspace.md), `sol-lite google-connect` |
+| Jira boards | [Jira](../integrations/jira.md), `sol-lite jira-connect` |
+| Studio Odoo CSV pack | [Studio Odoo](../integrations/studio-odoo.md), PA binds local `plg-odooacc` |
+| Shared sectors / skill packs | [SOL-Command](../integrations/sol-command.md), `sol-lite connect` |
+| Voice co-pilot | Install voice extra, `sol-lite voice-status`, `/listen` and `/speak` in shell |
+
+Configuration layers and `.env.example`: [Configuration](../architecture/configuration.md).
+
+## 11. Premium artifacts
+
+Use `sol_docs` with artifact tools for DOCX, PPTX, XLSX, Mermaid, and optional PDF/SVG export. Dependencies and quality checks: [Artifacts](../user/artifacts.md).

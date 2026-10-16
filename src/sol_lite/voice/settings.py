@@ -37,6 +37,11 @@ def settings_from_probe(probe: dict) -> dict:
         settings["tts_provider"] = "local"
         settings["tts_voice"] = DEFAULT_VOICE
         settings["speak"] = True
+    elif probe.get("platform_speech"):
+        settings["tts_enabled"] = True
+        settings["tts_provider"] = "platform"
+        settings["tts_voice"] = DEFAULT_VOICE
+        settings["speak"] = True
     return settings
 
 
@@ -69,8 +74,8 @@ def apply_probe_defaults(data_root, probe: dict) -> dict:
     if current.get("stt_provider") == "disabled" and incoming["stt_provider"] == "local":
         current["stt_provider"] = "local"
         current["stt_enabled"] = True
-    if current.get("tts_provider") == "disabled" and incoming["tts_provider"] == "local":
-        current["tts_provider"] = "local"
+    if current.get("tts_provider") == "disabled" and incoming["tts_provider"] in {"local", "platform"}:
+        current["tts_provider"] = incoming["tts_provider"]
         current["tts_enabled"] = True
         current["tts_voice"] = current.get("tts_voice") or DEFAULT_VOICE
         current["speak"] = True
@@ -78,12 +83,21 @@ def apply_probe_defaults(data_root, probe: dict) -> dict:
     return current
 
 
+def ensure_voice_settings(data_root) -> dict:
+    """Turn on an operating-system voice when Kokoro was saved as unavailable."""
+    from .probe import probe_voice
+
+    return apply_probe_defaults(data_root, probe_voice(data_root))
+
+
 def toggle_speak(data_root) -> bool:
-    settings = load_settings(data_root)
-    settings["speak"] = not bool(settings.get("speak"))
-    if settings["speak"] and settings.get("tts_provider") == "disabled":
+    before = load_settings(data_root)
+    was_unavailable = before.get("tts_provider") == "disabled" or not before.get("tts_enabled")
+    settings = ensure_voice_settings(data_root)
+    if settings.get("tts_provider") == "disabled" or not settings.get("tts_enabled"):
         settings["speak"] = False
         save_settings(data_root, settings)
         raise RuntimeError("Text-to-speech is not available. Run sol-lite voice-status.")
+    settings["speak"] = True if was_unavailable else not bool(settings.get("speak"))
     save_settings(data_root, settings)
     return bool(settings["speak"])

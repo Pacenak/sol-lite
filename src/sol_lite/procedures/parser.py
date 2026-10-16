@@ -27,6 +27,7 @@ def parse_procedure(text: str, *, source: str) -> ProcedureDocument:
     for table in tables:
         steps.extend(_classify_table(table, _section_for(lines, table["indexes"][0])))
     unparsed = _unparsed_sections(lines, consumed)
+    steps.extend(_fences(lines))
     return ProcedureDocument(source, tuple(steps), tuple(unparsed))
 
 
@@ -141,6 +142,33 @@ def _needs_approval(command: str) -> bool:
     if _APPROVAL.search(command):
         return True
     return any(token in command for token in (";", "&&", "||", "|", ">", "<"))
+
+
+def _fences(lines: list[str]) -> list[ProcedureStep]:
+    steps = []
+    index = 0
+    number = 0
+    while index < len(lines):
+        if not re.match(r"^```[A-Za-z0-9_-]*\s*$", lines[index].strip()):
+            index += 1
+            continue
+        index += 1
+        body = []
+        while index < len(lines) and not lines[index].strip().startswith("```"):
+            body.append(lines[index])
+            index += 1
+        if index < len(lines):
+            index += 1
+        number += 1
+        command = "\n".join(body).strip()
+        steps.append(ProcedureStep(
+            step_id=f"block-{number}",
+            action=command,
+            validate="",
+            classification="candidate",
+            action_command=command,
+        ))
+    return steps
 
 
 def _command(cell: str) -> str:
