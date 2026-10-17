@@ -1,0 +1,60 @@
+# Integration contract: not an active executor configuration.
+# An enforcing container broker must validate this policy before enabling execution.
+version: 1
+execution_enabled: false
+router:
+  source: trusted_user_intent
+  ambiguous_intent: require_explicit_profile
+  profiles:
+    network_inventory: {skill: recon-nmap, asset: skills/security/recon-nmap.md, network: scoped_targets}
+    web_configuration_audit: {skill: web-nikto, asset: skills/security/web-nikto.md, network: scoped_origin}
+    offline_packet_analysis: {skill: forensics-tshark, asset: skills/security/forensics-tshark.md, network: none}
+    repository_remediation: {skill: remediation-patcher, asset: skills/security/remediation-patcher.md, network: none}
+broker:
+  fail_closed: true
+  required_scope_fields: [job_id, principal, expires_at, profile, modes, targets, ports, input_digests, limits]
+  reauthorize_each_call: true
+  bind_authorization_to: [principal, job_id, profile, mode, targets, ports, input_digests, argv_digest, image_digest, expires_at]
+  reject_unknown_fields: true
+  shell: false
+  arbitrary_argv: false
+  arbitrary_mounts: false
+  require_operator_pinned_image_digest: true
+  require_operator_pinned_tool_database_digest: true
+  dns: broker_resolved_and_pinned
+  egress: externally_enforced_destination_and_port_allowlist
+  redirects: reject_out_of_scope
+  ipv4_ipv6_policy: enforce_both_or_disable_unused_family
+  audit: [principal, scope_digest, argv_digest, image_digest, input_digests, timestamps, exit_status, output_digests, policy_decision]
+container:
+  runtime: rootless_oci
+  user: '65532:65532'
+  read_only_root: true
+  cap_drop: [ALL]
+  no_new_privileges: true
+  seccomp: operator_approved
+  apparmor_or_selinux: operator_approved
+  host_network: false
+  host_pid: false
+  host_ipc: false
+  runtime_socket_mount: false
+  cpu_limit: 1
+  memory_mib: 512
+  pids_limit: 64
+  wall_seconds: 300
+  input_mib: 100
+  output_mib: 20
+  scratch_mib: 128
+  input_mount: read_only_validated_regular_files
+  output_mount: isolated_quota_limited_per_job
+  environment: explicit_allowlist_no_inherited_credentials
+  network_default: none
+  timeout_action: kill_entire_job_and_mark_incomplete
+privilege_exceptions:
+  os_fingerprint: separately_authorized_scanner_with_NET_RAW_only
+  live_capture: separately_authorized_sensor_no_host_network_in_agent
+external_actions:
+  snyk: separate_scoped_api_egress_and_ephemeral_credential
+  github: separate_broker_app_token_exact_repository_and_branch
+  pull_request: require_authorized_publication_and_passing_required_checks
+  merge: forbidden

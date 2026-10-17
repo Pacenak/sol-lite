@@ -2,11 +2,23 @@
 
 **New operator: start with [Zero-to-battle beginner runbook](getting-started/zero-to-battle-noob-runbook.md).** It explains terminal/admin access, configuration editing, agent setup, integration prerequisites and owner-only administration. Continue to [First full battle run](testing/first-full-battle-run.md) for exact fixtures, logs, checks and scoring.
 
-**Current source blockers:** preflight expects 39 built-in skills but this checkout contains 40; changed source-pack payloads also require maintainer-reviewed manifest reconciliation. See the runbook's stop conditions. These docs do not claim a working installation or passing battle.
+**Current source blockers:** preflight hard-codes 39 built-in skills and the expanded catalogue exceeds that count; changed source-pack payloads also require maintainer-reviewed manifest reconciliation. Enumerate the current tree rather than relying on historical counts. See the runbook's stop conditions. These docs do not claim a working installation or passing battle.
 
 SOL-Lite is a local-first, multi-agent engineering runtime for Windows and macOS.
 
 ## Documentation map
+
+- [Personal Assistant Planner: workflow, CRUD and exports](user/personal-assistant-planner.md)
+- [Personal Assistant Planner testing and adapter acceptance](testing/personal-assistant-planner.md)
+- [Infrastructure automation: credential isolation, approval gates and OS command catalog](integrations/infrastructure-automation.md)
+- [Infrastructure automation testing and runtime acceptance gates](testing/infrastructure-automation.md)
+- [Visual agent skills: integration, routing and optional renderers](integrations/visual-agent-skills.md)
+- [Visual artifacts: user prompts, formats and fallbacks](user/visual-agent-artifacts.md)
+- [Visual skills test round and acceptance procedure](testing/visual-agent-skills.md)
+
+- [Real-world Gmail and Calendar setup, with official Google references](integrations/google-real-world-setup.md)
+- [Terminal SOL-Lite to Command linking and no-pending-request troubleshooting](integrations/command-real-world-linking.md)
+- [Command pairing static code findings](debugging/command-pairing-static-analysis.md)
 
 For full setup beyond the baseline, follow [feature configuration and all integrations](getting-started/full-feature-configuration.md), then the [first-session walkthrough](getting-started/first-session-walkthrough.md). Use the [starter prompt packs](user/starter-prompt-packs.md) for PA, Business, Docs, Engineer, integration checks and session handoffs.
 

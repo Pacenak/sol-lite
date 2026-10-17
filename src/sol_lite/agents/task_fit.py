@@ -1,4 +1,6 @@
+
 """Decide which tools are allowed to answer the user's latest request."""
+
 from __future__ import annotations
 
 import re
@@ -221,6 +223,11 @@ _WEB_PATTERNS = (
     r"\bsearch online\b",
     r"\bweb search\b",
     r"\binternet\b",
+    r"\b(?:look up|lookup|research|find|check|consult|search)"
+    r"\b[\s\S]{0,90}\b(?:online|documentation|docs|api reference|"
+    r"official docs|library docs|package docs|website|github|pypi)\b",
+    r"\b(?:latest|current|up[- ]to[- ]date)"
+    r"\b[\s\S]{0,70}\b(?:documentation|docs|api|library|package)\b",
 )
 
 _TERMINAL_PATTERNS = (
@@ -228,6 +235,8 @@ _TERMINAL_PATTERNS = (
     r"\bshell command\b",
     r"\bexecute\b",
     r"\brun (?:the |a )?(?:command|tests?|pytest|script)\b",
+    r"\b(?:run|execute|perform)\b[\s\S]{0,60}"
+    r"\b(?:ruff|mypy|lint|typecheck|build|compile|test suite)\b",
 )
 
 _REMOTE_PATTERNS = (
@@ -238,7 +247,8 @@ _REMOTE_PATTERNS = (
 )
 
 _PROCEDURE_PATTERNS = (
-    r"\bfollow (?:the |this )?(?:studio |infrastructure )?(?:procedure|checklist|runbook|docs?|manual|volume)\b",
+    r"\bfollow (?:the |this )?(?:studio |infrastructure )?"
+    r"(?:procedure|checklist|runbook|docs?|manual|volume)\b",
     r"\bprocedure\b",
     r"\bchecklist\b",
     r"\brunbook\b",
@@ -289,6 +299,12 @@ WORKSPACE_EVIDENCE_PATTERNS = (
     r"\btrace\b",
     r"\binvestigate\b",
     r"\bfix\b",
+    r"\bfunctions?\b",
+    r"\bclasses\b",
+    r"\bmodules?\b",
+    r"\bdependencies\b",
+    r"\bstack trace\b",
+    r"\btraceback\b",
 )
 
 _IDENTITY_PATTERNS = (
@@ -328,6 +344,7 @@ _BROAD_PLAN = re.compile(
     r"\bplan my\b|\bweekly\b|\bmy weeks?\b|\bwork and personal\b",
     re.IGNORECASE,
 )
+
 _JIRA_SETUP = re.compile(
     r"\bset up\b|\bsetup\b|\bconnect jira\b|\buse jira\b",
     re.IGNORECASE,
@@ -340,6 +357,15 @@ _CHANGE_PATTERNS = (
     r"\badd\b",
     r"\brun (?:the |a )?(?:tests?|pytest)\b",
     r"(?<!how to )\bedit\b",
+    r"\bpatch\b",
+    r"\brefactor\b",
+    r"\bmodify\b",
+    r"\brepair\b",
+    r"\bupgrade\b",
+    r"\bupdate (?:the |a )?(?:code|source|function|module|file)\b",
+    r"\bupdate (?:the |a )?(?:configuration|config|settings|tests?)\b",
+    r"\bwrite (?:the |a )?(?:code|function|test)\b",
+    r"\bcreate (?:the |a )?(?:function|module|file|test)\b",
 )
 
 _CLASS_PATTERNS = (
@@ -360,16 +386,27 @@ _CLASS_PATTERNS = (
     ("change", _CHANGE_PATTERNS),
 )
 
-_NARROW_WHEN_DIRECTORY = frozenset({"identity", "notes", "change"})
+_NARROW_WHEN_DIRECTORY = frozenset({
+    "identity",
+    "notes",
+    "change",
+})
 
 _PATH_TOKEN = re.compile(
-    r"(?:[A-Za-z]:[\\/][^\s`\"'|<>]+)|(?:[\w.@+-]+(?:[\\/][\w.@+-]+)+)"
+    r"(?:[A-Za-z]:[\\/][^\s`\"'|<>]+)|"
+    r"(?:[\w.@+-]+(?:[\\/][\w.@+-]+)+)"
 )
-_LINE_PATH = re.compile(r"^[A-Za-z0-9._+-]+(?:/[A-Za-z0-9._+-]+)*$")
+
+_LINE_PATH = re.compile(
+    r"^[A-Za-z0-9._+-]+(?:/[A-Za-z0-9._+-]+)*$"
+)
 
 
 def _matches(text, patterns):
-    return any(re.search(pattern, text, re.IGNORECASE) for pattern in patterns)
+    return any(
+        re.search(pattern, text, re.IGNORECASE)
+        for pattern in patterns
+    )
 
 
 def matching_tasks(user_text: str) -> list[str]:
@@ -383,55 +420,80 @@ def matching_tasks(user_text: str) -> list[str]:
 
 
 def classify_task(user_text: str) -> str | None:
-    """Return the first task class, for callers that still need one label."""
+    """Return the first task class, for callers needing one label."""
     tasks = matching_tasks(user_text)
     return tasks[0] if tasks else None
 
 
 def jira_read_now(user_text: str) -> bool:
-    """True when the user is asking to read Jira, not merely to set it up."""
+    """True when the user requests Jira data rather than setup."""
     text = user_text or ""
     if _BROAD_PLAN.search(text) and _JIRA_SETUP.search(text):
         return False
     return _matches(text, _JIRA_READ_NOW_PATTERNS)
 
 
-def apply_jira_workspace_gate(user_text, permitted, workspace_projects):
-    """Hide network Jira tools until this workspace has projects and a read is requested."""
+def apply_jira_workspace_gate(
+    user_text,
+    permitted,
+    workspace_projects,
+):
+    """Hide network Jira tools until workspace prerequisites hold."""
     if permitted is None or "jira" not in matching_tasks(user_text):
         return permitted
+
     projects = [
         str(item).strip()
         for item in (workspace_projects or ())
         if str(item).strip()
     ]
+
     if projects and jira_read_now(user_text):
         return permitted
+
     return frozenset(permitted) - JIRA_NETWORK_TOOL_NAMES
 
 
-def apply_studio_workspace_gate(user_text, permitted, studio_root):
-    """Hide Studio import tools until this workspace has a verified studio root."""
+def apply_studio_workspace_gate(
+    user_text,
+    permitted,
+    studio_root,
+):
+    """Hide Studio import tools until a studio root is verified."""
     if permitted is None or "studio_odoo" not in matching_tasks(user_text):
         return permitted
+
     if str(studio_root or "").strip():
         return permitted
+
     return frozenset(permitted) - STUDIO_BOUND_TOOL_NAMES
 
 
-def permitted_tools(user_text: str, allowlist: frozenset[str] | None) -> frozenset[str] | None:
-    """Tools that may execute for this request.
+def permitted_tools(
+    user_text: str,
+    allowlist: frozenset[str] | None,
+) -> frozenset[str] | None:
+    """Select tools available for the request.
 
-    Matching classes are unioned. Opt-in tools stay out unless their own
-    class matched. None means the request did not select a class and no
-    allowlist was supplied, so existing callers keep their previous behaviour.
+    Matching classes are unioned. Opt-in tools remain excluded
+    unless their task class matches. The agent allowlist is always
+    applied when supplied.
+
+    None preserves the legacy behavior for callers that provide
+    neither a recognized task nor an allowlist.
     """
     tasks = matching_tasks(user_text)
+
     if (
         "directory_listing" in tasks
         and not _NARROW_WHEN_DIRECTORY.intersection(tasks)
     ):
-        tasks = [name for name in tasks if name != "workspace_inspection"]
+        tasks = [
+            name
+            for name in tasks
+            if name != "workspace_inspection"
+        ]
+
     if not tasks:
         if allowlist is None:
             return None
@@ -440,52 +502,78 @@ def permitted_tools(user_text: str, allowlist: frozenset[str] | None) -> frozens
         permitted = frozenset()
         for name in tasks:
             permitted |= _TASK_TOOLS[name]
+
     if allowlist is not None:
         permitted = permitted & frozenset(allowlist)
+
     return permitted
 
 
-def normalize_directory_path(token: str, root: str | None = None) -> str:
+def normalize_directory_path(
+    token: str,
+    root: str | None = None,
+) -> str:
     text = token.strip().strip("`\"'").replace("\\", "/")
+
     while text.startswith("./"):
         text = text[2:]
+
     text = text.rstrip("/")
     folded = text.casefold()
+
     if root:
         root_norm = root.replace("\\", "/").rstrip("/").casefold()
+
         if folded == root_norm:
             return ""
+
         prefix = root_norm + "/"
         folded = folded.removeprefix(prefix)
+
     return folded
 
 
-def directory_evidence(name: str, result) -> tuple[set[str], str | None]:
-    """Collect normalized directory paths from a successful listing tool."""
+def directory_evidence(
+    name: str,
+    result,
+) -> tuple[set[str], str | None]:
+    """Collect normalized paths from a successful directory listing."""
     if not isinstance(result, dict) or result.get("ok") is False:
         return set(), None
+
     if name == "list_workspace_directories":
         paths = {
             normalize_directory_path(path)
             for path in result.get("directories") or []
-            if isinstance(path, str) and normalize_directory_path(path)
+            if isinstance(path, str)
+            and normalize_directory_path(path)
         }
+
         root = result.get("root")
         return paths, root if isinstance(root, str) else None
+
     if name == "list_project_structure":
         paths = set()
+
         for line in result.get("tree") or []:
             text = str(line).strip()
+
             if text.endswith("/"):
                 normalized = normalize_directory_path(text)
                 if normalized:
                     paths.add(normalized)
+
         return paths, None
+
     return set(), None
 
 
-def invented_directory_paths(content: str, evidence: set[str], root: str | None = None) -> list[str]:
-    """Return path-like answer text that the directory tool did not return."""
+def invented_directory_paths(
+    content: str,
+    evidence: set[str],
+    root: str | None = None,
+) -> list[str]:
+    """Return directory paths in an answer absent from tool evidence."""
     allowed = set(evidence)
     invented = []
     seen = set()
@@ -493,10 +581,13 @@ def invented_directory_paths(content: str, evidence: set[str], root: str | None 
     def consider(token):
         if not token or token in seen:
             return
+
         seen.add(token)
         normalized = normalize_directory_path(token, root)
+
         if not normalized or normalized in allowed:
             return
+
         invented.append(token)
 
     for match in _PATH_TOKEN.finditer(content or ""):
@@ -504,6 +595,7 @@ def invented_directory_paths(content: str, evidence: set[str], root: str | None 
 
     for line in (content or "").splitlines():
         stripped = line.strip().lstrip("-*").strip().strip("`")
+
         if _LINE_PATH.fullmatch(stripped):
             consider(stripped)
 

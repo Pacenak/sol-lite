@@ -60,3 +60,20 @@ def test_searxng_returns_structured_results(monkeypatch):
     assert result["number_of_results"] == 1
     assert result["results"][0]["url"] == "https://example.test"
     assert perm.calls[0][0][0] == "network"
+
+
+@pytest.mark.parametrize("override, expected", [(None, "configured"), ("override", "override"), ("", "")])
+def test_searxng_uses_configured_engines_unless_overridden(monkeypatch, override, expected):
+    def fake_get(url, **kwargs):
+        assert kwargs["params"].get("engines", "") == expected
+        return SimpleNamespace(raise_for_status=lambda: None, json=lambda: {"results": []})
+
+    monkeypatch.setattr("sol_lite.tools.searxng.httpx.get", fake_get)
+    ctx = SimpleNamespace(
+        search_config={"url": "http://127.0.0.1:8080", "enabled": True, "engines": "configured"},
+        permission_engine=Perm(),
+    )
+    args = {"query": "docs"}
+    if override is not None:
+        args["engines"] = override
+    assert searxng_search(ctx, args)["ok"] is True

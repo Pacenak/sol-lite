@@ -11,9 +11,8 @@ from ..core.exceptions import (
     ShellCommandInterrupt,
 )
 from ..memory.notes import read_notes
-from ..permissions.scopes import NETWORK, SKILL_INSPECT, SKILL_INSTALL
+from ..permissions.scopes import NETWORK, SKILL_INSPECT, SKILL_INSTALL, scope_for_operation
 from ..prompts import PromptLoader
-from ..permissions.scopes import scope_for_operation
 from ..terminal_ui import SESSION_APPROVAL, TerminalUI
 from ..ui.composer import read_message
 from ..ui.settings_menu import SettingsMenu
@@ -1209,10 +1208,64 @@ class AgentShell:
         print("Spoken replies are on." if enabled else "Spoken replies are off.")
         return "handled"
 
+    def _voice_command(self, argument: str) -> str:
+        from ..voice.settings import ensure_voice_settings, save_settings, set_switch
+
+        data_root = self.root / "data"
+        parts = argument.split()
+        try:
+            settings = ensure_voice_settings(data_root)
+            if not parts or parts == ["status"]:
+                print(f"Listening: {settings.get('listen', True)}; "
+                      f"spoken replies: {settings.get('speak')}; "
+                      f"STT: {settings['stt_provider']} ({settings['stt_model']}); "
+                      f"TTS: {settings['tts_provider']} ({settings['tts_voice']})")
+            elif len(parts) == 2 and parts[0] in {"listen", "speak"} and parts[1] in {"on", "off"}:
+                set_switch(data_root, parts[0], parts[1] == "on")
+                print(f"{parts[0].capitalize()}: {parts[1]}")
+            elif len(parts) == 1 and parts[0] in {"on", "off"}:
+                enabled = parts[0] == "on"
+                if enabled and not (settings.get("stt_enabled") and settings.get("tts_enabled")):
+                    raise ValueError("Both voice engines must be available. Run sol-lite voice-status.")
+                settings.update(listen=enabled, speak=enabled)
+                save_settings(data_root, settings)
+                print(f"Voice: {parts[0]}")
+            elif len(parts) == 2 and parts[0] in {"model", "language", "voice", "speed", "stt", "tts"}:
+                key = {"model": "stt_model", "language": "stt_language", "voice": "tts_voice",
+                       "speed": "tts_speed", "stt": "stt_provider", "tts": "tts_provider"}[parts[0]]
+                value = parts[1]
+                if parts[0] in {"stt", "tts"}:
+                    allowed = {"local", "disabled"} | ({"platform"} if parts[0] == "tts" else set())
+                    if value not in allowed and not (value.startswith("endpoint:") and
+                            value.split(":", 1)[1] in settings.get("endpoints", {})):
+                        raise ValueError("Choose local, platform (TTS), disabled, or endpoint:CONFIGURED_ID.")
+                    settings[parts[0] + "_enabled"] = value != "disabled"
+                    if value == "disabled":
+                        settings["listen" if parts[0] == "stt" else "speak"] = False
+                if parts[0] == "speed":
+                    value = float(value)
+                    if not 0.25 <= value <= 4:
+                        raise ValueError("Speed must be between 0.25 and 4.")
+                settings[key] = "" if key == "stt_language" and value == "auto" else value
+                save_settings(data_root, settings)
+                print(f"{parts[0].capitalize()}: {value}")
+            elif len(parts) == 3 and parts[0] == "agent":
+                if parts[1] not in self.agents.names():
+                    raise ValueError("Unknown agent ID")
+                settings.setdefault("agent_voices", {})[parts[1]] = parts[2]
+                save_settings(data_root, settings)
+                print(f"Voice for {parts[1]}: {parts[2]}")
+            else:
+                print("Usage: /voice [status|on|off|listen on/off|speak on/off|model NAME|"
+                      "language CODE/auto|voice NAME|speed NUMBER|stt PROVIDER|tts PROVIDER|agent ID VOICE]")
+        except (ValueError, RuntimeError) as exc:
+            print(f"Voice: {exc}")
+        return "handled"
+
     def _maybe_speak(self, text: str) -> None:
         try:
             from ..voice.session import speak_reply
-            speak_reply(self.root / "data", text)
+            speak_reply(self.root / "data", text, agent_id=self.active_agent)
         except Exception as exc:  # noqa: BLE001 - speech failure must not stop the shell
             print(f"Text-to-speech failed: {exc}")
 
@@ -1340,10 +1393,17 @@ class AgentShell:
             print(self._integration_report())
             return "handled"
 
+        if command == "/voice":
+            return self._voice_command(argument)
+
         if command == "/listen":
+            if argument:
+                return self._voice_command("listen " + argument)
             return self._listen()
 
         if command == "/speak":
+            if argument:
+                return self._voice_command("speak " + argument)
             return self._speak()
 
         if command == "/follow":

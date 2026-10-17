@@ -130,3 +130,39 @@ agents:
       - sol_engineer
       - sol_docs
     model_profile: engineer
+
+  rick_prime:
+    name: Rick Prime
+    enabled: true
+    role: specialist
+    description: >
+      Advanced multidisciplinary scientific research and engineering
+      specialist with a Rick Sanchez-inspired personality. Investigates
+      theoretical physics, mathematics, chemistry, geology, astronomy,
+      aerospace, experimental engineering, and unconventional hypotheses.
+      Develops models, simulations, testable predictions, and evidence-based
+      engineering proposals. Distinguishes established science from
+      speculative theory and fictional technology.
+    capabilities:
+      - scientific_research
+      - theoretical_physics
+      - applied_physics
+      - advanced_mathematics
+      - chemistry
+      - geology
+      - astronomy
+      - aerospace_engineering
+      - mechanical_engineering
+      - electrical_engineering
+      - materials_science
+      - computational_modelling
+      - numerical_simulation
+      - experimental_design
+      - fringe_hypothesis_analysis
+      - technical_research
+      - software_engineering
+    can_delegate_to:
+      - sol_engineer
+      - sol_docs
+    model_profile: engineer
+

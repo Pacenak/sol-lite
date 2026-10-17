@@ -57,6 +57,7 @@ class SkillRecord:
     status: str = "DISCOVERED"
     agents: list[str] = field(default_factory=list)
     warnings: list[str] = field(default_factory=list)
+    trigger_phrases: list[str] = field(default_factory=list)
 
 
 class SkillManager:
@@ -127,7 +128,13 @@ class SkillManager:
                 if executable.suffix.lower() in {".py", ".ps1", ".sh", ".bat", ".cmd", ".js", ".ts"}:
                     warnings.append(f"Executable script present: {executable.relative_to(skill_dir).as_posix()}")
             skill_id = re.sub(r"[^a-z0-9._-]+", "-", name.lower()).strip("-")
-            records.append(SkillRecord(skill_id, name, description, str(skill_dir), source_type, source, source_ref, self._hash_tree(skill_dir), warnings=sorted(set(warnings))))
+            values = yaml.safe_load(text[3:text.find("\n---", 3)])
+            metadata = values.get("metadata", {})
+            triggers = metadata.get("trigger-phrases", "") if isinstance(metadata, dict) else ""
+            if not isinstance(triggers, str):
+                raise TypeError("metadata.trigger-phrases must be a pipe-separated string.")
+            phrases = [phrase.strip().casefold() for phrase in triggers.split("|") if phrase.strip()]
+            records.append(SkillRecord(skill_id, name, description, str(skill_dir), source_type, source, source_ref, self._hash_tree(skill_dir), warnings=sorted(set(warnings)), trigger_phrases=phrases))
         return records
 
     def discover(self, source: str | Path) -> list[SkillRecord]:
@@ -282,6 +289,17 @@ class SkillManager:
                 artifact_skills.update(skills)
         for record in records:
             lines.append(f"- {record.skill_id}: {record.description} [trust={record.trust}; source={record.source}]")
+            # Manifest phrases use whole-word boundaries and allow whitespace
+            # between words. Explicit $skill-name invocation always selects it.
+            explicit = re.search(r"(?<![\w-])\$" + re.escape(record.skill_id) + r"(?![\w-])", task, re.IGNORECASE)
+            matched = any(
+                re.search(r"(?<!\w)" + r"\s+".join(re.escape(word) for word in phrase.split()) + r"(?!\w)", task, re.IGNORECASE)
+                for phrase in record.trigger_phrases
+            )
+            if explicit or matched:
+                artifact_skills.add(record.skill_id)
+            if record.trigger_phrases:
+                continue
             if record.skill_id in specialist:
                 continue
             relevance = _skill_terms(f"{record.skill_id} {record.description}")

@@ -1,5 +1,7 @@
 # Premium documents and diagrams
 
+For Mermaid/Excalidraw source, Marp/HTML decks, screenshot annotations and dependency-free SVG/HTML fallbacks, see [Visual artifacts](visual-agent-artifacts.md). The native tools below retain their typed input formats; the new skills do not add HTML conversion to `artifact_create`.
+
 SOLlite creates editable DOCX reports, PPTX presentations, XLSX workbooks and
 Mermaid diagrams through native artifact tools. LibreOffice exports Office files
 to PDF without Microsoft Office. Mermaid exports SVG and high-resolution PNG.

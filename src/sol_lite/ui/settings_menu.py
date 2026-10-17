@@ -1417,7 +1417,7 @@ class SettingsMenu:
 
     def _voice(self) -> None:
         from ..voice.probe import voice_doctor_lines
-        from ..voice.settings import load_settings, toggle_speak
+        from ..voice.settings import load_settings, save_settings, set_switch, toggle_speak
 
         data_root = self._require_data_root()
         if data_root is None:
@@ -1430,8 +1430,30 @@ class SettingsMenu:
             f"Text-to-speech: {settings['tts_provider']}. "
             f"Spoken replies: {'on' if settings.get('speak') else 'off'}."
         )
-        answer = self._input("Toggle spoken replies? [y/n]")
-        if answer.casefold() not in {"y", "yes"}:
+        answer = self._input(
+            "Voice: [y] toggle replies, [l] toggle listening, [v] Kokoro voice, "
+            "[m] Whisper model, [g] recognition language, [n] back"
+        ).casefold()
+        if answer == "l":
+            try:
+                enabled = set_switch(data_root, "listen", not settings.get("listen", True))
+                self.console.print(f"Listening: {'on' if enabled else 'off'}")
+            except RuntimeError as exc:
+                self.console.print(str(exc))
+            return
+        if answer in {"v", "m", "g"}:
+            key, prompt = {
+                "v": ("tts_voice", "Kokoro voice ID (e.g. af_bella or am_adam)"),
+                "m": ("stt_model", "Whisper model (e.g. small, base, medium)"),
+                "g": ("stt_language", "Language code (e.g. en) or auto"),
+            }[answer]
+            value = self._input(prompt).strip()
+            if value:
+                settings[key] = "" if key == "stt_language" and value == "auto" else value
+                save_settings(data_root, settings)
+                self.console.print("Voice setting saved.")
+            return
+        if answer not in {"y", "yes"}:
             return
         try:
             enabled = toggle_speak(data_root)

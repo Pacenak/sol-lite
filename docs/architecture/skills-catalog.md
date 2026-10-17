@@ -40,8 +40,11 @@ SOL-Lite keeps built-in skills local and auditable. External repositories are re
 - book-to-skill
 - diagram-design
 - mermaid-diagrams
+- architecture-diagrams
+- slide-deck-generator
 
 ### Product and planning
+- personal-assistant-planner — [workflow, data model and file lifecycle](../user/personal-assistant-planner.md)
 - product-management
 - product-discovery
 - agile-sprint-planning
@@ -52,6 +55,9 @@ SOL-Lite keeps built-in skills local and auditable. External repositories are re
 ### Communication and design
 - humanizer
 - ui-ux-design
+- image-markup-ui
 - career-operations
 
 All skills are advisory instructions. They do not grant permissions.
+
+See [Visual agent skills](../integrations/visual-agent-skills.md) for manifest-driven routing and [Visual artifacts](../user/visual-agent-artifacts.md) for usage and export limitations.

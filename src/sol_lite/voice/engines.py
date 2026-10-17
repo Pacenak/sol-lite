@@ -4,6 +4,7 @@ from __future__ import annotations
 import io
 import os
 import tempfile
+from functools import lru_cache
 from pathlib import Path
 
 from .probe import apply_hf_home
@@ -47,7 +48,7 @@ def transcribe(audio: bytes, settings: dict, data_root) -> str:
 
 
 def synthesize(text: str, settings: dict, data_root) -> bytes:
-    spoken = (text or "").strip()[:4000]
+    spoken = (text or "").strip()
     if not spoken:
         return b""
     provider = str(settings.get("tts_provider") or "disabled")
@@ -62,10 +63,10 @@ def synthesize(text: str, settings: dict, data_root) -> bytes:
 
 def _transcribe_local(audio: bytes, settings: dict, data_root) -> str:
     try:
-        from faster_whisper import WhisperModel
+        import faster_whisper  # noqa: F401
     except ImportError as exc:
         raise RuntimeError("faster-whisper is not installed. Re-run the SOL-Lite installer.") from exc
-    model_name = str(settings.get("stt_model") or "base")
+    model_name = str(settings.get("stt_model") or "small")
     try:
         import torch
         use_cuda = bool(torch.cuda.is_available())
@@ -74,7 +75,7 @@ def _transcribe_local(audio: bytes, settings: dict, data_root) -> str:
     device = "cuda" if use_cuda else "cpu"
     compute_type = "float16" if device == "cuda" else "int8"
     download_root = str(Path(apply_hf_home(data_root)) / "whisper")
-    model = WhisperModel(model_name, device=device, compute_type=compute_type, download_root=download_root)
+    model = _whisper_model(model_name, device, compute_type, download_root)
     path = None
     try:
         with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as handle:
@@ -82,6 +83,7 @@ def _transcribe_local(audio: bytes, settings: dict, data_root) -> str:
             path = handle.name
         language = str(settings.get("stt_language") or "").strip()
         kwargs = {"language": language} if language else {}
+        kwargs.update(beam_size=5, vad_filter=True, condition_on_previous_text=False)
         segments, _info = model.transcribe(path, **kwargs)
         return " ".join(segment.text.strip() for segment in segments).strip()
     finally:
@@ -98,7 +100,7 @@ def _transcribe_endpoint(audio: bytes, settings: dict, provider: str) -> str:
         response = client.post(
             f"{endpoint['base_url']}/audio/transcriptions",
             headers=endpoint["headers"],
-            data={"model": model},
+            data={"model": model, **({"language": settings["stt_language"]} if settings.get("stt_language") else {})},
             files={"file": ("speech.wav", audio, "audio/wav")},
         )
     if response.status_code >= 400:
@@ -108,12 +110,12 @@ def _transcribe_endpoint(audio: bytes, settings: dict, provider: str) -> str:
 
 def _synthesize_local(text: str, settings: dict, data_root) -> bytes:
     try:
-        from kokoro import KPipeline
+        import kokoro  # noqa: F401
     except ImportError as exc:
         raise RuntimeError("Kokoro is not installed. Re-run the SOL-Lite installer.") from exc
     apply_hf_home(data_root)
     voice = str(settings.get("tts_voice") or DEFAULT_VOICE)
-    pipeline = KPipeline(lang_code=voice[:1] or "a")
+    pipeline = _kokoro_pipeline(voice[:1] or "a", str(Path(data_root).resolve()))
     chunks = []
     for _graphemes, _phonemes, audio in pipeline(text, voice=voice, speed=_speed(settings.get("tts_speed"))):
         chunks.append(audio)
@@ -187,7 +189,9 @@ def _synthesize_endpoint(text: str, settings: dict, provider: str) -> bytes:
     payload = {
         "model": str(endpoint["spec"].get("tts_model") or "tts-1"),
         "input": text,
-        "voice": str(settings.get("tts_voice") or "alloy"),
+        "voice": str(settings.get("tts_voice") if settings.get("tts_voice") != DEFAULT_VOICE
+                     else endpoint["spec"].get("tts_voice") or "alloy"),
+        "response_format": "wav",
         "speed": _speed(settings.get("tts_speed")),
     }
     with httpx.Client(timeout=60.0) as client:
@@ -199,3 +203,17 @@ def _synthesize_endpoint(text: str, settings: dict, provider: str) -> bytes:
     if response.status_code >= 400:
         raise RuntimeError(f"Speech endpoint HTTP {response.status_code}")
     return response.content
+
+
+@lru_cache(maxsize=2)
+def _whisper_model(model_name, device, compute_type, download_root):
+    from faster_whisper import WhisperModel
+    return WhisperModel(model_name, device=device, compute_type=compute_type,
+                        download_root=download_root)
+
+
+@lru_cache(maxsize=2)
+def _kokoro_pipeline(language, data_root):
+    from kokoro import KPipeline
+    apply_hf_home(data_root)
+    return KPipeline(lang_code=language)

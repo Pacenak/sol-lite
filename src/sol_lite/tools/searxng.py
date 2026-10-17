@@ -33,7 +33,7 @@ def searxng_search(ctx, args):
     language = str(args.get("language", config.get("language", "en")))
     time_range = str(args.get("time_range", ""))
     safe_search = int(args.get("safesearch", config.get("safesearch", 1)))
-    engines = str(args.get("engines", ""))
+    engines = str(args.get("engines", config.get("engines", "")))
     timeout = float(config.get("timeout_seconds", 15))
 
     params = {

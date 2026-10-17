@@ -1,5 +1,7 @@
 # SOL-Lite integration guide
 
+For first-time terminal pairing and the specific “nothing appears” symptom, use [real-world linking](command-real-world-linking.md). Read [static pairing analysis](../debugging/command-pairing-static-analysis.md) for confirmed code gaps; the current local protocol matches, but that does not establish the deployed server's health or revision.
+
 SOL-Lite is a local-first multi-agent runtime for Windows and macOS. This guide is for someone installing it and deciding whether to pair it with SOL-Command.
 
 SOL-Lite runs completely without SOL-Command. Pairing is optional. It does not copy Lite workspaces, local memory, sessions, or credentials into Command.

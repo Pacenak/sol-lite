@@ -15,7 +15,9 @@ def default_settings() -> dict:
     return {
         "stt_enabled": False,
         "stt_provider": "disabled",
-        "stt_model": "base",
+        "stt_model": "small",
+        "listen": True,
+        "agent_voices": {},
         "stt_language": "",
         "tts_enabled": False,
         "tts_provider": "disabled",
@@ -78,7 +80,7 @@ def apply_probe_defaults(data_root, probe: dict) -> dict:
         current["tts_provider"] = incoming["tts_provider"]
         current["tts_enabled"] = True
         current["tts_voice"] = current.get("tts_voice") or DEFAULT_VOICE
-        current["speak"] = True
+        # Preserve the user's spoken-reply switch during discovery.
     save_settings(data_root, current)
     return current
 
@@ -101,3 +103,16 @@ def toggle_speak(data_root) -> bool:
     settings["speak"] = True if was_unavailable else not bool(settings.get("speak"))
     save_settings(data_root, settings)
     return bool(settings["speak"])
+
+
+def set_switch(data_root, name: str, enabled: bool) -> bool:
+    if name not in {"listen", "speak"}:
+        raise ValueError("Unknown voice switch")
+    settings = ensure_voice_settings(data_root)
+    if enabled:
+        prefix = "stt" if name == "listen" else "tts"
+        if not settings.get(f"{prefix}_enabled"):
+            raise RuntimeError("Voice engine unavailable. Run sol-lite voice-status.")
+    settings[name] = enabled
+    save_settings(data_root, settings)
+    return enabled

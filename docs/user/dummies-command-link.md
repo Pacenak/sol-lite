@@ -1,5 +1,7 @@
 # Link SOL-Lite to SOL-Command (beginner chapter)
 
+If no logs or pending request appear, start with [terminal-to-Command real-world linking](../integrations/command-real-world-linking.md). SOL-Lite has no `/setup` website; run its `connect` subcommand in PowerShell/Terminal, while the administrator uses Command's Pair page. [Static code findings](../debugging/command-pairing-static-analysis.md) explain current silent progress, generic errors and one-time-claim recovery limitations.
+
 This is the copy/paste runbook for **interns and engineers**. It covers the optional link from a local SOL-Lite install to studio **SOL-Command** (part of SOL-Full). Pairing is optional. SOL-Lite works fine alone.
 
 **BookStack / bookshelf:** paste this file as a chapter. Each `##` heading below is a page you can split out later without rewriting.

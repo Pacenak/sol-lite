@@ -635,11 +635,15 @@ class TerminalUI:
                 "Ollama, Jira, and voice diagnostics",
             ),
             (
-                "/listen",
-                "Record speech and send it as your message",
+                "/voice",
+                "Voice status, on/off, model, language, voice, speed, and agent voices",
             ),
             (
-                "/speak",
+                "/listen [on|off]",
+                "Record speech; on/off controls microphone access",
+            ),
+            (
+                "/speak [on|off]",
                 "Turn spoken replies on or off",
             ),
             (

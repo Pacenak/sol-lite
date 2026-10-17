@@ -17,6 +17,73 @@ from sol_lite.tools.filesystem import list_workspace_directories
 ROOT = Path(__file__).resolve().parents[2]
 
 
+@pytest.mark.parametrize("user_text", [
+    "refactor the parser", "repair the parser", "upgrade dependencies",
+    "update configuration", "create a test", "patch the handler",
+])
+def test_engineering_requests_allow_edits_without_enabling_integrations(user_text):
+    from sol_lite.agents.task_fit import permitted_tools
+
+    selected = permitted_tools(user_text, None)
+    assert {"read_workspace_file", "edit_workspace_file", "execute_terminal_command"} <= selected
+    assert not {"repository_push", "remote_execute", "google_email_send"} & selected
+
+
+@pytest.mark.parametrize("user_text", [
+    "look up the official docs", "research the latest package documentation",
+    "check the API reference online",
+])
+def test_research_requests_allow_search_and_respect_agent_allowlist(user_text):
+    from sol_lite.agents.task_fit import permitted_tools
+
+    assert "searxng_search" in permitted_tools(user_text, None)
+    assert "searxng_search" not in permitted_tools(user_text, frozenset({"read_workspace_file"}))
+
+
+def test_dictionary_provider_response_executes_native_calls(tmp_path):
+    tools = RecordingTools({"count": 1})
+    models = ScriptedModels([
+        {"message": {"content": None, "tool_calls": [
+            {"function": {"name": "inventory_workspace", "arguments": {}}},
+        ]}},
+        {"message": {"content": "Inventory completed.", "tool_calls": None}},
+    ])
+    result = AgentRuntime(models, tools, object(), FaultLog(tmp_path / "faults.json")).run(
+        profile="engineer", messages=[{"role": "user", "content": "inventory"}],
+        allowed_tools=("inventory_workspace",),
+    )
+    assert tools.calls == ["inventory_workspace"]
+    assert result.content == "Inventory completed."
+    assert result.stopped_reason is None
+
+
+def test_successful_edit_counts_as_completion_evidence(tmp_path):
+    tools = RecordingTools({"ok": True})
+    result = AgentRuntime(
+        ScriptedModels([_message(tool_name="edit_workspace_file"), _message("Fixed.")]),
+        tools, object(), FaultLog(tmp_path / "faults.json"),
+    ).run(
+        profile="engineer", messages=[{"role": "user", "content": "fix the parser"}],
+        allowed_tools=("edit_workspace_file",),
+    )
+    assert result.content == "Fixed."
+    assert result.stopped_reason is None
+
+
+def test_failed_validation_cannot_support_completion_claim(tmp_path):
+    tools = RecordingTools({"exit_code": 1, "stderr": "test failed"})
+    result = AgentRuntime(
+        ScriptedModels([_message(tool_name="execute_terminal_command"),
+                        _message("Tests pass."), _message("Tests pass.")]),
+        tools, object(), FaultLog(tmp_path / "faults.json"),
+    ).run(
+        profile="engineer", messages=[{"role": "user", "content": "run the tests"}],
+        allowed_tools=("execute_terminal_command",),
+    )
+    assert result.stopped_reason == "validation_required"
+    assert result.tool_failures == 1
+
+
 def _message(content="", tool_name=None):
     calls = []
     if tool_name:

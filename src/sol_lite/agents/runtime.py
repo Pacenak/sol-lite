@@ -83,6 +83,7 @@ _MODEL_XML_ERROR = re.compile(
 _MODEL_TIMEOUT = re.compile(r"timed out|timeout", re.IGNORECASE)
 _PROOF_TOOLS = frozenset({
     "write_workspace_file",
+    "edit_workspace_file",
     "execute_terminal_command",
 })
 _FILE_EVIDENCE_TOOL_NAMES = WORKSPACE_EVIDENCE_TOOL_NAMES | GIT_READ_TOOL_NAMES
@@ -504,7 +505,7 @@ class AgentRuntime:
                         "Ollama returned no message object."
                     )
 
-                content = (
+                content = (message.get("content") or "") if isinstance(message, dict) else (
                     getattr(
                         message,
                         "content",
@@ -513,7 +514,7 @@ class AgentRuntime:
                     or ""
                 )
 
-                calls = (
+                calls = (message.get("tool_calls") or []) if isinstance(message, dict) else (
                     getattr(
                         message,
                         "tool_calls",
@@ -774,7 +775,7 @@ class AgentRuntime:
                                 "role": "user",
                                 "content": (
                                     "Do not claim the change is done unless "
-                                    "write_workspace_file or execute_terminal_command "
+                                    "write_workspace_file, edit_workspace_file, or execute_terminal_command "
                                     "succeeded on this turn. If you cannot do the "
                                     "work, say what is blocked without claiming "
                                     "it is done, fixed, implemented, or that tests pass."
@@ -1496,6 +1497,17 @@ class AgentRuntime:
                         }
 
                     finally:
+                        # Terminal commands return their exit status even when
+                        # the process fails; that is not completion evidence.
+                        if (
+                            name == "execute_terminal_command"
+                            and isinstance(result, dict)
+                            and result.get("exit_code", 0) != 0
+                            and result.get("ok") is not False
+                        ):
+                            result = dict(result, ok=False)
+                            tool_failures += 1
+                            self.status.error()
                         self._emit(
                             "tool.completed",
                             tool=name,

@@ -1,5 +1,7 @@
 # Google Workspace for SOL-Lite PA
 
+For a real first-time account setup, use [Gmail and Calendar: Google Cloud to first approved request](google-real-world-setup.md). It includes official Google references, consent/audience/test users, Desktop OAuth JSON download, terminal commands, callback behavior and troubleshooting.
+
 Google Workspace is the first external email and calendar provider supported by SOL-Lite. Provider-specific API calls live behind `GoogleWorkspaceClient` so later providers can implement the same PA capabilities without changing the agent tools.
 
 ## Setup
@@ -7,7 +9,7 @@ Google Workspace is the first external email and calendar provider supported by 
 1. In Google Cloud Console, create a project and enable the Gmail API and Google Calendar API.
 2. Configure the OAuth consent screen and create an OAuth client of type **Desktop app**. Download its client JSON.
 3. Install the optional Google dependencies: `pip install -e ".[google]"`.
-4. Set `SOL_GOOGLE_OAUTH_CLIENT_SECRETS` to the downloaded JSON path, then run `sol-lite google-connect`. SOL-Lite opens the system browser for Google consent and receives the response on a loopback listener.
+4. Run `sol-lite google-connect --client-secrets "FULL_PATH_TO_DESKTOP_JSON"` through the installed app interpreter. Alternatively set `SOL_GOOGLE_OAUTH_CLIENT_SECRETS` in the actual launching process environment. Setting it only in repository `.env` is insufficient for this command, which executes before bootstrap loads `.env`. SOL-Lite opens the browser for consent and receives the response on a temporary loopback port.
 5. Run `sol-lite google-status` to confirm the account connection. Use `sol-lite google-disconnect` to remove the saved authorization from the OS keyring.
 
 The OAuth client JSON is read from the user-selected path and is not copied into the repository. Access and refresh tokens are stored in the operating system keyring. If OAuth scopes change, disconnect and reconnect so Google can request the new consent.

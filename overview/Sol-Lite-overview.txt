@@ -1,0 +1,55 @@
+How sol-lite works
+SOL-Lite is a cross-platform, local-first multi-agent engineering assistant. Users enter through the CLI and terminal, select an agent and session workspace, then receive work performed through native Ollama tool calls, with evidence-based results and approval gates for mutations. The graph also preserves documented skills, background tasks, artifacts, integrations, voice, and remote execution. Some subsystem links rely on README descriptions because their runtime wiring was not sampled.
+
+Components
+22
+User experience
+CLI src/sol_lite/app.py
+Terminal UI src/sol_lite/terminal_ui.py
+Agent runtime
+Agent shell src/sol_lite/agents/shell.py
+Agent runtime src/sol_lite/agents/runtime.py
+Agent roles src/sol_lite/agents/registry.py
+Model manager src/sol_lite/models/manager.py
+Ollama provider src/sol_lite/models/ollama.py
+Policy and state
+Sessions src/sol_lite/core/session.py
+Background tasks src/sol_lite/core/tasks.py
+Permission engine src/sol_lite/permissions/engine.py
+Human approvals src/sol_lite/permissions/approvals.py
+Workspace guard src/sol_lite/security/path_guard.py
+Platform adapters src/sol_lite/platform
+Capabilities and integrations
+Tool implementations src/sol_lite/tools
+Skills manager src/sol_lite/skills/manager.py
+Procedures src/sol_lite/procedures
+Artifacts src/sol_lite/tools/artifacts.py
+Service integrations src/sol_lite/integrations
+Remote execution src/sol_lite/remote/manager.py
+MCP server src/sol_lite/mcp/server.py
+Voice src/sol_lite/voice
+Other components
+User
+Connections
+21
+User → CLI: starts README.md
+CLI → Terminal UI: opens src/sol_lite/app.py
+CLI → Agent shell: starts src/sol_lite/app.py
+Agent shell → Agent runtime: runs src/sol_lite/agents/shell.py
+Agent runtime → Model manager: requests models
+Model manager → Ollama provider: configures src/sol_lite/models/manager.py
+Agent runtime → Tool implementations: executes tool calls src/sol_lite/agents/runtime.py
+Agent runtime → Agent roles: selects agents
+Agent shell → Sessions: manages sessions
+Sessions → Background tasks: supports concurrent work README.md
+Agent runtime → Permission engine: checks actions
+Permission engine → Human approvals: requests approval src/sol_lite/permissions/engine.py
+Tool implementations → Workspace guard: enforces workspace bounds src/sol_lite/tools/repository.py
+Agent shell → Skills manager: manages skills src/sol_lite/agents/shell.py
+Agent runtime → Procedures: follows procedures src/sol_lite/agents/runtime.py
+Tool implementations → Artifacts: creates artifacts README.md
+Tool implementations → Service integrations: accesses services
+Tool implementations → Remote execution: runs remote commands
+MCP server → Tool implementations: dispatches capabilities src/sol_lite/mcp/server.py
+Agent shell → Voice: supports voice src/sol_lite/agents/shell.py
+CLI → Platform adapters: selects platform

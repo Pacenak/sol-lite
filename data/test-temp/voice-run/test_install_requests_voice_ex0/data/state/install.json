@@ -1,0 +1,19 @@
+{
+  "application": "SOL-Lite",
+  "version": "0.2.5",
+  "action": "install",
+  "timestamp_utc": "2026-10-17T10:29:27.194657+00:00",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "python_executable": "E:\\git\\plg-sol\\PLG_Ai_Lite\\data\\test-temp\\voice-run\\test_install_requests_voice_ex0\\python",
+  "python_version": "3.13.5",
+  "venv": "E:\\git\\plg-sol\\PLG_Ai_Lite\\data\\test-temp\\voice-run\\test_install_requests_voice_ex0\\.venv",
+  "install_root": "E:\\git\\plg-sol\\PLG_Ai_Lite\\data\\test-temp\\voice-run\\test_install_requests_voice_ex0",
+  "editable_install": true,
+  "launcher": "launcher/windows/SOL-Lite.cmd",
+  "voice": {
+    "prefetch_errors": [
+      "network down"
+    ],
+    "exit_code": 0
+  }
+}

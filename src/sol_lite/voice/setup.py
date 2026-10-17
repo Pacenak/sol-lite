@@ -41,7 +41,7 @@ def prefetch(data_root) -> list[str]:
     try:
         from faster_whisper import WhisperModel
         WhisperModel(
-            "base", device="cpu", compute_type="int8",
+            "small", device="cpu", compute_type="int8",
             download_root=str(Path(apply_hf_home(data_root)) / "whisper"),
         )
     except Exception as exc:  # noqa: BLE001 - a failed model download must not fail setup

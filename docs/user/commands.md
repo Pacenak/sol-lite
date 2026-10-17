@@ -34,3 +34,5 @@ For the complete beginner copy/paste command sheet, see [Dummies Command List](d
 Shell-level commands (`sol-lite doctor`, `connect`, `google-connect`, …) are in [CLI reference](cli-reference.md). Environment variables and YAML layers are in [Configuration](../architecture/configuration.md).
 
 Studio manuals, host environment, secrets, and file backups are in [Studio change gate](studio-change.md).
+
+Voice supports `/voice status`, `/voice on|off`, `/listen on|off`, and `/speak on|off`. See [Voice and listening](voice.md) for models, languages, providers, and agent voices.

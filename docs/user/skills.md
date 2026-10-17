@@ -1,5 +1,7 @@
 # Agent Skills
 
+The [Personal Assistant Planner](personal-assistant-planner.md) provides document-grounded scheduling, protected lifestyle boundaries, CRUD rules and Markdown/JSON/iCalendar templates. Invoke `$personal-assistant-planner` or use a phrase such as “plan my week.” See its [testing runbook](../testing/personal-assistant-planner.md) for verified scope and adapter requirements.
+
 Built-in skills are reviewed and versioned with the runtime. External skills follow a discovery/inspection/security/provenance/human-review flow.
 
 Commands:
@@ -18,4 +20,6 @@ Supported sources include local directories, `SKILL.md`, ZIP archives and GitHub
 Imported scripts are never executed during inspection. Suspicious content is quarantined. Skills cannot grant permissions.
 
 
-For all 39 built-in skills, descriptions, routing and daily-use prompt recipes, see [Complete Skills Catalogue and Daily Use](skills-full-catalog.md).
+For descriptions, routing and daily-use prompt recipes, see [Complete Skills Catalogue and Daily Use](skills-full-catalog.md). Use `/skills list` to inspect the current catalogue rather than a fixed historical count.
+
+Visual artifact skills are built in: `architecture-diagrams`, `slide-deck-generator` and `image-markup-ui`. Describe the job normally or include an explicit `$architecture-diagrams`, `$slide-deck-generator` or `$image-markup-ui` mention in your prompt. These mentions select instructions; they are not terminal commands. See [Visual artifacts](visual-agent-artifacts.md) for examples, dependencies and export limitations.

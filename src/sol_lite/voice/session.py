@@ -2,14 +2,17 @@
 from __future__ import annotations
 
 import io
-import threading
+import sys
+from collections import deque
 
 from .engines import synthesize, transcribe
-from .settings import ensure_voice_settings, load_settings
+from .settings import ensure_voice_settings
 
 
 def listen(data_root, *, recorder=None, transcriber=None) -> str:
-    settings = load_settings(data_root)
+    settings = ensure_voice_settings(data_root)
+    if not settings.get("listen", True):
+        raise RuntimeError("Listening is off. Use /listen on.")
     if not settings.get("stt_enabled"):
         raise RuntimeError("Speech-to-text is disabled. Run the SOL-Lite installer or sol-lite voice-status.")
     audio = (recorder or record_microphone)()
@@ -20,10 +23,14 @@ def listen(data_root, *, recorder=None, transcriber=None) -> str:
     return transcribe(audio, settings, data_root)
 
 
-def speak_reply(data_root, text: str, *, player=None, synthesizer=None) -> None:
+def speak_reply(data_root, text: str, *, agent_id=None, player=None, synthesizer=None) -> None:
     settings = ensure_voice_settings(data_root)
     if not settings.get("speak") or not settings.get("tts_enabled"):
         return
+    settings = dict(settings)
+    voices = settings.get("agent_voices") or {}
+    if agent_id and isinstance(voices, dict) and voices.get(agent_id):
+        settings["tts_voice"] = voices[agent_id]
     audio = (synthesizer or synthesize)(text, settings, data_root)
     if not audio:
         return
@@ -36,41 +43,52 @@ def record_microphone(max_seconds: float = 20, silence_seconds: float = 1.2, sam
     import soundfile as sf
 
     print("Listening... press Enter to stop.")
-    stop = threading.Event()
-
-    def wait_for_enter():
-        try:
-            input()
-        except EOFError:
-            pass
-        stop.set()
-
-    threading.Thread(target=wait_for_enter, daemon=True).start()
     block = int(sample_rate * 0.1)
     frames = []
+    preroll = deque(maxlen=3)
     silent = 0
     started = False
     needed = max(1, int(silence_seconds / 0.1))
     with sd.InputStream(samplerate=sample_rate, channels=1, dtype="float32", blocksize=block) as stream:
         for _ in range(max(1, int(max_seconds / 0.1))):
-            if stop.is_set() and started:
+            if _enter_pressed():
                 break
-            data, _overflow = stream.read(block)
+            data, overflow = stream.read(block)
+            if overflow:
+                raise RuntimeError("Microphone overflow; try another input device.")
             rms = float(np.sqrt(np.mean(np.square(data))))
             if rms > 0.015:
+                if not started:
+                    frames.extend(preroll)
                 started = True
                 silent = 0
                 frames.append(data.copy())
             elif started:
                 frames.append(data.copy())
                 silent += 1
-                if silent >= needed or stop.is_set():
+                if silent >= needed:
                     break
+            else:
+                preroll.append(data.copy())
     if not frames:
         return b""
     buffer = io.BytesIO()
     sf.write(buffer, np.concatenate(frames), sample_rate, format="WAV")
     return buffer.getvalue()
+
+
+def _enter_pressed() -> bool:
+    """Poll without leaving a thread blocked on the shell's next input."""
+    if not sys.stdin.isatty():
+        return False
+    if sys.platform == "win32":
+        import msvcrt
+        return msvcrt.kbhit() and msvcrt.getwch() in {"\r", "\n"}
+    import select
+    if select.select([sys.stdin], [], [], 0)[0]:
+        sys.stdin.readline()
+        return True
+    return False
 
 
 def play_audio(audio: bytes) -> None:

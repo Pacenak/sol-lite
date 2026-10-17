@@ -1,8 +1,10 @@
 # SOL-Lite Skills: Complete Catalogue and Daily Use
 
-This checkout contains **40 built-in skill files**, while preflight still requires 39. That source-contract mismatch must be reconciled by a maintainer before a full gate can pass. Skills are procedural guidance supplied to the agent; they do not grant permissions. See [First full battle run](../testing/first-full-battle-run.md#10-all-built-in-skills) for enumeration and per-skill evidence.
+The catalogue has expanded beyond the historical 40-skill inventory below, while preflight still requires 39. Enumerate `skills/*/SKILL.md` or use `/skills list` for the current inventory. That source-contract mismatch must be reconciled before a full gate can pass. Skills are procedural guidance supplied to the agent; they do not grant permissions. See [First full battle run](../testing/first-full-battle-run.md#10-all-built-in-skills) for enumeration and per-skill evidence.
 
 ## How skill routing works
+
+The added `personal-assistant-planner` skill is covered by the [planner guide](personal-assistant-planner.md): invocation, document evaluation, protected time, schedule CRUD and exports. See [planner test results](../testing/personal-assistant-planner-results.md) for validation evidence. Use `/skills list` for the deployed catalogue rather than treating the historical enumeration below as a live count.
 
 For each task, SOL-Lite supplies the active skill catalogue for the current **agent + workspace**. The runtime then includes detailed instructions for skills whose identifiers/descriptions are relevant to the task, with a bounded number of detailed skill bodies.
 
@@ -11,6 +13,8 @@ You normally use skills by **describing the job**, not by manually activating a 
 Artifact tasks explicitly select document layout, presentation, spreadsheet and
 diagram skills as appropriate, independently of the generic four-skill detail
 limit. See [premium artifacts](artifacts.md) for exports and local setup.
+
+The visual extensions are `architecture-diagrams` (Mermaid/Excalidraw/SVG), `slide-deck-generator` (Marp/HTML and optional PPTX/PNG) and `image-markup-ui` (code frames, screenshot annotations and UI polish). Their manifest phrase routing and explicit `$skill-name` mentions select complete instructions. See [visual artifacts](visual-agent-artifacts.md) for prompts and [integration details](../integrations/visual-agent-skills.md) for registration. These extend the inventory below without replacing the existing design skills.
 
 Use:
 

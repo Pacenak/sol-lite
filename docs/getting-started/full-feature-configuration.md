@@ -163,6 +163,8 @@ Expect JSON rather than a login page or 403. Restart SOL-Lite and request an off
 
 ## 8. Gmail and Google Calendar
 
+**First time configuring Google itself?** Follow the [real-world Google setup chapter](../integrations/google-real-world-setup.md) for project creation, API enablement, consent, test users, scopes, Desktop OAuth download and actual read checks, with official Google documentation links.
+
 The `google` extra is installed in section 1. You also need a Google account, a Google Cloud project, Gmail and Calendar APIs enabled, an OAuth consent configuration allowing that account, and a **Desktop app** OAuth client JSON saved outside the repository.
 
 Using the real path:
@@ -190,6 +192,8 @@ Answer the prompts; the token goes into the OS keyring. Restart chat and use PA 
 PA can plan/create/update/comment/transition inside granted projects. Engineer can read/update/comment/transition. Delete and assign are not provided. `doctor` reports saved state; `jira-status` is the live probe. To disconnect: `jira-disconnect --name CONNECTION_NAME`. [Jira reference](../integrations/jira.md).
 
 ## 10. SOL-Command pairing and skill packs
+
+**Lite is a terminal client, not a website.** Follow [real-world terminal-to-Command linking](../integrations/command-real-world-linking.md) for the correct CLI/admin-browser split, mandatory network-sector setup and diagnostics when no pending request appears. The [static pairing analysis](../debugging/command-pairing-static-analysis.md) records confirmed visibility/recovery code issues and what remains unproven about a deployed failure.
 
 Have the Command administrator supply the actual HTTPS base URL and a Lite invite, choose sectors and approve the pending instance. Replace both placeholders:
 
