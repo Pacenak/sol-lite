@@ -20,3 +20,5 @@ tools:
   - execute_terminal_command
   - runtime_get_context
   - searxng_search
+  - workspace_pack_status
+  - workspace_pack_append

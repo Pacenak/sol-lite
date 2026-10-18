@@ -232,6 +232,7 @@ def _approve_workspace_write(ctx, path, root, *, operation, arguments, plan, app
 def write_workspace_file(ctx, args):
     root = Path(ctx.workspace_root).resolve()
     path = resolve_workspace_path(args["path"], root)
+    _guard_pack_write(path, root)
     content = str(args.get("content", ""))
     plan = str(args.get("plan", ""))
     approval_id = args.get("approval_id")
@@ -254,9 +255,16 @@ def write_workspace_file(ctx, args):
     return result
 
 
+def _guard_pack_write(path, root):
+    relative = path.relative_to(root).parts
+    if any(part.casefold() in {"_workspace", "_project"} for part in relative):
+        raise PermissionDenied("Use the workspace pack tools to preserve managed file contracts")
+
+
 def edit_workspace_file(ctx, args):
     root = Path(ctx.workspace_root).resolve()
     path = resolve_workspace_path(args["path"], root, must_exist=True)
+    _guard_pack_write(path, root)
     if not path.is_file():
         raise IsADirectoryError(path)
     old = str(args.get("old_string", ""))

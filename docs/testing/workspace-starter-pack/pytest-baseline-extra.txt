@@ -1,0 +1,37 @@
+FEEE                                                                     [100%]
+=================================== ERRORS ====================================
+_____________ ERROR at setup of test_merge_and_conflict_continue ______________
+tests\unit\test_repository_pull_merge.py:77: in twin_repos
+    _git(workspace, "push", "-u", "origin", "main")
+tests\unit\test_repository_pull_merge.py:25: in _git
+    return subprocess.run(
+C:\Users\Pacer\AppData\Local\Programs\Python\Python313\Lib\subprocess.py:577: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['git', 'push', '-u', 'origin', 'main']' returned non-zero exit status 128.
+_________________ ERROR at setup of test_trusted_pull_ff_only _________________
+tests\unit\test_repository_pull_merge.py:77: in twin_repos
+    _git(workspace, "push", "-u", "origin", "main")
+tests\unit\test_repository_pull_merge.py:25: in _git
+    return subprocess.run(
+C:\Users\Pacer\AppData\Local\Programs\Python\Python313\Lib\subprocess.py:577: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['git', 'push', '-u', 'origin', 'main']' returned non-zero exit status 128.
+_______________ ERROR at setup of test_untrusted_remote_denied ________________
+tests\unit\test_repository_pull_merge.py:77: in twin_repos
+    _git(workspace, "push", "-u", "origin", "main")
+tests\unit\test_repository_pull_merge.py:25: in _git
+    return subprocess.run(
+C:\Users\Pacer\AppData\Local\Programs\Python\Python313\Lib\subprocess.py:577: in run
+    raise CalledProcessError(retcode, process.args,
+E   subprocess.CalledProcessError: Command '['git', 'push', '-u', 'origin', 'main']' returned non-zero exit status 128.
+================================== FAILURES ===================================
+____________________ test_ping_and_http_use_fixed_targets _____________________
+tests\battle\test_studio_change_gate.py:312: in test_ping_and_http_use_fixed_targets
+    assert ping["reachable"] is True
+E   assert False is True
+=========================== short test summary info ===========================
+ERROR tests/unit/test_repository_pull_merge.py::test_merge_and_conflict_continue
+ERROR tests/unit/test_repository_pull_merge.py::test_trusted_pull_ff_only - s...
+ERROR tests/unit/test_repository_pull_merge.py::test_untrusted_remote_denied
+FAILED tests/battle/test_studio_change_gate.py::test_ping_and_http_use_fixed_targets
+1 failed, 3 errors in 2.18s

@@ -366,6 +366,7 @@ def test_notes_request_waits_for_a_saved_note(tool_context, tmp_path):
     purpose = "Builds the operator console."
     tool_context.memory_root = tmp_path / "memory"
     tool_context.workspace_id = "ws-1"
+    tool_context.agent_id = "sol_engineer"
     refused = AgentRuntime(
         ScriptedModels([
             _message("Got it. I've reviewed the workspace structure."),
@@ -394,13 +395,16 @@ def test_notes_request_waits_for_a_saved_note(tool_context, tmp_path):
         WideTools(),
         tool_context,
         FaultLog(tmp_path / "saved.json"),
+        approval_callback=lambda request: request.approval_id,
     ).run(
         profile="engineer",
         allowed_tools=tuple(WideTools().available),
         messages=[{"role": "user", "content": "write notes so you know"}],
     )
     assert saved.stopped_reason is None
-    assert purpose in (tmp_path / "memory" / "ws-1" / "notes.md").read_text(encoding="utf-8")
+    assert purpose in (tool_context.workspace_root / "_workspace" / "README.md").read_text(
+        encoding="utf-8"
+    )
 
 
 def test_fix_claim_without_proof_is_rejected(tmp_path):

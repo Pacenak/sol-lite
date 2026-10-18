@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased — workspace starter pack Stage 1
+
+- Added deterministic workspace and project documentation, fixed resumable intake,
+  append-only shared logs and PLAN entries, and purpose-preserving index refresh.
+- Added five native pack tools with role enforcement, contained paths and exact
+  batch approval; connected all four standard agents and the workspace-pack skill.
+- Moved workspace notes into the shared pack with once-only legacy import and
+  preserved the existing notes tool name and content schema.
+- Added pack orientation as untrusted reference data, focused regression tests,
+  template golden files, a scripted model integration test and operator documentation.
+- Stage 1 stores schedule strings only; scheduler integration remains Stage 2.
+
 ## 0.2.6
 
 - SOL PA can bind a Studio Odoo checkout and build gather-pack import CSVs from workspace source files.

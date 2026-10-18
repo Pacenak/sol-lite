@@ -28,3 +28,5 @@ tools:
   - runtime_get_context
   - remote_list_nodes
   - remote_execute
+  - workspace_pack_status
+  - workspace_pack_append

@@ -4,6 +4,8 @@ from sol_lite.tools import build_tool_registry
 def test_implemented_tool_manifest():
     names = set(build_tool_registry().names())
     assert names == {
+        "workspace_pack_status", "workspace_pack_intake", "workspace_pack_init",
+        "workspace_pack_append", "workspace_pack_index_refresh",
         "skill_read",
         "artifact_dependencies", "artifact_create", "artifact_render", "artifact_validate",
         "inventory_workspace", "list_workspace_directories", "list_project_structure", "find_workspace_files",

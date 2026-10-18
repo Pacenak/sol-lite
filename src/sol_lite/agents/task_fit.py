@@ -6,6 +6,7 @@ from __future__ import annotations
 import re
 
 WORKSPACE_EVIDENCE_TOOL_NAMES = frozenset({
+    "workspace_pack_status",
     "inventory_workspace",
     "list_project_structure",
     "list_workspace_directories",
@@ -132,6 +133,11 @@ NOTES_TOOL_NAMES = frozenset({
     "workspace_notes_write",
 })
 
+WORKSPACE_PACK_TOOL_NAMES = frozenset({
+    "workspace_pack_status", "workspace_pack_intake", "workspace_pack_init",
+    "workspace_pack_append", "workspace_pack_index_refresh",
+})
+
 CHANGE_TOOL_NAMES = (
     WORKSPACE_EVIDENCE_TOOL_NAMES
     | TERMINAL_TOOL_NAMES
@@ -155,9 +161,11 @@ OPT_IN_TOOL_NAMES = (
     | GIT_WRITE_TOOL_NAMES
     | REMOTE_TOOL_NAMES
     | NOTES_TOOL_NAMES
+    | WORKSPACE_PACK_TOOL_NAMES
 )
 
 _TASK_TOOLS = {
+    "workspace_pack": WORKSPACE_PACK_TOOL_NAMES | WORKSPACE_EVIDENCE_TOOL_NAMES | NOTES_TOOL_NAMES,
     "procedure": PROCEDURE_TOOL_NAMES,
     "directory_listing": DIRECTORY_LISTING_TOOL_NAMES,
     "sol_command": COMMAND_TOOL_NAMES,
@@ -369,6 +377,9 @@ _CHANGE_PATTERNS = (
 )
 
 _CLASS_PATTERNS = (
+    ("workspace_pack", (r"\bstarter pack\b", r"\bworkspace (?:docs|pack|intake)\b",
+                        r"\bset ?up (?:the |this |a )?workspace\b",
+                        r"\badd (?:a |the )?project to (?:the |this )?workspace\b")),
     ("procedure", _PROCEDURE_PATTERNS),
     ("directory_listing", _DIRECTORY_LISTING_PATTERNS),
     ("sol_command", _COMMAND_PATTERNS),
@@ -509,6 +520,11 @@ def permitted_tools(
         permitted = permitted | frozenset({"skill_read"})
     if allowlist is not None:
         permitted = permitted & frozenset(allowlist)
+
+    # Shared logging supports every task; PA interview tools still require explicit fit.
+    supporting = {"workspace_pack_status", "workspace_pack_append"}
+    if allowlist is not None:
+        permitted |= supporting & frozenset(allowlist)
 
     return permitted
 

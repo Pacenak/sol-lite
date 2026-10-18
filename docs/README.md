@@ -8,6 +8,8 @@ SOL-Lite is a local-first, multi-agent engineering runtime for Windows and macOS
 
 ## Documentation map
 
+- [Shared workspace starter pack (Stage 1)](user/workspace-starter-pack.md)
+
 - [Personal Assistant Planner: workflow, CRUD and exports](user/personal-assistant-planner.md)
 - [Personal Assistant Planner testing and adapter acceptance](testing/personal-assistant-planner.md)
 - [Infrastructure automation: credential isolation, approval gates and OS command catalog](integrations/infrastructure-automation.md)

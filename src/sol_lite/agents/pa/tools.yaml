@@ -55,3 +55,8 @@ tools:
   - studio_odoo_copy_catalogs
   - studio_odoo_adopt_source
   - studio_odoo_write_import
+  - workspace_pack_status
+  - workspace_pack_append
+  - workspace_pack_intake
+  - workspace_pack_init
+  - workspace_pack_index_refresh

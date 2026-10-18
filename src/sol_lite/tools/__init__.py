@@ -19,6 +19,7 @@ from .studio import studio_tools
 from .studio_odoo import studio_odoo_tools
 from .studio_sec import studio_sec_tools
 from .terminal import terminal_tools
+from .workspace_pack import workspace_pack_tools
 
 
 def build_tool_registry():
@@ -35,6 +36,7 @@ def build_tool_registry():
     tools += studio_tools()
     tools += studio_sec_tools()
     tools += artifact_tools()
+    tools += workspace_pack_tools()
     for tool in tools:
         registry.register(tool)
     return registry

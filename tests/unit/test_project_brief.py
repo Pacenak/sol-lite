@@ -127,11 +127,11 @@ def test_saved_notes_are_visible_to_the_next_prompt(tmp_path):
     shell.session = Session()
     shell.active_agent = "sol_engineer"
     prompt = shell._system_prompt()
-    assert "Workspace notes:" in prompt
+    assert "Workspace notes:" not in prompt
     assert "Process working directory:" not in prompt
     assert "SOL-Lite program directory (not a workspace):" in prompt
     assert "only place to inspect or modify" in prompt
-    assert purpose in prompt
+    assert purpose not in prompt  # Workspace data must not become trusted system policy.
     messages = shell._messages_for("what is the project name?")
     assert messages[0]["role"] == "system"
-    assert purpose in messages[0]["content"]
+    assert purpose not in messages[0]["content"]

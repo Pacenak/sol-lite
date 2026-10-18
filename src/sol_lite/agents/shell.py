@@ -10,7 +10,6 @@ from ..core.exceptions import (
     SecurityError,
     ShellCommandInterrupt,
 )
-from ..memory.notes import read_notes
 from ..permissions.scopes import NETWORK, SKILL_INSPECT, SKILL_INSTALL, scope_for_operation
 from ..prompts import PromptLoader
 from ..terminal_ui import SESSION_APPROVAL, TerminalUI
@@ -339,11 +338,6 @@ class AgentShell:
             session_tools = tuple(self.tools.names())
         tool_list = ", ".join(session_tools or []) or "none"
 
-        notes = read_notes(
-            getattr(self.context, "memory_root", None),
-            getattr(self.workspace, "workspace_id", None),
-        )
-        notes_block = f"\n\nWorkspace notes:\n{notes}" if notes else ""
 
         return (
             TURN_CONTRACT
@@ -406,7 +400,6 @@ class AgentShell:
             "workspace state. Establish evidence with tools before "
             "making claims about the repository.\n\n"
             + role_prompt.strip()
-            + notes_block
             + self._flare_block()
         )
 

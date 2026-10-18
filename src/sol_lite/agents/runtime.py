@@ -83,6 +83,10 @@ _MODEL_XML_ERROR = re.compile(
 )
 _MODEL_TIMEOUT = re.compile(r"timed out|timeout", re.IGNORECASE)
 _PROOF_TOOLS = frozenset({
+    "workspace_pack_intake",
+    "workspace_pack_init",
+    "workspace_pack_append",
+    "workspace_pack_index_refresh",
     "write_workspace_file",
     "edit_workspace_file",
     "execute_terminal_command",
@@ -281,6 +285,12 @@ class AgentRuntime:
 
         current = list(messages)
 
+        from ..workspace_pack.context import safe_orientation
+        pack_context = safe_orientation(self.tool_context)
+        if pack_context:
+            position = 1 if current and current[0].get("role") == "system" else 0
+            current.insert(position, {"role": "user", "content": pack_context})
+
         if self.skill_context:
             # Skill bodies may be repository/user supplied. They are reference
             # procedures, never trusted system policy or a substitute user task.
@@ -337,6 +347,25 @@ class AgentRuntime:
             ),
             getattr(self.tool_context, "studio_root", ""),
         )
+
+        # Short answers belong to an existing interview. The fixed-order tool
+        # still validates the next question; this only keeps its schema visible.
+        if getattr(context, "agent_id", None) == "sol_pa" and task_permitted is not None:
+            from ..workspace_pack.pack import Pack
+            try:
+                interview = Pack(context.workspace_root, "sol_pa")
+                answers = interview.intake()
+                continuing = bool(answers) and interview.next_question(answers) is not None
+                continuing = continuing or any(
+                    message.get("role") == "user"
+                    and "workspace_pack" in matching_tasks(str(message.get("content", "")))
+                    for message in messages[:-1]
+                )
+                if continuing:
+                    extra = {"workspace_pack_intake", "workspace_pack_init"}
+                    task_permitted |= extra if active_allowlist is None else extra & active_allowlist
+            except (OSError, UnicodeError, ValueError, SecurityError, AttributeError):
+                pass
 
         workspace_tools_used = set()
         directory_tool_succeeded = False
@@ -1555,7 +1584,10 @@ class AgentRuntime:
 
                     if successful and name == "workspace_notes_write":
                         notes_written = True
-                    if successful and name in _PROOF_TOOLS:
+                    pack_write = not name.startswith("workspace_pack_") or bool(
+                        isinstance(result, dict) and result.get("written")
+                    )
+                    if successful and name in _PROOF_TOOLS and pack_write:
                         change_proved = True
                     elif not successful and name in _PROOF_TOOLS:
                         # A prior successful edit cannot justify completion

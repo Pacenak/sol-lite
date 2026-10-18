@@ -1,0 +1,4 @@
+...............s..............................................           [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\unit\test_workspace_pack.py:250: Windows symlink privilege unavailable
+61 passed, 1 skipped in 3.05s

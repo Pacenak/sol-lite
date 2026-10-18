@@ -67,3 +67,5 @@ tools:
   - jira_update
   - jira_comment
   - jira_transition
+  - workspace_pack_status
+  - workspace_pack_append
