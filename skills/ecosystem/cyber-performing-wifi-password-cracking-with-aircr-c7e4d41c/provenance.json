@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-wifi-password-cracking-with-aircr-c7e4d41c",
+  "upstream_name": "performing-wifi-password-cracking-with-aircrack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-wifi-password-cracking-with-aircrack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-wifi-password-cracking-with-aircrack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-wifi-password-cracking-with-aircrack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7f681fe8ac934d26a65134d83a4cd86047efec016bcf171f3a36a4a4cb4070b3",
+    "scripts/agent.py": "8e9fd39a3778ededcdf0e0d8cd4c81d4e9fcff43dc0805d9d9be4141f8db7f3d",
+    "SKILL.md": "0801b43d5336c3babd28bba427547a6f3bcf5ef9a10cbe365aadfbef0ff920b1",
+    "UPSTREAM-SKILL.md": "79afcda793901c69fd01bb0490d8bb3340ae3fbbed33c2a46e2d1be514169952"
+  }
+}

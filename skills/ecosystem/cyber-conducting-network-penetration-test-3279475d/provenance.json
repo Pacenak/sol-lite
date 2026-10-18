@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-network-penetration-test-3279475d",
+  "upstream_name": "conducting-network-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-network-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-network-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-network-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4229353f1bbb9f2975d1fb23cc5a7941589adee23cab878421dc144a3e4a651b",
+    "scripts/agent.py": "0179a0e0df632e1e177800cf113c03192a46083a909a3b8d87c9073bbf5d020b",
+    "SKILL.md": "cfff112640aeda51fa98ee45a52738054dc3c44ed0245ac3b6917351cae767f7",
+    "UPSTREAM-SKILL.md": "b7521af5038b93cfab7f85ac9be3cd9952092cede1872d8e7a46e364f06be333"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "llmapps-advisor-orchestrator-worker-5d39ec74",
+  "upstream_name": "advisor-orchestrator-worker",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/advisor-orchestrator-worker/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "advisor_skill.jpeg": "243ada11ac8969b77a8b67b7f25b2e5615e49abc39fab6e3393138645c53826c",
+    "README.md": "1a6d4313deb299453d97d97ed850ea18398b2ad3cbe60c3c6eeb1af127a6f864",
+    "references/advisor-consult.md": "631ace80bbe855e4a6a4adcc6734f4fb06cdec521e3a623d7562fe4421f7dda4",
+    "references/fallbacks.md": "8e0239a9ae00946d475b6e0489dbe777337dbd81fe1ec924c734200beb703743",
+    "references/worker-brief.md": "d35c9555cfd2193f3fd3868f97125c0ea91b3d3235f2a46f35876c8c69f9d3c4",
+    "SKILL.md": "a38cb0a67056ef9b1bfd6b81e5aaca2a55b41cce8b63cfd878b33f411d0421ec",
+    "UPSTREAM-SKILL.md": "47474e1a332f2cf9818b62ac61ec228fece17941fbbf52f43e0f6b9330bbba50"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-diamond-model-analysis-866428e2",
+  "upstream_name": "implementing-diamond-model-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-diamond-model-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-diamond-model-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-diamond-model-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f0bef9fc2d785d8784490bf3682d503a89bb69ac7817d795376d9dc4e5bdc3d8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "93e8a652c4c00c4bdc35af31a3a4cb4c2d8b5cc8c69248b055da7fb8378bdef2",
+    "references/standards.md": "970ae8703ca53c871f93dd8ffc97992f7e2b2b78a0ad7a670b826f0086ef195c",
+    "references/workflows.md": "39ab18fd8810c1c6e4bd9701c514b2b301d5ba375876db4671e414880f7e2073",
+    "scripts/agent.py": "9e73d927e1778527ca8e9eab887cefca89b4aa84bc9068d46026d2aa11402861",
+    "scripts/process.py": "165c90b6639b4dd5d6743e40122be80eadb68c26a3e93d9a48468141d0902ddc",
+    "SKILL.md": "69c8c53ac904e4db7ec3933b9b6e0b7180fa8ceb0e156d27863beeee8060580f",
+    "UPSTREAM-SKILL.md": "b373bb800cd81a83461cad510b552179e05c011ea9d9dba83f2379ca2ee4dfa8"
+  }
+}

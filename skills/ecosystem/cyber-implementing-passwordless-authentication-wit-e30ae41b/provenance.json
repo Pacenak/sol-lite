@@ -1,0 +1,28 @@
+{
+  "name": "cyber-implementing-passwordless-authentication-wit-e30ae41b",
+  "upstream_name": "implementing-passwordless-authentication-with-fido2",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-passwordless-authentication-with-fido2/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-passwordless-authentication-with-fido2/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-passwordless-authentication-with-fido2/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d85acfa1be5fe72302137b54d9caafa906b0c70513e617a870932f93fef11cb3",
+    "references/standards.md": "0737959641529eb459b00dc1f2a3885636e1cdcdaea67ff358f36afe28be118a",
+    "references/workflows.md": "656a57ecf05477467f29154f3fef72d4f440c16ce4351003d91009c31bb1e752",
+    "scripts/agent.py": "d662f0cef91b1546bfbdbd0e61feefa482d62c34593c8936f8ac11db8d809c63",
+    "SKILL.md": "5e269a5f60e86365ef398ca6f4de9b9fc18afbbab83f3d2d7fda100a62f4a4f9",
+    "UPSTREAM-SKILL.md": "b55067aafafe4851b72d1d897b5a2a1c0f3a96ca95d8ee1550fce47b82c5bbe9"
+  }
+}

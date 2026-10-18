@@ -1,0 +1,26 @@
+{
+  "name": "cyber-generating-threat-intelligence-reports-7c096914",
+  "upstream_name": "generating-threat-intelligence-reports",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/generating-threat-intelligence-reports/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/generating-threat-intelligence-reports/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/generating-threat-intelligence-reports/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "89f7d520a3eafe0dc222ec292257f156ef284da48b27464512ae5b1b32e6815b",
+    "scripts/agent.py": "896c0ce6ff065e7aad37d0e5ab93e93a01c32fb66820a45fe2646a81ba256120",
+    "SKILL.md": "5857ebf106b10def9fd09694d09f74abde92961552a6c8c53c8d29d4fb892523",
+    "UPSTREAM-SKILL.md": "b671898958252a362f90f91c52fe24c5ade4a7d5978efa5d01fdc4c4f53d92e5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "kdense-dask-08e3e592",
+  "upstream_name": "dask",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/dask/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "BSD-3-Clause license",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/arrays.md": "9505d826de392bd9ac35a00bb082e275156cd746a251fac36bdb987a11a6fcda",
+    "references/bags.md": "4668a74485ae2087eb1d6b4bc732641d1e8ee666fba5661243e6a68767d4c17f",
+    "references/best-practices.md": "0d475a1d3ceb341c2bf87b8022fa08e0e3e59fbc516ad00a0c63288ddde597af",
+    "references/dataframes.md": "fce72d6db5d694c88110781079b2cabed613422f60523a9c4eae19b2d44797d2",
+    "references/futures.md": "6f31c828d7794da2db877fe1f5efe6c8fda11197f1328f66693792bf06368e12",
+    "references/review.md": "599658e990675a39e6f3c0eff7198ecc8565e17a0894f1882850f088597d01ed",
+    "references/schedulers.md": "ad95a4a2700a74ef8b0cb331f9f622c5dea86987805de8b3316eeba31e839740",
+    "SKILL.md": "e310582f4eead04c76162064f7acfd834acf2d03e5d8321c78b36461ee8ff11c",
+    "UPSTREAM-SKILL.md": "3b563a98f4cb42858bb1cc49832a3fa1ff9483d929af57ebe629473538e5a041"
+  }
+}

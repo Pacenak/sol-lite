@@ -1,0 +1,21 @@
+{
+  "name": "johnwayne-pencil-to-code-d2aa4ae7",
+  "upstream_name": "pencil-to-code",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/pencil-to-code/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "agents/openai.yaml": "45a8e6df478f26b60fbe17c678896de83136ee4e6b868eb0874104134424344a",
+    "references/handoff-checklist.md": "102b7adb43e87bc4d019e9c1df7d567b79b9a49e2fb47fc711ba0daa63e6d797",
+    "SKILL.md": "65098964100c3338a4cdf71e0f5fc510bb58171cb84743a25a39f1bbda68582a",
+    "UPSTREAM-SKILL.md": "9a94188aac8be5699479dd2ed1ee5f0b4e8730a17c4af31f1cbf48751e63e717"
+  }
+}

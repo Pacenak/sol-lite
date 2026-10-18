@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-jwt-signing-and-verification-53f5feff",
+  "upstream_name": "implementing-jwt-signing-and-verification",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-jwt-signing-and-verification/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-jwt-signing-and-verification/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-jwt-signing-and-verification/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4ff8122dad824ab4ae863e9b305e4c824fab0f007b984b9e41ed97badf888f35",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "182d1dc54d9e416d126eee8e355a5de4398aea83c85a8b7fb4515212e94f012c",
+    "references/standards.md": "19d42290cbd654f7b57597b77930600ace7f89c3c725dd829fdd50757b775276",
+    "references/workflows.md": "b3b9b71d21847c187bd91e752494661923c8762afacb132cfbe3fcbe545840d0",
+    "scripts/agent.py": "66bb11c0da6e94c14e0bc8760b0b3257e0cd7c00a4277caa72ea3cb0a16a51c9",
+    "scripts/process.py": "8fdeeecb92b8b28706a2b4b45f3b3b383b228fec64fc3721e1b608ba5b43c96d",
+    "SKILL.md": "5ca75742a9154af0ff214ea330e24efa7456760098393d8a4d6f75fbb66bd5eb",
+    "UPSTREAM-SKILL.md": "da06a0dec6f73fdfdc340f6842197510c18720c4dec7e301b22c307b03e04df6"
+  }
+}

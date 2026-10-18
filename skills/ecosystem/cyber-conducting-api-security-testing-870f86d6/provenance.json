@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-api-security-testing-870f86d6",
+  "upstream_name": "conducting-api-security-testing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-api-security-testing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-api-security-testing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-api-security-testing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6bf9db92fdf25ea9fe8f08c28284721f94165adcec5f2b5b14c129571e2e17e6",
+    "scripts/agent.py": "044ac63101a0111afa4eb78da06e1c219951b3058bdf52680a3a8aebf2011618",
+    "SKILL.md": "459d4c40e2e9c1bf2515b2dee46f2dda3cab561329eac04e962ebfdc3dfeda5b",
+    "UPSTREAM-SKILL.md": "d7c01bde62507b200c57a34b0d4ba04a520b1a6c0cd02ac2ac1b08fe2852c3ef"
+  }
+}

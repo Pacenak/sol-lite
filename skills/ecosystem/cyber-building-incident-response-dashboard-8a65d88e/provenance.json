@@ -1,0 +1,27 @@
+{
+  "name": "cyber-building-incident-response-dashboard-8a65d88e",
+  "upstream_name": "building-incident-response-dashboard",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-incident-response-dashboard/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-incident-response-dashboard/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-incident-response-dashboard/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "20e1ba15f3ff09ec97c4511c0c9bcdf8941172544c1b49c77bdca4798e98cb1d",
+    "scripts/agent.py": "78cf54b29968ff7de112a13e6c874a4248ce50c10e01d7b0ebdc0c0c6b0cc5a1",
+    "SKILL.es.md": "40d81094828604fe2dbfd522cac50cc19dfbec63c14d6b5e37c0538aa3e77b05",
+    "SKILL.md": "8e59d98bf5472a6a1c52c732bf4626bddb0a1bd4de9af0bf0f6461d7b99d65fa",
+    "UPSTREAM-SKILL.md": "0af0957e9bf6fc313fe475849bccab88ac1ddedae19cd9dc57aee0d1cda899b0"
+  }
+}

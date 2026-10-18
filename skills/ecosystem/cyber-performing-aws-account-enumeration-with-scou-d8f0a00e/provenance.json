@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-aws-account-enumeration-with-scou-d8f0a00e",
+  "upstream_name": "performing-aws-account-enumeration-with-scout-suite",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-aws-account-enumeration-with-scout-suite/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-aws-account-enumeration-with-scout-suite/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-aws-account-enumeration-with-scout-suite/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "909fe7016ab3bfde397fc4a1b198cf8fae432d54f9635933385476c5bf4c3c99",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7f080c73b5b47041e0328efe398529b7d00933219a6230d6c35a787992c7a990",
+    "references/standards.md": "42fa391e6b0e561aee89f2094fb4e1595779f591e5752eb9d53bcd1a38cd6719",
+    "references/workflows.md": "a9b230e468d6f0ce7971596fb08b0b71a0366f162f6d5cf72d9f92a5cfd6c649",
+    "scripts/agent.py": "49ea3886a685fec064abc9d6324b90545769ebfc328aeda2ba3e69cb174581c3",
+    "scripts/process.py": "09b5786868f408109f95738ce9eb8b442816412cc76844e0156e064293f2b41f",
+    "SKILL.md": "e7677c033244e17e9f2c4de8ccb942d14719ca3e36c359d7474e62b4fa53d4f3",
+    "UPSTREAM-SKILL.md": "1e7a9ebac6fb4ba8c940fe8d1455a9405a7a7377da9e79f39a9f4e3513f7fdc7"
+  }
+}

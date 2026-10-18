@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-http-parameter-pollution-attack-cf4aa0a6",
+  "upstream_name": "performing-http-parameter-pollution-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-http-parameter-pollution-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-http-parameter-pollution-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-http-parameter-pollution-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f98f82753a49198c6737f9dacb37305de476ae90c6092ea3d158f65e5283269f",
+    "scripts/agent.py": "48432bfa622bdb0a7a6811f6b8ed7618904153cda134b4c3e6c60415939f50b0",
+    "SKILL.md": "f3e6e0c7887a416ad0af37f55564f65882ed4550bb15fd870bb1b26a6088570e",
+    "UPSTREAM-SKILL.md": "a5ec8a0d8a7481170d5705116f2f947222112c81fad6423d2b74a6ec9f64405f"
+  }
+}

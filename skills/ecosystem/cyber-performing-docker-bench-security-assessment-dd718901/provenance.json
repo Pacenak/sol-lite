@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-docker-bench-security-assessment-dd718901",
+  "upstream_name": "performing-docker-bench-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-docker-bench-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-docker-bench-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-docker-bench-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "54351fee56d1555107519e2e4199bd56fc8f6e1e75307401d812425f54ea3b86",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "40749cdc15fb252a998cb37d6bcced8131f6ec13a94bd768507d84bd04593d1f",
+    "references/standards.md": "d15034a02eed44e1a04e7020e9e9562b5801846c791482842905e34b1366bbbe",
+    "references/workflows.md": "b0382a0b061f67c181f70a3bd76603f173279086bb45f3d1e4ffb6300b4a4f07",
+    "scripts/agent.py": "705fea1a3df55589e7b70a047efd0506f9125c9b8a2aa6fe7a93745bc47543b7",
+    "scripts/process.py": "19d1415ac7dcf799c8097706fa2e47a295e2f853c1ec03b682a34b704688e938",
+    "SKILL.md": "6456c64fc7a9b391dc25d6eec13882d1569ac13f5666c0039946acaab9ee6089",
+    "UPSTREAM-SKILL.md": "15b1be47de31e68389ca36c15c9b4b84fa4a523d3706fd32ca54121aee1237fa"
+  }
+}

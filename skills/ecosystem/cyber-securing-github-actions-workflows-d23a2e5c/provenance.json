@@ -1,0 +1,31 @@
+{
+  "name": "cyber-securing-github-actions-workflows-d23a2e5c",
+  "upstream_name": "securing-github-actions-workflows",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-github-actions-workflows/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-github-actions-workflows/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-github-actions-workflows/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b2aa3134c958e7c72012f1df2af5a3a2157892a8b273ed8828020e879a730198",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22eb1d65e280a75caa837e24e5ed09246e6384c907cc0a06fdb6e22866e64fb9",
+    "references/standards.md": "0d302c6ecc0a42b1ccabc2453afe1b34a46f7558e80f907ffd7e00d180c78524",
+    "references/workflows.md": "1ca92cea132afc6e87dc653c85ca9c935663fcc3b527e3e544432d44c8db9d15",
+    "scripts/agent.py": "530b2e57d5d584b6dcfb84165dddfe9c454599dd58cd1253a3b57c1b6d6f6390",
+    "scripts/process.py": "2b3cac28679287eea1957c1d9d1c000f42cacf351164b8afcb3bba3c22e53927",
+    "SKILL.md": "2199d43fde2c0978ccefb0d59e05f40f220c5c91afd4bbe8cd0ba798da01bf12",
+    "UPSTREAM-SKILL.md": "acf26e90270d574cd95561509317df36b2175c3b3b99a7d16636d07ad55a06e4"
+  }
+}

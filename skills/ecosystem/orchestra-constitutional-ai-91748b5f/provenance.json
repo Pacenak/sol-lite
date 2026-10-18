@@ -1,0 +1,19 @@
+{
+  "name": "orchestra-constitutional-ai-91748b5f",
+  "upstream_name": "constitutional-ai",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "07-safety-alignment/constitutional-ai/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "SKILL.md": "2cbcc8694af69e94ff4165d4e60234991529f4f6b270cf922c9bd0f6c3b6d04f",
+    "UPSTREAM-SKILL.md": "186267074ebdae7d3f9a5c8fb1505536c31bbe7ffba5fd18a052f8258d2005c0"
+  }
+}

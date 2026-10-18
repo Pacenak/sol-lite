@@ -1,0 +1,27 @@
+{
+  "name": "cyber-conducting-cyber-risk-assessment-with-nist-8-e5afa66e",
+  "upstream_name": "conducting-cyber-risk-assessment-with-nist-800-30",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-cyber-risk-assessment-with-nist-800-30/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-cyber-risk-assessment-with-nist-800-30/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-cyber-risk-assessment-with-nist-800-30/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "411ed8c261c1e69005db4511c8d25be22911565ee76146948257e28dae175ff5",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "f4128caba3839959f1afa2d93f1d39ac58fd553bad691073ba683e5cb8717b8a",
+    "scripts/process.py": "4e7f52954a93d5bd827fe037123037b89c7c38de87968f1a61b146a7a762ef1f",
+    "SKILL.md": "3af4ba3f6831947bf2b6b0dab658e5dfa0067d04d8fc2c1f9fa178f526563bfa",
+    "UPSTREAM-SKILL.md": "2cf6a3a884c4fba73fafd45afad1d5fdd7e34ec6eef25039948ed26fd605c756"
+  }
+}

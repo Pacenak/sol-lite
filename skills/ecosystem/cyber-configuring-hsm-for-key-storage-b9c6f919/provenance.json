@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-hsm-for-key-storage-b9c6f919",
+  "upstream_name": "configuring-hsm-for-key-storage",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-hsm-for-key-storage/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-hsm-for-key-storage/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-hsm-for-key-storage/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7026c5c4230dfad5671ede95dc51e9a770a0bdabbacf0529e207701521d3c7eb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4aa3832180ed0fbfea49e9032720d4e5e80146dc0a8459a61f496dfe17d40e69",
+    "references/standards.md": "429b1957021596ffa7ebd76b769dbe6002f7b444422314a6f975425bc4d91360",
+    "references/workflows.md": "d25a5cee63968e77a63b15475386d30fc7f672d9e21fcad3cd613b690e646d92",
+    "scripts/agent.py": "4e0c9d4bf6f95a9dabe445c1f525f4c20c90a309e5a9fc8c3abcf469adda92d2",
+    "scripts/process.py": "a08e4909cffe5bd08f96854454adb536e3c79dbb68a87c77d8c70169d7628da2",
+    "SKILL.md": "8823a969553c11f4113fa687a77354cb44f1b248d16264e0a6b22bf87a1e153b",
+    "UPSTREAM-SKILL.md": "3935f439854d9d375f0e55f5aff110cf9d9a521c1143303b786e86d58c23aed6"
+  }
+}

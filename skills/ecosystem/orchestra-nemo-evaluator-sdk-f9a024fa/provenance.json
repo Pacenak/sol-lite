@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-nemo-evaluator-sdk-f9a024fa",
+  "upstream_name": "nemo-evaluator-sdk",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "11-evaluation/nemo-evaluator/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/adapter-system.md": "b28d7df8c090c7ce6061b16b0e436640945e6cf7a84e2e0e6a06ba4d18845b0a",
+    "references/configuration.md": "36e716ee8b988acf67d781940a8346ea4204591601714504a003e95dd674f45e",
+    "references/custom-benchmarks.md": "f20a0d0006f5aba39328eaf528fe3e4cfb1a1d23143a6d0fe90f7c2d890620a3",
+    "references/execution-backends.md": "9b4a6fd37c72bb0d983c2e01387a3e9584e7fe5af5f50d467cbe255a175aa03d",
+    "SKILL.md": "ff820d19b85395428f13c46539a143dc91941ef28c1adb6572d27474d177ef79",
+    "UPSTREAM-SKILL.md": "97bc3483974c2b930acf3f46e21c865e1b27e92359e19bdb465515d9e86ff10f"
+  }
+}

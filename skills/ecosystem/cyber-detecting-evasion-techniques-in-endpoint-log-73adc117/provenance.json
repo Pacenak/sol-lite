@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-evasion-techniques-in-endpoint-log-73adc117",
+  "upstream_name": "detecting-evasion-techniques-in-endpoint-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-evasion-techniques-in-endpoint-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-evasion-techniques-in-endpoint-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-evasion-techniques-in-endpoint-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "63a6b2f98831bb202cc602380f5e06e77c699b71ca648ae12e8a93feac4d8fb4",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d2718fd2c4637e956ebac0d692849fad18ddc27499e63444cab0e2e07ed2eb81",
+    "references/standards.md": "d49245f9a157c20394daf7dbf4efe3650d940598de07e63195ac4a49884d3548",
+    "references/workflows.md": "2d72ef6f0da306e15fa0756eddc10323a2b7fde956fda88256268f5860fad773",
+    "scripts/agent.py": "c8c2ca58c32998cf2304467fa62f77523891af1a3b536f88ef6b39fb16a86fa7",
+    "scripts/process.py": "a2c3373b83135cc08d1483bf7c77017912a37aac61c76ed3657b3b4baeaad8c0",
+    "SKILL.md": "c7d1ecb6b190baa70a1e7a301e0cd4f440308c16610c020790920de150a55afc",
+    "UPSTREAM-SKILL.md": "c2bf7021da96aa3efa65c043736bd196a1b5fc6b9dc58a19e581587e75396b5d"
+  }
+}

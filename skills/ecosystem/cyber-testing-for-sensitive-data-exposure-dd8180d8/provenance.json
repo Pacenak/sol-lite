@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-sensitive-data-exposure-dd8180d8",
+  "upstream_name": "testing-for-sensitive-data-exposure",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-sensitive-data-exposure/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-sensitive-data-exposure/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-sensitive-data-exposure/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f10e1d9dacbff59ca936fca16938faf17d6a4bbc16632919163d33535f4d3279",
+    "scripts/agent.py": "aefd203aef869d3ad0deade16c26b14b9b02ade58d42f39a4e335636193a341f",
+    "SKILL.md": "8b6a818d882670d817b78768a5a7e5c913b4d6f4f9d2db3ec5ce9f6e061a2a41",
+    "UPSTREAM-SKILL.md": "086d5cf8fd640eb9aa5d66d6f983b992393edfb35c0932dad5203faed0c14b3f"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-enumerating-cloud-with-cloudfox-2951c893",
+  "upstream_name": "enumerating-cloud-with-cloudfox",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/enumerating-cloud-with-cloudfox/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/enumerating-cloud-with-cloudfox/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/enumerating-cloud-with-cloudfox/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7923e2b2807e0ceeb2a0d4c2b6262a01ee41fef830aeae56ac7656f206c45f36",
+    "references/standards.md": "09a00cba9fb995be1cf9b0f61105e8901d739ddba95c820bbb7d40fbd351afce",
+    "scripts/agent.py": "b8aecc7bf2863e322f099d5015515205e09bc266c25fa0f3dea1df5fe549a912",
+    "SKILL.md": "965e6c03fef2d2cc6e3c8c57c7edcbe1b6632b8b2bee5e59ba7b5a13e66b06fa",
+    "UPSTREAM-SKILL.md": "e234e7894163f107784f18811e0039b3fbf029bd5fbcbfa1b8ef036860e7c944"
+  }
+}

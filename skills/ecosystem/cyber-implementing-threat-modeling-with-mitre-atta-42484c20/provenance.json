@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-threat-modeling-with-mitre-atta-42484c20",
+  "upstream_name": "implementing-threat-modeling-with-mitre-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-threat-modeling-with-mitre-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-threat-modeling-with-mitre-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-threat-modeling-with-mitre-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f6d818a81c1b87eb3d96f8cd0e7553a764627752919e3053b6036fd9a7802e8a",
+    "scripts/agent.py": "0acb9039fdd26819e9544bd86de6dcb63c3a55e913f48b912a7abf53e4e7e8db",
+    "SKILL.md": "382b81ec9c7e300cbfa1d3d74b76cfea7ccf7c3d65d2e6d34c1d586016f37021",
+    "UPSTREAM-SKILL.md": "d6ec7e5b911133d53e4425769ba3f2c8744ef44ab42e50de028b59dbc8213adb"
+  }
+}

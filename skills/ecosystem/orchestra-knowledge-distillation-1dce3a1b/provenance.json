@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-knowledge-distillation-1dce3a1b",
+  "upstream_name": "knowledge-distillation",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "19-emerging-techniques/knowledge-distillation/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/minillm.md": "662fb6517f13f805ead6a87aaa1c1326fa3cda639680f40fe6b80a31ea5c6e51",
+    "SKILL.md": "d8607c4fc6179cbf29a62ea7e1dfe68181ebeb2119bccff1f8e543e1fa07b5e9",
+    "UPSTREAM-SKILL.md": "bc27086dc02840cebef4db34db4b8406b37ff349d6e2a52848646c8daf24ff3e"
+  }
+}

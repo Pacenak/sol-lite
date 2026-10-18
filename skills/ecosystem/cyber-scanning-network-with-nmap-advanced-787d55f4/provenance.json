@@ -1,0 +1,26 @@
+{
+  "name": "cyber-scanning-network-with-nmap-advanced-787d55f4",
+  "upstream_name": "scanning-network-with-nmap-advanced",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-network-with-nmap-advanced/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-network-with-nmap-advanced/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-network-with-nmap-advanced/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "77b3e29c5199721ae2c2af8d0c49fb81d163d508fcf894eda1a62b4bf270053a",
+    "scripts/agent.py": "771cf220520c36adf019ecaaef7249b8363bb8462c9b00a73e0c09cd9d1f8b11",
+    "SKILL.md": "15554ac8e4bd569992e181d8d7a82baa10875362c7de1e6071ff93f2d103ef88",
+    "UPSTREAM-SKILL.md": "57b686209b29e933533dfcf808ebac0c7c608e76a83014b32633d673e1ba54c2"
+  }
+}

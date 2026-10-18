@@ -1,0 +1,31 @@
+{
+  "name": "cyber-collecting-threat-intelligence-with-misp-df610cf3",
+  "upstream_name": "collecting-threat-intelligence-with-misp",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/collecting-threat-intelligence-with-misp/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/collecting-threat-intelligence-with-misp/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/collecting-threat-intelligence-with-misp/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "dca409fc841768055339fc34aa8d8f1e6cdaafb414ba669ce8442685c7777311",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6cd3012c6bcca25fc761c1dce220bdd4b635cbc615e3f0622af6b1e440ef267c",
+    "references/standards.md": "a88a297b38a72fc14280f4f6610d3a6106d526a199c526c29a6fb429a58d1f99",
+    "references/workflows.md": "c7d910d50a73463c354cb3df23f72ec0b37bce5f80330fbcec87727cd102b59a",
+    "scripts/agent.py": "95900a8d495c038500bc4de91e38f1c00bc0d0eafae89e5bbecf7482403fb656",
+    "scripts/process.py": "68d1399b0addd0ef0c85c13b5dd4df57c77823ba98ffc0ac02e3f0014c509f37",
+    "SKILL.md": "25e6c47f86be0e4e6b7bc430d82e037c3054f4093c44bdc33588e3c2622a73ab",
+    "UPSTREAM-SKILL.md": "7283dcf7138b34ed6ab1962914c0c02a51f34df48f654cb745db6d57f7a88e8f"
+  }
+}

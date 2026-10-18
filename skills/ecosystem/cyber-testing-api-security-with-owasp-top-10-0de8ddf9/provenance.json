@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-api-security-with-owasp-top-10-0de8ddf9",
+  "upstream_name": "testing-api-security-with-owasp-top-10",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-api-security-with-owasp-top-10/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-api-security-with-owasp-top-10/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-api-security-with-owasp-top-10/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d99868c2ff8de0e3d9ee7456295eb36bdc56669dedaf37176c90062330509727",
+    "scripts/agent.py": "34c1dbdb7de12ab2cc9934bb10dae3c7276e0b1ad398c1f057e1bf7a2256a63f",
+    "SKILL.md": "aae2eb2ccc61ecec66fc2a2fcf6ee1e7e952862252686f49c7b361f43275a1fa",
+    "UPSTREAM-SKILL.md": "88d5a795b3c24d2ebf6bf934221a6fe60e782b9e9715fabd0c038d283da67b82"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-testing-mobile-api-authentication-3e8a1190",
+  "upstream_name": "testing-mobile-api-authentication",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-mobile-api-authentication/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-mobile-api-authentication/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-mobile-api-authentication/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0aa8a0c4c56cda1ef2aa691e68b3f751fd2fd212ebe1f44c56d5fc75c6ac216b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5f0e2ca53cdc11c4296e073876c01ae759a31e20f02bbef3229e0ee028cad8da",
+    "references/standards.md": "4efaed5c5bfcbf5266aa4841a4205d71cbfabaa5243a39a010a6a3b97f6c1882",
+    "references/workflows.md": "60ab49a71327076e5e233ac419a354d59b4e2c55660bda177c155d568a91ae40",
+    "scripts/agent.py": "1f22592d83b9f7503edcfcab2ba66b6e155c09e76ebddb78e3be9d529e33f872",
+    "scripts/process.py": "9273b23b6456c760b7be1e6301c8ad89259bf418b3dc2a2c0e4f40580990d16f",
+    "SKILL.md": "d28f5caa727b858434a606155871c66b94714808acb1c9f4ed7d11597cecc422",
+    "UPSTREAM-SKILL.md": "41a67ba95bc2508d236d99dd056e96fdec843abec9efa4602cb9c8dfe20d3fc8"
+  }
+}

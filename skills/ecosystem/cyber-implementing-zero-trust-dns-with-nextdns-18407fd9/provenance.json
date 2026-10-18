@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-zero-trust-dns-with-nextdns-18407fd9",
+  "upstream_name": "implementing-zero-trust-dns-with-nextdns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-dns-with-nextdns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-dns-with-nextdns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-dns-with-nextdns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c4a4ebcbaa5bed31587fa2932cbfa35bc1cdad4f09948742c554f607079ecdf9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "66369da9f6fd348906489db61b57bfb46dc4202d4d9257b9ae67b19fc0044acc",
+    "references/standards.md": "8e48093d879a0ad62800286d04a0f763b469b731b12b1499cc1642459c456397",
+    "references/workflows.md": "f04e14a034bc4aec77f3117546b4a6b70575e2dcf11d9b64b9e2337e951d9a30",
+    "scripts/agent.py": "c087ebfdac7ae5844767489d79bb5c2e85399c12afdb5327b04f5b5eb142031b",
+    "scripts/process.py": "a4cb669368e9f8cc6076645da8faeb3cbb44ff017b8146f914e31146549d0137",
+    "SKILL.md": "a4aa347d70741d5f207ec8b0a560efbf78c0554aa4fb9e7e21d7f4a5b9c13629",
+    "UPSTREAM-SKILL.md": "678699045e0ceb8ca897e987bcdc49bb36287b7d80aaaf5527e9ea7653695878"
+  }
+}

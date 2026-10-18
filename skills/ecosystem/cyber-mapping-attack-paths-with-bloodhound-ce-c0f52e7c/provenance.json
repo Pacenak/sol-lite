@@ -1,0 +1,27 @@
+{
+  "name": "cyber-mapping-attack-paths-with-bloodhound-ce-c0f52e7c",
+  "upstream_name": "mapping-attack-paths-with-bloodhound-ce",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/mapping-attack-paths-with-bloodhound-ce/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/mapping-attack-paths-with-bloodhound-ce/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/mapping-attack-paths-with-bloodhound-ce/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f7d3c2978cb0bdd75b584e693db66eb02619cd536c4a706b5567357b3b16e471",
+    "references/standards.md": "27477a49aac61b96f274442aa16532f711b017b024f0c71a4f26ae0a34d36cc7",
+    "scripts/agent.py": "e7c6d01f31d72242b0450103d1341d6aa58c6463e7d14d818ea4e17aae1c0ba2",
+    "SKILL.md": "83b7c28190ea08d47e406a0c565ce7a63f51e9677b1ff989de070b5edf92baff",
+    "UPSTREAM-SKILL.md": "effa7cc9d087f98e5f74ea0c6e41249af03b6bc49666a9649ae456b87a6d9ca1"
+  }
+}

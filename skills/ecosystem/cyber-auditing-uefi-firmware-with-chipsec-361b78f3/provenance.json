@@ -1,0 +1,27 @@
+{
+  "name": "cyber-auditing-uefi-firmware-with-chipsec-361b78f3",
+  "upstream_name": "auditing-uefi-firmware-with-chipsec",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-uefi-firmware-with-chipsec/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-uefi-firmware-with-chipsec/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-uefi-firmware-with-chipsec/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f7bd7891f7054a76a2f14cc45b2524d0bdd65e64ad599c0833c7d9a133838fc6",
+    "references/standards.md": "0e4fbcba3532078a2d2091813db292132842db7e47c397361e062a8ad7d80fa2",
+    "scripts/agent.py": "cba9ef5d381a556f8241e088a1f7cf90a4cac3c2c6a0b796ff52864f446e8436",
+    "SKILL.md": "3ed981c69645286955a4f43b148779e29d3959f26a18b90188d88cc3e6244d5c",
+    "UPSTREAM-SKILL.md": "48be885889e27dee2aea01adc9a855eb39d29377f1d90bedf7957ddee23a5b6f"
+  }
+}

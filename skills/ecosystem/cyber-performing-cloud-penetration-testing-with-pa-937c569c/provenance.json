@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-cloud-penetration-testing-with-pa-937c569c",
+  "upstream_name": "performing-cloud-penetration-testing-with-pacu",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-penetration-testing-with-pacu/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-penetration-testing-with-pacu/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-penetration-testing-with-pacu/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6b89288a62b4942534884da2caa4dbf09725281f46dd7c0f3d98ab7a872d7111",
+    "scripts/agent.py": "00dbdb341dc700ca2f0170ff7c36c7a27d8cbf9e0675b7d7ac38aad4f8d9a10e",
+    "SKILL.md": "7e480ac567798b0e5cb403125beb0873227caa1b244c89d30a5e0009dc4e7f10",
+    "UPSTREAM-SKILL.md": "165d3ffb899f187f10fe3d0b8eb8a903a7dba38219f59a52d49081e28108cf38"
+  }
+}

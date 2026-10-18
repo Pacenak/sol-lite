@@ -1,0 +1,27 @@
+{
+  "name": "cyber-validating-tpm-measured-boot-attestation-596773d0",
+  "upstream_name": "validating-tpm-measured-boot-attestation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/validating-tpm-measured-boot-attestation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/validating-tpm-measured-boot-attestation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/validating-tpm-measured-boot-attestation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c9e43aa0aae0a8a34064da579d383a1486e9c3b9195f589985c711514a0509a4",
+    "references/standards.md": "db1946dcbe2c6bdbb83ee6cdc01f40715d387f8d2ca79942e3f6932a025652ee",
+    "scripts/agent.py": "2c3971a9ed57e76f0861a2752f7f58c903010131429a8682643a6a5df2c4f849",
+    "SKILL.md": "4ca1146b701e3cef8ebacfa5b67f363173bcda7c43cdd9485eabc988f267423b",
+    "UPSTREAM-SKILL.md": "844d5b952f41e382a5fc474976235da93cb5826c132a0085c8231c05b8c14b05"
+  }
+}

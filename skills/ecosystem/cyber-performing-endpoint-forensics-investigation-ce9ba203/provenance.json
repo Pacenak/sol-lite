@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-endpoint-forensics-investigation-ce9ba203",
+  "upstream_name": "performing-endpoint-forensics-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-endpoint-forensics-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-endpoint-forensics-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-endpoint-forensics-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e394d9ebf43b76a0c20d8b3ec858397b8774e807d653034c40ba20cc14bd68dc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e9d0161556c349d214d708d0b1926b11b3e6ecf9a86c32a103b1d8c4e7910b6b",
+    "references/standards.md": "5a6f1d8372aa3929e39ece20295a0dd9b5cc6628ae8c02fcb8b53fe16bde14b6",
+    "references/workflows.md": "8ae5aa22f688c32dc3bdb2c2b0513fc455b05840ab0ca63f0e354a057bad9fd9",
+    "scripts/agent.py": "569d7bb7b1a015fb8f61d15aefba39bd3cc40723b9f356e0dec665923171a6f1",
+    "scripts/process.py": "c21979aa1cf1ca7de9d72b85c94451b61101e376d96f63be160a52ee53a950bb",
+    "SKILL.md": "5982942cf297eca2ca626717baefaedd6f4f71d6b19d36bffb256ab4a72a3ef8",
+    "UPSTREAM-SKILL.md": "b2863ebcbe8e139754815ca67551bfa1a35b9916c828a89623f9788c679f3dc7"
+  }
+}

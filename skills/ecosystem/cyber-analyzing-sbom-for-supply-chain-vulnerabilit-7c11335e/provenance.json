@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-sbom-for-supply-chain-vulnerabilit-7c11335e",
+  "upstream_name": "analyzing-sbom-for-supply-chain-vulnerabilities",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-sbom-for-supply-chain-vulnerabilities/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-sbom-for-supply-chain-vulnerabilities/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-sbom-for-supply-chain-vulnerabilities/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9fcd7cdfb12d249cf191dda95562dc4f4f87a358409a9e23ec5f9b36d51f0d90",
+    "scripts/agent.py": "8a0adf58eb52036a6b9b7d44176e8bd313b37d5f83f5eb01794b668a4f6c9732",
+    "SKILL.md": "0239bb7c27498132f131478603a2f18ab5409030cb44323001b983c6f000915b",
+    "UPSTREAM-SKILL.md": "678b62009723856d3371e714d140c8a1720c85d08c91c43792d3565236da0873"
+  }
+}

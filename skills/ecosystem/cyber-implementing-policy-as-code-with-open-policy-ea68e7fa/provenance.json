@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-policy-as-code-with-open-policy-ea68e7fa",
+  "upstream_name": "implementing-policy-as-code-with-open-policy-agent",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-policy-as-code-with-open-policy-agent/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-policy-as-code-with-open-policy-agent/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-policy-as-code-with-open-policy-agent/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "91e7d788b8d7a73d7acf48e9dea938d3065dbaa6f2e9636332bf05c7281fceff",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "91bc5889681b7683dca7290bf0c2bcbdb2ba6e9b6b1727a87ec602fc344da430",
+    "references/standards.md": "b9861512ab537d2be9664bf9e1f02495f163584b52c88bf72c1ccd5d8ebd75d4",
+    "references/workflows.md": "4ca4058b8180b85193436d47b725964cba0b3725b9b9972057af88357b95d503",
+    "scripts/agent.py": "41c54f90b70af06f4a60c82568ae2a929c5454b8b0dd3e98a7d098dfce61ac18",
+    "scripts/process.py": "9eecb90dac04f512c9ae40857f195480b510a495ddc5a9f476e4428e197a7389",
+    "SKILL.md": "57b75ab2986b6774a430285854e6f359809e9fdc022ee749dd783ab40ae20ef4",
+    "UPSTREAM-SKILL.md": "87bd8f116be5dd1ec953345cb994d8bac02a2a5218e350795255fde667f92cd4"
+  }
+}

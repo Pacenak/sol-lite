@@ -1,0 +1,26 @@
+{
+  "name": "cyber-extracting-windows-event-logs-artifacts-d9217827",
+  "upstream_name": "extracting-windows-event-logs-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/extracting-windows-event-logs-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/extracting-windows-event-logs-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/extracting-windows-event-logs-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4d696c911485e00f84a6446955c1f73253b6d7884907a7ce177a8e7c2f724dbe",
+    "scripts/agent.py": "4d55800f44473995f9df945a66bd30a344aa01687dac8220acedb606636d555c",
+    "SKILL.md": "5a3b2358de213dd436d85e8d4db108eee100dca6265c08d40d7d7810b2b61202",
+    "UPSTREAM-SKILL.md": "e11a568d61bbf3a7fe30d084814a617fb630ab7e849fffe440aa2a44433a6199"
+  }
+}

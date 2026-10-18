@@ -1,0 +1,31 @@
+{
+  "name": "cyber-deploying-cloudflare-access-for-zero-trust-bcae3cd6",
+  "upstream_name": "deploying-cloudflare-access-for-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-cloudflare-access-for-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-cloudflare-access-for-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-cloudflare-access-for-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5bbe97400160facd601eaa8dc8596dc4c19f0273de796fbed192b93c515040de",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "874956abe752746ef4254c975a7d245e273a56d31137521fec1dd40c338bdd33",
+    "references/standards.md": "0b2ff5ce5bb209917a93d4d029e085f9942b0537b3b52b558bbc52772d2cb132",
+    "references/workflows.md": "0ca92239dd51a776c6e3bc975342e4211d4ee5d2e1ffdb3bbdda85be1be1253d",
+    "scripts/agent.py": "1f7723d251f5b65a7f018b1edc591e64a34ed24e1027f70c07f528bfb6a31cf9",
+    "scripts/process.py": "3ac9ce74d3615c1214b25a1d3049f24e0317af8eed068810866b28799ff14bd7",
+    "SKILL.md": "da4e3b4ae4ba6b5b1eb903335f4281be8373c53ad1d6fb8b4af2dcd8b9da19cd",
+    "UPSTREAM-SKILL.md": "83b26a25493bb2155f675528b132129ef9812fda6a7158cfb8a26ebdd8e340ab"
+  }
+}

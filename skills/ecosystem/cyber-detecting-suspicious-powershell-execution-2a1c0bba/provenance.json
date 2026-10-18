@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-suspicious-powershell-execution-2a1c0bba",
+  "upstream_name": "detecting-suspicious-powershell-execution",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-suspicious-powershell-execution/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-suspicious-powershell-execution/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-suspicious-powershell-execution/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c533230c163b9a97015440fdde7554012de66948f079de743c0d088fbfd5b9d2",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fde99fe0a65aca771aac52dfc48e26d5582340b289d46e31820408c09eb495ed",
+    "references/standards.md": "a3a198c09ebb48476ffef0b2ea61aac29de6a2c99fb00362aac1ce9efd0f22e5",
+    "references/workflows.md": "ba6cf071b3ecb556a4f9cbef93070b109f595fccb781843f35ed99d932afcd12",
+    "scripts/agent.py": "cb0d524929d1e597072ef2a83595412e952fbf2bb20283cfe8d54ef46123bfa2",
+    "scripts/process.py": "08a1c187a6be3b78242bbc2357118fc528b089b7b71c61d11cb698a4e9ecf259",
+    "SKILL.md": "15aa858d5db4c50c3caa666565d3f10952f15a1db87419102d0791a7dfe90f34",
+    "UPSTREAM-SKILL.md": "5dbd78d263e064618d4fa47cbbdb1408cc92a178b60a485339000da110f69170"
+  }
+}

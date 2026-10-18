@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-linux-audit-logs-for-intrusion-e72c4538",
+  "upstream_name": "analyzing-linux-audit-logs-for-intrusion",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-linux-audit-logs-for-intrusion/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-linux-audit-logs-for-intrusion/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-linux-audit-logs-for-intrusion/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f2851fa9d3f096817d728a4d07b615a47ceb6de15cef3c36c7d437c70c1dc6d3",
+    "scripts/agent.py": "ddbfa071454805939f581f3d76f1e96342315b62710a3f4fb3dff4603330d81c",
+    "SKILL.md": "d971182956b4d715e8ffaa24ab38497bcef20cf0c51208133571226e5dc84f12",
+    "UPSTREAM-SKILL.md": "36728ade3067bbc663459be37f0384094a16ab0e22cbbd897725c41ccf3777c0"
+  }
+}

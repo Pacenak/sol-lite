@@ -1,0 +1,34 @@
+{
+  "skill": "n8n-temp-cleanup",
+  "version": 1,
+  "cases": [
+    {
+      "id": "temp-dry-run",
+      "prompt": "node scripts/n8n_delete_workflow.mjs --temp",
+      "expect_exit": 0,
+      "expect_stdout_contains": ["TEMP workflows found", "Use --force to delete"],
+      "notes": "Dry run lists TEMP-named workflows without deleting"
+    },
+    {
+      "id": "temp-force-deletes",
+      "prompt": "node scripts/n8n_delete_workflow.mjs --temp --force",
+      "expect_exit_any": [0, 2],
+      "expect_stdout_contains_any": ["Done:", "deleted"],
+      "notes": "Force mode deletes all TEMP workflows via archive-before-delete"
+    },
+    {
+      "id": "no-temp-found",
+      "prompt": "node scripts/n8n_delete_workflow.mjs --temp",
+      "expect_exit": 0,
+      "expect_stdout_contains": ["No TEMP-named workflows found"],
+      "notes": "When no TEMP workflows exist, prints clean message"
+    },
+    {
+      "id": "single-id-dry-run",
+      "prompt": "node scripts/n8n_delete_workflow.mjs abc123",
+      "expect_exit_any": [0, 1],
+      "expect_stdout_contains_any": ["About to delete", "Use --force", "not_found"],
+      "notes": "Single ID without --force shows confirmation prompt"
+    }
+  ]
+}

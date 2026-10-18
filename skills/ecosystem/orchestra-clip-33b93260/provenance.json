@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-clip-33b93260",
+  "upstream_name": "clip",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/clip/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/applications.md": "682fc313e63cefbe466ed0efdf48048946a3abb292e5f32cf4058fcf59692ae9",
+    "SKILL.md": "7b17031fa1b98080619a2834577ea86740c6deba831b923cc825c3f0eb62e0de",
+    "UPSTREAM-SKILL.md": "9fcacf1c041d71ef1e61c7cac2bb7a2c42c3d19d6c2a0fc2e5f5a3c9641b7a3e"
+  }
+}

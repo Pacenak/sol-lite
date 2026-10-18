@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-nanogpt-a052eba7",
+  "upstream_name": "nanogpt",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "01-model-architecture/nanogpt/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/architecture.md": "0a5bef9e725f8fdb0fe649688168562c69cd82deea279d289939df4a5aec23d2",
+    "references/data.md": "316bcdacc6e8538b7315d8e079bd71a00815bec435fad39b42e85be1a5f3a0de",
+    "references/training.md": "82cba9bf57cb82a2120f637f839badc1c54920be5ca41a00fd22042c45665119",
+    "SKILL.md": "9bb2e70f3fd900c2c99a8e074a2ee9dd995608e375d06336ab578b076777b202",
+    "UPSTREAM-SKILL.md": "8893d8dd5b7ba4ae3219497e26d33fc9565e6bbf0d6aa4d6c1c3ee05003468c3"
+  }
+}

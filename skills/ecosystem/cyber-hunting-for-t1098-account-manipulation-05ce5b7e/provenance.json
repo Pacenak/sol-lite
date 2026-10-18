@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-t1098-account-manipulation-05ce5b7e",
+  "upstream_name": "hunting-for-t1098-account-manipulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-t1098-account-manipulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-t1098-account-manipulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-t1098-account-manipulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e8a9629f245c96464b35969e9f39196b00576c704dce8c8e87523e741f28a53b",
+    "scripts/agent.py": "13c3953a6f67ac7641a9ce08904c9c6ec99c8ac07840f2f8fc7aa057912c8b42",
+    "SKILL.md": "53cda2147866c3f64d04cc47bf1de9350f4e1a149294a855005b6a118178cacd",
+    "UPSTREAM-SKILL.md": "b55b160978b26605e357376b7b93de2560206bc2c25f2fde2c1fe66eb1ce44ef"
+  }
+}

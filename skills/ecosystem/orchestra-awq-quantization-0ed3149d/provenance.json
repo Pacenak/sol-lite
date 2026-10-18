@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-awq-quantization-0ed3149d",
+  "upstream_name": "awq-quantization",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/awq/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "0630d5b6c3f5c8a5fcd38898f305b5b732ac8cc63580023cebcd067a698db4a7",
+    "references/troubleshooting.md": "14187391e2025b0d428977f33caaea7ccf5388aee6f879309ef49f5fc95a6d5d",
+    "SKILL.md": "553c88a7a09cbf77c5eef688d9b7f0b367aaa9a867353d6102e59f05893e6107",
+    "UPSTREAM-SKILL.md": "9a875e53113c11b00ab417fc393eb504f8be97d50c2e6901c762b991388bf717"
+  }
+}

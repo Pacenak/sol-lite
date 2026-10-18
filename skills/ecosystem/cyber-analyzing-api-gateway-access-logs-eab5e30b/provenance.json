@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-api-gateway-access-logs-eab5e30b",
+  "upstream_name": "analyzing-api-gateway-access-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-api-gateway-access-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-api-gateway-access-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-api-gateway-access-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "91a0ca44e249e9d33dfba34c09b95cdf63d771fcba77a930a48ecc126f9dd9f6",
+    "scripts/agent.py": "7ef873c2c6245017817b9eb5cb64f73f5e9d103a556f9d47cea7577d2c6937a6",
+    "SKILL.md": "04fc734bf807ded8b4f2565ffa1b0913c8d98dcffcaa0d94d403fe3a9f6724e7",
+    "UPSTREAM-SKILL.md": "6b950131de34c264010ad01e3d60d20420bfa256f28b8409aa2f68df82bd2aee"
+  }
+}

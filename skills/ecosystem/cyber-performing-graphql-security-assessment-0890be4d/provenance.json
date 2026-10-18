@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-graphql-security-assessment-0890be4d",
+  "upstream_name": "performing-graphql-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-graphql-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-graphql-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-graphql-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b988fb88b733e2a266bdcf64cc9bd2ba67e4e680e98fcbd70af4968d024b3a23",
+    "scripts/agent.py": "0b0f086d05b8d7e11862b42fb369d7048ccd6b31c0c157db838cde49466b201d",
+    "SKILL.md": "9902e5cd0ff6129f0334e342fe59dabb4097387578700dcffbfee70dbb75f5ff",
+    "UPSTREAM-SKILL.md": "44700dec87401270795d075676f15b5e6438704d7944cd5345a1d435efd827a2"
+  }
+}

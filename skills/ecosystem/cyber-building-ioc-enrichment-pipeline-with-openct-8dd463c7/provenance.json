@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-ioc-enrichment-pipeline-with-openct-8dd463c7",
+  "upstream_name": "building-ioc-enrichment-pipeline-with-opencti",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-ioc-enrichment-pipeline-with-opencti/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-ioc-enrichment-pipeline-with-opencti/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-ioc-enrichment-pipeline-with-opencti/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f3f3b194dc8fb505ddff4dea4e207603b13b8e8ef59833f751c2cbd966d450b8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "58dd80727b9e250e243907480b92545928a7bbceb885a5f23a52ff1747cb29c1",
+    "references/standards.md": "86a05c74b739e8073846dcbf339703bb8567554dcb1de2450242fdc5bbca2172",
+    "references/workflows.md": "d8913df0846b1828a3022a7b189a249b39e8718693bfa150912e1f853f71a719",
+    "scripts/agent.py": "ed2d81c35b5c9b62f90c5beda7dbb58d549ca0c9303e2178ee16b19370ed4bd2",
+    "scripts/process.py": "4d32988b8c2899c74a5761531cef1d76f6a6193897282e7125314a56bd6ee7ee",
+    "SKILL.md": "c89fe99d79dcbc4610b0dd111387fa8545ea92256008b37a4a927f142e34e676",
+    "UPSTREAM-SKILL.md": "360a5eecc03be1712acd58a6ad4e888921c72c54eb9015a50b8d0f963cfb659a"
+  }
+}

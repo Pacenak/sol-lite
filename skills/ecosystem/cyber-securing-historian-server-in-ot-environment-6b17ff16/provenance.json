@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-historian-server-in-ot-environment-6b17ff16",
+  "upstream_name": "securing-historian-server-in-ot-environment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-historian-server-in-ot-environment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-historian-server-in-ot-environment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-historian-server-in-ot-environment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9b296307a338870e404c8fb60d679a18b7ae5d0b413f803a7a054eeeccfa4031",
+    "scripts/agent.py": "275e5805a219bb8f5a8751886373a8443ea1b6c34738fe40ac3462967e2b288c",
+    "SKILL.md": "8f25aec210e99d4a79df6cc329813f73f12eae1d56cbdc3598fbec47236162cc",
+    "UPSTREAM-SKILL.md": "2cfe077fceef70aa717d758e335ef5cccf86308ad5a7097540e5198462707786"
+  }
+}

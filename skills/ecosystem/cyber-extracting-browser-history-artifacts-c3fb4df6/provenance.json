@@ -1,0 +1,26 @@
+{
+  "name": "cyber-extracting-browser-history-artifacts-c3fb4df6",
+  "upstream_name": "extracting-browser-history-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/extracting-browser-history-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/extracting-browser-history-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/extracting-browser-history-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e046b1432665e8d2fc5562121e0872db56fe026f2acabb5a544d321dad3b387c",
+    "scripts/agent.py": "aed3c6c5433ae928c3de33d940d2608206d818ef88b52fd143ea7f66fcac1ea6",
+    "SKILL.md": "7d64be15da3aa0bb5d538d833e95214a00ca7abb9ad4da46f90dc697b6ce3cea",
+    "UPSTREAM-SKILL.md": "c6f5b97dad86055e3d19247cc4acf69d61e299b8ec547e2ccd7091c6d87393e7"
+  }
+}

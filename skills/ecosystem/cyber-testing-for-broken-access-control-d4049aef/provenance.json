@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-broken-access-control-d4049aef",
+  "upstream_name": "testing-for-broken-access-control",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-broken-access-control/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-broken-access-control/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-broken-access-control/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e7361524725d9a79d63239d886fdf3742119a83fe135b634be73883843cb4251",
+    "scripts/agent.py": "225fd9c1add4eaca3e3a5aba9e42af373a3338775480b4d2e7d5be48415f56f1",
+    "SKILL.md": "c006ab59499900e7fa689803f0c9b9a57d45a2f20ca1f1563343ed8bfb75f949",
+    "UPSTREAM-SKILL.md": "ff48a3645ef9a416705780ff4a3232113ea859087d4a97098d4b6d2ecd6b9722"
+  }
+}

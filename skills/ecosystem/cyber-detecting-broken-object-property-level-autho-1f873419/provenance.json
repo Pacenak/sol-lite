@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-broken-object-property-level-autho-1f873419",
+  "upstream_name": "detecting-broken-object-property-level-authorization",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-broken-object-property-level-authorization/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-broken-object-property-level-authorization/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-broken-object-property-level-authorization/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f33a6511a66327b319a728428bade8134d06b82692a7f7fd8933ff1a6c2f5f8b",
+    "scripts/agent.py": "f1b3a523637e14133d210f451896b2cafa35e9e48531fa66f7e8d12df6f24991",
+    "SKILL.md": "2f74077f7f411593aeea71c85d1d3904c6785d92d297c65abdb687e341c434ab",
+    "UPSTREAM-SKILL.md": "b188612767ec2e5316250117dd47d329f793cd4fca107ecbdb48fd46779d8e22"
+  }
+}

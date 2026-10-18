@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-subdomain-enumeration-with-subfin-e18e21bb",
+  "upstream_name": "performing-subdomain-enumeration-with-subfinder",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-subdomain-enumeration-with-subfinder/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-subdomain-enumeration-with-subfinder/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-subdomain-enumeration-with-subfinder/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7f6a6b3aaaa634c68ceb139eff69c9d114cba79a35e01e58b362a557e90c0fde",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "83243a0b3331d476ba4d802f0e66d4501f483fb709ec86c3d1531a4263ade152",
+    "references/standards.md": "5ee9266b69ba32c60862289772a1c3933bcfba929263e3117f37af5ff0e27c77",
+    "references/workflows.md": "20b2f151c3e63055066dd0d7da841d696ca9cc2f644a1ff185c7e36016813899",
+    "scripts/agent.py": "80887cc85a74a367f48fa4a3481bd652d1f052838ceb2a913328a74ca6b7d532",
+    "scripts/process.py": "624d0c16177de9ca7671c2738f75f9f818ece1d2d8db93c1965a5fce7c1cf93a",
+    "SKILL.md": "e61ad7e1415480a1782f9e8934e538b659c7a8f00a82aebb9c0527af9d9f024a",
+    "UPSTREAM-SKILL.md": "527927896d91d4e1b06fb37d5f478ffeaf92d6fbaa0b9c0d899c884f4e761f5e"
+  }
+}

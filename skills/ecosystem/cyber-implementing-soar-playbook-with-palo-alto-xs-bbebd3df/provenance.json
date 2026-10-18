@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-soar-playbook-with-palo-alto-xs-bbebd3df",
+  "upstream_name": "implementing-soar-playbook-with-palo-alto-xsoar",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-soar-playbook-with-palo-alto-xsoar/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-soar-playbook-with-palo-alto-xsoar/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-soar-playbook-with-palo-alto-xsoar/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "df707e07ad769274efb21b4415fdfd21099434769bd103cec2d10bd654c35c9d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f7f3eda183d685e539dc0468065346ce6e52f20ce4a343032d72b8440a5d0cc9",
+    "references/standards.md": "bc159ebc944f11d6d1122b43baadeeff1a69a886e7d7b8e3111c986f81185fe6",
+    "references/workflows.md": "6cbcd848291e679ffd7256fdd1d78fffdee4583b78424d456b82e5fb10a7bfd2",
+    "scripts/agent.py": "799cf8eaf7743ee097bb1c0080eb4ac4d979dbe0c977ad8aeffb643f66bd0417",
+    "scripts/process.py": "1ed71ad5053a777365dd477e138a6db5a1a3660ae3d5feef7f9739faba538722",
+    "SKILL.md": "d639983715e90f0ae1607e11639daf0353e69a8ff83b1838d7e8729b1d13d636",
+    "UPSTREAM-SKILL.md": "450ca9e78a78dc61246806707401bb8a6b047a78d31d274aef996d522e2392f1"
+  }
+}

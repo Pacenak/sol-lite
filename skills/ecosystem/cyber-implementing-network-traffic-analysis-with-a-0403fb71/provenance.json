@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-traffic-analysis-with-a-0403fb71",
+  "upstream_name": "implementing-network-traffic-analysis-with-arkime",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-traffic-analysis-with-arkime/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-traffic-analysis-with-arkime/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-traffic-analysis-with-arkime/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2bb2d8108a85f22c542cb9c490a013a0f49b571bd9848039333b49eca207077e",
+    "scripts/agent.py": "c8289ac3957766c55189a49598cadc838570434779044a5ed990fd8051a82d99",
+    "SKILL.md": "120e87d0002940c5834f43c6f49b33dda13fa146297fbe222b89c1260f0ab9ee",
+    "UPSTREAM-SKILL.md": "2117787cf61458430176225bf51cbb616d446ba378107fd36022b57dc84e8a07"
+  }
+}

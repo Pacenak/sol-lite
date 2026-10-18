@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-azure-service-principal-abuse-821c8b78",
+  "upstream_name": "detecting-azure-service-principal-abuse",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-azure-service-principal-abuse/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-azure-service-principal-abuse/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-azure-service-principal-abuse/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "308f7ab5b2db90c33b0bfcd83aef8005a09a2ce12049a0d66441198419342943",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1ab4a441ad4a74d6450dc262c0043aa90c8d0521ae50c5de053f34b660a38820",
+    "references/standards.md": "a4417ac93d89fa9556f6a8e16e15ab72dcf38082ab25870bacff57d6fa4ff31b",
+    "references/workflows.md": "ac7575faee0ac6f66191f9385f22497717715b0e488678fecb3c52665f1f47f8",
+    "scripts/agent.py": "c024b3bfff8309f3e59fb79a1c99a6079a6d05c6dc35d3ba615cd7af9f242f9d",
+    "scripts/process.py": "848183dc7f499ba299a8627818d14924be6b562cfb4971798fb54b5b27484316",
+    "SKILL.md": "eb26bce08efa31c78eb4a4605c70d197fa37f80e112d952f7b91971a09ea792f",
+    "UPSTREAM-SKILL.md": "f337e4d4ba4d53871692b65e05a5435a604da1e14f60a51104217d9349088638"
+  }
+}

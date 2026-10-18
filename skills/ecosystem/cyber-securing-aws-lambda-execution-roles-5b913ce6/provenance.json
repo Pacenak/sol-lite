@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-aws-lambda-execution-roles-5b913ce6",
+  "upstream_name": "securing-aws-lambda-execution-roles",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-aws-lambda-execution-roles/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-aws-lambda-execution-roles/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-aws-lambda-execution-roles/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7c0325f9becddd02bebaab3616cbe13640a5b904e79ae1fd43dceb7989e13034",
+    "scripts/agent.py": "f439fedcb4f24e597184a033901a27de362b0789bea673c10a468ec3d8a3f175",
+    "SKILL.md": "79151b4b4d6ea2db0f554f5aa9ead836cb8615d42640a4f3c210fa1543ede1bc",
+    "UPSTREAM-SKILL.md": "5a2e043ad1384ae0115da880d0ed1ba8b025ed47ccf26a9d425a1637dee09159"
+  }
+}

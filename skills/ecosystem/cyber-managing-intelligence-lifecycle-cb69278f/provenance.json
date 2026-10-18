@@ -1,0 +1,26 @@
+{
+  "name": "cyber-managing-intelligence-lifecycle-cb69278f",
+  "upstream_name": "managing-intelligence-lifecycle",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/managing-intelligence-lifecycle/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/managing-intelligence-lifecycle/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/managing-intelligence-lifecycle/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7476fee7977f9f3fe5f2c79941c4aa89972085550c6741fddb390a0cd41cdfdc",
+    "scripts/agent.py": "0148781b3715eaf47a0caaa610a6a8cc56bb109d46f875f4816bfb205852d9d1",
+    "SKILL.md": "91e197cf22cb9a8a7865260a29dff51ea4c7bb3142f1f6e014755312ab446394",
+    "UPSTREAM-SKILL.md": "ea35b92c49d47f44fab5db9564455f5321b462caf379ba2d8ab358d6ca3de53d"
+  }
+}

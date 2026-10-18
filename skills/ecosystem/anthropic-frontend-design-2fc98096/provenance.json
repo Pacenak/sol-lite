@@ -1,0 +1,20 @@
+{
+  "name": "anthropic-frontend-design-2fc98096",
+  "upstream_name": "frontend-design",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/frontend-design/SKILL.md",
+  "license_files": [
+    "skills/frontend-design/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [],
+  "files": {
+    "_licenses/skills/frontend-design/LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "LICENSE.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "SKILL.md": "2e5c1b9973411c035d5a9ec74db4fab4e411b6f99e44cb555eb8035eae87512c",
+    "UPSTREAM-SKILL.md": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+  }
+}

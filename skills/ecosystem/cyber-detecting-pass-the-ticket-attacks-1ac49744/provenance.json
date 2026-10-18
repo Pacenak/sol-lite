@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-pass-the-ticket-attacks-1ac49744",
+  "upstream_name": "detecting-pass-the-ticket-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-pass-the-ticket-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-pass-the-ticket-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-pass-the-ticket-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2263e56e062fbcbf4e69fbe7c56a067c929d7b777257f8ede5f435a0d573b9b6",
+    "scripts/agent.py": "4392a12ba2779d227e7f9f94a1d82a4740a14a0434c994366ad5fbf7ea37c301",
+    "SKILL.md": "ee4a90431b2265ace84230450138738547296fecff462de3a6b7ce28db307b94",
+    "UPSTREAM-SKILL.md": "d1e2a25878902e2251710791df2c1cf4e2a7ab3179e37e3a3f7e73af68dc28a4"
+  }
+}

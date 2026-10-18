@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-azure-lateral-movement-472f6df3",
+  "upstream_name": "detecting-azure-lateral-movement",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-azure-lateral-movement/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-azure-lateral-movement/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-azure-lateral-movement/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0e1165749d4653257d7ac04e6dae50c38953f71b2b4f0faf76db2f3799ddd6c9",
+    "scripts/agent.py": "6a086eee47fdd93d8bcb07a5ce11e332b62414b910954c75cbaf89c957da9383",
+    "SKILL.md": "774c7b17b57720033682d176b8ae89a418ff97461c01dcaeb3008397e56879b4",
+    "UPSTREAM-SKILL.md": "5c63cabc3852a064799de6e662b70e93d46fbbcdb22bc6de611922d5c3745436"
+  }
+}

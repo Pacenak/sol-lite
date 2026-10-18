@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-lateral-movement-with-wmiexec-be826273",
+  "upstream_name": "performing-lateral-movement-with-wmiexec",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-lateral-movement-with-wmiexec/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-lateral-movement-with-wmiexec/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-lateral-movement-with-wmiexec/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "23234e079ad31e5421f0326f16ede682c89c283fc724630d31f57322c9438084",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c65c4ebbd453d1321ea4369889448d56649d73bfe29f9926da8efc5477ce72c9",
+    "references/standards.md": "d7188dd2147af458b04ec87911c60829dfbbdc60270157edf142b2d4dc6e3a86",
+    "references/workflows.md": "929b9f08a64f6de0610a6fc978ce75b4efbfe4870dff1bdda9c9aa6b1c6408db",
+    "scripts/agent.py": "7a7274c4dd474f6b0895f4aa7cf17975fb9f728ce3917b695aba355114304835",
+    "scripts/process.py": "be784de1eecd2566acec98da05994e01370bac0a8c0b77df0b34c2032a0adf7a",
+    "SKILL.md": "4ca676fd0b58d901451a6df723c19ee89295e67e7c5a579211c93d6f143c871c",
+    "UPSTREAM-SKILL.md": "99551d586c17cf0385b47f26a3b1b696b44586c45c8217f12000b8e9a6a54063"
+  }
+}

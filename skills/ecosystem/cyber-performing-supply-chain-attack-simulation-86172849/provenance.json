@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-supply-chain-attack-simulation-86172849",
+  "upstream_name": "performing-supply-chain-attack-simulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-supply-chain-attack-simulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-supply-chain-attack-simulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-supply-chain-attack-simulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bff1249748b08a62423d64d469b7ebd1b8cbd0c2486eb6e60fc84e6875e28ef3",
+    "scripts/agent.py": "edb200f6bfb846877516c1adeea6bfb13746f091c118bb574a36c2d1b037ee29",
+    "SKILL.md": "186683b3e6befd88309c3d2c8afd029d74dae2b8a383b76bd5972f2d0a474aa0",
+    "UPSTREAM-SKILL.md": "7bca4f10e60f9bf0002c10e4a9d946ca01e2b6832cf9b9cda6aacad73c217d72"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-zero-trust-for-saas-application-f35fbfb0",
+  "upstream_name": "implementing-zero-trust-for-saas-applications",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-for-saas-applications/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-for-saas-applications/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-for-saas-applications/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2426cdb737b8b9ce468a6fb2c3269d907c0704142a5d6406f8173ff51866b412",
+    "scripts/agent.py": "3ca398dd0a5e8ac5e5d1665ce7f2e0926e11eda0fe66f668f85225762321aabd",
+    "SKILL.md": "27fd81ae6af9b684d55d1c58a6becb6ad44dfe4f2918341162746db4dfb69960",
+    "UPSTREAM-SKILL.md": "51cf4ac512aaad3f415eb1b04083d2f033d0cd30f7bd1e20ab8c235b155ce33c"
+  }
+}

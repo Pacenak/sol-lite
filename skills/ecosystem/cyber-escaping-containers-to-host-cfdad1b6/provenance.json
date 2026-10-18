@@ -1,0 +1,27 @@
+{
+  "name": "cyber-escaping-containers-to-host-cfdad1b6",
+  "upstream_name": "escaping-containers-to-host",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/escaping-containers-to-host/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/escaping-containers-to-host/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/escaping-containers-to-host/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e10befc3bc66eee353bb50aeef53d64f98d2343f50e7e6b585aeb2e7d4eeed77",
+    "references/standards.md": "f05281ce1f04b806997c82cbeb1fd78dbb12e949e9f4ca898419495f12f687bc",
+    "scripts/agent.py": "8a05f3945deacf91635856054978080e859f7b92bd154cbb8a8618266c88964e",
+    "SKILL.md": "d6244687eed451a2ac361902c88f8bbe43aabb64d0b831da62c1a8a3a5f8bb53",
+    "UPSTREAM-SKILL.md": "a19ce2a1725033274a5d7cd3defa2d8f0ac1ba706c1968720debef073c50ff62"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "kdense-molecular-dynamics-1622c976",
+  "upstream_name": "molecular-dynamics",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/molecular-dynamics/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/mdanalysis_analysis.md": "cdeb94230969b89a3e046de3edf964469ef5b23c695c8aed58045876fabbcccf",
+    "references/system_preparation.md": "4fd12453719685cfc406544fb2bbd573225019a407403ad250f90ca37e56e615",
+    "SKILL.md": "3506dace3363b58685558973c0514f1d613e189431843fb891e53807086adc42",
+    "UPSTREAM-SKILL.md": "1efb31165ec1477b37c31394ba04b5fb280d44db8907afdf2a956e48487f1136"
+  }
+}

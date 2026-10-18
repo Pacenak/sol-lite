@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hardening-linux-endpoint-with-cis-benchmark-c80240e8",
+  "upstream_name": "hardening-linux-endpoint-with-cis-benchmark",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hardening-linux-endpoint-with-cis-benchmark/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hardening-linux-endpoint-with-cis-benchmark/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hardening-linux-endpoint-with-cis-benchmark/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1bf47026b23dac3e36316db78719f91f68795bd15de1faa99c42aec259e2c92a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "041e030e1213ee32095b3dd40a837845f548414728f3386b51f26131b02e669c",
+    "references/standards.md": "54c5b66e72f70ab6e0548b4df85c67b0a6450e887eef338cd5ad132c3e3095bc",
+    "references/workflows.md": "12582b64b195e6b61bfbe379e2815494b35f211af7fced3680c7678318279efe",
+    "scripts/agent.py": "a1e6c1bde48ca0c1a22eda690535b2ce5b8ac20bf902f165dde7d36063a31ba4",
+    "scripts/process.py": "0828b3366952398dcd52e2ef9710a9ef0bf0039a75458a0d0b53eebe921cbd01",
+    "SKILL.md": "b21f806cee8cd95b73aeb3334b314320c9c4462f7a32694d4d9bb4357e0e7541",
+    "UPSTREAM-SKILL.md": "e10e1c01357938a9b29d34f89878bdfa21df195cd7962be51b2b6f07b7dca00e"
+  }
+}

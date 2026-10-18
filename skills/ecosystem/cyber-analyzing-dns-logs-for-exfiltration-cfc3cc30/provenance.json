@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-dns-logs-for-exfiltration-cfc3cc30",
+  "upstream_name": "analyzing-dns-logs-for-exfiltration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-dns-logs-for-exfiltration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-dns-logs-for-exfiltration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-dns-logs-for-exfiltration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e2b7e03b840bfca51041eccf89a2472a65926420ca959eff3cc09f24cec11d00",
+    "scripts/agent.py": "7527d8c4a14cf3e532ebde0f9e315c6922b6998ee62dcdbd416b268e7f80f8ac",
+    "SKILL.md": "33328ec9011066ae9b4cd9ef355ea47b4e6fe86d8b7b1d2bf56c9eed208ea725",
+    "UPSTREAM-SKILL.md": "f09f70a215a88418c7a46b44c91160107395e1bc2f416f26516e0f4f7ae040b0"
+  }
+}

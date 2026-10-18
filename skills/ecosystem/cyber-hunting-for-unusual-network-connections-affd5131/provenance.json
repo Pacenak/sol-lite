@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-unusual-network-connections-affd5131",
+  "upstream_name": "hunting-for-unusual-network-connections",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-unusual-network-connections/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-unusual-network-connections/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-unusual-network-connections/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b72b8d4b55246928ef524c92443874ac338ebc73fa037617c582a8887ab19895",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8292ce0627678d131d41662e0b5300235ca79e94eef92170eadcbd311e6fa160",
+    "references/standards.md": "d270832003a9224be34866b7c5a7ce03bb328cb535fcd5ce59c107277d42bba3",
+    "references/workflows.md": "bdfcc034bbc25f6f95ac6bef432e6cf0074ae0cbe5f6a445e7f49246ddc7acfe",
+    "scripts/agent.py": "6ca6d5aa94ebe4eefae4cfcd4bd60d71caf0b8e40b9f5869206f1cdf3a72d2fd",
+    "scripts/process.py": "8666c9d87964ea20d4010561d9f21e1e5288296df1f044fc8da324aa7e9d47ec",
+    "SKILL.md": "84ccd8a730b07cfd524314d2c39487ee1dc7f51854c5d41a12d8b9faf625fd09",
+    "UPSTREAM-SKILL.md": "383c05440c6715a2b1a925811e4f08ed23c95643c3b6cc56135336f7e6bd93af"
+  }
+}

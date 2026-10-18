@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-scim-provisioning-with-okta-bf309600",
+  "upstream_name": "implementing-scim-provisioning-with-okta",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-scim-provisioning-with-okta/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-scim-provisioning-with-okta/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-scim-provisioning-with-okta/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a6375c9c34fb93a91d776ce1775d502f47c169ad75087fa556748eefc2999e89",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "12e70734367890f1b05607d9bda31aeb5b17c9b4de748980bf1c689a3ec61b74",
+    "references/standards.md": "cd1682d4ecdd0d6d577f1fa4d0c886f125170e4f3960addf96988952f5da79d1",
+    "references/workflows.md": "492f3577eef82e9063a4805821a412c5df84720aa1b9dd4cc91f95d5857ab651",
+    "scripts/agent.py": "dcf670171130a4c0114fca54621405fe7d5d3fef5c5100ac59e260268f36cc42",
+    "scripts/process.py": "602b114d1c53e07b3b0d891a244df84431b27f594bfe3ee36d24d1f7d45ad014",
+    "SKILL.md": "393f53277e8674ee36eaa0bec7f7e56f355676c07223324a44d20bd1b16320c7",
+    "UPSTREAM-SKILL.md": "6d052866d8e748db0bcac7722efa2a521eb81e2e745a05d9980723d0f74e1ac9"
+  }
+}

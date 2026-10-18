@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-data-and-model-poisoning-3b34428c",
+  "upstream_name": "detecting-data-and-model-poisoning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-data-and-model-poisoning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-data-and-model-poisoning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-data-and-model-poisoning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "02d458c4d1888541b5f1974f18b2ff59e1d884c02cbcaeb4a7f6a46d26fc63c1",
+    "references/standards.md": "18f37445e90d1f11b57e29e6fa06ab165353126d2ac21b78b1a4aec14ac164fc",
+    "scripts/agent.py": "cb2d2ed643bd44e94f499a66e982cfc7c63f6592f6bc6bef0a69616003da91e5",
+    "SKILL.md": "e19c5bc5880e96d77aa3bdc9a9c000325cbdba169552c9ebc78649c71db6ce90",
+    "UPSTREAM-SKILL.md": "be0338898f0fdcc1567905dece3b9479090463d18859de732677163c15f538d2"
+  }
+}

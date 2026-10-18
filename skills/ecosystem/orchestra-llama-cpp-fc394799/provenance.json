@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-llama-cpp-fc394799",
+  "upstream_name": "llama-cpp",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "12-inference-serving/llama-cpp/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/optimization.md": "4e89811c0827f5eb9deb9fc609cd441eb197fb0fa85e79dd8c1f272b14a669fd",
+    "references/quantization.md": "c7686a86893d4e0e052cc733b62ea1bc0e5dae8f1b174436cc293a46a486893d",
+    "references/server.md": "181a84ae177f305205cc30d05305fc4237aa255f3fff29299362cb1e0cb6db64",
+    "SKILL.md": "134877ddd1405d95ce0fb5280e410b7b6d73a64306d5818073a6b171b042befc",
+    "UPSTREAM-SKILL.md": "d74caa45483f5b3c6bd6267e39b444627989ff90fdb84b6c2e7c3da4ddf143ef"
+  }
+}

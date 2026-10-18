@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-log-source-onboarding-in-siem-5788a8b4",
+  "upstream_name": "performing-log-source-onboarding-in-siem",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-log-source-onboarding-in-siem/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-log-source-onboarding-in-siem/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-log-source-onboarding-in-siem/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "001117d50d0dd9f3fb05f9b8dc99c185b2e5ddb21e232762f78b877cfa64a40c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "81d7f954ddb88ccbab7002f306a03e19c6b8491c3b5126ce8569805532fd317f",
+    "references/standards.md": "c00d5968c1349aabc13c1dac73cf850c2ea9a7819cad9186febecb888abc3404",
+    "references/workflows.md": "57c8e38aceddf2bfaaca6e313dc12e5568abe864ad48908deeefd31c6e723639",
+    "scripts/agent.py": "7d6e2f19401698977175b931725f1689f23b1dad29715cc0d6ac2e0523635ac6",
+    "scripts/process.py": "91a7cdba867c193d253cd7bdc1c27177fe4d2239878fea3473049f53b2e09675",
+    "SKILL.md": "65219674a25b0f69c5199c6ad986ce14269a66fff2f9fbef9dcb27b570d33a7c",
+    "UPSTREAM-SKILL.md": "72a5f66b3824857fb8896a87c96c868c2f17e0484a7e2db1e36f1dfdaae6a640"
+  }
+}

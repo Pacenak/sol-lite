@@ -1,0 +1,19 @@
+{
+  "name": "orchestra-brainstorming-research-ideas-a92087f7",
+  "upstream_name": "brainstorming-research-ideas",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "21-research-ideation/brainstorming-research-ideas/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "SKILL.md": "a4c0fda4e79b8403626bb07ed27d8c275cff676fdc6e441dffd70a12a228b6e3",
+    "UPSTREAM-SKILL.md": "8422a1a6dc0a88d05f02b9fbe0f8c2ae06a77024856d18125efa13d19d855d46"
+  }
+}

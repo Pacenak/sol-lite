@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-linux-kernel-rootkits-9996a8c3",
+  "upstream_name": "analyzing-linux-kernel-rootkits",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-linux-kernel-rootkits/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-linux-kernel-rootkits/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-linux-kernel-rootkits/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d233a7260a5199d5c1ab171defc9be9af612bc9a65605ef98fe4d8b6c148cd6b",
+    "scripts/agent.py": "86c05c0b684f124ade63323cb00cc06f38417dc5fd4d6b07dd48553f231d9584",
+    "SKILL.md": "cc885d30521d17b42d2967500c649e5ab09fd38bc5fe720b32944c221465a7de",
+    "UPSTREAM-SKILL.md": "8f13fb407ddc2fda6b39b255b1132db0e4e7be8ce62074c30043cf9f6d5320ab"
+  }
+}

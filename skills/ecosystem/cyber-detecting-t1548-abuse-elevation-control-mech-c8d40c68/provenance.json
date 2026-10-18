@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-t1548-abuse-elevation-control-mech-c8d40c68",
+  "upstream_name": "detecting-t1548-abuse-elevation-control-mechanism",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-t1548-abuse-elevation-control-mechanism/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-t1548-abuse-elevation-control-mechanism/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-t1548-abuse-elevation-control-mechanism/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c0be535a822523626747ff6f937e60cd285de2fd182fd97470540c691a4372f9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "06e731d4ea76f8d59f259eab6660fcdf48c32b9e180226f0e27226d42dda85bb",
+    "references/standards.md": "3d6b1305c4aac26111ef5d766d02eec550629bcb6b9bbc7b11bb26b60d30db66",
+    "references/workflows.md": "dfd80d580e3189919912cf1dd059a6e7f9540fa8a6f6c86853239dd264ee528a",
+    "scripts/agent.py": "f3fb9393d8a5d74e8d844830082a3ac6de25fc4cd15cfa6c19768a22253ce676",
+    "scripts/process.py": "2c2dd3517ce1e6ee96ff06be854461cb5a1dae0f028f78f3377cfaee15adb5c1",
+    "SKILL.md": "242b268b1a1a5f12c816c68a7263dbdaedf9f779dd29cba1f0fd9181cd549ef4",
+    "UPSTREAM-SKILL.md": "4c65fc6c7964971488b0f53870ccc6e63b61918c1c9fcb8adcf5c582d6fce08f"
+  }
+}

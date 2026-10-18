@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-windows-event-logs-in-splunk-3c384bfc",
+  "upstream_name": "analyzing-windows-event-logs-in-splunk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-windows-event-logs-in-splunk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-windows-event-logs-in-splunk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-windows-event-logs-in-splunk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e3badbedaca72038374e3987f0aef87a3c834a55db58e904f913571bf7d52b9e",
+    "scripts/agent.py": "454c252ac76cb9d24004a225ccbe989012a87c6bf3bd1611eaf12aea86fb3343",
+    "SKILL.md": "7ce62da23e1ab135f12bd0296e4d25ea3005a97335b459613f51bbe5d5f3c905",
+    "UPSTREAM-SKILL.md": "2463b8a85d38725c9d5cfb78c45450dc9a95b69568c8916564bb69a471ec9210"
+  }
+}

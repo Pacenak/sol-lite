@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-cors-misconfiguration-abcb183d",
+  "upstream_name": "testing-cors-misconfiguration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-cors-misconfiguration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-cors-misconfiguration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-cors-misconfiguration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6516ae8ccc787878cf8a6c8962ae0eefb084df2e1f0d9f1b04dbb73bf3523969",
+    "scripts/agent.py": "478a85c04e0c87aea5c42099ca551b1fb4e166349dc339870ae4753712845eb9",
+    "SKILL.md": "744af1af7c1e6ccdf2714fab4b8bc96a36ce931cc3200f73ce912e6e998f424d",
+    "UPSTREAM-SKILL.md": "f00f0bdea8ad16da64cf736c6925458bc1c32d84aa8bc8cd0ad69572fddff8bd"
+  }
+}

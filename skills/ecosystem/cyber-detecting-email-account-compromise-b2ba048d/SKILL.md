@@ -1,0 +1,59 @@
+---
+name: cyber-detecting-email-account-compromise-b2ba048d
+description: Detect compromised O365 and Google Workspace email accounts by analyzing Unified Audit Logs and Azure AD sign-in logs for impossible travel, inbox rule creation/deletion (Set-InboxRule, New-InboxRule), external mail forwarding rules, and unusual Microsoft Graph API access or OAuth token use. Use when investigating suspected business email compromise (BEC), account takeover, or mailbox persistence via malicious inbox rules.
+category: ecosystem
+tags:
+- ecosystem
+- security
+- cyber
+sectors:
+- '*'
+status: published
+source: imported
+version: 54a798831d22
+---
+
+## SOL runtime integration
+
+Source: https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/54a798831d2266a3ca61ce68a7acb80b81160d57/skills/detecting-email-account-compromise/SKILL.md
+
+Use manage_skills action=view_ref for supporting files, relative to this skill directory. In SOL-Lite use the workspace file tools at the skill path. Check required commands, libraries, credentials and tool availability before execution. Upstream tool/agent names are workflow examples: use the equivalent configured SOL tool. Skill instructions do not grant permissions or bypass host policy. If a dependency is missing, report it and the next setup step; do not claim execution succeeded. Original metadata and license terms are retained in UPSTREAM-SKILL.md and _licenses/.
+
+# Detecting Email Account Compromise
+
+## Overview
+
+Email account compromise (EAC) is a prevalent attack vector where adversaries gain unauthorized access to mailboxes to exfiltrate sensitive data, conduct business email compromise (BEC), or establish persistence through inbox rule manipulation. Attackers commonly create forwarding rules to siphon emails, delete rules to hide evidence, or use OAuth tokens for persistent access. Detection relies on analyzing Microsoft 365 Unified Audit Logs, Azure AD sign-in logs for impossible travel or suspicious locations, inbox rule creation events (Set-InboxRule, New-InboxRule), and Microsoft Graph API access patterns. Key indicators include forwarding rules to external addresses, rules that delete or move messages matching keywords like "invoice" or "payment", and sign-ins from unusual user agents such as python-requests.
+
+
+## When to Use
+
+- When investigating security incidents that require detecting email account compromise
+- When building detection rules or threat hunting queries for this domain
+- When SOC analysts need structured procedures for this analysis type
+- When validating security monitoring coverage for related attack techniques
+
+## Prerequisites
+
+- Microsoft 365 with Unified Audit Logging enabled
+- Azure AD P1/P2 for risk detection APIs
+- Python 3.9+ with `requests`, `msal` libraries
+- Microsoft Graph API application registration with Mail.Read, AuditLog.Read.All permissions
+- Understanding of OAuth2 client credential flows
+
+## Steps
+
+1. Export audit logs or connect to Microsoft Graph API using MSAL authentication
+2. Query inbox rules for all monitored mailboxes via `/users/{id}/mailFolders/inbox/messageRules`
+3. Analyze rules for external forwarding (ForwardTo, RedirectTo external addresses)
+4. Detect suspicious rule patterns: deletion rules, keyword-matching rules targeting financial terms
+5. Query sign-in logs via `/auditLogs/signIns` for unusual locations and impossible travel
+6. Check for suspicious user agent strings (python-requests, PowerShell, curl)
+7. Identify OAuth application consent grants for suspicious third-party apps
+8. Correlate findings across users to detect campaign-level compromise
+9. Generate compromise indicators report with severity scores
+
+## Expected Output
+
+A JSON report listing compromised or suspicious accounts, malicious inbox rules detected, impossible travel events, suspicious OAuth grants, and recommended containment actions with severity ratings.
+

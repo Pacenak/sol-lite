@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-infrastructure-as-code-security-3464bc31",
+  "upstream_name": "implementing-infrastructure-as-code-security-scanning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-infrastructure-as-code-security-scanning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-infrastructure-as-code-security-scanning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-infrastructure-as-code-security-scanning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0216569b5f47020f71851c0d460489badbd8666cc49ef854f06c049936446378",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8ddc7bd94f6b3852e43d337aa7b611f45f9b839d35e5ab23a7297db66c4b48f8",
+    "references/standards.md": "17729cb8e8025f5c237d77c2dc8a27fa9b93a048813b3dcab82b67d9cd105cbc",
+    "references/workflows.md": "0b82117240d616fa80624a2918a838d88e65c2737d214ad300dd36817bf776c4",
+    "scripts/agent.py": "ba6ed055f33a62376ae2b238247b0e549213ff4a654823258accdde510441732",
+    "scripts/process.py": "1906994b7450840e7def29b2df24303f98c5370214d8e2fc43d97e1e29804d8b",
+    "SKILL.md": "c9b98fa83e179a61da6df5b4af9b6942989d670393910d554a9762e812902cc2",
+    "UPSTREAM-SKILL.md": "c2183c2a92022dea92582e2aa66a2537bb3e1bb5500434007289d35a73bcc71a"
+  }
+}

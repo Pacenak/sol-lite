@@ -1,0 +1,27 @@
+{
+  "name": "cyber-managing-third-party-vendor-risk-3cf7b16e",
+  "upstream_name": "managing-third-party-vendor-risk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/managing-third-party-vendor-risk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/managing-third-party-vendor-risk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/managing-third-party-vendor-risk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "48e1fc5ee6eacc6d8b92c1ae3490ea18a9c33fabc6fc8124e227d51c22ea26a9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "2e3aacad9376eb42bcd1714d95f4445d33c1c4f6e96a90f909b88344d8018cfb",
+    "scripts/process.py": "31dba011998ab7fb05e91ac3d2b15d5fbd9e6d3fd2aeb64763164a7a81a232ec",
+    "SKILL.md": "6b5dae23e3ef42294950f9d88bb5a98885cf4091bbc20755f60c2ea11d5bbf8a",
+    "UPSTREAM-SKILL.md": "140f002e300e75f94277f8a402e252773ff39125a6dc81fc4417dde91caf361e"
+  }
+}

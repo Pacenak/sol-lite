@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-faiss-fc64ac62",
+  "upstream_name": "faiss",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "15-rag/faiss/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/index_types.md": "aa6cb4267ad3a8bcc1d245e77c7312ced189d21b67b3d590d2e93b37e3ef3faf",
+    "SKILL.md": "51cd4aa21df2a99d5b8d372394fd7fe6a1dc0af61c8ce76ace8ac7405af3fe79",
+    "UPSTREAM-SKILL.md": "79a494b9212c73810d53527800c69f80acd6aa1907fca8c614c69583cac76e89"
+  }
+}

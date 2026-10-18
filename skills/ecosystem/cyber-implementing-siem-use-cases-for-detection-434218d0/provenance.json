@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-siem-use-cases-for-detection-434218d0",
+  "upstream_name": "implementing-siem-use-cases-for-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-siem-use-cases-for-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-siem-use-cases-for-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-siem-use-cases-for-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "61e85ee2037ded284d200cbe67466f38f693013eaae307f29523f671f902b41e",
+    "scripts/agent.py": "0a725f5b3eb73716e0df6b1b9c08a475ba6eaccec1f1f9540fc88b208176509f",
+    "SKILL.md": "408fc63e78df11f0595ca58f887a66c94b7345d5e417c261e53fa0b616c1ae45",
+    "UPSTREAM-SKILL.md": "02be5a584da3690a15d11ebcb21a4e4b41e927c7e1995569217d2d6cc5b422b7"
+  }
+}

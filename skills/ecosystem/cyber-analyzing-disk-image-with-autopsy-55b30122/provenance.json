@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-disk-image-with-autopsy-55b30122",
+  "upstream_name": "analyzing-disk-image-with-autopsy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-disk-image-with-autopsy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-disk-image-with-autopsy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-disk-image-with-autopsy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5bb41b905ba998947c065a6c65047f4e8ac6f9a886dbb52157873c459f7604b6",
+    "scripts/agent.py": "0e787c3fb8ed4a0baeaf7ca738e49c5857cfca71dcfd8bf46b2d786cbd1f09ad",
+    "SKILL.md": "fb46a6aacef1c04e4cd23361c130dc6fae671ea469bbeefd1a932b16c728a67f",
+    "UPSTREAM-SKILL.md": "809eda8936811eec0d24a143d9cc1eb333abd51b0fed453768dbbbec56477c7c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-credential-access-with-lazagne-5abaed7d",
+  "upstream_name": "performing-credential-access-with-lazagne",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-credential-access-with-lazagne/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-credential-access-with-lazagne/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-credential-access-with-lazagne/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c3ce10e168fd4c180437ddef9602291c88a725e3080d006e1407ab69b6208c34",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "864d7ab78c619212986501c9b84299ed2df42d902e6d8eb1e0cce7aa929ae913",
+    "references/standards.md": "e1f530ebd854bce779e9a7b9b527124f0109326fe05a9ee83c563078e7be3bae",
+    "references/workflows.md": "72efaefeeff033a09a547305cd6ec2af913c30f901dec34a307658f605858207",
+    "scripts/agent.py": "0fdae7aee9f8402f5f69eef8f2f3669344457d0b11826c4f8cff3ff397bc4bd6",
+    "scripts/process.py": "4a5be98882e02eaa86b97aee7d6b8b2965a2a8cc3e4f0538f03ae127e8da4ad0",
+    "SKILL.md": "fa7a17cb8356a758b11cd0308c72341049ef7485bc8253dedad2fac20d8586b3",
+    "UPSTREAM-SKILL.md": "d81dd05b6e62039f603c6522d9fcedf29c4583c5edd1c428e01be5b36ec55bbc"
+  }
+}

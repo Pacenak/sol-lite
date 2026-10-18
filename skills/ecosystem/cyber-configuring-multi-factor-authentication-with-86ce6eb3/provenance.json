@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-multi-factor-authentication-with-86ce6eb3",
+  "upstream_name": "configuring-multi-factor-authentication-with-duo",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-multi-factor-authentication-with-duo/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-multi-factor-authentication-with-duo/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-multi-factor-authentication-with-duo/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e2e0c7037cdf050449fe0a44b7c571f7e510666efb28ff45bc707f6b8a5ff1d0",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "356e7ee7268047337b581fddf07c6700ae80e1a0e96a5120b0ffff4aef8dbeb3",
+    "references/standards.md": "1d806472e5d39377f89e3105734b5dc4b2fe84122dcc970421e2c2bf2b47e689",
+    "references/workflows.md": "21daf749720de2e5edeb39c8991333c8ba85c84e57599bf64c8675a7293f4d74",
+    "scripts/agent.py": "419edf13bd4195603f6c0a079ed35beeb51da754e982a3279f5f1cad176d6d8d",
+    "scripts/process.py": "1504eb9a869dbcc31f6838747cfb28dd67a9b2a9f309be7201e66b479af348b9",
+    "SKILL.md": "58645770fe51a038113622a5018afc778dd01b323d5a907481926bda795215b3",
+    "UPSTREAM-SKILL.md": "c5921afc991d6d4882ec3b0f2dd85fd1bcda9e78271315e87d1547d3ab549dfa"
+  }
+}

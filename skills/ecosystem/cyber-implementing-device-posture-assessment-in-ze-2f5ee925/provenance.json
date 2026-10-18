@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-device-posture-assessment-in-ze-2f5ee925",
+  "upstream_name": "implementing-device-posture-assessment-in-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-device-posture-assessment-in-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-device-posture-assessment-in-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-device-posture-assessment-in-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a27afadee7b0aae3e5930e0f078bb12323bf65df3e910698d039fb5fde7f1313",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8726eb1038fab49cae6b20af870ae2dc4ee53fe53d0191289a54f6e5ad1ee95a",
+    "references/standards.md": "89b3101d0016c3deac95826dd0dbe7e595d22436b0af64b608b8d57d5b8166ed",
+    "references/workflows.md": "edafb81203e9ae9f5eb9f6592fd80e09f60823b8288c130ee59046aa6ea6b106",
+    "scripts/agent.py": "fe39ce89cc636f533d1768fbcbea0dff5a83ff9d8ae586d2765443cb53e88e3f",
+    "scripts/process.py": "0cf556cb5dc79f4e53f709f502cf34bd89927ecaa95a5722960bb4b8537c6a8a",
+    "SKILL.md": "767001691165d62d98dcd2e80e0e9337f6eadab48eb2ba3bd5165c3e6e045e5d",
+    "UPSTREAM-SKILL.md": "9f3ac8e0327a707fb851f48e55d79357414627d7ee03975150f9bcafbbad9a34"
+  }
+}

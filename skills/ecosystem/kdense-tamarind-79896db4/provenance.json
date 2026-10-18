@@ -1,0 +1,23 @@
+{
+  "name": "kdense-tamarind-79896db4",
+  "upstream_name": "tamarind",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/tamarind/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/api_reference.md": "79006c624fdd027952bc97785e7190acd0ef7df6f3586f7a11a458def4e1b4cc",
+    "references/examples.md": "a539a62824b1d2960cdc86e730ec362c1025c3ea7169d8a74400d12d55953c87",
+    "references/tool_catalog.md": "6e624c5becaefa1feb528e0959a6422f4775dbeeb56f7af9249f5b0b17fd0511",
+    "references/workflows.md": "4b7c809e30f1e5c4bdd2645e8a1fb8f233f58520edeef3a6dd8b4fab53d16095",
+    "SKILL.md": "981b73ccbb3fed4b89b086b6969199776884582d48ea0bc19b43cb2902cc909b",
+    "UPSTREAM-SKILL.md": "aa9bb0aa10acefa52621acd9ba06604997ed2f3d20533359f47d4b24dfdc9494"
+  }
+}

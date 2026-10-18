@@ -31,6 +31,7 @@ tools:
   - repository_branches
   - repository_remotes
   # Skills / procedures
+  - skill_read
   - skill_discover
   - skill_install
   - procedure_load

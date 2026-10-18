@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-dark-web-monitoring-for-threats-fdfe62a0",
+  "upstream_name": "performing-dark-web-monitoring-for-threats",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-dark-web-monitoring-for-threats/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-dark-web-monitoring-for-threats/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-dark-web-monitoring-for-threats/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "93168091760668dd8fb33322b3c1124c4172bf5c5ddfbed828b976c376ec3782",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6606a5a0c9386d6a5533e63b391a807af06052a811d100a31a4fc973e399c9cc",
+    "references/standards.md": "af8e5e65960939aa864a9465cb52041203caeba8a094c08f8a7994ef81cf76d5",
+    "references/workflows.md": "ccc6b580e2db2174c42c9c5e18cd0ce0e3c35b774bfaaa5a2dbbfb885e1e9119",
+    "scripts/agent.py": "ee50738092471e5e84560b9318d1493fc506d88162f84eb768eacf6c978f3eaf",
+    "scripts/process.py": "476f1955d52b6f8a7eae579faafee39052cfbfe1fa89472d40701f4e3470279b",
+    "SKILL.md": "060520a70ca9b043f1b94827f19ba5b635bfbfbb1c8c599531076c68f3b726c6",
+    "UPSTREAM-SKILL.md": "09cda63a123b0943c73b62f84b00ac302ee1f18ff972040fc2b0fb0ca4435534"
+  }
+}

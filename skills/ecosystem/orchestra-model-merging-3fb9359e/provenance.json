@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-model-merging-3fb9359e",
+  "upstream_name": "model-merging",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "19-emerging-techniques/model-merging/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/coefficient-tuning.md": "4836dc682d0d09a0159ddd090d0091bf1455a9d07106da35be6f555a7c531d34",
+    "references/evaluation.md": "367ee2d0fb1832dc3eb32de0e7f2f658bf5ad5c3d0c66d43e1cb509b78df246d",
+    "references/examples.md": "b03af94b7e5b9b04c354e7128282f028732af7fa817daf4bc19d960c4edac42d",
+    "references/methods.md": "c5d3e7bd7fc3c0c262347c92881c7d6f7260cb13df0a0f9815c6087bccf3656f",
+    "SKILL.md": "ee9e64121c0a707789fe2beb74447be01a08707656ac0e02f0ceb2f6e11f0927",
+    "UPSTREAM-SKILL.md": "dfbcc6d6dfef57489ac69cb6f3a858783f16dff2ecfc72eb2fac168fd2ecc87d"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-ara-research-manager-b870cb9d",
+  "upstream_name": "ara-research-manager",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "22-agent-native-research-artifact/research-manager/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/event-taxonomy.md": "1a42390b186ba86d33b3917b785895051c63a15a419cfdf8e73fd4daf7275ee8",
+    "references/provenance-tags.md": "26107ccaa04044c85b3c911500ab240ffc949f468a39198c6ff5342b00382631",
+    "references/session-protocol.md": "7d43697d5861d8e0102cad713a86e169572c533a54519b88f570c19a48157b08",
+    "SKILL.md": "393104df83b48d13c623db64f721999ce5f92d025b69d6e22c7456c1a65d3624",
+    "UPSTREAM-SKILL.md": "f78da7627ac09a4be398ea4363fc7b8753b2dcb22bc961c5059395e33ef3ef2c"
+  }
+}

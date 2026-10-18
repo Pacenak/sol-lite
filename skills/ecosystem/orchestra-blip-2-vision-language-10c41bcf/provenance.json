@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-blip-2-vision-language-10c41bcf",
+  "upstream_name": "blip-2-vision-language",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/blip-2/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "30b3c97fb721ab11d8906e0dae54a8037665e15ec69c96fb2f772661a815a543",
+    "references/troubleshooting.md": "0f35f87010746047a721074adb40549a89d853c9b9a0dd9350edff31345d16d0",
+    "SKILL.md": "eab6fb2dac66d73255b1c6795f0f8df58d66324f001acafd0e0bddadeb3e98c2",
+    "UPSTREAM-SKILL.md": "38227abdcb742add1284ba117881e899c020b7ebb5c39b5202a97d60c3ad8d3e"
+  }
+}

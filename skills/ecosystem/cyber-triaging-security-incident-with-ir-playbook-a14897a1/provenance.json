@@ -1,0 +1,31 @@
+{
+  "name": "cyber-triaging-security-incident-with-ir-playbook-a14897a1",
+  "upstream_name": "triaging-security-incident-with-ir-playbook",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/triaging-security-incident-with-ir-playbook/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/triaging-security-incident-with-ir-playbook/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/triaging-security-incident-with-ir-playbook/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b0423fa7f6eadfaddc5c75de671aa0ffafb4562756ecf7c5c0ecb4531aaaf322",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f7f907a7ddaa3aea7d64ad862f53ead97cf5ef89d7b748cc0ca9d67c08754062",
+    "references/standards.md": "0e5b4243740434eb6ceae95c3aea9a1f9cdba7099b8352cafcbe7c5cc14d00d5",
+    "references/workflows.md": "9c11b659a9db90ac028032a7968c5ee3a7adc28d0b82b8080ac0b33734941288",
+    "scripts/agent.py": "678395724b843f35fcbb0cc0365252fbbf5965ed332ffe20f428dcb89c2f2db1",
+    "scripts/process.py": "3012308a94620f7959889515fcee3bdb410ba8b866bf2df216d08669dc46850b",
+    "SKILL.md": "e99412ddf39336f41c867e8c0045ffc531519d92269d8860678b126a95638367",
+    "UPSTREAM-SKILL.md": "c55843d0884176cae9613f121042e506af5c96785ba42bf71ff13f280f680b5f"
+  }
+}

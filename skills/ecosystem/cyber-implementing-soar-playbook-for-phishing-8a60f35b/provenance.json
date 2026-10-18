@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-soar-playbook-for-phishing-8a60f35b",
+  "upstream_name": "implementing-soar-playbook-for-phishing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-soar-playbook-for-phishing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-soar-playbook-for-phishing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-soar-playbook-for-phishing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "983b2504d8bc95fcc8c6c1bbcfa5da947b4e2115278a1d649624cd858b62c87a",
+    "scripts/agent.py": "505af70b903c252bd638f11ad5cbdc77dec21d032cc54b665b58730f0d543a7a",
+    "SKILL.md": "eb7a32a0022840bd65a1dbe22efff1f20616c0d66b237f771c433c7b5e89bd50",
+    "UPSTREAM-SKILL.md": "229e9b6c8a0b4b22936df0f3cbc2c99bf9dea3438372aea19cbd2eb8b6cce2ab"
+  }
+}

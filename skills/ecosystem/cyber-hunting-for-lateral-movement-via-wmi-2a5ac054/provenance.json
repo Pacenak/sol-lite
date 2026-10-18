@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-lateral-movement-via-wmi-2a5ac054",
+  "upstream_name": "hunting-for-lateral-movement-via-wmi",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-lateral-movement-via-wmi/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-lateral-movement-via-wmi/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-lateral-movement-via-wmi/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1b86e669c139f094fe6d18d054763c589a1af9219d5dfaffa4f014375cd038f2",
+    "scripts/agent.py": "920c33a25dfe78354e00c78b4284c41228ddd420dd41a10a44dfb2dac03f9569",
+    "SKILL.md": "3e7bee3fd90fd2397e21fa936ae040df0873c3387619b2c774f85246f206ff85",
+    "UPSTREAM-SKILL.md": "afb57eb7f4aad84a153331747603706288f129ab88ae5b3e5bf56491e0d57531"
+  }
+}

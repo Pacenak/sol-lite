@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-threat-landscape-with-misp-f6efe927",
+  "upstream_name": "analyzing-threat-landscape-with-misp",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-threat-landscape-with-misp/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-threat-landscape-with-misp/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-threat-landscape-with-misp/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a5a53f1c56355535302bd57889c083baf94389a8ab09d0eaa3057b9a6b2ca29a",
+    "scripts/agent.py": "a39b1b207a898551d0078e0e152de406db29fa4c240b356900ae62fb73774037",
+    "SKILL.md": "1604f9257bc498531a1f5acf92d78768ff5c5511901f96d3de1c5b7862c769fe",
+    "UPSTREAM-SKILL.md": "76e556b5cdd012652152c78eae349fcf4e366bd392500322ef19600788614994"
+  }
+}

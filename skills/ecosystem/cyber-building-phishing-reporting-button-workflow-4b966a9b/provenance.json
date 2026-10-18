@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-phishing-reporting-button-workflow-4b966a9b",
+  "upstream_name": "building-phishing-reporting-button-workflow",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-phishing-reporting-button-workflow/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-phishing-reporting-button-workflow/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-phishing-reporting-button-workflow/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "aef6420376efb1392d4942e2c6837f67e972f32b39fe0036ee119435eeb24645",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b563e4e874cd55fd23e2d0736707c52814d39e2162c461651cab4f0d69ff3e82",
+    "references/standards.md": "909b07e976d17c884d7ab0c3aef70667adc4a0babe6dc0f6ff4090dd84154a5a",
+    "references/workflows.md": "3c92f02df2f38fbd2c4f45c498d4ea27b2cf8ef5fa8a9536de8288f7e89f149c",
+    "scripts/agent.py": "0c27f9932263c6a89e7e0222b6bb2ed2ed6853a24678bfc92eec6c6c6f9c6cd7",
+    "scripts/process.py": "d4debce2fed19d07fd706d4e9643313cf2a19bbecf48e1025562eadb4c6fb313",
+    "SKILL.md": "fd6a208066b5740ac8170f419792115442d0d427698ac46e94809c903ac787cb",
+    "UPSTREAM-SKILL.md": "5962ffafb6265979111dce0d8623ec8fa015827c41bbfe43a4b4d3f57275b05a"
+  }
+}

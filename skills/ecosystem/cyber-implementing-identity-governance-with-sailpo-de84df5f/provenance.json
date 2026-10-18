@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-identity-governance-with-sailpo-de84df5f",
+  "upstream_name": "implementing-identity-governance-with-sailpoint",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-identity-governance-with-sailpoint/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-identity-governance-with-sailpoint/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-identity-governance-with-sailpoint/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ab1909fcefb5d5a74bda40ad59c3df7a43c55c7a19bd02115caf3e46e39e0760",
+    "scripts/agent.py": "8cef02765fcd296651e953a89d783e9198be0225be2de46d037da8eec6f0d84a",
+    "SKILL.md": "365208e8aa4b5d089f5e74e21969e4a51ccedbbd83490b58f30853f148039678",
+    "UPSTREAM-SKILL.md": "22ec14a4b5d75c975bb668964fd4185888136b65c846fe5292e9021fb853a78c"
+  }
+}

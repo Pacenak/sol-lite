@@ -1,4 +1,5 @@
 tools:
+  - skill_read
   - artifact_dependencies
   - artifact_create
   - artifact_render

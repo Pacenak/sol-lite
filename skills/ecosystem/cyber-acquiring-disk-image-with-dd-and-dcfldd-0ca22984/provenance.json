@@ -1,0 +1,26 @@
+{
+  "name": "cyber-acquiring-disk-image-with-dd-and-dcfldd-0ca22984",
+  "upstream_name": "acquiring-disk-image-with-dd-and-dcfldd",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/acquiring-disk-image-with-dd-and-dcfldd/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/acquiring-disk-image-with-dd-and-dcfldd/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/acquiring-disk-image-with-dd-and-dcfldd/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8ac33edc7d46564d1b69874099e17eb3cd9e85e4743bc880f25c4e621a8e8a7b",
+    "scripts/agent.py": "885613c1aa72f549911e88e2226854b0a3b3d765e0df849477c26ed63afb3d85",
+    "SKILL.md": "fe1200f46e08025dfbdc88bb9278730a589afcd3c3ad9c47650aa4d42adc250c",
+    "UPSTREAM-SKILL.md": "a297f5c609e2cbfdb55711fc3db064733abe2e4ae55ce11d3e0deca48bb5de25"
+  }
+}

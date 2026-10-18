@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-kubernetes-on-cloud-bce71986",
+  "upstream_name": "securing-kubernetes-on-cloud",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-kubernetes-on-cloud/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-kubernetes-on-cloud/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-kubernetes-on-cloud/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "39c93b106332f08a971358d33d594835d39d7520081c488c8219268578b7bdd5",
+    "scripts/agent.py": "f34a408029a8f123c44194e389f298689f3fce59c61abfe4f6763630246da9a9",
+    "SKILL.md": "84118496c9fba0b8918af17385dfca018e69b0cbe38627e8a1b9d6b8fabd3132",
+    "UPSTREAM-SKILL.md": "74cb4016144a34be23a67a09dacd884282e2bb5223368689be8cadb8750489e5"
+  }
+}

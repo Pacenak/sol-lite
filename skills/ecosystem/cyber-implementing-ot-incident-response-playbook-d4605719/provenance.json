@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ot-incident-response-playbook-d4605719",
+  "upstream_name": "implementing-ot-incident-response-playbook",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ot-incident-response-playbook/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ot-incident-response-playbook/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ot-incident-response-playbook/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "44aae82ef2dcdde691c92b9c7b577b9197828b0a9a416aa70cf595b4522a44df",
+    "scripts/agent.py": "cec45836b3620ae403ec7cb60a509e74f21893f99493c4f8349c8841159e7497",
+    "SKILL.md": "3a02106215467ed09d7c3ea5410c65f325218b3b19544ad40212f484b91772b4",
+    "UPSTREAM-SKILL.md": "78122aa5fdc5dc0096840f8b83299dd955da18afc077c4386077e20ccc70f3e9"
+  }
+}

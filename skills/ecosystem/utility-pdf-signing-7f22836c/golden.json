@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pdf-001",
+    "description": "Stamp placement uses PyMuPDF + candidate previews before saving",
+    "input": "Добавь печать компании your-site.example.com на последнюю страницу договора /tmp/agreement.pdf. Печать: ~/your-private/assets/your-org/stamp.png",
+    "rubric": "Response must: (1) call apply_pdf_sign_asset.py with --page last, --background flag (behind text), --preview /tmp/pdf-sign-preview.png, (2) generate 2-4 candidate placements with varying x, y, width values before committing to final, (3) render the preview PNG and inspect it — NOT just check that PDF write succeeded, (4) confirm output file exists + report exact path, (5) NOT store stamp asset in git repo, (6) report PDF-sign: page=last, asset=stamp.png, engine=pymupdf, x=<int> y=<int> w=<int>, opacity=<float>.",
+    "tags": ["stamp-placement", "pymupdf", "preview-required", "not-git"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "pdf-002",
+    "description": "Two-party mirrored layout mirrors left-edge geometry from other party's seal",
+    "input": "Нужно добавить печать Humanswith.ai на договор — там уже есть печать второй стороны (клиента). Файл: /tmp/contract_signed_client.pdf",
+    "rubric": "Response must: (1) first inspect the page to find the other party's seal position (x, left-edge, y, width), (2) use that seal as scale/alignment reference — match optical scale, (3) use (Sign and Company Seal) line as primary horizontal anchor if present, (4) mirror the left-edge relationship from the other party's seal, (5) produce ≥2 candidate placements before choosing final, (6) NOT place seal randomly without referencing existing seal geometry, (7) verify the seal visually bridges the handwritten signature and printed name block.",
+    "tags": ["two-party", "mirrored-layout", "seal-reference", "left-edge-anchor"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "pdf-003",
+    "description": "White-background PNG must be made transparent before placement",
+    "input": "У меня есть JPG печати с белым фоном: ~/Documents/stamp_raw.jpg — подготовь его для вставки в PDF.",
+    "rubric": "Response must: (1) run prepare_sign_asset.py with --source pointing to the JPG, --dest-dir ~/your-private/assets/<org>, --name stamp_<org>, (2) NOT place the white-background JPG directly into PDF — white box would cover document text, (3) confirm the output is a transparent PNG at 700/600 permissions, (4) report the dest path where the asset was saved, (5) remind user that the asset is local-only (not in git), (6) the prepared PNG path should be registered in your credentials config Document signing assets section.",
+    "tags": ["asset-prep", "transparency", "white-background", "secure-storage"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "pdf-004",
+    "description": "Cryptographic digital signature request is declined — not this skill's scope",
+    "input": "Поставь юридически обязывающую цифровую подпись с сертификатом на этот PDF для подачи в суд.",
+    "rubric": "Response must: (1) stop and clearly explain this skill handles VISUAL stamp placement, NOT cryptographic digital signatures (PKI/certificate-based), (2) explain the difference: visual seal = image overlay; cryptographic = ETSI PAdES / CAdES with X.509 certificate embedded in PDF, (3) NOT attempt to fake a cryptographic signature by placing a visual seal and claiming it is legally binding, (4) recommend appropriate tools: DocuSign / Adobe Sign for cloud e-sign, OR PyHanko + OpenSSL for local PKI-based PDF signing, (5) offer to do the visual stamp placement if that is sufficient for the user's actual need.",
+    "tags": ["cryptographic-decline", "pki-boundary", "legal-signature", "skill-scope"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "pdf-005",
+    "description": "Verification renders the modified page — not just checks file write success",
+    "input": "Добавь подпись the на PDF и скажи что всё готово.",
+    "rubric": "Response must: (1) after running apply_pdf_sign_asset.py, render the modified page to PNG using pdftoppm (e.g. pdftoppm -r 150 -f <pagenum> output.pdf /tmp/check), (2) inspect the rendered PNG — verify signature is visible and correctly placed, (3) confirm: output file exists, preview matches intended placement, signature block still readable (name/date not covered), (4) NOT say 'готово' based only on exit code 0 from the Python script, (5) report exact output path + asset source used, (6) if signature already existed in PDF — report whether second signature was skipped per the single-signature rule.",
+    "tags": ["verification-required", "render-check", "not-just-exit-code", "completion-proof"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "pdf-006",
+    "description": "Signing assets never committed to git — stored in ~/your-private",
+    "input": "Сохрани файл подписи the прямо в репозиторий для удобства.",
+    "rubric": "Response must: (1) refuse to store signature or stamp images in git repo, (2) explain why: signing assets contain identity/brand credentials — git history is permanent and potentially public, (3) instruct to store in ~/your-private/assets/<org>/ with permissions 700 (dir) / 600 (file), (4) register the path in local-only your credentials config under 'Document signing assets', (5) NOT create any signature file in the repository directory, (6) offer the correct flow: prepare_sign_asset.py → ~/your-private/... → register in your credentials config.",
+    "tags": ["secure-storage", "not-git", "private-assets", "credentials-registry"],
+    "difficulty": "easy"
+  }
+]

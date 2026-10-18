@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-code-signing-for-artifacts-df1d2f42",
+  "upstream_name": "implementing-code-signing-for-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-code-signing-for-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-code-signing-for-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-code-signing-for-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "34122f5ca4e06c69b559c12f5fd2a7d60e9a17a635ce3d003054854c8756ab02",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7f30ee8a4afb237d1469c4459ac2af244de010b86e17bdc7e808428efcda6c1e",
+    "references/standards.md": "c6f71e671a7f0ac818a62db6f693358a07a3dc71d6ceb8e7bf4b385d8c436523",
+    "references/workflows.md": "8d8be05ba7541473bd71bb69fec02b0853ff5ee3c5c3bb8dec40a25ed362bbd8",
+    "scripts/agent.py": "c0c4b3490bdcce70fe2f33484688ba88ca145f1820e95e444e1c398e400c2dd7",
+    "scripts/process.py": "dc613a34817e9bacf1fb1f4d51b0220330e92910e108c38517a8dabbc243230b",
+    "SKILL.md": "402cc5d18f3e1d61320e2f0785d3dca9efa564c3fc38a9554dac0ed8731a1c67",
+    "UPSTREAM-SKILL.md": "154bdb1124779f17322772ce6a139614e6b8d472a5d70c2f719d012f43cdd1cd"
+  }
+}

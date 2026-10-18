@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-fileless-attacks-on-endpoints-fcff38ee",
+  "upstream_name": "detecting-fileless-attacks-on-endpoints",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-fileless-attacks-on-endpoints/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-fileless-attacks-on-endpoints/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-fileless-attacks-on-endpoints/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "26ed4e018e6cd681863e3a3574dc079ab0783c5d1bbedf1414976ccd797164fb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6bb55fd4f6bfbd638a4fe73674d1ba7d9eb2a940b135586fc870504a1a5ccc0c",
+    "references/standards.md": "67ed43b54421e8ddc3396af7313b60b7a8076bf700a43594b9b112aefe9ee5ea",
+    "references/workflows.md": "e084a5abb8f411270087b6e8bbbe2e26857431bf652c39b07190e82a8fb887ac",
+    "scripts/agent.py": "def23eb9d28000878ab3f84136360faa539fe9c0f5b1982be1222d20a649793d",
+    "scripts/process.py": "373458371c79054abb9afdca425a2ec5e5f0eb87e56e53f0b01fa55f0a9163b8",
+    "SKILL.md": "7fb2aa861db540b554948f384bd5e15ee1a91a9bf2dffa7971f96cea84786163",
+    "UPSTREAM-SKILL.md": "d0deea298ac6eb95a27ca3ffdfc438c3198b6a87ee663e164368c161ab924cd2"
+  }
+}

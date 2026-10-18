@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-dns-exfiltration-with-dns-query-an-ee35a308",
+  "upstream_name": "detecting-dns-exfiltration-with-dns-query-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-dns-exfiltration-with-dns-query-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-dns-exfiltration-with-dns-query-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-dns-exfiltration-with-dns-query-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4719966ba791ba2d828d878af06d57b211c58b014d2ed3de5950d0a4091127fa",
+    "scripts/agent.py": "d45220797ec3bc09e7f107dee9fba96feb2a54f3a2f22afd5628edd5463f1711",
+    "SKILL.md": "b88cd0af3c4099277781e276d034bb882db43448421f43ff3932a187b9255f0b",
+    "UPSTREAM-SKILL.md": "fc8f130b15a9e7ba91e8a55e6f7daf6022453aa5a570ace5f5d302e43289a6b5"
+  }
+}

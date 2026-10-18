@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-mimikatz-execution-patterns-fc28cc50",
+  "upstream_name": "detecting-mimikatz-execution-patterns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-mimikatz-execution-patterns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-mimikatz-execution-patterns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-mimikatz-execution-patterns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b233292ad8a1e4cd88b9922f76d3e18f945973d78370b923e6add2b1a229cd30",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e965998aabb33c241b49340900bf77302bc16bde673572a584380824001c4dfd",
+    "references/standards.md": "f0cedada300dc3a7cbd050c9fb924701f6c0e615a5ff0f1f42826da0af8c8033",
+    "references/workflows.md": "fea32ad838ba37a39f7b5d5b0c350c52aec5c10dc120fb40680bd9215dcacf0e",
+    "scripts/agent.py": "5e459e8dd43f5dfafaf1f04990443a122394c1c3413161431e920f62a783dc68",
+    "scripts/process.py": "543cd4084be275678f3c3ccb217451c0e74ce2827687283946181d531fa15ab3",
+    "SKILL.md": "8aa0cf770b5ce7c791eef2e458f6dbe4f6be38430ef7235b24817d8706a06a84",
+    "UPSTREAM-SKILL.md": "7f776bf37fae200c87cb24518c03668c4dafe25f2d950f65d5e030de8e870515"
+  }
+}

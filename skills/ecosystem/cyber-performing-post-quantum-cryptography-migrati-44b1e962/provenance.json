@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-post-quantum-cryptography-migrati-44b1e962",
+  "upstream_name": "performing-post-quantum-cryptography-migration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-post-quantum-cryptography-migration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-post-quantum-cryptography-migration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-post-quantum-cryptography-migration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22c1a71dd3ecd8cc490f4e5b1d6dfd5646b8d06119bae6f27f352db6c8ad8bb9",
+    "scripts/agent.py": "bcd3936259c96e9da0524322c9a20b8f80940f0eb2d593ec5eb7f5b454e2da2f",
+    "SKILL.md": "4843d9bfc8e11800b137ecdc713a52d0b9f21437c8a52562fc6d7a164f9f53ae",
+    "UPSTREAM-SKILL.md": "5306f1b76b9a9af4df2cfce66f9d50ec4cc7d5d16b71d2f86ef49862b8aa7845"
+  }
+}

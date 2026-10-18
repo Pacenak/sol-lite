@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-hardware-security-key-authentic-1b88e277",
+  "upstream_name": "implementing-hardware-security-key-authentication",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-hardware-security-key-authentication/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-hardware-security-key-authentication/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-hardware-security-key-authentication/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1b9da45eba881cab28587a271110cad595b75a7fc411d7734c8d4fbc1a45e625",
+    "scripts/agent.py": "1c275ce861b2001183ff6c67aa98ca8fbfd19c92cedffbaaa271790cc1867c19",
+    "SKILL.md": "1883d2e544458b752ec9d71f4b38ea38aee10c3455bf77fc20b4db85f42474ab",
+    "UPSTREAM-SKILL.md": "882568589265d33b16cbfb7ac05d777275eaf54db2850ab31080930f161602a0"
+  }
+}

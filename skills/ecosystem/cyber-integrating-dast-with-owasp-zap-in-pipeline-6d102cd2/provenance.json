@@ -1,0 +1,31 @@
+{
+  "name": "cyber-integrating-dast-with-owasp-zap-in-pipeline-6d102cd2",
+  "upstream_name": "integrating-dast-with-owasp-zap-in-pipeline",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/integrating-dast-with-owasp-zap-in-pipeline/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/integrating-dast-with-owasp-zap-in-pipeline/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/integrating-dast-with-owasp-zap-in-pipeline/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d4628f628ed47cec7725fedb2f19e367b62f754396ada452be7d07bb27282cab",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "109e418452b0b418313159b2081566de10f69271afaff527d19edc54e42f2c4f",
+    "references/standards.md": "75debcd828630070b920f7ef377dae6087628eebfc2ed4deb613692607edbf7b",
+    "references/workflows.md": "9192c99835fe6f479e4eb536752825ee14919bf10397341cba26745175262832",
+    "scripts/agent.py": "f661cc112da1a63d04c3b0201ac33cfafd0a3d37271da974c33d30211a19fd6b",
+    "scripts/process.py": "b87a55c03ff52f85ea32b8f705c63865f389bf330411b6bb08f68817864afe17",
+    "SKILL.md": "9381fc64585d7d4afc7aa84bd7e2b6ebecef4187588a71a56907332084320a5f",
+    "UPSTREAM-SKILL.md": "d7abc8a0f986b6459d323fb1f2f8b7f8bede347dbcc6b444bb4290646e13b19d"
+  }
+}

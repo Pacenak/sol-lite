@@ -1,0 +1,26 @@
+{
+  "name": "cyber-executing-red-team-exercise-a377fc6a",
+  "upstream_name": "executing-red-team-exercise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/executing-red-team-exercise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/executing-red-team-exercise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/executing-red-team-exercise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1df76f8f28592251e8c0e19ec037996afe97a0924648d70ee55403967c90738a",
+    "scripts/agent.py": "def2c45e9ba2eca1def47a3736d8650c8e2a12ad32a0eed9424c49d299a391f1",
+    "SKILL.md": "8c5e82dc1a4cc758b6ad02169c0b11d26e75ea5249c88616ff047509b70ec9fd",
+    "UPSTREAM-SKILL.md": "c7beea742a6079b90375dd39e83e86f9d97a50afd3cf724a96320dcc7197dd81"
+  }
+}

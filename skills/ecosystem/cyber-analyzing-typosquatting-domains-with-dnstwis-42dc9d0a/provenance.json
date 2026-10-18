@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-typosquatting-domains-with-dnstwis-42dc9d0a",
+  "upstream_name": "analyzing-typosquatting-domains-with-dnstwist",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-typosquatting-domains-with-dnstwist/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-typosquatting-domains-with-dnstwist/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-typosquatting-domains-with-dnstwist/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cbbbf1d18129c27fa7f8e2b745e08900a9c7287c048c07f39a8f9ad19410a923",
+    "scripts/agent.py": "ae57baa6c2ff4cf5b31204919efbf1da4bf722f1f3ef07e6766ea1c7f9d35db9",
+    "SKILL.md": "0a4d46426972c01b7350cf218d8265daed524a816a16b3a75181973b487c6fc2",
+    "UPSTREAM-SKILL.md": "90c5c1a48f8437bda7244c2c22f4c5e7b41ca22d389d7a0a6b18a50909f69896"
+  }
+}

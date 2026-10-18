@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ics-asset-discovery-with-claroty-383f2abd",
+  "upstream_name": "performing-ics-asset-discovery-with-claroty",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ics-asset-discovery-with-claroty/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ics-asset-discovery-with-claroty/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ics-asset-discovery-with-claroty/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5402644267cebc6a88ff3e03edd17205fcf8003b0b7a5fd7f635be3927b892e5",
+    "scripts/agent.py": "6cfc610452a1e027cd029dc5615e848782c9c4f1b6cc8c3d46cfe3326d3db0c0",
+    "SKILL.md": "77c47303e02d11511c55475ad1297b0db1cf41cfaae307eca7bb4fc6b40ea8bc",
+    "UPSTREAM-SKILL.md": "fc8b0fd7f9248029da8b29133402761439de61b896b4baba4dc95ed31467fb4a"
+  }
+}

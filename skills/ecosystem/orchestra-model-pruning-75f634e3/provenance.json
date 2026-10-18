@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-model-pruning-75f634e3",
+  "upstream_name": "model-pruning",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "19-emerging-techniques/model-pruning/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/wanda.md": "e65c2c2c11090131e129acdc3a557c60c4435b87ca627930840a238207e76949",
+    "SKILL.md": "cdb3c928cc773de255a884b6cdb14fa1b43c77b3ecdbb905f76d3dfd82389185",
+    "UPSTREAM-SKILL.md": "aca913d834bc1e3d39bbfb75d0658d5a1b9acabf6511744719c5bab91bf306a8"
+  }
+}

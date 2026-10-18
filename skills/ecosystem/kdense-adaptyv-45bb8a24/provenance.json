@@ -1,0 +1,20 @@
+{
+  "name": "kdense-adaptyv-45bb8a24",
+  "upstream_name": "adaptyv",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/adaptyv/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/api-endpoints.md": "d613b0f33425ac4a2703c47c58773525cf5e850c0fde04f7d6eb0a7bddc3bdf3",
+    "SKILL.md": "c7656e04dd13b74e36e3c8b2566d42f259310a4127ea18910a23a1e312ddd9df",
+    "UPSTREAM-SKILL.md": "5de115067c118609dc096f9d582c687fdf331150e3f21c54eedb2ade24d12846"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-suspicious-scheduled-tasks-82bd0e12",
+  "upstream_name": "hunting-for-suspicious-scheduled-tasks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-suspicious-scheduled-tasks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-suspicious-scheduled-tasks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-suspicious-scheduled-tasks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "2da218e3d25d96118be85eafa2cfbd9c6d2ef5bbda8d44a3cae0ff8201d88cd9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c8e8d90f6376e96eac53484dd346911a0bdeaff1b11854cb3b8433f6891fcecd",
+    "references/standards.md": "ef7837efab69295db9ea4d00b1cb3fcd91f4d7b98ba27f9f92d5b6229240a376",
+    "references/workflows.md": "d2488793cf94ac10c1aafaa83e2657398410f48f83c27a461c62e582e0dbd327",
+    "scripts/agent.py": "c04bfa81a08bb17bdae50bea82192871b940b5a68de985ccf37045478098b4e4",
+    "scripts/process.py": "478efee80a1966d50d28fbe1d5394c321ec7b6366c29178cf648a2f87ab9692d",
+    "SKILL.md": "4add651f57209c349aaf973e21f8785a300d519e4ae8fcbc1055485c327230d6",
+    "UPSTREAM-SKILL.md": "b46e05f21d3876e085fe7b96cf3d22ceacc140aec86091ddfa5b76c3b5099493"
+  }
+}

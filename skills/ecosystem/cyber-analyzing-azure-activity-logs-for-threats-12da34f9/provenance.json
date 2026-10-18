@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-azure-activity-logs-for-threats-12da34f9",
+  "upstream_name": "analyzing-azure-activity-logs-for-threats",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-azure-activity-logs-for-threats/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-azure-activity-logs-for-threats/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-azure-activity-logs-for-threats/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "998fdda365f2095023ebeff31e51338b9477e1a2fa0ddef5e7869c1754c051fc",
+    "scripts/agent.py": "d0aa5d41cb9b8ebb5f312b8271238a235aafb4c0e24e76b72791f55e3521fec6",
+    "SKILL.md": "911b69144d577e364fe8b7b7853a368da654f16d8aac23e785e7edaaec9eb667",
+    "UPSTREAM-SKILL.md": "f4b3c4570a860803923d76d1ab379f3e1d32a123cc26c77e301953f37164212e"
+  }
+}

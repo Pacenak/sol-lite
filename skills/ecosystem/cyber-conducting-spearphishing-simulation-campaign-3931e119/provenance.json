@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-spearphishing-simulation-campaign-3931e119",
+  "upstream_name": "conducting-spearphishing-simulation-campaign",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-spearphishing-simulation-campaign/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-spearphishing-simulation-campaign/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-spearphishing-simulation-campaign/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9fe0b239c77f2857277ecfdf86a697e66f10dd13dcc05bfe1961ad6170e8b264",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8198b74c9c9fc570ca6a6b3bf52b0218f2220cb372577efeb22233cfc08513e7",
+    "references/standards.md": "062f2e5e5949b95781fd71ecbeef3af10c0ec9a5d9036913668e29d5df32ecb1",
+    "references/workflows.md": "a7cb5cc20e6bcb410051b77a7562632a50c9ab42a26214b56e43b8d863a85f08",
+    "scripts/agent.py": "178be062055ce6997d7dd78818a9c85a0406528667dacd92247cca42897e9c52",
+    "scripts/process.py": "ce43dbe69c1bb7f82418933cd46f9d2db0ef2d1cf82f28c09b1d046e4708ac02",
+    "SKILL.md": "98af92f85ad1ba722f2f87352da1fe5bcf7f42a58cb2d2fe223369d603225c57",
+    "UPSTREAM-SKILL.md": "23476c81a7d60fbe85d80cda90bb4d81df61b7ef26749f7326c2f378f0dce353"
+  }
+}

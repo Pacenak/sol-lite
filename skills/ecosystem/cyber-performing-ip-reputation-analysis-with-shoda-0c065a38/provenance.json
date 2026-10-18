@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ip-reputation-analysis-with-shoda-0c065a38",
+  "upstream_name": "performing-ip-reputation-analysis-with-shodan",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ip-reputation-analysis-with-shodan/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ip-reputation-analysis-with-shodan/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ip-reputation-analysis-with-shodan/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bddfa0246ad167a52689108b0bb9538b0b1b7f20bf1f8df7ce755b7f971decf9",
+    "scripts/agent.py": "1212c6e65697e6490eab4499e7df17061c910b00da5bf859238d3694e6acd7d3",
+    "SKILL.md": "664b971890c4f37d4ec192e7abfe12ef3883dd7523a2fac6a6e801e7c04c188a",
+    "UPSTREAM-SKILL.md": "2e91b9d1ec595706d5a20b9ea24b35ee15d627f0f3da93f86e90e6754487ce9d"
+  }
+}

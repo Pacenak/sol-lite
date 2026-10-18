@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-threat-landscape-assessment-for-s-2aeb88f2",
+  "upstream_name": "performing-threat-landscape-assessment-for-sector",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-threat-landscape-assessment-for-sector/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-threat-landscape-assessment-for-sector/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-threat-landscape-assessment-for-sector/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2e43dd7a3d38167934e976bb4b7d6cce02e0ee4cc6e27f8004e568e9a6b98dc3",
+    "scripts/agent.py": "44b8538de72864b50e04d0a05b9a5cc3e7b9050980c76925b7580b86601b2aba",
+    "SKILL.md": "3005812945a718c2230fc9325c41c1706b84ea9bc5fda9826078cb3b77e30e17",
+    "UPSTREAM-SKILL.md": "8107302bafc7eb916abce5028a3e32371f3f7143f9d1a88e95bdf8deb67cfdd6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-operating-sliver-c2-1c849de0",
+  "upstream_name": "operating-sliver-c2",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/operating-sliver-c2/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/operating-sliver-c2/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/operating-sliver-c2/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "efd0fb13c2ea4aeb3d929e25cea826b668e60da0d7f15d916d9d9c896a76e797",
+    "references/standards.md": "3c924aa66ca21a3e6ee67091331efbc64b3d6093e45470fab4cdd86f11d31248",
+    "scripts/agent.py": "9bf8bd1bc75284c74d1e9bf5df27b2b703072aca50b26c999303f57856e8f201",
+    "SKILL.md": "4c92cd5fc6ef826296866b4123f30be977b7a9509d371ddfa246059a39b4e2dd",
+    "UPSTREAM-SKILL.md": "20267e84d6ecfae09fed866f2cab7fd96718ad071d48b7d248bc501fa19b7af8"
+  }
+}

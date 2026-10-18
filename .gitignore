@@ -33,3 +33,4 @@ skills/quarantine/
 *.p12
 *.pfx
 secrets/
+.work/

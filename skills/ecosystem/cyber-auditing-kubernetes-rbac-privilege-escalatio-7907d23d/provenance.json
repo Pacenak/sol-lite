@@ -1,0 +1,27 @@
+{
+  "name": "cyber-auditing-kubernetes-rbac-privilege-escalatio-7907d23d",
+  "upstream_name": "auditing-kubernetes-rbac-privilege-escalation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-kubernetes-rbac-privilege-escalation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-kubernetes-rbac-privilege-escalation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-kubernetes-rbac-privilege-escalation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f7b4956d342bd033869317776c13aa452bfc7e507c46b0e7ae509ab1d52d34e7",
+    "references/standards.md": "80a196b592c547ef6da1bb38d0454443fd71b64cef69f103d62fbbf5e6f64d87",
+    "scripts/agent.py": "bb78dffa1cff3259aba2d5788f10b15862f49904bac93afc6ab9694364b07a22",
+    "SKILL.md": "cc8d930047786aa6a492d3490842c127c95412d0bf938ba2d997e87f96c4b00b",
+    "UPSTREAM-SKILL.md": "a378f61cbf38eff15580308606299b2e98beead60f5c0c98cf8821ae5b6ad1a6"
+  }
+}

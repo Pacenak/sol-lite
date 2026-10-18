@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-mamba-architecture-32e80b59",
+  "upstream_name": "mamba-architecture",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "01-model-architecture/mamba/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/architecture-details.md": "09cf810fbcc2949e889f502c910bca97be094f0efde759294d40300591dd77ea",
+    "references/benchmarks.md": "7f64a92015656c1ee318b23d11f8d3951a03c00be8dcf1614e01c6133f8a269f",
+    "references/training-guide.md": "e382cfc6e0b6af4a04862001c983ea746b4ad327a1eec43b8b2955035b3b0fb0",
+    "SKILL.md": "8cdf8aeba74eb58b7c374ecf04abd5c20f48a032e721a2a6ea10f04e7bceb1b6",
+    "UPSTREAM-SKILL.md": "51ddf99c12a472a78c258bddf7e66e72cf45d9e04969f3300cc8d68aaaef9b0e"
+  }
+}

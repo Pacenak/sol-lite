@@ -1,0 +1,27 @@
+{
+  "name": "cyber-operationalizing-misp-threat-feeds-9160d584",
+  "upstream_name": "operationalizing-misp-threat-feeds",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/operationalizing-misp-threat-feeds/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/operationalizing-misp-threat-feeds/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/operationalizing-misp-threat-feeds/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15403d2514433505842bbfeca9d3d6ad27ce6d402dae4b56fc552e0dd35fffae",
+    "references/standards.md": "6f44dfb5f9c8ce0ec6db188addd97c45894e967d2c67a09e19ad6770cbb16598",
+    "scripts/agent.py": "2a6b3192fba77db2b941efce66480a59f365a6664999362b92dc76a71d4ae0b9",
+    "SKILL.md": "c5bdf47df81516eefef544034a60e0a0bdd67d1de90208bef18bc4b964518848",
+    "UPSTREAM-SKILL.md": "c568fc3afc62140b55439e6385a96dfdffb2d1a339097d8017b7ea631136a888"
+  }
+}

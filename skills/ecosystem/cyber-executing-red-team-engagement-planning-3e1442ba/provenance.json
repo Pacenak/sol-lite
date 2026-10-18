@@ -1,0 +1,31 @@
+{
+  "name": "cyber-executing-red-team-engagement-planning-3e1442ba",
+  "upstream_name": "executing-red-team-engagement-planning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/executing-red-team-engagement-planning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/executing-red-team-engagement-planning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/executing-red-team-engagement-planning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b3832ac9555d4995d89b1ba89eaf7106df711d8c81aa594a7c6740b892cc3328",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a559f3466a2aa8811bd2c2a7fbb4c4d51986378a8637325164dd15980af8ed68",
+    "references/standards.md": "9b51d60e6dd9104fefcccf282ae395bc2589efd8e235db7b77019ec5791b3595",
+    "references/workflows.md": "3a1d0824d0779a217325618c00526dfc64b1b7ac2aa9468b460c9985ee6de6ed",
+    "scripts/agent.py": "6b57824ef6dea8e8bdfce99c9ee270ae6cbdaaae24cecf02b0cc81c90da168c4",
+    "scripts/process.py": "54fc8c073c28fb2ab0d29e4d3785ff8b9fecd65b186aa774a7ab03f5d9103ccb",
+    "SKILL.md": "854f3d556b39718d9b2c9bf8a71d9304905aedc8fd95fb9410a6b626b2e68bf0",
+    "UPSTREAM-SKILL.md": "ea29fe8d481b64732d61cccbfb4e3bbb5fb4e6b3141b1339c51e2069113072ca"
+  }
+}

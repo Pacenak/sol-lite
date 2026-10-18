@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-moe-training-d6413326",
+  "upstream_name": "moe-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "19-emerging-techniques/moe-training/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/architectures.md": "c4a5be6e55451032d1cd4d9d3dd09fa37c450e5505e989e9c1d628d60a1973d6",
+    "references/inference.md": "f9e11d151e5b40b7d20bf410887f97da90c9a4d0172c9f0842b53a269c57199b",
+    "references/training.md": "59454af99860a4addee660d73d73bcdbb05be3babaa50d95b9387604d0398203",
+    "SKILL.md": "2e7650d20346aa7539b2eb408b5eb3c16242110692c84bbd232c9717375a6183",
+    "UPSTREAM-SKILL.md": "f13f184fe031c84700d72c15dd90161a96f3b48ab6b50b250e6b86cfc4c87354"
+  }
+}

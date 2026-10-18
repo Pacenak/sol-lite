@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-iot-security-assessment-444e4db3",
+  "upstream_name": "performing-iot-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-iot-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-iot-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-iot-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "df4bc55d53c5d31ea5e143567519d390fc0c0c93433dc2ec6610e027a1cc3118",
+    "scripts/agent.py": "573b0c02b91f9241257521dfedb2349ae389f4a4305400c842e666d94c142337",
+    "SKILL.md": "e612c83fcac489ab0006054cf00ce6ecd173165da4abc6d7d2556a3679fd1dff",
+    "UPSTREAM-SKILL.md": "f55327f225ac5a523ffbac6e03368c8deea96172cb1eb0cadcbb1fc130225ba9"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-syslog-centralization-with-rsys-4b614938",
+  "upstream_name": "implementing-syslog-centralization-with-rsyslog",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-syslog-centralization-with-rsyslog/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-syslog-centralization-with-rsyslog/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-syslog-centralization-with-rsyslog/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ea6d29e0687d973cbd1c9841e64992be8f2ff8ded0c3b4508459300918527e63",
+    "scripts/agent.py": "ce34242ef01e535735117cfb176436eefba3b4ee9c28d278a8c303ba3ce7bc48",
+    "SKILL.md": "22437d8a200b825506a23c57e9e00943fbad7e4bf46a91a7c1ee7971f1ba8c15",
+    "UPSTREAM-SKILL.md": "4e55bb7102d3d3fbb2f5d13501c32fded312c1d7a541c55b6e45e6dcf069b316"
+  }
+}

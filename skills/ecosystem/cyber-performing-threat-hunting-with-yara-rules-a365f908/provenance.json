@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-threat-hunting-with-yara-rules-a365f908",
+  "upstream_name": "performing-threat-hunting-with-yara-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-threat-hunting-with-yara-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-threat-hunting-with-yara-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-threat-hunting-with-yara-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7e60de8ecf4b785e528ed30d774e3710bdda09721b9a4038ccd52ed4fefdcf38",
+    "scripts/agent.py": "215d4b6c0a4c5414b32d4954165ff7ad59cdfd4542eeb01de47fbf42cca7f170",
+    "SKILL.md": "8822ee0a9019172fb944d2f1245b056f1bb3eb613ba855e4950c128623eb3f51",
+    "UPSTREAM-SKILL.md": "11e3834b50ebae2fd65f3f60ee40f7636abbbb8e97b13fe50f27ccb05fd42396"
+  }
+}

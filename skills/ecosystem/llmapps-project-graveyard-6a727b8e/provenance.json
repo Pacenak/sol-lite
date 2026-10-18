@@ -1,0 +1,24 @@
+{
+  "name": "llmapps-project-graveyard-6a727b8e",
+  "upstream_name": "project-graveyard",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/project-graveyard/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/graveyard.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "db7e813aa48213af754044c24843fe848a161a94684da340ccc1b2156aa79187",
+    "references/causes-of-death.md": "0a4c4313edc78ef04daf76acf8dbde8291526e6bde459eea7c6b3cddb7791992",
+    "scripts/graveyard.py": "cf9abbcb971ef417cb3b3d241ff2848b91f66cbf9effde08931f9796f6b103d5",
+    "SKILL.md": "d01c4e46f62550c9052294ed441079bae7c5934edd0f503e149c5eba09a0d6ec",
+    "UPSTREAM-SKILL.md": "378d4fd4190386dea09be70250bd0332a3f89506a2998b3c3384e3ca3fe7a965"
+  }
+}

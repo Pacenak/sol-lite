@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-detection-rule-with-splunk-spl-d8734b00",
+  "upstream_name": "building-detection-rule-with-splunk-spl",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-detection-rule-with-splunk-spl/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-detection-rule-with-splunk-spl/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-detection-rule-with-splunk-spl/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7b23e14bf068baa6a85de6354f50edd75228a1a7f044a66cbdd6527e526eaf42",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d69312ed902e8222a4b9f54fc6201f3124f74503403356a74946360fd4e1f941",
+    "references/standards.md": "c8732e38d4e22f2464d4efe858c31b3fcd9851c80de8f4a84be099883d8985a1",
+    "references/workflows.md": "09cc20a67d967c4e87d161fe9ba65b6b1ca5fb48160d4daf9181aa02d3b6dd5e",
+    "scripts/agent.py": "e3712ef7da5d30ece62eccb0d61c3cf3bb8cab469461724e53003af6837db7b9",
+    "scripts/process.py": "30e5002095736343c1c19768392040619ac1bb4ac03e7397e7a34c01d1f21f8d",
+    "SKILL.md": "30a7deb59026d1ea7afcc4c594f3de955041c9ed04ba68c75ecaa161bd6504ed",
+    "UPSTREAM-SKILL.md": "104efd62ffd71f802d6ee52acc0555ddf73c67d6e7fd266b78abb5e6140f69f5"
+  }
+}

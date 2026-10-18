@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-container-escape-detection-d1ef227c",
+  "upstream_name": "performing-container-escape-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-container-escape-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-container-escape-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-container-escape-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "50c75d7e3dde93c86dc1a3b7ee0c434d392a0b3986a70fa97f51a7ca6e1e3b97",
+    "scripts/agent.py": "26d6b8be4f1f68a4a55628abaf27fe4919480f8a5643b782f3d0b3c49915e3e2",
+    "SKILL.md": "34eed2cc59c690fee437ea44f7fc126b07773900f99aa8020087ad85fc33c76b",
+    "UPSTREAM-SKILL.md": "33ed84ec7de93d4aa9f0037dcaee9718e3e97dda97477f5d5be62f77f22fa345"
+  }
+}

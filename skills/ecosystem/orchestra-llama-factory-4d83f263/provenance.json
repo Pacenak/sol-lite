@@ -1,0 +1,24 @@
+{
+  "name": "orchestra-llama-factory-4d83f263",
+  "upstream_name": "llama-factory",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "03-fine-tuning/llama-factory/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/_images.md": "c1fef3c82d902c455353dd873cba30bcdfba779b83b300ce2ac55718fae5a616",
+    "references/advanced.md": "984d86809194921a64d5738affa3152f6f5e74198e83c39bf4c0807ef977c5f5",
+    "references/getting_started.md": "ca959ff8b1dd7d4d09c5e6c247dd03d01759391f20fdeb12e03cff2a1f305cf6",
+    "references/index.md": "d2b9a950f5721809d0bb6c46b35a2a7bf05b3d0b23f600163d4b2ac6ea0418c7",
+    "references/other.md": "674714380dbc7bcab07a6972e4b8699fd85ac4321144537bc67c305df4fb47ed",
+    "SKILL.md": "09467a8471ba853e76f494822858ab028ef73c302836b563a6c3dff5c2cc692c",
+    "UPSTREAM-SKILL.md": "6adfd1babfbfe2f85e0fcbde518f24a804ebe06afeb8682ce1df395284d6f5cb"
+  }
+}

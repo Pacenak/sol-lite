@@ -1,0 +1,34 @@
+{
+  "name": "llmapps-mcp-builder-48d3ae86",
+  "upstream_name": "mcp-builder",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/LICENSE.txt"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-builder/LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/LICENSE": "15a0e5343aea872c0573ad72feb6044b336f162d724cc1673c608e6b37ea071b",
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "evals/architecture.json": "fdadbaf844367fbca911a9fe2104235d42120624619296fa6fb01a738246908a",
+    "evals/implementation.json": "272b913e32fbc5c2d5d7f54815886eb3850cc4b020bb8fe2909b3b7854907574",
+    "evals/README.md": "5023f3e75974784211dbbc20d56c3da3e9cab2403eb86e5485dd22a00884fc29",
+    "evals/skill.json": "779d7173848fda47e3e83bcdb02caef57caa5d526024c6bf62f23abe912e0004",
+    "evals/widgets.json": "5b161b71b28f269a6a168480e8093be5e9c639b167061eac2591b121bc6495db",
+    "LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "references/design-and-architecture.md": "1eb9bec6c5afcd4d8434fce1f0407a67766f4e04beb23c0bb8371394f9f8566c",
+    "references/resource-templates.md": "734e55e4b738daf2045142361f22db24a798a7127738c6ccab05d6d606ab7e87",
+    "references/response-helpers.md": "38ae09b561fe1e83fe93238e02bc8072ceefa6cc67177fca575d0b514fa8a2a9",
+    "references/tools-and-resources.md": "b679a70dba49d225558513f4c9c59e5c114c506f19c50961731037b324617b1c",
+    "references/widgets.md": "7515d767c05f8cc8c1297133ba844b21bce31482051b563b86ead56c43d4afcf",
+    "SKILL.md": "b52ed5c743f9804363ced2dbd926a1f0a6b5cecce9d4cedd78ad8fa84b4fffc0",
+    "UPSTREAM-SKILL.md": "ca6cc335fafb04ec24958e45e56564056a25006e9784a18dcdc968512c41cbb4"
+  }
+}

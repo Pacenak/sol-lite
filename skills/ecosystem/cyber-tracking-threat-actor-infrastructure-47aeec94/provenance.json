@@ -1,0 +1,31 @@
+{
+  "name": "cyber-tracking-threat-actor-infrastructure-47aeec94",
+  "upstream_name": "tracking-threat-actor-infrastructure",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/tracking-threat-actor-infrastructure/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/tracking-threat-actor-infrastructure/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/tracking-threat-actor-infrastructure/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8955322e9feb3c5cb788861361b990e46a8c47f3cb737941a26335ff5d366478",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8a67b8f26005c285d98c86ab24cd2b4a1e0fb0e09163caeee0c6a6824e191f78",
+    "references/standards.md": "449b864ca7eda2da71071484f2a5e4559aba01a151eb2d8666f499342204d960",
+    "references/workflows.md": "12e28a51e435f88346982ccad5a55d80ab0fcf3ead7c3bf8f1379435a6ac2784",
+    "scripts/agent.py": "03f5d1440296a6094f84534f920eba7c0b557508584a680cb0df22ca3b4e5da5",
+    "scripts/process.py": "43568e9998b0ff538343005a9eb3e37dcf55a218e33c880bba8babe60c34ffd2",
+    "SKILL.md": "ac43b2606c5cb89a453d7e03c4d8e6849d3d3414821c904b4734b679dba68ad7",
+    "UPSTREAM-SKILL.md": "b2fd6e4f6194770f466d1c0cc1668074c7ebbbc25755c2a265f04dae1ab4ba56"
+  }
+}

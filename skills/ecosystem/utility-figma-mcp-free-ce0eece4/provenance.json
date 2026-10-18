@@ -1,0 +1,19 @@
+{
+  "name": "utility-figma-mcp-free-ce0eece4",
+  "upstream_name": "figma-mcp-free",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/figma-mcp-free/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "SKILL.md": "761d83af6f793b57398426c9bd43364bcb0c62c3a93943c140a7860e6b153f13",
+    "UPSTREAM-SKILL.md": "9fda348e37473a3895a3a24a3cc70aceb0776f3b3403102eefe1236615f9dc70"
+  }
+}

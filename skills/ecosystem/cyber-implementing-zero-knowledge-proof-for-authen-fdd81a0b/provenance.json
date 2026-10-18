@@ -1,0 +1,28 @@
+{
+  "name": "cyber-implementing-zero-knowledge-proof-for-authen-fdd81a0b",
+  "upstream_name": "implementing-zero-knowledge-proof-for-authentication",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-knowledge-proof-for-authentication/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-knowledge-proof-for-authentication/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-knowledge-proof-for-authentication/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ef2bdaee3f8766f25e9b4849a526b21384a9fe1cff3a87b68faaf4ee686a55df",
+    "references/standards.md": "60fbde184b444cd3855e2738bb435c227ba8995839e20d33978552eb85c4a8d1",
+    "references/workflows.md": "539dc3414ede7c9657343fa03da98ff9e4704efe4fad19fb57fa8395d696c97d",
+    "scripts/agent.py": "8073707ced0d5d97c3c946b76064c9e591856a32520a970deb47b6f1b1210687",
+    "SKILL.md": "de7efdf1198da73f5f7427b73d2571fd5b843f3ba62eb2f5742b0d1c153f2ce3",
+    "UPSTREAM-SKILL.md": "d6fb53922f03e6d3cb4974e75dcaa76e187af509b4f3dedcf4df56cb383a96bd"
+  }
+}

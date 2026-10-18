@@ -1,0 +1,26 @@
+{
+  "name": "cyber-configuring-network-segmentation-with-vlans-3d6cd22e",
+  "upstream_name": "configuring-network-segmentation-with-vlans",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-network-segmentation-with-vlans/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-network-segmentation-with-vlans/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-network-segmentation-with-vlans/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "936bf389c099054220e93776790b1f268af5f8b72c025bd7a7cbb022658426fe",
+    "scripts/agent.py": "dc9c07a45d730488d21be4448bf96317ca4d5e60afb4fdc2dca33193f247fc0c",
+    "SKILL.md": "694f890d76b2a23fe0e288e2e58733a4f381d85052673249b3db9ea3ad0d286c",
+    "UPSTREAM-SKILL.md": "c325312e2955eaa99420f471b34932a0ac91ab4387108cbcc8b8cd5e1a40844c"
+  }
+}

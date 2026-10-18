@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-business-email-compromise-with-ai-21f42c4e",
+  "upstream_name": "detecting-business-email-compromise-with-ai",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-business-email-compromise-with-ai/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-business-email-compromise-with-ai/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-business-email-compromise-with-ai/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c08a0308ea9047259c093806e2f4d7280bf3969878d9327bef163dbb3020c06a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9b720bce0fafe40772f862aa50768d4fafdaaf749ba02503d536edb785d37215",
+    "references/standards.md": "fa0725edc7d6de79ef2eab51848f5ee5bbf646a85ce8cc1db9ea71f3596abb77",
+    "references/workflows.md": "72e8b52b221471468e5b01efac8d2c62fdded38b4294352e5decf53695d8ffbe",
+    "scripts/agent.py": "6f9efd4d59b27b12950bf20bdeb19264e009459329e7cee6517c58cfa43cc8e4",
+    "scripts/process.py": "4357bb16e971acfc1d3dd0f902420f02ba90eea1ce2fdc15504ad300db86fd94",
+    "SKILL.md": "aa2b00dd6fad46481c9c121d98e9351652ee9cb65859b29709bbb76f90ccad2b",
+    "UPSTREAM-SKILL.md": "6ea9aafc78f3b65442b562cc1da41fe518d2c46ed9d4057ef20039b2886e3380"
+  }
+}

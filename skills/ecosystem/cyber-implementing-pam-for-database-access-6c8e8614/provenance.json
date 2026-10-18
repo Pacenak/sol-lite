@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-pam-for-database-access-6c8e8614",
+  "upstream_name": "implementing-pam-for-database-access",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-pam-for-database-access/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-pam-for-database-access/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-pam-for-database-access/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1e799825fd0c8d1c625c6d016de9a8ecb84fdab4dabf97882fbab075a45c1e6b",
+    "scripts/agent.py": "891890a8ef79e2e2b4cad9503c749ec0cbd42f4af6202c0ca8fe072cf7fa8c28",
+    "SKILL.md": "ebff544065e046f0bde3c99ab7ee829759ebb56d4d2379bb02363858013d33ab",
+    "UPSTREAM-SKILL.md": "dfcb4f0201d53ce7ffcc70915133e1117e864d1e7b9fe800e2160109574336ad"
+  }
+}

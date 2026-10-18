@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-intrusion-prevention-wi-60549886",
+  "upstream_name": "implementing-network-intrusion-prevention-with-suricata",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-intrusion-prevention-with-suricata/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-intrusion-prevention-with-suricata/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-intrusion-prevention-with-suricata/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "aad8245f39e27598e98f334af1abc25093e87c7e7220a06e839def079747b25a",
+    "scripts/agent.py": "8f46d3f7d99685c5034ca27294e4c8dd4021253067871e4f73f7ee4b75a91ea8",
+    "SKILL.md": "1751dc4f38b34c804059f098039e797e09874126581acda48f774ca998c16efe",
+    "UPSTREAM-SKILL.md": "e0a1a07fb3c9f1d807364b4ed8955015aa3d9dafbd3c1426d59aa9212b56c5a9"
+  }
+}

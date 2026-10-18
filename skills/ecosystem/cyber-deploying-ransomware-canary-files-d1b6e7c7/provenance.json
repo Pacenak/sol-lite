@@ -1,0 +1,26 @@
+{
+  "name": "cyber-deploying-ransomware-canary-files-d1b6e7c7",
+  "upstream_name": "deploying-ransomware-canary-files",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-ransomware-canary-files/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-ransomware-canary-files/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-ransomware-canary-files/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4574eee50670e1f5e32c7ab791cf431e5d4a8accf37286e12fe961d3d7a284b8",
+    "scripts/agent.py": "70626a4f30e74d9a58519a1431a788c1fab7725c77bd4e18941f22f8c26e101d",
+    "SKILL.md": "5a54c6fbd802d2b79d341b7ed41fa840c3e80f0c9351bfae12b0bdd0d41c27a2",
+    "UPSTREAM-SKILL.md": "f3e6dae09db71310bf7b6f7105da27ba7d3283c83c014fea9c3898a95b3dcd45"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-azure-with-microsoft-defender-e34ee911",
+  "upstream_name": "securing-azure-with-microsoft-defender",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-azure-with-microsoft-defender/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-azure-with-microsoft-defender/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-azure-with-microsoft-defender/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e0b348ded3c249b04a5c078a0623827f577a0e24de242fbe3fbdb4071839e842",
+    "scripts/agent.py": "36330570cf1eccd1846884e9f8235fd0e87098b4d0f1460000d302e22e7c3242",
+    "SKILL.md": "a3173500ffe87339eba8e1387f3b08e515baaff6d7f3f056cc44b24d04fb92ed",
+    "UPSTREAM-SKILL.md": "4036ab8eb72552757b39ac3605b2250786c4caa84a9efa07ef5d04e19203d7de"
+  }
+}

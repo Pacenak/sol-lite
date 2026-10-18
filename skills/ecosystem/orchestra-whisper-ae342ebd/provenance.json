@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-whisper-ae342ebd",
+  "upstream_name": "whisper",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/whisper/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/languages.md": "2803cd39805b989c465f5b6c1c1d1a4c825510fb5469d5f96eae9eb775b51f37",
+    "SKILL.md": "bda4a3440a51b4bdcbf8b0dafbd1ab67102f6ccbd58adcb9a4a15e43da1431f9",
+    "UPSTREAM-SKILL.md": "acce14621ec8060db480fade27896a1fba0c99ba037c07684b876cc31027276c"
+  }
+}

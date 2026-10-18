@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-identity-federation-with-saml-azure-6becb22e",
+  "upstream_name": "building-identity-federation-with-saml-azure-ad",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-identity-federation-with-saml-azure-ad/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-identity-federation-with-saml-azure-ad/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-identity-federation-with-saml-azure-ad/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4acd193d0cd3865f82419f0e5de29ddccf9b9a9bbb755a6478fbb39a58dbefaa",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "da94c9ea65d71c53dd0eab60449044bc24cd4460e99c7199d17596f205e2b42c",
+    "references/standards.md": "9079cedabff8feb2f299efcd30cf1094bb65119921ed0f567429bba56b0c687f",
+    "references/workflows.md": "b5fedf518e82d9792c099d125331842c93d78a7cd6b96742a39f78c16356029d",
+    "scripts/agent.py": "48261ab2df27720ecd00fc31885363430c947e03085eb309d667f4a25c641863",
+    "scripts/process.py": "dbd34edb494eb2f4f37163976e6c76acc321a7354f8bbe8bc35c9257f09a1967",
+    "SKILL.md": "62870ff83c75bd8e5acadde75d1be7c5c7a33db0958e4e3c987e7edc2cd69147",
+    "UPSTREAM-SKILL.md": "9276b5ba015009d88da50a5a2e78a31b8bc882969a1dbbcda8b9b548299c860b"
+  }
+}

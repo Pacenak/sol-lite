@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-arp-poisoning-in-network-traffic-fc68e3cf",
+  "upstream_name": "detecting-arp-poisoning-in-network-traffic",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-arp-poisoning-in-network-traffic/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-arp-poisoning-in-network-traffic/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-arp-poisoning-in-network-traffic/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cb68681836a57a248662a6c6d64c6b475f3ebd7a9ed9ce5587d0172d813590e7",
+    "scripts/agent.py": "8cf3d16a3e75e3b5235d658f20e14ab5a70414c6096c59792d69244aa77d1f27",
+    "SKILL.md": "600ba11238b28a81f386911afdde8cc68abd215372ab0bdbc3039807534fcafc",
+    "UPSTREAM-SKILL.md": "d1a111bca0e53b24f23bc12db9e1293b12fdc1c3bb4f8c43359bc0b232f090ba"
+  }
+}

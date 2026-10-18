@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-kubernetes-penetration-testing-007f4126",
+  "upstream_name": "performing-kubernetes-penetration-testing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-kubernetes-penetration-testing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-kubernetes-penetration-testing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-kubernetes-penetration-testing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "78833e82105023854958af1cabde9ed3a623a9cbabb5d8ab4cacb3d42c1e7d30",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5170f1ad18afac1b790a2261e7bf56a41253a51cad540035a74d20eec063b93f",
+    "references/standards.md": "2a975391bd2f60272bbbc6eeef5d96168ee12fc5a74b5892c977404a27c16c6d",
+    "references/workflows.md": "a356b148fb4d8b2b90cda503910d455508c577495d2c2b4a96bc42c49c5a1164",
+    "scripts/agent.py": "64949a8a42f85390ec04de1fafada4cf5b8831661ca5c7eba1b4c5bf72480cd5",
+    "scripts/process.py": "8a73ee8d454b923c76ae571ac4b47a15c4cd8a2d52ea22453d88e39622b1455b",
+    "SKILL.md": "54eded635930104506502ac229472d2a5372b59375e78b74e8fae3235fdbc3ea",
+    "UPSTREAM-SKILL.md": "b326ef230844eb27307c234f777d43de02fdc1a8f6106ab68c3bd51b7d9f3887"
+  }
+}

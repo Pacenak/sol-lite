@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-cloud-waf-rules-38e56333",
+  "upstream_name": "implementing-cloud-waf-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cloud-waf-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cloud-waf-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cloud-waf-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fad784fc31bec0124cc0c12cca2027cf82614b09d6a2477e140f821b412f0a1b",
+    "scripts/agent.py": "eccb2beecc58bc938716724895734cea73aa89c0a35f5e9a29ccb89186a9f4d5",
+    "SKILL.md": "c7c42a058d43fbab77bfbcf4a13eb30da7332bff583aa680b1c83e462004f744",
+    "UPSTREAM-SKILL.md": "99864d6ee1dc5095aa5782417469de9babdcf8b8a1aa266c4ae08e7a347cdd79"
+  }
+}

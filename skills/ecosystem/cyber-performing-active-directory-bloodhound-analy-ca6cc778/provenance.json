@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-active-directory-bloodhound-analy-ca6cc778",
+  "upstream_name": "performing-active-directory-bloodhound-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-active-directory-bloodhound-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-active-directory-bloodhound-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-active-directory-bloodhound-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "31547a4c49ac086783adee05a6f1618621f31596a1f910aedb7280c6fd28e60d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9a5e94e2c7ae2193111a654321fd92d5c2a832cf56313c1dfe8329212b0057be",
+    "references/standards.md": "c5cd6b49ae67eea3897ae77860167b721456e51a6fe6f95e5ae36f8184f5599b",
+    "references/workflows.md": "33db10e9cbad220f471e0d7de4211521e24b0c60bd23429f01d53bafb492b2be",
+    "scripts/agent.py": "e829504e56cc881308dc383e606008b783692c174a74af67e6f276684b13a213",
+    "scripts/process.py": "9cb5445f6b64c81298aafcc1c4d3eb5806fe4132e1c72ad6d18c1645b5594456",
+    "SKILL.md": "578e93b042c2c4cf765e8f8a0c7bd24bc5fbe5c1a2cb45a114c0029922c4367d",
+    "UPSTREAM-SKILL.md": "ef010ebed783750a149b0a3effa3265316faf1084d3303b913931587fa07f664"
+  }
+}

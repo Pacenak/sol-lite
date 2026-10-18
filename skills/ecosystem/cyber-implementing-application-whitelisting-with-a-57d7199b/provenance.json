@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-application-whitelisting-with-a-57d7199b",
+  "upstream_name": "implementing-application-whitelisting-with-applocker",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-application-whitelisting-with-applocker/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-application-whitelisting-with-applocker/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-application-whitelisting-with-applocker/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f351569f8406e311814dba817503543640e0fffbd6583c03dc59ac399d90e392",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "77ce8020a2da253e0ba5d8a62c051fee9eefe1292adc8705ce0f9d57fd788ac8",
+    "references/standards.md": "522785826860617a7d0780d42ceac7ab67b79a4aa366121be6d89b4ca287efa6",
+    "references/workflows.md": "3386dd2f34825301c7970149808073625825462e706a5cda14ae8926ba0e5154",
+    "scripts/agent.py": "75b8e8a27062391bf0aff7bb29ad9c47569dc498549d8311784ed32a42eafc1a",
+    "scripts/process.py": "2267de9770d142a66a20d3b2f8fb704757e7be8f5f26d2f6f6bf51140c9efc67",
+    "SKILL.md": "e77bf4df9352cb00c307ce3f51508846a04849e642181cc65b97abc0998b952b",
+    "UPSTREAM-SKILL.md": "e4fe8b7392401c1b78d175b102e344fdbfc392a603bf952b2725759769166f84"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-malicious-scheduled-tasks-with-sys-2bfb975a",
+  "upstream_name": "detecting-malicious-scheduled-tasks-with-sysmon",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-malicious-scheduled-tasks-with-sysmon/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-malicious-scheduled-tasks-with-sysmon/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-malicious-scheduled-tasks-with-sysmon/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "caee9be91f538ce2331523c842de830a1a5f5174fa4cbb8873dde7c4ed56ee25",
+    "scripts/agent.py": "3bd4078a377a321a4f78cf1b364ab233229af4eb078fbd2476d56f76f99b66f3",
+    "SKILL.md": "f08a884ae1fdecc4d39543d039e72a417a106a3e4c7d32668ec65f1ab0804f1f",
+    "UPSTREAM-SKILL.md": "63bb860944375ad8aa6e384551a3c902f121e1016b429596c15fe650d9b8eded"
+  }
+}

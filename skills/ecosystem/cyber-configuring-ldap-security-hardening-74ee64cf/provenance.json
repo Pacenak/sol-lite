@@ -1,0 +1,26 @@
+{
+  "name": "cyber-configuring-ldap-security-hardening-74ee64cf",
+  "upstream_name": "configuring-ldap-security-hardening",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-ldap-security-hardening/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-ldap-security-hardening/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-ldap-security-hardening/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "358d7fed454280516493281e76d316cf3b231012432246cbea094514dcf12bed",
+    "scripts/agent.py": "1b906640bff596edb94dda045fc6cb1bc78742a3c471e5297b4ff95f72766a76",
+    "SKILL.md": "b69d07ac6c1557e1fbf3926d79c50bfa1eeb089d586e771dfce8746fa8fa3910",
+    "UPSTREAM-SKILL.md": "c7a87a4cf643f39c8534c9004a19eb043a6ea8a82f7fb990e555650862bcd563"
+  }
+}

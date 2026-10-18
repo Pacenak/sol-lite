@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-wmi-persistence-cc618398",
+  "upstream_name": "detecting-wmi-persistence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-wmi-persistence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-wmi-persistence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-wmi-persistence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ab34783e94c2aa193c47184d3284845ac38384ba04466ee17406a29f71ca81fc",
+    "scripts/agent.py": "c6a0231238a44ebb97cdc7dde132c58c34e2aed7b6e292a4dff6c09a13e67bc2",
+    "SKILL.md": "5f1860328041b00ea932c2430234d6ed866a2eea10fc5186f3e4d5b0af88e63a",
+    "UPSTREAM-SKILL.md": "34f5cebf960ca6d40a1232285d05670f97993662b4e6d52453a40d30f5fb6820"
+  }
+}

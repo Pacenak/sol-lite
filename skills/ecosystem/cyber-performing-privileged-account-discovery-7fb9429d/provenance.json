@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-privileged-account-discovery-7fb9429d",
+  "upstream_name": "performing-privileged-account-discovery",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-privileged-account-discovery/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-privileged-account-discovery/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-privileged-account-discovery/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "098b1aaf773a07a36afaabb22f687a082020c93dc837d56c4f0cb250dbefc366",
+    "scripts/agent.py": "05207dd89afe6da8bc9d95a1d31231aab34cde64c55f1f00335d06ab73c7dc42",
+    "SKILL.md": "d2a8229b4aa7224a9bded2b21285bb35cc18fed9a4f850c00b4920e3e06e4fad",
+    "UPSTREAM-SKILL.md": "2a3893e81a1c52cfdbb8d80a4958cba676d55558488bab4486ba8ba6f3de68b5"
+  }
+}

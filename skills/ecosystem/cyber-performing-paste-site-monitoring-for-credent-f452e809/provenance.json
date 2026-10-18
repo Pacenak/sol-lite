@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-paste-site-monitoring-for-credent-f452e809",
+  "upstream_name": "performing-paste-site-monitoring-for-credentials",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-paste-site-monitoring-for-credentials/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-paste-site-monitoring-for-credentials/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-paste-site-monitoring-for-credentials/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4727c8b1e4ada74c03e7336d4dcfdeba759feef545ccb76d859dba0d874e621d",
+    "scripts/agent.py": "f6d893b9c85f4cd770a2ef8dde5adccc85288faa5df28fbe5bee41223335f573",
+    "SKILL.md": "d5ce589d9a895994cc588ad9892552eaf66278992a57d1da26310e5c7a1e14bc",
+    "UPSTREAM-SKILL.md": "fb3dde4ddaab4f448c30cdeed671bb29d2632bf41bd7c7b30b847dffe41d8965"
+  }
+}

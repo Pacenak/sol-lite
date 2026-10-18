@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-soc-escalation-matrix-b4403e2e",
+  "upstream_name": "building-soc-escalation-matrix",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-soc-escalation-matrix/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-soc-escalation-matrix/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-soc-escalation-matrix/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d12cc4ab2a76208ceeb70d18f92e2c54c32c508921c7fe41e2b181fe08553a48",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d749840d79daab68fe4f97bfb1fca5c297406bdf39b1ac2643752206b7bfce58",
+    "references/standards.md": "ac5967a0f07b2b112e4577ff6ac3cca5cca533869cd13effa818cf6c018ad06c",
+    "references/workflows.md": "cb190716f6263ac9f05d8f3f4650cb02ca4cbdfc41d50fa66a9a1af450b6d466",
+    "scripts/agent.py": "9344a5d7845899742836eac2949251add427409c0b275e287beb174acbb0399a",
+    "scripts/process.py": "6b1cff3c93c1e5f4bdcf0292315992949aba14fb3523346c5efbaa4e7e179e03",
+    "SKILL.md": "73f17b19db42debaa73bad341b915640c01f4695963eb27c59ae4dea11397ae3",
+    "UPSTREAM-SKILL.md": "e2f3fc603cb9b8943dbab1a9575ca8731490ead70ee0b74f93965f32f11faf94"
+  }
+}

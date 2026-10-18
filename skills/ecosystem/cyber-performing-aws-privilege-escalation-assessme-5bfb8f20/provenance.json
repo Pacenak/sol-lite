@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-aws-privilege-escalation-assessme-5bfb8f20",
+  "upstream_name": "performing-aws-privilege-escalation-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-aws-privilege-escalation-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-aws-privilege-escalation-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-aws-privilege-escalation-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d28e41be4123a9b6ab953f3273820eb7f6852739faa8fe863e5bae16513967ac",
+    "scripts/agent.py": "13405a4cc7a6296eed15071fc1e1c191bb5d4fdce695b20a195581b3cc7fbbf7",
+    "SKILL.md": "27ae6334ea1310ebdade79a4e86c88e36d0640f05fe2bf632da0a7ef2f04b3d5",
+    "UPSTREAM-SKILL.md": "f581ca35043f71d3a96e7767254173d0230a017f611d6d33f355c9ec5fe9ff93"
+  }
+}

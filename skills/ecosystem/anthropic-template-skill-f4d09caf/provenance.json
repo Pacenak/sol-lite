@@ -1,0 +1,16 @@
+{
+  "name": "anthropic-template-skill-f4d09caf",
+  "upstream_name": "template-skill",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "template/SKILL.md",
+  "license_files": [],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "SKILL.md": "1a08cb4265ad99d4472228ba693372389274e4b7769264cec0a224175e71f9b8",
+    "UPSTREAM-SKILL.md": "eb685d91de039ed864fbd790cddf31684b017fd4a34ee1a55760d8d7cdbadefa"
+  }
+}

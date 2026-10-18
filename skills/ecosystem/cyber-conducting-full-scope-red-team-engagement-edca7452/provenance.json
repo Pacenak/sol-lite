@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-full-scope-red-team-engagement-edca7452",
+  "upstream_name": "conducting-full-scope-red-team-engagement",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-full-scope-red-team-engagement/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-full-scope-red-team-engagement/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-full-scope-red-team-engagement/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1f70d7dd757ad9c6775bad83d74e6b201ae2d95af26220fbd27658b18ee0d540",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "739c3a8429eec39b1e45c9768d2df9285ab8e7ef400a9f100d26febbbef152e2",
+    "references/standards.md": "4461e8a9545a9167f66e1fca1d662267df627e72f213e1d028bb48825dc0cadf",
+    "references/workflows.md": "cb0dc224fe1f2e071d8edf2a256b0d0e0f4b03a407dd82bf13c50f4042168ca0",
+    "scripts/agent.py": "03b5ba691f941693834a1338b8c2395ff75fe8e53a74d3597a321a9501acd10b",
+    "scripts/process.py": "05cd0b00af915679d28672caa1308d1a2ddb24c3ac19273a6754fb636f3a4c64",
+    "SKILL.md": "cd7f572dc320e0b379c0c8137a857a09c79fe7bcc11312e8aeb08389524f6848",
+    "UPSTREAM-SKILL.md": "eb94505239349c0bcf4153d9b314aeba6497bb39851d29f440df1b43b763c6ec"
+  }
+}

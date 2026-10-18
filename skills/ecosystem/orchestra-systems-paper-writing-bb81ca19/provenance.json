@@ -1,0 +1,34 @@
+{
+  "name": "orchestra-systems-paper-writing-bb81ca19",
+  "upstream_name": "systems-paper-writing",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "20-ml-paper-writing/systems-paper-writing/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/checklist.md": "7ccb78079fb8e9a0bd9f6f024b847338e88f4974536eae2287f2ceb9adadd658",
+    "references/reviewer-guidelines.md": "4faabfe4e07b5fe48239583136f2cedfb317c6e721a5b7dce7e2b247dc95e6c1",
+    "references/section-blueprints.md": "289bafaef560edfd5e3b98b1eb65902fd4bf4fc289c98f5b83c4b7a13fc4d69b",
+    "references/systems-conferences.md": "7e0d960d5654efefa0e2c757c968db0814ccc4ec60ddf37a3e3d8344065f02d0",
+    "references/writing-patterns.md": "593f80a581fbeb1e9fc07360ee94940a111a3db4a023d3e27bf6df300d7216d5",
+    "SKILL.md": "414b4df344b1d13daef98c867d7d7e89af3735e641944061a259375c758ee758",
+    "templates/asplos2027/main.tex": "4a1837ef362f6d9dfc7bd65342daeed76991f766cb865946c605ab6f2c9224a9",
+    "templates/asplos2027/references.bib": "bb91a9682e9039be84b7ad5dfa319f126ad1d739b4ebf7f02268e70f3a5ef6d8",
+    "templates/nsdi2027/main.tex": "4a5913c17310d955b9612d3f1a105e43d2191c57c4cba77776975ae8abcf0a9c",
+    "templates/nsdi2027/references.bib": "5637b0148fc843a355bb1ef1b14eb9721e9955dce477a2611a23b44832883984",
+    "templates/nsdi2027/usenix-2020-09.sty": "2ac10f959e00fc4dbb56a8b98897def8fcc61299ea78eb8381585e64d98a1a9d",
+    "templates/osdi2026/main.tex": "1fe19e1dbb91f8971c0a40bcedc5543691efee9e1b36544020c08e650f3d6f48",
+    "templates/osdi2026/references.bib": "5e7b2647081796958a3bb94b24f198718e4f3d3bd803cc9c5f5840873ca6af4b",
+    "templates/osdi2026/usenix-2020-09.sty": "2ac10f959e00fc4dbb56a8b98897def8fcc61299ea78eb8381585e64d98a1a9d",
+    "templates/sosp2026/main.tex": "c15c1e4a96790a2599f129951e950d9cc91f6afeb3867accb573922fb64ef0c2",
+    "templates/sosp2026/references.bib": "099c4aeffa0978d7a71d71e313f0723100c8d04071830bec5bf74fc43ba08cdb",
+    "UPSTREAM-SKILL.md": "ee31b50b25192efcfcbe3252d7e15d88ec27bbd94817640b0357090f94c0e297"
+  }
+}

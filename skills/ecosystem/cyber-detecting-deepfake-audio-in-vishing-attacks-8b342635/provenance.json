@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-deepfake-audio-in-vishing-attacks-8b342635",
+  "upstream_name": "detecting-deepfake-audio-in-vishing-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-deepfake-audio-in-vishing-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-deepfake-audio-in-vishing-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-deepfake-audio-in-vishing-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c07c2a7b323a05f14dd31139e9af6dc5c53424b72bc00c2fb89f94ade63e0ef5",
+    "scripts/agent.py": "181c41763259de2ae1830ef37a16081b144896a9610b14a594d45e85fb9b93e4",
+    "SKILL.md": "578dc458b08af0f458d9efb3bc2cba251e6e30d5fa2ee41440a144f1a85732c9",
+    "UPSTREAM-SKILL.md": "e8ce6d9cc41ef12caa0f0738f45ccdc24c00012ed3cfdd993f161b6be6367d58"
+  }
+}

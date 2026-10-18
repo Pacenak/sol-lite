@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-api-rate-limiting-and-throttlin-8ecdd8db",
+  "upstream_name": "implementing-api-rate-limiting-and-throttling",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-api-rate-limiting-and-throttling/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-api-rate-limiting-and-throttling/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-api-rate-limiting-and-throttling/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c7ae8f221500f27eba8b0ebdd73c9013b60e4ed21a1511f2d681fd614fea010d",
+    "scripts/agent.py": "f6d4873adab87a5416b6a3185255a051adc8f989af684eefff08e5d52cb6241f",
+    "SKILL.md": "b84d0e4951921500b3ff266af838a1d12c86828d6e236d53dec5242dd02c6522",
+    "UPSTREAM-SKILL.md": "88ec1351dc65180ee26be4ceb26b96fb28a825caa7f50deecfa182074bf68962"
+  }
+}

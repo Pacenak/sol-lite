@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-langchain-c8ff263d",
+  "upstream_name": "langchain",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "14-agents/langchain/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/agents.md": "724838c970b1cd9d5d99eff5f6f8730514cccd3b09a23baafdb882ecf42cc555",
+    "references/integration.md": "e98c59ee6d60bfe27d7971cc615d86b3bf56ceab7e82263145c367cb8b5d3157",
+    "references/rag.md": "4a4cb97d383fd23f4a4558ec5cf2885be1a74bf176c2ab708770fcaedf0b153c",
+    "SKILL.md": "f9495b8a38bba8e59c05e94af81ce903a60025907f8c354e50e7325d287dde47",
+    "UPSTREAM-SKILL.md": "d47635059ac1a1a369ee6169f68f1d02e95ca201f2394a902fe66a30b1e35e65"
+  }
+}

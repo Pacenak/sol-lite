@@ -1,0 +1,27 @@
+{
+  "name": "cyber-building-c2-redirector-infrastructure-60ce645b",
+  "upstream_name": "building-c2-redirector-infrastructure",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-c2-redirector-infrastructure/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-c2-redirector-infrastructure/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-c2-redirector-infrastructure/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7b75486676694e4ed72a488a952b9cb16b1c801c749beb961b75f54b44eb9fda",
+    "references/standards.md": "175b003513bcee22230fd641ae717d9a248fbffd1221edbab4b8cfe7e8448637",
+    "scripts/agent.py": "61826e2df3584c9dde5bb9627c40ab268fbb9e7961fc9d6dfbc01c99ea48fbd8",
+    "SKILL.md": "4d429b766b8e1ca3928a0b614451ada4968b5a66f5c4da77ab68ba306691db62",
+    "UPSTREAM-SKILL.md": "325a80a46eea1108e887ec0e60bb897955f2b7384b8c8f867efe3c0610fecb72"
+  }
+}

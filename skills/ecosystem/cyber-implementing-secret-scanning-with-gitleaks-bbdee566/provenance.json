@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-secret-scanning-with-gitleaks-bbdee566",
+  "upstream_name": "implementing-secret-scanning-with-gitleaks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-secret-scanning-with-gitleaks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-secret-scanning-with-gitleaks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-secret-scanning-with-gitleaks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9823e7b3ea0bbf35d1cd987b0fd4bbbd9c0ce04d8b4c172099832c96e7c75801",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4320f48b138106322a0a4d1ebb708a909e8f67781894e91956aa74eae561320e",
+    "references/standards.md": "64008c4c0b735f058646824b188aa616cfdbd6774baacd00bdf427467fd26774",
+    "references/workflows.md": "1c73aecc583c5dae8acc94fdc62bbc2f2fe7c7293687a855714929fc4d4c8488",
+    "scripts/agent.py": "d794f97769f65f583508da597999c6c2079ceddbfa2c971a4921b3113dd44d4b",
+    "scripts/process.py": "602feffadedaa1b2bacda98db6bed0f13b18585bd71c45a820c4bb5609aa04e6",
+    "SKILL.md": "95ef20561ab82fc3ad754c359db446311c73a187b4a8233583c326dcff4023f5",
+    "UPSTREAM-SKILL.md": "b4edc041a407d5b88dc54de6085088c797cd97a63d82de605c39436346ff4cc4"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-privileged-session-monitoring-c3d5f80b",
+  "upstream_name": "implementing-privileged-session-monitoring",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-privileged-session-monitoring/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-privileged-session-monitoring/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-privileged-session-monitoring/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a6945a356bb362ffc8bbaf6a476de4c0b16ce00243b6196454dbe349568d08ff",
+    "scripts/agent.py": "0f03dfb0a754f363dbe880efe186eca40f3b06bcb1a1f81da80d1eb351f78dc0",
+    "SKILL.md": "30aa46f286b9a37454e1fe096a59fa547135071eab0cd67d160847fd441ec9d3",
+    "UPSTREAM-SKILL.md": "8943bc59598cf98cbb8e406e64aba4b3e23a6cc2f6edd1950d83806fa79882f1"
+  }
+}

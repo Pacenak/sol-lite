@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-api-schema-validation-security-b03e6a3c",
+  "upstream_name": "implementing-api-schema-validation-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-api-schema-validation-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-api-schema-validation-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-api-schema-validation-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bbc7fd381ff0db1a9aacf70b47a4c007cc091cbe5813e82465544ff2f3e324fd",
+    "scripts/agent.py": "869500d228927da9a56b0a00a22b287339e933f379aec53cfa751e0fe7df593d",
+    "SKILL.md": "a2b8007839ed3ee2303514202ab4a708e2c53cf5f5b157b2554691cdf6bcab71",
+    "UPSTREAM-SKILL.md": "62ca654dbb68bbb79e30d0cad3f44c58133f44de9cfd955655be80bbf78970d1"
+  }
+}

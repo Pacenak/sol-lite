@@ -1,0 +1,28 @@
+{
+  "name": "cyber-deploying-active-directory-honeytokens-cafff64f",
+  "upstream_name": "deploying-active-directory-honeytokens",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-active-directory-honeytokens/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-active-directory-honeytokens/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/Deploy-ADHoneytokens.ps1",
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-active-directory-honeytokens/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ffcd34ba4f29024846d10a006f8b0069eef22a411111e527dd672571c83b8102",
+    "scripts/agent.py": "822cc64f2dc87c19f3414692ff671410d48d346dc4edce165f0e7f3da65b6ca4",
+    "scripts/Deploy-ADHoneytokens.ps1": "2728607e00356e5afc4ebb2c0c08bb000c62ac522a217fc02d6009d4c738a5af",
+    "SKILL.md": "f744c90080c4c8492fd8b2777e1a39e3b337f30df71698958caa5747569e4cba",
+    "UPSTREAM-SKILL.md": "0118316a153360c6538902d5e535a87279a30a5b26028ccbd1d0afc100f18316"
+  }
+}

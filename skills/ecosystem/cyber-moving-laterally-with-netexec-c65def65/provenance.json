@@ -1,0 +1,27 @@
+{
+  "name": "cyber-moving-laterally-with-netexec-c65def65",
+  "upstream_name": "moving-laterally-with-netexec",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/moving-laterally-with-netexec/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/moving-laterally-with-netexec/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/moving-laterally-with-netexec/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6197cde975feb1c3e1f0fdfe2b60967611d07d8f9163034ba835521cb5721597",
+    "references/standards.md": "a8c089ad7f3a8e1468aadf517058d93ad4d6b7740b4645e074a686ce4dcc356d",
+    "scripts/agent.py": "f146d108c284322f33afe8dbbeebf92940d918ac5b9a3e79beac1c1a7fa4c4fd",
+    "SKILL.md": "7dbffc6cd4d897692337f2909509c2c3105029260f3bb38db027e99d8e9048a7",
+    "UPSTREAM-SKILL.md": "c98fc242854abb2ebfa66234b1cddd9f41e422e53d834c00a4e2b5e44bc661a9"
+  }
+}

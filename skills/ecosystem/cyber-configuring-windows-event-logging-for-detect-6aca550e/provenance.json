@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-windows-event-logging-for-detect-6aca550e",
+  "upstream_name": "configuring-windows-event-logging-for-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-windows-event-logging-for-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-windows-event-logging-for-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-windows-event-logging-for-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d27cdb2ed4345540d30c0d290d38018af99688576adb223219b1ef2a5248456f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bc788e123ca0b7e68d56acc919fa37c947a2621d603c112aa17f274f806e5c0a",
+    "references/standards.md": "2ae9cc2761b28dafad130cd668f4a27abe25c8c433a8646765ab425f8fb1f150",
+    "references/workflows.md": "f3e58df57285359a862ff37772fcd96659a620ed8a9e4ffa4ca4ced41ed7c65c",
+    "scripts/agent.py": "4e3bb689d472b39b4e06807456bcbb0bfc20c072d7eba9aa8b95263688c61d72",
+    "scripts/process.py": "3e4169dcdc7fa15a8cee86aa92beb20db1f596f12d0fd7e538e856b7ff91b6ff",
+    "SKILL.md": "40e9f8f2f64621ce25670c8876389897616e737c138ec2a70b59ac6951ad5232",
+    "UPSTREAM-SKILL.md": "59f5842ebf4d6cc270181708bbac69febc74d2af44e259c070551e97c84a3a77"
+  }
+}

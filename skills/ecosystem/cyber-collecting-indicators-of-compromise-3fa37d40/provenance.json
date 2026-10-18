@@ -1,0 +1,26 @@
+{
+  "name": "cyber-collecting-indicators-of-compromise-3fa37d40",
+  "upstream_name": "collecting-indicators-of-compromise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/collecting-indicators-of-compromise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/collecting-indicators-of-compromise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/collecting-indicators-of-compromise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e97168d48fb710c9697db0616b513cd2e65a95168aa18886ed7c5918ff306631",
+    "scripts/agent.py": "e9455a4667909a391e296661fe8460b3db66098a217fd682560364a8df089b4e",
+    "SKILL.md": "2de4b03f9aa3e133f614a5b5d1e379360616d69a78a36b2071d3244b8781b9df",
+    "UPSTREAM-SKILL.md": "c6b4fefdd2bdc3eaa8888334199ab13c64636c3e76a336d9d360e9f24b48a225"
+  }
+}

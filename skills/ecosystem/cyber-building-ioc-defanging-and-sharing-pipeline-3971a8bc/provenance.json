@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-ioc-defanging-and-sharing-pipeline-3971a8bc",
+  "upstream_name": "building-ioc-defanging-and-sharing-pipeline",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-ioc-defanging-and-sharing-pipeline/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-ioc-defanging-and-sharing-pipeline/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-ioc-defanging-and-sharing-pipeline/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8cd17c6464bb444427817cda7d64fa845d0db2b14720951a30e6881c8a8b0aab",
+    "scripts/agent.py": "f3aeb2fe56a2c3bec2c6d3cb3fa6296507789854f671a5f6ea38b342cb49de41",
+    "SKILL.md": "f22d4b6e58d244d7e7cf5ab97f80f4db1ed67591902c2faf5da2f9e5d167e0f6",
+    "UPSTREAM-SKILL.md": "9e591f420bf2d23115bc2430b240d9bc56e94701f65b45584f4c0f749569b33c"
+  }
+}

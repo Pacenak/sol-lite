@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-t1003-credential-dumping-with-edr-3a922568",
+  "upstream_name": "detecting-t1003-credential-dumping-with-edr",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-t1003-credential-dumping-with-edr/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-t1003-credential-dumping-with-edr/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-t1003-credential-dumping-with-edr/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5d69e20f5a4152dc3b4199c1006d762992f97021ec2063cdec4da6937f3194b8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b4d9822202a2859fe0a42a7cfe1b89a6579424e28d0dc8aa252ef48755c6a31d",
+    "references/standards.md": "eb52ec5e11cb01b545ac0de9249b76aefab464fe0115a05edc3436e9fef427d0",
+    "references/workflows.md": "85c178a4e7c0703b60462d991590c159f9e2281321af148f4203437c595a8ae1",
+    "scripts/agent.py": "97143b96c98ccf1941f4eef092d5a599d6ef1c00ef634640bea1b3aded4e7cd2",
+    "scripts/process.py": "f646943b9cde243bfc3603d119f6c9447ce886d94ef5c5a900da07d8584170e7",
+    "SKILL.md": "705132ba240d0df5ca6372e22318d02d56f932e1f372c32d3ee3c0a0d3813695",
+    "UPSTREAM-SKILL.md": "8459c9972ba2cac6d747c67fcda8cc687105180a560f1697db75a5f61aaba9af"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-aws-macie-for-data-classificati-91d1e2e1",
+  "upstream_name": "implementing-aws-macie-for-data-classification",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-aws-macie-for-data-classification/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-aws-macie-for-data-classification/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-aws-macie-for-data-classification/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c08b7a18c92d60eae1387537b364b0f948c83b455c99f4198353c75da1e37136",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1817a044264590c05132299781250b37c33571c68382278901d2c211d1234cd2",
+    "references/standards.md": "90603dae646460b86541ba4195cc67b93fdadf99301065e90ade8eab890f377f",
+    "references/workflows.md": "983ef4287d2e7aff1f09ee7c5b9566e6478fa00ecbbcd8566739045b01a656b3",
+    "scripts/agent.py": "1bf4d7b4a7c9fba880896059d8e9b1876f3d2e0aff42ca587c001a784ec4c00a",
+    "scripts/process.py": "26214358a97f7140a2c8b155b748ad7c131cfe11edde318b290dd7a1913fec19",
+    "SKILL.md": "5dd05be38f2b148572b3ba2792e8272bb28d563ea42c5b49116a914ebe39e69e",
+    "UPSTREAM-SKILL.md": "1cc9da6fa040a4c7ff2277306a810b36afd8a8e1e7a0e0ad8e0ae2960ce09182"
+  }
+}

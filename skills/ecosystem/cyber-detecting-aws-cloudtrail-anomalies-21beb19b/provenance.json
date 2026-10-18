@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-aws-cloudtrail-anomalies-21beb19b",
+  "upstream_name": "detecting-aws-cloudtrail-anomalies",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-aws-cloudtrail-anomalies/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-aws-cloudtrail-anomalies/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-aws-cloudtrail-anomalies/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "322de99c84a604ad49d6c1beaef6afb18bf871f339eb8e1a5f1d7b21ef7d1f1f",
+    "scripts/agent.py": "6030edd22b50065f143a9563fcb48fcd32f0901b746299a1e746d618342c882c",
+    "SKILL.md": "632d0dbd19c0d669ebd1bd84501d2ee6f1e5de1ac71631bb26d1d6545320176e",
+    "UPSTREAM-SKILL.md": "363865b0494e93aa43154a1d613f1a8311df283207c19a901631a410e47b47f2"
+  }
+}

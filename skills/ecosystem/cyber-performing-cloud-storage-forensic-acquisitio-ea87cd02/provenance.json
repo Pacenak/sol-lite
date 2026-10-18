@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-cloud-storage-forensic-acquisitio-ea87cd02",
+  "upstream_name": "performing-cloud-storage-forensic-acquisition",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-storage-forensic-acquisition/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-storage-forensic-acquisition/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-storage-forensic-acquisition/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c48973a6188f64bb3b377fb93653ab62a5ce39daab1cb18c1111bab080ceda2d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "12079a2b043c9a12538a326556743bfddbbba833de79d4a813f85616b8ca317c",
+    "references/standards.md": "96c3660bf09d93a6563590609d70e0ad5bab4ecd8b8329f8d9c833223cab6646",
+    "references/workflows.md": "5c9967e3b0a4781ab20bd316614ca7f9ad5fbe34e05ac6389abfece9c9bcf33b",
+    "scripts/agent.py": "cccc7c6810ff480863d865636864ed9fb28e40c8fa3855f01081eb620a571c5f",
+    "scripts/process.py": "9edd05d7313546d648e455e78385c3146aa4cc1af020e17b13ec820f27cd00b1",
+    "SKILL.md": "7d44ac1bda467316a06cea1d503b4ffc6edea7199bb235bfb495a537aba8f503",
+    "UPSTREAM-SKILL.md": "4653a3ea87df44c017f217b26620da64c52d9aa032bdd4fbdd0d212d1d6b9214"
+  }
+}

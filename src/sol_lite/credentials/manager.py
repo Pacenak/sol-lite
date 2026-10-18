@@ -28,7 +28,13 @@ class KeyringBackend:
             raise RuntimeError("Credential storage requires the 'keyring' package.") from exc
         return keyring
     def get(self, provider: str, key: str) -> object:
-        value = self._keyring().get_password(provider, key)
+        try:
+            value = self._keyring().get_password(provider, key)
+        except Exception as exc:
+            # Backends expose platform-specific errors (including Windows
+            # CredRead failures). Keep optional integrations from crashing boot
+            # and never propagate backend messages that could contain secrets.
+            raise RuntimeError("OS credential storage is unavailable.") from exc
         if value is None: raise KeyError(f"Credential not found: {provider}/{key}")
         return value
     def set(self, provider: str, key: str, value: object) -> None: self._keyring().set_password(provider, key, str(value))

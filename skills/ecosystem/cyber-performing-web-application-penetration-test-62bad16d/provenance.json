@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-web-application-penetration-test-62bad16d",
+  "upstream_name": "performing-web-application-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-web-application-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-web-application-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-web-application-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "71c5af3543fd18434ba79e4e2dc4109b00d79bcfea5135b5dc9db77e44bba2d1",
+    "scripts/agent.py": "d5a1f7f2e6902047092e1e978c5e0dea506281a810e822e130272780fd2e925c",
+    "SKILL.md": "6185f9ce768671c6e7a03aec96d5fa02c7fa046346876f4c8889f0504dff6281",
+    "UPSTREAM-SKILL.md": "0c1f45f85bdd2ce34bfa2a476cbda205fa2746e41bf50acce9a06d9543ceed99"
+  }
+}

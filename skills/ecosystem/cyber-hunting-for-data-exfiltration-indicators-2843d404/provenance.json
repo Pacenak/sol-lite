@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-data-exfiltration-indicators-2843d404",
+  "upstream_name": "hunting-for-data-exfiltration-indicators",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-data-exfiltration-indicators/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-data-exfiltration-indicators/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-data-exfiltration-indicators/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "878b1ddd44ce61c2c20d2f64424b513f71de86535a4152be49a8925f3c1c64fa",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "34670fb08f06d1140ad9722f75bc2e996a69c16bbc891443d6fcd2693605e2ba",
+    "references/standards.md": "8e3234cf51b48286712ca30573202de48f435b0010fb8b2cdcbc035633c4f645",
+    "references/workflows.md": "75ba2f6b00e96b4647edd226dac4afcb9186c3cfebb0ef6520efc8fd7d1f19f1",
+    "scripts/agent.py": "be7fa0744ac8db692ae9f505afd07626934bfa31ee7d00aebe5f2af68dbb5003",
+    "scripts/process.py": "bb3a2321c57c094be5157b65d7605af14b7f50981141a9a2223e1260dfbdbf77",
+    "SKILL.md": "9b15ed1a6659e5ee2e40bf149d6dd2a86808fb1f3ff6d57378a9d8ce4052df76",
+    "UPSTREAM-SKILL.md": "c9e417f0016997077d1d247a9d1419349654710744583d3e077bef0dfcb5d154"
+  }
+}

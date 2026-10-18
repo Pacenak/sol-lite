@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-attack-path-analysis-with-xm-cy-85b4458a",
+  "upstream_name": "implementing-attack-path-analysis-with-xm-cyber",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-attack-path-analysis-with-xm-cyber/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-attack-path-analysis-with-xm-cyber/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-attack-path-analysis-with-xm-cyber/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5e967b9bb6209343ba54519e4a63c876bcc358832d59055626a6d6a627e9060f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4314199425e29c0c98f79a4d251b925874014544bcf4ed8e6247d36a27a65b51",
+    "references/standards.md": "ee3053d7f37dfbdbc396f33212a68cd32cdb32c9a4b5aef34fac2c348392fda9",
+    "references/workflows.md": "e622002f5f5dfd4f0d7e2199038c5fe5d4644d44e8351c42aec541f5c20a6b4e",
+    "scripts/agent.py": "634c774d267d8ff98ec319603810506ed91728b7add0efd887a9370dfedd4f8b",
+    "scripts/process.py": "a062fab9e7edee71874404fc1ac8a9b0162c25d8b9e1ea625009ea69808b5b14",
+    "SKILL.md": "49bd78d6e69db7b5289833216b06ae9ec1a442068261436696e62d690478a9ec",
+    "UPSTREAM-SKILL.md": "bf01618ae13acf99df20bc6f014062d100fffd06e6fcf06391bb4c350b31c30d"
+  }
+}

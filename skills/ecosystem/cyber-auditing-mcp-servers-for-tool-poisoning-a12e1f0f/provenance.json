@@ -1,0 +1,27 @@
+{
+  "name": "cyber-auditing-mcp-servers-for-tool-poisoning-a12e1f0f",
+  "upstream_name": "auditing-mcp-servers-for-tool-poisoning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-mcp-servers-for-tool-poisoning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-mcp-servers-for-tool-poisoning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-mcp-servers-for-tool-poisoning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bcc5f1efc8be610024c2aac285f8e0bffc3d0cb0160e178e2099e97ce251e5fd",
+    "references/standards.md": "45eb1a0a36299b9dc6b86a29b756562a6a2ed34b1956ce028e287f2d7969a155",
+    "scripts/agent.py": "3e169d38eaca33482126ad056ca23a563b4cc443df38662a593b2caf3e1623be",
+    "SKILL.md": "24fe711075a3e7f02d69101db2269e73283170717d8da1c98d62b3239a287299",
+    "UPSTREAM-SKILL.md": "742ba124a9dd9d5109654fcf566cbec63e0d87f941cbd480ecbaeab596d38e22"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-building-super-timelines-with-plaso-b443d562",
+  "upstream_name": "building-super-timelines-with-plaso",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-super-timelines-with-plaso/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-super-timelines-with-plaso/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-super-timelines-with-plaso/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c55ec46a607df2c67ea83cdd418a6741101675443a23c956ad2008fbe2b8d34a",
+    "references/standards.md": "cab01cc5d3d658c9c2b4b26784e739e277682c135192490967c31dfd86396ab3",
+    "scripts/agent.py": "fcffc0526449088fc2a26af46bb5eadb212ab657cd0ad2f4ffd6a3306d06ce3b",
+    "SKILL.md": "0e8a9a60c71270b473599b4909ac40867e1acd8eb0f77f7ffd187ee8c01ec3cf",
+    "UPSTREAM-SKILL.md": "2157d0dadc76967733646788cf53e63aace98e92717cb535397d2e04119361bb"
+  }
+}

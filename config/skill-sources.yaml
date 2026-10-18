@@ -1,3 +1,7 @@
+shared_catalogue:
+  manifest: skill_catalogue/catalogue.json
+  schema_version: 1
+  activation: engineering-baseline-and-explicit-optional-packs
 sources:
 - name: VoltAgent/awesome-agent-skills
   url: https://github.com/VoltAgent/awesome-agent-skills

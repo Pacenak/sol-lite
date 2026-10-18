@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-sqlite-database-forensics-169dfd39",
+  "upstream_name": "performing-sqlite-database-forensics",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-sqlite-database-forensics/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-sqlite-database-forensics/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-sqlite-database-forensics/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8e5d3dee9e93c793d84059fe34c938023fdf461e92232e8ad0c2a96742a51c31",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9644b188ab8bd48d1b162ea639a2d6f215c6aba0a6f8e5f5069dba7bd5833507",
+    "references/standards.md": "45bde69f06a24ecd1d8958a48e13f6c0c6940798b86e199b917b2437ef1f9894",
+    "references/workflows.md": "7097f1044b25cac3e540d04fed4c8179eaceaaf6c5a9ab6e4711fb503b485ac3",
+    "scripts/agent.py": "b7b89fcc428acd6a766c02379c82c2a92a9f938c8a89e395141983572c86101d",
+    "scripts/process.py": "fd7fa045510b03b627f31ae52b61e0f4d1cf71377750e799c12caae161842c41",
+    "SKILL.md": "629baf53117124d10eb825761c67a76879c5ef9c07925756f6218c83ad6c9255",
+    "UPSTREAM-SKILL.md": "c17140c5a7e1108f0cf127aa03fade7b28b74dd39df20229b38d45fb890ec800"
+  }
+}

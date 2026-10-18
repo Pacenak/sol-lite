@@ -1,0 +1,27 @@
+{
+  "name": "cyber-configuring-suricata-for-network-monitoring-00fc7f21",
+  "upstream_name": "configuring-suricata-for-network-monitoring",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-suricata-for-network-monitoring/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-suricata-for-network-monitoring/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-suricata-for-network-monitoring/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3501f18c885b82fac9459f45925ba979774806a6973ec0602a0e1a6ab3de919f",
+    "scripts/agent.py": "5fd10353096728de87cc75792bae902a4a3ca105d327972b9d69f8fa9e469197",
+    "SKILL.es.md": "2fdec1f80b765fdf2230cd93593d589050a1fa40274077a8a72be184d03c870b",
+    "SKILL.md": "a217ab69ffb7f40b5687221937a630913783a2c43d0670076025aec4e1bd4b79",
+    "UPSTREAM-SKILL.md": "1fbbfe83f93dfabb405cb2e04409b5d8dafad0dfb8b741ab664c8ee059e3c8e4"
+  }
+}

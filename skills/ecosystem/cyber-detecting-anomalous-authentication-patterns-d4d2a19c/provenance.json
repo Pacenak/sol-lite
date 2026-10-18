@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-anomalous-authentication-patterns-d4d2a19c",
+  "upstream_name": "detecting-anomalous-authentication-patterns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-anomalous-authentication-patterns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-anomalous-authentication-patterns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-anomalous-authentication-patterns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "61b7280757952ba13751d48d689d4b76daf3e10205822a7e82f79d1951c490b1",
+    "scripts/agent.py": "ca3d7e4c8bc88bbcf2fe9584fd407436c77d73d0f9378d69daf66644765aec0f",
+    "SKILL.md": "1e97e496ec1de62cd464cf78a6042b47a7e8303bfe658f4920b6827a18446a98",
+    "UPSTREAM-SKILL.md": "9a97dad02e90f0ba15b6b090673d763820e7d4160a50898093a2b8c6d7bd5cbc"
+  }
+}

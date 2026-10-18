@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-oauth2-implementation-flaws-dfe89162",
+  "upstream_name": "testing-oauth2-implementation-flaws",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-oauth2-implementation-flaws/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-oauth2-implementation-flaws/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-oauth2-implementation-flaws/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "17c8914ba82e41d0021a7af149876b4c05615a5ae6ab5791133473b57f158a91",
+    "scripts/agent.py": "a9064017b2c9b8751deafc2d586a45c680db778d4ec8457fa425095571c7107d",
+    "SKILL.md": "0726f00cf46e4c1212cf6b45531297abb0d0905afd07c60466b3c31bd9b6baa5",
+    "UPSTREAM-SKILL.md": "ba67e85958369eeeb9344b359fc2bf371609a9207d05466811e0a7f4f7757007"
+  }
+}

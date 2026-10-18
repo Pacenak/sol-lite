@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-purple-team-atomic-testing-c7b21060",
+  "upstream_name": "performing-purple-team-atomic-testing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-purple-team-atomic-testing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-purple-team-atomic-testing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-purple-team-atomic-testing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "422384c3ef31bccff83ab69607b02f477563a7e8c9cc3788b1d7723b729c8666",
+    "scripts/agent.py": "2b728c513c7d0b6b9e0c4abfc54fb4961526543ceacf9c0b822d1ee1f93fc0c8",
+    "SKILL.md": "454c214e5e06f5829b6a6e15d12b05c4f0307f44c907fa7c70e659d365184e24",
+    "UPSTREAM-SKILL.md": "dd59678446b2bcdd0655512bd4bc0650753d60958a0fa2d7fcb07bf7ce184121"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "talk-001",
+    "description": "New deck triggers decision-handoff-gate before any design starts",
+    "input": "Подготовь слайды для моего доклада на конференции по AI-маркетингу. Доклад 30 минут, завтра в 15:00.",
+    "rubric": "Response must: (1) present ALL decisions A-J in ONE message before starting any design — brand source URL, logo, palette, theme, fonts, render target, slide count, cases, public artifacts, deadline, (2) recommend defaults: theme=light (your-site.example.com brand, NOT Pantheon dark), slide count=16-18, render=HTML→Playwright→PDF 1920×1080, (3) NOT start coding HTML/CSS until the confirms decisions, (4) set deadline = 2h before live time (13:00 if talk is 15:00), (5) note custom fonts must be downloaded from live /fonts/, NOT Google Fonts equivalents.",
+    "tags": ["decision-handoff-gate", "new-deck", "pre-design-gate"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "talk-002",
+    "description": "your brand is light+teal, NOT Pantheon dark — critical distinction",
+    "input": "Сделай обложку доклада the в его фирменном стиле.",
+    "rubric": "Response must: (1) use your light + teal palette: --bg: #ffffff, --accent: #0f6677, --bg-dark: #16252b, --fg: #141a1d, (2) NOT use Pantheon dark tokens: NOT #181818 bg, NOT #33ffff cyan, NOT dark mode, (3) load .claude/skills/talk-deck-builder/SKILL.md which explicitly states 'your talk decks use light + teal brand, NOT Pantheon dark', (4) title uses Instrument Serif italic (your brand font), NOT Inter/Roboto/Arial, (5) mention SSOT is the talk deck playbook.",
+    "tags": ["greg-brand", "not-pantheon-dark", "light-teal", "brand-distinction"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "talk-003",
+    "description": "Custom fonts downloaded from live /fonts/, never substituted with Google equivalents",
+    "input": "Скачай шрифты для презентации the с your-site.example.com.",
+    "rubric": "Response must: (1) fetch woff2 files from your-site.example.com/fonts/ (use Playwright brand audit or scraper-stack fetch), (2) embed downloaded fonts via @font-face in deck.css, (3) NOT substitute with Google Fonts equivalents (e.g. no Instrument+Serif or similar Google CDN replacement), (4) explain reason: custom fonts contain Cyrillic glyphs that Google fallbacks lack or render differently — makes Russian text look wrong in the PDF, (5) save fonts to projects/talk-DATE-<slug>/assets/fonts/, (6) verify via Playwright getComputedStyle that correct font-family name is used.",
+    "tags": ["font-download", "not-google-fonts", "cyrillic-glyphs", "woff2"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "talk-004",
+    "description": "Notion case fetch uses API credentials, NOT WebFetch on private page URL",
+    "input": "Добавь кейс из Notion в слайды: https://www.notion.so/your-org/casestudy-acme-12345",
+    "rubric": "Response must: (1) NOT call WebFetch on the Notion URL — private Notion pages return 403/404 to unauthenticated WebFetch, (2) use credentials-mcp service 'notion' to get NOTION_TOKEN, (3) run notion-fetch-cases.py via Notion API (GET /v1/blocks/{page_id}/children), (4) extract case content (results, methodology, metrics) from API response, (5) format the case as a Hero-numbers slide or Stack-explainer (Что делаем + Зачем pattern), (6) report Notion: page_id=<uuid>, fetched via API, blocks=<N>.",
+    "tags": ["notion-api", "not-webfetch", "private-notion", "case-fetch"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "talk-005",
+    "description": "Densest slide stress-tested before rendering full PDF",
+    "input": "Зарендери презентацию в PDF — нужно сделать всё быстро.",
+    "rubric": "Response must: (1) run pre-render checklist BEFORE calling `node render-pdf.mjs` — check logo cleaned, custom font loaded, title has no manual <br/>, data-slide NN match footer values, (2) identify the densest slide (most text/elements), render JUST that slide first, visually verify it looks readable and not overflowed, (3) only after densest slide passes — render full deck, (4) verify PDF integrity after render (file exists, non-zero size), (5) NOT skip checklist because 'it's urgent' — checklist catches font substitution and layout overflow regressions, (6) if using Playwright, confirm headless Chrome viewport matches 1920×1080.",
+    "tags": ["pre-render-checklist", "densest-slide-first", "playwright", "pdf-integrity"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "talk-006",
+    "description": "Publication visibility gate before public push of deck repo",
+    "input": "Запушь репо доклада на GitHub как публичный для участников конференции.",
+    "rubric": "Response must: (1) STOP before pushing and run publication visibility gate: python3 scripts/publication_preflight.py <deck-dir>, (2) check for: private Notion URLs in HTML, your server IPs, API tokens, internal paths like /your-repo/, (3) confirm all referenced URLs are publicly accessible (curl check each), (4) get explicit the confirmation before `git push origin main` on a public repo, (5) verify deck is self-contained (no dependency on private monorepo files), (6) NOT push automatically even if the says 'push the deck' without explicit visibility review — this is a one-way door per the project rule (see your repo rules).",
+    "tags": ["publication-gate", "public-push", "visibility-check", "greg-approval"],
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-ios-app-security-with-objection-ce2f9e09",
+  "upstream_name": "analyzing-ios-app-security-with-objection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-ios-app-security-with-objection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-ios-app-security-with-objection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-ios-app-security-with-objection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4e1ac2e26e3ee000b78c7a4020f754856a4c377f6109ebe7ff42bc602e6c3d53",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ff73201f27c1f0aede3eb532eed87fabb257d3242c2a478fa1238e179db3bfef",
+    "references/standards.md": "3f0643dd1da55baac8316ec6eea74407351f749201f026e46227815a014590c4",
+    "references/workflows.md": "1486948c2afd49ae2337962050ad8627608d360d91cc9bcff32363d81eaa6668",
+    "scripts/agent.py": "0490b7916baa665a4d1d1ae5c800958e5e39069ca777fcd61b5b9138bec15035",
+    "scripts/process.py": "15ddab1aa16b03e1bae8a72f189f1b49c39d8c38b35be239b42c01d223bcdb23",
+    "SKILL.md": "af752078f7084eca69a69d0d00f97ab6e509712d56a704fb7c8b4b1b63c523bf",
+    "UPSTREAM-SKILL.md": "bab48e7c16fe54b88444e8fae1735aed6a0750af9d47a4ee32ea29b01fb4ada9"
+  }
+}

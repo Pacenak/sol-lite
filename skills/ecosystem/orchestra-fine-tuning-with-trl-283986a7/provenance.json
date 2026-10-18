@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-fine-tuning-with-trl-283986a7",
+  "upstream_name": "fine-tuning-with-trl",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/trl-fine-tuning/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/dpo-variants.md": "c802f74f3f48fcde0e285f97eee90c0209740a953f257b462b6e952d982dc1e6",
+    "references/online-rl.md": "35e0ad19a8e6a4bc2c1a87e1ab5e2bfe31fb74ba07b1f4b161a1c258e0c44958",
+    "references/reward-modeling.md": "782edd743d66dec5efd1e7ec48fa23ad857102117a569ddda836b856f56068e3",
+    "references/sft-training.md": "2e42b55d3327caeab7611f94976bcca315ee1b68a5bf9a4ac437099bb2ab9418",
+    "SKILL.md": "6eff0c9ddf69cf6431bf11f741446753a418a3366dc50cc2d6477504bfe979b3",
+    "UPSTREAM-SKILL.md": "d68f78ad741627ce7dcdf2ce78c73c8cf31d23db7d89555e0bdd0cd35c413811"
+  }
+}

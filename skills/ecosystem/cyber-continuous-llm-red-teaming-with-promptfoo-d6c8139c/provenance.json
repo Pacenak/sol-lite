@@ -1,0 +1,27 @@
+{
+  "name": "cyber-continuous-llm-red-teaming-with-promptfoo-d6c8139c",
+  "upstream_name": "continuous-llm-red-teaming-with-promptfoo",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/continuous-llm-red-teaming-with-promptfoo/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/continuous-llm-red-teaming-with-promptfoo/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/continuous-llm-red-teaming-with-promptfoo/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "371702c7ba8c425bd739b5527f1fe8a25c59bf6ab2e08055e90c55e0ec655c79",
+    "references/standards.md": "f1a669d2c725e25e451a5e11ab796e4941d624c35957cfb31e50d58d83d65ba8",
+    "scripts/agent.py": "207b2bbfff9781351cc38682445518b2a9d3964818b2f8dc7c6332465696db41",
+    "SKILL.md": "e3a5551a2f4c35dc4663596e8bb33586ef5d14af4a701c3372cb1dcba4b0e595",
+    "UPSTREAM-SKILL.md": "72740c97a401d12cdbeea20d06a06bff9c7ffdda1f98ca6e79aac6bdd9870de8"
+  }
+}

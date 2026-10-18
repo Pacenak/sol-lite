@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-web-server-logs-for-intrusion-cc53d0aa",
+  "upstream_name": "analyzing-web-server-logs-for-intrusion",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-web-server-logs-for-intrusion/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-web-server-logs-for-intrusion/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-web-server-logs-for-intrusion/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d620378e97228f17073904aa2023754ccb1b0bb516dc87a4b2ff94035442cb24",
+    "scripts/agent.py": "3c4764a13228ee3d0e6f6f20ea01f1621cce63cac2f8652695be81e52108b7f3",
+    "SKILL.md": "56d0c47a651d9f8a5cf92969bb65eaf405552fdf1bc05e5a208da5c9e2ff8707",
+    "UPSTREAM-SKILL.md": "c38e659c6294024622a52a0d6c5170742c636690bf1de42f26b0e479c0215ca6"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-coercing-authentication-with-coercer-petitpo-936e3124",
+  "upstream_name": "coercing-authentication-with-coercer-petitpotam",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/coercing-authentication-with-coercer-petitpotam/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/coercing-authentication-with-coercer-petitpotam/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/coercing-authentication-with-coercer-petitpotam/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d8a2b49b1039240de61b62887807f0f7009793f30ea9449415a55f99ec2a9d4b",
+    "references/standards.md": "7f9e822a03384efc90f2c1b2581b47e02d63c5afb43a0c41112f48296bb571b1",
+    "scripts/agent.py": "018a923dfcf4146ae77a8d404a777281940a4b0cb2f02c154ea20bdc4e0ac8b5",
+    "SKILL.md": "b10388abf80d89d34f6035fd675ca8e0e061955cda73971cc456a960cdef6fa9",
+    "UPSTREAM-SKILL.md": "03048c106986cd99d89a0834ab218ecd12d9e40c6fe53699385ac034e59dbe7e"
+  }
+}

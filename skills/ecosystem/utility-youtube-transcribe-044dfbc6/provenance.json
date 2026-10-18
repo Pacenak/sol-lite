@@ -1,0 +1,20 @@
+{
+  "name": "utility-youtube-transcribe-044dfbc6",
+  "upstream_name": "youtube-transcribe",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/youtube-transcribe/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "golden.json": "51a3ebe8fdef300665bcd446fc8ab1dd840e53f59cf0791392d1a33401da18f9",
+    "SKILL.md": "35745d93b3f2a9daa6fc77322f36789034058aed6fc7af264b3e28205ecabb46",
+    "UPSTREAM-SKILL.md": "92d48bc1046266b038d9d5d4ca729479ae8d8ec36142474a5ac87b2520ab996a"
+  }
+}

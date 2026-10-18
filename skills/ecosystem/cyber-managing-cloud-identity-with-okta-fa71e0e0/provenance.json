@@ -1,0 +1,26 @@
+{
+  "name": "cyber-managing-cloud-identity-with-okta-fa71e0e0",
+  "upstream_name": "managing-cloud-identity-with-okta",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/managing-cloud-identity-with-okta/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/managing-cloud-identity-with-okta/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/managing-cloud-identity-with-okta/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15ad6e0548d52f0012daee6d53fb55e15d381c341020725d66b81431cbc33a78",
+    "scripts/agent.py": "800dbdfb70120596bb647b1b6c6d13cd7256bbad075c86fc9b28471604a7bf92",
+    "SKILL.md": "9179351729cd2af62c741dcad5648009bb820bdfdc31eacb3e0d893a4814e846",
+    "UPSTREAM-SKILL.md": "9fa5b2351ad3b944ef7551c2f9726f4b51571f323ef11b29814d6410c8544e89"
+  }
+}

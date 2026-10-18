@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-azure-ad-privileged-identity-ma-f29c1cfd",
+  "upstream_name": "implementing-azure-ad-privileged-identity-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-azure-ad-privileged-identity-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-azure-ad-privileged-identity-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-azure-ad-privileged-identity-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "311312a596aa7d60bdfc05997bf12c586b0d17dfdb4d6b6b82cae10ddf7b31e6",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b5dadcbbbabba3d916924fb039f7b663e73b29bba4e67e5447fcfa093dba69c9",
+    "references/standards.md": "6ad2542a8206ba5562cc448a9c8501059f18d19791bbfcba4c6a14a1c4fde67c",
+    "references/workflows.md": "28e58707a200daa4719a0e0aa55ee816026040d07b6b847e8a152323cb5f79fe",
+    "scripts/agent.py": "a1079319457f8403d9fd73d7e23c19f82efedafb9447a7db6c417fc0b92ad234",
+    "scripts/process.py": "d01e6fe30c0aa3c538238815a48f5782dc5dd3e141804e2e88236caab906195d",
+    "SKILL.md": "6201c8a8b14a89b40f69db215a90dde9bbc6e403b7fcb1aecd6c44df20752f1a",
+    "UPSTREAM-SKILL.md": "30b724699557758e5a784fea7df79cce07dd27168bfdad8b665495d627a7bc30"
+  }
+}

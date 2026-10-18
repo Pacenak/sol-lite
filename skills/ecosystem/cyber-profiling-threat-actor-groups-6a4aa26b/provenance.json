@@ -1,0 +1,26 @@
+{
+  "name": "cyber-profiling-threat-actor-groups-6a4aa26b",
+  "upstream_name": "profiling-threat-actor-groups",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/profiling-threat-actor-groups/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/profiling-threat-actor-groups/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/profiling-threat-actor-groups/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "779f487de5acd9e954f04b9e4c073d77cbc08ffc1cc2bc8122c7368c4d427023",
+    "scripts/agent.py": "8382963c921836cc0e3fd85c87de7ed75c6dd2819ba5a60d4864eeebe124c2b5",
+    "SKILL.md": "af20422e2c7788689e14c3199bc5b7fcc61bb705f1128b97d4af550c8cc69337",
+    "UPSTREAM-SKILL.md": "4f054fe28561a677a9d8b2b06bef2fb99f3e3c3f16a159aec536dac22fa023c5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-ethereum-smart-contract-vulnerabil-2fd10d35",
+  "upstream_name": "analyzing-ethereum-smart-contract-vulnerabilities",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-ethereum-smart-contract-vulnerabilities/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-ethereum-smart-contract-vulnerabilities/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-ethereum-smart-contract-vulnerabilities/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "275707a2ec4aa696858c1b1762c5faea55896427af0dbb9e15a4e6e3da2baa3d",
+    "scripts/agent.py": "ee0128ae5168a4f73cadc194599bd58f60afcd3cd2a4cd505a5a369523e6904a",
+    "SKILL.md": "4799cc51c00cd93615e1c4250c2032a506fe2ace6720d380064f2a8ed0fa1eb8",
+    "UPSTREAM-SKILL.md": "40c2f5b831e16f33ad86377e9c1a99d165519c798714ebcd2e1981785844aa9c"
+  }
+}

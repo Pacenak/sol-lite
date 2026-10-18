@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-living-off-the-land-binaries-cae32a84",
+  "upstream_name": "hunting-for-living-off-the-land-binaries",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-living-off-the-land-binaries/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-living-off-the-land-binaries/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-living-off-the-land-binaries/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "205b33f5d94c5022dcc3422358edb9f863b9486cd760d8774ca88170752114ec",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "03c7fe7665366eb186dc2d99371956522ec0ba1946df494bb58d31e48ad1cb27",
+    "references/standards.md": "a5e644f0bac83148ae5d1b082f89cea96016748816e310ae9b6041066e85d7dc",
+    "references/workflows.md": "59d5e3eacc1fdf88f7837fdfb6290abab93107aa8d257de2cd23b56ffff92bef",
+    "scripts/agent.py": "b3606033729e79f1a37d1e61da5e8f14a20203bfda8b7b44f920743c2c1e00c3",
+    "scripts/process.py": "77a1c5e9beb6f153eb11e238d4a676ef81a7a9e87bda3cd45c5ed7ddd1251063",
+    "SKILL.md": "570b0246129cd6c26172381f4ae3468a27a6033f2027adb30d2396d95ad42d1a",
+    "UPSTREAM-SKILL.md": "8b2ba9c161c4ccab587e4d73e627de525cdd57ee59fe19ec49a2a3781c4ffbbe"
+  }
+}

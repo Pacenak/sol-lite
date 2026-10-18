@@ -1,0 +1,20 @@
+{
+  "name": "kdense-folklore-variant-evidence-133b128c",
+  "upstream_name": "folklore-variant-evidence",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/folklore-variant-evidence/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/mcp-contract.md": "ccc2a4ccd7ea57887575ee8c10fa8ae26e676791cdddf6ebd848872a81229a8f",
+    "SKILL.md": "966b28061f5ca66edf73b629e9307458fde2eea339cab55294bb3172c1962f0a",
+    "UPSTREAM-SKILL.md": "134b5ea684815b99c56fadf92a1cb42d37eaca4245515278e404b8876b7acfe0"
+  }
+}

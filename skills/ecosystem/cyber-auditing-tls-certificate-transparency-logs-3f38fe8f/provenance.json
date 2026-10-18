@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-tls-certificate-transparency-logs-3f38fe8f",
+  "upstream_name": "auditing-tls-certificate-transparency-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-tls-certificate-transparency-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-tls-certificate-transparency-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-tls-certificate-transparency-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d43f3cb8196c6141bf1e9398fd4dbf19a6e568673d3506b75832b39459be664f",
+    "scripts/agent.py": "0f43d98c4752709bab52ad81235497159cf70078827df770f4c3707b28f80674",
+    "SKILL.md": "baaa21ce402cb513d23a7723706ff34435c145794b8fc37b419c11d10a203ad3",
+    "UPSTREAM-SKILL.md": "9885e9fb0f540680b2af59809a0c458038af18fe7a57d017157a76a05e1cf48d"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-firmware-extraction-with-binwalk-3fe434a1",
+  "upstream_name": "performing-firmware-extraction-with-binwalk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-firmware-extraction-with-binwalk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-firmware-extraction-with-binwalk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-firmware-extraction-with-binwalk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c02954d6a5ef9477764de737838d2b0f1986d23e69c3cbbc6e9d46f72012c346",
+    "scripts/agent.py": "a31ee415256850cdd1321fa35a9296be8ecf25f8c5312a26b32edf99deb95478",
+    "SKILL.md": "6e645c3dd57eb5872d8a0b0f796a41c41a89b63688b8eb2450849e683afe7e59",
+    "UPSTREAM-SKILL.md": "ee0aebde3da369802a25de83b09d8efcc3016539eecc5fdca5b236236dec24df"
+  }
+}

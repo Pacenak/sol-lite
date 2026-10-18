@@ -1,0 +1,23 @@
+{
+  "name": "johnwayne-react-flow-best-practices-ce4857a6",
+  "upstream_name": "react-flow-best-practices",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/react-flow-best-practices/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "agents/openai.yaml": "63324a3708f24c35cdd48a0b3438dce882d4f6fc7c0a5118641632a4da2c9d88",
+    "references/canvas-state-and-viewport.md": "49670e46c6290b9e4c88385c19515cb5bd3e35d02151681e95ce688a049cdce7",
+    "references/custom-nodes-handles-and-edges.md": "dbcdbd877bb446a23017d079962a0506bc8b35b10784c3af9d4bfa84ea5e3fd7",
+    "references/review-checklist.md": "47094e2e4ea0043ac66baf26c870adfceb1bed2af2be14b0e66bf518a2e51ab5",
+    "SKILL.md": "d30863056592186619b407c3fed39039cffd4cb03769e756477aab8a114b7d42",
+    "UPSTREAM-SKILL.md": "2188e33025532da2c81a03b2ff444aaa58eb45aa349a1fbac6afe99413dea2e3"
+  }
+}

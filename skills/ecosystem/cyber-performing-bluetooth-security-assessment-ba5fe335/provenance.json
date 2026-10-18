@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-bluetooth-security-assessment-ba5fe335",
+  "upstream_name": "performing-bluetooth-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-bluetooth-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-bluetooth-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-bluetooth-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a5d24c7f985919390e411ffeef14d7dbf9da613a974d51e38f635dbfdaf3fd98",
+    "scripts/agent.py": "eab96660e32c3a4cea40e92041558bf3e495043d53c3aa0fe8b473b2825f9022",
+    "SKILL.md": "ce37c3643eb22c2ed8e6860867e52741658a7bfc1e7b9a9899c365d2045860b1",
+    "UPSTREAM-SKILL.md": "746691c6dd018a9cd3b71af0baaeea2651a35e176ec61f5037d74f48e75dc609"
+  }
+}

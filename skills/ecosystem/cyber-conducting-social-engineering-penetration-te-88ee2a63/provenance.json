@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-social-engineering-penetration-te-88ee2a63",
+  "upstream_name": "conducting-social-engineering-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-social-engineering-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-social-engineering-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-social-engineering-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a92e71aac9c89d55d16ab6aac925c72e3a2827a0b5bb268cb0c77bafce7a7e1d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2fb4533f277454f0ad3a855d74736c4c8d876aacb10c3a8ea847214d88530d95",
+    "references/standards.md": "377271655c3bfc7b56aac32e03e0edc3de3066d7a927c0b8202167b44d6ef50d",
+    "references/workflows.md": "26a01fce82613f68135db13ea770542baf1b5702714b9d976522973a586f2beb",
+    "scripts/agent.py": "f73d1eb90f3c1e5b90a7172defc9850aa757f19399abef8b54e88033a77c249c",
+    "scripts/process.py": "e95dcbae3615fe7c7c2d10896822dadb800109f6544d80946aac070578160b90",
+    "SKILL.md": "afcc28723ed7f571837546e81b43ece516c60ad6a62a384c2b8df56fb79826a3",
+    "UPSTREAM-SKILL.md": "cb4100b0aaadc783a8103b8edf325b277272425dfbef484cde4a1d126528b20e"
+  }
+}

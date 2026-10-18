@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-anomalous-powershell-execution-1dfee0ec",
+  "upstream_name": "hunting-for-anomalous-powershell-execution",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-anomalous-powershell-execution/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-anomalous-powershell-execution/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-anomalous-powershell-execution/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c15e4b064996ec7102dd1359e870b062e268c4e25b2ed70bb0c1b75fb0fe5358",
+    "scripts/agent.py": "3dd40fb655b773195d9b95fcf854119d449f9948eb0098dbc73ea20f22d84e60",
+    "SKILL.md": "85ac83a44a3fca088a9c52f661c4f41ef17252e82d76bc4c3c2be96841aea95b",
+    "UPSTREAM-SKILL.md": "7f02bb8bac8b528c6a03856a8832e24193cc1dc77f4c87fb9b0c0152f5c96e50"
+  }
+}

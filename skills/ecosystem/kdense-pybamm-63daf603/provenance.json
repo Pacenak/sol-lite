@@ -1,0 +1,24 @@
+{
+  "name": "kdense-pybamm-63daf603",
+  "upstream_name": "pybamm",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/pybamm/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/simulate_battery.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "assets/chen2020-protocol.json": "f769f94f1a9f933d253b3a4a6f51dc661b8af49bf9df52cfdabd81ea185de80e",
+    "references/protocol-and-comparison.md": "6345686a86a460103ed0ba29a06419497d8842cf85e6b3d94fe2ae9bda363d19",
+    "scripts/simulate_battery.py": "96c9c774860a80f3fddda2fd94d90905e9254b766f191a79e843613ec4da7647",
+    "SKILL.md": "29b65428983b886bddc56cf31db3f3fd0abca6f064a5bf7fef7fd08b8a39a83b",
+    "UPSTREAM-SKILL.md": "9d6f375f4d9def40072ea734f07e1a48c60a1cd906231cab1a4189a75499a1a4"
+  }
+}

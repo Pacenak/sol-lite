@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ot-network-traffic-analysis-wit-d8d77f8d",
+  "upstream_name": "implementing-ot-network-traffic-analysis-with-nozomi",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ot-network-traffic-analysis-with-nozomi/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ot-network-traffic-analysis-with-nozomi/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ot-network-traffic-analysis-with-nozomi/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3f5c03746d7e2cfbcad1bccf6b784650f528beff979891cafd4e77b4b68d95fd",
+    "scripts/agent.py": "fd498d1faf6b77e6b3a634f073c8c695c5e33b792cb816fcac8af7de78b68f80",
+    "SKILL.md": "14ac9e56b65da40f227ac2bf1bc642c70125f137dd78867464f1657a1d3d510b",
+    "UPSTREAM-SKILL.md": "5c8aa24b1a23a6582b407f28dd53e66ffc48905033a2246b021978c21b6edd66"
+  }
+}

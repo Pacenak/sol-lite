@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-packet-injection-attack-f2422821",
+  "upstream_name": "performing-packet-injection-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-packet-injection-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-packet-injection-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-packet-injection-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7b88393f0adc6644b296fe56b63584e4ba711462bd957b775aa0264ad4d719cb",
+    "scripts/agent.py": "7e2b71669084b807c99fdc5922cf965a9495721b92594ff55c075d548fcd92ad",
+    "SKILL.md": "4c0ec99ed9d952a6ce56cd4e82c77d9b7bebc179ed68a9f7504abe93e40c589b",
+    "UPSTREAM-SKILL.md": "5c953fc86f45df313de02d82be3800c94b5d0cc2661dfd6006e3b48f1ea22858"
+  }
+}

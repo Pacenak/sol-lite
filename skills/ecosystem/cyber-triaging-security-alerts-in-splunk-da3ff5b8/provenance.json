@@ -1,0 +1,26 @@
+{
+  "name": "cyber-triaging-security-alerts-in-splunk-da3ff5b8",
+  "upstream_name": "triaging-security-alerts-in-splunk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/triaging-security-alerts-in-splunk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/triaging-security-alerts-in-splunk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/triaging-security-alerts-in-splunk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8ff2a7a957fb52d12ff5c768326595d090316734f88fcaabc118d77fdda1e3e3",
+    "scripts/agent.py": "5d9a458973af90ab90d6fc226bf60c29b9b037381bb2792c6cc03432372a34ad",
+    "SKILL.md": "a629e8d87da4935e773bbfff7c72cbc3e9443c746b9b196221ef45e0604afe52",
+    "UPSTREAM-SKILL.md": "87d8021a9b90404cb288afd102aced77af6c16e3eb3c5f5420e95a14182b7aba"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-soc-playbook-for-ransomware-33420ec7",
+  "upstream_name": "building-soc-playbook-for-ransomware",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-soc-playbook-for-ransomware/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-soc-playbook-for-ransomware/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-soc-playbook-for-ransomware/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bd44cd2e50f0d8250af71301dea93b93a3c1d5ca4815edf43936f359b9e68a05",
+    "scripts/agent.py": "1685c279ea49b7fcd9e0c4c8a7b541251007011a34de5fdd5e26bc34cbb30ff0",
+    "SKILL.md": "b95b696f15555895b0987d75dd03e06d9c34442a9214e3936ab18fdcb43a22b0",
+    "UPSTREAM-SKILL.md": "06729ad404d2adb5ae856758b1a9c25248c1ddb8236505aa59b52f5a5d99bc26"
+  }
+}

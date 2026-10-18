@@ -1,0 +1,26 @@
+{
+  "name": "cyber-triaging-security-incident-6a516ede",
+  "upstream_name": "triaging-security-incident",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/triaging-security-incident/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/triaging-security-incident/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/triaging-security-incident/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4a0eb01d26279b372cc4148382d28351e2e96b29e318b08c6a57b59b5b00e3ed",
+    "scripts/agent.py": "619def28e84fe9c6f9659022ba9e756302d40dcfddc7237676d2f0b0c1f6dbdd",
+    "SKILL.md": "e58737770358b178af2262b218202ba1f58d8ba40ae62518eabd89162cbb340a",
+    "UPSTREAM-SKILL.md": "6197a149253c7c351c4b5c01cab6436468f71cf94391338ec93fbca1a753451a"
+  }
+}

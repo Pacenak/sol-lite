@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-iso-27001-information-security-514c2394",
+  "upstream_name": "implementing-iso-27001-information-security-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-iso-27001-information-security-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-iso-27001-information-security-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-iso-27001-information-security-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5b547b65746e6ec88203ef584ad6f08a7649799993d2fc0c1a94bb86573510c1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "28450332e1e8d4e90a7b20de5f8806f0706e3818572405eb91150f002792ef72",
+    "references/standards.md": "47742e0ba3150fd0f6acda7847c19ad805764d48d84466af4dbdc153254ed8b1",
+    "references/workflows.md": "9978507bbe7f032049b630843da75c5f30644ae1b8aaba847505e87f151cfe88",
+    "scripts/agent.py": "78fd8b8bbbfd48a388c229cc3a3d73bbd8abd55ca0e6e71bd3e04e904f8b4e36",
+    "scripts/process.py": "b4dff7c9225dfb6de97d444882c59b5b878891c8ad27890310feb4d35ea2306b",
+    "SKILL.md": "9a6d68fb28d3def11c3e023ff81e2db490c788ce7c7c4d2609e878ad055b6a1c",
+    "UPSTREAM-SKILL.md": "89125129eec54ceb7bfd6b5852d9107b1919fb7b3adf3c0eecf5cb138d1fb272"
+  }
+}

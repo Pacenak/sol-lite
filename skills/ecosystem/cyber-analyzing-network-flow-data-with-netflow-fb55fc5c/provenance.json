@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-network-flow-data-with-netflow-fb55fc5c",
+  "upstream_name": "analyzing-network-flow-data-with-netflow",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-network-flow-data-with-netflow/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-network-flow-data-with-netflow/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-network-flow-data-with-netflow/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "41afb3b5c3bb41266709118ba319f7f1ea2ac54d9fa2501e55c6bbb3bb021787",
+    "scripts/agent.py": "f22cb3589ca53a21e95123f98b85435d9ae3c03a41dc454d4f5eb43d5c3c7583",
+    "SKILL.md": "d12402e5677d0971eb9c218d65f8dc4ed5033e219830c79c771e35a5a2f5e4fc",
+    "UPSTREAM-SKILL.md": "7b6478574765d594a9d6afec89be21abfedb41dac8bf45e5032f3a17e207f8e6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-cloud-workload-protection-98ecef6f",
+  "upstream_name": "implementing-cloud-workload-protection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cloud-workload-protection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cloud-workload-protection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cloud-workload-protection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9e5a0524237b86f473ee68d53bebce90fda553d3b019694efcaa1da90f5dca1b",
+    "scripts/agent.py": "9ca38a170d781e115da8b09f31db1be9c9e11a242be6be76ff4c41f8a20b8992",
+    "SKILL.md": "53defab0d46a4ad28877697d05865595533faee80e35abdb6f7401e229a99e48",
+    "UPSTREAM-SKILL.md": "2e38f1d70a3aba4ed7cf9e3820d7927fedb58760507492dbaa4f852afd32f107"
+  }
+}

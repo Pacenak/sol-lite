@@ -1,0 +1,28 @@
+{
+  "name": "kdense-bids-194fa40d",
+  "upstream_name": "bids",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/bids/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "https://creativecommons.org/licenses/by/4.0/",
+  "scripts": [
+    "scripts/update_schema.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/beps.yml": "04d0fd0741758b10a8bba21d0ac0db85235174c4eca1b11c2478ba59c297e7ee",
+    "references/bids_schema.json": "3e3daba2bfcdc226578424f93f68d3bca3a1c58147efcb7be0e7da5a4cc42e85",
+    "references/bids_specification.md": "5b9d9b6864670e40b5b9a49bc9dfca7f64ff4fc18bc4a82cccc06a9bc85961cf",
+    "references/conversion_tools.md": "d5e16e0228ee8e3990b42d2c5daf5abfac4b15ee2438513f4892f38cfd794bc2",
+    "references/core_workflows.md": "0cb4595606b5eb7ee30e3c1a90ebe02d6745a80ac6f5422cf3ea8923e23cf070",
+    "references/metadata_fields.md": "095c2ab392aba982948a320cd9e23c251fd49d4f87995bee01577ea95f167123",
+    "scripts/update_schema.py": "b2c013a4be6c7c9671dc167885471091f79d5c2be0d86b99203142da21f0806b",
+    "SKILL.md": "989723f2f10aebb735082e249ba337cce083dc42e57ce1cec31924549841afc5",
+    "UPSTREAM-SKILL.md": "e1ae63105ccc2e4da7c40e8a2f40d031dd8f2a77270be626df780f0c39eb0b1b"
+  }
+}

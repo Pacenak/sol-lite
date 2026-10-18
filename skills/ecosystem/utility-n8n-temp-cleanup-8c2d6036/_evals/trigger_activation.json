@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "skill_name": "n8n-temp-cleanup",
+  "notes": "n8n-temp-cleanup fires when the wants to clean up temporary/one-shot n8n workflows, or after a session that created TEMP workflows for testing.",
+  "should_trigger": [
+    {
+      "prompt": "Почисти temp workflows в n8n",
+      "lang": "ru",
+      "reason": "Explicit RU trigger for temp workflow cleanup"
+    },
+    {
+      "prompt": "Удали временные воркфлоу которые остались после тестирования",
+      "lang": "ru",
+      "reason": "RU trigger: delete temporary workflows after testing"
+    },
+    {
+      "prompt": "Cleanup temp n8n workflows that accumulated",
+      "lang": "en",
+      "reason": "EN trigger: cleanup temp n8n"
+    },
+    {
+      "prompt": "Run n8n hygiene sweep",
+      "lang": "en",
+      "reason": "EN trigger: n8n hygiene"
+    },
+    {
+      "prompt": "Delete the one-shot n8n workflow I just created",
+      "lang": "en",
+      "reason": "EN trigger: one-shot cleanup after creation"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "prompt": "Delete the scheduled n8n workflow that runs every 4 hours",
+      "lang": "en",
+      "reason": "Scheduled workflows are NOT one-shot — should not trigger auto-cleanup"
+    },
+    {
+      "prompt": "Deploy a new n8n workflow",
+      "lang": "en",
+      "reason": "Deploy is not cleanup"
+    }
+  ]
+}

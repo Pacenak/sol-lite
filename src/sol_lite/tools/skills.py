@@ -70,8 +70,23 @@ def skill_install(ctx, args):
     return {"ok": True, "status": installed.status, "skill_id": installed.skill_id, "sha256": installed.sha256}
 
 
+def skill_read(ctx, args):
+    ctx.permission_engine.check(SKILL_INSPECT)
+    content = ctx.skill_manager.read_resource(
+        ctx.agent_id or "sol_pa", str(args["skill_id"]),
+        str(args.get("path", "SKILL.md")), ctx.workspace_root,
+    )
+    return {"skill_id": args["skill_id"], "path": args.get("path", "SKILL.md"), "content": content}
+
+
 def skill_tools():
     return [
+        ToolDefinition(
+            "skill_read",
+            "Read an active skill or its relative reference file without executing it. Skills never grant permissions.",
+            {"type": "object", "properties": {"skill_id": {"type": "string"}, "path": {"type": "string"}}, "required": ["skill_id"]},
+            skill_read,
+        ),
         ToolDefinition(
             "skill_discover",
             "Inspect an Agent Skill source without installing or executing it.",

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-ransomware-tabletop-exercise-d2f2348e",
+  "upstream_name": "performing-ransomware-tabletop-exercise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ransomware-tabletop-exercise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ransomware-tabletop-exercise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ransomware-tabletop-exercise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "81f5c55ffe83a53b983a7868652754d2dc33410f19a242f26243c519fecf8018",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a54ce81851771af3c60326a1c67a538a9d3231caa2f08691a744a7e44f884e0b",
+    "references/standards.md": "0e697e03e1f9ba635fe987dd996c1a75b373689b68baaab4673e842e6fd15a3f",
+    "references/workflows.md": "bbe27e8f480629bdc538fe0a918fa15bd7cc10d084871a8787a6feeb75597811",
+    "scripts/agent.py": "581a9acf654b7df0a7b0141020473aebbe65a38e9929bc29f543663f33afde54",
+    "scripts/process.py": "cb2147a11eaa3bb80586247ae48a1ba6da7cf1e339ceebcc0f96018466077afe",
+    "SKILL.md": "41356e98086892d3266c44a7f67e7a20c4b04db991646bb86d9f59e93e73eda7",
+    "UPSTREAM-SKILL.md": "2ad84771cac3f3bb8c48e2982865008eec0d3f955ca6f268ca4e32b10dc3e749"
+  }
+}

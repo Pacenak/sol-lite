@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-ssl-certificate-lifecycle-managem-7ad0046b",
+  "upstream_name": "performing-ssl-certificate-lifecycle-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ssl-certificate-lifecycle-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ssl-certificate-lifecycle-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ssl-certificate-lifecycle-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "59db39b608e080d29ac6d30b8a7ec461577e9674cc9a7075ece628c0b6ec8d94",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7800e07cf82e3167aea5df8a309804d3586d9b52f382d022ab1bde3bdde28d10",
+    "references/standards.md": "4e3ce49c1a3ca2486c5989ad33edbba3f26fc93d37cd413351f9b275cb6a30c0",
+    "references/workflows.md": "6d57cae68a88b0b0c6b06f8ac55fdae783d00e0861728744bb9cf3be715199b0",
+    "scripts/agent.py": "85d2d430d8e0e9c54f2eca47bb38b9d9f38614f6d6aa8b9fafd3680613420910",
+    "scripts/process.py": "b58bfd6e8b1ba2a23a0dd729879ba9f74df65e2f54e475ccaa6d93d389b99427",
+    "SKILL.md": "199d8857999c08de6d8d52d3856445433e5b492cbc933b972c21d75b1d210229",
+    "UPSTREAM-SKILL.md": "1db13b2ce9e3da9ab7c27b4d74a18d41b38aff14cdbe89da0400145354ad2be3"
+  }
+}

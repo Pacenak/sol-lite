@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-pyvene-interventions-b53565f3",
+  "upstream_name": "pyvene-interventions",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "04-mechanistic-interpretability/pyvene/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api.md": "e10295e644d9855c3954fcc51b80f1d42448b60bb56ef991961a1d11e44f1003",
+    "references/README.md": "4b842fea60747f23a54986d9bbf20b13f38071f62ed24b93dce1227e2e35782b",
+    "references/tutorials.md": "04132b155e440f95acf08f1349651355ade3d2b0ad46d19370c59857bb38a5d4",
+    "SKILL.md": "043d9b4b9b2ce369652c2acec9978a485995cebfd03b98135bc8aed649b7594a",
+    "UPSTREAM-SKILL.md": "cc26be84bdf23355f63cf103847a13618122157d17448be6ea16f94f3338f4d1"
+  }
+}

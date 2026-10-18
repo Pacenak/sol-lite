@@ -1,0 +1,21 @@
+{
+  "name": "llmapps-thinking-out-loud-39361883",
+  "upstream_name": "thinking-out-loud",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/thinking-out-loud/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "6ef774a571efd79a2ff0170587a88ce312815c98f4c134cccc3feba45c6dbfa9",
+    "references/echo-format.md": "5afd8b638c286519d2a06ede756791f83e40ad39075d171616e4d7c8b3951399",
+    "SKILL.md": "967c63245516243318ed9380e4a25c0daaf5091d17f6898c2141446aff9ffeea",
+    "UPSTREAM-SKILL.md": "50eebfbf1e8f9af961eaedb0ccadb20a5b9c91232fba1e0748d191fb3bb44d80"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-cloud-incident-containment-proced-b7d2ee49",
+  "upstream_name": "performing-cloud-incident-containment-procedures",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-incident-containment-procedures/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-incident-containment-procedures/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-incident-containment-procedures/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7790ab21bad6737e5df50502c8b7fe3263cc76f3bad6166bbcd0887c2a9c845f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e7fdf703c89a6be000ade2b305d041716a26eb19db3ea9ce9e13f2cd2fa3c2b7",
+    "references/standards.md": "eca2abcb8287d74b1a3c4a6b9f0019279638bd9ab23f80e002ecff7ec6154729",
+    "references/workflows.md": "7b65be10b6c26e2d94ff46f5fe80cb2516d21ed5bf8588d2c638d9194a9c4cba",
+    "scripts/agent.py": "6de40a7f12d66c0014dd11a17a0e36e73367c98bc7b128b48b74b432e803f6bf",
+    "scripts/process.py": "3071ebb41edf81c763667a87cdca921649ec55b560d231a37d1648cf697868ea",
+    "SKILL.md": "ddb9086ca2f7ab63b8a324f18c4a17c3d5daadb0d6e07b9e890f59c7118304a8",
+    "UPSTREAM-SKILL.md": "4f54287e6db64ba9a844a0069403905f0016d49e6a93dfa486d4dbe9178c3dfb"
+  }
+}

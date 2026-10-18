@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-phishing-simulation-with-gophish-fcb15166",
+  "upstream_name": "performing-phishing-simulation-with-gophish",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-phishing-simulation-with-gophish/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-phishing-simulation-with-gophish/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-phishing-simulation-with-gophish/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "02c0dbfb5bbec228551baf48edbe2c7212bc9526af3284fdd847bd14bdde09fa",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "69a54d580afe77f9fc234c070e16c2a8ee43525fc2b630556cc6c2a02ec6ffbc",
+    "references/standards.md": "a0c4ee70a0079a307c3e14480a47eff59b6a7a7949807dd4e55270449996003b",
+    "references/workflows.md": "32d225d2cecc51764f02154b24494a566042e588f7155cdcc5dac48a952c0c96",
+    "scripts/agent.py": "ec7513619c28cdc1f40f01741b2b2e878b16a9e5c64461ec7a2f64cc1a63828d",
+    "scripts/process.py": "de884277cfd4b0f1cb54b4e1e923f0aab5bd185a7be9f29686301f0d57f0b5b5",
+    "SKILL.md": "e289a331445f2f77fd715f7d49bbfa226bee6e3e75a1d2f83428b16ad6d63ae5",
+    "UPSTREAM-SKILL.md": "079fe569b452e7825c836ba07a9528b12ba359ec1e9fa29d9a9ff39c19fce1fc"
+  }
+}

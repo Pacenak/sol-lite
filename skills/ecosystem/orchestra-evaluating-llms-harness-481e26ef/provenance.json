@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-evaluating-llms-harness-481e26ef",
+  "upstream_name": "evaluating-llms-harness",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "11-evaluation/lm-evaluation-harness/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api-evaluation.md": "433372d84b8bbd6c28e5b971c1aae7c5d2d032aae9ff23dd7d7a47a51277dc78",
+    "references/benchmark-guide.md": "6f3e6daf78cee21453cebc1c4688ee126fbf0d4566782496dd5841dd669ae295",
+    "references/custom-tasks.md": "c6b5591c77c16570b43fa5f497405a65f35ef73d1702a3871cc0c8a257c76aeb",
+    "references/distributed-eval.md": "3ddc4551f25ce0d3cb09f971f27191331fb65b5b4c882efd4a9bde7bdfb82353",
+    "SKILL.md": "a567995c2ba55233aeb451fba73334da760a068326f3b3099304bc37a25b5533",
+    "UPSTREAM-SKILL.md": "891b77bc09118393f9bd1235404ee3f0cf412f56e57dc4b454e2fbd8fd507bc3"
+  }
+}

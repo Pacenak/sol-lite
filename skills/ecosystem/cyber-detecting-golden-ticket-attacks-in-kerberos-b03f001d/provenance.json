@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-golden-ticket-attacks-in-kerberos-b03f001d",
+  "upstream_name": "detecting-golden-ticket-attacks-in-kerberos-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-golden-ticket-attacks-in-kerberos-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-golden-ticket-attacks-in-kerberos-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-golden-ticket-attacks-in-kerberos-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22be5a796eebe5504546ec7acd799bf3169294091b90f19f9e9ed5ceb9d3a361",
+    "scripts/agent.py": "8a4268d7e2ae7c1e8be9ed5ceead1abfcf50caf89d6fd58b5cf4be7d04da84a5",
+    "SKILL.md": "52b9cc59cc02c25366a22d2103f41f9b206223aee1981883d152796b9f595023",
+    "UPSTREAM-SKILL.md": "813a942a84b78a9c19549c229eb92e54cad82c6599309261ed5255feac2c0fb3"
+  }
+}

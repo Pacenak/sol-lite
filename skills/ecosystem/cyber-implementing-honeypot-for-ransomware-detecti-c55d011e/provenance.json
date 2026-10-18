@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-honeypot-for-ransomware-detecti-c55d011e",
+  "upstream_name": "implementing-honeypot-for-ransomware-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-honeypot-for-ransomware-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-honeypot-for-ransomware-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-honeypot-for-ransomware-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "6a4c14231a1701716a2633ba31e1140d0b0dc4793392f9a66c569384f73a5394",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ecec8e37869b58d63b1d338f78e284d458ee740fd15c8008837cbc17d52a7ce0",
+    "references/standards.md": "5d8e551bf67787b3a2e333f0c5e85c8daedb7d32df023cd2953f960a1b91500e",
+    "references/workflows.md": "5c201da96205da4802060861dda56ccbd5adc892b9c607eccdaf1d4005ebe950",
+    "scripts/agent.py": "c6a3e5e90307c8e5f53450c02acd777a2c35455dbfd32f53d37774582fd7a823",
+    "scripts/process.py": "434e18183034c7ad4fd39957f227659ffac6e622f61e2facd8fa779f39bcaddf",
+    "SKILL.md": "d292e94721733351d5875c8397892a00dd29c1caa724dfb0f0a5dc3d6905ae4c",
+    "UPSTREAM-SKILL.md": "973c6548106286c0f7a0ee3cf8aebc8b4dbc31417fe096fa6770803bac647e84"
+  }
+}

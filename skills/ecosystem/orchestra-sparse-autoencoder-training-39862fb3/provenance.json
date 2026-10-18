@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-sparse-autoencoder-training-39862fb3",
+  "upstream_name": "sparse-autoencoder-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "04-mechanistic-interpretability/saelens/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api.md": "528edc8369d0c8b419b037eae65a4363d6f41f9671c7f7f739327700393a5a35",
+    "references/README.md": "1ae9c3f499b5db57c344f05a654a8ab012d10dd59c059f55615e0ada28f349e0",
+    "references/tutorials.md": "7b4c7a2ba9a11116886af33ea11cf3e279e3994a171e4632363114eaa46000fb",
+    "SKILL.md": "b57bea3184b17bfdf6f4e0c3fa1d2124d549195d9d914efd487fcab1f9340b74",
+    "UPSTREAM-SKILL.md": "3af1fa0e513a96c953f4fbd28b1a6cd764fa9c27e512c6f0cfd2b80c2a1706ae"
+  }
+}

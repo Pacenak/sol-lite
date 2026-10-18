@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-autogpt-agents-64a1a5f1",
+  "upstream_name": "autogpt-agents",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "14-agents/autogpt/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "e0b9f472e7487061b5123f1a507ebd1fa19bb0e91f95de5931c7a5b6279b104b",
+    "references/troubleshooting.md": "af763d0e0c0a0120a8b2ab2534af34697b8d8183c907c271e6783bf5c6f61500",
+    "SKILL.md": "059ac7898e9b38002c221b8febba6c30c36e878a3112a981001a7c15d3075370",
+    "UPSTREAM-SKILL.md": "4b16c070da9966e3e71a8f5324d7b1b2d4ddd68a3df8b27305b1a19b841f62b3"
+  }
+}

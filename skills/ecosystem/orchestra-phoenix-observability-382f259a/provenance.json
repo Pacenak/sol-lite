@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-phoenix-observability-382f259a",
+  "upstream_name": "phoenix-observability",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "17-observability/phoenix/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "d57d7687c912425a00103fb4837ef10da6a4d20f883648832728dbb4e26ca7bc",
+    "references/troubleshooting.md": "25ef129e3c0b49307b6d8d9fee0f0e40e131a299e5be338ca4bb27329c611245",
+    "SKILL.md": "ba49adf7f11810dfb127a0b7e5440fea3e0d84fe190b71e20727a07ff956c2e8",
+    "UPSTREAM-SKILL.md": "111bd54f145ca57360f7e6f08f95202e937ac134e3dbf486a51cbaa008546e2b"
+  }
+}

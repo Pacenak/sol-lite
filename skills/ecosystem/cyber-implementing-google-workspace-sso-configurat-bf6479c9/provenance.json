@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-google-workspace-sso-configurat-bf6479c9",
+  "upstream_name": "implementing-google-workspace-sso-configuration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-google-workspace-sso-configuration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-google-workspace-sso-configuration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-google-workspace-sso-configuration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8815a07dba64c33e1f9f316414ae6b00995fab33deb56c743b970fc65eed1bf2",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dfb207d6aa32bf3af4cd4c4aaabcd6c86f3b26c7774f4200abd76c68bc6019a1",
+    "references/standards.md": "547fdd9ae7b5fabfca4a20d2d32541a21e199fd11d559bcc7748256f286309c1",
+    "references/workflows.md": "8c102cda2a1d72ae05b3bd38d6cb712de995cd94e4a7eed6c13013b6526931b1",
+    "scripts/agent.py": "600885548b892db536b15fe19e17fc9375a2d5799fe41f26be61509e9926b87f",
+    "scripts/process.py": "9a10f8b5e65014f2ae81b367084dc61a4bfeadee76f294e4dea766185412c5fb",
+    "SKILL.md": "a0b04f630d3393c35afd58901d2e8a83e6506eea67ea9653783987db029d7a4a",
+    "UPSTREAM-SKILL.md": "4570cdf642877116cd7188be1d48046a3dc9a38bc0015924f1b3b3e73c8ca161"
+  }
+}

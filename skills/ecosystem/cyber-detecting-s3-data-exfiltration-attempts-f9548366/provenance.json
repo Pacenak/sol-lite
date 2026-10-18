@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-s3-data-exfiltration-attempts-f9548366",
+  "upstream_name": "detecting-s3-data-exfiltration-attempts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-s3-data-exfiltration-attempts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-s3-data-exfiltration-attempts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-s3-data-exfiltration-attempts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "04d5b75c15b8e6e31fd2ace44f3c551d5620469d53c2e8458eef02fa6e73bd79",
+    "scripts/agent.py": "95a34cdee04d82eb246debad696b96fb2bb7b62f8f07e83f00c3c6db2b3af066",
+    "SKILL.md": "3975be35d3550e53ec0cd22673312e128201f2bb1f20c6c1d1968fa617d6dadb",
+    "UPSTREAM-SKILL.md": "4eb4ecb1d87c68eccb40fdb565acc2e679b9406f065d95b0d318f543732794d7"
+  }
+}

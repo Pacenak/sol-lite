@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-steganography-detection-fa3952c2",
+  "upstream_name": "performing-steganography-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-steganography-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-steganography-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-steganography-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8d2623256f4d8182c08dd426b595fa0a32640731f6ef9e07e207b523fb17aaa0",
+    "scripts/agent.py": "8552b0f55aa8d939968b7f7d5c9e03c01bc1a6e0391bd751b88fc6999822bbe2",
+    "SKILL.md": "9b036dc66d2af5723a371f251f28a515af7eab8b0b2cb898b5abc3c87ec29d88",
+    "UPSTREAM-SKILL.md": "c32fb8095c07a02b7323044582df20166d3707aa5b3a9fae53a5224b90fd715c"
+  }
+}

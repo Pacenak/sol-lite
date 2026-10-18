@@ -1,0 +1,27 @@
+{
+  "name": "cyber-testing-for-system-prompt-leakage-9bdb2084",
+  "upstream_name": "testing-for-system-prompt-leakage",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-system-prompt-leakage/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-system-prompt-leakage/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-system-prompt-leakage/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3cc50cb566e1c3d8e571ac550fbc555b942c7d65bd1b62d1910f1d1ff7e5714b",
+    "references/standards.md": "71cbd6818ec66b3e0931acd177befc0b258e8c36cdda3e1d214e70aef230ba3f",
+    "scripts/agent.py": "a610678203646f6961091bca099b809d87a3d71fce103791b6c6135d26ff7056",
+    "SKILL.md": "572329459f2ad6bc4537b0c1272ac4d7f0615ecbcbddc351822f8006f3be8a26",
+    "UPSTREAM-SKILL.md": "cc16016d74654788d81ca7e573fabf34cd902470af3587b78dd624f97f1e85cc"
+  }
+}

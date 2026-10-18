@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-t1055-process-injection-with-sysmo-1c58718d",
+  "upstream_name": "detecting-t1055-process-injection-with-sysmon",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-t1055-process-injection-with-sysmon/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-t1055-process-injection-with-sysmon/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-t1055-process-injection-with-sysmon/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ce2a958f1971965e8783bc23d36b627b73a83f90d9beec88ce344a557118b425",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c4650e86766dac686d8c7898cb56108eab700ea269024a9754e0728e906a8df6",
+    "references/standards.md": "a0d61f8eddfc644e07f4234f6b8ddd3312fedc6fabe57aeec8e47252f9d1c803",
+    "references/workflows.md": "b1a15bed9edd0dce2a1166a1d4ea7e776a16c1d324ce1060e18a09905769085c",
+    "scripts/agent.py": "05f69c72f1426f96d45f54426cecd510b3d67b279815581f45d768b906f956c7",
+    "scripts/process.py": "29a27f74c2d5eb6ba284a3912d8cb5d62925bb64af931fe2a3a5173c12757f91",
+    "SKILL.md": "802d7813a0c7f18491703330a9dc8624b6973109877e28694a00349a89dc36cf",
+    "UPSTREAM-SKILL.md": "7864e1cbb218367f30cb0da0e327ac798b392ecb49f8212ed0529926aef81de3"
+  }
+}

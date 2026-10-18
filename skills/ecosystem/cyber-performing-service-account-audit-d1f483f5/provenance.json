@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-service-account-audit-d1f483f5",
+  "upstream_name": "performing-service-account-audit",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-service-account-audit/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-service-account-audit/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-service-account-audit/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a9636fbf408e25f8f1b18d9bd407e9682efafb3230acf77cc7c0ad4c7db63283",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "05c83ad0b0337ce042dad63a1b227b0dc1a39749555fb785d86943a4ed7b3b36",
+    "references/standards.md": "b8f44831503ad5d40c226a54383a8cc21a874320ad927827a863e2024ab3655c",
+    "references/workflows.md": "6c93e128cacc35e60c13afe937aef78c34916f763f35711f55c5bc6213862709",
+    "scripts/agent.py": "c19f8589e16b926db82e4e54e3a15539741bc0a66c4fd09f9297267a0d90b502",
+    "scripts/process.py": "9a796c128a5f3c7c47a52963fc2c2f5dd4174a31536b372f43ee48a65819bbd7",
+    "SKILL.md": "1c6650f05fc9c677ccc5d09e87f47e719063490cea5800718508d3bc01642081",
+    "UPSTREAM-SKILL.md": "54f2bf60cfcbcb6fd1c880b582c481ea2ed8cf6eebea3153e1235baf087e1de7"
+  }
+}

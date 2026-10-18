@@ -1,0 +1,20 @@
+{
+  "name": "johnwayne-workflow-node-setup-91f37f65",
+  "upstream_name": "workflow-node-setup",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/workflow-node-setup/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "agents/openai.yaml": "4e983b1198f674e5e4aa1aabfee6889857dc7cdccd94512db6ad0724b1380320",
+    "SKILL.md": "9cb7c2cdcb15f740ab63ba0c14962b983c93560bdeff4ac75a367bcad401959c",
+    "UPSTREAM-SKILL.md": "e0d590897fee442bc2c52df77d46393b339bd85ecb4d265a2555b2e4928444de"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-emulating-cloud-attacks-with-stratus-red-tea-2554ab97",
+  "upstream_name": "emulating-cloud-attacks-with-stratus-red-team",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/emulating-cloud-attacks-with-stratus-red-team/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/emulating-cloud-attacks-with-stratus-red-team/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/emulating-cloud-attacks-with-stratus-red-team/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "37acfbb3475795ead7581b49d3eaa91322cd6748552c64878efc6bf7ec95f378",
+    "references/standards.md": "97bcdaf6ea64dd5c4482307d64759aea577dad5369d071c2c8c3f51dc146e9f1",
+    "scripts/agent.py": "d1fcac116e6ba90f0182d2d7d4fca7e183b39c62e5f6abe0fae77d21a6ecd802",
+    "SKILL.md": "8e062fa9ae71cc9ad1c7a4d00db4438b1a47e306f3dde89d7f7949ad430c878b",
+    "UPSTREAM-SKILL.md": "8c65abcfc2791c72bd3c695c70ab18abdad2722052857e8e3cd1766d3bffd29c"
+  }
+}

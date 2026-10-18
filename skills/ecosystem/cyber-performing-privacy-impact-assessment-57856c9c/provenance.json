@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-privacy-impact-assessment-57856c9c",
+  "upstream_name": "performing-privacy-impact-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-privacy-impact-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-privacy-impact-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-privacy-impact-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ebe76d004a209d6ee51c6fdeb5f387bc20c32ba4e13e9c33ebeff31823b7ac78",
+    "scripts/agent.py": "27d55a00c38c573441f50500a68a98da528102c33338e85935b1fbe36b668909",
+    "SKILL.md": "48e001ebd2f283755d41478cf97ad47c0909755ba070bb88f630c4d5f62a153c",
+    "UPSTREAM-SKILL.md": "b906c778bad53bc8ca265385e195018c25686371b12f7c1d3a02aa5b0421befa"
+  }
+}

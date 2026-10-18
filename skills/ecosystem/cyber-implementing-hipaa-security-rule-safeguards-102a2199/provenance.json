@@ -1,0 +1,27 @@
+{
+  "name": "cyber-implementing-hipaa-security-rule-safeguards-102a2199",
+  "upstream_name": "implementing-hipaa-security-rule-safeguards",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-hipaa-security-rule-safeguards/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-hipaa-security-rule-safeguards/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-hipaa-security-rule-safeguards/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "98fda3dd69b442c71e4f0419ddec8bbb1d802130ed1069e54df49af01ebfa06c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "90d15a5033c2329d31de5fe6683cfc3a39c37715cbd47130267ab3af0446acd3",
+    "scripts/process.py": "57f5215567cab2e96cde10e84a098651bed04d7efd9369d17d56bcece1dfa069",
+    "SKILL.md": "74987ffeef47711d4243db9c8f218284a8f59e5dbb4c2176e0b73e533a85bc09",
+    "UPSTREAM-SKILL.md": "eec382e0dabb7b2f970982ea65259db1ce9964e14d964ed8e31ce93c5c58b8df"
+  }
+}

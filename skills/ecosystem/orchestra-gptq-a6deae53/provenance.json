@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-gptq-a6deae53",
+  "upstream_name": "gptq",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/gptq/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/calibration.md": "30b6aa7c9b83f8d12b575f1b6614e742c8739e4ac65b7fdbab8ac7ca987ce394",
+    "references/integration.md": "e5f04065bf696aeef066728447fb0d3daf487d01f2f6a8b08faa5a2f43453ae2",
+    "references/troubleshooting.md": "c20b085b6feda47397eef85ea4a47dcf59062da26149741966bd2900805c6e59",
+    "SKILL.md": "8088bc3424e23ec731731f97acb8468eca5af9942138be05cff08c3c4211a347",
+    "UPSTREAM-SKILL.md": "ce19de416afa03a0e6a764c9cb8b8ba9a0b94812b9de1ad5a0c2cb2932009f28"
+  }
+}

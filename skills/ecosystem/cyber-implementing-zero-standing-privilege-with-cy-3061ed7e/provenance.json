@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-zero-standing-privilege-with-cy-3061ed7e",
+  "upstream_name": "implementing-zero-standing-privilege-with-cyberark",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-standing-privilege-with-cyberark/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-standing-privilege-with-cyberark/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-standing-privilege-with-cyberark/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d026ac2a39b3b9ef5e2ca94228af2cedcf4c0093ac1f105f4a10188a38b077e9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "00562880677d993ea1a7ee094333dc3d03428d332aff8250facc30c8e66b9ecd",
+    "references/standards.md": "f3a61b533e0e364fcbfdd122a73dc487a644050733498d8d347e836fece6618f",
+    "references/workflows.md": "b979b9525d7f7b14f27cdec9a853b82194b60024efbe037792b21ad4284c2161",
+    "scripts/agent.py": "17f6f95e780ca4857990445c442f71bc1e6b6691b9860d257f9278eb70bd84e6",
+    "scripts/process.py": "1fcff91a53a9d41eaaa4704750e4ccce42ba8946498e256e9fa95ce466a6f020",
+    "SKILL.md": "efd9c22249a4a47dd2b15e8553f4e6171470c464153d6ec78674da41513e0d5e",
+    "UPSTREAM-SKILL.md": "73c22f0a9aa4bc9626b8caf302f69324dfc96919fd8300872240c1db83c64ce5"
+  }
+}

@@ -80,6 +80,7 @@ G. Report a clear outcome: demonstrated, feasible design awaiting test, explorat
 - A patent proves an application was filed/granted, not that a claimed mechanism functions.
 - If external search is not available, say that the evidence review is limited to existing knowledge; never invent live citations or claim current verification.
 - Distinguish literature values, assumptions, calculations, simulated outputs, measurements, and independently reproduced measurements.
+- Require independent replication before treating a novel experimental claim as established science.
 
 ### Computational integrity
 

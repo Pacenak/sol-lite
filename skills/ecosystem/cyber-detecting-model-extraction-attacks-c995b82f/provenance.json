@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-model-extraction-attacks-c995b82f",
+  "upstream_name": "detecting-model-extraction-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-model-extraction-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-model-extraction-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-model-extraction-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "478fb59646944b87df5ce5fdfddbbc3712db58a1c5a9cc88d8056fc518f42dc2",
+    "references/standards.md": "58b2940cee57e9c149e12939c11ccf75d8fd8a507c68966910459826add0ea88",
+    "scripts/agent.py": "49bfe61b7eaf0e0049a73ff7ab0765e8c8592f1ff6484689e30b65c4720078b9",
+    "SKILL.md": "681b68ae147c62503dc1bc8eae3ec0681b87152acacb6dd5b65aa3561cd1aac9",
+    "UPSTREAM-SKILL.md": "f721213e5733b63c2f6f3f26c134a3b8de96d75dc515600c0854fe97d223f4bd"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-lateral-movement-with-zeek-c2f222c7",
+  "upstream_name": "detecting-lateral-movement-with-zeek",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-lateral-movement-with-zeek/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-lateral-movement-with-zeek/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-lateral-movement-with-zeek/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "855f0dc8c0ee17310ee732b22c1c1afef757a108172a68417d136203c22d6e4e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b2010ccb858fb2efc7f5dae25ca6555062d75881cb4c6dd017c8ecca9da7b33f",
+    "references/standards.md": "7f2ca50ddb97485e53efeb2918c19ff77f6cb9f289c864414705e7002c9b6703",
+    "references/workflows.md": "7bb5d0bf96d7cafa937ee5acd154ed0271673a58c8befaa6b259f1efd3bf3a37",
+    "scripts/agent.py": "e55c8e2b24416edbb64f07cfa144a1b00aaae0bebcfa1f99dfdf4afde5a6418d",
+    "scripts/process.py": "802fd4245c916efba4480a81084837f46438f4b70e8886fc94b7f3c20aa8c996",
+    "SKILL.md": "5e7ba2b2ce8d51d09f4fa35dad65c077c100399334e53e0621cb6555a71694b3",
+    "UPSTREAM-SKILL.md": "c2d7c7854a43a260353a4574f5ddd459a66b5b580f59f4492a45632586baf2f8"
+  }
+}

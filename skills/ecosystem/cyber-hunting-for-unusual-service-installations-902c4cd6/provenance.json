@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-unusual-service-installations-902c4cd6",
+  "upstream_name": "hunting-for-unusual-service-installations",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-unusual-service-installations/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-unusual-service-installations/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-unusual-service-installations/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "72894df432c2b0e85bbfd552cbd8c5ae2176ffaab8e10893324aa1ebbcd13b2f",
+    "scripts/agent.py": "62f273311542a8798beb98a6e35a2060c997c429fd7f1d99ff78d43605400384",
+    "SKILL.md": "9d1d4d6e25c4ec9c50dfa5754533131b12ca6b67442dc3c075dfe81e04bfe1c7",
+    "UPSTREAM-SKILL.md": "489e8635577d16cea4927ba064fa462c7a158c8743813d24602995845e2ca6c2"
+  }
+}

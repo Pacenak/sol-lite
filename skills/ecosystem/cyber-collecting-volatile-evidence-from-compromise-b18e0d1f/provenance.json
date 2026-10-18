@@ -1,0 +1,31 @@
+{
+  "name": "cyber-collecting-volatile-evidence-from-compromise-b18e0d1f",
+  "upstream_name": "collecting-volatile-evidence-from-compromised-host",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/collecting-volatile-evidence-from-compromised-host/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/collecting-volatile-evidence-from-compromised-host/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/collecting-volatile-evidence-from-compromised-host/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c5cebbbe7dcd08ba14425345e384a8ce1fd5b5fb1e0d4354aafba5ee911d3666",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "45d2b074e5f8ea3464ae922d449038b3220187fce5f21e1296795425b2cab44f",
+    "references/standards.md": "2c7a806a23c89a27c7573199e0de7d34913502f0d2396f9d55121b2b5d75a41d",
+    "references/workflows.md": "06bbfdb0e4a5608ceba1ea71c12f4777e6af9d33cb0b2558cf0ba3e4abe397e6",
+    "scripts/agent.py": "cf7b13f31250c2a2725e6a4a304bed95edab6818c96294285a3add429f9d504b",
+    "scripts/process.py": "7f01c6991d2cad5e8996d0742f91ceef5361f9c45ab72247bc1ba4cf244c8360",
+    "SKILL.md": "64dacd36490fc18f375768e4e91548dc6e366d94275a2a69a51af4f8b072fd77",
+    "UPSTREAM-SKILL.md": "9c9919119fe5ab9faeb5746555e9c7043d13eeef925b3311441442808c3fe91b"
+  }
+}

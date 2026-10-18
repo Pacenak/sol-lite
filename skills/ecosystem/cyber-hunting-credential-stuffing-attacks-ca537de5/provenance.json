@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-credential-stuffing-attacks-ca537de5",
+  "upstream_name": "hunting-credential-stuffing-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-credential-stuffing-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-credential-stuffing-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-credential-stuffing-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6dad4534c28cc1b2c655f58796bfcc8356869735c4fe95285920dc6bcc3b38ba",
+    "scripts/agent.py": "9eb84dde1b210f303e4a43c750e7c4aa5349e985c2c8a99e7cdcc7d711c89413",
+    "SKILL.md": "592788f9ea8224cb206410f6d17324bfbc1111212d6f75e016513f16d83dd7d4",
+    "UPSTREAM-SKILL.md": "793b45ccbb7429b56a63369cc23872677c50ae51da01ea6939c80a7242fc7330"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "anthropic-discernment-nudge-934ef72f",
+  "upstream_name": "discernment-nudge",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/discernment-nudge/SKILL.md",
+  "license_files": [
+    "skills/discernment-nudge/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [],
+  "files": {
+    "_licenses/skills/discernment-nudge/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "SKILL.md": "9853caa3e33d081486a80b7e172a744c95a1393a0758a19466e9bc149cc7ae22",
+    "UPSTREAM-SKILL.md": "9191177c4a8ef11a20dace786d708506b22d43e748c71287bb823de0dc812dad"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-yara-rule-development-for-detecti-0aa99c98",
+  "upstream_name": "performing-yara-rule-development-for-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-yara-rule-development-for-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-yara-rule-development-for-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-yara-rule-development-for-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "85f030248780c5f58d31881467ffc47fb653bfac54631ca97c03b19fe4578aed",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1112848e190bfcb1c7260d77ea96fad12b6f123c7a96e699683dbee32d6b4f02",
+    "references/standards.md": "5ed00351b1cf26d03781fc8afdaaeb01380e71e4e9872a0b25fcdb8e3b6ee460",
+    "references/workflows.md": "4d90b336192da44c20352e0cb855b0c3e11085552c6b6445533bfbfc1c7c4f0b",
+    "scripts/agent.py": "c5c5b0bd63aa6b739ec61db64dc104b57d67617a99f585c25fe1af1e43492e0c",
+    "scripts/process.py": "70b37b46adbb05b1fe15617ee423a02d264c43ceceb14ee4940b041969bf4cf5",
+    "SKILL.md": "d694835e7405928b171bbbf9e985e09485ee594b886ef16189c6e69bd855705f",
+    "UPSTREAM-SKILL.md": "63bb5a11a32341747339f8102b3adc5a4aab698e5b71fe1195b3be6fb7770032"
+  }
+}

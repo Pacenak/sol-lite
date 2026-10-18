@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-apt-group-with-mitre-navigator-e4116686",
+  "upstream_name": "analyzing-apt-group-with-mitre-navigator",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-apt-group-with-mitre-navigator/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-apt-group-with-mitre-navigator/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-apt-group-with-mitre-navigator/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "95037aacd2cec388303b0c1f07ec9694a2e274a2253f7b7ee2b52d6c4d7bd6b5",
+    "scripts/agent.py": "d714a27e4acb6bdaeacf4f5eaa4a905bba87f6f9e9d24813785821579d2fe4b9",
+    "SKILL.md": "ab98f35fe06c6a4ee501b65cd9a77caaaa74efd15c290b355b363349a7d26fa3",
+    "UPSTREAM-SKILL.md": "22468b097a0b485bdee2463c084f776aa77f147dcd911484ef709d1dc347c79b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-brand-monitoring-for-impersonatio-a83620fd",
+  "upstream_name": "performing-brand-monitoring-for-impersonation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-brand-monitoring-for-impersonation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-brand-monitoring-for-impersonation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-brand-monitoring-for-impersonation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5ffbb7b6aba36f5b76b96cafd2510c9cbba3fbaac2c99eef942b55060e4e6fd7",
+    "scripts/agent.py": "30485362ebb9044c846d8b765dfa5a7f0df11fd3256c044ee6f05a4ffefba342",
+    "SKILL.md": "a285aec63f57418ccb89d5ce4ac12c2ca292982451caf698108b79f502e06c77",
+    "UPSTREAM-SKILL.md": "aa50148754f553d26661af277c8586dd640bc5d28b5b87391be01759b120880b"
+  }
+}

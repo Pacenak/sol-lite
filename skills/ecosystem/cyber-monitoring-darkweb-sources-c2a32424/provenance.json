@@ -1,0 +1,26 @@
+{
+  "name": "cyber-monitoring-darkweb-sources-c2a32424",
+  "upstream_name": "monitoring-darkweb-sources",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/monitoring-darkweb-sources/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/monitoring-darkweb-sources/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/monitoring-darkweb-sources/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dbd250c19055f80953fee2adeef8df14b596f34a8b0bce83eb775287b291f1df",
+    "scripts/agent.py": "ff9f51548991d601c951963f13f2910c3f47063e5b58b148c27b4dd95531d72f",
+    "SKILL.md": "9eb8aeec563486a0369dd17aadc6fe988e223a6666293aea66e1b63c0b49a798",
+    "UPSTREAM-SKILL.md": "d778a2fb6ec2a8edf07118da5a560832f6930634ce2678e702529804648d1bc6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-api-authentication-weaknesses-0b18a528",
+  "upstream_name": "testing-api-authentication-weaknesses",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-api-authentication-weaknesses/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-api-authentication-weaknesses/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-api-authentication-weaknesses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0a1c4bab81a8ba851fa21249c9db2025f77581a2f205ffd8df3f49455d139833",
+    "scripts/agent.py": "920f8e2a6ccfab3f5c48efbb76f31c4b407d7fe5c918509f583a42458e682bb6",
+    "SKILL.md": "9999097c6653d93082cf251ced8d15f3e98ea36dd684151f3e65864a0d432334",
+    "UPSTREAM-SKILL.md": "465c92942f5c7f7e7b50e022ee598d5e52ce31c1d8bc3c6d281ae1519fa54d54"
+  }
+}

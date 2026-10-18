@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-command-and-control-over-dns-3b64d768",
+  "upstream_name": "detecting-command-and-control-over-dns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-command-and-control-over-dns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-command-and-control-over-dns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-command-and-control-over-dns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d7715d9e11858d671cb4e5a3ac8b5e0ba6f00d9ba315c9d4aac6cdaa1a518cfc",
+    "scripts/agent.py": "7dddc52c41603c926bc638441a0405e1d23cbd44c133437af14375ce7f5bbba2",
+    "SKILL.md": "6a24b5b3c6ee66351ea8baf4fbaa3de17f32d06499c866019f709e10b960ed7f",
+    "UPSTREAM-SKILL.md": "c9450818f993889af2ea0f20f1c09abb444398fcc6c9925370c6007dd6be8bea"
+  }
+}

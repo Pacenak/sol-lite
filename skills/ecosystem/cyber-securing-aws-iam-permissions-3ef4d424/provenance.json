@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-aws-iam-permissions-3ef4d424",
+  "upstream_name": "securing-aws-iam-permissions",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-aws-iam-permissions/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-aws-iam-permissions/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-aws-iam-permissions/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7a7c1a12bd2d975d853fb0ffaae38a5bed41979d5595cc9a566c8ed0e384be13",
+    "scripts/agent.py": "741c7f447284e778eb14fe2eaca17770e6a80b9deb569a1f0461ee4afa623f95",
+    "SKILL.md": "d20da370930238fbb11ee644dfc014ac67fda6c785f4833586a5fae83f5b809f",
+    "UPSTREAM-SKILL.md": "4bfe2ca90655f9774d1274fadc11ba2c234be121f748be20d6dc30b3329efa6d"
+  }
+}

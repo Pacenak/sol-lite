@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-container-escape-with-falco-rules-3d29b31e",
+  "upstream_name": "detecting-container-escape-with-falco-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-container-escape-with-falco-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-container-escape-with-falco-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-container-escape-with-falco-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "40783b8367beb383fc5b43d33e20246eac4ae70aeb70cf470cc064ea127d8222",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "78cc088016c6df318e558073fdb09550744abdd804cb4a832817a3fd8098dceb",
+    "references/standards.md": "d096c781a6558a53da485659cebe96cb61a1ed036bb82a52a1d479e6d048ea01",
+    "references/workflows.md": "b792ce67e57c3047b7f48342b67f03adfc28e578a321aac43a5a001723b6d281",
+    "scripts/agent.py": "54ee88c28f8a34a679fc2e9650a8ce687a3cbd6f66a84feb4d1234ecec33553b",
+    "scripts/process.py": "0ea0bb9add104cd4e7195d95c01a4848691b03bddb227ee54ecb1e9c0c6aa692",
+    "SKILL.md": "0aea871b84eab363b30f47a9225bbec621fb42e5d9fb9f0118a799e75687b399",
+    "UPSTREAM-SKILL.md": "e9d473cd10641221e3edcfbf1fca42779266ae710ee63b05727a7937c1aecac0"
+  }
+}

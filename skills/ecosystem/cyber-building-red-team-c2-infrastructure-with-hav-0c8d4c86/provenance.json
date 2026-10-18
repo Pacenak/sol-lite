@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-red-team-c2-infrastructure-with-hav-0c8d4c86",
+  "upstream_name": "building-red-team-c2-infrastructure-with-havoc",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-red-team-c2-infrastructure-with-havoc/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-red-team-c2-infrastructure-with-havoc/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-red-team-c2-infrastructure-with-havoc/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7f66c9ae31cc25f0078681e273f0ee38b59034c7637cd0993130913df059f9e3",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2d2a19367103842e14ff07c171aa145bc75631ede565a301735939c1c7dfff7b",
+    "references/standards.md": "c160f68f27930d9ec5e00d66464c4e0f9269c381873e56dc5499b28916b0d44d",
+    "references/workflows.md": "e5de0b43879461fb16fce3858ac23ae7f668a515655e01568bdf137299e64772",
+    "scripts/agent.py": "8e882abf34fb242905ed4112629eeb9b474d71adde751520cfbdfd1fc57b451c",
+    "scripts/process.py": "1acd12e9df51e0dfa6f307c621ddf48ee7ea9eed42b4130f542c7f41016bb2a6",
+    "SKILL.md": "5467ad173649ed958165942e5443f3697e03fc7c4661e03e04839a6f7972a68f",
+    "UPSTREAM-SKILL.md": "1e8a02749b50ed12566e0d6ae5d1a9b6d46178026d6c5e5fdee9cc23ddb5eba0"
+  }
+}

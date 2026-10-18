@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hardening-windows-endpoint-with-cis-benchmar-09f064fe",
+  "upstream_name": "hardening-windows-endpoint-with-cis-benchmark",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hardening-windows-endpoint-with-cis-benchmark/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hardening-windows-endpoint-with-cis-benchmark/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hardening-windows-endpoint-with-cis-benchmark/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "452714ed0a7ce5bac49e0c3a60f52771f6088b0c6867e10a7c19f413803da1be",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ce4fb43e357d05e1335167c96e941d8bbc01e31eceeee65fc0b8123e812b5574",
+    "references/standards.md": "064e243f87949945db29a976fbbf45505f90bc66a96071441e96c24d083a611b",
+    "references/workflows.md": "8607de8e54e6e3cebd06ba645a521cd83f15475484829342c16cbf53860f5509",
+    "scripts/agent.py": "44be9e62c48b9788c4101bf82f9e4805a607aa05aa776dc8578aac7f355814ed",
+    "scripts/process.py": "d4468f77e85d8f3b1661123934a501061476972b1dc0d2ad944e0ae743ab060a",
+    "SKILL.md": "0db393b7e4f9ae5d549aaff342707c41047010eeb0442af5b898df4da75ad9ee",
+    "UPSTREAM-SKILL.md": "7cdd2d09de8e2130c5a03094b803aead1fd091ccde2b1e0c5cb324eef4790bce"
+  }
+}

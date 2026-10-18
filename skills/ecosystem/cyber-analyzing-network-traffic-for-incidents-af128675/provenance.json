@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-network-traffic-for-incidents-af128675",
+  "upstream_name": "analyzing-network-traffic-for-incidents",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-network-traffic-for-incidents/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-network-traffic-for-incidents/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-network-traffic-for-incidents/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7cd9a7e04c4ab3048575bb43896dfb8338e34c1954e27d307402fa5ef8fc379d",
+    "scripts/agent.py": "f3fa180e73b6ab74e102facdaff0113d80617364b6109686143a8bc130438019",
+    "SKILL.md": "7b6ee1b524a557d20fb02418172d9443d568920ea1f20b8fffd942034ff98a73",
+    "UPSTREAM-SKILL.md": "b5467621b7bfea98bc9cbf2d7e952d88be2cfe1a0d1b6558235e7331d48f4ac7"
+  }
+}

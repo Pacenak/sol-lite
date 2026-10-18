@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-optimizing-attention-flash-b2461f59",
+  "upstream_name": "optimizing-attention-flash",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/flash-attention/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/benchmarks.md": "264ff3060af824c32f7a6e3c0e0208c38646c728b2292fb35ede923a38d60b6b",
+    "references/transformers-integration.md": "89ebe8e20756ee218103a1144d4682e960a0faa07870c2588530bc8d26c441a1",
+    "SKILL.md": "87d758b70a5335134bf129b3ad71eee352153b6cb35dffe8402ebc0ca0a04cb1",
+    "UPSTREAM-SKILL.md": "e0c1da83766332e0f3db4bcca954c3a70be399632758dcec2680aa82e236438d"
+  }
+}

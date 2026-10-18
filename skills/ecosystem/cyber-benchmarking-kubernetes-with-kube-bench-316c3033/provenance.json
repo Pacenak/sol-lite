@@ -1,0 +1,27 @@
+{
+  "name": "cyber-benchmarking-kubernetes-with-kube-bench-316c3033",
+  "upstream_name": "benchmarking-kubernetes-with-kube-bench",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/benchmarking-kubernetes-with-kube-bench/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/benchmarking-kubernetes-with-kube-bench/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/benchmarking-kubernetes-with-kube-bench/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3248dc0bf5a34b605fe7c8723e0a231082c149c21280207d99606954d75717af",
+    "references/standards.md": "b0ff0d9a2df0171286706ed7891e53f342444d520e7d6422fd85e761d37bf032",
+    "scripts/agent.py": "82e9bdac9dcc07091c405af19b6cde8ec945fd7f7dc92d41e5b0155ccebbeffc",
+    "SKILL.md": "e0d269ef004981f91240619d4df00eeb2cac728e6198f28cef4c067f74cb4528",
+    "UPSTREAM-SKILL.md": "947f0a3d4059abab645b82e432a23f2542deb839a9a46c212b2bebaff5b946a4"
+  }
+}

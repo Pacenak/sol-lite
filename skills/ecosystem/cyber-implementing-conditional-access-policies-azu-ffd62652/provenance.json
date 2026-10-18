@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-conditional-access-policies-azu-ffd62652",
+  "upstream_name": "implementing-conditional-access-policies-azure-ad",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-conditional-access-policies-azure-ad/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-conditional-access-policies-azure-ad/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-conditional-access-policies-azure-ad/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "10d40ee148c8e237469e1d1244246b1a3ed8baa61aceea7e212d14501e0432b4",
+    "scripts/agent.py": "c20465a520be8315a136db0e469b0e294366948bab81e1d47bac5d9230f46135",
+    "SKILL.md": "dd49864b96eb01c86b189e908c4b51688a192e6910b1f021f842ab19fbb58a9a",
+    "UPSTREAM-SKILL.md": "a3226a4f7cbecc8c1caf9fec9f7bef19ddf135f69b0f3e4e43f8ba4a0c3e2d99"
+  }
+}

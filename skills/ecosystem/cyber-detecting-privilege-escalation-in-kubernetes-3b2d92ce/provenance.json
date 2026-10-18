@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-privilege-escalation-in-kubernetes-3b2d92ce",
+  "upstream_name": "detecting-privilege-escalation-in-kubernetes-pods",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-privilege-escalation-in-kubernetes-pods/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-privilege-escalation-in-kubernetes-pods/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-privilege-escalation-in-kubernetes-pods/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5e6125343dac7faeccc873f6ae19fb36fe1eb277552fbc342492b31ff27bde38",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4960ba2898781fe6e8cf52d85445e3174ebb1164ede61cf80876842001e1abf9",
+    "references/standards.md": "e0d1ab864dd363543c9ae8dfc70f76566c9526314fc2406d409be85eb8bbc7e6",
+    "references/workflows.md": "0e6896a25de0f3dc326f369de06b8b718f499b6cbac98cd0fff51c724e9ffbb1",
+    "scripts/agent.py": "ff60d49de507ea535b23768af0fe8371183cea73afc6a37b77ed837410baf4ba",
+    "scripts/process.py": "ce895111663841bc084b12a9f521e638fdf023cafef42e2b634d7520f96d248d",
+    "SKILL.md": "b164242783ef76f1ace9a66ee72b148789e8468c5f57d5f78b9594fcb8c98962",
+    "UPSTREAM-SKILL.md": "fbadde97dd456a82afa3e53e571d83cc0d84c8059d099d6e309349a7c561121b"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-aes-encryption-for-data-at-rest-73c83227",
+  "upstream_name": "implementing-aes-encryption-for-data-at-rest",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-aes-encryption-for-data-at-rest/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-aes-encryption-for-data-at-rest/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-aes-encryption-for-data-at-rest/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c8fbc1522a0fc7a0b21fed7213381aa1a6ea5303247a17b188ad5de36b02d22a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c1ce5f92906583df8258c17bd71c20870b9496c237871a92ed9688bf84246adc",
+    "references/standards.md": "816d5b355c989a8305139a37f209fe1e1138a7372442644c1e3d44ccf69417cc",
+    "references/workflows.md": "c2a5d74cf34f28a64a74d0f88b804e0485989d18d8f935621fbe4f570b3af01e",
+    "scripts/agent.py": "7734fb963f3aca93a21b339bd04bb87186b584afab698695ce31fa5014d21797",
+    "scripts/process.py": "c7e70a2112e6d554a15a6bfe8a8c8f0d0664179719837217cb4676dc2c8eea75",
+    "SKILL.md": "b8c7a31dc231c95baea40be5be39719a2ef9cd7b36b52e87cb19dbf6bb1cf9c2",
+    "UPSTREAM-SKILL.md": "e7eb3b1a4433e8e306e8458c30edde791b38f20f69d106a90b55f19c235fbd75"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-dcsync-attacks-d3e38ed5",
+  "upstream_name": "hunting-for-dcsync-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-dcsync-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-dcsync-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-dcsync-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "658728f54e8a1005899ae76fb6b3e13c6330f31610f116de9b07a46fcbf15c74",
+    "scripts/agent.py": "4750b6dce16b6485f9c7aec6eba000cab06002489aee338f102bdd83d8945c7b",
+    "SKILL.md": "b06001847a557c2abe3a83ad923cae07f035e99ce8f5048083fb9413744dd380",
+    "UPSTREAM-SKILL.md": "9ad657788192fa12e540bb8c03be654c7b18fde053272e67bea4c843e81a8442"
+  }
+}

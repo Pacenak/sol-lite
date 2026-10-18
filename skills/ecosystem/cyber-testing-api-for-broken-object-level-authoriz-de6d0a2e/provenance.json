@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-api-for-broken-object-level-authoriz-de6d0a2e",
+  "upstream_name": "testing-api-for-broken-object-level-authorization",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-api-for-broken-object-level-authorization/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-api-for-broken-object-level-authorization/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-api-for-broken-object-level-authorization/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "78faf582232149cea337d72a71679b06ccdb3af866ed9932f58e8575e475548d",
+    "scripts/agent.py": "5ed66f6e9a52dbe4a19122640688ae81bff00bb79e6fb71219163d3160701a5c",
+    "SKILL.md": "a3a65d9ac46657c3b59f08ed6f767ac555c144765f92a4ccb24cf03a9063cc6d",
+    "UPSTREAM-SKILL.md": "ba403342c7cae18411a0b12fde05ce3a9441dcfaf341cd845d00537c99250886"
+  }
+}

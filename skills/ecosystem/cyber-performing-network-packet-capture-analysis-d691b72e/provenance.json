@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-network-packet-capture-analysis-d691b72e",
+  "upstream_name": "performing-network-packet-capture-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-network-packet-capture-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-network-packet-capture-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-network-packet-capture-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5895625d7052548524e6eb1901ed06bbc1b8c5e31be80e9055441c1c910e5a25",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9f54242d23046759e5c19df8195709807595b4ff04bfcfbeaedc2c89132ea0a4",
+    "references/standards.md": "62c66ca3ee0751b01f98ee6b8196771daa7c3b3e8c9dc3d298380fa25af88a91",
+    "references/workflows.md": "586610d5ce4ef8f4d603773e5856433118566de6331ab4b539052d1a7c6e12f2",
+    "scripts/agent.py": "15ef71a884a9b9b87fbeaa49ffb5b90c2cbb5c1b25e7a1f774d071449d1de597",
+    "scripts/process.py": "499228e00640ad6a0e330c3583cd0cffb972e5e9240706a31772f7418665bd21",
+    "SKILL.md": "404050ebb5512f371d24d486ed997b6ed1b904f9bebae502d5a4ab9e132fd9e7",
+    "UPSTREAM-SKILL.md": "3bf318ab67aa50fd051d40dab1e37f50cd04c2937520272f6bbb879487b155c6"
+  }
+}

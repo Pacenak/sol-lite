@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-runtime-security-with-tetragon-0c0290ed",
+  "upstream_name": "implementing-runtime-security-with-tetragon",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-runtime-security-with-tetragon/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-runtime-security-with-tetragon/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-runtime-security-with-tetragon/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9ce4e161989a305928dff7af449f0dadbb46465191b980b7059ce5958593140f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1dc7429f3ad0629a19fcc81b74da28aeaee5be0d85a296c659acf18e8ba900d1",
+    "references/standards.md": "107a0f0cac6308e01a0c174a41fcc9576777a08c4a5f812fc995befc50521d04",
+    "references/workflows.md": "1edd64fca2c898b1bec28c8164bcd2a9bdfe9e30ac0073558eea03d9d3a84aad",
+    "scripts/agent.py": "ec32ef2736c1b8732f52a0d92438f7a696acd7ebb1dda8f7b6f35d4601133d2b",
+    "scripts/process.py": "04eb823ac7f2f292da3cb65afc0f1fc2c569a1f958572e4b91fae324c6fba676",
+    "SKILL.md": "383727f6d7ae9f46be06c7ebe23081c2d102d364f3020a9cd4964d48f0dfe506",
+    "UPSTREAM-SKILL.md": "dcc49d391d1d4a19a095b00623703aea4f7a195f82a2983eee57c13b927c678a"
+  }
+}

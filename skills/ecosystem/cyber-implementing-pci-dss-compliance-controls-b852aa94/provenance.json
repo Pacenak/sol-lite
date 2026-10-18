@@ -1,0 +1,29 @@
+{
+  "name": "cyber-implementing-pci-dss-compliance-controls-b852aa94",
+  "upstream_name": "implementing-pci-dss-compliance-controls",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-pci-dss-compliance-controls/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-pci-dss-compliance-controls/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-pci-dss-compliance-controls/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ec625f98ff0cbd4b1ac8d562ad1277ac3f8e60fade3469ffca18f157c26813bc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5b3cd12444b370d5dc89abdcffd4071aaf1bdaf0e11745298f448bee6d03447a",
+    "references/standards.md": "bb28078bb29b8c381f9efc2009649fa6040cfb462be4469a0265bc2cacd201a1",
+    "references/workflows.md": "f19c37fe9a352e0cca206704f6874963bd83d97c08fba75b56fa62e241f416d1",
+    "scripts/agent.py": "c1acbf9c5f1ac0f5d2e4a120f78e7486a30ea9534977395bce797c53f375a38b",
+    "SKILL.md": "c22c2114e89e87fd72c394bbb60dcf9c1c63cb6c70a33be842c56ada055c096d",
+    "UPSTREAM-SKILL.md": "9fd10e8b41f07e744efd824343fc5d716bf0641ebe74bec3047f3476ca7d38f6"
+  }
+}

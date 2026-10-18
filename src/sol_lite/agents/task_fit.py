@@ -503,6 +503,10 @@ def permitted_tools(
         for name in tasks:
             permitted |= _TASK_TOOLS[name]
 
+    # Reading an active procedure is supporting context, not a new task domain.
+    # Agent allowlists and the skill-inspection permission still apply.
+    if allowlist is not None and "skill_read" in allowlist:
+        permitted = permitted | frozenset({"skill_read"})
     if allowlist is not None:
         permitted = permitted & frozenset(allowlist)
 

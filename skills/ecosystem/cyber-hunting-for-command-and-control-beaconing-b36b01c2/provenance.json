@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-command-and-control-beaconing-b36b01c2",
+  "upstream_name": "hunting-for-command-and-control-beaconing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-command-and-control-beaconing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-command-and-control-beaconing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-command-and-control-beaconing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "12a3ff1bb846f4688dab6595814519cc64151ee147cd7f01c0d9c926335f306f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a02975a93bd5b392dd5b034431eb9a4d30b1d6bc047818af30a4dfea119678c6",
+    "references/standards.md": "1ba2cba80f6bc83c4a9b7b678ef2b41bfc945ebc2a00b45e3b10a52e0268ef0a",
+    "references/workflows.md": "5126d21dd3c3b65e4deea3ed94b26969b56e5762335cc52693e2cb51fb2e87b7",
+    "scripts/agent.py": "9b749f6dc3d7710c44293d607cf56fd3b6b10dd64bcb925c182d602ab78a6407",
+    "scripts/process.py": "0f1f04bad94b57e3ace1abd29a05cda3d228eb83083afd6f17a7bcce6aa5783a",
+    "SKILL.md": "124e264283f3f6c784135e9ea2eb948a5d6ec6aaa101a3eff329c2296ef1f550",
+    "UPSTREAM-SKILL.md": "52ae196df47447d6e73a0c063b77109319f0197cff315d0cb3c68ff4457f34ba"
+  }
+}

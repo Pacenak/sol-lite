@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-scheduled-task-persistence-87f30d32",
+  "upstream_name": "hunting-for-scheduled-task-persistence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-scheduled-task-persistence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-scheduled-task-persistence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-scheduled-task-persistence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b3ba4a850ed4a1d2028756c0a2bdf9d77cb50f0566c88d11f3e7da4122a28ecf",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2624fc1c89e503e5064036a6d615ca63b3f1a0e27ae88bf896e00bb8d5e14c1b",
+    "references/standards.md": "afe40a9f31e6c358a533c4b3827fab6c8b9e9cc6312936b6b090634b3efe984b",
+    "references/workflows.md": "ba72526fb57e9fb2829907d1d08296aa55949ff275ed19d06302562be401fdeb",
+    "scripts/agent.py": "a3b65d2f1779b1b9b1c44f294fd7360e53e77371ff469cc9e3e4c07062b8aba0",
+    "scripts/process.py": "2230ada479d03213cb6625a3b5185accbbcb1d6178c53093ac5509c76176254e",
+    "SKILL.md": "c84de9c3f92fd4d18f8be14613f469f863d5b1d8e14657564a54bc3449104d26",
+    "UPSTREAM-SKILL.md": "3c7b17334431b00e7ecc3f9e70d192962cf47c65f86d6484f8f900b66b3365bb"
+  }
+}

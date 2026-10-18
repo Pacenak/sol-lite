@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ransomware-response-80bd896d",
+  "upstream_name": "performing-ransomware-response",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ransomware-response/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ransomware-response/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ransomware-response/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8c6659f2ec0f1742bd3b9dba27b562fd6606125ba17a9cb9bfd71f27b5872a7b",
+    "scripts/agent.py": "c7d9c9397b110c2f33608ffe1008fdc89976ffcbdbdb38c5ceaa3649df6e7ba6",
+    "SKILL.md": "4b4d57c727c14b3a8a2ee0fda49ee42ae436c722de31fcb012c49fe5608d42b5",
+    "UPSTREAM-SKILL.md": "4844a1556378fd846c92122311c742580742fbb3f84cec2c7badf5956e385c85"
+  }
+}

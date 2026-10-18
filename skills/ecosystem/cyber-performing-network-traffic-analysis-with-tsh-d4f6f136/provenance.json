@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-network-traffic-analysis-with-tsh-d4f6f136",
+  "upstream_name": "performing-network-traffic-analysis-with-tshark",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-network-traffic-analysis-with-tshark/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-network-traffic-analysis-with-tshark/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-network-traffic-analysis-with-tshark/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5b31043d54ce1f23f459302cabc920df4968e389adf8996fbbd13371e14fd6d3",
+    "scripts/agent.py": "c6680af98aa6969e9531f9dde5186c2cf14f2a4bc45fc848e1a0ed5a830f4d10",
+    "SKILL.md": "71d600c74f0612325764d6f5b11778040480725892a7e5031d277b35c0d350fa",
+    "UPSTREAM-SKILL.md": "f754e38291bea6ea0e73b4dc759260b1b26c8e3cd4faec2336671bb0e001d147"
+  }
+}

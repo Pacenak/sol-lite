@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-anomalies-in-industrial-control-sy-a940f99c",
+  "upstream_name": "detecting-anomalies-in-industrial-control-systems",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-anomalies-in-industrial-control-systems/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-anomalies-in-industrial-control-systems/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-anomalies-in-industrial-control-systems/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "612da7e2a09e5775659b50a84030a3bb1b5fe5779df8255e482851041401cf4d",
+    "scripts/agent.py": "2b933aa4774e66c7c33cad40047a3bf361efd68c5d02a94fc8986c8d0ce218ea",
+    "SKILL.md": "ec63bc41d4cd2ab0908197559594c1fb3183bae759c15aff01b5479fd27fd438",
+    "UPSTREAM-SKILL.md": "b21c7379f3daa0e552ca07c8f3c238a190756def58b1b0e141b2d477ba97a6f1"
+  }
+}

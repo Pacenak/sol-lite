@@ -1,0 +1,24 @@
+{
+  "name": "llmapps-commit-archaeologist-da1f9ced",
+  "upstream_name": "commit-archaeologist",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/commit-archaeologist/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/archaeologist.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "3351a9a6c8655bf71662885a862cb0e1183e7a3fea9ab7ac4c3997a409b9b9e7",
+    "references/reading-git-history.md": "9fa6410a0e1a7f877710041f34af6a1f97d68773e0c91f64398c52431e935c0a",
+    "scripts/archaeologist.py": "5fc432a81f3c10dac7f99176e84b1e0b9e7d34f9018c2aaeb2dac1aa3c7a6fba",
+    "SKILL.md": "af50f78edf04685de73787ff9e9225533442994b7f4e1eaeea97aee2c6e8a248",
+    "UPSTREAM-SKILL.md": "8f21eb5ff270b4f4d403494fe606aa23b7faa73232dfe8ab0aed4fba1f94dfe5"
+  }
+}

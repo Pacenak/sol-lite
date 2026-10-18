@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-attacks-on-scada-systems-be05240b",
+  "upstream_name": "detecting-attacks-on-scada-systems",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-attacks-on-scada-systems/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-attacks-on-scada-systems/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-attacks-on-scada-systems/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2ded6bcfff022a405177671164dd7475cc2afc6deaa7ffb40189de24c80baea1",
+    "scripts/agent.py": "092c5e169093c1ad7a0cbe44154f6898735b4cca3b858399cadeff1382223a08",
+    "SKILL.md": "bc58335612118934c057c984b527fbe90d333fc31b20776ea76f5f9bd30051d9",
+    "UPSTREAM-SKILL.md": "b88aabac28421dbb186f1f9c5d813a0f64b3d0a76a519ce74becf7971c3466ee"
+  }
+}

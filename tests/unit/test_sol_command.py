@@ -195,3 +195,15 @@ def test_sol_command_client_loader_uses_keyring_only(monkeypatch):
     monkeypatch.setenv("SOL_INSTANCE_KEY", "from-env")
     with pytest.raises(ValueError, match="keyring"):
         _sol_command_client()
+
+
+def test_unavailable_os_keyring_does_not_break_optional_command(monkeypatch):
+    from sol_lite.credentials.manager import KeyringBackend
+
+    def denied(*args):
+        raise OSError("Access denied")
+
+    monkeypatch.delenv("SOL_INSTANCE_ID", raising=False)
+    monkeypatch.delenv("SOL_INSTANCE_KEY", raising=False)
+    monkeypatch.setattr(KeyringBackend, "_keyring", lambda self: SimpleNamespace(get_password=denied))
+    assert _sol_command_client() is None

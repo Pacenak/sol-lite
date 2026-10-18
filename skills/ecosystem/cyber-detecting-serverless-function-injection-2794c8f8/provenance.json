@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-serverless-function-injection-2794c8f8",
+  "upstream_name": "detecting-serverless-function-injection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-serverless-function-injection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-serverless-function-injection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-serverless-function-injection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9c39fe985ee752ce9ba78520c9b25a0e70859270e4f2ef35558696cf95f1ab21",
+    "scripts/agent.py": "5bb0aacb3f512a997f6f024e08902feac3c8d0d5f400e01c60122bc71ea07551",
+    "SKILL.md": "ae5e4e777584e475b6edaddc4223de361b1e3707362f43bcd17d4920f5bd0b1f",
+    "UPSTREAM-SKILL.md": "48437c12b9fb2d0b5ec2fa1ef29625e91abef9253b107ccdfe77dae03d932a71"
+  }
+}

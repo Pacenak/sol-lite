@@ -1,0 +1,27 @@
+{
+  "name": "cyber-abusing-dpapi-for-credential-access-94dc8bdb",
+  "upstream_name": "abusing-dpapi-for-credential-access",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/abusing-dpapi-for-credential-access/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/abusing-dpapi-for-credential-access/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/abusing-dpapi-for-credential-access/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "40914c529a8877aa397db6e0e6fb43a0c08beb5ff13a4a8502510ef8de7e2e72",
+    "references/standards.md": "d2d181bde16ae874f0504c9728bdb47a959681a511b5d3eb4d003da460c75a34",
+    "scripts/agent.py": "2d51dbd9500277b33a383ec5f8d057508220555781e6e19c134a4dffb3a47bbb",
+    "SKILL.md": "9437eedd77fcd812966df6bee2e435487de8de05b035907cbbb41f39744e9395",
+    "UPSTREAM-SKILL.md": "e62c6659059f8cdbd2e204597b4e762d860bb579a1ba6e5946c3042bfb24d44a"
+  }
+}

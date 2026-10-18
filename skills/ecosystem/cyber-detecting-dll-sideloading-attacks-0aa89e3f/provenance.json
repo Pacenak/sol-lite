@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-dll-sideloading-attacks-0aa89e3f",
+  "upstream_name": "detecting-dll-sideloading-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-dll-sideloading-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-dll-sideloading-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-dll-sideloading-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c75ec8353521e7c5044c8ab1fdcbb46c34a07a396644506748f4e1ae1326d21a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "32ac77af275ebe3dcc2d3e4e65eaa4bb9d4c6a0762aa21d0a605a15319254348",
+    "references/standards.md": "429a6ac5f0d7c8480fdf6b51a908c273ee7859ffba8b2bdcf061308db2c7cd48",
+    "references/workflows.md": "80f7d8b63932f14b463c3528da2542d7389e92b83b9edb27c42d84fde974aeb7",
+    "scripts/agent.py": "9f7980042feb25cba3b589f3c3e131d9d67bd9fd884c361b69f9b572a5eda620",
+    "scripts/process.py": "3c8b5971a04e95ea1bda964fbf21639d9afe3943182708afaa118d1f78a32e13",
+    "SKILL.md": "1d3cb7c5c84cd92f6b19a90020af730a7e92071c8dd5d699b64da063e5a8a129",
+    "UPSTREAM-SKILL.md": "6cb43a9ffcebafa59adb476e2e111bbcd8f8b23f290907e645dd86dfc52c047a"
+  }
+}

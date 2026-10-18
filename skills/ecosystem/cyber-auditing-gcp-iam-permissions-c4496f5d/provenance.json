@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-gcp-iam-permissions-c4496f5d",
+  "upstream_name": "auditing-gcp-iam-permissions",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-gcp-iam-permissions/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-gcp-iam-permissions/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-gcp-iam-permissions/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d89d566dd2dcc3e05d52d7cf069486265a1a4eac41546842738be9a90d28c919",
+    "scripts/agent.py": "db151f7b9eaa281d7ab5b8584096a4dc2c76e4599a58b50a92718265c1f3852b",
+    "SKILL.md": "90a2d7a70e580fdad0c02165c4f292a99265a9954fadd69e286faa3019515989",
+    "UPSTREAM-SKILL.md": "5200c83cb8d96bb1e8dc7b36faf28f554665ed241d38731c4c64c6eaceccff28"
+  }
+}

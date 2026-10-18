@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-dns-based-persistence-917819cf",
+  "upstream_name": "hunting-for-dns-based-persistence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-dns-based-persistence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-dns-based-persistence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-dns-based-persistence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "718d2aa30b40933b93c9b8a029f6aea7d001dbfccb39c02a5af3a2b8bbf005c6",
+    "scripts/agent.py": "838255de5b76007376eb57a5095304e2b34324d1cb14b977e4ac7212a38f2aee",
+    "SKILL.md": "d6f2e2ed585aaffd08eb2fca88410a32dc886e9f01fc473e11446fe2d43c47e7",
+    "UPSTREAM-SKILL.md": "41375c94f09a786dd73e75c59d77a8bad121a0cba0c934a7d4395ecb2b6db2c3"
+  }
+}

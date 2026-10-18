@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-security-information-sharing-wi-903c5359",
+  "upstream_name": "implementing-security-information-sharing-with-stix2",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-security-information-sharing-with-stix2/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-security-information-sharing-with-stix2/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-security-information-sharing-with-stix2/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dbe6a88231ac6bdfd84a4424ed2cc707863b6e2ad26c4aab44a0bcf1eb34530f",
+    "scripts/agent.py": "795e65d2750d14c1bf6048fc261ea801194ada63d747d8f354d687766abaa6bb",
+    "SKILL.md": "77a3a80834dc539bc54bec76e69cc175a651a5eebf33c0dc37300f27e7a15a5b",
+    "UPSTREAM-SKILL.md": "151204a223a753556e698bb6b5629976b3bad9d31ffd44bb259550a7e1b93e29"
+  }
+}

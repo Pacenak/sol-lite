@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-kubernetes-audit-logs-cafee100",
+  "upstream_name": "analyzing-kubernetes-audit-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-kubernetes-audit-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-kubernetes-audit-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-kubernetes-audit-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a7d527d2a7188a503acec0b356bbaa2cc41df1598aca6aa58ebf2e8d30ea8e8f",
+    "scripts/agent.py": "fa4d54b08893b3ac2df8859894b74b2407fca60ef9673ff9add10a6b42d6d32f",
+    "SKILL.md": "c884c23c258d35bffd9f643cc485c36372b25f3b066a90901e8fcdb3e7f57282",
+    "UPSTREAM-SKILL.md": "1c6cd19dd595fdbd3025c798ffdf5b5d4771598de86d69dfbb6691ae909a93a5"
+  }
+}

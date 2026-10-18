@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-defense-evasion-via-timestomping-8ac0ada8",
+  "upstream_name": "hunting-for-defense-evasion-via-timestomping",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-defense-evasion-via-timestomping/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-defense-evasion-via-timestomping/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-defense-evasion-via-timestomping/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7f480d0e6fba4c4d7f659c223026b38e3aab7a80ec35ea8a4511b38ec1452202",
+    "scripts/agent.py": "0f1e02ed125d8c7d973bb73508404b53754344d5619836555863786a45441a16",
+    "SKILL.md": "3d747c72368a93a17c58d2c10e2b135d8e76eec02696e8e54d859b880c325fdd",
+    "UPSTREAM-SKILL.md": "885e81dc78f59848ed66ce9d279837078ec14c30e811bcf12f52585949183d7f"
+  }
+}

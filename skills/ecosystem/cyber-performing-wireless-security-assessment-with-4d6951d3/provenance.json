@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-wireless-security-assessment-with-4d6951d3",
+  "upstream_name": "performing-wireless-security-assessment-with-kismet",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-wireless-security-assessment-with-kismet/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-wireless-security-assessment-with-kismet/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-wireless-security-assessment-with-kismet/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cbbcfc9bc6cef402a76f7a7c52e1f893ff60395f207b7af6cdc01321d5b232a0",
+    "scripts/agent.py": "7b1a9e3b0926ba7c2d253773a8f9365e7b226e5b7922e39deed160471eccd001",
+    "SKILL.md": "3dc17277e2b4afaa6ecb5fb63e5c41dd6ec21b87b4ca38eb3e05d712baa97374",
+    "UPSTREAM-SKILL.md": "7243a60ff2f2137fc2551d752c250e11221248ee81ba3e68a45101b76d776f8d"
+  }
+}

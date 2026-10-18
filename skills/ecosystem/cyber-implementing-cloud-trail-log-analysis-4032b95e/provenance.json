@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-cloud-trail-log-analysis-4032b95e",
+  "upstream_name": "implementing-cloud-trail-log-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cloud-trail-log-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cloud-trail-log-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cloud-trail-log-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "28d2dda3be15542def4ed8a0c69cd143fada6e2bfcf1b45fb862e8626da53105",
+    "scripts/agent.py": "0c3138ec948853bf314f47ad7f711cd62e0947546fdcbf7f354c78f8e3cbce8f",
+    "SKILL.md": "72cc2864608370758c61a4e7148144254215d1e4269d752ba465c95263da2fe8",
+    "UPSTREAM-SKILL.md": "43543d05b74ee1ff17a540da09067209716c3579c65cbc2fbdf993b73f6e1609"
+  }
+}

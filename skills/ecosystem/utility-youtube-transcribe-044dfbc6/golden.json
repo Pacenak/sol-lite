@@ -1,0 +1,50 @@
+[
+  {
+    "id": "yt-001",
+    "description": "Basic YouTube URL — never use WebFetch",
+    "input": "Can you read this video and give me the key points? https://youtube.com/watch?v=dQw4w9WgXcQ",
+    "rubric": "Response must: (1) call scraper-mcp.youtube_transcribe with the URL, NOT WebFetch or fetch_url, (2) include lang='auto' or appropriate language, (3) use async mode (wait=false) since video length is unknown, (4) after receiving transcript: summarize key points using transcript text, NOT the player HTML, (5) report Transcribe: source=<tier>, duration_s=<int>, cache_hit=<bool>, job_id=<id>.",
+    "tags": ["basic-transcribe", "no-webfetch", "youtube-watch", "async"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "yt-002",
+    "description": "youtu.be short URL — same rule applies",
+    "input": "Summarize this: https://youtu.be/abc123xyz",
+    "rubric": "Response must: (1) recognize youtu.be/ as a YouTube URL trigger, (2) call youtube_transcribe NOT scraper-stack.fetch_url (player HTML has no transcript), (3) if job returns 'done', use transcript.text for summary, (4) if T1 yt-dlp subs miss, T2 WhisperX fires automatically — agent does not need to manually select tier, (5) report correct Transcribe: source line.",
+    "tags": ["youtu-be", "short-url", "tier-cascade", "auto-tier"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "yt-003",
+    "description": "Long video — use async job + polling, not sync",
+    "input": "This is a 3-hour conference recording: https://youtube.com/watch?v=conference2026. Please transcribe it.",
+    "rubric": "Response must: (1) NOT use POST /transcribe (sync, only for ≤10min), (2) use POST /jobs (async) with the URL, (3) save the returned job_id, (4) poll GET /jobs/{id} at reasonable intervals (15-30s), (5) NOT start a second job for the same URL while waiting, (6) when status='done', return transcript with segments and summary, (7) if T2 OOM-guards due to >2h, T3 (Groq) fires automatically — agent reports correct source tier.",
+    "tags": ["long-video", "async-job", "polling", "no-duplicate-jobs"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "yt-004",
+    "description": "Russian video — request with lang='ru' and context-prep for long transcript",
+    "input": "Расшифруй это видео на русском: https://youtube.com/watch?v=ru_lecture_2026",
+    "rubric": "Response must: (1) call youtube_transcribe with lang='ru', (2) if transcript >150 lines / >8k chars, pass through context-prep.prep_text before frontier reasoning, (3) Russian accuracy: note that T2 faster-whisper large-v3 handles Russian but accuracy may be thinner than commercial — caveat for technical/specialized vocabulary, (4) after transcript: respond in Russian (language match), (5) report Transcribe: source and report if context-prep used.",
+    "tags": ["russian", "lang-ru", "context-prep-integration", "large-transcript"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "yt-005",
+    "description": "Meeting recording — use with_diarization=true",
+    "input": "This is a meeting recording. I need to know who said what: https://youtu.be/meeting_recording",
+    "rubric": "Response must: (1) call youtube_transcribe with with_diarization=true (speaker tracking for meetings/interviews), (2) note that diarization uses pyannote on cx43 (slower than non-diarized), (3) result.diarization will contain speaker-labeled segments, (4) if RAM on cx43 is low, warn that T2 may fall to T3 (Groq) which has no diarization — output may have no speaker labels, (5) explain the diarization output format to user.",
+    "tags": ["diarization", "meeting", "speaker-tracking", "pyannote"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "yt-006",
+    "description": "Failed yt-dlp — escalate to upload-audio fallback",
+    "input": "https://youtu.be/unlisted_video — yt-dlp keeps failing with 'Sign in to confirm you're not a bot'",
+    "rubric": "Response must: (1) explain that cookie rotation (04:17 MSK daily on your Mac) may have expired, (2) suggest the upload-audio fallback: extract audio locally with yt-dlp + browser cookies, then POST /upload-audio, (3) provide the yt-dlp + ffmpeg + curl commands from the SKILL.md, (4) note that uploaded files are deleted from server on success and failure, (5) NOT suggest using WebFetch as an alternative — player HTML never has transcript.",
+    "tags": ["upload-audio", "fallback", "cookie-expiry", "unlisted"],
+    "difficulty": "hard"
+  }
+]

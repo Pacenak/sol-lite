@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-ara-compiler-d41df30c",
+  "upstream_name": "ara-compiler",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "22-agent-native-research-artifact/compiler/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/ara-schema.md": "be23c431db744a4818a68f11abff144da29258e724dcf9ea6617eb3f246d35b8",
+    "references/exploration-tree-spec.md": "5ad900570aa00d33991e80d0c5ad5d252883b1c70e391045542b5f2b84879006",
+    "references/validation-checklist.md": "29518a450cf0d7126b04e4ad35969da76eff559c76475338ecf81ef3188b914e",
+    "SKILL.md": "c71b23b81d4723a8d507d783fc818bd9bd03e6705af0a075151bbc7d712e3567",
+    "UPSTREAM-SKILL.md": "747c2f17125ce136e8f75baf8803eb3b21ccc01246498a7f0bc4c01ec6d01d9a"
+  }
+}

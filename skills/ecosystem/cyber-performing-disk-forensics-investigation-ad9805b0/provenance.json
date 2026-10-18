@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-disk-forensics-investigation-ad9805b0",
+  "upstream_name": "performing-disk-forensics-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-disk-forensics-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-disk-forensics-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-disk-forensics-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15fc26dd2afc1617e36efd30c0f9a8383c01dd65b659c9693588a10ae5e7a73f",
+    "scripts/agent.py": "ecc49c6be94f500acebfa59fddbd142768804474556d278dd97bb3d1f6bde402",
+    "SKILL.md": "50b1e074bc7172527ef7cbc32e911fa52cdba2b044487c48a3d8c10a4fb01a2c",
+    "UPSTREAM-SKILL.md": "b4b0d1bf5aad45589071fd24eae3c97ad05cbc2ee9b7f5b3ede89b889dacc0af"
+  }
+}

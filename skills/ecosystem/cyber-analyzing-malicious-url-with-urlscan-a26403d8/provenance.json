@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-malicious-url-with-urlscan-a26403d8",
+  "upstream_name": "analyzing-malicious-url-with-urlscan",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-malicious-url-with-urlscan/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-malicious-url-with-urlscan/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-malicious-url-with-urlscan/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a9b140c04d285f040d0d680762925ad904fe151cb4226bab647f09eeebacc741",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d4bc589363126dc51c4482e502341f6669e06a8476b9bcaf422d74974f6e4004",
+    "references/standards.md": "1d743fedf98b79577e6e1c51406f170a100ea952200e65bdae9481086997c4da",
+    "references/workflows.md": "8075d39eb358149aa203463b911714eed5ec4c4e9669a715251c9237b1aedf76",
+    "scripts/agent.py": "aca47f03398334d10e8a75165782eda4d0c08ba474d6d0b844ad4390cd289876",
+    "scripts/process.py": "c32c1257a1350712ac753a2a945dfc5090bf4201a1709f3ccffa3cc039259542",
+    "SKILL.md": "a0545433780c9c79111a86310f768d127fc07e910799962cc05b965d05f4d009",
+    "UPSTREAM-SKILL.md": "82f4a952f988eb241bed631580afd6fb3287bcb4463ceaf3648fe29ba1a7eedd"
+  }
+}

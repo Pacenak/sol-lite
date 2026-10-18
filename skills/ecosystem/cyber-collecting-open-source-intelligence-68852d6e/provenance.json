@@ -1,0 +1,26 @@
+{
+  "name": "cyber-collecting-open-source-intelligence-68852d6e",
+  "upstream_name": "collecting-open-source-intelligence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/collecting-open-source-intelligence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/collecting-open-source-intelligence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/collecting-open-source-intelligence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "eb07c7460269d91e5d2c397704341481363760f72078ed4a23d0c9d9143840d3",
+    "scripts/agent.py": "2057edb1378196b80db5034905b74444daa94083c86c293940e1bbfef1f4d925",
+    "SKILL.md": "dc6dcde77008ce8ecb2429b1462b00d7e23609acd867891471ee56db888af154",
+    "UPSTREAM-SKILL.md": "37b8996f6e0745e07d2006eb600de0e83a31e8e2b9f8e4b1026178762b23a264"
+  }
+}

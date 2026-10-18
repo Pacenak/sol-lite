@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-role-mining-for-rbac-optimization-be8f7b25",
+  "upstream_name": "building-role-mining-for-rbac-optimization",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-role-mining-for-rbac-optimization/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-role-mining-for-rbac-optimization/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-role-mining-for-rbac-optimization/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "199b9f24457dadfcb10dc68c0d8a02aad73758b898d4c4edcef203d46b38da5a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1cf5ca347bb64d3ab7d744a6d740b4a31ef25c4548051d63a495bf41d28ccdb7",
+    "references/standards.md": "9e332db2119d8f38377a48f349b50ba695983d46498a583d1e6a0bb611df4368",
+    "references/workflows.md": "ec481242d4af05bd29d36f62f3ceec33d7d782bb875b406a29ad8cfd2694f783",
+    "scripts/agent.py": "00ab58c1e8022bfad287cefa870a9f0b5a3eff5ffbed220e0b46e7cc0afab819",
+    "scripts/process.py": "7626af22d16694d909f0b5119141bfb7ae1b9943c4670292043855c26bb27a6f",
+    "SKILL.md": "b2c2481c52760e39b3091ab7bc6a76e85d5fed4cb27b6c334abec5c2036a8cd1",
+    "UPSTREAM-SKILL.md": "05dcf7eb827d0536a449e31802bc81c5a02cd079bba2e4489e49b76fb0a1199f"
+  }
+}

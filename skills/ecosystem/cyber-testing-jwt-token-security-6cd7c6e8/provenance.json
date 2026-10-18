@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-jwt-token-security-6cd7c6e8",
+  "upstream_name": "testing-jwt-token-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-jwt-token-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-jwt-token-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-jwt-token-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b3ed36f9c3c0f5a4cc6ef86025719bec0ce65b550de0507d9aa9066691270d39",
+    "scripts/agent.py": "d0800f3495975701455c21103f2894c06eb9ed0f6d51132a39e998ffa29cfdf7",
+    "SKILL.md": "abfbec8721b486d64c5866874c5987d99b199f0bc49e4e4c6c8a10badc2d4416",
+    "UPSTREAM-SKILL.md": "d7b6b10a9ea2538b0b3cdb2bc4e608ecf84c27d188cbfcb5d2854579653319f9"
+  }
+}

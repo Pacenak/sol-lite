@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-detection-rules-with-sigma-be87997a",
+  "upstream_name": "building-detection-rules-with-sigma",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-detection-rules-with-sigma/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-detection-rules-with-sigma/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-detection-rules-with-sigma/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "437f1308634a8b01e84ef23624eaca5701c8f04e559c778e7c4eb7b3ff5de2e6",
+    "scripts/agent.py": "f36a1576ec106063002ab76e42f10bbb4134073605efcd7c83339138780847c0",
+    "SKILL.md": "cf66642c08f06910ab18a4e2a3d321422898ede041c18ad9d42978112daf5708",
+    "UPSTREAM-SKILL.md": "37f59e2eb077b8dfdd8c476942164b5294b232829b0ca9ad20c82516730cb219"
+  }
+}

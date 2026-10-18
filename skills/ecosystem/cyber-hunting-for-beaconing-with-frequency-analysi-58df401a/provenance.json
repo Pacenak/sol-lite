@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-beaconing-with-frequency-analysi-58df401a",
+  "upstream_name": "hunting-for-beaconing-with-frequency-analysis",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-beaconing-with-frequency-analysis/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-beaconing-with-frequency-analysis/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-beaconing-with-frequency-analysis/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b4208f9e511857e884fef58c40891563bdb527ec1f091179fa69817ef3107f1e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b37238b7b646cda3de59833ebf64feff1b5091b833e9a3803914b3e0086b03a0",
+    "references/standards.md": "5d3b724f9dce892913def6c3cff8872119d74a7f86637abea7bcfbfeefe9875e",
+    "references/workflows.md": "d5e41fdeb1bf5b6aad7319e0cca8f7088714d26c79eca1e07af6924e4ac18604",
+    "scripts/agent.py": "ca55dc4d35fce921c77f8b4bc3bc66a0733b945929dc402dd344f40902a6eef1",
+    "scripts/process.py": "0075c2f12c040cbb45f4565a283c61d28931ce7c5d60caecd1902d5fef6af877",
+    "SKILL.md": "a0b7a6c2d31447d2f7d61831a46e09cbca87dbde4e8d964d2f41f2c01e059755",
+    "UPSTREAM-SKILL.md": "79c3e65d9d101f9a1f1777f75fdd9e6487d3afe81da3fd85edb00938661168f0"
+  }
+}

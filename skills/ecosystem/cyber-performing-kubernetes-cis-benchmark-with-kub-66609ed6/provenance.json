@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-kubernetes-cis-benchmark-with-kub-66609ed6",
+  "upstream_name": "performing-kubernetes-cis-benchmark-with-kube-bench",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-kubernetes-cis-benchmark-with-kube-bench/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-kubernetes-cis-benchmark-with-kube-bench/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-kubernetes-cis-benchmark-with-kube-bench/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "cc626ccf916c3ca0b8434dc41d0bbf7017db5b5e4e678bcb980bbfca5c812a8b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "721d8493bff546564e22e69efdff68221e1ae81ff5d60634e458806e32316339",
+    "references/standards.md": "bd673e4c196939c04d80197d212ee1b46af88f24b6b50bba26ebe2d9a1da7fda",
+    "references/workflows.md": "cf574c76c78857974c0ec2f5227870167fb19dbca58fad3cc69aa66e973d50c6",
+    "scripts/agent.py": "03aa08aac8e40c18511658f685488830f39bf847d161579a61860ced15355179",
+    "scripts/process.py": "6991305dcfd2b3ccfb5f06344905e1c2d14cc31310bacde572fe1e2b21b5bd2c",
+    "SKILL.md": "ce19677bd5b5c9294d8d4b1fa753e62700afab502edbe50145df150372768065",
+    "UPSTREAM-SKILL.md": "1943d42cc2aea4add7c5f43206502466d6182955594bde430f2d494a8fa1d3a8"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-api-threat-protection-with-apig-887e227b",
+  "upstream_name": "implementing-api-threat-protection-with-apigee",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-api-threat-protection-with-apigee/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-api-threat-protection-with-apigee/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-api-threat-protection-with-apigee/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0a18158fdb79dc55c54780b152a1babfecd0cd0b1aa51827d2dda3ffb98a075c",
+    "scripts/agent.py": "889a845e6be197dde197094ab34845667e29c37932dbc5c152f1426adfe7219f",
+    "SKILL.md": "14469233b44d5321144667e6919e2e2780749cc692067d6d37cb736bdcb176ef",
+    "UPSTREAM-SKILL.md": "b7aa940ba9e5cd00174a4ae1b57f8fa4a8824ae5ecc61ef6eee20fa3d495397e"
+  }
+}

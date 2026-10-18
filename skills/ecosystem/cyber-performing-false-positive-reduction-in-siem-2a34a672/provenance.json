@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-false-positive-reduction-in-siem-2a34a672",
+  "upstream_name": "performing-false-positive-reduction-in-siem",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-false-positive-reduction-in-siem/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-false-positive-reduction-in-siem/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-false-positive-reduction-in-siem/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9e5bfcff3dd8521a3bbd631d484edaf10b244ae2a7825cc1f8a5e8f2dfa1d298",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "14142fab7871225b2ce00e6d5478b3aab15cac738b91b149c72481b39d4e17a4",
+    "references/standards.md": "32ff335dec857b9f77c6157cf3edec5a8a615ed3270c5c5d9accad79f330d29c",
+    "references/workflows.md": "7e9b0d9d15ab19ab002ca16b3857b73fbe89ffe905567a0d5f65fab78a88dac2",
+    "scripts/agent.py": "d753917246efe1d3fe940ae594a2e2ee5d4e24d5e70049451c15862d617b4723",
+    "scripts/process.py": "d71170c576b349a8517053d7eb0cae383a7ebdff3c9b02f63716aba00311d8e9",
+    "SKILL.md": "c543847e5c1c79dd2f4ee6bfe0d68c39d2b5c172126015a29cdd08dffcd98de1",
+    "UPSTREAM-SKILL.md": "948faf1b3b3e3070059f3f92049b4330b757146d3f73fb655fb73cd18f658bae"
+  }
+}

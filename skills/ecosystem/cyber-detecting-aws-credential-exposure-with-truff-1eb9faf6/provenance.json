@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-aws-credential-exposure-with-truff-1eb9faf6",
+  "upstream_name": "detecting-aws-credential-exposure-with-trufflehog",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-aws-credential-exposure-with-trufflehog/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-aws-credential-exposure-with-trufflehog/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-aws-credential-exposure-with-trufflehog/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5f513515e35a92c800c303d8489c3e28ec745197a12ac3ef64ebab5376fd98e0",
+    "scripts/agent.py": "1d1189c4ff8611ca7b9d5f2b2dbe493c51568f346c304e9247801aac0bf4fa4c",
+    "SKILL.md": "43cf5cf5a882f39d0fa8df3da76f64b088ce5315e1de88f3de592aec0799806b",
+    "UPSTREAM-SKILL.md": "aafe742fca6245cdaaf75366e6a1f3a2062ecc70727150661efe324bf952a641"
+  }
+}

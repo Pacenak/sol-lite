@@ -1,0 +1,27 @@
+{
+  "name": "cyber-performing-memory-forensics-with-volatility3-f5fed4e2",
+  "upstream_name": "performing-memory-forensics-with-volatility3",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-memory-forensics-with-volatility3/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-memory-forensics-with-volatility3/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-memory-forensics-with-volatility3/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "25384ce65f8362e4b6fd924a8d141ce85c73c1298831a86918e1146a3c150168",
+    "scripts/agent.py": "95b3689fde02de3a3ad3e7551e333e130a1dbe3ff6d9a5c93bc7915887567713",
+    "SKILL.es.md": "8ed118dde9217490a1c22e87e0569531c661aeec746fb10822ffadeed573a6d9",
+    "SKILL.md": "e00d594ff788b28c9829c359572b4104a535b1271477b89a74a234a62b88ddc2",
+    "UPSTREAM-SKILL.md": "d6eb0d37c55a5339481b815260963402e8ea67b9ec9c8293a526db9d93ddd283"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-ntlm-relay-attacks-0744b223",
+  "upstream_name": "hunting-for-ntlm-relay-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-ntlm-relay-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-ntlm-relay-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-ntlm-relay-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "90dc46ca478bd606ec6b1ce25b9a7fbb8beec6fdd53117f86889bd38990cdaab",
+    "scripts/agent.py": "8c546fa0199e489cc700de29c3db661a045dc4debe290ab3dfa1eaf67ee42747",
+    "SKILL.md": "ceb0f91c70333c2d0117c3e17d5b4251152f753ed56dfe4452e062c7ba153886",
+    "UPSTREAM-SKILL.md": "3cd66b92fd62bc6b8350d6ef29c43a9f008074a68d132070590f6f9c95ba6497"
+  }
+}

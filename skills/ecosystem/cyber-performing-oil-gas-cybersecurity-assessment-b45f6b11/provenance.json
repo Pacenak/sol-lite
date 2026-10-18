@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-oil-gas-cybersecurity-assessment-b45f6b11",
+  "upstream_name": "performing-oil-gas-cybersecurity-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-oil-gas-cybersecurity-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-oil-gas-cybersecurity-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-oil-gas-cybersecurity-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9f10848962c9c4a76295f09b7e5e9f721c7f54a22b0ff90554e8714b1d9233ab",
+    "scripts/agent.py": "420822c78a377542c4780b0e32c30c10ba5ea27295e5671a7bb010ecc241bc1f",
+    "SKILL.md": "1b4b4f6dab38deb5a49cf1405c446950edd97eb998ef74f8605070a68d7a9e3d",
+    "UPSTREAM-SKILL.md": "ee3ff71bf655a7a7445a8f4ea7bd2e8d7792426f484daf21459987deaaa1cf5c"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-conduit-security-for-ot-remote-33de52ea",
+  "upstream_name": "implementing-conduit-security-for-ot-remote-access",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-conduit-security-for-ot-remote-access/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-conduit-security-for-ot-remote-access/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-conduit-security-for-ot-remote-access/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d97ebb648713bbf4c37d6659c64ba1cd45b501609e42b37c3c8c638213a58b34",
+    "scripts/agent.py": "052b66bab8b34c4e9c4c277fabd50f001aa86df9e15b7685cabf001c93051009",
+    "SKILL.md": "ba846b3afb0b98b24f7a4b5b5352124f31b7371fc30c25e98f41e8ae38dfc463",
+    "UPSTREAM-SKILL.md": "b6bb8b8be184337cb162762a93b68364bb7239aadd9ec0b3aafadd8c6fdac0ac"
+  }
+}

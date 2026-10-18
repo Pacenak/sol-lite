@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-power-grid-cybersecurity-assessme-da3b311d",
+  "upstream_name": "performing-power-grid-cybersecurity-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-power-grid-cybersecurity-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-power-grid-cybersecurity-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-power-grid-cybersecurity-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0e8bfac47d7c4d092bba54bb0f18c265ed0695aca87082a0e612268c9430725f",
+    "scripts/agent.py": "850214d05211a488769317e47fda7eab47a0d9d0292b494fe217eb9702634954",
+    "SKILL.md": "e121bfae9efc5b6e8f6ddcc03e97af5b6c335af93187a5ab8962550035fad710",
+    "UPSTREAM-SKILL.md": "b3243878935372b28bf062f882bfaec154dda0415763da83e213eab8d73436b2"
+  }
+}

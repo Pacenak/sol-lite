@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-lolbins-execution-in-endpoint-lo-46d0c8e1",
+  "upstream_name": "hunting-for-lolbins-execution-in-endpoint-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-lolbins-execution-in-endpoint-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-lolbins-execution-in-endpoint-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-lolbins-execution-in-endpoint-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "6af354276491b0dd75dbb83270f16a8a41e5f8371140f6e26ffc3b102304ca8e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "50390af8e64e3e4f60080e29ecc61951c8a404f641c64e79891f8291dc5a0d5c",
+    "references/standards.md": "7da96880d96c55dc2df9917e5be509eeef3dda567540820817d0de5a30082d6b",
+    "references/workflows.md": "94c2fb75ef1966493de42a879165e5fc0c4258addadf314680c96706f3bc064a",
+    "scripts/agent.py": "1a0ff731dafaf973ac75d023e042da7fb1412bd825d8d0e18e7949fcd7a87bd7",
+    "scripts/process.py": "6e18dd05dc171ad956f2bee2ff70560473b3096aa9396f5e996e381b844e7670",
+    "SKILL.md": "972c7b773f20d9c9c53bd2c63d1963ce5031b2795ba0800fe4cae5ef641efcdb",
+    "UPSTREAM-SKILL.md": "d228337502e19df77f900ba039b0bc53c67741b5f8076e09ccc9703c725b967a"
+  }
+}

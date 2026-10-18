@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-golden-ticket-forgery-2cc47be1",
+  "upstream_name": "detecting-golden-ticket-forgery",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-golden-ticket-forgery/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-golden-ticket-forgery/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-golden-ticket-forgery/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "daa528c04226e423d5917eb44912affd216952e168663415f6855e872d03302e",
+    "scripts/agent.py": "946ff608e0622447c5a9ece1c8c44deda1228ed933b03a80ce19c50a5a127a9e",
+    "SKILL.md": "4cbd865cab5d34a2b47bfcc3a429cfe4595ee0d3bccf93b62ce3bd9fc374d87e",
+    "UPSTREAM-SKILL.md": "85917ce0a935bf7d533efae8235ac367124f727e01b67f400516f293d855eb37"
+  }
+}

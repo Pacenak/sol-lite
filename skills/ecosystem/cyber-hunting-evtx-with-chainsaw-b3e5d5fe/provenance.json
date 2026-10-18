@@ -1,0 +1,27 @@
+{
+  "name": "cyber-hunting-evtx-with-chainsaw-b3e5d5fe",
+  "upstream_name": "hunting-evtx-with-chainsaw",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-evtx-with-chainsaw/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-evtx-with-chainsaw/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-evtx-with-chainsaw/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a8b09a79aa5d34542f486e5cd8d589a0f0b7a181c392a13187a1c97b5cd76130",
+    "references/standards.md": "e7123c69f62c8087286dda1a0f668856ae943ea3e305ac42b25ad37d83ab9e7c",
+    "scripts/agent.py": "49fecc96494e2969542d19601ad07a3a5ec2b280eaa9cec36d1f5cd78288a952",
+    "SKILL.md": "58e26e0bb9f5a3ee150db799a3af1db4fdc3201f71768c6fab42bc502586c51f",
+    "UPSTREAM-SKILL.md": "775cf5e4b1ed5e6f2eef8a4937805f6d1650bf8a974c5ffb71e3a206cffaa436"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "johnwayne-payoff-action-modeling-9f17682f",
+  "upstream_name": "payoff-action-modeling",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/payoff-action-modeling/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "agents/openai.yaml": "29c67de589afa36285fb46e57bc6909e059f714dce4fb8ae54b78747f3945b04",
+    "SKILL.md": "d1b1785304195a6a24fadd8b058d79a410c09b4d887e71f1565797528fa9b105",
+    "UPSTREAM-SKILL.md": "ce2890e4b96577bf9b1b0be91a452495ea27b1c0ecad878f3c142460683bdc0b"
+  }
+}

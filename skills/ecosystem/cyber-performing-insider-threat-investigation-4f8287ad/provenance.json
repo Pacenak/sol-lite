@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-insider-threat-investigation-4f8287ad",
+  "upstream_name": "performing-insider-threat-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-insider-threat-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-insider-threat-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-insider-threat-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "107949f68577b13167919bcd1b7595424bcb68520b10421a3cbd4459564a2aa7",
+    "scripts/agent.py": "8084179c8e635bbc278fbb8fa5ce6d2d30af8f642507ef77a891eae37b09441f",
+    "SKILL.md": "2444a53f0a1dc7771af6be9988e140c351f2c8697df628f8a2e8667f0310116a",
+    "UPSTREAM-SKILL.md": "444a5796ea0b840558ee2b69d7b409c10b162be8eceee3eabfce42904c8fb821"
+  }
+}

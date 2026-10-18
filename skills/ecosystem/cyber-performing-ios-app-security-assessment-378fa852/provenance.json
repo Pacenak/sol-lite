@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ios-app-security-assessment-378fa852",
+  "upstream_name": "performing-ios-app-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ios-app-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ios-app-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ios-app-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3db3394409117f872296b5b452ef226b9a4a27b6a6551ceef05a36ba27c99163",
+    "scripts/agent.py": "616f85dd5c886367f204b26fb8f9ec8346ed15503f26d0fbc8664f8a559ad0e0",
+    "SKILL.md": "0e699edf3a23a3d05e0b5a6d76ed411bbac3add024ca144078f450f451b5278f",
+    "UPSTREAM-SKILL.md": "47376e0b2d0e3883927c1db471e4e9470f5a5accc54e18f003cbe421de08d33f"
+  }
+}

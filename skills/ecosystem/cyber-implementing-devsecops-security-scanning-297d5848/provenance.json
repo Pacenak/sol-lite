@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-devsecops-security-scanning-297d5848",
+  "upstream_name": "implementing-devsecops-security-scanning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-devsecops-security-scanning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-devsecops-security-scanning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-devsecops-security-scanning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cfd56086915e634f1792c8d1dfc0ebd8c71663ea8f15885e097d3985ee322878",
+    "scripts/agent.py": "f910c219fcf7885cdd7a67a50b5f15c1de41c18ff228d4f03c7e7ad375f6aef7",
+    "SKILL.md": "54a5b3aafef7a6bc679e357a4dd3e1ad9880052870393056fb792d7896ac8081",
+    "UPSTREAM-SKILL.md": "3a528d53ceaf2b7d73f838de8229ab65a52476a439c77b18c0685e564f8e8dd1"
+  }
+}

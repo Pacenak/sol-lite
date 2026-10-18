@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hardening-docker-daemon-configuration-e24cd9e5",
+  "upstream_name": "hardening-docker-daemon-configuration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hardening-docker-daemon-configuration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hardening-docker-daemon-configuration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hardening-docker-daemon-configuration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a9871c1300cfcf4cd24a4474db51ce294a21d164a08115344330b9cc343249ad",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a6f08de46f235d44c37423b62a171ff05aec3f18f1d3306fcf55098a1093285b",
+    "references/standards.md": "a4898a403897763c2fd4b5de1673e9ef8a12567276107289e7b58ca53397ec58",
+    "references/workflows.md": "91fa87b6d316b8784cdc1c0532c3810f7005165c8f186bb362a2da1f4793a8fd",
+    "scripts/agent.py": "d96cfbf803a9d8693d432c6e3d564a5e8ea48daf85d453de95a7eafcfb7eb12c",
+    "scripts/process.py": "9ab3875521b19eaccba73e03f1770dddf2d5f931687878322fd0261bff7e827f",
+    "SKILL.md": "1a7bed42ce02fba239cb9dce3e422017939fecc3aa72c9cb7325bef5737623fe",
+    "UPSTREAM-SKILL.md": "d0daafa02e4cf698e94fef901fcca93be2fa84090352ebc695b9450849a21179"
+  }
+}

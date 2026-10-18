@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-security-logs-with-splunk-53c7f048",
+  "upstream_name": "analyzing-security-logs-with-splunk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-security-logs-with-splunk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-security-logs-with-splunk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-security-logs-with-splunk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "882a60a1ad96ecabfae03d37afb6ebab945f73c170c93f2e8f0352c1bf9b998c",
+    "scripts/agent.py": "0adb7e744d3b3f2166a93e658363b3d08451c085c4f118811795f40bec8b0f75",
+    "SKILL.md": "3746c4246040b99e94c571bc04fdebabec20b8d5cdfbda80b2528bf838fc8a8f",
+    "UPSTREAM-SKILL.md": "2835c266b1ed47ff1f3b6b4d299f2ddcda236c77c0db08169f861a2bf2855342"
+  }
+}

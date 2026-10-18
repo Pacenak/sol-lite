@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-graphql-depth-limit-attack-23083041",
+  "upstream_name": "performing-graphql-depth-limit-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-graphql-depth-limit-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-graphql-depth-limit-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-graphql-depth-limit-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f44f57d500c94052202bc0c521ea22038f63ba8130ac9d9892b46970f2de4fcb",
+    "scripts/agent.py": "78bd14909d03c9702154545681bcbe7f28d0e00fc2a71143652d447d6897f663",
+    "SKILL.md": "f8365aae676981eec22d4241c4a48731dd1192c79d8d611d6847f212980c7ada",
+    "UPSTREAM-SKILL.md": "18eca70b625f4e75a027d7ceb3235a0fecd4a722bc397bfaaec9ef145a689055"
+  }
+}

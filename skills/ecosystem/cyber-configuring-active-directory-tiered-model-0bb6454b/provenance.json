@@ -1,0 +1,26 @@
+{
+  "name": "cyber-configuring-active-directory-tiered-model-0bb6454b",
+  "upstream_name": "configuring-active-directory-tiered-model",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-active-directory-tiered-model/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-active-directory-tiered-model/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-active-directory-tiered-model/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3520ebfce318f26f9d024e79ec75e9928bb947ce7111d85e76c4d8d3f0a80efe",
+    "scripts/agent.py": "7c24a8cad36345000af4be5fdbd31083bf3a78b599c676cc6ae2f935a1aef53b",
+    "SKILL.md": "4e4aa77d1b931058dc91361760d90a6bc7731a56d91e8826b0703235407291ea",
+    "UPSTREAM-SKILL.md": "0fb769805cde4aa204ed2b5140dee98a33511ed5a9e606032dfd03826f149e98"
+  }
+}

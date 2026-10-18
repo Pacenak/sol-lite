@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-rapid7-insightvm-for-scanning-2adb2d22",
+  "upstream_name": "implementing-rapid7-insightvm-for-scanning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-rapid7-insightvm-for-scanning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-rapid7-insightvm-for-scanning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-rapid7-insightvm-for-scanning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4e289956a31c7a93ee68e823bb94ecfc647be1590adb9f7e08594f34e89ba5cc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c328c01e8976534918a9bfbd0ae709a73ef764cc672be340e20f15f610a0f910",
+    "references/standards.md": "da9e7c97858dd8361de1141e8f89683c4a6fdfc543530acd4166e3c5f096acf7",
+    "references/workflows.md": "ed4fba0f0ac3946a92cf6a01626bf406e7c66d4be4a4e7d28c341228fa19ea34",
+    "scripts/agent.py": "9c6359c23c88675037d0f90c91c1fc39061e99ee2b9f2f69b9097f8b900d3838",
+    "scripts/process.py": "2ad344dc418384bc3a517c6dd0960b3753206c8a75a12c171a5e56e9fb7194b1",
+    "SKILL.md": "59b2d3af1ee9a4ad4f2112331c10166014a12a1da746d2c2566385bb7f7f2120",
+    "UPSTREAM-SKILL.md": "bc186e69764e9585e7c47bf2edce9503f585535a1ee24b1b46cf00c51326bd0f"
+  }
+}

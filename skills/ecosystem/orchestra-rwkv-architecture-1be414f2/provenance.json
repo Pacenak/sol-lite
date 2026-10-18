@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-rwkv-architecture-1be414f2",
+  "upstream_name": "rwkv-architecture",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "01-model-architecture/rwkv/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/architecture-details.md": "8d49b47e13d78771fb756b47eb6bca6c4aa9f85ffa5d4916eec5826356955487",
+    "references/rwkv7.md": "dffae18583757ebeefabdf58961577ecd9e8e43d601db942385ccb4e0295fa45",
+    "references/state-management.md": "c4de4fed3a84e4b515485e6a3e0742e0645ac02c191dd1cd2a4fc2a2676e4a6c",
+    "SKILL.md": "2ad28b27a3219cb7835cb2b8e0693a676074c9e839891fa66cf2d4b9a24ec2ef",
+    "UPSTREAM-SKILL.md": "17fc974b3f3b67b1648c5cb93b3bdc557fbd64df8463d8fbc8f71bdf88575a7c"
+  }
+}

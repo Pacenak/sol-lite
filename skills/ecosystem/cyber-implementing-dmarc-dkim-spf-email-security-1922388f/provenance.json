@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-dmarc-dkim-spf-email-security-1922388f",
+  "upstream_name": "implementing-dmarc-dkim-spf-email-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-dmarc-dkim-spf-email-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-dmarc-dkim-spf-email-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-dmarc-dkim-spf-email-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a9f618d28cd9c7ae24e520f0bea77ebd42e96c5d69efdef874f13d49602658a5",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c565057f7be1b0e202cffcf736748917e5958c32d800698ce8c20fff3f89f3ca",
+    "references/standards.md": "a3b46ebbb860ed526927129d6b2ec566672ec3bb00e0c69c4d28c02ec039b5ff",
+    "references/workflows.md": "c698b15bc4ec3a70989d32acaa06833f865a602ebc32018b5f1678ed1337adac",
+    "scripts/agent.py": "741eb9d72947481731286203144e8bc1119f99d3fad383a4a141c46a39c0f15f",
+    "scripts/process.py": "89d3b1197b68c0de2d5e62baecac4fc6d2de28be600dffefac4f4bc561208f7f",
+    "SKILL.md": "e97f824892f018a993855d8c39512e07b18a89b72697e2feca5e54c467abca43",
+    "UPSTREAM-SKILL.md": "150c33a5b13d6e97b6db0fbccf676a35e05cf7e07792f2c8d44f7cbd0357e232"
+  }
+}

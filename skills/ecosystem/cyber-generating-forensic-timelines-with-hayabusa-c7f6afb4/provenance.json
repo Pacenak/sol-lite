@@ -1,0 +1,27 @@
+{
+  "name": "cyber-generating-forensic-timelines-with-hayabusa-c7f6afb4",
+  "upstream_name": "generating-forensic-timelines-with-hayabusa",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/generating-forensic-timelines-with-hayabusa/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/generating-forensic-timelines-with-hayabusa/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/generating-forensic-timelines-with-hayabusa/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "929af02f5214f8d6d071112f552c297ea69356468fc7a00df5cb61f0b8bd4faa",
+    "references/standards.md": "9b46070c41bf8d524eb89d3eef69b1e068247a124b242b4704242354c61026c6",
+    "scripts/agent.py": "8c1ead6fde277191475f0c18c28ed0f2e71c3aa82df03597bdedfc61133e5ccd",
+    "SKILL.md": "a37210546b8790fbe480a7333bd0358d7f7e9cf3aa5846adb5d89321350e2220",
+    "UPSTREAM-SKILL.md": "2374ac379a6c80a57296a48698adbc78896bdab0caffad76a1dffa3bb3fef57b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-access-control-with-cis-c3b50d18",
+  "upstream_name": "implementing-network-access-control-with-cisco-ise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-access-control-with-cisco-ise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-access-control-with-cisco-ise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-access-control-with-cisco-ise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ef91fa2170427d64d9c2099b411d3bce87aa63eb0d0557b1f2d52f06bee00af3",
+    "scripts/agent.py": "c0e5d5c71d45b956581aece7e5349218609ce41d397f0fb9ca356477f60b242b",
+    "SKILL.md": "988b48cb718a0fb3679f0eb86c624e13be56b34643da1db958fe1f56e4d0ed10",
+    "UPSTREAM-SKILL.md": "600ecfd98ec26aab90b8927f511f6151752066a7519b7e6fb391e4ee84e90879"
+  }
+}

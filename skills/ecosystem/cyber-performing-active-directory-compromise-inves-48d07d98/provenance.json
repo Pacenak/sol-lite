@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-active-directory-compromise-inves-48d07d98",
+  "upstream_name": "performing-active-directory-compromise-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-active-directory-compromise-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-active-directory-compromise-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-active-directory-compromise-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1e4271d4a001264705dd08de48ff3c3f881ac535aecfb4bf8c2d5f430dc7c44c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e48e73f9c2662a9519b2a3b2f0d64b9e431a7bed48e326e89dc7921bfba25664",
+    "references/standards.md": "b1b95bf18d9dcee9618b6a870e79e36f9f577174577e1a020d7dc3ca865a664f",
+    "references/workflows.md": "8fa76bf490c8d0261653af74450b452c37fcd1cdabed8d9f0ef01158abcbc15a",
+    "scripts/agent.py": "e97a9dfe93e55d9735e9bade98ee6af12a9bfa5123148c4a580ce61e1e8959a8",
+    "scripts/process.py": "2302161d35cebf2d8c51c8b7954a2c7f06b4b985dddd35c9377208c4ea105cf8",
+    "SKILL.md": "568487fc2765fb4d2e3bafc3f3e62b706112a1fb0f1afc490b4c1ea34a9bd04b",
+    "UPSTREAM-SKILL.md": "1f4603d1a530091632ee11d9e3af787dd0b08e7849f113afcb3b1f5d5bc1fbc8"
+  }
+}

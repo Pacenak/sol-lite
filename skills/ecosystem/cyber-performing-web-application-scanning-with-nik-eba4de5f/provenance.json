@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-web-application-scanning-with-nik-eba4de5f",
+  "upstream_name": "performing-web-application-scanning-with-nikto",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-web-application-scanning-with-nikto/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-web-application-scanning-with-nikto/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-web-application-scanning-with-nikto/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5434b851472ae4a92cceb5fea865aa4bf7c0e4485a062bd733b23167e176d278",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fafdd0e7cc097f3dd7389e511a235c2c81aa829bed6cf3d41edc3116948db54f",
+    "references/standards.md": "5ad9d2afac52e13da5369c2d83de27e62d84ba142a15f90fe4e1bd5ab1ed7d79",
+    "references/workflows.md": "0813d067b4b127a4cf04829766d67ebef40bb1c1933c01140921d980b2e90e1a",
+    "scripts/agent.py": "f2ad94f80aa4409e225ba2b6b02bfc35102c265b30721a2368e6faeae7964728",
+    "scripts/process.py": "d5e781b452357f3136e196154439ee27fdd82ed9e1396f112b12779504225a85",
+    "SKILL.md": "21e792f594ae6dfc3eee270ac479067ddb01dbae5248e73a27039469537560c8",
+    "UPSTREAM-SKILL.md": "48bcd834f142b53f948254db53d2698c0b86ac37ecabbb7f2aca2fe7fc5ae345"
+  }
+}

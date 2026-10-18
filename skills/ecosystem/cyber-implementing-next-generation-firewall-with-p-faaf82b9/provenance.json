@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-next-generation-firewall-with-p-faaf82b9",
+  "upstream_name": "implementing-next-generation-firewall-with-palo-alto",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-next-generation-firewall-with-palo-alto/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-next-generation-firewall-with-palo-alto/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-next-generation-firewall-with-palo-alto/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "2bba633838dc3033224f743f881066c77ffc7a7c35799b6e1bb4a1fbf2aee710",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22c08e279b84ffaf4a59c367274943e2a565b28c09f1ec44e6cd1c69de2ce79a",
+    "references/standards.md": "3c17c1b2d003747a14638dac27f14ac7c0c914cb4b180cd91829aaf4e25074b6",
+    "references/workflows.md": "37b9dff29712a408e8c74c5579e71d541dfa6de59a76ceca47015e29f49ed857",
+    "scripts/agent.py": "6f52d4d068459736fe36ade11f1dec2d3f822abcf8fae44d972004e0fd49b7cc",
+    "scripts/process.py": "79ba3fc8f5b00b16041265f8349574de4b2d6e288a9a1a8102b2c8dad6ab5678",
+    "SKILL.md": "8b428f7aa7a87cfcf918c3284e4d0b28c54f2af2e39be40b417b0b08161a972c",
+    "UPSTREAM-SKILL.md": "4581e1c28d2f74215cc1dc82e233677e4e4334383d1fae47922be1ea9beda7c6"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-api-for-mass-assignment-vulnerabilit-72730c53",
+  "upstream_name": "testing-api-for-mass-assignment-vulnerability",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-api-for-mass-assignment-vulnerability/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-api-for-mass-assignment-vulnerability/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-api-for-mass-assignment-vulnerability/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "eb428fb1670686891507e44fd8d0228cb86d267b7f4603dbc4716aa71ca5ee59",
+    "scripts/agent.py": "43f1c976539aef942508c53c22e243bc9bd6bbdd9587259eee9e1a36b62104f0",
+    "SKILL.md": "b23343ef09f5a3deab014ea8f01527c0f4dce5048c0c15882f855055536ccf03",
+    "UPSTREAM-SKILL.md": "6d1409c3f163e16cdb89be446bb4db3fb73357abfc89e478cecb1d59c336ca7b"
+  }
+}

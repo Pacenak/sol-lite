@@ -1,0 +1,27 @@
+{
+  "name": "cyber-triaging-windows-with-kape-94fad116",
+  "upstream_name": "triaging-windows-with-kape",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/triaging-windows-with-kape/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/triaging-windows-with-kape/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/triaging-windows-with-kape/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3ff2a46c1294386e126542f206e37888c41f210006ecd808852892fabccd3bb3",
+    "references/standards.md": "7d429878829542df865e5ed5d505ad6d98342781082dbb8e9cb161e002f80ef6",
+    "scripts/agent.py": "737e3e6660e9f3ab5e861c2468f349e94e6c1de5e5c7b5db0ab89fa2cb40b813",
+    "SKILL.md": "1c7dff23692fc83a32c7c604f1a7af56fa8ed61cd4be0ef0de54bda65d7a2de7",
+    "UPSTREAM-SKILL.md": "86b3b3728117192a946138a400a4c42629b4ab1db2e110fc39c35259888f4ed7"
+  }
+}

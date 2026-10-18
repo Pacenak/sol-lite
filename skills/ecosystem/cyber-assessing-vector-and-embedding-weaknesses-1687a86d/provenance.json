@@ -1,0 +1,27 @@
+{
+  "name": "cyber-assessing-vector-and-embedding-weaknesses-1687a86d",
+  "upstream_name": "assessing-vector-and-embedding-weaknesses",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/assessing-vector-and-embedding-weaknesses/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/assessing-vector-and-embedding-weaknesses/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/assessing-vector-and-embedding-weaknesses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fbee07fc463731be1a87aa3f00df14d0d61afbb4faabae39d2ad638db9b10eeb",
+    "references/standards.md": "875dce1802032c457d8c96175385e145e09b55ce51646d4d87c59aa5e2bb1bb7",
+    "scripts/agent.py": "ce363c4f07413123223aa660c2b02b37394ab95a25124401ff1fef6c72575994",
+    "SKILL.md": "fdd5c9eb99f50cc40195ea682acea7d24b1f1c5d810949e83e0ff812c498a65c",
+    "UPSTREAM-SKILL.md": "645db88420e8c49ca0f556de974fa21e8c7cfd41422452b908e8da203a4d8d31"
+  }
+}

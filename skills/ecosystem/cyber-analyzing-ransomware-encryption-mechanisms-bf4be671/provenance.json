@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-ransomware-encryption-mechanisms-bf4be671",
+  "upstream_name": "analyzing-ransomware-encryption-mechanisms",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-ransomware-encryption-mechanisms/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-ransomware-encryption-mechanisms/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-ransomware-encryption-mechanisms/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7a03a0c88bed791c92a1df02c3b764b98c7429d749691a00c353ebb58d487b50",
+    "scripts/agent.py": "3f1a4532f13552d1f1db00a770e9840d89fb33bcb0f67ba1e16c79d602d460e4",
+    "SKILL.md": "d3d281c14539a999ae4185dff1232979ccbf04bd7782b4000ee24167eadc9b99",
+    "UPSTREAM-SKILL.md": "9b0ad1aeba938fb63912ea25b83f01b14be7bc3e968dff16a06e11859f8aa062"
+  }
+}

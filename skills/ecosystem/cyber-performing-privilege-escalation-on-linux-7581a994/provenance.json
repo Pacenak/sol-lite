@@ -1,0 +1,28 @@
+{
+  "name": "cyber-performing-privilege-escalation-on-linux-7581a994",
+  "upstream_name": "performing-privilege-escalation-on-linux",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-privilege-escalation-on-linux/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-privilege-escalation-on-linux/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-privilege-escalation-on-linux/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "11c06341ad7a555c4cb7094abc571d63aa1816ba48025a6bbb8aa99e39979fdb",
+    "references/standards.md": "8adc7f792f93654d241f7d1155cd8d17ddf84270a5f200ef10945226ac1c6318",
+    "references/workflows.md": "256a28d8697c05e45504dff3ea9d6d86ffe689a00a39aa2f83426814af877d33",
+    "scripts/agent.py": "97de8ea8bbaed53e11cf6c471bfefaf65d482c5758d9cb95ee26abab229209a0",
+    "SKILL.md": "59017a70a52622d43018fe718208f13aa5f33da2501d97c60ac3033dd8764845",
+    "UPSTREAM-SKILL.md": "721b863a2f932c725f256b21726535ee5285c95943ef268d3d12ac3dd0e4f1fc"
+  }
+}

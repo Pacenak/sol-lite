@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-microsegmentation-for-zero-trust-9681a86b",
+  "upstream_name": "configuring-microsegmentation-for-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-microsegmentation-for-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-microsegmentation-for-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-microsegmentation-for-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7a8647205f66caa5ecc32514799a59125036d892d4097ed264a1a3e31f50a3ff",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b6eaf8778094d84ea11dd9a981e500496a9e70d70d273ccab708467ce8b9bce3",
+    "references/standards.md": "ed13fef419bc2b61ce1865bffbda255c412a487c98006c9ed260e6b53cc706b4",
+    "references/workflows.md": "8c89ba28b6ce98dbae8ad1db22b05c8db4f50c99c2bc0f68f499e61bc5cfb752",
+    "scripts/agent.py": "523205e973c96c9cd814bacb155d77755075d01ce250fc634ae83f9cd6808e0f",
+    "scripts/process.py": "f949f5db2b278b9e88cd50173286d285a5f4753e777cccb6675d7eef59501320",
+    "SKILL.md": "7be4a292e5deab2b1ba725b96e6740e4d9587b62d672548f82a296de3168723d",
+    "UPSTREAM-SKILL.md": "1f0e8b3141bdea5f2a204ad104d1440d5ac5340553a9a9819156e5498cb3d502"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-supply-chain-security-with-in-t-a3ba27bd",
+  "upstream_name": "implementing-supply-chain-security-with-in-toto",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-supply-chain-security-with-in-toto/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-supply-chain-security-with-in-toto/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-supply-chain-security-with-in-toto/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0aff87bc03f88bb31933a36ddd27d2649979054b76d80abfdf3a94f71daaf469",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "40d334cdee0ede8f0b13230eac7624f80ba34b8697382f8d4dacd461bc0eaf1b",
+    "references/standards.md": "42d29863a39eeae133f9631cf95c9789f3245a9d5a2a6f3e9f53326622a3d54e",
+    "references/workflows.md": "8138f537b81f050fa1156be61eb3e65b08e34d492f8e33c2f7b79ab6c905717e",
+    "scripts/agent.py": "ef6858caec29e79400eef341e8bbaf1251583760cfc8758ab0ff9c3c485d339d",
+    "scripts/process.py": "84bd2691e3c69f570a2766e27e9763997abdcd0951c4bec89da8dbb65f51df0a",
+    "SKILL.md": "477fe77ff8923f042a8677be0e527e33c1c22a4d5cb87ce0e1a4e923a54d5fe0",
+    "UPSTREAM-SKILL.md": "1e5ac78c1896896b5a2ad1d4f6bd0208d91bb098364c71fad62a778fa7070849"
+  }
+}

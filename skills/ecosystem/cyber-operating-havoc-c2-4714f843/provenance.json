@@ -1,0 +1,27 @@
+{
+  "name": "cyber-operating-havoc-c2-4714f843",
+  "upstream_name": "operating-havoc-c2",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/operating-havoc-c2/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/operating-havoc-c2/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/operating-havoc-c2/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "18d129c9794b59de88cf738cefc6bd79c2c2f341c1fd2745042f9909e66e7d4c",
+    "references/standards.md": "2f3b8d6364bc0bd37a61ae57d8d4d416dd5e4f1388f5f8893d4f36debb936ff2",
+    "scripts/agent.py": "f10a1f913c2abc993cb55650f035a1413262b7ff025811b3b83f82cc6986243a",
+    "SKILL.md": "1abb5354e16efb31f1d9b7b12526b6323150822b5827794408ea004603cdd3ff",
+    "UPSTREAM-SKILL.md": "112e35072937d6a3b7d9f55960efb9d5e2c115b5ef9e36efea41d8013ea4147c"
+  }
+}

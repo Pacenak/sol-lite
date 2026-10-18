@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-container-network-policies-with-5dcf68cb",
+  "upstream_name": "implementing-container-network-policies-with-calico",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-container-network-policies-with-calico/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-container-network-policies-with-calico/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-container-network-policies-with-calico/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22afffac7a355547ca03fe18f9d91372e954e8aa23a6c5af64f133e5eb0530c4",
+    "scripts/agent.py": "c9ea7c889cb51bb54e96ac0a939ad9324c1bab5159334a3fbe331af667111f9a",
+    "SKILL.md": "323f79b5975580b54bbb37780325b493c1a6e262700eff5c07a68dfd341c745e",
+    "UPSTREAM-SKILL.md": "2fe28309e06823db23a0b7c590cb4ac8086e02afdc5cc6fb3eb6fc8387ee0a6f"
+  }
+}

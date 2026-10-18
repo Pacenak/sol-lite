@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-service-account-credential-rotati-07c56c9b",
+  "upstream_name": "performing-service-account-credential-rotation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-service-account-credential-rotation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-service-account-credential-rotation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-service-account-credential-rotation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4a7646a8122fab3053064af373e721e8ed0ce90f1be70f1cd06d8eee5a28a0aa",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1af871c787032a8fd9046e4020d51777d96691d975f9f9773a79804c5e9a339a",
+    "references/standards.md": "354bbe662c759df2459e93b5a28570a4068bb46e7fd490d1935caf787e8cd9c8",
+    "references/workflows.md": "e1f770209e490edf7b597c5ae954dfcd638bbac4a4b89c858aa3727b62e4ade4",
+    "scripts/agent.py": "73f506edae1ad9d729bc9169033cd44e1d9d7487f77a1ad8814f5e07017436ab",
+    "scripts/process.py": "b0086b02cf69035bdad2e7e65bead796b97671692a27b2922db9ea12b0dea480",
+    "SKILL.md": "495127b5cf25eb1e89a13991f2dc2ef7661a90c91c77a78b75e2ad962ac66968",
+    "UPSTREAM-SKILL.md": "2311b5ccc3dcf621c2228709278801d5f0d1e0d4fb20e98576ae3cc6936d9c8b"
+  }
+}

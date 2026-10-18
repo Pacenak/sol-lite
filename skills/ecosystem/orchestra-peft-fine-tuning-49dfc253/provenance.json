@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-peft-fine-tuning-49dfc253",
+  "upstream_name": "peft-fine-tuning",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "03-fine-tuning/peft/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "8663cf75afa2e1048832f680c8594b2709c0205603133ab5e81561697c847659",
+    "references/troubleshooting.md": "06645be59b9ad0461e837fce5a1b0a7121b19a1353635c04fdf9df5a13578738",
+    "SKILL.md": "43f28b3425ddccacec3746fd892de8a9d1b1bb9b7198526fc4ea76ddae39b8f6",
+    "UPSTREAM-SKILL.md": "acdb318f94624517c8cdb3c925c7a2e8b34c65e8ca02b301777c51eea9f0f73c"
+  }
+}

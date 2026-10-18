@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-office365-audit-logs-for-compromis-39e5abb4",
+  "upstream_name": "analyzing-office365-audit-logs-for-compromise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-office365-audit-logs-for-compromise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-office365-audit-logs-for-compromise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-office365-audit-logs-for-compromise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "095eece0c78ab707c9902eccd42fff6b1fffd39a6392f81649671458e7731c44",
+    "scripts/agent.py": "fee5d06c11efd0c84d67747fdd688472a77fa37324c6f3fed8a70ddbecb6a433",
+    "SKILL.md": "7237c9b6ab5e1c57045346c81ce2b3039d5e103d874bac6fd17844465d9a7d5f",
+    "UPSTREAM-SKILL.md": "9e9561397e5e34f45771fe3570536163fca1a07c64e299643dc1578717438bb4"
+  }
+}

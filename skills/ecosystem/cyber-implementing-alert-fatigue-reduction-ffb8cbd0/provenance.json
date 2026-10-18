@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-alert-fatigue-reduction-ffb8cbd0",
+  "upstream_name": "implementing-alert-fatigue-reduction",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-alert-fatigue-reduction/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-alert-fatigue-reduction/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-alert-fatigue-reduction/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9285351684e836af20d70e2d1a4e0eb5af7a66033ea1a0cf22ac85af35c2b8e8",
+    "scripts/agent.py": "f7c353c490d7972def13362a38dfd76de8eb510f69c9e5bf68b51fffc6a873c9",
+    "SKILL.md": "26e3720c99e329f120d1fa23107bdfd4875b7c8de6180e476b1c8ec6d02b9b68",
+    "UPSTREAM-SKILL.md": "dab041b8d8bf983c4ab9edcbbf234367f269d066db4458ae7583db29a24bd152"
+  }
+}

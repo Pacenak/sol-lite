@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-cloud-with-cis-benchmarks-a6a91a4f",
+  "upstream_name": "auditing-cloud-with-cis-benchmarks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-cloud-with-cis-benchmarks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-cloud-with-cis-benchmarks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-cloud-with-cis-benchmarks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5b03b5003fed6349e8e13371b93e94d19e62b3779af3ca0fb9d5cbe656f5ab47",
+    "scripts/agent.py": "7fa3179b7a2d8ab54fa6a6670dac30216250a6cae36bf4deb4abe0dffd4f7678",
+    "SKILL.md": "f429663d2031631c5cc9e53cf114e608224fd2dff28441a60da2b04a295b432d",
+    "UPSTREAM-SKILL.md": "71572e75783b52aaf69d86e038890cd4c6d0e58c41522716258ff326415a25bc"
+  }
+}

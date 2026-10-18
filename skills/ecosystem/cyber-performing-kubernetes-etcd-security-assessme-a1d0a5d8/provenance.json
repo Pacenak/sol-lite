@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-kubernetes-etcd-security-assessme-a1d0a5d8",
+  "upstream_name": "performing-kubernetes-etcd-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-kubernetes-etcd-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-kubernetes-etcd-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-kubernetes-etcd-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "53a6adade4736af74612ab2dc98498f2892bce833ec845a16cb74188ecf6a00a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a671c7bf24c010362b8ba40790c267c75551eeda0ef23c83744ae83b2eae62c3",
+    "references/standards.md": "918ece877478bfe5ee1ee80e2be7ee7c4f79beef1d8911aab601ad2d73df26d1",
+    "references/workflows.md": "5ef7d9ab1ecfed0d0911a609f81f80b4174e4c1d74806737f338ab14506ecc59",
+    "scripts/agent.py": "47968a60891856855831234cfa9024ad5dd6a25beef7bd6696fb912350de7d5c",
+    "scripts/process.py": "eb486885be97977736f4b45eba5327586d03f197adcd654f1853a2c7e72503cd",
+    "SKILL.md": "83b9d0696cc27c7a24c47ce34e54697411b7e0dc1664d66adbd424bfb6420ab5",
+    "UPSTREAM-SKILL.md": "4523f85f88f460e551d479991b79e367366a907d3ba3a2d5ab64efab7e8fcd51"
+  }
+}

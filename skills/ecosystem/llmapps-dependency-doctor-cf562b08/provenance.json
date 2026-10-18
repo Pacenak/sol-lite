@@ -1,0 +1,24 @@
+{
+  "name": "llmapps-dependency-doctor-cf562b08",
+  "upstream_name": "dependency-doctor",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/dependency-doctor/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/dep_doctor.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "458cacc34413fb5996562fe739d900d44175c32c4a6d8154c9eae4bf7333dd8b",
+    "references/dependency-pitfalls.md": "ec74d2361936cf9436ce65418a4d306988a39f108e327db6bc11a6cc379ad184",
+    "scripts/dep_doctor.py": "5d4f4a70c76c4c727768cb0b05ffdc50b22ddb73a87fd6043b520c4cd8637704",
+    "SKILL.md": "f4164983b41bd05c4766a5be4f26517f4e43abbe7af0978d28e2c0c952498f26",
+    "UPSTREAM-SKILL.md": "3b9a4728a8ec7daae2a82723d01c7a4c18cd2cf5851ea24faa5fdc3a779c6d09"
+  }
+}

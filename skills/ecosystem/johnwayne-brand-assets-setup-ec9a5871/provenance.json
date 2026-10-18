@@ -1,0 +1,20 @@
+{
+  "name": "johnwayne-brand-assets-setup-ec9a5871",
+  "upstream_name": "brand-assets-setup",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/brand-assets-setup/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "README.md": "0f525fc47f5d701d8b7604d93bdf022bea9aa4357771d956a3d9cb1c9a53dd47",
+    "SKILL.md": "30e2db68f3c4269620290d389c0a9d25b305ce12fa56a5f9ec6ca8bea9de8437",
+    "UPSTREAM-SKILL.md": "cb8d7d4bb6be6aebdabef0b112053198a016f3709449d8727aa9d329519e24a6"
+  }
+}

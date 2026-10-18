@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-transformer-lens-interpretability-fc496ddf",
+  "upstream_name": "transformer-lens-interpretability",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "04-mechanistic-interpretability/transformer-lens/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api.md": "5a31038f94351c645f2816b569fd0b963f1f972a52d0f5d39e7118437ce585cb",
+    "references/README.md": "ebdf1731226920bd3ba3fd8265e033a5e19af48651429023af9ab3ef346766b0",
+    "references/tutorials.md": "c13d376cd9aaebfe6e946e9227d007ac07d69657b8a73d19b58af645f1b91019",
+    "SKILL.md": "231b54c7ffabdbf2bc4a96d5e6e4748bb026ffb9338586733044e02e663d9248",
+    "UPSTREAM-SKILL.md": "9ac5a790a59f46e430a9015a1e8c52338666f3426e36085c4ef38665b10b4e24"
+  }
+}

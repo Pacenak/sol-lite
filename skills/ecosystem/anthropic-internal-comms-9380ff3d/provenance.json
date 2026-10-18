@@ -1,0 +1,24 @@
+{
+  "name": "anthropic-internal-comms-9380ff3d",
+  "upstream_name": "internal-comms",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/internal-comms/SKILL.md",
+  "license_files": [
+    "skills/internal-comms/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [],
+  "files": {
+    "_licenses/skills/internal-comms/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "examples/3p-updates.md": "087e4363c0f3513728a7e695eeb9ead5c3ecd12a4681b59340691180e65b68fc",
+    "examples/company-newsletter.md": "30f81cfbdb03858a006169c72169024089c7c5d3d32611d337782da4f38c86b5",
+    "examples/faq-answers.md": "5ecd3356cd6666937f2ebefa753253edfdbdca15e368d07baf398bfcced72484",
+    "examples/general-comms.md": "4d3a4bb198a77626bcf018e96b2b45a2dbabed172d4ade0fcd70d23ae8a47a47",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "SKILL.md": "293ad9be961d9f8271e1a931ebfbb0b003d2697da18bd67698abbb23570cedbc",
+    "UPSTREAM-SKILL.md": "067b7587a344a928fc6534ef66b1bcd591fc7c26d207ea7ca3334aeb678d6475"
+  }
+}

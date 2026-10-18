@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-tensorrt-llm-9901c639",
+  "upstream_name": "tensorrt-llm",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "12-inference-serving/tensorrt-llm/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/multi-gpu.md": "f5992df6c444d4300dd1b7cbe150e998806128c911eba3387f4aada84a01ecee",
+    "references/optimization.md": "deb727998b471654231730faf2e4ad2ae82fea99e18ae991528a94bba57a83e8",
+    "references/serving.md": "edab4ad7f7bda4938ff62ddb9d01f846829f42a4fb03b7fcd00eb48d5d3fc893",
+    "SKILL.md": "85703732ad22b39aa1794fe4ffd10d329f7434d2b4d7f4b56fab574160ec914d",
+    "UPSTREAM-SKILL.md": "13f8e09b3e05b2167919011dfa8a44e067c7e0563a1e7dc01c26752cf85da11f"
+  }
+}

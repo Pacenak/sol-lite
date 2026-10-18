@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-mobile-app-certificate-pinning-by-bbd5d41a",
+  "upstream_name": "performing-mobile-app-certificate-pinning-bypass",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-mobile-app-certificate-pinning-bypass/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-mobile-app-certificate-pinning-bypass/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-mobile-app-certificate-pinning-bypass/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0fe4a8465b819212488ed3ac423b60c1dcaa937e8c7d7dd58d991baea1ad794c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "163ba90713f5283d11713d5dddc7f66921df5c8d30acb93707715e5b04a27fad",
+    "references/standards.md": "37124a3a1076185e0bd729ab72fa12a6ebae67fa31b59a284fbec29dec8772fe",
+    "references/workflows.md": "3b2641faf1a7f0e51eb7432c52901c3c42a81bf959c92e3eacdf1de7d8125242",
+    "scripts/agent.py": "2bd3b4df5629247edbb99ebf909e531c2fd2be30c8171af511bc718621b5e29e",
+    "scripts/process.py": "105a5328fb113da5b1a4ec4a7149e1e767a91e6b470cb0e2f1a35482a88bd95b",
+    "SKILL.md": "2fed847e0b16ab3ee9896300ac6f66e8305a10461f3bfa514013286b47440f89",
+    "UPSTREAM-SKILL.md": "b3d5118d2533c6e55767a019b036a8aadb031dd3e193f2f2539b03c9c8a9e1c4"
+  }
+}

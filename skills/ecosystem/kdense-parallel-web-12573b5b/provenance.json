@@ -1,0 +1,26 @@
+{
+  "name": "kdense-parallel-web-12573b5b",
+  "upstream_name": "parallel-web",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/parallel-web/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/api-contracts.md": "decfe941d2aeec6666046070234943760de0cbbe2d258929d3fea981da85f3ec",
+    "references/data-enrichment.md": "32602c6f9805dd17d1e611eff6282c385dad7cb6b56dfb2b99c2021cad669405",
+    "references/deep-research.md": "9f135149e9ed11a24ef53e294c96fddf1060985c2fb9a478b0b0ecf1cea1ae0f",
+    "references/findall.md": "c9ad18160bd5396879fd0e8d077a5fb75148482bbd7803b50bd596e587831312",
+    "references/monitor.md": "9a1b93744be7d293bff4f5ceb6b0e168b97541e961ab385b7be93b1304233914",
+    "references/web-extract.md": "07cc1b4187977b2563ae17e25eca28a33c071892b2c70d61a4e7d8f13bafa123",
+    "references/web-search.md": "e90582c976f200382f0dc9d6dda8f94da833270b752fd7fc036920443cd6f1a0",
+    "SKILL.md": "ce29c44e7dffab61d9275f6fe9e63b186bf1372b90805e24fb465496d8c769a0",
+    "UPSTREAM-SKILL.md": "04b4873674998c4fb47de017397e753d69049609135efed43a82572b9002f52c"
+  }
+}

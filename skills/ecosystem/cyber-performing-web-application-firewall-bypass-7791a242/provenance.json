@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-web-application-firewall-bypass-7791a242",
+  "upstream_name": "performing-web-application-firewall-bypass",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-web-application-firewall-bypass/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-web-application-firewall-bypass/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-web-application-firewall-bypass/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e77113e47f24013dd6876b30831a5f990f927d02f0eed1bc9fd80d793cd7a69f",
+    "scripts/agent.py": "25cb01ad06c696c8dfc3de891ed282bedc29f72a8efc1b45c058b1972323a7dd",
+    "SKILL.md": "3c06ae6490b075abfc8a78dcfa09310766dca8b14d3b5cce53b524f4b277060b",
+    "UPSTREAM-SKILL.md": "ba5691aaf29c92c887e48636e0d779c03cd6478b9aa57a4c6983ffdcd2c188cf"
+  }
+}

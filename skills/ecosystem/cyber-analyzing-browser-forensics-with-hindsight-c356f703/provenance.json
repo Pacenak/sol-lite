@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-browser-forensics-with-hindsight-c356f703",
+  "upstream_name": "analyzing-browser-forensics-with-hindsight",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-browser-forensics-with-hindsight/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-browser-forensics-with-hindsight/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-browser-forensics-with-hindsight/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f33219790ae47045cb3f88f91f05d1c9771bd68a2e4eb8c8649085cd07cf9da1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7b60fea1d5b0d0cdb9f7b6f1c80074a28b4b1964b8f5206d13c6aa2dfefdb532",
+    "references/standards.md": "2e4b053e572739ea3fcb62250d1b1c017a8b4c71331e2e5f6017355582ba5fb4",
+    "references/workflows.md": "930eaf200b95aaa1d048cc8a74edf0b2989fb48fa6fb41495b6b5962637a86bf",
+    "scripts/agent.py": "bda036d07694cd854ae19c2ac43bb1988b8ea0413912bd037a48d5fbe6aaa93d",
+    "scripts/process.py": "0e7e7ae94d3cf6f411a24e736ab5ad5c2e295d5c4d3ffeb561706b02a7b12f09",
+    "SKILL.md": "5c82e0387e50a46b0b52bce1b7aa4cff4ab3506bf80fdd736cb392c522c29763",
+    "UPSTREAM-SKILL.md": "2a1b299850c069234806eae7f7a11263c489ffe5c8a3eba02b9cd3da4ebc1f10"
+  }
+}

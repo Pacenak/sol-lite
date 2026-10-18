@@ -1,0 +1,28 @@
+{
+  "name": "cyber-auditing-foundry-smart-contract-security-1b5cf2a4",
+  "upstream_name": "auditing-foundry-smart-contract-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-foundry-smart-contract-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-foundry-smart-contract-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-foundry-smart-contract-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ae55c7388afef7f24db509e0eee5d5706712de25ab11e46f51111c419cd03671",
+    "references/secure-deployment-and-keys.md": "58978d7de0fd52acd8936acc7c4455e3174e236490b0543cd77c67ac5e3acd8b",
+    "references/vulnerability-checklist.md": "737d461946d803abedc443477f20e42d97a785b1a1e15799a3bf3e67eeb17c09",
+    "scripts/agent.py": "c6c8e75c32cc9de586216edd421c4a74d22c793e8d4aa1c43cf51564c9c91909",
+    "SKILL.md": "c1545d8a01f6a22b9b23391f92864e3c9a02f9777f66b445f7f7956952dea359",
+    "UPSTREAM-SKILL.md": "1d631c528d15c299be4e6446b31e0901484c2a89bbdcb95fd545e5e438db8259"
+  }
+}

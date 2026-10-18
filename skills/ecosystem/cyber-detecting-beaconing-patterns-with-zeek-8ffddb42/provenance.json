@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-beaconing-patterns-with-zeek-8ffddb42",
+  "upstream_name": "detecting-beaconing-patterns-with-zeek",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-beaconing-patterns-with-zeek/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-beaconing-patterns-with-zeek/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-beaconing-patterns-with-zeek/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "46271b5e64f8f7d08bcebc16b40c3ce812d5784e31e2b8f8382801812e71636e",
+    "scripts/agent.py": "ac457a2c7eb1d349eacf400b136db58af85164f4d676058287a15ac1ba2c2e5a",
+    "SKILL.md": "5357fb7d606f43b6ea6830db4afe741e01d6fe030f7d5b22cd189919fced59f6",
+    "UPSTREAM-SKILL.md": "c2cfc331abf1afc8fc76a1ce0c8c1803cf78900909ec035f7aa88748ba35ab49"
+  }
+}

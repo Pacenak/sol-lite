@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-pass-the-hash-attacks-25d824b6",
+  "upstream_name": "detecting-pass-the-hash-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-pass-the-hash-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-pass-the-hash-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-pass-the-hash-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f91b062529feca276c5aeeab07bff53b2d25a7c0be0988060598060df8106d04",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d7b53112af4052139cd628329b963f0fadcf58738338499afc166f18dc682beb",
+    "references/standards.md": "d9d667a66d35b187d93e0dda9bd663123a5b4fc288c898c8f43c7aa0f534d53c",
+    "references/workflows.md": "d0f0785b95dea9b992cb039f094164428bcb396ee41ab3538ca2ebfbb4b51eca",
+    "scripts/agent.py": "d9e0aacab59a742ad1f1584ea93056e5519c8b4f9c85c7508aebb02a4503716b",
+    "scripts/process.py": "c1a802eca3c9b4dd01422e7a675ea9265764b0a35f417cea9b665f61dbe9a0bc",
+    "SKILL.md": "6baf745367f65174a99fd8ae379dc0e4e80b70a4171c6895800f8b0e2fe5f8c5",
+    "UPSTREAM-SKILL.md": "1908241d4fe40ffc6ea303dbde944b55bf3820cfa01b90b7288ab82c0b906d6f"
+  }
+}

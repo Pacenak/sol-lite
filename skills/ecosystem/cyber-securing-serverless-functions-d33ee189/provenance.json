@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-serverless-functions-d33ee189",
+  "upstream_name": "securing-serverless-functions",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-serverless-functions/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-serverless-functions/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-serverless-functions/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1479ad9fb01527fb49d52ce0954422de111656a141264e87615f77f5c6bfa47f",
+    "scripts/agent.py": "272a4b2a9c82312dadb1257897a6fe23b6c0fd95aab85df1f921ad249276b652",
+    "SKILL.md": "abdb0a8b2e79c413cf80ce59a805735990264814ad773c4680b31b44c3ed5881",
+    "UPSTREAM-SKILL.md": "ffdb234b6fea33fa97d135b8c0b547f0a3d26e60e928544459d0b9496de77886"
+  }
+}

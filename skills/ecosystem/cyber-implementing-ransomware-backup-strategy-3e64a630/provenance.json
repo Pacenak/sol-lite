@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-ransomware-backup-strategy-3e64a630",
+  "upstream_name": "implementing-ransomware-backup-strategy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ransomware-backup-strategy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ransomware-backup-strategy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ransomware-backup-strategy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "3197780a31c91bcc924e2235d01fdef7d02df17cc53a72d093dac7ff1adf00e9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "806ef29e3a51f5c79ece0901d0e63162ffcbae918826d586e4380d528cbf27e9",
+    "references/standards.md": "4d2e6910494287c0e59d6c512f29b9ec2ea8326e58d58cdef4c02ea352035e99",
+    "references/workflows.md": "a629bcaa7fc4ee38a6a77da0c8c810d037b63e07d67c5100f88d280b1fac648f",
+    "scripts/agent.py": "b05595533a4f365a8f89474ef21cd02dfa436b13f90ca73def2b23574541e206",
+    "scripts/process.py": "e05bc22b8a0c46ccb04773ee40fbd95f696a14b9059b8d037c7b9c6ea5f8c095",
+    "SKILL.md": "30f752181628dd36800cdb0ec2f41d20e378f7ed59f91d115dbd1966001631e9",
+    "UPSTREAM-SKILL.md": "0c919b867928e09ad1c49febcbcc9dbfdaabd4b83d2f5ef7b29ef68cffd99cb9"
+  }
+}

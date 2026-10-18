@@ -1,0 +1,26 @@
+{
+  "name": "cyber-monitoring-scada-modbus-traffic-anomalies-2a905919",
+  "upstream_name": "monitoring-scada-modbus-traffic-anomalies",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/monitoring-scada-modbus-traffic-anomalies/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/monitoring-scada-modbus-traffic-anomalies/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/monitoring-scada-modbus-traffic-anomalies/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f93b5e0a4e6e370bd50c878a68c6acd3f8040bab0620f506f3368c69a9e31bb2",
+    "scripts/agent.py": "7d3b8c5c1979ffd962c0a545863b40b2cec4fee89fef747761c664b66f45ef73",
+    "SKILL.md": "487dd4757486697265f5d21d0e907693ea9a7ca98b0d2ed7f09ec87134f0fa48",
+    "UPSTREAM-SKILL.md": "6229a6df2c35f59c27f9e1dd4788d2a18f729bfd80ec15a7eedc2c76a67cf962"
+  }
+}

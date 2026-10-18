@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-attack-pattern-library-from-cti-rep-2c8f113c",
+  "upstream_name": "building-attack-pattern-library-from-cti-reports",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-attack-pattern-library-from-cti-reports/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-attack-pattern-library-from-cti-reports/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-attack-pattern-library-from-cti-reports/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2056c4671b5f8ee81a78a32f4cc38e7c67b7ed3315fcabdb8ba9ab8facea5b3d",
+    "scripts/agent.py": "ce7fa99650a956611ead647af9b7c50890e7ccfe83805296610ffa91c51ad850",
+    "SKILL.md": "29c6717ea5adabe281e9ae9d00f764f0eef1ea6e5500d1fb7b4740bea3106931",
+    "UPSTREAM-SKILL.md": "dafd1817515d49bdf882b869e63040bd2c67a2ae7de0a8a375f9bf3690797397"
+  }
+}

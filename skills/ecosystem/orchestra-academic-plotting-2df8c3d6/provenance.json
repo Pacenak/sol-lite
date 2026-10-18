@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-academic-plotting-2df8c3d6",
+  "upstream_name": "academic-plotting",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "20-ml-paper-writing/academic-plotting/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/data-visualization.md": "680791b96eb8c3d6b065171f67c00ddfcd1b183629590a5df24182295fa2f013",
+    "references/diagram-generation.md": "9d5b1bb8a91b4cc04251cc89723784ebb3db176fa674632bc640c57d66a12f59",
+    "references/style-guide.md": "4d470b7bc178583c9f2649c34600d0cda6b78d4243d449afc056b4c1034cef18",
+    "SKILL.md": "f20f2a0157607e67b36cfbdded4f61ee1f07c96f057d5e7fb590dfa22cbeb6bb",
+    "UPSTREAM-SKILL.md": "6613653d8109dcae36596b37d7414d5ae394a18f81543365222286d04485fd83"
+  }
+}

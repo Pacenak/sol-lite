@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-modbus-protocol-anomalies-b9cc3ec9",
+  "upstream_name": "detecting-modbus-protocol-anomalies",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-modbus-protocol-anomalies/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-modbus-protocol-anomalies/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-modbus-protocol-anomalies/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "78b284ce3360f1b5d103270c7b56163ebc97d18e01beec2c12bae1c2e8fa5f6c",
+    "scripts/agent.py": "426b7a75eacacf749296ec33270d645141a55ffb14b396e8d74cd1947dc07b5e",
+    "SKILL.md": "1f0a9ec5e1ade4974e885dfbe459d3f0132afa0c564799512cc955d3b06d3734",
+    "UPSTREAM-SKILL.md": "79dc25a2c8c9e895bcbc6c28cd0a11aca85adeb326d1da9a12aaa2841ceef577"
+  }
+}

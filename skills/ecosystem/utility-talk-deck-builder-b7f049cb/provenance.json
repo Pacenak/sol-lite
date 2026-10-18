@@ -1,0 +1,21 @@
+{
+  "name": "utility-talk-deck-builder-b7f049cb",
+  "upstream_name": "talk-deck-builder",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/talk-deck-builder/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "_shared/skills/pantheon-style/SKILL.md": "64dd0e00e2338b71d8f08af27af31b3c0ae9784241b75345eb514d3c12fa2e4b",
+    "golden.json": "d87ba5bf2ec96aa5d3c71497fb016b2673cf2b62e6157347d6696917cbe8241c",
+    "SKILL.md": "69abc43d939edd79ca695fc7208ec9952266963f38193e0ce5449802428344ad",
+    "UPSTREAM-SKILL.md": "622eda24081b0fcb341e00353b5303e69dae23492eb5f61cde5c62bcce9e4a1b"
+  }
+}

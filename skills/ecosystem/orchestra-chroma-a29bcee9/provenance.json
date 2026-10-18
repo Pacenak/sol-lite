@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-chroma-a29bcee9",
+  "upstream_name": "chroma",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "15-rag/chroma/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/integration.md": "fe82af7e33a228d2d2f80c73b3e096937c3a49f873035d86d0e9e6ba6034f5fe",
+    "SKILL.md": "02bda1235903441be6f88ab2a894af930d3db0361f0e8ee03a908d1a4b0ddee8",
+    "UPSTREAM-SKILL.md": "834733e201d4f7d6c20089c93d13c945d7a62b6581d55631546a5ad74b9ec164"
+  }
+}

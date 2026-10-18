@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-zero-trust-network-access-f7f31d6d",
+  "upstream_name": "implementing-zero-trust-network-access",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-network-access/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-network-access/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-network-access/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "55a945fd6f1141df8eac14f6c644d159ebe655df55479224daee68ec81964546",
+    "scripts/agent.py": "e21c5d8463b70d1b5ce3c5f76d9a529e19629defa67bbe4093dfdabfa3cb98f0",
+    "SKILL.md": "3a38dfdd4c4ce96e5fcebd778b07c627bbe8547da36f5536e0d27e8b5bb92413",
+    "UPSTREAM-SKILL.md": "53fe4b28ba56650340f0ba8c00f5c56c1800689e836a2141016eabecba456b1b"
+  }
+}

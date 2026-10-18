@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-cobalt-strike-beacon-configuration-faed6d63",
+  "upstream_name": "analyzing-cobalt-strike-beacon-configuration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-cobalt-strike-beacon-configuration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-cobalt-strike-beacon-configuration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-cobalt-strike-beacon-configuration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "71b6af7983dd2d2b4a14ff5b146372cfac77ed287fa8858fd9831bba7eac0f45",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a9e97436baf2691827a1adc77031fd30aa976deac247755b256cee9dab9880b5",
+    "references/standards.md": "ef8e2dac8cb9fcc4eab887c620260a457a73600a1ce67b0b3fad35d67d2558de",
+    "references/workflows.md": "bcd5ef778aaff4c826b4268ca77bd0300c3658d1776e073afa8b42a07d7abe91",
+    "scripts/agent.py": "449736dfe92d731ac64491215e41d7865fccdad13436664b093f26d7fdb5f302",
+    "scripts/process.py": "85c0e8afb341ce143986fb547cc2feaf18e058faab06faec53fda2b456fd80ad",
+    "SKILL.md": "a28e7b832682883efe4cb87809d0cd00c3dc58d54f51f30ec4153466b95ce3ff",
+    "UPSTREAM-SKILL.md": "ce44cb3f75aa06b92fde37828ac5bf361a30c871ebf9a2fd01101af38f128e7b"
+  }
+}

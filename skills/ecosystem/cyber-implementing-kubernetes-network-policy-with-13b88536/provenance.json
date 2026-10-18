@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-kubernetes-network-policy-with-13b88536",
+  "upstream_name": "implementing-kubernetes-network-policy-with-calico",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-kubernetes-network-policy-with-calico/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-kubernetes-network-policy-with-calico/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-kubernetes-network-policy-with-calico/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ffb116640110d9540e2188bf0326d34d2069e2aca3d65f25b03d5b090f047455",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d321e6e9c58e0f8210da2d443cf9fee467ef55521bbb1715d3422ba62218cbeb",
+    "references/standards.md": "c6cfd724cf8f77d125a722e13c710b715f39ecf80ef090bde168f33f52ece7f4",
+    "references/workflows.md": "4ce924ecc289ad88688ecbdd7ad7f2146608e001828749840952bc6886934a9f",
+    "scripts/agent.py": "179705670418d75c42ee241a0e9063947a89423f46c42aef2d9a09f245568808",
+    "scripts/process.py": "f492bedfe5453d2bc43ff972954030bf32ebf049b21add8eb016d51e4604c078",
+    "SKILL.md": "2c3d6c9a9c883a899fd3c83d7fab79a4e05471e1aec4b2872aeb78404b7026c3",
+    "UPSTREAM-SKILL.md": "f5ba6f8eefb1f4b0ff40c1c4e5a0a7aacfcb1edd5216c884449141d26b27d236"
+  }
+}

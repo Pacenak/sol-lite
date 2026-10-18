@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-persistence-via-wmi-subscription-42333930",
+  "upstream_name": "hunting-for-persistence-via-wmi-subscriptions",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-persistence-via-wmi-subscriptions/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-persistence-via-wmi-subscriptions/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-persistence-via-wmi-subscriptions/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c5d16ecfe581e65626ae8b8d185efbf7dd5eb938860881403497191514a2189d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5c8206f82560b209bebaf72696eb8a6f7cd9799044ce097ffe6d3ad599f37eec",
+    "references/standards.md": "5da8c3eb4ac0511bd6e7f2e4825307792d321045caa8357863ed77a3ab4fc9df",
+    "references/workflows.md": "95ddac190bf5466710c6c6670861b678946fe19e89e51a77f7474458d198e3e1",
+    "scripts/agent.py": "a3138232f661907f2b0417ed6e89c655a94c4f4645b182e7c80a3e9f0714a8db",
+    "scripts/process.py": "e832efeb16c5ec3f5cef333a7528fc4539d8aeae995c71ac3e191405a5dda815",
+    "SKILL.md": "6c63e7fe7b84cb5fec7469b406fe11faf4c2618f18aff45f6c5598750d63fe3c",
+    "UPSTREAM-SKILL.md": "64d1846c4991edad875803e616010f9ed0d59858295dc11ed84575599ed3f6b5"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-investigating-ransomware-attack-artifacts-9772dea1",
+  "upstream_name": "investigating-ransomware-attack-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/investigating-ransomware-attack-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/investigating-ransomware-attack-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/investigating-ransomware-attack-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a2dc3e649197393031082680be6d294fe132387b3fd9a03c383fd1230a624b05",
+    "scripts/agent.py": "d79dfef1d5726b5d5a74a4552e9736a56a4c4fe81c5e56819cdad13ec72f9e64",
+    "SKILL.md": "d01314de08ff5d8db7227227774c43744737d00f621f727687db01784bd394a8",
+    "UPSTREAM-SKILL.md": "64449d7f5f9f6c6ed024a3b0742687e02b90bff747515d7887485506913473c1"
+  }
+}

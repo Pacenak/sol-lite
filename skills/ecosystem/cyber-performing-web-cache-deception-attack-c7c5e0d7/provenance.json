@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-web-cache-deception-attack-c7c5e0d7",
+  "upstream_name": "performing-web-cache-deception-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-web-cache-deception-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-web-cache-deception-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-web-cache-deception-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "372d51e7c257d1f24f85cde00debf29abcd65a5de29e4bc13ee366aa6158e8b6",
+    "scripts/agent.py": "9e40afa1c9244c2cbf03edb76b39d12ed05cb8528bd09eb335a4b8beb80559a6",
+    "SKILL.md": "faf254e95880ba9e10dae660a161e2c490232d731116b4057565a22ff13f6d4d",
+    "UPSTREAM-SKILL.md": "d3221367afa41dc8f59707f6a03dd19ae4c7edb8619ecebba4f120c77bb8efc2"
+  }
+}

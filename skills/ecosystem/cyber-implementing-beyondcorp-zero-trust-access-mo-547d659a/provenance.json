@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-beyondcorp-zero-trust-access-mo-547d659a",
+  "upstream_name": "implementing-beyondcorp-zero-trust-access-model",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-beyondcorp-zero-trust-access-model/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-beyondcorp-zero-trust-access-model/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-beyondcorp-zero-trust-access-model/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "13797ed0bb97f4f7d1b85e25efdf9bb833608534b8ede08c739f4de5c049374b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b3b0795693fbb8032f171f8f8f8f7799cbdab9ca32991415cbc803d5d66d0376",
+    "references/standards.md": "83839f9be23c42c880b3f0fd195723e7a343cf83ed32cdbc259a27a9543c9d98",
+    "references/workflows.md": "a45019a1307aa0d62a372bc74f3a4315d4112d00409c03358c346be392202d06",
+    "scripts/agent.py": "77c92ab32f9a4338ee6f263c10de5ddbe73cfa3822330ed94aad821aa03a681e",
+    "scripts/process.py": "c1a3bbf1072d2fd50045902aa5ebc7bef55a745b97d297e75fcdb5091462f61c",
+    "SKILL.md": "c7a2d185ec3108002e5c8e3b05b1de91021e8efb0299c14b1acfdfcd8b5f8241",
+    "UPSTREAM-SKILL.md": "e618e9e1c88ac3fde443b857eea96fc289ed7a82d50814e196ebad1ca70cd0d8"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-stix-taxii-feed-integration-89a0fa70",
+  "upstream_name": "implementing-stix-taxii-feed-integration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-stix-taxii-feed-integration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-stix-taxii-feed-integration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-stix-taxii-feed-integration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "38a6a955595ff8e05f360e5924ce37369af0f52b88fba12f2979a7393c0abe41",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6e94e0aa042b32c25efa1ce05b60782a6f5755d15e310e6d2755a4c1b2d3b3c2",
+    "references/standards.md": "ad2309728ca3b18b6cea3b698f27f083d0c002f5707230d813b6c60808f568f7",
+    "references/workflows.md": "99b0628fcf6558f6f72c1c42a3acdb8f51af76020265705fba28ddc45c704eb5",
+    "scripts/agent.py": "fcb0e26169adf3708b994c873902438c725577eea35b34308e0b207acc523d99",
+    "scripts/process.py": "7d32fe37610d59895a340beecd5e6efb4438dcb5abb69d6db54ae0038c56e047",
+    "SKILL.md": "3db33b8d9180a247feadaa2ced64794724c91593dcccffd14b554313353b12f4",
+    "UPSTREAM-SKILL.md": "cbdf8e3de42d7f368ecbec0400f4632c94a95209ddd0286a449543e8b44ba432"
+  }
+}

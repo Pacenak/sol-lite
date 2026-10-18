@@ -644,6 +644,43 @@ class AgentShell:
     def _skills(self, args):
         parts = args.split()
 
+        if parts and parts[0] == "catalogue":
+            catalogue = self.skill_manager.catalogue()
+            if catalogue is None:
+                print("No shared skill catalogue is installed.")
+                return
+            if len(parts) == 1 or parts[1] == "list":
+                for entry in catalogue.entries.values():
+                    if self.active_agent in entry["agents"]:
+                        status = catalogue.availability(entry)
+                        print(f"{entry['name']} [{entry['pack']}] {status} {entry['description']}")
+                return
+            if len(parts) == 3 and parts[1] in {"install", "update", "rollback"}:
+                name = parts[2]
+                if not self._permission_check(
+                    SKILL_INSTALL, operation="skill_install", target=name,
+                    arguments={"skill_id": name, "source": "sol-shared-catalogue", "agent_id": self.active_agent},
+                    plan=f"{parts[1]} reviewed catalogue skill {name}",
+                ):
+                    print("Skill installation was not approved.")
+                    return
+                if parts[1] == "rollback":
+                    print(self.skill_manager.rollback_catalogue(name))
+                else:
+                    print(self.skill_manager.install_catalogue(name, agent_id=self.active_agent, update=parts[1] == "update"))
+                return
+            print("Usage: /skills catalogue [list|install <name>|update <name>|rollback <name>]")
+            return
+
+        if len(parts) >= 3 and parts[0] == "read":
+            if not self._permission_check(SKILL_INSPECT, operation="skill.inspect", target=parts[1],
+                                          arguments={"skill_id": parts[1], "path": " ".join(parts[2:])},
+                                          plan="Read an active skill reference"):
+                print("Skill inspection was not approved.")
+                return
+            print(self.skill_manager.read_resource(self.active_agent, parts[1], " ".join(parts[2:]), Path(self.workspace.root)))
+            return
+
         if not parts or parts[0] in {
             "list",
             "active",

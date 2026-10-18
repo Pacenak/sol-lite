@@ -1,0 +1,27 @@
+{
+  "name": "cyber-performing-cloud-log-forensics-with-athena-b1cc0c01",
+  "upstream_name": "performing-cloud-log-forensics-with-athena",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-log-forensics-with-athena/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-log-forensics-with-athena/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-log-forensics-with-athena/LICENSE": "6c5dcaae2f4abb80eb4ea27408b8d4e0eaab3e1760d5cda77b43b7696c05089f",
+    "LICENSE": "6c5dcaae2f4abb80eb4ea27408b8d4e0eaab3e1760d5cda77b43b7696c05089f",
+    "references/api-reference.md": "9f21458f490cdffe9d496eb0cd88eccef1a5ee648cafa49a03012a20cbfc540e",
+    "references/athena-forensics-reference.md": "4e67cb6c74228b8c101caa2577358ce8cf6d2315393f8510aaf8493eacc5499d",
+    "scripts/agent.py": "e0d835635429f5960526bd6d6cf1c120da50ed8507bd3571afafb601e164696b",
+    "SKILL.md": "2a3d1edafe473dcd6bf410552323a1660b6a68e29225247dc0b05455f3a709fc",
+    "UPSTREAM-SKILL.md": "43cca16e93718cea7746e794c280d85f6aacc7a6fdeb3b73c8fc2a0b575283f4"
+  }
+}

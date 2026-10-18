@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-devsecops-pipeline-with-gitlab-ci-3830e2e1",
+  "upstream_name": "building-devsecops-pipeline-with-gitlab-ci",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-devsecops-pipeline-with-gitlab-ci/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-devsecops-pipeline-with-gitlab-ci/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-devsecops-pipeline-with-gitlab-ci/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c2d47e092452da28ea44d9aecb3bf151a27a0c655dff16ababc035bf49f650a7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "167bf75aaea49be829a02f0c5753c119c6ccaf80504b526199105f4d7430176b",
+    "references/standards.md": "81ca19cf2ae88ef01d3996794fd6de16f2bc8550aac2855e5e786bb3b98c95fc",
+    "references/workflows.md": "4393bf9a17cd25cf6e8b3bdb0530789c91562334ba0f5e2a25c5895a176e38b8",
+    "scripts/agent.py": "be5ea10ba1f9f88c975855a064974ac0e1c4f54e3e22ae6d9234d8382f5d8067",
+    "scripts/process.py": "fccd12e6aba918998511a81438b9f0dcee4b6af7a3f39a00ac05637f8b5a92ad",
+    "SKILL.md": "e56bf4e568df5a7a1418c7c040ca110a1f41a60551ecf54f25b5d978b22de328",
+    "UPSTREAM-SKILL.md": "285a919ea59298df574c357c2db156671be146a761fc37c1ce6f9ca74f2ece9f"
+  }
+}

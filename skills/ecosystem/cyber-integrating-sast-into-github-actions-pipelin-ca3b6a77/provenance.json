@@ -1,0 +1,31 @@
+{
+  "name": "cyber-integrating-sast-into-github-actions-pipelin-ca3b6a77",
+  "upstream_name": "integrating-sast-into-github-actions-pipeline",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/integrating-sast-into-github-actions-pipeline/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/integrating-sast-into-github-actions-pipeline/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/integrating-sast-into-github-actions-pipeline/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "2592a17fdfd17ed4d094a131d14bbc7529095a7c5199af5c3eb11f8cacf83d84",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "810c9e98c8f5ee3c702b2e380b8c674855a7d66e24e5cf80fd50c0f137d9429f",
+    "references/standards.md": "63f521feb5a8bda39f2bc249648628e9003057c84bf45ee0dba7ca654ead2d4c",
+    "references/workflows.md": "fb82b758d9ff2cd5abd570af78825ec7ff132f674c89e0855c011e761ebdbf6e",
+    "scripts/agent.py": "f1586c263b996ea2c2cbb52f1e9a3f520aa089bcbbbaf87b801d23a5d27bb20a",
+    "scripts/process.py": "2eed68e67330229b1c0dca9d6c91f484e5dd707a59148a9086628a941ba18d13",
+    "SKILL.md": "89d830f7ad3afe976885e9512214b062f044046409dd1fe8b1cde65257b862b7",
+    "UPSTREAM-SKILL.md": "2f71f9f13f78b74907cc804292b92cef5a67d4a10b5b9dde264b1b42b70e1d81"
+  }
+}

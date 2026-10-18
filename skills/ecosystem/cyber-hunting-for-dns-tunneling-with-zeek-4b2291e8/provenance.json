@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-dns-tunneling-with-zeek-4b2291e8",
+  "upstream_name": "hunting-for-dns-tunneling-with-zeek",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-dns-tunneling-with-zeek/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-dns-tunneling-with-zeek/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-dns-tunneling-with-zeek/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9d71d4af835158c3031ba331c3b3a1d14755f58eac530f2f3c364280802cdbd4",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a38a8ff83685706621161addcc501d185e036f7dd71566fa0c4079cd3065e825",
+    "references/standards.md": "b75a9e5d371b6ba0d1a88746dc54032ae43789380175b49bcc8a4effbf1f2aed",
+    "references/workflows.md": "46adcee72fc21f9fca48f51e4d16dfe990020d36c2226993d6eeda4b87e1e715",
+    "scripts/agent.py": "61ea9a7f085b75d4b08b4e5fc7714930d13001519c07a6a1366a2228dec511fe",
+    "scripts/process.py": "0d06f2785376ad47558002a2a0609185c721b28917e4b37a495af97977db1ed1",
+    "SKILL.md": "668e26ddca7da840c4b30c1643bfd93ec3bc490fe3c9b92cbf326a99e6eefaef",
+    "UPSTREAM-SKILL.md": "c9067d9f809597121febe8bf2c842770661fe22bb956dfd4b0604eab53929073"
+  }
+}

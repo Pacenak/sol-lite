@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-guidance-a487bf0b",
+  "upstream_name": "guidance",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "16-prompt-engineering/guidance/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/backends.md": "cf7ac97bcca4dc4208385038337bd23e68c26789f6c1e5d14e83f7f5aa31fd01",
+    "references/constraints.md": "d50d0d4eab3a04ff4aa1e0bcd2c67717b25ff4251346095c29fa8d1841e9cebd",
+    "references/examples.md": "08701c3fa2067a0c58359c10dcfdcd50ff1d2c8e8d6b88a42679bb80d5853361",
+    "SKILL.md": "ce743d7380ec4ecbb11aa156f82422c98df88d2219372ebab867a92f765d4279",
+    "UPSTREAM-SKILL.md": "2c7028001bf36a8a6bc1020d646a1fbad29c93f92f7706c437bde858e9616c71"
+  }
+}

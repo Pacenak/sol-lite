@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-cloud-siem-with-sentinel-2789b493",
+  "upstream_name": "building-cloud-siem-with-sentinel",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-cloud-siem-with-sentinel/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-cloud-siem-with-sentinel/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-cloud-siem-with-sentinel/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "98b155ed358a0d06e651b4bade7cc4d49f7561a88045851b6fe12c9d79810e21",
+    "scripts/agent.py": "32970ab659fe599474c764679099daf0a94138a372970359efee97218f4341eb",
+    "SKILL.md": "93bc98a37db77a9ae4862a2b40c4344737f2ebdd77afda1fe4bf0e67b034c708",
+    "UPSTREAM-SKILL.md": "28ecd809a89c4475943e0544963be48d892bd4814928d1f0d8871558b1fe0f9b"
+  }
+}

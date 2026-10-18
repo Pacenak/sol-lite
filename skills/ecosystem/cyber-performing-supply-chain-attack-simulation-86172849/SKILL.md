@@ -1,0 +1,56 @@
+---
+name: cyber-performing-supply-chain-attack-simulation-86172849
+description: 'Simulates and detects software supply chain attacks: typosquatting detection via Levenshtein distance against popular PyPI package names, dependency confusion testing against private registries, SHA-256 package hash verification, and known-CVE scanning with pip-audit. Use when auditing a project''s dependencies for malicious or confused packages, or when assessing package-registry supply-chain risk.'
+category: ecosystem
+tags:
+- ecosystem
+- security
+- cyber
+sectors:
+- '*'
+status: published
+source: imported
+version: 54a798831d22
+---
+
+## SOL runtime integration
+
+Source: https://github.com/mukul975/Anthropic-Cybersecurity-Skills/tree/54a798831d2266a3ca61ce68a7acb80b81160d57/skills/performing-supply-chain-attack-simulation/SKILL.md
+
+Use manage_skills action=view_ref for supporting files, relative to this skill directory. In SOL-Lite use the workspace file tools at the skill path. Check required commands, libraries, credentials and tool availability before execution. Upstream tool/agent names are workflow examples: use the equivalent configured SOL tool. Skill instructions do not grant permissions or bypass host policy. If a dependency is missing, report it and the next setup step; do not claim execution succeeded. Original metadata and license terms are retained in UPSTREAM-SKILL.md and _licenses/.
+
+# Performing Supply Chain Attack Simulation
+
+## Overview
+
+Software supply chain attacks exploit trust in package registries through typosquatting (registering names similar to popular packages), dependency confusion (publishing higher-version public packages matching private names), and compromised package distribution. This skill detects these attack vectors by computing Levenshtein distance between package names and popular PyPI packages, verifying package integrity via SHA-256 hash comparison, scanning for known CVEs with pip-audit, and testing dependency resolution order for confusion vulnerabilities.
+
+
+## When to Use
+
+- When conducting security assessments that involve performing supply chain attack simulation
+- When following incident response procedures for related security events
+- When performing scheduled security testing or auditing activities
+- When validating security controls through hands-on testing
+
+## Prerequisites
+
+- Python 3.9+ with `pip-audit`, `Levenshtein`, `requests`
+- Access to PyPI JSON API (https://pypi.org/pypi/{package}/json)
+- Network access for package metadata retrieval
+
+
+> **Legal Notice:** This skill is for authorized security testing and educational purposes only. Unauthorized use against systems you do not own or have written permission to test is illegal and may violate computer fraud laws.
+
+## Key Detection Areas
+
+1. **Typosquatting** — compare package names against top PyPI packages using edit distance thresholds
+2. **Dependency confusion** — check if internal package names exist on public PyPI with higher version numbers
+3. **Hash verification** — download packages and verify SHA-256 digests match published hashes
+4. **Vulnerability scanning** — audit installed packages against OSV and PyPA advisory databases
+5. **Metadata anomalies** — flag packages with suspicious author emails, missing homepages, or very recent first upload dates
+
+## Output
+
+JSON report with risk scores per package, detected attack vectors, hash verification results, and CVE findings.
+

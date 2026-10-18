@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-cloud-incident-response-bf02277b",
+  "upstream_name": "conducting-cloud-incident-response",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-cloud-incident-response/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-cloud-incident-response/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-cloud-incident-response/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2a0eae954f5e8a5d33d973e0f1b1e607b65cba14e734e8fe2a23cc14358034f7",
+    "scripts/agent.py": "e446b2721992d0476978c193c1ea7952aaad17bff49a9cebe0180311acfc80fb",
+    "SKILL.md": "3e3f937e4c242024d67ccc7b19ae3f52f7ef4a25facb0cff533ef939e33fe600",
+    "UPSTREAM-SKILL.md": "801ed8e81767d3eb88539c70960834009ee3b1735324c0f04c58d9aedceeaafc"
+  }
+}

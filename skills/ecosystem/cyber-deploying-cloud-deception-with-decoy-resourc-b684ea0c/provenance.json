@@ -1,0 +1,27 @@
+{
+  "name": "cyber-deploying-cloud-deception-with-decoy-resourc-b684ea0c",
+  "upstream_name": "deploying-cloud-deception-with-decoy-resources",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-cloud-deception-with-decoy-resources/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-cloud-deception-with-decoy-resources/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-cloud-deception-with-decoy-resources/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "fe31c2ac1a665d64eb10b7e429bb7bb3628e13d3637e0b3f000400a6098646fd",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "b15426110c18fa5370f500a693a8772ec8f38fb0963bd7c2fc72d33bf72180d3",
+    "scripts/process.py": "c0b4061aa1a87da63777adf42d7eb6448145bdb5a42632fa584dfd182b617611",
+    "SKILL.md": "06099db08ac349cef0eae992ba1da807bd88c7d11a18e3de0521e841e7c7d854",
+    "UPSTREAM-SKILL.md": "38a696a5b3686fe575bbcd0de8cefe5f4272f65c2d0a422fcaffed91d566ef55"
+  }
+}

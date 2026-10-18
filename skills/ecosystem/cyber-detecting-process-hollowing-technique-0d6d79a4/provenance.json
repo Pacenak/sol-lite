@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-process-hollowing-technique-0d6d79a4",
+  "upstream_name": "detecting-process-hollowing-technique",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-process-hollowing-technique/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-process-hollowing-technique/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-process-hollowing-technique/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "43e126c2d1b93a6da399e1ba899a6c23198d34ca9f8540b6e6ea0885570b9963",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cef55dbf950bf808cb1bf786c1470d92210b63ccd590a98f80d94e474eef08e7",
+    "references/standards.md": "6cd039d1868d9e1a26627c9823edc6389d8ad346d2d3b94a64dd12b485b7e8d6",
+    "references/workflows.md": "be473f8d75ddfa9259b472c34363c62793d5de9db1ae3ef09dc0198e47eb0b39",
+    "scripts/agent.py": "e08d9cb0b657154e6d7768b6cacd351743763ab816d17f62e7eb2ea965080e9a",
+    "scripts/process.py": "18854dc8b6d76d67967a3638b425b2f52203b63990d6254ed0f0f90ad68d552c",
+    "SKILL.md": "e12e97a0336052c31d1341218cc5552bbde4058514fce15812102595fada94b1",
+    "UPSTREAM-SKILL.md": "de81771c62518fb07f60da28ff8e341d341d378cf040a47fa2091ae6bbe43045"
+  }
+}

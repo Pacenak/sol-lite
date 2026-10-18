@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-webshell-activity-bb32827f",
+  "upstream_name": "hunting-for-webshell-activity",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-webshell-activity/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-webshell-activity/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-webshell-activity/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "714319357a1854a5233bf7b78b93c6ef024c6de2631117c6b37a9a9a6d9c535f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "33ef0c75232b1d1b992092b6f7b6f329a3604a774b7edeaf91cc76c4c2e26ea2",
+    "references/standards.md": "f51e1ef4174db32583a495010fd82d60c5e9db9e1885e4976c4e12413a19000d",
+    "references/workflows.md": "a60a60f8d68c954b1734f6e5cd338c9e73872b69dd764a6e70e410d461a21fec",
+    "scripts/agent.py": "cf73655519468aa77d28a2ba629fe36a844895b6034f306188d80ec9b84984fd",
+    "scripts/process.py": "e7e7cfbb75709c41fe65e71a078c488ef929e0b8af54ff686e2928659b014808",
+    "SKILL.md": "c3162fe9c40e2f37b5efb3cb63eb13b1e1fab89a82b299704a80dac1ffbd97ee",
+    "UPSTREAM-SKILL.md": "924090564520ffe6d4a8f57ea2cc2823613c689379b1943c7946fecfec9d6e6d"
+  }
+}

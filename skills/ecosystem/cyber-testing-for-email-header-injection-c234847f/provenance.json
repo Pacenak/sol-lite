@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-email-header-injection-c234847f",
+  "upstream_name": "testing-for-email-header-injection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-email-header-injection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-email-header-injection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-email-header-injection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dc4bf89aa4cca9b417c19b06ee23b5639f1f5de84316dfee1e31947ec1856b5b",
+    "scripts/agent.py": "e8ef47536d59d3122a790204f88a46c185d0b1ded8a66e161ac3aa78edb11271",
+    "SKILL.md": "d1a2d2acbdd9c018ba9b3fb1d8a56f7c055267574c1a6923dfbbb2119ca06160",
+    "UPSTREAM-SKILL.md": "ce53ac9799cd34dbd57e9df1cda24c795e126697d28dc97b7883cbf9612b758f"
+  }
+}

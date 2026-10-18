@@ -1,0 +1,31 @@
+{
+  "name": "cyber-scanning-kubernetes-manifests-with-kubesec-013436d8",
+  "upstream_name": "scanning-kubernetes-manifests-with-kubesec",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-kubernetes-manifests-with-kubesec/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-kubernetes-manifests-with-kubesec/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-kubernetes-manifests-with-kubesec/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "bb76cae7072a85161d1d51e954347f5f445dcb476f5af8424a71bc18690653fe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a4c9802df77213f543bb6b613845c9805fe57aecbe6976f4dace1f9e68064545",
+    "references/standards.md": "cc2afe430682cc2b7eb94896bd5999d94f2e64e6d566a5ba6af2b6e6ecbc5b25",
+    "references/workflows.md": "a172c707c079838b760027d904c2c21cc69b5c22c36402b13a6833786f4b90c8",
+    "scripts/agent.py": "42a79f4580e310ada86dfc32cb1afa5669eb9bfaf3995ff0f0da6f8285aec2b0",
+    "scripts/process.py": "522577bc795fb116cc4196d384fd71ac56e7b400f4c95020b942d2e94e7b861e",
+    "SKILL.md": "de6dac4da657e78fa995bed79c2fa0c852017ef4dc0cdb9bc5ba83b3556eb219",
+    "UPSTREAM-SKILL.md": "b1ad22d0ae2f4fa6a49ce9cd1d9a4f10c0f160331f22f91b1f6e1c97d43d50aa"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-adversary-infrastructure-tracking-s-39f428bf",
+  "upstream_name": "building-adversary-infrastructure-tracking-system",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-adversary-infrastructure-tracking-system/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-adversary-infrastructure-tracking-system/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-adversary-infrastructure-tracking-system/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2d5bd77eeaa18e4f71caa9adeafb36d5affe79a7f04d129daadd292839336da0",
+    "scripts/agent.py": "7967c0ae8d02832faba9ec0b91b35a298b52fdebdf7637c3fe68b6589d3d2a44",
+    "SKILL.md": "c5bde7a1fa930dfeac1f149296471e2f5fca81431e2d11c39f04ac4dea6fcf56",
+    "UPSTREAM-SKILL.md": "3316e16703dde97e5fe4aac060291b9899d62bcee0bbd5f6d270ee1a98734dd6"
+  }
+}

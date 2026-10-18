@@ -1,0 +1,20 @@
+{
+  "name": "anthropic-academy-guide-50d306da",
+  "upstream_name": "academy-guide",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/academy-guide/SKILL.md",
+  "license_files": [
+    "skills/academy-guide/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [],
+  "files": {
+    "_licenses/skills/academy-guide/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "SKILL.md": "3b48330107fb5c1644ba83ab8e7710622331451bc77ab9dc4ad78dde26607d09",
+    "UPSTREAM-SKILL.md": "f27992510c051355dfe68c92394d509af730da5298094ec86834ee40bbd31376"
+  }
+}

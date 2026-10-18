@@ -1,0 +1,26 @@
+{
+  "name": "cyber-executing-active-directory-attack-simulation-e523ced3",
+  "upstream_name": "executing-active-directory-attack-simulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/executing-active-directory-attack-simulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/executing-active-directory-attack-simulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/executing-active-directory-attack-simulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dcdf3e018fe6a45631348bc559d41f01497ee0dd9c43740e116f7b6dedc1312c",
+    "scripts/agent.py": "efa48c237b227170886a4793781d238b34b5ca72965ca21b6d959ff1bbfc42d7",
+    "SKILL.md": "0cef6e94f91715117203d6d50312a6bb251746d996cd6b249bd4de82c019269d",
+    "UPSTREAM-SKILL.md": "560a1faa4841d7956d9be4a72ef121a69d56b90e893ffd18e273bdb1e1626d08"
+  }
+}

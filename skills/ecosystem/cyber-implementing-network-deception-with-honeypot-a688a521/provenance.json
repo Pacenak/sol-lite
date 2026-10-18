@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-deception-with-honeypot-a688a521",
+  "upstream_name": "implementing-network-deception-with-honeypots",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-deception-with-honeypots/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-deception-with-honeypots/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-deception-with-honeypots/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f0ae6aea37e8de7cae04141530a7a3837fd271e89bf5f3e837e4882a71d6248f",
+    "scripts/agent.py": "88bdb385e191ad3dacd82cf6765febde20f24dcd54fd7063829e7e87f3c86a90",
+    "SKILL.md": "6e91e109cbbc99f9ab2dc3a085257a12bb089613fd9fc891b8a95139618432ad",
+    "UPSTREAM-SKILL.md": "39d1d4ad661e8464034f247487cf2cc3a768fb84fea298b9a3db80201d7c7776"
+  }
+}

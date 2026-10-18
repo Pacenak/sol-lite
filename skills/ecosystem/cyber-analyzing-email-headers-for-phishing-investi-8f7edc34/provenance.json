@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-email-headers-for-phishing-investi-8f7edc34",
+  "upstream_name": "analyzing-email-headers-for-phishing-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-email-headers-for-phishing-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-email-headers-for-phishing-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-email-headers-for-phishing-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "905a743f5af3523eeef528232a6c41e8815b82ee595b3dd96abd04c26a8f3427",
+    "scripts/agent.py": "bb71ff2cc15aa848d273c07bb8112f70be870927f2d22a663eebeb15aec713fb",
+    "SKILL.md": "83dfe3279c1e959a773de11c87a033e52fa4e553313422460dcfceb95b289c0e",
+    "UPSTREAM-SKILL.md": "5c143991bf9d90a26eca24de4ce85735620d368bd11722ee024fe6384ed6eb64"
+  }
+}

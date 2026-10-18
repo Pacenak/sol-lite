@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-mobile-application-management-a791670f",
+  "upstream_name": "implementing-mobile-application-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-mobile-application-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-mobile-application-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-mobile-application-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "473cf3559f5b8f2c825417c0e9dacba3e6b827636a8ee8b52a7bf79f72621fd0",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "65e2c22f02162e4c58d34e7921e9627081a9aab4ec5715a12acfa6124c5ad648",
+    "references/standards.md": "127403b349944735dd85ef1ddb745109b31ca6208be49d649e12808fe1795bc6",
+    "references/workflows.md": "42c85df2f529af2103cffc561107d01fe85759807ff739cbc45327090ed44c20",
+    "scripts/agent.py": "58884ea2c30007b27deda8937cb80cec6e6cad0ff401aea5e07ff3a71b8ad83b",
+    "scripts/process.py": "b14f6ec01bdc9f583e334962c8fc7c5ccd0ba138bb9bf389c855c94344ae171b",
+    "SKILL.md": "75cd3f0b9cb3cbac57953661f606cf84d8f079f3188bbb29bc455a57a05ba1a6",
+    "UPSTREAM-SKILL.md": "8488dae72f10e2c885ff1ab702ce6b2dae008c2d8ea6a7ba41b7cd7d7b7fc7bc"
+  }
+}

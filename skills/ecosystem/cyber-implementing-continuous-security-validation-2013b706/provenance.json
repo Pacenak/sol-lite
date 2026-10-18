@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-continuous-security-validation-2013b706",
+  "upstream_name": "implementing-continuous-security-validation-with-bas",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-continuous-security-validation-with-bas/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-continuous-security-validation-with-bas/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-continuous-security-validation-with-bas/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "832251a7de142d79ab3670f47c0033781ace4b5b52eac23af57f395f7f0362e7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9892354d62990601649c85546d93217d25e641a36074e5add22bf26cfa647193",
+    "references/standards.md": "387313384882129d6841b4c74e0fd960e66a31555733aacd4452ece6eb51ff24",
+    "references/workflows.md": "f970ebcbf92b69cf9a6cd93458d9679ed85bbcb248b11a053f32af5870d57876",
+    "scripts/agent.py": "d25a2beca460eed0a1c96b75d06753e1c19f87627a9ea51ee20c899c5d6805b4",
+    "scripts/process.py": "261663cfcde3fecb331fe7f80be98a994e580c170d0480e0a0a741ca0b4c8c1e",
+    "SKILL.md": "b88ef5aa2276967e857665499cd2f8d328841286242adcba51a736761f757432",
+    "UPSTREAM-SKILL.md": "d89e6267c61a5202cfa69c8945b8b78f9fd7abcb3e16ae4c01d3afcb8b9b0592"
+  }
+}

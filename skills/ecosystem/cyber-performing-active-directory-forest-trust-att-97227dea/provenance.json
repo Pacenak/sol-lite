@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-active-directory-forest-trust-att-97227dea",
+  "upstream_name": "performing-active-directory-forest-trust-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-active-directory-forest-trust-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-active-directory-forest-trust-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-active-directory-forest-trust-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6d95b835e8cab7bc5784ef64b75780ea219bcd1eec1117d64aa11943604891bb",
+    "scripts/agent.py": "5079c32100269dec5ba39af11b7cbd5aa59de63a42fe6fe3d884668ae803a848",
+    "SKILL.md": "dfb9f61f4aabb0cecde7f721bd0480fba6ae22bce594d030d94268f6eddf9ec0",
+    "UPSTREAM-SKILL.md": "82c3fd92bb26017c7d3aee16353434ee6b602b6d8d68c7a329fa9d3a65f951c2"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-gdpr-data-protection-controls-c7f6fd0e",
+  "upstream_name": "implementing-gdpr-data-protection-controls",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-gdpr-data-protection-controls/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-gdpr-data-protection-controls/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-gdpr-data-protection-controls/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b2de8af230abeb8edd482befedde31d1781e79e767b5227e4c0341f4b0333d1b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1eb20c348ba496c5f22039fd0ecd2987ab18caa970dee194253168f86b84705f",
+    "references/standards.md": "85fa1bb5c93bf0b5407643d86c7173ec68c4ace9d9528cc997b126830d217bb8",
+    "references/workflows.md": "758e8d2ee13ca87b1fad4bab118c3012b33a2db711d167b1ba3ff89e73768014",
+    "scripts/agent.py": "78dc3ff94a5c19f8fe0780c7299fd76a66f707b20f19caf275695c26a582dbb8",
+    "scripts/process.py": "04347026e68d67bed1340ce51fd61b513bf5c92f0d8808c707666056df85d7cc",
+    "SKILL.md": "45854f645ca7b8b6822eed0e5fa64b97e04adb22701625a60cafd31e33a7cee9",
+    "UPSTREAM-SKILL.md": "0b9b1bf72028119673b9f381dfb21be3b9f538c5df7c3461c3ec8e699de55f5a"
+  }
+}

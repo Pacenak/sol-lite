@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-attacks-on-historian-servers-da5fbc68",
+  "upstream_name": "detecting-attacks-on-historian-servers",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-attacks-on-historian-servers/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-attacks-on-historian-servers/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-attacks-on-historian-servers/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "63d75f74c6a3cee5c1cb4fc2dff0d82fb90d41ad8dede146ee1d5979791ae74a",
+    "scripts/agent.py": "fd5667f4767f48c5edb61f9918f8d4ef4d0d293fb0288950d3db6be703457baf",
+    "SKILL.md": "7d027536474c2457d8d99dc5c00cb2133cef64082bd7a05bc5e92b93ea6de006",
+    "UPSTREAM-SKILL.md": "681731e944f842d5fd56d7bb9e87b07d993611203d06e06fe511ea09dc345ff3"
+  }
+}

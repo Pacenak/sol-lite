@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-velociraptor-for-ir-collection-83a315fd",
+  "upstream_name": "implementing-velociraptor-for-ir-collection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-velociraptor-for-ir-collection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-velociraptor-for-ir-collection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-velociraptor-for-ir-collection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5f9fb477ec26bc1334edae4e3980561e994d1ab163ff332b7728278a2daab8fb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "85270c3982e00478d607dcb0fac1eb59ab8434d6bdca22578078ce68c40f9125",
+    "references/standards.md": "c8f08f0bd9bad66a35a59dbb8914f48674831d97ecda4ac2b5ee0d68bf163914",
+    "references/workflows.md": "4ad491bfe65bf209447cfd55c619adff1936568308b363520cac0a2c68f4d38e",
+    "scripts/agent.py": "4a49ff906b12682d7c64f1024f077d789b9e94eb872bf3e5647f722ee12d3abe",
+    "scripts/process.py": "4c4d3becd5bac1a4dbb3b6bc9d16c2a3521f12ef1902c2e7973ae9a5f673007b",
+    "SKILL.md": "2e782a391c181420bf61c5a429eaba74323569060ce209f1158fecd96537b44b",
+    "UPSTREAM-SKILL.md": "5b2b2950ff908b43b155e0437d87ee15f934a0e70a2b3e63e8940e2b74d90574"
+  }
+}

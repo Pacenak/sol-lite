@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-suspicious-oauth-application-conse-d89e410b",
+  "upstream_name": "detecting-suspicious-oauth-application-consent",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-suspicious-oauth-application-consent/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-suspicious-oauth-application-consent/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-suspicious-oauth-application-consent/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "44fc8400d4fa94fd2493ef026de678fa2894d4295edc0e333639de919dce7ffb",
+    "scripts/agent.py": "e53b579d33041c01fb79ee688a18bc8a28fd2df1fc77754418950a2f1578b8a7",
+    "SKILL.md": "39f654e6b25f37d3e0f06115c16f18fd3a11d19057b30a8f3c0a0052732301b4",
+    "UPSTREAM-SKILL.md": "00cbfe6cbce69e95668318733bae69462d7d79ceec26ef178ac748aa422463e6"
+  }
+}

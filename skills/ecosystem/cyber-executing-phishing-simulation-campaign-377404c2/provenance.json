@@ -1,0 +1,26 @@
+{
+  "name": "cyber-executing-phishing-simulation-campaign-377404c2",
+  "upstream_name": "executing-phishing-simulation-campaign",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/executing-phishing-simulation-campaign/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/executing-phishing-simulation-campaign/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/executing-phishing-simulation-campaign/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fa15f068ce366e2a603196831c6dad7df010c62c80a5fbbfea20ae1de2043be7",
+    "scripts/agent.py": "c86b9343d078e86b89f70bcb93250c22a7629bfc97ad8384ea89c7aacf6ccfd7",
+    "SKILL.md": "b1bce3d487d52c2d32af2c0c98549aaaaaa5aaa82d06919cdb7a08cd1634c420",
+    "UPSTREAM-SKILL.md": "b0c885c88def8221a226619ef4a52d02d9500e95865cb8fc9aa6cd62652ca6c8"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-scada-hmi-security-assessment-c7edfd56",
+  "upstream_name": "performing-scada-hmi-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-scada-hmi-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-scada-hmi-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-scada-hmi-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "722c914466a0c5f7e2627aef0b023b5f610add52c74327b7ae3b2c41b4e587ef",
+    "scripts/agent.py": "3e6c390060d21903b84d87ab2a03e434dfcea801bc17ca66e10f4ff0604788e2",
+    "SKILL.md": "756d6a2a5150ecbd56a3cac972ac7aa8ac27b32daea4832cff2c524dc19a33c6",
+    "UPSTREAM-SKILL.md": "261181967779a22ef11347bf30bd59b8a6a80cd8e3bb5df83a8f1125ea176222"
+  }
+}

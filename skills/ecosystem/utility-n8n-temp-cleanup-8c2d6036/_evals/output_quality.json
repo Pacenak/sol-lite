@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "skill_name": "n8n-temp-cleanup",
+  "judge_model": "cerebras-llama",
+  "threshold_contains": 0.8,
+  "notes": "Goldens check that n8n-temp-cleanup uses the correct archive-before-delete flow and the --temp auto-discovery mode.",
+  "golden_samples": [
+    {
+      "id": "G1-temp-dry-run",
+      "description": "A temp cleanup request should use --temp flag for auto-discovery and show dry-run first.",
+      "input": "the says: почисти temp workflows в n8n. Describe the cleanup procedure.",
+      "expected_output_contains": [
+        "n8n_delete_workflow.mjs",
+        "--temp",
+        "archive",
+        "delete"
+      ],
+      "expected_output_excludes": [
+        "DELETE /api/v1/workflows",
+        "skip archive"
+      ],
+      "rubric": [
+        {
+          "criterion": "Uses --temp auto-discovery",
+          "weight": 1.0
+        },
+        {
+          "criterion": "Mentions archive-before-delete lifecycle",
+          "weight": 1.0
+        }
+      ]
+    },
+    {
+      "id": "G2-archive-before-delete",
+      "description": "Must explain that n8n requires archive before delete (400 error otherwise).",
+      "input": "Why can't I just delete a workflow directly in n8n?",
+      "expected_output_contains": [
+        "archive",
+        "400",
+        "deactivate",
+        "REST API",
+        "cookie"
+      ],
+      "expected_output_excludes": [],
+      "rubric": [
+        {
+          "criterion": "Explains archive-before-delete requirement",
+          "weight": 1.0
+        },
+        {
+          "criterion": "Mentions REST API + cookie auth (not public API v1)",
+          "weight": 0.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-reverse-engineering-ransomware-encryption-ro-462d4af2",
+  "upstream_name": "reverse-engineering-ransomware-encryption-routine",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/reverse-engineering-ransomware-encryption-routine/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/reverse-engineering-ransomware-encryption-routine/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/reverse-engineering-ransomware-encryption-routine/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ae1c2c612790b1480a47b9c882f3bdeefc4ab27f20b4f990be0c993617f3830d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "55aa9ddf59d38a338db78be55dc9f50a645c3429dd6887707bee5715aedf4976",
+    "references/standards.md": "f8a5d993a4da5517424fbd63e445d323f9b0c16ebb78d0aba9467b79dbd38a9e",
+    "references/workflows.md": "b79371c39337ff1ba2b5b7c0af2f2c8d0319a9476f25b582159b76b3e6252de0",
+    "scripts/agent.py": "ba86d92beba6868ba56ab957ce316794d41fdd6e284cca46093ebe8be3e875d9",
+    "scripts/process.py": "9366f200ef86ac3416d5847a1003e928660f7e1f644e7c82eeb1099cbb6f88cb",
+    "SKILL.md": "5d3214423107f08b48a8710e522b4daef116eccbbc0997599cc612942ce18018",
+    "UPSTREAM-SKILL.md": "a6f48f1d93975b060ef554355aa8ec1721734a6c9203f465257852d65468eb29"
+  }
+}

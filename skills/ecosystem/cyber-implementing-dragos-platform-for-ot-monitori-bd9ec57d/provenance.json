@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-dragos-platform-for-ot-monitori-bd9ec57d",
+  "upstream_name": "implementing-dragos-platform-for-ot-monitoring",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-dragos-platform-for-ot-monitoring/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-dragos-platform-for-ot-monitoring/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-dragos-platform-for-ot-monitoring/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9d0289c668b3c22e9b8df6c750cc23fda5b28308dc10bd86a70e83e49d471fc4",
+    "scripts/agent.py": "0d0cc272e2439636588b0e61fbbc0467988fbe82232eb41448f0c660f69be2e9",
+    "SKILL.md": "bc060f2d1f9ff703130a82f346d5d08e93b83d37c112a92a148f546dbada6a03",
+    "UPSTREAM-SKILL.md": "88b61064a8a45c718b97cb523575e0a78f8f263371d4dd2420c3f2d4621d549d"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-attacking-oauth-with-device-code-phishing-f7dfe978",
+  "upstream_name": "attacking-oauth-with-device-code-phishing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/attacking-oauth-with-device-code-phishing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/attacking-oauth-with-device-code-phishing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/attacking-oauth-with-device-code-phishing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "64e054f8820475b83ed7551f6c08993386e42d3a81848f0c11d2b01873388ca2",
+    "references/standards.md": "a24057ccd6d3a3987a53b82e0a3ed39419512a5e34534677d03fb85eae4bbdfb",
+    "scripts/agent.py": "517d47f846dba96e067b4633e44cd7316849633ed666d252e646c682f458d74d",
+    "SKILL.md": "e671f6f15113cb6ed4da2a08a8dc2877d35ebb1edadf57fd9bf25b01c21bbc3c",
+    "UPSTREAM-SKILL.md": "822446dc67a87c781c100d6297bd39cbe0d5933cce0beacd3c1a1c7f1167e53a"
+  }
+}

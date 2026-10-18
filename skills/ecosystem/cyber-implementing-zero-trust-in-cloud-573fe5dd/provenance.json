@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-zero-trust-in-cloud-573fe5dd",
+  "upstream_name": "implementing-zero-trust-in-cloud",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-in-cloud/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-in-cloud/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-in-cloud/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2b1ac6222c301ffaaca0f0d8183a6f27e6aa01162ad2a33d70c78786e2de399f",
+    "scripts/agent.py": "1f45ed9d65cdb1e555034c938364408e7eb36caf7a3546866a85c30e35878aa0",
+    "SKILL.md": "b3c5a40fbba76e80dae461ddc28c4bc19ade784a5577347956e8b85de58bdf46",
+    "UPSTREAM-SKILL.md": "cd819cba48e157a5ffe36d76f77e846ddcad3a2659846e3bad52e1e8d1db0891"
+  }
+}

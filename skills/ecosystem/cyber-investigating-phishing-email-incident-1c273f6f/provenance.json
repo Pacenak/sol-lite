@@ -1,0 +1,26 @@
+{
+  "name": "cyber-investigating-phishing-email-incident-1c273f6f",
+  "upstream_name": "investigating-phishing-email-incident",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/investigating-phishing-email-incident/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/investigating-phishing-email-incident/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/investigating-phishing-email-incident/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7fbc52291b621ff3d966a4429adb7323fcf1c2dc0bda97e6e2d74566fedbb500",
+    "scripts/agent.py": "7a769060345fedbcebd10be2c3b769cf5dabbcfa4ceefd304b0fd7d1ee52a34e",
+    "SKILL.md": "15e7ad030bc29f6d9bd2aadd1b2e4c89e903f9cec18287e3939f6059493d0884",
+    "UPSTREAM-SKILL.md": "e946a062aafcbb143ff99ee240ad2bbec8669cd245114354dbc9815f4efc095f"
+  }
+}

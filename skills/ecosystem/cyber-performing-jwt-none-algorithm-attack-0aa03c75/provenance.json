@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-jwt-none-algorithm-attack-0aa03c75",
+  "upstream_name": "performing-jwt-none-algorithm-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-jwt-none-algorithm-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-jwt-none-algorithm-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-jwt-none-algorithm-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5461ec0bf3f5eb02569c9a2d99026f85324125809b683d1bcda868747b334488",
+    "scripts/agent.py": "9a02e5a3f8617bdc1a3245f2e3f951dc57a7de0cb1187728d1cfa9c5944f7c64",
+    "SKILL.md": "1a1b6c9c4496427436cfe915bfd20f4ac5bd018fb009f08c3d645a7fd2f183f0",
+    "UPSTREAM-SKILL.md": "095eda5cf5e3f731563619a42458ec78e6a68f37975804f079e67f5b30249c25"
+  }
+}

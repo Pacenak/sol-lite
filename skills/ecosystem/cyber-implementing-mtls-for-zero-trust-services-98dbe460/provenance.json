@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-mtls-for-zero-trust-services-98dbe460",
+  "upstream_name": "implementing-mtls-for-zero-trust-services",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-mtls-for-zero-trust-services/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-mtls-for-zero-trust-services/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-mtls-for-zero-trust-services/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "52938052f59ba2d0b9a79668186c9122eb3ef0fe648a2e0bb6ec6b76c5d7ad8d",
+    "scripts/agent.py": "09bea1e9ddec7edfe3c69e6002accdf9712f7c8e9fc37f1af58ac25ad3b87cd3",
+    "SKILL.md": "990d2d79cabfa9f191d8a4aafd1cda9dd04b13d05cf9dd59d4abc3f912d86efd",
+    "UPSTREAM-SKILL.md": "d101ccb42b1853efd740ddfa53d5b2955ceeecc47395656831936d2f5198a9ae"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-ransomware-leak-site-intelligence-b2ee807e",
+  "upstream_name": "analyzing-ransomware-leak-site-intelligence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-ransomware-leak-site-intelligence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-ransomware-leak-site-intelligence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-ransomware-leak-site-intelligence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "22b6a5fcf21be2c0fccbf6e387d1f200d904b4c2570ad03623916e8455fc3a50",
+    "scripts/agent.py": "d194619eea987a30da1acfa31061c0a44b2f77f8b3f83a58dda42b0e156f7345",
+    "SKILL.md": "31735fa1b47afaeb101ec4a9c49447149dcc7c295d01b22a479a971fb1d3dad6",
+    "UPSTREAM-SKILL.md": "099ca40332f2905363f22d3338e28fc983734df160b009510ef1e8c55b79e87e"
+  }
+}

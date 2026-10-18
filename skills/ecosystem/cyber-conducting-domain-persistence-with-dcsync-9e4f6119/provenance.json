@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-domain-persistence-with-dcsync-9e4f6119",
+  "upstream_name": "conducting-domain-persistence-with-dcsync",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-domain-persistence-with-dcsync/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-domain-persistence-with-dcsync/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-domain-persistence-with-dcsync/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "876985310fb2f5c3b324d022108730f62bfb2c9fac32da78a66e3f9ca8ab798f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "39336b39c8a33c6026c5077f06d6a21f39d86d30bd7543a25a8a07d500fea0b0",
+    "references/standards.md": "435ae151fd4f922c2b9767c0baf6e3bc4888ea184ed59570431d13f6c326f7ae",
+    "references/workflows.md": "5e44436ccfde28139313a89ecbdff5ffe3481b0e1908f7a52661bed891bdc5cc",
+    "scripts/agent.py": "54662ae954904422b74102d4328c01a44f6f2c0565d6afd713209266392aff6b",
+    "scripts/process.py": "4bec2c3ecd3281b622ae8c4162e377add64efb79f7342641727b0dd9aae3fd7a",
+    "SKILL.md": "88e9684c15be38cee998c9f6070c7003f9cef4537c1f762b70a495ade762f22f",
+    "UPSTREAM-SKILL.md": "f8598473754b413b618690e14e2bf8c90dbf183dd891e719cf23a03160abdb88"
+  }
+}

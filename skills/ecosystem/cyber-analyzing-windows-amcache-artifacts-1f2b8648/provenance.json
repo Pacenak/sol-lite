@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-windows-amcache-artifacts-1f2b8648",
+  "upstream_name": "analyzing-windows-amcache-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-windows-amcache-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-windows-amcache-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-windows-amcache-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d80958e3c0ce393496d57a97b77032968d98c7376989978c0536e0f1aaf02b27",
+    "scripts/agent.py": "9680d5beab0f481e9ac730813e7d98555ccf5c635f8edcb08f2f146a132f1ec0",
+    "SKILL.md": "839f01288e23c8fbcffd7aca446643e676045c899cdb283239c4930937c5e3ea",
+    "UPSTREAM-SKILL.md": "f8785cc7e2bca692b96d5a131eba8b85fcd6ef629aa830bc117ed14b82ae6d23"
+  }
+}

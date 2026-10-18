@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-internal-reconnaissance-with-bloo-7ce68d59",
+  "upstream_name": "conducting-internal-reconnaissance-with-bloodhound-ce",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-internal-reconnaissance-with-bloodhound-ce/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-internal-reconnaissance-with-bloodhound-ce/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-internal-reconnaissance-with-bloodhound-ce/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ae45f14f97688068a46fbb58b8906c61fcb04b1db0dff2fcd67a8547c00a09d7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dcf9887c3823923ead31bea2a34416cd952f909476f0c638c228e6fc3710cb70",
+    "references/standards.md": "3c65513a22566fe50f971a0fc86d1343d3f4a2dec74c6e284529fab006add22d",
+    "references/workflows.md": "fd059ac5a869066aef3ca1bd2f09fb4cc92940961422005b809ffcd7e94863c6",
+    "scripts/agent.py": "aaddf320be2e08e8121de5297da9e180c7c86d38be6a9ee1a881abae23b43fba",
+    "scripts/process.py": "4caa2c06c9d6318d40ec9e2f999547f07ac1bb0f604f524807e131680884f5bf",
+    "SKILL.md": "3a4de2ade25ee2cceff00ad860c5d7a1566e8284d7a901b74dde20e7dbe728c5",
+    "UPSTREAM-SKILL.md": "da869969365247f76d49582aee759781ca9227c8559764959bd9de4053b03791"
+  }
+}

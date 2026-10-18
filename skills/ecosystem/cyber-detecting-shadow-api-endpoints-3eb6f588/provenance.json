@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-shadow-api-endpoints-3eb6f588",
+  "upstream_name": "detecting-shadow-api-endpoints",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-shadow-api-endpoints/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-shadow-api-endpoints/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-shadow-api-endpoints/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5dc30ff67c4e7696ffa2d031ab5acce04a3322aabc7aca426126cd8bcc89745f",
+    "scripts/agent.py": "7ac74850172c4f941eac5d289f28b62cfc7763d6cbed67400e5b40fea051b5ea",
+    "SKILL.md": "2e89fc263b36246a100705ce0a09a1c3b2cbeb37d38114bdbd2f176abfa41aa2",
+    "UPSTREAM-SKILL.md": "ae2635d7dd04120ac1c7e45967a6987c116559f2d0f8e45e1739fb95b7475361"
+  }
+}

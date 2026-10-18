@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-secure-boot-bypass-d2f7ee3c",
+  "upstream_name": "detecting-secure-boot-bypass",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-secure-boot-bypass/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-secure-boot-bypass/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-secure-boot-bypass/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "55b3ad28fc0b6ac899805ae5bf51aeb7f620f18d1298500e61201fcb20a4eb86",
+    "references/standards.md": "60c1b5426e2b7795bfe18e7669d95add2f73c0b2e9463fc53df93ab0389b8d3a",
+    "scripts/agent.py": "f4e804d5aa47b553a76af5593d298316f290281d7f6b914cb9e7aaf518194c82",
+    "SKILL.md": "07c8c820503866ea88ed0bcadd393757afb43c134d712217fabb5d4754ab6fde",
+    "UPSTREAM-SKILL.md": "4fa16032cb056bb6fd4f4800dfa46310425a39574143ce6ee697b77768e8d63e"
+  }
+}

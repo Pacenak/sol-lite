@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-file-integrity-monitoring-with-076f237c",
+  "upstream_name": "implementing-file-integrity-monitoring-with-aide",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-file-integrity-monitoring-with-aide/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-file-integrity-monitoring-with-aide/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-file-integrity-monitoring-with-aide/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15cb38bbd9585cca5a9b6a490929fce7e5733c05f87a6eafe802e57ab4a94ae4",
+    "scripts/agent.py": "b81b76b8a01b0b62f3aaf33c043bbacde52545eae69e30b14880c883f5032d26",
+    "SKILL.md": "f17238b4a872a7dc7fbedd07af82eaa5b0a255bffebb6e6d245a09e6d0541f17",
+    "UPSTREAM-SKILL.md": "44215089cdaa75af30da64d64ddd60290238becfbfba89586e46878156ad740b"
+  }
+}

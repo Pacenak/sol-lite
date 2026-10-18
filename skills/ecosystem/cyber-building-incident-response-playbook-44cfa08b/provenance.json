@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-incident-response-playbook-44cfa08b",
+  "upstream_name": "building-incident-response-playbook",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-incident-response-playbook/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-incident-response-playbook/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-incident-response-playbook/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "baa6189b56998c24ddc5be18b263977f385613b9b2c7b156f23723bd7bf34283",
+    "scripts/agent.py": "3d22abd12269cd129d95905845588e1277c4c61b3382038135445af7e52c376f",
+    "SKILL.md": "913d18c797617e730b8dcd5eb3b372b63786dd470bc43fb9e9ceeb8b6ae840d7",
+    "UPSTREAM-SKILL.md": "cf95102d6b57ba6d4ec781ffa350d4861a500f38c86828f678d6cac4a5e38af9"
+  }
+}

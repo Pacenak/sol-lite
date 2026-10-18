@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-disk-encryption-with-bitlocker-effcafef",
+  "upstream_name": "implementing-disk-encryption-with-bitlocker",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-disk-encryption-with-bitlocker/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-disk-encryption-with-bitlocker/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-disk-encryption-with-bitlocker/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "cf475e06897f26edd3e10c36ed0e928cb13ae94818791aa8b19dc20a86edbc66",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "064d34042270d77d9ded9a602153722db82d743c2911c17cbc118f49c4cae69f",
+    "references/standards.md": "4de60198541b6102406d3833b4f62b7e08ab6c24a5b509e9d459e644d4cf2c18",
+    "references/workflows.md": "4f5161a0301099b841135f8e4838414ddbf8aba54c7905840454e4ea564b218c",
+    "scripts/agent.py": "ccc58daf9bad9c0a8b34e19dacbd1137384cde864dfd1c5897fa7911d19621e4",
+    "scripts/process.py": "469747262e0fc93f2123f1d979a8b6bad7aaffe19c3f9d4b73262c25e2694bf7",
+    "SKILL.md": "a8f5ab91c0287f038e95d598e6cf4dd44d56a19a8dcc0ba355e27074ef4f90d5",
+    "UPSTREAM-SKILL.md": "56dd4c9c10302f4502cae8116d8586c6771c1ba4cbb376152843a0c01c0a87ec"
+  }
+}

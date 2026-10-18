@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-memory-forensics-with-lime-and-vol-5a0c4556",
+  "upstream_name": "analyzing-memory-forensics-with-lime-and-volatility",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-memory-forensics-with-lime-and-volatility/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-memory-forensics-with-lime-and-volatility/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-memory-forensics-with-lime-and-volatility/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e8ee072da9dcc010a90292ab9c4bb4b01d9256b688f43e9d740e5b799bee76c3",
+    "scripts/agent.py": "f8a4488c5a1194d3c1c95a26924c73ed21b92d5e1474a75060322fc4ec13b9b8",
+    "SKILL.md": "5146686213a2bb5b4bcf102e6fa1592d428cc1eaef846e6a87b0311acea62038",
+    "UPSTREAM-SKILL.md": "4d39bc65bc995cd5f140ad0fe8bdcaea2f46aedf4f56fd6efdb383f058a32ebd"
+  }
+}

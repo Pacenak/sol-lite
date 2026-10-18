@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-exfiltration-over-dns-with-zeek-56b346d1",
+  "upstream_name": "detecting-exfiltration-over-dns-with-zeek",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-exfiltration-over-dns-with-zeek/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-exfiltration-over-dns-with-zeek/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-exfiltration-over-dns-with-zeek/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ee903d85adb7dbcee1e1214275f562300d8dcfd6615ff1a848c44e5bf926b240",
+    "scripts/agent.py": "0cdc5fac9900250d8b4a75831561c7bec51c415ecbe9e5c1c3a8c14900ab197d",
+    "SKILL.md": "ab69cdc17b45f2a8216443102a83f55c65b3d55bef03659ac1ef6355943b57fa",
+    "UPSTREAM-SKILL.md": "1e866e5f132b1412729201f91c37b53c562d2aa68c29fb5f1c820c148ce63a31"
+  }
+}

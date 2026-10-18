@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-email-sandboxing-with-proofpoin-c6c59ae1",
+  "upstream_name": "implementing-email-sandboxing-with-proofpoint",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-email-sandboxing-with-proofpoint/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-email-sandboxing-with-proofpoint/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-email-sandboxing-with-proofpoint/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7a2a3260026ec1de1c52c233183a82541c592750fcb1c1aca674f9a3d7121e96",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1132fd1c24898bf47fe61bbbacd174747570bef993e096e315c6e251f5d37a07",
+    "references/standards.md": "bc76fed850bb64910e8178f777a78a7d764d513b3eab933c1768d3c336e0ca81",
+    "references/workflows.md": "48059bd40c07a386914ad03da1efe7c7f4e7c17b6418c28d0129352cc072a116",
+    "scripts/agent.py": "94dd96a56b5c29c9f301fc56adac63b80f657a361091f09f4ad8e435a5b04a7c",
+    "scripts/process.py": "9d9f6badeda64b1f209d1b7b0e258c988f69053011477c53596dd52829e51afb",
+    "SKILL.md": "be7ad77b077bacfe90ef972f8cc3e1cfaf32b2324b40ab2b6785bb791c09c79c",
+    "UPSTREAM-SKILL.md": "04e004a29a77f150165414ceebe860ff81f75dfaf77cdf637b78893e9bc3ca33"
+  }
+}

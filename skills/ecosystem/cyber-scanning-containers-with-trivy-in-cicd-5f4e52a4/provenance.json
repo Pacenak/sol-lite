@@ -1,0 +1,31 @@
+{
+  "name": "cyber-scanning-containers-with-trivy-in-cicd-5f4e52a4",
+  "upstream_name": "scanning-containers-with-trivy-in-cicd",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-containers-with-trivy-in-cicd/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-containers-with-trivy-in-cicd/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-containers-with-trivy-in-cicd/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7297223692014ea782f0025b9e15f353f2dc2f712c066faab8d74be9deaadb20",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7628423a105a396217b2016294f56da831ee6a969111f15ae74ec283a0879140",
+    "references/standards.md": "66ef4e9251136eae4e3f3ba57a9d9368076c786ebb0d8c881825a5e29d1072c2",
+    "references/workflows.md": "46b1384c96e84fad26efc7314d50fe415c140a423dd1abe50b2e49cfa673c93f",
+    "scripts/agent.py": "1f1304ea01d76393be603ded5d23c6c2da6bdd43221a3ff86b516fc8b449d409",
+    "scripts/process.py": "64fb51b816ccee27552e70716abb00d0a5cff0c7b6ebc5ada1d29bf2a144244a",
+    "SKILL.md": "e44ba9f7a85208cb14dd522f04805874af652694d3a83d6719f449ec2671fe1f",
+    "UPSTREAM-SKILL.md": "fd39babf08f163b6cc81a6b8f01b19381fdd65b7e5354aba4aaaf9f3db0905f8"
+  }
+}

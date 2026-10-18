@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-oauth2-authorization-flow-c0ce56e4",
+  "upstream_name": "configuring-oauth2-authorization-flow",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-oauth2-authorization-flow/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-oauth2-authorization-flow/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-oauth2-authorization-flow/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "324f7e375a7508d6d2abf2a6a6614ec25100ba72d8ef8a559606e455e09dddeb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e66964b95db32cc3514e7007984e5f78a835f61927b3cf7e6e0a3c46c672bcee",
+    "references/standards.md": "4745e74d68d8c9a19b6bf2670d80de3ef3d5be528ac8ea1c5e88b536e1b07aab",
+    "references/workflows.md": "a4e95e56af65047c5596d2c238d552d96c121ffb0ff7bd4af98c40ed26104bbe",
+    "scripts/agent.py": "40927e35877116367b1e649e463aec219b14ba93c0616c6705c5983d82578673",
+    "scripts/process.py": "f73bb81b68f4dadcd7b9e6c5d06c3da3f93bd69b1362ebdb0ae2808ac2381bd1",
+    "SKILL.md": "b90b667206cd2fdd8f127fba885df8e7500cb62a7341c9906e123328ad00c5b6",
+    "UPSTREAM-SKILL.md": "4ee89fdccefbdf1fed04e80ab53c7af6a0f47584ba7b7766deb7620685e870ae"
+  }
+}

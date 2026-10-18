@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-slack-space-and-file-system-artifa-9a592ff1",
+  "upstream_name": "analyzing-slack-space-and-file-system-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-slack-space-and-file-system-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-slack-space-and-file-system-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-slack-space-and-file-system-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "41bc818a3829c6faa92ababf684109f57165da29c964137efad015001d623398",
+    "scripts/agent.py": "80ce450f1c0556db758eae1c0e699979229d8e4ed5d9ee1e4648da8255f57ee0",
+    "SKILL.md": "9f0fa05f1264cdd5c0c3dc168435da5badde4a40a53718a447e02147cd21e985",
+    "UPSTREAM-SKILL.md": "06ec8630ca23bd3bd15cf01ea2ec0fd32a965270854515fca11ab86ea043e233"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-startup-folder-persistence-38935dd3",
+  "upstream_name": "hunting-for-startup-folder-persistence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-startup-folder-persistence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-startup-folder-persistence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-startup-folder-persistence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "63d849e2fbbcf0a81e93202a55552a44720f29ebe2697672fbc0cfb34de9a794",
+    "scripts/agent.py": "f3674cfd2a8c59e5b61333479996bb9bb42ec599fe57c5aa961667c0b7346b2e",
+    "SKILL.md": "79f1110ffac88d9826366171e90827b247b5f3f75211f1b7ee1b249501ec12eb",
+    "UPSTREAM-SKILL.md": "b3a38fdfc9d7bf279956ac2cfa57d04dc62f8ab182d775b36618ec71f592b794"
+  }
+}

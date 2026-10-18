@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-sca-dependency-scanning-with-snyk-2b088f27",
+  "upstream_name": "performing-sca-dependency-scanning-with-snyk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-sca-dependency-scanning-with-snyk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-sca-dependency-scanning-with-snyk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-sca-dependency-scanning-with-snyk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c9ce9092f22faaabb9fabcda8357bae26f2da5065dbb475a44ddb64dfbbc83f8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "318d2f732750c20ce3a42da958cf8d299eb6eacc81f4a9afccb2fecae6001da9",
+    "references/standards.md": "6a985608d37ec2b1ed7493dd91a3d0997b41bbb49c3474bd06352cbb3071f779",
+    "references/workflows.md": "0eb65dc26c947c95cf161c37a9700b551fb30657cb587191cdef756b4b59e658",
+    "scripts/agent.py": "9c4e5e24f41426d8dda4dfe33cf9f2f6795636c311bcd72fd67c48968cb272af",
+    "scripts/process.py": "b0afd45497cd22b7fc8231da22ab696a8f33d8a6773a77c22065b244d2e35f80",
+    "SKILL.md": "3fa964557f312feb7748f658a1f1f6d84ed2fea1d1739c2dc5b6453ec6121be7",
+    "UPSTREAM-SKILL.md": "dfd1a2b52caf065f5e901bc58cf843cadf7da76990e9f7ed466661863b3120c9"
+  }
+}

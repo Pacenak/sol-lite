@@ -1,0 +1,27 @@
+{
+  "name": "cyber-securing-agentic-ai-tool-invocation-4ee94962",
+  "upstream_name": "securing-agentic-ai-tool-invocation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-agentic-ai-tool-invocation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-agentic-ai-tool-invocation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-agentic-ai-tool-invocation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e429e1d1cdbf95b585fd8d8e851ef1d790ed901ed3f1ec8dfdabc18f2cc1d6b3",
+    "references/standards.md": "951f908be1a650127e7402b084fee0372e6d7bf56495c71cb57051bb5771a852",
+    "scripts/agent.py": "4f59d9b26e33205df66eeac19a97d2a9feca0fab85ae5450d00d9516b7777e8d",
+    "SKILL.md": "5ada4519382adf58b7223580d45948c88e8a5ee673867a29b7e4dbc22c303489",
+    "UPSTREAM-SKILL.md": "9bc5fbdd43961c9d02212b11d11ac9f3029bdd51d2bcbe40b41b174169a3278d"
+  }
+}

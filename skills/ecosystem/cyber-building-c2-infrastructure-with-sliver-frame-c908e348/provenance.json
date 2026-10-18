@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-c2-infrastructure-with-sliver-frame-c908e348",
+  "upstream_name": "building-c2-infrastructure-with-sliver-framework",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-c2-infrastructure-with-sliver-framework/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-c2-infrastructure-with-sliver-framework/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-c2-infrastructure-with-sliver-framework/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "21de25c402d9d980c6078523ae57b86f5a028ee91d7fb19d834ddeea96da2109",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5fe85b29d93e59dee774ea5acfe6c9962863d24a50ff3798974faf456b80548c",
+    "references/standards.md": "77f0ca889742c4cbb4dd6adb24e9687e935e3756205340bf320002eb41bda3ed",
+    "references/workflows.md": "44754bf0e27fc4d0c5d27ad8bb2188cae2886db5f3df1f8bde1cab2f43af596a",
+    "scripts/agent.py": "03fa86ed9d210d4b4b8ddb6f5372058799de342a09d31b39e9b694a69bc7420f",
+    "scripts/process.py": "1042f74baae8142692d6c64a2e7c48c3eed4f499b88cf52d1563ac66828fadb8",
+    "SKILL.md": "a94ddef28663e2aec364a7a0ced9f770faafdcf13444fc285f790116d443740e",
+    "UPSTREAM-SKILL.md": "365810ecfee63a5fcf05415c55716f531a5842da5ee3db6fc8e349e5616ace39"
+  }
+}

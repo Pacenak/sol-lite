@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-red-team-phishing-with-gophish-895c3937",
+  "upstream_name": "performing-red-team-phishing-with-gophish",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-red-team-phishing-with-gophish/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-red-team-phishing-with-gophish/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-red-team-phishing-with-gophish/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "664d0c62e7e0cf3349a249d050da335341057eb0a543eb991f562f2d555bfe9d",
+    "scripts/agent.py": "ac2be3c97b6b92c32609e1157753274be987dc866a54f2242c04a7f1e6bf751a",
+    "SKILL.md": "ecf5a98699f6d1a6b1a1e832ad1a8bee942bad2c38bbdb93355c1170fd811ffb",
+    "UPSTREAM-SKILL.md": "3a065722b262f17da18db0966eb6009eb34a967a20da45c5e346190947287caf"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-sentencepiece-452d6e0c",
+  "upstream_name": "sentencepiece",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "02-tokenization/sentencepiece/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/algorithms.md": "6927a326b067ed3aa25712a33a2601e24704f55d2146e451efb2a4619bf4fb52",
+    "references/training.md": "d1061c220d74d4e8889ebec06f6abe99a0ff3f6706435fff37b58c3eaf2931a9",
+    "SKILL.md": "5e36e65edb570ee8e823cf5189a5569c153754815699b71993d1b7df7dacf915",
+    "UPSTREAM-SKILL.md": "47b1d10f419a51a400010bcd80d99a8bdb5c4510fc3e57fe9bc9be7efa6a48f8"
+  }
+}

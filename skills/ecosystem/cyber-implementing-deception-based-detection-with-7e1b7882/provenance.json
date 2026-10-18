@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-deception-based-detection-with-7e1b7882",
+  "upstream_name": "implementing-deception-based-detection-with-canarytoken",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-deception-based-detection-with-canarytoken/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-deception-based-detection-with-canarytoken/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-deception-based-detection-with-canarytoken/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3520cf03f3b0f1de269fdb46702f037afd27280915106cda9c8024f6605228b0",
+    "scripts/agent.py": "e9c2864486da921c9685c1e6d2b32ca5ace4fed51236c1dee4664c8498e190bc",
+    "SKILL.md": "eb53231f2188312feff19a6305e2a820c610755cfaca552bf23d91617421cc02",
+    "UPSTREAM-SKILL.md": "5a1fad063f93ddb3f91f1c466969360786e03d5e9af7850de2005ed0bd816272"
+  }
+}

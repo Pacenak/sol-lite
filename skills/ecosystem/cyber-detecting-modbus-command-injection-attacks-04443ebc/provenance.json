@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-modbus-command-injection-attacks-04443ebc",
+  "upstream_name": "detecting-modbus-command-injection-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-modbus-command-injection-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-modbus-command-injection-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-modbus-command-injection-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "edcfbd0de2c4faf0cf31ac366de4440bf59fd5a85f8460869644b74ef7595c83",
+    "scripts/agent.py": "59bf8163a810ef14e704d1b035b6e0344dc101cc691bebb9887f2545509eb6ba",
+    "SKILL.md": "5a3c700f89f225d8f91d966e6ae26c3917748b87cc157b75514c6d22ccdddbfe",
+    "UPSTREAM-SKILL.md": "0a53b89c506db9f9ac604674b21a62a666d857ddf91c828afbc19cfb53109245"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-open-source-intelligence-gatherin-98481368",
+  "upstream_name": "performing-open-source-intelligence-gathering",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-open-source-intelligence-gathering/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-open-source-intelligence-gathering/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-open-source-intelligence-gathering/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "81e82bf95153dd55d32140c63280ce177970d3e902a95a3afbd2828833e1b05a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2fea3793f31c9c07f2aa3bff3c693b931d11d4b81774cf53f723fe2b1a5a10a8",
+    "references/standards.md": "cd38a76261fbb0294e7747fcf66ebafcd26708644fcbea56d93ca8c951c9ddd0",
+    "references/workflows.md": "cfb5a7de8ca88e0a56bb0613939d07414c841c6caa9110f1ce26fc7bb7a92045",
+    "scripts/agent.py": "a15975d772aae1aeb223593f7cba81e5959507a43b5370fa3908efd8036030c6",
+    "scripts/process.py": "0415c89b0094a940b53ab3a74bd41b3ed02fceca259029761a4a34fa64db45a9",
+    "SKILL.md": "e9d4a209eea758157d60d165601f28cb6e64c86ee2a78e1f1005d548aa0d30fa",
+    "UPSTREAM-SKILL.md": "06f54abc244a9a848b095dc0027786773fc544db80c1595757a8a4ca21b7a48c"
+  }
+}

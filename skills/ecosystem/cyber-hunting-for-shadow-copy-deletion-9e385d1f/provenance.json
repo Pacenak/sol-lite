@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-shadow-copy-deletion-9e385d1f",
+  "upstream_name": "hunting-for-shadow-copy-deletion",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-shadow-copy-deletion/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-shadow-copy-deletion/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-shadow-copy-deletion/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b679c6990c55ea7f37a0e9b86d51e19a697e29a7aebd144042e5c4d275e5e566",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "019d8fc886b84e9d88aceed390d718f4541721613e171b97b59cbbf47aef47cb",
+    "references/standards.md": "09efb759ba4a82b7d1a26d7746549bb61a71e6f26aadfa8317e515ae11043b45",
+    "references/workflows.md": "29f470b7a56aa481539decf2062f8e527dc0fd5e5783f7d1d937d80dc3aa69a5",
+    "scripts/agent.py": "74bfdc80c248710af87f7c58f3648940f7d8312e63292691fe13e6c3d61e5587",
+    "scripts/process.py": "7b7796f7e7c5919d2538c66a3b9424eda5dcd3a7fa22104b66f46b7c2cf8205f",
+    "SKILL.md": "45ccb6af019402e41e167e30058fee100afa78d9ed34116e131a6df2cc67256a",
+    "UPSTREAM-SKILL.md": "d3607f3b3e368e7bd37b939ea3d2a378473bcb75b1733b563b87396472e58818"
+  }
+}

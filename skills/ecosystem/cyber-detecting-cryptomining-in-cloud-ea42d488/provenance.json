@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-cryptomining-in-cloud-ea42d488",
+  "upstream_name": "detecting-cryptomining-in-cloud",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-cryptomining-in-cloud/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-cryptomining-in-cloud/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-cryptomining-in-cloud/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3123861b72d756a159fc1c1bba437c6446549feae909fcddf43da65e7a1115e5",
+    "scripts/agent.py": "21512fa4d080415abcd33bfb91788e56e844828610b7e90fb9e1ee432e171d2e",
+    "SKILL.md": "ed522d9b979d8f1acf135ec5771ecaaca8678fffc7577b4780c6876ea1b52115",
+    "UPSTREAM-SKILL.md": "401b2b47c9c753aa2d2e9344a49cb69818dd3d40fd6369ab10b1fa7f220d8611"
+  }
+}

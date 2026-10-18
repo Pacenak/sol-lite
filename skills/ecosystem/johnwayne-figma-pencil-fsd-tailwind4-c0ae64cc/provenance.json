@@ -1,0 +1,27 @@
+{
+  "name": "johnwayne-figma-pencil-fsd-tailwind4-c0ae64cc",
+  "upstream_name": "figma-pencil-fsd-tailwind4",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/figma-pencil-fsd-tailwind4/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "references/accessibility-checklist.md": "6e86dd4090c06015f318a903f5659dc9e10969ae4c2dceae36ec2c3835d3c9a5",
+    "references/example-mapping.md": "92f29564272260c219b80f15dc2be60d2fdd9ad35b6475f860c4f4f83d6898c3",
+    "references/figma-mcp-workflow.md": "35010ec7ee6db736b3fee10d26357e12cfc455e17ff427f8443f9089398e5966",
+    "references/fsd-mapping.md": "1e964743d8be06f15d084d2bf8ad8662edf9a6bd53b27fc98eb8d6173dffdb23",
+    "references/pencil-workflow.md": "a35d19e857325b8bbd376a6884b7b22bfe38a4cfa5443b7008af11abdbe05360",
+    "references/project-contracts.md": "e7d5ee5e6b43fc6fd5f21941ff22a2bd2513ba3dfe2687268ae11b3e3b4acb79",
+    "references/rsc-boundaries.md": "45fd75c24200a95ce20965c36a7f12c1e7554863232df6b822c467f9e4321905",
+    "references/tailwind-tokens.md": "d8228aadcf70b1635784990a0ebdad0e678fde6e1432d98be4f3c6432c609a55",
+    "SKILL.md": "1ba441c809ed1f4ec1b2a9677fc5271f37100b98bb990ec7e4387024528f4654",
+    "UPSTREAM-SKILL.md": "03e856c98952062f783c6ca27d454fb1979b13caa259b45012bdc0cc06e2d57e"
+  }
+}

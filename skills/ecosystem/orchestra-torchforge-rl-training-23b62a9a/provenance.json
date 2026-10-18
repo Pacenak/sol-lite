@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-torchforge-rl-training-23b62a9a",
+  "upstream_name": "torchforge-rl-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/torchforge/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api-reference.md": "ee770cb0e8c3a78f1182cbe432b146d2c68c70c057f1ff8a7ccb72496bca9078",
+    "references/troubleshooting.md": "b920cf91a912f192c14f4ab343780a6abf35932ea419481d7f373f380f379803",
+    "SKILL.md": "f6f94ea25fe6c8c2c8ba1c9e7225bcd689ba3a02d183df784417766e4a9d4cbf",
+    "UPSTREAM-SKILL.md": "809da22c47d5caadbcca9d3db7e82e227c174dbaa98f4a01cf2a678ffaffcbf0"
+  }
+}

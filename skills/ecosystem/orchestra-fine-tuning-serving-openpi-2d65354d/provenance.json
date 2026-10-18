@@ -1,0 +1,24 @@
+{
+  "name": "orchestra-fine-tuning-serving-openpi-2d65354d",
+  "upstream_name": "fine-tuning-serving-openpi",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/openpi/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/checkpoints-and-env-map.md": "b8b7ee5992c6d61ce1ca484468c9ec2dc99fe2ac970436d8e34e6dc97f06b2f5",
+    "references/config-recipes.md": "5a7d2e2e10fe70c918ad12a131d2d999fd5f6b85b4498174f0120e55a63fb3fc",
+    "references/pytorch-gotchas.md": "a528b487cdb6bcd4bd2eac55c920a63f0685eed411b69bdb1780ba5aa5bdad88",
+    "references/remote-client-pattern.md": "84406fe84904d80b29cd9bad24ace69133d3f242cdd95608d20f7ec758015161",
+    "references/training-debugging.md": "9b1c74808ffc0c0a6f62ae4d16a9b67bf4d15b6ed5625c8d6766ed0e8056823e",
+    "SKILL.md": "9bf2908852282f874c339fe56c4f835805d222e1cf6f3bc20b75349a17df1e71",
+    "UPSTREAM-SKILL.md": "60af709a253bd745330e43067b22667b932a393e65a3cde6660a25d0ffbe4742"
+  }
+}

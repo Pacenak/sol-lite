@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-persistence-mechanisms-in-window-2e0ef049",
+  "upstream_name": "hunting-for-persistence-mechanisms-in-windows",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-persistence-mechanisms-in-windows/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-persistence-mechanisms-in-windows/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-persistence-mechanisms-in-windows/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ae34fb63b55c7e6c26a0368b5c13c8e62141ac4d200a3d450b5fb853a187f817",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9a6a5ad5f9b504d993a1f967732ee69e776b3172c0b2d7987a2ed919ef17ae66",
+    "references/standards.md": "84235758b98ffa0abd7446336a11f0e24b2cbeb8de3b5d94549c6474e8b4b970",
+    "references/workflows.md": "8c26ebba8fa5220133ebe2f56447c864bb0c4139913292ba588d95b88ff3083c",
+    "scripts/agent.py": "9f7a3e0be086b162f2f799f624cba7e4d2dd91bd2daa68fe215d6cdb1c17c1e0",
+    "scripts/process.py": "c7831a44a0344930cb1ab52f0939f3f03a9d501516136210e43dbab446d016d5",
+    "SKILL.md": "ef7b5ba0d7c230a49678be2439cfd36e846e729389ef5263b31cb8153c2413b7",
+    "UPSTREAM-SKILL.md": "3c917555989ee92545d8eba93dfc301cf0ef1669b6a2071e9127f047eb2a0d36"
+  }
+}

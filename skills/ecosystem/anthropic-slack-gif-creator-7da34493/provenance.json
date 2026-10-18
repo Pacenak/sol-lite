@@ -1,0 +1,30 @@
+{
+  "name": "anthropic-slack-gif-creator-7da34493",
+  "upstream_name": "slack-gif-creator",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/slack-gif-creator/SKILL.md",
+  "license_files": [
+    "skills/slack-gif-creator/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [
+    "core/easing.py",
+    "core/frame_composer.py",
+    "core/gif_builder.py",
+    "core/validators.py"
+  ],
+  "files": {
+    "_licenses/skills/slack-gif-creator/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "core/easing.py": "60bc943449802541f0f0881a874faa7ef408aaaf0b758fde756664ada7740452",
+    "core/frame_composer.py": "a127ea8f2a58893ea10a5c7b5cab4e2010af6515adc538676eb0cc14f5a03985",
+    "core/gif_builder.py": "b6f50d738c491ee0438a2e86e897f71cdab9792494ba4605f140befb0bddbf89",
+    "core/validators.py": "56bd19e3aae05f8387d78ec8185d6098b3dc909d1fa041211753da37212528a3",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "requirements.txt": "edc7108a0c6b56183566c71ee96830f6dc791e3b41952112d9cb56b33a6bd757",
+    "SKILL.md": "78a742b2ca5034c956ae3ec46b04cfd5c641ed9ae52db00830a791422a8084cb",
+    "UPSTREAM-SKILL.md": "2efca615ce55a3edd8fc05c779068a8085816617991987e446606403cd3abb22"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-adversary-in-the-middle-phishing-0634acec",
+  "upstream_name": "performing-adversary-in-the-middle-phishing-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-adversary-in-the-middle-phishing-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-adversary-in-the-middle-phishing-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-adversary-in-the-middle-phishing-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "910a0fb9324f5feb101b4c8c47ddd3eeec15f3b2001250ea9ad00f2f7b02873c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a8e243f79a568c9c89bc18db3bd5e1d323d39086b3d8ad781c4ce6f45908f0cd",
+    "references/standards.md": "3e8bcbc422fac1c99dca0642c11fbcba232b4d49f89af099664cd12e913eae0f",
+    "references/workflows.md": "fd7edf1a73aad0087192718f747cc4906842f0df19c3cafa8704ba65ccf01488",
+    "scripts/agent.py": "31289e27bd4a5eaf12ebefee22a0b19ee777621cf42906964e12e1af16927c9b",
+    "scripts/process.py": "d7880877d3702a2e66c6c57a794382ad363961428f6eb01724b21597bad7b0fc",
+    "SKILL.md": "606f40c4155b140105d7d64b5af147726052e56be931afb0026b9dc8fbdc4815",
+    "UPSTREAM-SKILL.md": "9ea60687c480d1786c480570cc12fb7bf6159561e2b9076b7326e97946efed85"
+  }
+}

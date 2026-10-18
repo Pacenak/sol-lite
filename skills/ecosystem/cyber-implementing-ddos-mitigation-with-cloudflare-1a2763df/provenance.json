@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ddos-mitigation-with-cloudflare-1a2763df",
+  "upstream_name": "implementing-ddos-mitigation-with-cloudflare",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ddos-mitigation-with-cloudflare/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ddos-mitigation-with-cloudflare/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ddos-mitigation-with-cloudflare/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "303946583c1f876d4c9b9a368d54d663f6910adc9e5e616096c7850b8ee69eba",
+    "scripts/agent.py": "6c1113b27ac13ebed0e6128fed88cd99eb5709d7d185d195e33e933c2408513d",
+    "SKILL.md": "ab2d446a9c64cb850cb77d28b9c221b626f6ab5d315708e73295ca334a847e27",
+    "UPSTREAM-SKILL.md": "daed2fabc2e09dcac9226b7f50b8025d6f2deb40690bb2fc169dd9575192a962"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-bluetooth-low-energy-attacks-4e895a85",
+  "upstream_name": "detecting-bluetooth-low-energy-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-bluetooth-low-energy-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-bluetooth-low-energy-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-bluetooth-low-energy-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7d682beba6b849005deaf0b560c0c5aa0971cfecf30a25f034715516a602db1f",
+    "scripts/agent.py": "1832cdafe4a18a399fdd31eb6a25d9892297ca0d4e64f820df91ebdce1abb0f3",
+    "SKILL.md": "cf4589e3a6c7ac63128529ed76b350fb5cf2184877160f96802dc2d42dd30a38",
+    "UPSTREAM-SKILL.md": "c0a68882c562c82189383216e49efbc267bc7e59ed06eb15da8d0bf4dae9183b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-powershell-empire-artifacts-1727fe66",
+  "upstream_name": "analyzing-powershell-empire-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-powershell-empire-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-powershell-empire-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-powershell-empire-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ce3d8b7a298b12fe864d4f52050b0cf71476d01a864e8e8a2a24f0c87efaacf1",
+    "scripts/agent.py": "b79c860ad57d5aef81a0f0ce5a1927b2c65636b80c16102745cd6d7a9af916a9",
+    "SKILL.md": "870b9b9340ad13da4167dd3023155b42c66689a838bc5793debf89054da54f00",
+    "UPSTREAM-SKILL.md": "a0851204739b932fa4a89e022778d73bd542f7b563cd373649c04db98ceeb7fc"
+  }
+}

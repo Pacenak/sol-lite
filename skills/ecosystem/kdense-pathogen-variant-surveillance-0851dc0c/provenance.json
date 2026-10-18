@@ -1,0 +1,33 @@
+{
+  "name": "kdense-pathogen-variant-surveillance-0851dc0c",
+  "upstream_name": "pathogen-variant-surveillance",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/pathogen-variant-surveillance/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/lapis_client.py",
+    "scripts/lineage_prevalence.py",
+    "scripts/mutation_profile.py",
+    "scripts/reporting_lag.py",
+    "scripts/resolve_lineage.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/lapis-api.md": "35eecae787f25da0566b7931f321b615aa3972f2d595ab467397e1f9d021126f",
+    "references/lineage-nomenclature.md": "a58932658c6e24db355219e8a44e54d9bb6c6f32a9ec6cef58d3f979cf6dadef",
+    "references/surveillance-caveats.md": "f80fdd2f5535be667a2e243174c0ba8cbffeb7e90e3740c475522996c555429f",
+    "scripts/lapis_client.py": "d666a82327f6ed1b04ffc7aee2f53037d8204fa8052ac47e901368c2c9dd3687",
+    "scripts/lineage_prevalence.py": "8f73bc4d104d33ef7c294cdbdc3bfad7f776ed885df99d1323d734c090e65132",
+    "scripts/mutation_profile.py": "49b5ac946dd0b2d640eb510603ec198abe09e4390be91741a16d2ea0686f47dc",
+    "scripts/reporting_lag.py": "990407143d9acdb8093a2fbbf513b64e28767da04622b55fed250b3350d95239",
+    "scripts/resolve_lineage.py": "c9a51087e405f09db849e70f9383773a1d53c6ced692d68cebdc90907c320bf4",
+    "SKILL.md": "f43940f35be9e6504aabe5f1bd21d0dd90bec32ee0c351ba0409568f2050173d",
+    "UPSTREAM-SKILL.md": "95510f890a47ab2e2275832fe60e725eca34e5318dcde88b0940d9362b3ab590"
+  }
+}

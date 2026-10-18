@@ -1,0 +1,26 @@
+{
+  "name": "cyber-securing-api-gateway-with-aws-waf-afde8fb4",
+  "upstream_name": "securing-api-gateway-with-aws-waf",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-api-gateway-with-aws-waf/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-api-gateway-with-aws-waf/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-api-gateway-with-aws-waf/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d1d5a49cf34eed04af58ce8e5a20ee9c5cd6d10025bb812e303235fbbb5e2154",
+    "scripts/agent.py": "e07bab3279fff362c5f2fef3eff9d17cd1275c741b5fd0fe1518133327e3ffd0",
+    "SKILL.md": "2eb76e4d47f3642bb42886fbebc07c4cebde226a3317ecf49033a0bee1fd4ef7",
+    "UPSTREAM-SKILL.md": "e1ab5ae1b0ac170e00738acb59a1a200c08dc5d7ec7af58091796ae283b2af1f"
+  }
+}

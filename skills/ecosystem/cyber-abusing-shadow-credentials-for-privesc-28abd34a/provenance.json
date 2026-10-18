@@ -1,0 +1,27 @@
+{
+  "name": "cyber-abusing-shadow-credentials-for-privesc-28abd34a",
+  "upstream_name": "abusing-shadow-credentials-for-privesc",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/abusing-shadow-credentials-for-privesc/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/abusing-shadow-credentials-for-privesc/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/abusing-shadow-credentials-for-privesc/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d9cd8ff1db7b4e878896142f13dbc2bd69f68ab907ca1211e95cf6d13b23504c",
+    "references/standards.md": "ed1be3c65ddcbac92896b326be478ee6b403b21152fbdc8a846c99eea1c2cee5",
+    "scripts/agent.py": "b7f28227506d6f792aac2905610946e5dab88f0b5c72fb1d5be2b21700807bf8",
+    "SKILL.md": "6f0552d5f9746d6fc6b8478b54a59f3e4aaefd2885c07f938c235a246c1f5258",
+    "UPSTREAM-SKILL.md": "83ba5fe08baefaa148c0e1bee845197760729712967ff54ab2eb280ab277dad8"
+  }
+}

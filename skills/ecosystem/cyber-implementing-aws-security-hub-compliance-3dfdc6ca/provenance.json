@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-aws-security-hub-compliance-3dfdc6ca",
+  "upstream_name": "implementing-aws-security-hub-compliance",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-aws-security-hub-compliance/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-aws-security-hub-compliance/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-aws-security-hub-compliance/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a4cecdb61c8c32b72c8c1350023bc901806c4418e7210c33c7d86cbc36395905",
+    "scripts/agent.py": "4995d6529818656497dcd89627fdf18de960da9dbbe9f7ad1b20402d9334cfee",
+    "SKILL.md": "b275d385a3d58f8b9b2f0bd410bc4a4bb83435f03c65ede7d1ab4f9e787623bb",
+    "UPSTREAM-SKILL.md": "8f015dac361e6dc2c5bbe5b056e487949344f2937f047c2053c8aa0141df481a"
+  }
+}

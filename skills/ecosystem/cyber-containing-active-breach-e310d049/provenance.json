@@ -1,0 +1,26 @@
+{
+  "name": "cyber-containing-active-breach-e310d049",
+  "upstream_name": "containing-active-breach",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/containing-active-breach/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/containing-active-breach/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/containing-active-breach/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1bdead90f2975b1fd83154d3091226cc8ddced7bedda2a1962f06029b10f33af",
+    "scripts/agent.py": "bb31822c1553e9419ba94ab117d08dd84dc3b84f3886f01b2d931f09ebdb3983",
+    "SKILL.md": "0654dfa9e5d616f2e26a94efcd8068f73779d17938fec5841ea78a939372198c",
+    "UPSTREAM-SKILL.md": "3e8883aa791d03627ede727ad1aade638954169ff88d7c7243a46f6013624bdc"
+  }
+}

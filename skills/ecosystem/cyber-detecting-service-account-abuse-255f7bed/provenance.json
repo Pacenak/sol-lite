@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-service-account-abuse-255f7bed",
+  "upstream_name": "detecting-service-account-abuse",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-service-account-abuse/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-service-account-abuse/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-service-account-abuse/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1c28da4847ca3f58136a4adabddf39cb9b058c3e08503a486dd7a8ce72d39b9d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "da39531358ea6a9691e2bd9c3616eb0c43f174d888cc8fef3bd626a9d6606813",
+    "references/standards.md": "4b3197bb753fb5d0875c41626ea06121fbb64cf49a072a8e587ba29cbcf23323",
+    "references/workflows.md": "49c5187ebe61326af00d165b2b48151674aa8a11fb0f048aaf1c9b9313d03cf9",
+    "scripts/agent.py": "68b7e1a9972e5a1eb60d386a54892592890de5c424020562db641e373ff8da99",
+    "scripts/process.py": "fbc71fa9509de3a181de9970af028df25f6b52cec5329ad2bcbaff4c0844d735",
+    "SKILL.md": "206f98a3bad25c74a5f144416ef82f6feb2582b44a5a3d3bb8b306091e7d27b6",
+    "UPSTREAM-SKILL.md": "6c5ede1fff9d615c714e88c853657851389c8eb565ce45379ae4f212e1892399"
+  }
+}

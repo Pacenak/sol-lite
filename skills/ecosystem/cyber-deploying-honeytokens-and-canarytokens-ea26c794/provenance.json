@@ -1,0 +1,27 @@
+{
+  "name": "cyber-deploying-honeytokens-and-canarytokens-ea26c794",
+  "upstream_name": "deploying-honeytokens-and-canarytokens",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-honeytokens-and-canarytokens/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-honeytokens-and-canarytokens/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-honeytokens-and-canarytokens/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d88872636b124cfd36f29f443a5f261f53c9435b28a4d6a14309342f69b58465",
+    "references/standards.md": "d53f107774da2a379fde71df96c818a6c6599ef328af6cb804d34ef61d7d31a2",
+    "scripts/agent.py": "de38d1bfcf2a04408b8ee51aaf74baee0e2b55285182bdfeae982698f0b0faad",
+    "SKILL.md": "84bd9e398a5159800cd4397b89b7ffb06305ac8a163f15d544d5892cac481447",
+    "UPSTREAM-SKILL.md": "b1774ae5ebc67d781cc2316d85314e2031f792a96aa5259865ca3ad27d2cfe79"
+  }
+}

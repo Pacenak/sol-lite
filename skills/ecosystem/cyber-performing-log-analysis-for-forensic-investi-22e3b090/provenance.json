@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-log-analysis-for-forensic-investi-22e3b090",
+  "upstream_name": "performing-log-analysis-for-forensic-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-log-analysis-for-forensic-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-log-analysis-for-forensic-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-log-analysis-for-forensic-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9bdf1173d84960a7077cdd32dc5ab1067a3eec697b2b21ef1275ebc10c61a789",
+    "scripts/agent.py": "b320e2da8849d29b1add206a5568b96aea03c06a2e7e94351e986a9f9cd909f8",
+    "SKILL.md": "65f336f0cc97b89510c40149c3316112d06221e4ba6c6853f6c856ea8507542f",
+    "UPSTREAM-SKILL.md": "c1fb803d59459420b88eafa3e4231567608092084f732e280613e3fc9b61aa5e"
+  }
+}

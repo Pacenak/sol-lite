@@ -1,0 +1,19 @@
+{
+  "name": "vercel-triage-6a31dcec",
+  "upstream_name": "triage",
+  "source_id": "vercel",
+  "group": "discovery",
+  "repository": "vercel-labs/skills",
+  "commit": "13e4063a1cf913f5606d57d42ab83a86f5001e04",
+  "path": ".factory/workflows/triage/skills/triage/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+    "SKILL.md": "377acfdcb817f2a03a802a45816298e8ae59e83c447aafd1c48b022dd830736c",
+    "UPSTREAM-SKILL.md": "b538eb23a1e99eaae524032254cd8ae11fb086061123517e35eed1bd41b1c89c"
+  }
+}

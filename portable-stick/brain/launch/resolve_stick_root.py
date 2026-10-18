@@ -53,15 +53,17 @@ def _repo_if_lite(path: Path) -> Optional[Path]:
     """Return path if it looks like a PLG_Ai_Lite checkout (has pyproject.toml)."""
     try:
         p = path.resolve()
+        if not p.is_dir():
+            return None
+        if (p / "pyproject.toml").is_file():
+            return p
+        nested = p / "sol-lite-src"
+        if (nested / "pyproject.toml").is_file():
+            return nested.resolve()
     except OSError:
+        # An offline or inaccessible candidate must not prevent checking the
+        # remaining local mounts.
         return None
-    if not p.is_dir():
-        return None
-    if (p / "pyproject.toml").is_file():
-        return p
-    nested = p / "sol-lite-src"
-    if (nested / "pyproject.toml").is_file():
-        return nested.resolve()
     return None
 
 

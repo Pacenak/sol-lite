@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-csrf-attack-simulation-a1ca04c9",
+  "upstream_name": "performing-csrf-attack-simulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-csrf-attack-simulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-csrf-attack-simulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-csrf-attack-simulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "29e40bc8e98a3c66e98741ea9ca224a45f4a231913ed83f00fb2f3db4637ed91",
+    "scripts/agent.py": "d4370a1b8b1362f8752017863ffc446a662e0df659205920e2b0e48a5cdcccbf",
+    "SKILL.md": "8c5c011ef71b6275f01599bfd64cc2837f4c742b98f8ad8e7873e76b19555d91",
+    "UPSTREAM-SKILL.md": "b4e7130b8614fe1fad4fc044b9422b997900b9fb34aac909bfb9b320865a7ad2"
+  }
+}

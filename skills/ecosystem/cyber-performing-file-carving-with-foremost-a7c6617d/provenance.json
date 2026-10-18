@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-file-carving-with-foremost-a7c6617d",
+  "upstream_name": "performing-file-carving-with-foremost",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-file-carving-with-foremost/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-file-carving-with-foremost/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-file-carving-with-foremost/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "60f8cac3c94f695123b8f1b87f9bbc0431d21e05ad2795b3353f21314e759ac1",
+    "scripts/agent.py": "9ff4effa6fcacc3e04daecdb03a379592ea3933c24cd80b574e5f73f5b189aa6",
+    "SKILL.md": "2aeeec9d92de4338588c94da8100ac11684259a84e2d2b7e95087190578ffdd8",
+    "UPSTREAM-SKILL.md": "8d73b63e87dff5ee10cc19b81b79505569adabab93e471cea82697856f4ebf92"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-prefetch-files-for-execution-histo-e469fbc8",
+  "upstream_name": "analyzing-prefetch-files-for-execution-history",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-prefetch-files-for-execution-history/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-prefetch-files-for-execution-history/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-prefetch-files-for-execution-history/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "669d7ddaa66835fd233068d44d4fa7a84df5041777940e9876ee1de770a23e2e",
+    "scripts/agent.py": "e0e786e8ce4da7f8293963dd98501a7f958f4bef7c9a9e1d09adbbf3b9b8d326",
+    "SKILL.md": "ce0031f4d5fc67e8b3526ccc0904edc3335c796f22a71bf38561730a0d57ad37",
+    "UPSTREAM-SKILL.md": "fa8f47795848b543ab4ececa737b6a27a70abd5a71731ff7edea1c949c8f9173"
+  }
+}

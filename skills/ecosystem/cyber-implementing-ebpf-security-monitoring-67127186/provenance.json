@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ebpf-security-monitoring-67127186",
+  "upstream_name": "implementing-ebpf-security-monitoring",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ebpf-security-monitoring/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ebpf-security-monitoring/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ebpf-security-monitoring/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c3457e0cf208ea6b4e283acda9bf89c05ff7febf550ba76f54e7df329e75627a",
+    "scripts/agent.py": "210e0ae68e7602e0afefe45153f8ca957999a1d0244e1b53c195edbe24d6b318",
+    "SKILL.md": "97b2a62f11366cf0532e1e7d46d28fce14a931a74e22a281c49a76bd2d6c9833",
+    "UPSTREAM-SKILL.md": "edea33909bfaff032a681da486cc643e2ed234e7f59a4f97f83038611aeecb23"
+  }
+}

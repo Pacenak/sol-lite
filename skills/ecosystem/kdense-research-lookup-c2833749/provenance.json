@@ -1,0 +1,26 @@
+{
+  "name": "kdense-research-lookup-c2833749",
+  "upstream_name": "research-lookup",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/research-lookup/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT license",
+  "scripts": [
+    "scripts/manuscript_packet.py",
+    "scripts/research_lookup.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "README.md": "279299d1307e84d126f90c055d2635780ceef1478af6b3668122b14e41cf53af",
+    "references/api-contracts.md": "4df0e547770fbccabb7a31d8c68a3a81343ce4f355eb6bb2c517ec3dd6d02b6f",
+    "scripts/manuscript_packet.py": "604ab0e92b6ba62de10f7a4c3bc52247a5e86e28d9e26c07fb49d215302f91cf",
+    "scripts/research_lookup.py": "626cdcd4a89f4c96ed4c117381612872fa5d65f2e1b8a5b6cbef69d5c36b9015",
+    "SKILL.md": "a1d922daa8e6822bcef7356ef36a0ef7f6f93b2862fcbdeb74ae72f35848b714",
+    "UPSTREAM-SKILL.md": "8da1618350bf3434e4569a180a15b7241a50118ee9b79bccc514fa1bf3b4a102"
+  }
+}

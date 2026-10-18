@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-lnk-file-and-jump-list-artifacts-4b5f4bb7",
+  "upstream_name": "analyzing-lnk-file-and-jump-list-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-lnk-file-and-jump-list-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-lnk-file-and-jump-list-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-lnk-file-and-jump-list-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "16d769814835eb3a8aede460e41082ac9758e4d73d3d7d269361a8288e0ea241",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d6743023d48956f6aa32e0af57080c5b4be67ab08487be4fd929a4d9e16371e1",
+    "references/standards.md": "2c6fc5ff2a8e9c422c9ce5dea82c16ef6f662df700e63a0b66a5c2eb55be973c",
+    "references/workflows.md": "d22f9769a3082ca4bbe4765838d5a720a15fdc1a9e8a26ff57f3b5bd8282658b",
+    "scripts/agent.py": "b3734f21927e0dcec81efc536b1275b5cacbacc83389e6ceaeed4a73b1782832",
+    "scripts/process.py": "848993080654ea0601a971b8e4a8b601a22bd9a2a316a162a44194227687895a",
+    "SKILL.md": "ab4ffd9e2a2998f9229d708f65fbac5e860d403bb941df6484607ec77c348024",
+    "UPSTREAM-SKILL.md": "e52cda9d1646f4cbaf81f9b695430694310b6fd2484271af0c72b50d1a101e24"
+  }
+}

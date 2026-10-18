@@ -22,7 +22,9 @@ def test_help_documents_enter_to_send_and_shift_enter_to_edit():
     output = console.file.getvalue()
     assert "Shift+Enter" in output
     assert "Shift+Return" in output
-    assert "approval popup" in output
+    # Rich wraps the help table according to terminal width.
+    assert "approval" in output
+    assert "popup" in output
 
 
 def test_terminal_ui_applies_theme_to_supplied_console():

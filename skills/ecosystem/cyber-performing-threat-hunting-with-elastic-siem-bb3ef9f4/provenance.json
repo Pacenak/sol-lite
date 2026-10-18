@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-threat-hunting-with-elastic-siem-bb3ef9f4",
+  "upstream_name": "performing-threat-hunting-with-elastic-siem",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-threat-hunting-with-elastic-siem/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-threat-hunting-with-elastic-siem/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-threat-hunting-with-elastic-siem/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2b0e0a76b9a727b55085f5ae6ff39731dd2e9f752d12a93981cdfc23cf921f86",
+    "scripts/agent.py": "f4043899b25ad69900fce9355a5fce21b5594c858435a11b8c3fee67a803c982",
+    "SKILL.md": "427af3653a1d95bb7e17493bc14f0a25f9a595c32f913487523b6cd4743048ad",
+    "UPSTREAM-SKILL.md": "5d51cae4eca2dee33f994822bff621fa03fc614e8bbcac09e06af554e313c39f"
+  }
+}

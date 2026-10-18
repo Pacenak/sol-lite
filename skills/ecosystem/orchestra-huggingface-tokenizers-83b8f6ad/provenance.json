@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-huggingface-tokenizers-83b8f6ad",
+  "upstream_name": "huggingface-tokenizers",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "02-tokenization/huggingface-tokenizers/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/algorithms.md": "b26bb48dca45c57797e23ee8d3afa3c602ffbb243a47c0a9a171f3f6828a08ed",
+    "references/integration.md": "9e9c3f938424434da8e7b962ff536b2b3b4b585a0dabc5c9292a12c2a1682349",
+    "references/pipeline.md": "3fe8a70a27b1bf9aa52f6320a4da569c510fcf602e026cfc57a3f1518175cfc6",
+    "references/training.md": "9732225aacd7dacd83063a1c206e8566793fe41c628fd32f827e3489246dfcfe",
+    "SKILL.md": "57d8f49caf012bb3f1f85884bcc65780c5897afa0c1277badf7bb31d184488d8",
+    "UPSTREAM-SKILL.md": "d2ff3f9eed2cb8e15cb98e8e2398ca359325a32fd5d16ebfe0d115d7624583af"
+  }
+}

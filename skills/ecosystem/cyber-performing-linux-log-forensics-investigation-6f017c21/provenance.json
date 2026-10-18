@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-linux-log-forensics-investigation-6f017c21",
+  "upstream_name": "performing-linux-log-forensics-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-linux-log-forensics-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-linux-log-forensics-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-linux-log-forensics-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f30f6d05a8221335b68dd071d1362a797081feb0d82669d08f1b5e675b12bcb4",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "221d916e8fe164dc3699e2473ff104c8f46fbf054a245ff624bf7f2ddd2bfb79",
+    "references/standards.md": "22573fc89b499bd1811a701983f102a5b8f3974b671772369ccec5e9e0f68e39",
+    "references/workflows.md": "9e3d07220a977a121fadb7ec81eaa143a2643b432c71eefc1f2c4a1b05e7c0c3",
+    "scripts/agent.py": "1a483f2a751e43ce7d794381b73f5ed9d95c86cedbbc3e5b9fd80eb3d869f239",
+    "scripts/process.py": "d1a58edba441e5e10840f6232cd26544e00448a62f05a62812667ab1fc31db89",
+    "SKILL.md": "3ab8bebda5b5f2bf4b419cb8168881665e0c9bb3a27304a71a30183b17157138",
+    "UPSTREAM-SKILL.md": "e1bd99f89617724fc3d780409886815f31511572fe7555e9cf633da81cf436d7"
+  }
+}

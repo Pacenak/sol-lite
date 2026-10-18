@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-cloud-storage-access-patterns-14f82faa",
+  "upstream_name": "analyzing-cloud-storage-access-patterns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-cloud-storage-access-patterns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-cloud-storage-access-patterns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-cloud-storage-access-patterns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "093ab92c7e7289c169fa436432f9d9175f61c552c753a8ded5ca9784c9f6a633",
+    "scripts/agent.py": "23a3faea5665019b2dea2407b491dfd899c3583a085f3b19bab0ab7861f935b4",
+    "SKILL.md": "b27f838b7c79bde1b5b1df5729e43c996d03ef725e6c8bd019cdb436e32921f7",
+    "UPSTREAM-SKILL.md": "1ec405b4ae9da7230cb3d328238bdbf0d1a41d72e426d702ec083a91cf53a32e"
+  }
+}

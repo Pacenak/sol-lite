@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-data-loss-prevention-with-micro-25ee9f54",
+  "upstream_name": "implementing-data-loss-prevention-with-microsoft-purview",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-data-loss-prevention-with-microsoft-purview/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-data-loss-prevention-with-microsoft-purview/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-data-loss-prevention-with-microsoft-purview/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "052389e0b8c2d1d5473e6e2b2a005cba09a886e2cfa71a51882c2cdd0fc71321",
+    "scripts/agent.py": "aec9d7205073a59cea675bd846f0b5fbf9cb721ee0369d5f2506ace91d7a37fc",
+    "SKILL.md": "0fed641387affdf5f4f132b61e2525b0335f1287686e71f9e20e4882995b3d75",
+    "UPSTREAM-SKILL.md": "015f72413a5978954978e8eb1d8a12fbc89a8736aecc1a7c04a10fa650f44e41"
+  }
+}

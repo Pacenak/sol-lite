@@ -1,0 +1,31 @@
+{
+  "name": "orchestra-pytorch-fsdp2-a33c62b3",
+  "upstream_name": "pytorch-fsdp2",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "08-distributed-training/pytorch-fsdp2/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/pytorch_dcp_async_recipe.md": "1d59c50d255dca746e0b6a04286eba1ce1de55627c73230862b7038f1214fbfd",
+    "references/pytorch_dcp_overview.md": "81ae7c08701ad657c1fa2775a035631072775266b5387a8c52c74ca535be2567",
+    "references/pytorch_dcp_recipe.md": "94f7f6d50817386395a717ff14eca95e762831daeac1e5a7aa169d6f64698d7b",
+    "references/pytorch_ddp_notes.md": "cbf7ca5f02440e864b59fb5095979b9e1d3404d7e5af94f9a89da364c31b6975",
+    "references/pytorch_device_mesh_tutorial.md": "af3941d5347faa986fd8aa1ef7a5b4ca4fb8f8a89f2380fe1edea0ecc4323863",
+    "references/pytorch_examples_fsdp2.md": "1b966ff1655ed1280ec22b648b6d285f3794e4425b5301ecda941e4078c8766d",
+    "references/pytorch_fsdp1_api.md": "cf4c0228216ae4cbcff2b57b35f4c677af8d2a803ce8bc38cb8df5602e11b716",
+    "references/pytorch_fsdp2_tutorial.md": "fe062caeacddbfee7eaafd7cad83c22300ee5450f2b04db02db5696408712e2a",
+    "references/pytorch_fully_shard_api.md": "1481a3f56062c55c54f1db2b3a1828dca14224a871b67be93b9b515f49cb12f8",
+    "references/pytorch_tp_tutorial.md": "2c5857146d422427ac1ca3924aa87abd89a55d94ffb6f66a28a7d9a45c975cbb",
+    "references/ray_train_fsdp2_example.md": "12f3f3f618b9ae59361bbbb0006439f9c5132d802f5faeb900c3f9cd97f0c3a9",
+    "references/torchtitan_fsdp_notes.md": "989d3b724b551f150726e38ed17a297a1ca99b00ba9c77acc4aded3ea741e89c",
+    "SKILL.md": "26c0e0f894ad1bff1fa1ea4800213dc078f0b60b3c30b4e259c9a6aa29baeb55",
+    "UPSTREAM-SKILL.md": "b540043bd17d741840843df2f76d556d41be29c82a2acd85565ce2b1ce088a50"
+  }
+}

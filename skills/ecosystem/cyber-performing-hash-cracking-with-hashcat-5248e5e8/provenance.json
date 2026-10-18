@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-hash-cracking-with-hashcat-5248e5e8",
+  "upstream_name": "performing-hash-cracking-with-hashcat",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-hash-cracking-with-hashcat/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-hash-cracking-with-hashcat/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-hash-cracking-with-hashcat/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5d6629596012439725e56961969355c315cafa8a1094d1303509e7dc286f1b7b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "65d24ccdb80dd2a18adc2f1e0275debc59c32f0a0da8befd19d9f5fb5265dc92",
+    "references/standards.md": "4c37519f414afa09db8279c61362b8f2728ec469cbc34fde6f9f8ce321782ee6",
+    "references/workflows.md": "7592c777134a45b4458b4830df98977e7185c7a9ccca81273e9234d454bbea5a",
+    "scripts/agent.py": "a0efaa9e4c1af1e537d15e07bdd5faa7c9c815d3442077eceeaa1e17cfbdc1a3",
+    "scripts/process.py": "01b8b2dc1bbc0c93de23cb64b2506ab2785d8644dfdf46edbd98550007f33d43",
+    "SKILL.md": "5c80d05d25979d4e786c6902ab8106ea1ef399d71a08b7aaf5d6d7e273a82432",
+    "UPSTREAM-SKILL.md": "3767ea0199846558e7be06e27092c447ba386a53df03e9bd7a404ad01a3110a6"
+  }
+}

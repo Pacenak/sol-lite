@@ -1,0 +1,19 @@
+{
+  "name": "johnwayne-ui-final-polish-0d6ae3f7",
+  "upstream_name": "ui-final-polish",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/ui-final-polish/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "SKILL.md": "84edbe823b9e5155f9c5fbeb6d254f4fe9571955621bab4ffd523d98ab9507fc",
+    "UPSTREAM-SKILL.md": "16022d6063f0b110ba1a8624bf86dd5e5567e43e74dbbb187886dc1ee47a64b2"
+  }
+}

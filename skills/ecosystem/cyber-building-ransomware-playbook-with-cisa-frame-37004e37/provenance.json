@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-ransomware-playbook-with-cisa-frame-37004e37",
+  "upstream_name": "building-ransomware-playbook-with-cisa-framework",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-ransomware-playbook-with-cisa-framework/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-ransomware-playbook-with-cisa-framework/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-ransomware-playbook-with-cisa-framework/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "23fa79db979e6263bfc1a81e9d8b5d1051f01295f7f68e3a27dc18b75f21d2fe",
+    "scripts/agent.py": "f3035f8b0f47a07439c649903e619c291c790ac2615c4dadc35edee8bd61ef0c",
+    "SKILL.md": "9670bff8caa99e691a44b1650de8afb45aa25f047ef0e86b700812c900e84ee3",
+    "UPSTREAM-SKILL.md": "d3eed2727b5e7a04d9d63c3188e92fc886065d547a52571e437705afaf701977"
+  }
+}

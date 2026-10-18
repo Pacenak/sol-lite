@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-malicious-npm-packages-7509b63d",
+  "upstream_name": "detecting-malicious-npm-packages",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-malicious-npm-packages/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-malicious-npm-packages/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-malicious-npm-packages/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "53e1f8305fa88cfafa8b25a5b08a4469699cee1d6632c6f24577ccbaa707efce",
+    "references/standards.md": "2f4669830d6befb78755ab190b318a7c383133f2a6fa008fcb7adf69ba90b679",
+    "scripts/agent.py": "833bc78085a4cf27f76eccdc415deff209f48779ceb2e2297791f9416fcd23af",
+    "SKILL.md": "46b5cce70b2c240746945c6f600c7e890d9eb1c7045708e5d780b82110356cac",
+    "UPSTREAM-SKILL.md": "5cb5048c9b108a29713ed1077654d4e07583717fddec21c4d964438eabea5b6f"
+  }
+}

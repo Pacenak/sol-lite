@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-active-directory-acl-abuse-7f229be1",
+  "upstream_name": "analyzing-active-directory-acl-abuse",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-active-directory-acl-abuse/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-active-directory-acl-abuse/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-active-directory-acl-abuse/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6dee04876a1a9d7276a384894c192bc7cf4d87fdb9133222db6a2e24af31dbc6",
+    "scripts/agent.py": "8b92e319323b26479a80a0142a27d2689abcd7aac9f4370e7049e79640e457a6",
+    "SKILL.md": "9fac2c82e2a2bd1ff63987201c19d46d2b197aa1c51372ef0e2eac3797ca042f",
+    "UPSTREAM-SKILL.md": "e72ab21e752ec57aff3ecd6b612add8c18b7df0b3ace10789209eeca1c01b2d5"
+  }
+}

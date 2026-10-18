@@ -1,0 +1,27 @@
+{
+  "name": "orchestra-evolving-ai-agents-73115fa8",
+  "upstream_name": "evolving-ai-agents",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "14-agents/a-evolve/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api.md": "02a94cd9cfd66a9783cfaedd9adb514aa5b918dbca459527cfbbdb5dd72f12d8",
+    "references/architecture.md": "909cee4ffc48d96d6bc004ad02511ab8e2f4b0b243b59b6fe90e9aa6c1170b93",
+    "references/design-patterns.md": "57c245cacf1813b141e6b8b8abfe4304dfcd0b90ddd43a941effa4a695138f91",
+    "references/examples.md": "7cdb3374d2988f96a722a1c9762431da18806f8fc89f7f15eecd51c847aa1432",
+    "references/issues.md": "befe46cde9ae3bcbddfde9941f9a8e1ee982d3e8443c0c435d8ec749e7119e2e",
+    "references/README.md": "a6a94d1f5e67b2deb0b3f7473d521277617420216bd25cbd13b80df8c08c823b",
+    "references/releases.md": "b2b0cabccfde9277a1ce2090e1201047f04b566a1f53348fc185fbec36a762b3",
+    "references/tutorials.md": "2460529aa5649ab770fe1e5826b79a9a3b9dd0451ceb085531441eb5d2f58dbc",
+    "SKILL.md": "0bb20184d755dc0e43b846c69a9365f23f907e3ef3c265ffa2d5beea05987a99",
+    "UPSTREAM-SKILL.md": "6477f6efbbf3541ce3dfccf6665f5cdf6f241e47dcc3b32787e3e49b90223dbc"
+  }
+}

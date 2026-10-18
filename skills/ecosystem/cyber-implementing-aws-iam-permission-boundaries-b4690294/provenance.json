@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-aws-iam-permission-boundaries-b4690294",
+  "upstream_name": "implementing-aws-iam-permission-boundaries",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-aws-iam-permission-boundaries/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-aws-iam-permission-boundaries/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-aws-iam-permission-boundaries/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "bcb9d57e8ddc191d727b8f7b78b42796172bc98c2305a155a619e6ba3b36280b",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "eab4a60e55ac8982318a348c3eb201806f03281d835686a5503fcc5610ab2098",
+    "references/standards.md": "f69e00eba9178e53bc2b746eec19db73b1b042917304a8837c756531d8ab1e74",
+    "references/workflows.md": "6192943df128354961ea41cb8f4e60ad3bfecda8ae80573955fdff6270d66ae5",
+    "scripts/agent.py": "6de542c8c034ff2deb93803ddd3539872413aef801747adc805b5a46f2b3642d",
+    "scripts/process.py": "50d4933a5a802cec65f98ad4d382a2babe22c2bb6c5b06e7e2d4d7088bbb7dc0",
+    "SKILL.md": "f57a0f0c9138c3fa5df7f1786059197704a05fedae5a086ba2a12d6323e72555",
+    "UPSTREAM-SKILL.md": "34782c3ee4625457cc5bbcbfcbb89c604410f1bb3695a2da2687cfb132c1f81b"
+  }
+}

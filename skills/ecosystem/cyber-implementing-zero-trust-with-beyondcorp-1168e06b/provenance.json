@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-zero-trust-with-beyondcorp-1168e06b",
+  "upstream_name": "implementing-zero-trust-with-beyondcorp",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-with-beyondcorp/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-with-beyondcorp/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-with-beyondcorp/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "60fc6b9765bf39c308dfb900149ce205afe6431799f3f4c9da3352fed58b86a2",
+    "scripts/agent.py": "a2fbb82a775df95ed5e9b272cea0778365acd874a3483ff0a26fd9ac83fad93d",
+    "SKILL.md": "90b21a20c919ca6610320be6c8149fe02e9cc1e5c9353df8cc7683320eee04d9",
+    "UPSTREAM-SKILL.md": "c9d06c3147941625f07ecfefada372dd8f4790175b82744e95e1dd9b178b8ac3"
+  }
+}

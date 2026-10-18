@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-taxii-server-with-opentaxii-ebff6ec3",
+  "upstream_name": "implementing-taxii-server-with-opentaxii",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-taxii-server-with-opentaxii/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-taxii-server-with-opentaxii/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-taxii-server-with-opentaxii/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ba86d9d17e6f60fb540fcc4e9928e1d5a90fd263481e32e034b55bcd69dc4a48",
+    "scripts/agent.py": "23d622156fcca4117fc21dac67cef90e4c256a1c3db3a602d2f8fdc828b08227",
+    "SKILL.md": "8db9c9aa7ee6dc6c814e7fb2ff359784cf2092d68223acac29b91099e6abc783",
+    "UPSTREAM-SKILL.md": "dddd582ff44c8a8aa739fc5646cb32a06c6afb345068f39b6a2215a405cbf290"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-hunting-bootkits-in-efi-system-partition-72ef463c",
+  "upstream_name": "hunting-bootkits-in-efi-system-partition",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-bootkits-in-efi-system-partition/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-bootkits-in-efi-system-partition/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-bootkits-in-efi-system-partition/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "abe366bc48b59aa28f0f10676cbb9cb50a5d0d4ebd04d7091896dc220e7cd734",
+    "references/standards.md": "9b243d9a62f96b4c231ae53272e8b093302e1be9726d7823f95223595888d6fe",
+    "scripts/agent.py": "93ed068541b2ef673e92ec60b2d7d61f765d4bcc9ff8a024c9596cf811163616",
+    "SKILL.md": "c4fb33d115fe65cfdf53b58da45727da2f5dbbc38aa26f259d9b3f84e5d66f23",
+    "UPSTREAM-SKILL.md": "bdad354aaee13f6f28531c40ef94b629b872192f308e8478e0a8c58c988c879f"
+  }
+}

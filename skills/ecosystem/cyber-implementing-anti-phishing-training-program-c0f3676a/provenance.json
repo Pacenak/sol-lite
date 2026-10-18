@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-anti-phishing-training-program-c0f3676a",
+  "upstream_name": "implementing-anti-phishing-training-program",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-anti-phishing-training-program/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-anti-phishing-training-program/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-anti-phishing-training-program/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "86975d82ada08364cdf895c0a77d7a4fe630e5dd7e5d2282aaf5db2dc3a01254",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a694a0076678a8e5e80545ba903692b34ee5545b4eeb42a1b953a7debaa81990",
+    "references/standards.md": "df879c90347dae7029231b4f4cebfe7fcdad0bd9e2d3bab10e7f57383c46c217",
+    "references/workflows.md": "79bb7280947a93d5fe0e17d25fc5c8d71b0faad39a786e4134f845cfc4c6e467",
+    "scripts/agent.py": "7d02e09dad410ba13d96e71785c9056ff87863cba9629afe9681d6d5a2fd1643",
+    "scripts/process.py": "37c135d1cd4cb3251004a0c716c55998bc3591f1a0ef24f153d792e5ca8d306f",
+    "SKILL.md": "3a090e8533075d9ffd25014c9e7d0ac07839a1803ef7cf48fe816795c7e9b9d0",
+    "UPSTREAM-SKILL.md": "c082da8787f495197df15fd9e2857d83e168ccce94a3e64ddd07781f8bdfbc94"
+  }
+}

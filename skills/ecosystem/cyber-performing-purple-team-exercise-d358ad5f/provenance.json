@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-purple-team-exercise-d358ad5f",
+  "upstream_name": "performing-purple-team-exercise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-purple-team-exercise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-purple-team-exercise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-purple-team-exercise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d806b18706d1d0d77917efacdddccdfefb52700de9e7b3139648b3515ea120d2",
+    "scripts/agent.py": "5f5582f0cc8bf04bdff6fd498a84a7ae18119f451863965e520792249f5de618",
+    "SKILL.md": "6ba4d436509e48bef84d1efc51107dc94bc54b4eba5ed0d50eaaa607b877a660",
+    "UPSTREAM-SKILL.md": "459222ccf7115347ed79fe424d16499c31c8b82fa25ea8be5463f3adcf4a1467"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-configuring-snort-ids-for-intrusion-detectio-467e3640",
+  "upstream_name": "configuring-snort-ids-for-intrusion-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-snort-ids-for-intrusion-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-snort-ids-for-intrusion-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-snort-ids-for-intrusion-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4ebd704d1728261014b3dee671a7b7250ab048d3b946a47420c18c6242a657e1",
+    "scripts/agent.py": "0a9ac29af2fab2cc759e355a8fd9b00012e91acddd50442389693ea04bb35bcb",
+    "SKILL.md": "126b3c31c09811c1e0addbb26203439c431c156a55e1879c5c187f0aafe62e2d",
+    "UPSTREAM-SKILL.md": "cd4718406daf6353b76144274df2242fa612ea4d8261528f331331d9f1db7d45"
+  }
+}

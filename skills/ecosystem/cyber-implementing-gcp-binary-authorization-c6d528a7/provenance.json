@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-gcp-binary-authorization-c6d528a7",
+  "upstream_name": "implementing-gcp-binary-authorization",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-gcp-binary-authorization/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-gcp-binary-authorization/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-gcp-binary-authorization/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1ecf103045aa5ccc33c3f388008874e5727b3bb74d4445720333f9266cba8068",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c9f43efbb6905db58bdcc76aa564760868d7e0d4c42d4069dd0a629c12977e87",
+    "references/standards.md": "f4a383655275e42e43dcd7cac2d6590c4635b8a78545c90e89544592c415e60c",
+    "references/workflows.md": "52b4df60994a96ac3dc84abc01faab4544204166801a3f50d0531ae18dab14ef",
+    "scripts/agent.py": "15fde9def333ee6772a3193f44f61f4b8182561791f3f3eb21e0e109399488e3",
+    "scripts/process.py": "c863113201cb9ea5adfa9e00c3075a17018a4512c76c9324f3d6acce60552857",
+    "SKILL.md": "bec513d2f6800be51f74ec327acf70f27d00a83728c22655c0ac32e6d907061c",
+    "UPSTREAM-SKILL.md": "3cb8b52412b606e9297033f1ce7d74bcad080bfe301ad23ff4a6e70a372a8e62"
+  }
+}

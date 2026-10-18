@@ -1,0 +1,31 @@
+{
+  "name": "cyber-prioritizing-vulnerabilities-with-cvss-scori-50e0bb8c",
+  "upstream_name": "prioritizing-vulnerabilities-with-cvss-scoring",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/prioritizing-vulnerabilities-with-cvss-scoring/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/prioritizing-vulnerabilities-with-cvss-scoring/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/prioritizing-vulnerabilities-with-cvss-scoring/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "63a88ff1ba11162374f1ceb89adcb2e1d81767eaa10dfec16ac4de3b7949edd2",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d03133256fa15145c87ed892b93e39038d77ab3a76867d4412fab130bec392e6",
+    "references/standards.md": "0f76aa5d7c61c9526d2898a9ae1ea16ac178b1ed073c78ac655a0b7cbb940b65",
+    "references/workflows.md": "08fc94dfa3dd3b24fd27cef217954d82af22ebf834503fba96c7e9a7c2da9975",
+    "scripts/agent.py": "ea64af5c06e4e09eb488e05dfdf4ca881e487139508b49e7d2e03c865cf8aed1",
+    "scripts/process.py": "aa819ebe393cf1349ae76aff6b42c4455de73550381832d2e2e2ecaf3c8add87",
+    "SKILL.md": "fe7cef6d7aefd6bd6eb00ed13fa6b4b352a4de2e1f2acbef0af102d57565603b",
+    "UPSTREAM-SKILL.md": "8848eab745f6cd850425a0bec1e14d7da9864790d034cca2b20a96131dc625c8"
+  }
+}

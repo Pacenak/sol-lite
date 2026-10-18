@@ -1,0 +1,26 @@
+{
+  "name": "cyber-deploying-decoy-files-for-ransomware-detecti-9b5bd6d9",
+  "upstream_name": "deploying-decoy-files-for-ransomware-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-decoy-files-for-ransomware-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-decoy-files-for-ransomware-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-decoy-files-for-ransomware-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "733b1d39a22ae917c12a80366495909b77cf713e991712cdad6fddda547f72e6",
+    "scripts/agent.py": "cea2f691e6173d5f6f981c2d56d43b64a999247b2628977cb60aebb3cf51e567",
+    "SKILL.md": "7f6ad1727198768f7702771287114a5fc8ac38bb35d5a146246ee9976cde50b6",
+    "UPSTREAM-SKILL.md": "ab4c9d15a796f277d98ce071fe20654a0b266bb129695f80f13f5acb4c92e65a"
+  }
+}

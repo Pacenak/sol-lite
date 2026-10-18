@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-soc-tabletop-exercise-7ba0cd5b",
+  "upstream_name": "performing-soc-tabletop-exercise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-soc-tabletop-exercise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-soc-tabletop-exercise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-soc-tabletop-exercise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6d954e39cd17dcbd248a39e035751f76aac436ccb1ab5eb4c77cc0db68d5b935",
+    "scripts/agent.py": "32ff041d9968b7952c7368b35cfa25a6515859d6f251e79b8c7f272a22274a1c",
+    "SKILL.md": "6c71b932e27913a313904bd4ad2f3f10896d2bb835f0b2826311203f5ab267e0",
+    "UPSTREAM-SKILL.md": "2a203e90eb207b23e7a09b4df58480154d139b09a6bfae4d6153c43617762051"
+  }
+}

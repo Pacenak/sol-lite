@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-network-scanning-with-ids-signatur-f56da2d9",
+  "upstream_name": "detecting-network-scanning-with-ids-signatures",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-network-scanning-with-ids-signatures/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-network-scanning-with-ids-signatures/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-network-scanning-with-ids-signatures/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "45ddfd0fec0586545645cfa753c1e11f125fb917dba77aac73d104d04e42e567",
+    "scripts/agent.py": "c421d45f6c713c4ab035a2a379117ecfd6787e519833eb63db958bf3fd43d5c8",
+    "SKILL.md": "b305c8c519e20d0284f7d8de8c547a109168312ce0c50474241a5969004c5cf2",
+    "UPSTREAM-SKILL.md": "46d7a805845699c447f06d4abce68ff1dcf42e8266d7579df7a9b11e41f4372b"
+  }
+}

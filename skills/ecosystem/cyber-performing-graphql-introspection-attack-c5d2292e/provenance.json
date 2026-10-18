@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-graphql-introspection-attack-c5d2292e",
+  "upstream_name": "performing-graphql-introspection-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-graphql-introspection-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-graphql-introspection-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-graphql-introspection-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "599df9acecef027895fb9a977d391899b1836bb774c2e88e9d2e191d44b77b4b",
+    "scripts/agent.py": "cfd9cf32009172da5a4505d6a07959f2adb730c28b1b909c8424811751fbfd71",
+    "SKILL.md": "10d1d21a1314fa1340c4d1069dc54155dfbdfed69b55d359d7205e2ec62c8643",
+    "UPSTREAM-SKILL.md": "f4682dc9765e33250430a60ab5df3add604b80d8b1ad9009715b894affc3da90"
+  }
+}

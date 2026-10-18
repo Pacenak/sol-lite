@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-threat-actor-profile-from-osint-ecc1d63d",
+  "upstream_name": "building-threat-actor-profile-from-osint",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-threat-actor-profile-from-osint/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-threat-actor-profile-from-osint/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-threat-actor-profile-from-osint/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a9213abb68d4f221d868dda2388f57ce611b1c67c462eeffe17bedb20352e21e",
+    "scripts/agent.py": "8f2e72aeeaa30cb464e5ac3fea621dd246bb6f4844fbdba6acb1b691245d7b67",
+    "SKILL.md": "7ca7f885705f5903a18deacacb394dfd34342865f5839530e83b830ad3755370",
+    "UPSTREAM-SKILL.md": "936fff120cb0c5e2c742f72919babe0b53f76087485a633bf10179078862b0ba"
+  }
+}

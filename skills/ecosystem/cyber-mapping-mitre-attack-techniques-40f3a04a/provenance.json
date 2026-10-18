@@ -1,0 +1,26 @@
+{
+  "name": "cyber-mapping-mitre-attack-techniques-40f3a04a",
+  "upstream_name": "mapping-mitre-attack-techniques",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/mapping-mitre-attack-techniques/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/mapping-mitre-attack-techniques/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/mapping-mitre-attack-techniques/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b238fc5f5d9557cb13bbc4bc52c89d14c25b4908a7f33b2fb68d0896f32b6c44",
+    "scripts/agent.py": "41321405b16324e8e9191043b5c199442fb988b5eba738a1f2a1ef29594851a8",
+    "SKILL.md": "6d08bdf4d3695fc082368cc8ccbb738b06f72541bd7cc18af84002f09594a3e3",
+    "UPSTREAM-SKILL.md": "4519a862b814c40385deb42f358a23cce6db4f2b04c2ccb18c23a48fe48feee3"
+  }
+}

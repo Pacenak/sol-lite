@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-clickjacking-attack-test-5cd1baf7",
+  "upstream_name": "performing-clickjacking-attack-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-clickjacking-attack-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-clickjacking-attack-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-clickjacking-attack-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "52782e6022d3df30179edc6ee6f525a94fdab61b879cff3fb2027c61896aca88",
+    "scripts/agent.py": "c0c51c59a4d1cf5859e1fe40bb37cbfb96c7ff30264982cdcb863f5fa1096a4e",
+    "SKILL.md": "e01792babf4a53deb57d75f0785aa95293372e5cb4e1a5de893331e7f77d4779",
+    "UPSTREAM-SKILL.md": "19f23db7c0b5d240e2b34f5e7f917db68847c7582073cf81fd967035215c8667"
+  }
+}

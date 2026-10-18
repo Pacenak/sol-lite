@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-windows-prefetch-with-python-e7d402be",
+  "upstream_name": "analyzing-windows-prefetch-with-python",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-windows-prefetch-with-python/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-windows-prefetch-with-python/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-windows-prefetch-with-python/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7454130469cf144835a4e925a5033c3bed20eff9f7d70f1f8ddb46dce10c6a36",
+    "scripts/agent.py": "631368d5cb214bdf0d5fc35e7bf592df78ae20f054d6056b968caf1279684874",
+    "SKILL.md": "4e46ee11c75679558b0f2c975ee7098435efca698bbde22897dd23f13a6239fe",
+    "UPSTREAM-SKILL.md": "758ac842d7907c233a341a6dd5222a5c6b1924350cef047a6f93bb46ad4446f4"
+  }
+}

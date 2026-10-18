@@ -1,0 +1,31 @@
+{
+  "name": "cyber-scanning-infrastructure-with-nessus-818c4026",
+  "upstream_name": "scanning-infrastructure-with-nessus",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-infrastructure-with-nessus/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-infrastructure-with-nessus/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-infrastructure-with-nessus/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8fc5e92f7b93a11d4713d093bdb584e743116071f58a71c17fd2ae78d00283d5",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c7a2c9755a474c379c516be5aee10cb6ff5a7fa61833340875d8de26602c9cf7",
+    "references/standards.md": "f71eb2c46faf96b97cd1f566c60f5c439a5d724835f57e2a24bfa3dae1863f62",
+    "references/workflows.md": "b93ad106cfdfdf1e1bcdb4e066c57dbb5e7d43a75a1054d5bfd36b47f4b0d820",
+    "scripts/agent.py": "ce4487a3b6420a303e79978573660fc146799efe7342b9c9a293a5954fca6f79",
+    "scripts/process.py": "ca5cab7ec63c2937a9f9f4e9a60df636dc8f09f7bab86aa01432cbe364cca2a1",
+    "SKILL.md": "e3e91f250e0bfd87f8c2abdef025f0d64b512cddd8048e1c9a0c61889c23c9de",
+    "UPSTREAM-SKILL.md": "43bc1850fe299c0ba0012cec8b1aca4be602b148cc636e6f51de10d0d78620d7"
+  }
+}

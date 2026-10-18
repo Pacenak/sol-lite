@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-certificate-authority-with-opens-0b4731dd",
+  "upstream_name": "configuring-certificate-authority-with-openssl",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-certificate-authority-with-openssl/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-certificate-authority-with-openssl/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-certificate-authority-with-openssl/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "922f14a612ef00ba906547b81918022b626454c40131baf7b03ab53e13e2a319",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9412b8c5c4ae86772f0a11e91e64758c1c47544d6b4f6cb855a5e1856d81d76f",
+    "references/standards.md": "d9924b613f987c30a775f64f23c80676580dab285d928af107d1246ea7d3c0cf",
+    "references/workflows.md": "628be7f03eda07955091b1a3817fcff9cad60883b7e427e46035e53a17ba2e2a",
+    "scripts/agent.py": "b6e27694d8f2fdf68e5e42e9449729a64044765e3b01ce7ea465441d2fdcb35d",
+    "scripts/process.py": "6adeb56f6a449e41f45f0b14e9df4ddc435be81bdb1be1e817e8bc0da670d2af",
+    "SKILL.md": "6d8138ae20c2a768067c919ee0ff4eba865db769af82ae5bc3c0bdd19819090f",
+    "UPSTREAM-SKILL.md": "5f90b9d3694815f1b4a94142b3516d2fe40780b6bf63850d13a25e6cadd74ed9"
+  }
+}

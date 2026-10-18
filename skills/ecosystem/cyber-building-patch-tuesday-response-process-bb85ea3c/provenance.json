@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-patch-tuesday-response-process-bb85ea3c",
+  "upstream_name": "building-patch-tuesday-response-process",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-patch-tuesday-response-process/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-patch-tuesday-response-process/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-patch-tuesday-response-process/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e9b42c844719560d17f69e1ca9e2bc994fd051abf6c0befce516d879e9675420",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7bf5037c881f6c8f83662e8564004c0b09e3e794195550270d4e2f25163a371b",
+    "references/standards.md": "62a9acec7b15e7ea52eb8cd1637e4c024dc45c51f1a53f20688e50373d30770a",
+    "references/workflows.md": "9bbe7f5a86df37867afbc63a386da7574e6b3f6ba09bc60460a375fb65ae885a",
+    "scripts/agent.py": "fa1bc6b5385cd51d024b623c7e70c2a04c01e9666e617fc265fbe766d601df08",
+    "scripts/process.py": "d25b9115a55eaf57209a3de0006d5c70fc80eb8ffe72216bb5f25be9d159ea19",
+    "SKILL.md": "e4fb36df3e7b9f8ae69645c12afc3e35de33974754731af1fc169ce53dffaa60",
+    "UPSTREAM-SKILL.md": "2b3a73fd360d742104ef1188cef0442afc44ef0e17d724827db4c8e7b79463f7"
+  }
+}

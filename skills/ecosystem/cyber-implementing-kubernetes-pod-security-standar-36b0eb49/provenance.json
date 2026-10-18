@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-kubernetes-pod-security-standar-36b0eb49",
+  "upstream_name": "implementing-kubernetes-pod-security-standards",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-kubernetes-pod-security-standards/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-kubernetes-pod-security-standards/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-kubernetes-pod-security-standards/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "6dfd4eba659887cf2b5329d86b1e808d1e8361b7f005752863d6af8e2315093e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "98ee4d4c2ae190772ef92136dcdfc746ad8cc52aab224a7345b302928448ba0c",
+    "references/standards.md": "073d3f1d655bd2c221b7c57b1b9542a06ab47a8f0a97a3d50ae73494c79234e2",
+    "references/workflows.md": "62c16dd4e4dd83566cd2c23922a8c774369e07b1f78e03d20b7a46d578017ff3",
+    "scripts/agent.py": "cf47f956f0f4a9d47b407f77adef5fad18926e916a631e085404db6fbedd635d",
+    "scripts/process.py": "d5837d7f48a09403f31ff04199ea3270c44583c7a146c287c99e04025296e410",
+    "SKILL.md": "cc2f005c3f2f9089c442d4144a9e3dd4f022ba52cebf6cb89a0f7b90ff7abc5e",
+    "UPSTREAM-SKILL.md": "1bb0146e86dd42f683d39ab9941c1563c559e4e3253eb41746c7c16f9cde6b83"
+  }
+}

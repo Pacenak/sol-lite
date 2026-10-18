@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-rootkit-activity-6e299758",
+  "upstream_name": "detecting-rootkit-activity",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-rootkit-activity/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-rootkit-activity/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-rootkit-activity/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5a53eb6f53f651d98bf6e94bd078b5149efc74167e65856f5cf271c1219bb940",
+    "scripts/agent.py": "19b54dd3318d4d0843c02e3498b814c7095be99d09464a322aab4b763d7d635c",
+    "SKILL.md": "8ca985b484c0e5e6b594ec5560427a855400d9bcaf2d8a6c482bf442fc3be242",
+    "UPSTREAM-SKILL.md": "11aa001d883ee561ad408460c030ead0c15691d501432876311d9fd72615c39f"
+  }
+}

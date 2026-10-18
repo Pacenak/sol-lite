@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-sentence-transformers-14e13f39",
+  "upstream_name": "sentence-transformers",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "15-rag/sentence-transformers/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/models.md": "42c87086def085aed177b0758029b429c65e67cec0018e068f0f92c958836590",
+    "SKILL.md": "63e8012a08e349b3cd5e2b40d9832c4f82657449e4bd736deed06bb14f4566b6",
+    "UPSTREAM-SKILL.md": "fca19457be4e78f0e3689284d4fbde649ddf9af0d3bba52d2ac1fb470a4c1bd8"
+  }
+}

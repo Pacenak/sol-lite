@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-external-network-penetration-test-4379c257",
+  "upstream_name": "performing-external-network-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-external-network-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-external-network-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-external-network-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "bea361ad3ac06a20236196e8337fb5bf12de4dee012a9b472564aaf49b6862b2",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c9210f4304a6ae3019f3f813c57ded45566443eb3e57e1d51c28e65c1cd81ebd",
+    "references/standards.md": "2a38e62726bd1601177598e1d5f155f4514c1c0fca098985ff04513f882f4c51",
+    "references/workflows.md": "349a64b9276456051c6b2fff9285a0e42a49cccdfc74cbeaa730153a07060fd9",
+    "scripts/agent.py": "08651cffe9ec9eed0b0372b6eda8fb49be1d5bafaa304314f7b70d83888ee3b8",
+    "scripts/process.py": "560f54dc2f3852bc1bf419b51531e6ec46f9a48cc82582579ecdcb1baf43d2b0",
+    "SKILL.md": "66d2e18d23b559d047024550caf338fc083efafe424a5b07f76cd54b29d86b2a",
+    "UPSTREAM-SKILL.md": "7810b346bdde515919949c7c29406ef265ed08365e7087253e485e0ef1c1496c"
+  }
+}

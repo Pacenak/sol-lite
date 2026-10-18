@@ -1,0 +1,25 @@
+{
+  "name": "kdense-pycalphad-26cfc447",
+  "upstream_name": "pycalphad",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/pycalphad/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/equilibrate.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "assets/equilibrium.json": "b44ad449b3946ae6becdf20bcde0e3c5e76146cc63b385f2e88a5f80f155ddf9",
+    "assets/ideal-cu-ni.tdb": "b8e45e1b89fff906f538ec5c60a57ed4e66b67cceab7eae092cab0dae0ea14a2",
+    "references/model-and-validation.md": "05554407db7383be95728fb3f9af0149b1991e14caf72aa52087aa5bb933fac8",
+    "scripts/equilibrate.py": "f69618d7831c35a02c287ace6ea2a26d3868a785af5b97974c7271da63031885",
+    "SKILL.md": "cc62d2fdeb8669a3c314e50f56f5c83dfb9c61b4d366f3ed519cb32f7a2e0fb2",
+    "UPSTREAM-SKILL.md": "7748a9413e22566316893d882596b5c2a321e9e03de93e6097c59a003e899a24"
+  }
+}

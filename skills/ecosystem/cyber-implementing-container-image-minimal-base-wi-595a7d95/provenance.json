@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-container-image-minimal-base-wi-595a7d95",
+  "upstream_name": "implementing-container-image-minimal-base-with-distroless",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-container-image-minimal-base-with-distroless/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-container-image-minimal-base-with-distroless/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-container-image-minimal-base-with-distroless/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "65c27c2240f971926de1e8f6e8510ba9dcd632ddb5f206e2135053175634c681",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e968374289580a82bd43b2bffbf0d1390f030af0b1d6d81b78a490478f10e385",
+    "references/standards.md": "ed916006b8b085a45d546b5e0ffe0565e7ca78568b892527fbd123a05c17b9f4",
+    "references/workflows.md": "8dfef4258861684e4ecf47e956d0251259e666b2342710df7fbd9fc696efd13b",
+    "scripts/agent.py": "bff0226f1901cee8c10aab4b08216269de15b6a2769d7ed92f1bd3781cbed15b",
+    "scripts/process.py": "eaea9cf32f7d69b5d68fd56878e6cab6ca204d379bd6b66be37339c75d5a0474",
+    "SKILL.md": "c6fad38c386eaa0d6b9339e8138c71b9da0b4fa77eabbf83b2ac578cb642a2de",
+    "UPSTREAM-SKILL.md": "2346ae9ca48aabf2fbbd57eb552ccbe7ef882934377bf23faf35fd3202c28d0b"
+  }
+}

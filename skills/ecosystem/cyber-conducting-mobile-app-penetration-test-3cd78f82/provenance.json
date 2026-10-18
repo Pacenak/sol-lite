@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-mobile-app-penetration-test-3cd78f82",
+  "upstream_name": "conducting-mobile-app-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-mobile-app-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-mobile-app-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-mobile-app-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7dacfa5e6dec2822ac4027ee1dccd40d30c2664a736e23f8a668b351ce4d1d49",
+    "scripts/agent.py": "6c7b43ec72c5b91289bd8891addabfd7fdafae2b5f5822b484d0e1f1df49a739",
+    "SKILL.md": "de97c2f3de40649f2fa7eaf1c9bc46d262c47640428ba272f170de14fbb79694",
+    "UPSTREAM-SKILL.md": "88e772bdee5f51ab9dfef446d64f8c9930838e4623d84cebd91b7795ee4bfef8"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-scanning-iac-and-images-with-trivy-43a3ba9d",
+  "upstream_name": "scanning-iac-and-images-with-trivy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-iac-and-images-with-trivy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-iac-and-images-with-trivy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-iac-and-images-with-trivy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "30f543b4143eb9cb3c1aac762704998571b656a6de413f4f228c6ae0cd5a78fe",
+    "references/standards.md": "e98429ae70bfc7e413bcdb4f9596a9c4c6e56112ea496e8233646f2299895a51",
+    "scripts/agent.py": "39ed65ab610ec9c35df31503bc16fc6f669d373126d8c0bfc8f8848c7e905495",
+    "SKILL.md": "c865b04f246aff135269757024b561b1d78347767d9b4667faf64e9f380356e2",
+    "UPSTREAM-SKILL.md": "23eb97a3eb3173701ff55ed4e3d6d875baf6cee055c61d5d7628e2ab4403be4b"
+  }
+}

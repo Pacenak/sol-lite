@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-azure-defender-for-cloud-456c9d51",
+  "upstream_name": "implementing-azure-defender-for-cloud",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-azure-defender-for-cloud/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-azure-defender-for-cloud/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-azure-defender-for-cloud/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f36b9f0bbe7ba05efc888c50218a9834f9c81124ad6608e83b176cdf3170a094",
+    "scripts/agent.py": "632f66664c313bf77bba9806ea9071d08c169a585918337bcd4142aec203e775",
+    "SKILL.md": "5d94a907702c23e44648bbb79a10db77bc77808ea14f694e7a3fac3e3d95c98f",
+    "UPSTREAM-SKILL.md": "3d7d03a558b5050b856ec7e5485d4a5be6b7c5ecd12a7bd2be3dc42a2e8a8fee"
+  }
+}

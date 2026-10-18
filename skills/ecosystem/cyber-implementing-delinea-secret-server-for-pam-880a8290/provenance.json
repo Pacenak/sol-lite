@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-delinea-secret-server-for-pam-880a8290",
+  "upstream_name": "implementing-delinea-secret-server-for-pam",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-delinea-secret-server-for-pam/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-delinea-secret-server-for-pam/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-delinea-secret-server-for-pam/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "23977fedef611ef43080c35d9ecb4386562d1a5661d294102c3cb7cc6222db25",
+    "scripts/agent.py": "c5193d3bf019c3b141bdd35422db9f8aa1c2b59106cb0cbf2d267ab79b46d8f4",
+    "SKILL.md": "c05451720d9b49f344295f11a5061b70f547cc02b17c510c2dc8e9d4b87f5304",
+    "UPSTREAM-SKILL.md": "aef099796377a722694d45ee9dd9478b7518d3b740849e9674cb26ea595cdf03"
+  }
+}

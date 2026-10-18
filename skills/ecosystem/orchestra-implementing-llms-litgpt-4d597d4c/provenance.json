@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-implementing-llms-litgpt-4d597d4c",
+  "upstream_name": "implementing-llms-litgpt",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "01-model-architecture/litgpt/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/custom-models.md": "82a300cde9db77031d7371edc9c689ad6399b5f0a5b5180e0ce3ac2830265014",
+    "references/distributed-training.md": "44a74c9bf640159e3e11bd885a21c65d96c6fbd7471da802979ba75fab8ec073",
+    "references/supported-models.md": "9d8d6632fb43b0d4673ef19403a1672e0479415da46241fe24a956bcb6644a31",
+    "references/training-recipes.md": "90bad095a8c3e87f221e45c66712b26bf096cf09b233db4c8340e540aacab25e",
+    "SKILL.md": "d3742fe806f71f4a18798b3b0149d7e5819d6c97029f82d3065bea304d89078e",
+    "UPSTREAM-SKILL.md": "523f0b786c915af20a7980857e174b838e4440afe851bd16917ef69f8042adb2"
+  }
+}

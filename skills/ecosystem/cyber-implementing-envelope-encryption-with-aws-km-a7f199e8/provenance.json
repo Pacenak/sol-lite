@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-envelope-encryption-with-aws-km-a7f199e8",
+  "upstream_name": "implementing-envelope-encryption-with-aws-kms",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-envelope-encryption-with-aws-kms/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-envelope-encryption-with-aws-kms/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-envelope-encryption-with-aws-kms/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1ab459b9492ba916809bd4c931edbd03a3ed7e587bb684d26e87f9602fc254a2",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "63f1177c8672bd88d946fd6a559ace173fcb8901112f619cbe8ed2eb8a1c5e57",
+    "references/standards.md": "77f7d9e7f7a85e472855fed890b2522220116791154d2bffef5dba6b07d35849",
+    "references/workflows.md": "30d43f688405fa7efa0283ca41e84f557ecbb22cfb262e1a312f26f8d23f477c",
+    "scripts/agent.py": "08c8ab9d0377f5344c4d7fbb309c0d32f911b5245a33eb2ab8fea25d7cfbbc84",
+    "scripts/process.py": "6146dd7fd50a15db4ac679d32aef3bf58546b03b9245fe6f71cd62c05bcbc433",
+    "SKILL.md": "7296400b86166db49a65aa0e2162fb7285ff9f1eca5de90ae3d485e8450d4d8c",
+    "UPSTREAM-SKILL.md": "94e32bc9abbc75d966f489cfd91591aa1cb88f3792b01cb47c6e3dfd0e0b319c"
+  }
+}

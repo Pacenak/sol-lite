@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-ransomware-recovery-procedures-faf76545",
+  "upstream_name": "testing-ransomware-recovery-procedures",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-ransomware-recovery-procedures/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-ransomware-recovery-procedures/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-ransomware-recovery-procedures/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "973f381d289392a8ae88dbd32616bea3dc28471d22b1fe860821cc42492e111f",
+    "scripts/agent.py": "7371c2bfaf6db550845ee26a14d7d97d8f22b57170db4afbe2aa83c299edbc36",
+    "SKILL.md": "233635d6297b124591601d9e4ef4f2f153709cddae8c8baadcb38b328d35b1e7",
+    "UPSTREAM-SKILL.md": "3c7cf80e81fffcbeac952a9e70130974412372d981fa6583b9ee7a3f1b02e70e"
+  }
+}

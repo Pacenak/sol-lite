@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-dmarc-policy-enforcement-rollout-756f65b0",
+  "upstream_name": "performing-dmarc-policy-enforcement-rollout",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-dmarc-policy-enforcement-rollout/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-dmarc-policy-enforcement-rollout/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-dmarc-policy-enforcement-rollout/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "229e6338827fad107f9beb427ae8e920704a6dc26d22005b82295b0d752c1ef6",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ddc3429e2cc2cb3118fac811feef2def309db7c37f06043d84a6ae934c3e2611",
+    "references/standards.md": "f6483c531e4fff11b4c80c4f803b2123ff8f5a095c32b84c7fcf771d00d66d0a",
+    "references/workflows.md": "acb1e61036d029ce1be2454957c3feca59ae4e6b5d9456f9f8bed965061b3471",
+    "scripts/agent.py": "daffe4ac2b0031f8b642ecb030c13b27f3f42b40bf9beb1e8ca41d089824c582",
+    "scripts/process.py": "b64246ed9c56dd155cd148c64f165d348bfd1984b66104bf48b648f7647ed679",
+    "SKILL.md": "3b04def4789cfd0f10403bf6ec4042410edd9a7ee40c95d128d886ea0f39ebf4",
+    "UPSTREAM-SKILL.md": "1e385c5e155b1148aa447d5d24376b896405e5680c9c95825a516c4bd3b78338"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-evaluating-threat-intelligence-platforms-c22ba0e8",
+  "upstream_name": "evaluating-threat-intelligence-platforms",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/evaluating-threat-intelligence-platforms/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/evaluating-threat-intelligence-platforms/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/evaluating-threat-intelligence-platforms/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bf86df96f47a4b38644cf7915add17d88dc2722c4d7043db1eef2da8d35ad351",
+    "scripts/agent.py": "4afd4b0f1b4511e9c90fb438d5fcf18e2e2834d8cdaab46ceb585f0e38858a07",
+    "SKILL.md": "89c9dd63420dd349fcd979e0296f7be3cb4060bc071f2ce8b653c6750680006a",
+    "UPSTREAM-SKILL.md": "8ef52bd114eef21eddfd15f11c616bb025b5da5bd8983a948027bc1bf28d9da9"
+  }
+}

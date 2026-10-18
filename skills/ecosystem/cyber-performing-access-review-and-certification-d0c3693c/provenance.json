@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-access-review-and-certification-d0c3693c",
+  "upstream_name": "performing-access-review-and-certification",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-access-review-and-certification/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-access-review-and-certification/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-access-review-and-certification/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "390fd2a8dfea5da8d4556c43a1101eb0b2ab6f602c9950bcc1cc704ad3df9fa7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "317bbfc382f4bd01ded6dbd52c8ac475a762a573f83f2100b21bb48343836bea",
+    "references/standards.md": "281d13d258ebf905d662132093b6096a2e6f1a71cd6e16ffd58eb0bbce0238bb",
+    "references/workflows.md": "dc6f5401e3b5e2b050a80364417843810a8b56656f4f6496c60785d18ee49886",
+    "scripts/agent.py": "d07ba8312f6769ffb2df9fdcf6c96de51fded71fb9ad0bdaa02e5a5ab4c3ff74",
+    "scripts/process.py": "537d8f13770ff624998b043671ed6b2d5c8805df3c775795fd37c801a3676a94",
+    "SKILL.md": "727d020ff02850c1b608e730c3f36900bd04e230039a0eb2507167f2efae49dd",
+    "UPSTREAM-SKILL.md": "a91adc55d84d7c1779465a9f09ab06ea47ac37a2314def2e944c374592ba07a9"
+  }
+}

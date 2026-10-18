@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-network-packets-with-scapy-42226fd1",
+  "upstream_name": "analyzing-network-packets-with-scapy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-network-packets-with-scapy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-network-packets-with-scapy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-network-packets-with-scapy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e73e8ac63ad4af243195a3f3714eae3c889b8873f933867fd77ba7ad0f18ca88",
+    "scripts/agent.py": "fa522fc710008a709601f338d39e828123030f78f079ada408f066986e97bd8b",
+    "SKILL.md": "53f527d2d82ffb41e939529dfef3c88d6ce57ae99310a67ce3a41e1700e3c4d0",
+    "UPSTREAM-SKILL.md": "7a3a712799039972864c9a75f15d4058dff46994756150d7ea57af2f0a6199f1"
+  }
+}

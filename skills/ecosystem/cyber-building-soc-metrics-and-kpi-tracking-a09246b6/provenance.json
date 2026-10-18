@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-soc-metrics-and-kpi-tracking-a09246b6",
+  "upstream_name": "building-soc-metrics-and-kpi-tracking",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-soc-metrics-and-kpi-tracking/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-soc-metrics-and-kpi-tracking/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-soc-metrics-and-kpi-tracking/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "19abb50c9eb693df9ab4b243d8dcee596bdfb874e328063cdb86a0e354ee6b8d",
+    "scripts/agent.py": "08ee82bf7e79656adefc940ec0438fed7ff0856150b53bdb2734439d179d1d8a",
+    "SKILL.md": "3203cdc12ed652dceb9c68d354b6a7486122a854732171c12460e2ed50d7c4d4",
+    "UPSTREAM-SKILL.md": "cb7bb29628cb28c8402624ae76a3ed52e899488fa980f6a243efbc6aaca5ab1a"
+  }
+}

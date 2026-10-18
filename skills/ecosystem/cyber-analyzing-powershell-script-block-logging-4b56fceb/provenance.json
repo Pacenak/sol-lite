@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-powershell-script-block-logging-4b56fceb",
+  "upstream_name": "analyzing-powershell-script-block-logging",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-powershell-script-block-logging/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-powershell-script-block-logging/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-powershell-script-block-logging/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0ec418dde019a292a44990355aa558ec400a93eefcf57408cefd73bd6089a227",
+    "scripts/agent.py": "18f1dc3528b69807969a586f4881d82cd865d0f51b88063c9a39c68c266ba64a",
+    "SKILL.md": "47376df6e4dcb3358b9d4bc0f88f24384af65b79a6a24b62ec6bd0687019e439",
+    "UPSTREAM-SKILL.md": "6d2aaf3523f8ad82828365000f286f5dab23aa4c162e1850ea92fd1ceca68db4"
+  }
+}

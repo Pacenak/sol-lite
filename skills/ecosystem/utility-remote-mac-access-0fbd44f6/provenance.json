@@ -1,0 +1,19 @@
+{
+  "name": "utility-remote-mac-access-0fbd44f6",
+  "upstream_name": "remote-mac-access",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/remote-mac-access/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "SKILL.md": "f0bcff1492ff3e0722c5ca4c730b977c6979b2b9df58b8f834dbe2f4b5464f31",
+    "UPSTREAM-SKILL.md": "61971c3402f056a2b38cbce42a8f4a7520eeeb5d00ff733b06838ff02f8ca11d"
+  }
+}

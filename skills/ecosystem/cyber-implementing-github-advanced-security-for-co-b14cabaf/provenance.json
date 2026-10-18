@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-github-advanced-security-for-co-b14cabaf",
+  "upstream_name": "implementing-github-advanced-security-for-code-scanning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-github-advanced-security-for-code-scanning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-github-advanced-security-for-code-scanning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-github-advanced-security-for-code-scanning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "71e47cf5748832ca37d4118e008a835f26e7f6c04897ba641cea456c81b25bfd",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bb98e42f02f13d54ca69c5b497ec0f443175c8ec2780d0d0473eeb507becb7d3",
+    "references/standards.md": "15c0cf30a7cf78578d0e0f72e44c47634149976d1153504e7ff380e3653f437f",
+    "references/workflows.md": "d709136d6492d5a033b325e35cdc126eb654100f5f80cd64cb796f0509b80137",
+    "scripts/agent.py": "535a6cf673a15362afde678839d6302582c07a8233f5039f71fac353791276da",
+    "scripts/process.py": "0362ac87d2258938081445200c93fdc0158e47f94847222c1b6f768902b5d989",
+    "SKILL.md": "a31e17b4fddc3f3d4c6181bb3fa1560ab2c21b1c1d542467a9a366038929cbfe",
+    "UPSTREAM-SKILL.md": "003627b37b2a69fcc7f20c2935a7288e72e32c26c10c87f963adbcfbe01dba51"
+  }
+}

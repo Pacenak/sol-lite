@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ai-driven-osint-correlation-9aa30186",
+  "upstream_name": "performing-ai-driven-osint-correlation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ai-driven-osint-correlation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ai-driven-osint-correlation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ai-driven-osint-correlation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "360966ffe397e4a82cc0747ea315d538864a32a80e59b996b1602ef866c5a20c",
+    "scripts/agent.py": "5ae7b21521c6802055ca4862aa8e4fe0e95e709c851cac5ba740b28658f0fe51",
+    "SKILL.md": "58cc9fc5f5eb0f57221ce68705ec9cbf7efbadc8805b3e2d036fed4b9eff1eb7",
+    "UPSTREAM-SKILL.md": "ed5973210557a006f3f22fad26ded60ca658ee2e81c791c847fc22f64ae34ddc"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-post-incident-lessons-learned-a0cb692d",
+  "upstream_name": "conducting-post-incident-lessons-learned",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-post-incident-lessons-learned/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-post-incident-lessons-learned/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-post-incident-lessons-learned/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "16731a49feb71540e8d9cdeb16965a7bb0ed7b604a297fea1fdb9917000d0875",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "151ca09bb4787014c4361366fcd6be696c158fe130df8733ec5e8326c91f140f",
+    "references/standards.md": "7bde8135515694518eae5e3e22e5c0f03eb4dd05fac252bb3de1dae2d3896884",
+    "references/workflows.md": "612d0dbd19d18c7072d735e24a466a133a05718a1cb954d34c5eac389c5b4b56",
+    "scripts/agent.py": "39851d1f2cf78cfc6e6af925f102526ea3844630abae31746020bc661fc6c6df",
+    "scripts/process.py": "1345105b031711162a4bdfd007163b067e8a684d0379a64771e6a1300c7ac266",
+    "SKILL.md": "c737ba0ad367091f097ecb38a7a18d8255dfec1c9c0227da7c2ad400222478b3",
+    "UPSTREAM-SKILL.md": "d525f1db0c8ad7606a665a3d45d0a83d2dbf0b5273de1eb43aabcfd3c3042215"
+  }
+}

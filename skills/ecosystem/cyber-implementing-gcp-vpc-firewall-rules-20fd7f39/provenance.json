@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-gcp-vpc-firewall-rules-20fd7f39",
+  "upstream_name": "implementing-gcp-vpc-firewall-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-gcp-vpc-firewall-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-gcp-vpc-firewall-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-gcp-vpc-firewall-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2b20ea242211c2d19bf888edf8587618c51ced8a2055b83a86c443950f6912ad",
+    "scripts/agent.py": "787c28c42e7fc4a677ec49357097e70c6cf6f49713772fe55969353e67eb5ccf",
+    "SKILL.md": "55d6763fb4581c91f8c02e10f3c9a4dc2a6ce0eef45f186870f4754a1c2a1b9a",
+    "UPSTREAM-SKILL.md": "eb461369b3a548573bc660eec88bd3afb248e79b7105fbf06886a2e2761d2578"
+  }
+}

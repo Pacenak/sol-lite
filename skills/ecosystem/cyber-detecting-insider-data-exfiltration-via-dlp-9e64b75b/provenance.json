@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-insider-data-exfiltration-via-dlp-9e64b75b",
+  "upstream_name": "detecting-insider-data-exfiltration-via-dlp",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-insider-data-exfiltration-via-dlp/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-insider-data-exfiltration-via-dlp/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-insider-data-exfiltration-via-dlp/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bba476d5030192640af91cc3485ecc3f261952bf00a5cbcfb162c9145d2b68d1",
+    "scripts/agent.py": "8cb60c869f2ec791d8ed3a0c839a0170fa676012a1978ff9987861cdc4c9ffd3",
+    "SKILL.md": "5a1943669dfb72a31e83291b556d21538253d47e79f61f36bbd33b8d86b21804",
+    "UPSTREAM-SKILL.md": "65b664a335c1f543d5661a01c7613451f45042eb4bb73df41f3f9e569840babf"
+  }
+}

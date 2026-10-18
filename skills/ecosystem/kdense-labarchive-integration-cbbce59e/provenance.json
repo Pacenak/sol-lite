@@ -1,0 +1,30 @@
+{
+  "name": "kdense-labarchive-integration-cbbce59e",
+  "upstream_name": "labarchive-integration",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/labarchive-integration/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/entry_operations.py",
+    "scripts/notebook_operations.py",
+    "scripts/setup_config.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/api_reference.md": "7aeaa4726aa7dbe0a8195ec09f09d0294813d48dff43a43bd09575a91f00d21c",
+    "references/authentication_guide.md": "d3973a022aa0979fd4da876b5bcd10875c925dce0a67123062bb4dba7a295c39",
+    "references/integrations.md": "25214f7a5e7c33b92e08997876122c751e70133adfde468741fbc842b00ef3c7",
+    "references/sources.md": "c1077feba4ac9057ce8bc17caf0eb2c716ccfbde66b7d26b36ffa947265650b9",
+    "scripts/entry_operations.py": "5bc0ebbe779d10b53198b420dff7a6f1d366cbc92ef5d1882601b8e93f9f2f5a",
+    "scripts/notebook_operations.py": "b3c3c12202a844ffe221c0b426ef3e3b89a00c25adba62d7b4b9df48d1f40a57",
+    "scripts/setup_config.py": "56bed2ebc09f12457aa1b69e982d030994af45cc059fe03426fcdd38acf34143",
+    "SKILL.md": "18af7967fab3004e2323e8164d971c7c3a3e5a8d79c75d351275eaef69c8659c",
+    "UPSTREAM-SKILL.md": "dcc452099ec0c4db3bf7aa0417bfeb70b14d249650be316b67f4f495461d1c0a"
+  }
+}

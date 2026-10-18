@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-windows-lnk-files-for-artifacts-0cc91259",
+  "upstream_name": "analyzing-windows-lnk-files-for-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-windows-lnk-files-for-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-windows-lnk-files-for-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-windows-lnk-files-for-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0c4f4a0c3627b35d87c7d5205f9eed51eaa476d0964bb683df44264841993e21",
+    "scripts/agent.py": "d84f46ce784c081d4bb7199f234935bc3b7f6a7586b78cc04bc061578271aefd",
+    "SKILL.md": "450a74337502e42116c2dac785bd8e0d29fce66434ee7d34e625afee61280487",
+    "UPSTREAM-SKILL.md": "a104a8f1f2b285d7a676f86fe7d44cd354e84e7c4dbf6187ba05d2e0dbb526e8"
+  }
+}

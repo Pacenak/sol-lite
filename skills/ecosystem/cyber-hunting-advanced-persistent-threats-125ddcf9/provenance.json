@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-advanced-persistent-threats-125ddcf9",
+  "upstream_name": "hunting-advanced-persistent-threats",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-advanced-persistent-threats/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-advanced-persistent-threats/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-advanced-persistent-threats/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f88a68666a20cb8e64f21f0d0503847378bab9d8f6befae88b7999d23e24fabd",
+    "scripts/agent.py": "0005b5b101e412cc662010303b03e43f6020b1ca5813665c06d348e7291e2e26",
+    "SKILL.md": "2e2e9a6703c8fa76b0b7d4f507095d8321442fc39e9599742a205031ebeb70b2",
+    "UPSTREAM-SKILL.md": "987cec591755d0e0ea2cc3b56c319c6adbcb2177a55dcd65ab0df99866f29287"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-credential-dumping-techniques-649976ae",
+  "upstream_name": "detecting-credential-dumping-techniques",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-credential-dumping-techniques/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-credential-dumping-techniques/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-credential-dumping-techniques/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "78b09ac5982943753d43256341067c514dfe531ad58480a7f0b33a98d1ee6072",
+    "scripts/agent.py": "1dfe62a0a5e3e4f421c36c67132ad74b0017112c2cf16e57e6dcbf0802484410",
+    "SKILL.es.md": "006f6736c50f5bd83c9a35bfa5e8a430dbb6bbe92382a975fac249747b533538",
+    "SKILL.md": "4f567a87655b8a3ace43a9d8a0db535ef0f465db56b198fe5ce11ad427637e44",
+    "UPSTREAM-SKILL.md": "303c6557ea8004d8dd47fb73171918013c4abb7d580a2de5b284d44c0400f123"
+  }
+}

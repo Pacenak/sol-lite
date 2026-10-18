@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-purdue-model-network-segmentati-fe5e581a",
+  "upstream_name": "implementing-purdue-model-network-segmentation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-purdue-model-network-segmentation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-purdue-model-network-segmentation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-purdue-model-network-segmentation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2462ac55da3b013a25579a47e78fd5a2938638152aaf0ef39b27e150d2561224",
+    "scripts/agent.py": "d6bb013021befa643150d93f7bd2c3c2436b04db76c3fb9c36c8adacc382b577",
+    "SKILL.md": "5553c4646f439e3a253222533a6861bbddf62d46d73e6612abf29cae5dbcae7b",
+    "UPSTREAM-SKILL.md": "040f94adeb994bf8628084deba15b8dbb8f286f334f7c85d4cd50067a14d8560"
+  }
+}

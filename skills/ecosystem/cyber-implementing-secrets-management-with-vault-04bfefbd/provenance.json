@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-secrets-management-with-vault-04bfefbd",
+  "upstream_name": "implementing-secrets-management-with-vault",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-secrets-management-with-vault/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-secrets-management-with-vault/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-secrets-management-with-vault/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "84a163d7722f94a3c9957510c9ff7c2b3539310666d1ca2d0391f6537d08074a",
+    "scripts/agent.py": "8137e4127e0fcb6d08091aae9ea74aa482297fe9aa271349deeabee1c6cbe80f",
+    "SKILL.md": "db98f420e6851a5bf15dfc81a6b4dc359863bd2212ff64e5c8a36981a8937902",
+    "UPSTREAM-SKILL.md": "3a29bbaa73d4e7587f017338e2eae4f024c661de7ebedfc3d9a57cb0ea134e28"
+  }
+}

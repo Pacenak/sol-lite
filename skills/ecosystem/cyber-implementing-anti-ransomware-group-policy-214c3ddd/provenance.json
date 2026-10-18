@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-anti-ransomware-group-policy-214c3ddd",
+  "upstream_name": "implementing-anti-ransomware-group-policy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-anti-ransomware-group-policy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-anti-ransomware-group-policy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-anti-ransomware-group-policy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7c5477381ff14dddaf1b59011022a6ddc7155477b033deca0cbba2db7aa030fe",
+    "scripts/agent.py": "b771d4c3f8df3987f6ddbdc10f925091e19f4d65240b3d64a755bffdad8df4bb",
+    "SKILL.md": "50241550181dcd481ed33dd36af857f5353fc1c329f4a9254fd673ae432590e0",
+    "UPSTREAM-SKILL.md": "9fe8d9e3367b8ca11053dc98bccad14977452313e562fe027d475514fb2fec71"
+  }
+}

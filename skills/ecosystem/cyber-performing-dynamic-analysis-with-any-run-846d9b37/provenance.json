@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-dynamic-analysis-with-any-run-846d9b37",
+  "upstream_name": "performing-dynamic-analysis-with-any-run",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-dynamic-analysis-with-any-run/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-dynamic-analysis-with-any-run/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-dynamic-analysis-with-any-run/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "08510c2e6a56c4ae991236976b75980df0ea82239f02337875b5e521a46cf79f",
+    "scripts/agent.py": "8a820b6c43253db5170df5bd6ca2b53ba3af24cd51573e6237d76bc3a5f5042c",
+    "SKILL.md": "137965b7abc2d14230b6167a5b1adda43044999d16f408332256030ed0372aef",
+    "UPSTREAM-SKILL.md": "a85b0c8df4dbfd6b5cf17bda8a83350f1c49ef383a43dd746dea8430e336dd80"
+  }
+}

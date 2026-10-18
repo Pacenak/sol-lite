@@ -1,0 +1,26 @@
+{
+  "name": "cyber-extracting-credentials-from-memory-dump-a034e3c2",
+  "upstream_name": "extracting-credentials-from-memory-dump",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/extracting-credentials-from-memory-dump/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/extracting-credentials-from-memory-dump/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/extracting-credentials-from-memory-dump/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b5323c720356c4742bb35bf70ee21f6e04815f4775110fd7fc2dd32900997b17",
+    "scripts/agent.py": "047c7ed12907fa06b0d22a8ee983c4afe410ed07550e2c93e6dfedd35e5e64e3",
+    "SKILL.md": "5bca85d13150987870dc19bb6d6ee37b5c23df2023ff75936c30ac7c04454d2c",
+    "UPSTREAM-SKILL.md": "8b9db9ddd2dd787585dac451cecd6ea153107581f575a2a101cad7c1cadcffa2"
+  }
+}

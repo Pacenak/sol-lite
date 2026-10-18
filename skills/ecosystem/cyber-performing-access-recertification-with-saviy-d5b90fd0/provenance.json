@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-access-recertification-with-saviy-d5b90fd0",
+  "upstream_name": "performing-access-recertification-with-saviynt",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-access-recertification-with-saviynt/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-access-recertification-with-saviynt/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-access-recertification-with-saviynt/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1d396949b4a1f7ce1ea4c292a88e537c657bd40e4874de9e9223a610dd006af7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "90e5731625f8109a53b2490d3e736884cc5b9420009697d9613d5c0596b0a6d6",
+    "references/standards.md": "75ffc54d041fe320b1cff26d7edcfb0796d4945e65f02623eaa8bd41d2d28e25",
+    "references/workflows.md": "ac77ed8894ab64f37d319af9d94d1098ea9aff2daf24f5150b46e4cabfd69809",
+    "scripts/agent.py": "4dbf88b529396565580fe61a9defb3abbc3842555e4f16d9bb6d85a46846adba",
+    "scripts/process.py": "ba394dae66b6cf157c8373a2dfa74cdeeffd6172a835965b4f8c2f271c3f4c39",
+    "SKILL.md": "3408edeb66f1c44943a9ca2b079ba40ae09fe07a42e52cb56cbbccdd62de1e1f",
+    "UPSTREAM-SKILL.md": "3ab4f729aca74a3403bbce4ada68a54684bf21263534a3cfb3c2a8e9d4d90183"
+  }
+}

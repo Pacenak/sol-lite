@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-asset-criticality-scoring-for-vul-beb04fcb",
+  "upstream_name": "performing-asset-criticality-scoring-for-vulns",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-asset-criticality-scoring-for-vulns/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-asset-criticality-scoring-for-vulns/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-asset-criticality-scoring-for-vulns/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "3e8f59b7eec85d48dfd74e4c3ac90efae0b22f33ec98c604e82d338be3e5a74e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "43ce2aebd8a12b4e1fea48d35b46b063df7661eab58a6ee4570e6e8af16a44ff",
+    "references/standards.md": "bb0c8d31fff6af4a419a4564fc40b41623d2be9810ee0b6c2355bef2dbfa0d8e",
+    "references/workflows.md": "525ef98abfc74ee399a85e754fa979cc4cbca62bb6a78f0cc854d834518062a1",
+    "scripts/agent.py": "46039498799b1d2c68a5c2e44a826f7c5a2ae74a055b44b843725fc5a002e162",
+    "scripts/process.py": "d57f76b8c06305a60e1f36de194b12671b8b3754797973ba479b9ac8c2a5a90f",
+    "SKILL.md": "7b4d93d7f4537a411fe4a9eb13554539ddaaaa03a545dc898fcb265ae5feaa91",
+    "UPSTREAM-SKILL.md": "0d9e963d1a06d790a93998981c95b2a3460487a9558330d4ad0256ab843e76ad"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-gguf-quantization-fba85b21",
+  "upstream_name": "gguf-quantization",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/gguf/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "ee7ed3b7c06b393b85109d5aa4816cf7d6e6fd2f0a8fdbb90db5eb03ad301f88",
+    "references/troubleshooting.md": "a83f9df40a6db7857b4b3ce3a982da7e939680ee89079170d4d258392804e09c",
+    "SKILL.md": "46a0aa27ce9b0a41c0a048286bee41b0e085de316a19456d6ba56c43536b972c",
+    "UPSTREAM-SKILL.md": "11016e03b2b53c9a981f1ef7df96b078daf9bc929126ccf36377b86bb7025224"
+  }
+}

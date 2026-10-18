@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-cloud-native-threat-hunting-with-f64f1f17",
+  "upstream_name": "performing-cloud-native-threat-hunting-with-aws-detective",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-native-threat-hunting-with-aws-detective/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c7e92c3ef71cbe80a4032d56097853111fb8ddf9c5009af58e7592e77d724ae6",
+    "references/api-reference.md": "fe6e7eeb845d4501fb8aa52b057acadfcfefbc9f6e1878491c2ef9f3c21107ad",
+    "references/standards.md": "803c5627d7ed6b79912c8f5fa50b803c828960b114677a77e703e6c2a11092c4",
+    "references/workflows.md": "f79055b4cd40f5eeadec0d0661fbf917eef4b075835025e03e4cdb2a0a994ddc",
+    "scripts/process.py": "702839dd923c9b12578d41513e22fa03f85f9fbf8fbc4c8ed596e3297e2c7a4d",
+    "SKILL.md": "09d7396b958e28d2c821efe389a6bcad59f3b90c30d8f33f1bae13a4b048a2a2",
+    "UPSTREAM-SKILL.md": "db3bbbc55727d09b1564a209f1b23351ee03fc6e02f958ee460be8fd11f2e5bb"
+  }
+}

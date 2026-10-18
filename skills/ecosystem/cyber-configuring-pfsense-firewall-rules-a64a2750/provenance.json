@@ -1,0 +1,26 @@
+{
+  "name": "cyber-configuring-pfsense-firewall-rules-a64a2750",
+  "upstream_name": "configuring-pfsense-firewall-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-pfsense-firewall-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-pfsense-firewall-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-pfsense-firewall-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5d9070a7dad5af2132075c1220b45380ead838f33fed291a7931032e510dba97",
+    "scripts/agent.py": "1c8920fd9893fea946ac20cf88c8d4f6e8396fba40bb3555a0e95bc4531e7498",
+    "SKILL.md": "f6e84c46fa233d8235d126d48d8c1ee1a2e1dcf132f1188215ed37ddd6faf970",
+    "UPSTREAM-SKILL.md": "f7ede9358003034d19c888243b9d0d4644157a4930349e406d04050bce9e2042"
+  }
+}

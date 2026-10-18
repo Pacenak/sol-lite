@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-lateral-movement-in-network-cfc5a23c",
+  "upstream_name": "detecting-lateral-movement-in-network",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-lateral-movement-in-network/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-lateral-movement-in-network/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-lateral-movement-in-network/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "69c2c675f704133962b11874506f9df94c718e728d75de01307997e6195dc74a",
+    "scripts/agent.py": "2a0875ddf152a385855034e25c538a5f09a7705cf53fb2493e2bcd865b9f3d31",
+    "SKILL.md": "8f19cf13f2c345a4c6f08fd362de11d32b144e451859afe5c20b3717af50b207",
+    "UPSTREAM-SKILL.md": "aa815215081c43133285891a67e3cf57e6c6244eac88739fe558dca1a60c2629"
+  }
+}

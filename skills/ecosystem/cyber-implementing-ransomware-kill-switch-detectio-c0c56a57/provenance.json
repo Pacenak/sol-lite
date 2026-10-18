@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ransomware-kill-switch-detectio-c0c56a57",
+  "upstream_name": "implementing-ransomware-kill-switch-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ransomware-kill-switch-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ransomware-kill-switch-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ransomware-kill-switch-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c80e2e27ffb764ff7d8ecab0e93ef267cc901cf1101796a0a53f5724ffd125b9",
+    "scripts/agent.py": "ae21fb19f7f2c3c81f284c63a930a7b249a82f3b8662b99c41a716a39193825b",
+    "SKILL.md": "d793e1302cb0634850527c899fc91241e96e27fc41db18b2d9d137c082046324",
+    "UPSTREAM-SKILL.md": "0f1233d4aaaac3e39311259f4f1d63422bd1ccfed42531fb120a247c2a55786f"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-active-directory-penetration-test-b78d0815",
+  "upstream_name": "performing-active-directory-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-active-directory-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-active-directory-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-active-directory-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8b93883692ca2fa529d3ca3c6b175e36c324c984dc4471e91df38c6547ee15a0",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6a7461913dd1dab7527085cf527f9d54ed1ece0094c88abd804e25396c9fbae8",
+    "references/standards.md": "524522d0429f13e2365f1c528a14abe420c632a3b2b040be2d3cd067af11666e",
+    "references/workflows.md": "d0673170c78afcb6d6c1639581c2e393562061c69a23027b0253f1a5fc6dcb55",
+    "scripts/agent.py": "4700864467979a016686de234dd11fc993c39055f29abff7477bafd38063eb82",
+    "scripts/process.py": "8a29b6c102e08f7d94aa52e16340ec541edc2f99d795933b460e31a08f70dec0",
+    "SKILL.md": "f91ec2b973e476a8268352deecfc36486d5e4a5780ae50d968d9c4a5075e888e",
+    "UPSTREAM-SKILL.md": "df29dfd3f446d8dba8a24890c0c4e383b65a987748828f6ee7807a8ca8249a3d"
+  }
+}

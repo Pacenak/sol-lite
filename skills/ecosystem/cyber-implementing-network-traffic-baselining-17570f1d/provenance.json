@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-traffic-baselining-17570f1d",
+  "upstream_name": "implementing-network-traffic-baselining",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-traffic-baselining/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-traffic-baselining/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-traffic-baselining/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6b6d76d3c1b90c04d3d94f06b84231e6a7779f29a15d2b7ef5e828e2703017de",
+    "scripts/agent.py": "3cc03d0cb22ec515e67b416c0534026e5d00f9c8693e0cb731f222918947aaa0",
+    "SKILL.md": "22bcfa413b204535ba0d746304b2cdaa0a70596085262f0bee2b6a47264c1a4c",
+    "UPSTREAM-SKILL.md": "5f451d3c0be0e219787c52a3ee510c54aecb2acf2302094fcb819f268dfe80bd"
+  }
+}

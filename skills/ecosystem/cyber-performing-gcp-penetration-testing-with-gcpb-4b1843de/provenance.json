@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-gcp-penetration-testing-with-gcpb-4b1843de",
+  "upstream_name": "performing-gcp-penetration-testing-with-gcpbucketbrute",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-gcp-penetration-testing-with-gcpbucketbrute/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-gcp-penetration-testing-with-gcpbucketbrute/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-gcp-penetration-testing-with-gcpbucketbrute/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "aa47a156fd59a6b06fde59d9c34aaf5195fe7df93ef4435e886651c3d49ffe0e",
+    "scripts/agent.py": "be5c8f0c4385152dc61051d23c6cd8fc5ffa55f10576824fae4576d1953ad023",
+    "SKILL.md": "a867d42b79b1cc4e042d2e298d8584539818abc6a24a17958551176b5952e564",
+    "UPSTREAM-SKILL.md": "4c9ba116a955d07e4ba49f17eef2a4dffc2a0e874622415f004d42dd58d20ea5"
+  }
+}

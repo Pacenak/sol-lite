@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-network-forensics-with-wireshark-547a69ae",
+  "upstream_name": "performing-network-forensics-with-wireshark",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-network-forensics-with-wireshark/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-network-forensics-with-wireshark/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-network-forensics-with-wireshark/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f465dcae18ecf0ade281d91c627b69066bde26a55568d4eea213326d87a73f82",
+    "scripts/agent.py": "2dee4a9102ead2dabe010d8eaafc3910f26ee71cd1d16ae83f42420f03525e47",
+    "SKILL.md": "9c014d6bcffb7a2c4f585c3038fb386889677ab1bae98cf85ddbc8530006e0a5",
+    "UPSTREAM-SKILL.md": "8486ba859c3b36227a56e47d65a531404b77e39a9a4bba782f3e3b1412b10d78"
+  }
+}

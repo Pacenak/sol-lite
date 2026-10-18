@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-threat-emulation-with-atomic-red-7e4ae8cb",
+  "upstream_name": "performing-threat-emulation-with-atomic-red-team",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-threat-emulation-with-atomic-red-team/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-threat-emulation-with-atomic-red-team/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-threat-emulation-with-atomic-red-team/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "04eda761fcfb93f330454cc78e592d8843beca677f2102e770c46f4f01b4ceb3",
+    "scripts/agent.py": "0c46742767659b75e8078e69ee696a07fa2afa45e78d37f48c6a7cf5cba7e4c2",
+    "SKILL.md": "20348d9fc5552a361e8154e7e49f1e219a0fe1f2b5ef6a7e8a627df70e9c1bee",
+    "UPSTREAM-SKILL.md": "1f0aab02d769d9853e27ea003120fb71716d59515e146ae17290b684fcd736fe"
+  }
+}

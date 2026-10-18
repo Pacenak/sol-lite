@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-threat-modeling-with-owasp-threat-0fd4e701",
+  "upstream_name": "performing-threat-modeling-with-owasp-threat-dragon",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-threat-modeling-with-owasp-threat-dragon/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-threat-modeling-with-owasp-threat-dragon/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-threat-modeling-with-owasp-threat-dragon/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "04cad45c323d0d455ad228cc6a0886a06076a190e6f3f41cf2bf142fe1000697",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ad5f24a8628af8c20e7ca0035a725dc5f00902b9c2eac1327463d564a218a8cd",
+    "references/standards.md": "31a3cc04d99b5d356810bea4e2167d0819a6040b14c108c45f1ce1393219cad0",
+    "references/workflows.md": "69572edf48ddebd7b4f371f60e12aa9ed4caf6387a595fb8626a082371062636",
+    "scripts/agent.py": "0c010e1577fd9e3c0a9feec946d1d7695c6b1bc2fca50b6413d726b813e025a2",
+    "scripts/process.py": "1f5acf7af23cef314a9d7f2da20f56dd677cc39192d22b8ee5979081c1308250",
+    "SKILL.md": "d55338df47234c541c20f52795a19635bfa56de42e92b167f64c00e8957c9575",
+    "UPSTREAM-SKILL.md": "084a556dbf01492b066afba1f62aa884db1412ad9ba833b262288491c5ca0cf7"
+  }
+}

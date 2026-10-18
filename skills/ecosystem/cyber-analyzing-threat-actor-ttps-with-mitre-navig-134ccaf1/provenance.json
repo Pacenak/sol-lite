@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-threat-actor-ttps-with-mitre-navig-134ccaf1",
+  "upstream_name": "analyzing-threat-actor-ttps-with-mitre-navigator",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-threat-actor-ttps-with-mitre-navigator/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-threat-actor-ttps-with-mitre-navigator/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-threat-actor-ttps-with-mitre-navigator/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4719afd0186c845f6a25c6addd989c80b6e31d5e1c6a6343ee587296f71e488e",
+    "scripts/agent.py": "7e08a947d9d6ae2267f10208451805f11b75ff4790fcf83022d8b0b6fead4f56",
+    "SKILL.md": "1927c4d380f2a6188b3166827653e519c62a5ca18b64db822eb4a2e2dbca6285",
+    "UPSTREAM-SKILL.md": "0d086315113a1f751e52db1617133c5225e70a8c46e8c622be4a5915f2d8da15"
+  }
+}

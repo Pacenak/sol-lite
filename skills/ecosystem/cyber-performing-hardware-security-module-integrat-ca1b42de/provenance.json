@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-hardware-security-module-integrat-ca1b42de",
+  "upstream_name": "performing-hardware-security-module-integration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-hardware-security-module-integration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-hardware-security-module-integration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-hardware-security-module-integration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8d5002b2623e5637bb2f8ad5896be375aaa6d91125c77170580ecbd9da10890f",
+    "scripts/agent.py": "25c3cb74a1e72171eb78a2b81120bd1f1f29ecd4e08bc051e8af3aa48fe5d204",
+    "SKILL.md": "9711b8a3503f253a9074939f070b0f64e20e6bcc43b778e604366755b2b2dcb7",
+    "UPSTREAM-SKILL.md": "5ccab906df39e0c0ffd68f847be98c7b5a80135801a0fc93329827aa04d1f37a"
+  }
+}

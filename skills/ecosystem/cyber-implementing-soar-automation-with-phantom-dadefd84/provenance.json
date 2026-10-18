@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-soar-automation-with-phantom-dadefd84",
+  "upstream_name": "implementing-soar-automation-with-phantom",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-soar-automation-with-phantom/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-soar-automation-with-phantom/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-soar-automation-with-phantom/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e455bbcbcf5b720a10ac2feb127c2f85e8d6f7e0855334d78fc510e0a1b4d59b",
+    "scripts/agent.py": "d2fb02322259a703f54148ea0ee2663bd80780ca016a1fa26520f7f2f6a017e1",
+    "SKILL.md": "d090c6a39a69befd85cab0625119591dde2a72179fe617ed1833e39787e4b64d",
+    "UPSTREAM-SKILL.md": "28fe209964359f6dd4b57f46e482fc27d2f966d2796c50398108f8edaa5d5e92"
+  }
+}

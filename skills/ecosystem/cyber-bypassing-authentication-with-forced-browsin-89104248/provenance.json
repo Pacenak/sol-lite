@@ -1,0 +1,26 @@
+{
+  "name": "cyber-bypassing-authentication-with-forced-browsin-89104248",
+  "upstream_name": "bypassing-authentication-with-forced-browsing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/bypassing-authentication-with-forced-browsing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/bypassing-authentication-with-forced-browsing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/bypassing-authentication-with-forced-browsing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a2b057f8ef132d4597acc3d25e4cea0da2b13a4cf843e2061b15776697fed8fb",
+    "scripts/agent.py": "b58d72197ce6ca62df647b4e5a53ad6f42836fc388050761069684fa28ea248a",
+    "SKILL.md": "dacdd08a9e1746936b95af76f9db8476d6404a5327042535b1b8821e053c7552",
+    "UPSTREAM-SKILL.md": "1c33fc0462514f968b3ea9cb1542fdd60a6409dfe9e68c3d4628d31d28a58847"
+  }
+}

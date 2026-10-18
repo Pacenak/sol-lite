@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-endpoint-dlp-controls-f4692b36",
+  "upstream_name": "implementing-endpoint-dlp-controls",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-endpoint-dlp-controls/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-endpoint-dlp-controls/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-endpoint-dlp-controls/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "6351427cfc784083524bd60cec4e617807dae7da2597e9d6bbdf85106250e8c8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "96ab2caec2bfc94f8cbe03ae6c5666e8762ddaabae1cd0e7e115f47924cb1236",
+    "references/standards.md": "b23ff13e9ff0a9135e605c88ceb68b207f91e99b952cc8d19cb22cba7c8a3402",
+    "references/workflows.md": "999bdc05709cc8e5e0c0d3d7abb8c80ce28fa4719158a6b40a721ffab89f08a9",
+    "scripts/agent.py": "0aad351198b0e8bc1bed3a164bce32cac11cf56ee303d81d82b333a36dd8f4a2",
+    "scripts/process.py": "8312fde2451785270ae7f804c577d6310060ac8c144a49a28fb61f1a62f4e9ce",
+    "SKILL.md": "a50924f100094aaaceb341491158f4f440bf90f5190ce9843de36fecb8489a39",
+    "UPSTREAM-SKILL.md": "cabfd1e252fb32f09bb35d33c63df782099cadca0b794d5e180a716d1e5f27f9"
+  }
+}

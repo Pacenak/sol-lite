@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-dcsync-attack-in-active-directory-fd26ab4e",
+  "upstream_name": "detecting-dcsync-attack-in-active-directory",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-dcsync-attack-in-active-directory/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-dcsync-attack-in-active-directory/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-dcsync-attack-in-active-directory/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5a3d523e81de3de12a4ca628bfd20bf1dfc548bd74ae0ebd8f8b0a4c62958ab0",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "308974d465d8ff50203a724f6c82ce7d32d34ad13f2add760def86e44b1bea2f",
+    "references/standards.md": "0cd96908f7f38d0bfed05dfa749db64db5dd370301034c7c5fb492c8a0e682cb",
+    "references/workflows.md": "fe6dfe614aa570184623a9ff723737a1c1a3b47f4a91bdf931e3870780c26d7f",
+    "scripts/agent.py": "b39b38d16e109a7030f60d7c72cb6075e1d55a64e40ee06e9ea7e010f96b9118",
+    "scripts/process.py": "d9d2016a63cee09e13d4dd875bcc0775c1448260edbd1c544f3b32670a81481a",
+    "SKILL.md": "e713fcc491658aba3df6dfae8cf725e6bc2ea06460bb93873369289b39cf0b55",
+    "UPSTREAM-SKILL.md": "36923e8575fafbe0e5f3f97125c63b915e37590ee6dded35b8dfd6a007d156af"
+  }
+}

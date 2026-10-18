@@ -1,0 +1,26 @@
+{
+  "name": "cyber-automating-ioc-enrichment-899ac7de",
+  "upstream_name": "automating-ioc-enrichment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/automating-ioc-enrichment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/automating-ioc-enrichment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/automating-ioc-enrichment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c2776074100e08e58749170dc6d3d39ca6d094c26e46e3625d25a543efe67bd7",
+    "scripts/agent.py": "82b506efb37d982d06ac89e5e4ab8315571be1e64459effe23f5d75369ee4c74",
+    "SKILL.md": "ed1c7657ce27c13a26905259c114fa315a0e65810953a542df1a9c1a6c4a0419",
+    "UPSTREAM-SKILL.md": "185037aedd5f7c642f53ed3539620c0ff7833aadaa22959b5df534062488f4c4"
+  }
+}

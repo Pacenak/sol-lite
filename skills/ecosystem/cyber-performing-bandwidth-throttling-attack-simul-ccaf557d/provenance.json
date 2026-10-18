@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-bandwidth-throttling-attack-simul-ccaf557d",
+  "upstream_name": "performing-bandwidth-throttling-attack-simulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-bandwidth-throttling-attack-simulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-bandwidth-throttling-attack-simulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-bandwidth-throttling-attack-simulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "85ddda20247b9e5559e115994d3d6a37f39b1255b607914016b52d8e0cc24f96",
+    "scripts/agent.py": "ddcd22792fba37c39de0aa40aae5e1c59b6fd6ca7dbf9997157076de3ec58e6d",
+    "SKILL.md": "b536c0f4ccb4c1d29b7eea9ccab6eca59b6bc5fe740eb4c4882e155df661148a",
+    "UPSTREAM-SKILL.md": "3bd6008237174d769de89d46d79b6b14ebb6ecf20578a6e334361af7fb3c9df1"
+  }
+}

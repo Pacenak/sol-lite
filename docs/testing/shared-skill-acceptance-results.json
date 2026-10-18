@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-18",
+  "release": "2026.10.18.1",
+  "release_sha256": "bd67a1f5e0099e7163a24a6e6cfdbc29592a3c9202a2612cc8181fa7d18fe9c2",
+  "model_inventory_id": "06c1097efce0",
+  "scope": "SOL-Lite live fixture and Full deterministic native adapter contracts; no general autonomy claim",
+  "trials": [
+    {
+      "trial": "acceptance-scripted-2",
+      "results": [
+        {
+          "provider": "scripted",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": false,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "Implemented. Tests pass.",
+            "rounds": 4,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 3,
+            "tool_failures": 0,
+            "native_tool_calls": 3,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 4,
+          "prompt_tokens": 0,
+          "skill_context_chars": 0,
+          "duration_seconds": 0.15
+        },
+        {
+          "provider": "scripted",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": true,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "Implemented. Tests pass.",
+            "rounds": 4,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 3,
+            "tool_failures": 0,
+            "native_tool_calls": 3,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 4,
+          "prompt_tokens": 0,
+          "skill_context_chars": 15044,
+          "duration_seconds": 0.15
+        }
+      ]
+    },
+    {
+      "trial": "acceptance-ollama",
+      "results": [
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": false,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "## Validation Results\n\nThe fix has been successfully implemented and validated:\n\n1. **Problem Identified**: The `add(a, b)` function in src/calc.py was incorrectly implemented to perform subtraction (`a - b`) instead of addition (`a + b`).\n\n2. **Changes Made**:\n   - Fixed the `add` function to return `a + b` instead of `a - b`\n   - Added the missing `double(value)` function that uses `add(value, value)` to preserve add's public signature\n\n3. **Validation Results**: \n   - The command `python checks.py` executed successfully\n   - Output: \"fixture checks passed\"\n   - All assertions in checks.py passed:\n     - `add(3, 2) == 5` \u2713\n     - `add(-2, 2) == 0` \u2713\n     - `double(7) == 14` \u2713\n     - `double(-3) == -6` \u2713\n\nThe implementation now correctly satisfies all requirements. The `add` function performs addition as expected, and the `double` function properly doubles values by calling `add(value, value)`, preserving the public signature of the `add` function.",
+            "rounds": 6,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 5,
+            "tool_failures": 1,
+            "native_tool_calls": 5,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 6,
+          "prompt_tokens": 17874,
+          "skill_context_chars": 0,
+          "duration_seconds": 47.65
+        },
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": true,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "",
+            "rounds": 8,
+            "cancelled": false,
+            "stopped_reason": "max_tool_rounds",
+            "tool_calls": 8,
+            "tool_failures": 2,
+            "native_tool_calls": 8,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 8,
+          "prompt_tokens": 57643,
+          "skill_context_chars": 15044,
+          "duration_seconds": 29.63
+        }
+      ]
+    },
+    {
+      "trial": "acceptance-ollama-2",
+      "results": [
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": false,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "## Summary of Changes Made\n\nI have successfully fixed the broken code in `src/calc.py` according to the requirements:\n\n### Problem Analysis\n- The `add(a, b)` function was incorrectly implemented to perform subtraction (`a - b`) instead of addition (`a + b`)\n- The `double(value)` function was not implemented at all\n\n### Changes Made\n1. **Fixed the add function**: Changed `return a - b` to `return a + b` in src/calc.py\n2. **Implemented double function**: Added `double(value)` function that calls `add(value, value)` to preserve add's public signature\n\n### Verification\nThe fix has been validated by running `python checks.py` which produced the output:\n```\nfixture checks passed\n```\n\nThis confirms that all assertions in checks.py now pass:\n- `add(3, 2) == 5` \u2713\n- `add(-2, 2) == 0` \u2713  \n- `double(7) == 14` \u2713\n- `double(-3) == -6` \u2713\n\nThe implementation correctly preserves the public signature of the add function while fixing the core functionality and adding the missing double function as required.",
+            "rounds": 8,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 7,
+            "tool_failures": 1,
+            "native_tool_calls": 7,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 8,
+          "prompt_tokens": 25588,
+          "skill_context_chars": 0,
+          "duration_seconds": 25.44
+        },
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": true,
+          "oracle_passed": false,
+          "oracle_exit_code": 1,
+          "oracle_stdout": "",
+          "oracle_stderr": "Traceback (most recent call last):\n  File \"E:\\git\\plg-sol\\PLG_Ai_Lite\\.work\\acceptance-ollama-2\\curated\\checks.py\", line 1, in <module>\n    from src.calc import add, double\nImportError: cannot import name 'double' from 'src.calc' (E:\\git\\plg-sol\\PLG_Ai_Lite\\.work\\acceptance-ollama-2\\curated\\src\\calc.py)\n",
+          "result": {
+            "content": "",
+            "rounds": 4,
+            "cancelled": false,
+            "stopped_reason": "tool_not_allowed",
+            "tool_calls": 4,
+            "tool_failures": 3,
+            "native_tool_calls": 4,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 4,
+          "prompt_tokens": 18271,
+          "skill_context_chars": 6696,
+          "duration_seconds": 7.55
+        }
+      ]
+    },
+    {
+      "trial": "acceptance-ollama-3",
+      "results": [
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": false,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "## Summary\n\nI have successfully fixed the broken code in `src/calc.py`:\n\n### Changes Made:\n1. **Fixed the `add(a, b)` function** - Changed from returning `a - b` (subtraction) to `a + b` (addition)\n2. **Added the `double(value)` function** - Implemented using `add(value, value)` to preserve the public signature of `add`\n\n### Validation Results:\nThe fix has been verified by running `python checks.py`, which produced the output:\n```\nfixture checks passed\n```\n\nAll assertions in checks.py now pass:\n- `add(3, 2) == 5` \u2713\n- `add(-2, 2) == 0` \u2713  \n- `double(7) == 14` \u2713\n- `double(-3) == -6` \u2713\n\nThe implementation correctly addresses both requirements while maintaining the existing function signatures and behavior expectations.",
+            "rounds": 6,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 5,
+            "tool_failures": 0,
+            "native_tool_calls": 5,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 6,
+          "prompt_tokens": 20720,
+          "skill_context_chars": 0,
+          "duration_seconds": 20.08
+        },
+        {
+          "provider": "ollama",
+          "model": "qwen3-coder:30b",
+          "runtime": "sol-lite",
+          "curated": true,
+          "oracle_passed": true,
+          "oracle_exit_code": 0,
+          "oracle_stdout": "fixture checks passed\n",
+          "oracle_stderr": "",
+          "result": {
+            "content": "## Summary\n\nI have successfully fixed the broken code in `src/calc.py`:\n\n### Changes Made:\n1. **Fixed the `add` function**: Changed `return a - b` to `return a + b` so it properly adds its arguments\n2. **Added the `double` function**: Implemented `double(value)` using `add(value, value)` to preserve the public signature of `add`\n\n### Validation:\n- The fix was verified by running `python checks.py`\n- All assertions passed successfully:\n  - `add(3, 2) == 5` \u2713\n  - `add(-2, 2) == 0` \u2713\n  - `double(7) == 14` \u2713\n  - `double(-3) == -6` \u2713\n\nThe implementation now correctly satisfies all requirements while preserving the existing function signatures and behavior expected by the tests.",
+            "rounds": 6,
+            "cancelled": false,
+            "stopped_reason": null,
+            "tool_calls": 5,
+            "tool_failures": 0,
+            "native_tool_calls": 5,
+            "raw_tool_like_content": false,
+            "shell_command": null
+          },
+          "model_calls": 6,
+          "prompt_tokens": 31474,
+          "skill_context_chars": 6937,
+          "duration_seconds": 22.19
+        }
+      ]
+    }
+  ]
+}

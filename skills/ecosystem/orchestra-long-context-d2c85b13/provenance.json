@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-long-context-d2c85b13",
+  "upstream_name": "long-context",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "19-emerging-techniques/long-context/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/extension_methods.md": "ad0425e2b4f81269af847e98fcbab47c3577d47e356123f15d766612f611257c",
+    "references/fine_tuning.md": "1923782b44d0f4fb457a2dd9226361854b2f01cfae0297e48009641a2f52c84d",
+    "references/rope.md": "3262b97eb7b25de6e4a06f81eba934cdeb8338775a8386d1219f629e5aca02b9",
+    "SKILL.md": "8b2723470c6bcd6a60712d675e4c4506d5e026d0d40a520d193fc162007e9bbd",
+    "UPSTREAM-SKILL.md": "6426eb21a38b8a314078292b8172d889b7f2b1a226901fcda78ac4d28a98a5e7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-qdrant-vector-search-9cae44c9",
+  "upstream_name": "qdrant-vector-search",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "15-rag/qdrant/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "49f8216f976db69813901f32f4dc0b49240ec62a8336db5819eb0647d99eafa7",
+    "references/troubleshooting.md": "07fbbe57fc0b11d8004e514bc482a32bf49a168315ededfd56cf941f7ee988f1",
+    "SKILL.md": "2202e3d7eef5f19154b13f295ed8db218d1fdca5a17988622ade84491a2b6dfc",
+    "UPSTREAM-SKILL.md": "3a45489baf49c375883694ec78d6a9b283533a352e8d47cf630332faff83a231"
+  }
+}

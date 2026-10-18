@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-google-workspace-admin-security-0c6c2bf9",
+  "upstream_name": "implementing-google-workspace-admin-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-google-workspace-admin-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-google-workspace-admin-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-google-workspace-admin-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b32658397d7f1be1d962df3679ec30c8b67291d938609b8d49a286f4ae458a3e",
+    "scripts/agent.py": "21089a0b15a60ef6bbe16067f4fb04a261b43641d5575744e7db243800f0c54b",
+    "SKILL.md": "93f51cb7cfd258b4a54610259cbd1f1e859133ebabd26d6fb9e655798c247c06",
+    "UPSTREAM-SKILL.md": "efffa466510ec18efd77a7d0f32669e2a533a8f69870980bf1587513cfea8c64"
+  }
+}

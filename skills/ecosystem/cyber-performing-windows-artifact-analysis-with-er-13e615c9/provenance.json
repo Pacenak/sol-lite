@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-windows-artifact-analysis-with-er-13e615c9",
+  "upstream_name": "performing-windows-artifact-analysis-with-eric-zimmerman-tools",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-windows-artifact-analysis-with-eric-zimmerman-tools/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-windows-artifact-analysis-with-eric-zimmerman-tools/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-windows-artifact-analysis-with-eric-zimmerman-tools/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "3f1b00d7bac8316909b279690b4787b32a235a83957d8649939e53a6d09563ee",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "079a28f4efeca4ebab7d7713b7f8fe29ca202f50e3faee186823cfea11885889",
+    "references/standards.md": "2072a6cb32560586fd532b589cbfae7371b37abe11a671fbd3ae0e2a4f66d17c",
+    "references/workflows.md": "3aa04508ac343217e5cf61ec929f4c03c42d772f135fd021ec4a4e7e8d6ffb1f",
+    "scripts/agent.py": "e369ddad5154d1e9f0f3d3ef5c50f3f8c15b47752e31caaa7d3f0baa680ec0e6",
+    "scripts/process.py": "bb3882a1da047fb890c319e3ef62e1520ccf08901f71ba22cada11662b7908d4",
+    "SKILL.md": "e3ac051924d438659b8127ee843a19253158720a691fa78b1f04c80d83510a19",
+    "UPSTREAM-SKILL.md": "c214fbe5f69aa791758838f8aa0562b937835cf3e42f8e228000507445fa5a11"
+  }
+}

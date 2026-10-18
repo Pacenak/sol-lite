@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-mimecast-targeted-attack-protec-cfc6d664",
+  "upstream_name": "implementing-mimecast-targeted-attack-protection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-mimecast-targeted-attack-protection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-mimecast-targeted-attack-protection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-mimecast-targeted-attack-protection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "fa85348291a467cfd14da35b9bb0eaf19939cacedef932cf6c3e065c19790d21",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "da02dbcf4038dec1a2c29ddb9aa66b46f639604c16b78b38b8473c7971b61b4e",
+    "references/standards.md": "fe97e67fbf98279133c0303049de33088480cef47bf0f9faf9b57dede70d1859",
+    "references/workflows.md": "c00d608e0c6bb5979029b9fdbb09bb12739aa9fa272234126435db2ef5696789",
+    "scripts/agent.py": "51d4efd9464f0a55f65d6dff86ab1a8671a61fce87e06c78ead8ec1c2f479478",
+    "scripts/process.py": "f4348c00e76bae6a818d79e8c1137c6346e4aa7d0fc27bea277315991e109407",
+    "SKILL.md": "3489dda80378a368e613bf597b52e46c591583779f07a27783c12817218a6934",
+    "UPSTREAM-SKILL.md": "64339347f9172477ac65bdb7380e888006fc5b468373865dfa5622204e146bd7"
+  }
+}

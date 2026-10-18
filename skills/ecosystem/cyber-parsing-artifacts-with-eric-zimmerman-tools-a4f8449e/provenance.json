@@ -1,0 +1,27 @@
+{
+  "name": "cyber-parsing-artifacts-with-eric-zimmerman-tools-a4f8449e",
+  "upstream_name": "parsing-artifacts-with-eric-zimmerman-tools",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/parsing-artifacts-with-eric-zimmerman-tools/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/parsing-artifacts-with-eric-zimmerman-tools/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/parsing-artifacts-with-eric-zimmerman-tools/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0a8e79b7dcfe32e7cc3b5b04f907dd02b63635dc0118b9822326db4244dda258",
+    "references/standards.md": "895e08aa851dd7174219cd5d8beb5c460a5edc802f892a02558d5da1a88944ac",
+    "scripts/agent.py": "9c575a1db91f260926c7a540b24f77acf911aa738495562f901df0208f634aae",
+    "SKILL.md": "56b18bc6d7d282016424f1c8deb8b040434895d8006d6190bec8923a906c94b7",
+    "UPSTREAM-SKILL.md": "dd4a0cc46223c8e3ac6d482495898f24c24a0bda01bd4a4f525a589e79605817"
+  }
+}

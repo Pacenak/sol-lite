@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-sigstore-for-software-signing-dd59b0e6",
+  "upstream_name": "implementing-sigstore-for-software-signing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-sigstore-for-software-signing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-sigstore-for-software-signing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-sigstore-for-software-signing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a53145df205618e7dbbeb24e32726ad9ba51b43fff47ed6fd58f3d9c3958e701",
+    "scripts/agent.py": "257375e1073153ddd397c2e473f6d5888201f688ff8101fabdcae53e8ad0659d",
+    "SKILL.md": "b0ab90d949847cff21fee7af6918f0fff2b8f2c1945d864e804566cfa931ef95",
+    "UPSTREAM-SKILL.md": "42380174d29d94e86bd3d0436fdd29ac38cb002365492115bda8e21fd49c78f8"
+  }
+}

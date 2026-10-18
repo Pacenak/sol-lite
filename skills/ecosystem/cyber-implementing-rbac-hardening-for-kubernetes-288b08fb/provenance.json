@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-rbac-hardening-for-kubernetes-288b08fb",
+  "upstream_name": "implementing-rbac-hardening-for-kubernetes",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-rbac-hardening-for-kubernetes/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-rbac-hardening-for-kubernetes/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-rbac-hardening-for-kubernetes/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0106fafc21d088cb45f971d99418df6ed3afa3fe65a5afcf814e82930cdd1a50",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3ad8ef86067f600bdc86768555c2e5e2630c45ec1665acd3a83c1887780c7d2f",
+    "references/standards.md": "be9616374d2f5e92c3145041bfeb6552a461f9def4bcaf67d7f2ffa1043c57e3",
+    "references/workflows.md": "c71b00c0339d17f9ab0dd15f9ba1d069331a4eb8ec35f40030bb99cd3e044f15",
+    "scripts/agent.py": "10047e4d90403e96e466e4136d4866a0eea861b82999e1a79b357d70bbb9b8fd",
+    "scripts/process.py": "3ad2c7bfd2abf11f15e0fadab7d94a5f91cd33ba2f4a4761edcb5f8be2a60e81",
+    "SKILL.md": "1fb39e9a7eac52b19e0354fbc35ae55b2d3d63bb8dd003b0293826611db7f2ea",
+    "UPSTREAM-SKILL.md": "8da4e2b2c6e235a652e821fb69852355dc58547d4f29f0543493a3cf5a7ef103"
+  }
+}

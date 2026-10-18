@@ -1,0 +1,26 @@
+{
+  "name": "orchestra-autoresearch-8c19c2a1",
+  "upstream_name": "autoresearch",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "0-autoresearch-skill/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/agent-continuity.md": "8003b626868817498e7962183b9a4a415143d92cae3d88ac35c0f658acd6e595",
+    "references/progress-reporting.md": "f57fbd191618f3911b99fa0a68a038553e222201857b4f0bd5bd32cb524148b5",
+    "references/skill-routing.md": "a64f3877b4c0515ddcd5401a9eb4683824f4f9c0e9c010cee360a5409bd4e734",
+    "SKILL.md": "a5ed925287ac9ad2004c54e91c00345022b26cc8c1a895a4fac189b19c35fee5",
+    "templates/findings.md": "f81f7f63ec2f962796a2e28dbd1bf256dcef683000e1dab513296f0e8d9f79f2",
+    "templates/progress-presentation.html": "40034b84dccfefffca74244abdc12b8376264b31749e7792bf683b2c5df9e175",
+    "templates/research-log.md": "975a85c5d90897718d3542560b1fe40516a0dde2521b5136e567769cc2dfdef5",
+    "templates/research-state.yaml": "46aded613c427052c1e5f1faa8f2490873f11b70e4f2028be05fa2d22e03fa9c",
+    "UPSTREAM-SKILL.md": "b7ca0d7a6e905da85a8b494d3fe398ac78eaa278854f67b50a34f2b37a9a2b78"
+  }
+}

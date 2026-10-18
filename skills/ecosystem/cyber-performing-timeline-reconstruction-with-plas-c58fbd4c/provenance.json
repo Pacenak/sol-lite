@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-timeline-reconstruction-with-plas-c58fbd4c",
+  "upstream_name": "performing-timeline-reconstruction-with-plaso",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-timeline-reconstruction-with-plaso/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-timeline-reconstruction-with-plaso/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-timeline-reconstruction-with-plaso/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "440714b0bebd46dc66a30c0eb4fa36627e4ae44705ebce28775fbbcce8ee21fc",
+    "scripts/agent.py": "8c982d60c54350f5aea21fd241a30be21acc04f7692dbd73fc814cf47e87e7b9",
+    "SKILL.md": "fba36c5ebd232f4055dbc3f85e421aa70ed970a0c6087b327be62b453ec3fcc5",
+    "UPSTREAM-SKILL.md": "e06416f0f1badc4b1c437aca51b56c4036bb0cee70a06ad4c7933ada649e62cc"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-securing-helm-chart-deployments-c7b6ac77",
+  "upstream_name": "securing-helm-chart-deployments",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-helm-chart-deployments/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-helm-chart-deployments/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-helm-chart-deployments/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "06c2fc12a7d53f5d3d3340bf5d8a089c65a382ab747a03ce408f9ace598189b0",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "917f53bdb66f1d5e20dc45c03779f9cf5611db6df31fb0491222b6b86bcc551a",
+    "references/standards.md": "9eb25a0ed8919c2461c9b9b8d4d4072ad2acb06a7720291ee7b4933e47d45040",
+    "references/workflows.md": "acac2a7889215c57f027e3006a1efba9bd2a144b0f6b8ca6fb41e4e47b23addc",
+    "scripts/agent.py": "79e9c9162e4ea4a3ae183c5e5c1c670e93d313f7aebcfcb7f0e3341b3a1a3fb4",
+    "scripts/process.py": "c3a0579458f479a87fa9b2e8b8195f7295f630f02289e5ec9bc97f5943fdd6e4",
+    "SKILL.md": "b010bad223b022586c6284e771f046fc7b73e491ff9eb31dc3692842a0348e9c",
+    "UPSTREAM-SKILL.md": "2c29997e2ea373e1e508b22482ed74c2155f468af9a0e981f702e8e2da11e372"
+  }
+}

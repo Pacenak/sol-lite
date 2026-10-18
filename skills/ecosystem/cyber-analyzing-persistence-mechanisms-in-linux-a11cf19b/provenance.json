@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-persistence-mechanisms-in-linux-a11cf19b",
+  "upstream_name": "analyzing-persistence-mechanisms-in-linux",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-persistence-mechanisms-in-linux/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-persistence-mechanisms-in-linux/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-persistence-mechanisms-in-linux/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "cd6027f1c7bfb984b06512b339b818d71a8da0db59ad3f7a9ba4e51cd2349db6",
+    "scripts/agent.py": "2a8f262ea950cf86834bf23fed67063f71c670e7672346677445e4fc11e457ae",
+    "SKILL.md": "1a292095c9b3c6ed75e3ee14b7f85ae00406a1bc1bf0a8698710879a86a8aa39",
+    "UPSTREAM-SKILL.md": "de87f57bc4f98dc43f5f008c9b936b559558af213f16cfaf524f119e64b64389"
+  }
+}

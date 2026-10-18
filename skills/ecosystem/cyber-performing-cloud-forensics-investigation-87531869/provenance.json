@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-cloud-forensics-investigation-87531869",
+  "upstream_name": "performing-cloud-forensics-investigation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-forensics-investigation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-forensics-investigation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-forensics-investigation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4a5a3ae55dc64a54fd48f1cc800a5376fb02c477e5776769ee389e92266d809d",
+    "scripts/agent.py": "db9a195fd8ce51db265792ea0593d63bd11b854114a6f9a3e086401bdcfce556",
+    "SKILL.md": "6b340fb2ba4c1b9f96545b41d1a4abe033ad7d18731a508c793d7febebaf0597",
+    "UPSTREAM-SKILL.md": "c83ca8ac166ecfd82bb230b9a5ca3e95f613d11579c686d9e22c13809ffbf21e"
+  }
+}

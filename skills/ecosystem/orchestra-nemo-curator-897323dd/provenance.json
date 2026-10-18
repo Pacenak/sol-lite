@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-nemo-curator-897323dd",
+  "upstream_name": "nemo-curator",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "05-data-processing/nemo-curator/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/deduplication.md": "ca5594ba9ee317726f7f5932d89f82b7be0b2db9744e41b935f541bd13f2fa0a",
+    "references/filtering.md": "d02c933f79b140c65e88a5af1567aa47a6cbf8eed522d8eae5ef977daf346f0a",
+    "SKILL.md": "0c9a7f9e065efabe29588e7bd1d009217a58adc7244b3e99480d8c1649c5d9c3",
+    "UPSTREAM-SKILL.md": "d8586e21ecd4df1a32371f8d86746f8fbd88358f5dc8957e5dd91a473d2ab484"
+  }
+}

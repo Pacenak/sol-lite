@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-training-llms-megatron-2e819bbd",
+  "upstream_name": "training-llms-megatron",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "08-distributed-training/megatron-core/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/benchmarks.md": "24f4cc7b0f0127f5ca1242c5fb059483c918c10ae82d4e0c098a898c676e499c",
+    "references/parallelism-guide.md": "dcd04fe7b1f544f100583dc5ea147600b6acb893062db2d45f69016325aa76ff",
+    "references/production-examples.md": "e1b42188c15de2d2a1bb4300f4de8e9d06d2c6969dc52550c51bc87d3bd9e8f3",
+    "references/training-recipes.md": "03a441368247aece2fbe79129d1d6fd0a052d6765b4ac8ea0974daad428beff9",
+    "SKILL.md": "f71f39e4939c96a7cc964f731ef846856ae4c54180b857208687f23ab1b77f4d",
+    "UPSTREAM-SKILL.md": "6e69257341b9ee01b22a46905e93f6fe2339b9f8147c7f77da46be7b366b6556"
+  }
+}

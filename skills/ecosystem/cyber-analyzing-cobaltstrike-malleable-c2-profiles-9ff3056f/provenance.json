@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-cobaltstrike-malleable-c2-profiles-9ff3056f",
+  "upstream_name": "analyzing-cobaltstrike-malleable-c2-profiles",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-cobaltstrike-malleable-c2-profiles/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-cobaltstrike-malleable-c2-profiles/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-cobaltstrike-malleable-c2-profiles/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a036d47f02d9cbae279d34ce4eb47715276f5a0c71a24049f8260ab7b4ce80d8",
+    "scripts/agent.py": "270953a893d38e6877b7fb6a687fa88cb1463ba4ca14f074bd36a932d2b44d4d",
+    "SKILL.md": "2c0bfdf4ba9898cdb6c3334377d0e8b0f9403d6bd770fee11b1b7ca0d76414c7",
+    "UPSTREAM-SKILL.md": "2fe22f7360029cf203918299d976eb06739946caa323cee6b3d07e871c8fc866"
+  }
+}

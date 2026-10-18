@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-bootkit-and-rootkit-samples-0a17dd4f",
+  "upstream_name": "analyzing-bootkit-and-rootkit-samples",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-bootkit-and-rootkit-samples/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-bootkit-and-rootkit-samples/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-bootkit-and-rootkit-samples/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "237c51f000b93477446cb1e4a32eba7bc6d0f3f13ce5d5a1abae2e514f034f04",
+    "scripts/agent.py": "937fe71d3006b59dd4afb41e67b7b511dae9a54532ab48a5a967b802673de397",
+    "SKILL.md": "c86724e80981d2423ae3f664c607472c3b1d091f76b4903833fcf56b44d5b5c3",
+    "UPSTREAM-SKILL.md": "f1e225f6d60620b07aa1851d55ecfd478ff92919fc8164d0fa659007901bcf6d"
+  }
+}

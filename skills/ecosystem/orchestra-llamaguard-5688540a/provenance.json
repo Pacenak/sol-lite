@@ -1,0 +1,19 @@
+{
+  "name": "orchestra-llamaguard-5688540a",
+  "upstream_name": "llamaguard",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "07-safety-alignment/llamaguard/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "SKILL.md": "3bb2036a547e6e01ad85c7521970d509f987f84ee525ffb651d520161dbbdc99",
+    "UPSTREAM-SKILL.md": "80c5afb39cb153d82e08dca44fbd3ea75a5e950b8bef65c2c1af8bbbe9ef3992"
+  }
+}

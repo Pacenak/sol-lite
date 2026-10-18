@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-social-engineering-pretext-call-5414ec8f",
+  "upstream_name": "conducting-social-engineering-pretext-call",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-social-engineering-pretext-call/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-social-engineering-pretext-call/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-social-engineering-pretext-call/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b7dbb401bc366a15f1630de97b76e3f1e9412bb5df864630a16869664332f613",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "38523274805164ae5a79ca08e0f904d7d122ef3783599712e3f0e459fdf66cb7",
+    "references/standards.md": "c8c3da5e94e34c43ba78dff5afacc4cf23020163a2fd3fe770597770beb99f47",
+    "references/workflows.md": "1ce43a9b126934b4ccd85c0a281bbeb0e44eb37b720a76da201633b2cbef415d",
+    "scripts/agent.py": "aee67acdec5514ce29ae9057bae3cd6a7b8d820298e3d68e1ae05fb2e9cba497",
+    "scripts/process.py": "abeb84df51534564406d1d49e4bbde78088a538e59c3fd08580dca7638651748",
+    "SKILL.md": "4069bc0b03abe5073f5ace065adaa1af6a65ffe0a4d98ff823b9fab3cdf42b03",
+    "UPSTREAM-SKILL.md": "72bf029981a17fc0c3e968f4fc60f4ceb21d977d2cf5eb094df062378191ed00"
+  }
+}

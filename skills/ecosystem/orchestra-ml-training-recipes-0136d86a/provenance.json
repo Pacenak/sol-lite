@@ -1,0 +1,25 @@
+{
+  "name": "orchestra-ml-training-recipes-0136d86a",
+  "upstream_name": "ml-training-recipes",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/ml-training-recipes/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/architecture.md": "ac384a12b750c49ed461ba2a884653ff8b3591e74b89c30af3096f350f301ce8",
+    "references/biomedical.md": "0b70d206f2818ac4b62b42b86570fe82be9570de31f9cc8727b83414b8f2654e",
+    "references/domain-specific.md": "ca27f6d6b57d3c8ed08f1f047def6dc0891c02b42cbda5f3f96e3580a0508eb8",
+    "references/experiment-loop.md": "c508e70f173464347a0ec4de36a80541f17b429ceeedbf65aec53ae9afc4f12a",
+    "references/optimizers.md": "9f06866c66fb2626b61988c615d822cac6efd10668a825c7b6ce22252d630d90",
+    "references/scaling-and-selection.md": "62eb5df8a9aef21c74f262570cdf21967d7e791d9b363118ed1028ecbc3d9aa2",
+    "SKILL.md": "2ee02872d6ba1371ebe84c507c83ef810782b2669a61a6b325a16b3d99cd19b1",
+    "UPSTREAM-SKILL.md": "1cb661b0d3bac57ffed65075707a9079ac23123a5a597700e85c05e03e166a57"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-end-to-end-encryption-for-messa-fd0f129e",
+  "upstream_name": "implementing-end-to-end-encryption-for-messaging",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-end-to-end-encryption-for-messaging/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-end-to-end-encryption-for-messaging/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-end-to-end-encryption-for-messaging/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9d6960940cb84f60cc42fd68625513e8140893bc7b2734ea06c22bb923ecb721",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "da4b65d4e8d5a09eca1b8a60eeacce3f912c9b6c00d9945fcd428b2b6b361905",
+    "references/standards.md": "d186333b0c3e423357630e94b624df1e6d759495b188d6f7b73b9ce51b34949f",
+    "references/workflows.md": "2938b098684dcdb416f8f67785ea85322f7ba17c462411c7fbac33aab6cca7d6",
+    "scripts/agent.py": "29d97be1903161149592e8cfc48402fbfa4554e417bb81881521f8b299ce4c58",
+    "scripts/process.py": "90009a539fa6769d65a90ece36f8d9cf223c797a652da2a455debf4e532f1072",
+    "SKILL.md": "b70f00dff3d6f34205201b419ff5a6af1231975c40b091ab87824d998a0c5cd3",
+    "UPSTREAM-SKILL.md": "1d595849159393cc75471c11508bae8274f8d05bd30e5a844c2678b6dad0966a"
+  }
+}

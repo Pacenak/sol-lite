@@ -1,0 +1,31 @@
+{
+  "name": "cyber-deploying-edr-agent-with-crowdstrike-6c84d3e6",
+  "upstream_name": "deploying-edr-agent-with-crowdstrike",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-edr-agent-with-crowdstrike/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-edr-agent-with-crowdstrike/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-edr-agent-with-crowdstrike/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4d20221e7b230d5bd07c94b6a48bcc159adb0a237abc5f670baafbaa60435296",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "69c551e030a423a31db07a3362e91ec79e3a063e927d0d99cb28f6f6c46992cb",
+    "references/standards.md": "dc33f1520d38428540ea5c6864f0a3dbbbee94f1cdf96c456dab6492866e27a9",
+    "references/workflows.md": "2e0c17a0fd86e148a78dd4629c936e2741736bd3b325978cb8c26442f2d7304e",
+    "scripts/agent.py": "e0fa43b7cfb9c4f2cb983a30bde4d082537d913f13c4d75d59cc9f4f6e8b11e6",
+    "scripts/process.py": "c3480d0ceb9f4f3d558d9aa850bf16780ea604d3db124e2374b419897950c414",
+    "SKILL.md": "645eb7d6a070c38ff4eb88f8431b7f8b79f845ae0f03982af684143cb58be27b",
+    "UPSTREAM-SKILL.md": "1cb2092d7f15cbcad22ceb0ae96311c1c0462e79f9cf316efb545f2ddd40cc62"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-browser-isolation-for-zero-trus-20ea91a2",
+  "upstream_name": "implementing-browser-isolation-for-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-browser-isolation-for-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-browser-isolation-for-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-browser-isolation-for-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a6f7be9dd1ac2b16b4a0fb220a201bcca2025c0e5c198f33101ad509d8da64b8",
+    "scripts/agent.py": "60433a46fa1734850f7cd72e3b161cb6aa7c152568c0dcb68612ea01dcd1fd47",
+    "SKILL.md": "28747ae89bd4fa1895e4e1cd781f4f3983558accf50c394d9306d2042939043e",
+    "UPSTREAM-SKILL.md": "36eb00c5faffac7b22a345698e0c2afb3345e9f319a91f26f66174a8bf4e76c2"
+  }
+}

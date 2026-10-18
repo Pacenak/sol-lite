@@ -1,0 +1,26 @@
+{
+  "name": "cyber-remediating-s3-bucket-misconfiguration-370b67b1",
+  "upstream_name": "remediating-s3-bucket-misconfiguration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/remediating-s3-bucket-misconfiguration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/remediating-s3-bucket-misconfiguration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/remediating-s3-bucket-misconfiguration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ded81269e59a332aaa747feae8d542b4f1911cd912e569dfc27d1161a7e4ee0b",
+    "scripts/agent.py": "43c63ced7c2819ba1d08f87156d471c83282cc39c6d3531ddb7169f6a3313f43",
+    "SKILL.md": "b7b4ee8796c3404e8876a2023dcd85564b0428a3eb189d2a4bfcc7a8e248ec8f",
+    "UPSTREAM-SKILL.md": "185ab0fd6ee90379d5b1b2290b49333192afb75d091856ee2b71aa77ced2f28d"
+  }
+}

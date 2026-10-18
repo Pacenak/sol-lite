@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-external-reconnaissance-with-osin-9385d46b",
+  "upstream_name": "conducting-external-reconnaissance-with-osint",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-external-reconnaissance-with-osint/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-external-reconnaissance-with-osint/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-external-reconnaissance-with-osint/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "222df74af709eba9c2e4648315c35f9177de9aeb2a6b7e43baa91aaae5796d9f",
+    "scripts/agent.py": "3079cea3899a71c05d8e1ff2891eececcb97d3e1ed004548d682dc8fba824bc2",
+    "SKILL.md": "07444ef8c45cc0f4ea71de465d2f37d2162ceb9b094b2a1ea8537dbfc2879687",
+    "UPSTREAM-SKILL.md": "6070347d5ea6691909918dda79571e3f15c3010b9463be525542c4a1ca09e074"
+  }
+}

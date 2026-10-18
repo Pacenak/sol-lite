@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-evaluating-cosmos-policy-ae15b86b",
+  "upstream_name": "evaluating-cosmos-policy",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/cosmos-policy/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/libero-commands.md": "ed09b3bbbf3348275200db961f7fec4cc8e6d5db96beb800b0f5b4ae5ed42c5e",
+    "references/robocasa-commands.md": "bc8f29279fa1ab3ca1efcfeaf9a666b932b32b9520053cfdec2b07103199a648",
+    "SKILL.md": "7a039bbb1c123959198426fa39acdd68c2deafded93122e228dd9849bba7aeb6",
+    "UPSTREAM-SKILL.md": "31d6b4701fae46b0b9e9b281378eefbe0f4c37b5973dae56ee25a3b67f63d0b6"
+  }
+}

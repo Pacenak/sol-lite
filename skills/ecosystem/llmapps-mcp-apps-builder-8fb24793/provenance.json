@@ -1,0 +1,42 @@
+{
+  "name": "llmapps-mcp-apps-builder-8fb24793",
+  "upstream_name": "mcp-apps-builder",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/LICENSE.txt"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/mcp-apps-builder/LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/LICENSE": "15a0e5343aea872c0573ad72feb6044b336f162d724cc1673c608e6b37ea071b",
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "references/authentication/custom.md": "e3582cf145e6c46b8277d6c064b11e8b35aa5b44af8d0ad9c437710ed2f3a23c",
+    "references/authentication/overview.md": "256a0c76f058df3a5a43c51a6a901edbef9472fddcbf3ffb09db8a2eb937df5a",
+    "references/authentication/supabase.md": "d77fe73259d0e7379d5fecdc34a02aa2e0a56d32c62d815e4b132210eab05dd0",
+    "references/authentication/workos.md": "2d2608cd80a984b74290e486edd45b0ae9da7007e507f96150f54724d60e8733",
+    "references/foundations/architecture.md": "ccd67a95fdef673a130d85ba652242c20a5ffbebf4948582a46e90b8a4ccd035",
+    "references/foundations/concepts.md": "0693662384b2aaebcd4b539b32aea64ed20a8238070b668e3e4f20ea4c5a48b8",
+    "references/foundations/deployment.md": "0e2787e4aa17d6d53c4ee2c40572b9eb79b72a2af80259c3265199fc82c615fc",
+    "references/foundations/quickstart.md": "5a329f540c61d1e356a7b9fb2b5f33e9704ddb888bbc57776a7cb57de37d3962",
+    "references/patterns/common-patterns.md": "10f799e463e396a4924b6317359c8fab89886308648182491d766472c179fbeb",
+    "references/server/prompts.md": "5cc2a4815b1bc48257049291a838fdefb3d3f5dbb5bbed19fd13b4762ac11e8a",
+    "references/server/resources.md": "3ae0b27e4621a946161df088e4a0c8315a0506fa2ad6bf7933330944fe0d3509",
+    "references/server/response-helpers.md": "48acd44794ac09bbfd470856ed3a22e7ec96bc64b2af5f2ee0c8f20a9295a0a8",
+    "references/server/tools.md": "6db4d59302733b87bf9ab77b5c03473724e6578797e2787a1f4f564c49147d76",
+    "references/widgets/advanced.md": "c05e584a5022fb6b13936caa88ebf5c2c6db0cb0c709d67d6841c4742433c4f4",
+    "references/widgets/basics.md": "6928a735bfebfb6f9ccd8838cb253c9eb861d9bc2928d70e4e8df2fab2c03a40",
+    "references/widgets/interactivity.md": "5be06ba36c7930f5bb835d1d681a17bce8b33f96721f5f4e8685c542e54de60b",
+    "references/widgets/state.md": "96fdbef04d56f0292ff5c75c59b342d5f318f424c63270086b1b6e6bb2f1e170",
+    "references/widgets/ui-guidelines.md": "3d679b55a8f29e37ae9fcc0e62ed00bcef7149e2f9a46e39b0ca0afb6c143804",
+    "SKILL.md": "6a1707d98abde7b2ca1e38448f9a00d15757e4db3a28d659327008e1f2768c53",
+    "UPSTREAM-SKILL.md": "bc446a219507d6180dfb3a2efe313cae8605fb1a6323498a6e9325a8c34c099a"
+  }
+}

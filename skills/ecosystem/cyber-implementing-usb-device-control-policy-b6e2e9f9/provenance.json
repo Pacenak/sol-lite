@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-usb-device-control-policy-b6e2e9f9",
+  "upstream_name": "implementing-usb-device-control-policy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-usb-device-control-policy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-usb-device-control-policy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-usb-device-control-policy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "3aa1d327f503682aa6036de5580586957af9c755a119ebf3c1ceef599e3cc9e4",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d1c8e6796d20a3b2232058ac9cea8fae0052544ba63141d1e36883d6dd508904",
+    "references/standards.md": "86b38877d63e839923ff75621466479ce8742086175d86b3f75c825d67a9b95e",
+    "references/workflows.md": "3f9b9bcd2fd9d292e5a018e7cc62be4a1ed0ed891f296aa57ffce463b6111d20",
+    "scripts/agent.py": "e93027b18095f0d58d2583d8599db9b8ff682398f09e4baa7107c03f8228b2d2",
+    "scripts/process.py": "2d8964f4431eef2a6f2306550f72b68c950d3593aed2c96052c20e9002887a58",
+    "SKILL.md": "60d25c86385a2d177cadc0c8dfdf02cf0f9b9e52959600a2ed3e266deddd25f9",
+    "UPSTREAM-SKILL.md": "8beac606bcdd67d883d9816dfa4114a8b230e3acebc2a323bfd295c22f93ffc9"
+  }
+}

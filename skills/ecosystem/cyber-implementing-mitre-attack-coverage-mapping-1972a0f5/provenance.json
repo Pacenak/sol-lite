@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-mitre-attack-coverage-mapping-1972a0f5",
+  "upstream_name": "implementing-mitre-attack-coverage-mapping",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-mitre-attack-coverage-mapping/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-mitre-attack-coverage-mapping/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-mitre-attack-coverage-mapping/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e4b4613cee1a381122f6baaf924dc95175d450a6200abbd5fcaf29234e7be7a8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5f2f8a2f05707135c2e374e1e2bece77c893058acea3cc3ce2b2379a7c88c446",
+    "references/standards.md": "949e44fe8c6c34c975a94d8c7073a7fc221429272818a18811c974550124294e",
+    "references/workflows.md": "c210b30c54e9064df2cf5a0f12ade4d7c15a1750c1761ede0f51cc81e2113db1",
+    "scripts/agent.py": "64127fe1edcaf035924986edfdb8a7c8cc3665ccb6164c830c4c2bb24d8bf643",
+    "scripts/process.py": "4d0b42ce551682afdcd22afc3724c6bde2cdc35e2f210e819baf6e299d642484",
+    "SKILL.md": "fafa1a6fabd3fec3723bb5fb43012571d36df819d996ac1a92b57588dee0ba73",
+    "UPSTREAM-SKILL.md": "ca05f329d8645a32142d551ac5a6b8b94c7499a5365ffd94631c5f55d5dd5f55"
+  }
+}

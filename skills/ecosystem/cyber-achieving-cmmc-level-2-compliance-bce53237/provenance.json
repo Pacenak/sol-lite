@@ -1,0 +1,27 @@
+{
+  "name": "cyber-achieving-cmmc-level-2-compliance-bce53237",
+  "upstream_name": "achieving-cmmc-level-2-compliance",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/achieving-cmmc-level-2-compliance/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/achieving-cmmc-level-2-compliance/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/achieving-cmmc-level-2-compliance/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "18d201a4851e1148257ef77112f1c31f06d39d99bb498444ffdb565104634da3",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "b3cc2df29555278be07c8065cb7ea72556658244ad4616346904da6851ca9508",
+    "scripts/process.py": "2e53b3229f8df1414ba927d78d03dbf0350a53cb959e3358c454635ffa2584c2",
+    "SKILL.md": "c229924db3c37e1687b11a680e7e14c5c9cf2ee0997182efc4c3a44d0b7362ff",
+    "UPSTREAM-SKILL.md": "f5124addbf044b13ff6332872087d93062bfbbdd5283aac96bd76d4c9ddd7a67"
+  }
+}

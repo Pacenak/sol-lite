@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hardening-docker-containers-for-production-c07d42bb",
+  "upstream_name": "hardening-docker-containers-for-production",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hardening-docker-containers-for-production/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hardening-docker-containers-for-production/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hardening-docker-containers-for-production/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "667b540a2a1562e3324c4963b1a3bc41e2d4ce27ebc1adb8c017d0e26b8b469d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c69e8243f35669a8ec29cef5db8c423aa8b9ccb64ac57e3cff6dba3b92a8c4ee",
+    "references/standards.md": "1006ad5ba7376918a1cbcc8c62a4fd28b869971602a5e22d7551f9109472f19d",
+    "references/workflows.md": "e7c38a290e094b5efa26b00e6982340d8b9588c3aecd3138703e83503b94c31d",
+    "scripts/agent.py": "b752dffa60b36c10e2f82941f906f2919083eaf2774598788446e03fea8b424e",
+    "scripts/process.py": "a9f0461277a8d8e5e8ff191bb4d7021dc10b816e322b92c4878a1e81ec942ff9",
+    "SKILL.md": "5bf3cbd5b19186e50e09c185ccbe992517f80ada73d8e3460b99c2b55976bf92",
+    "UPSTREAM-SKILL.md": "ba3eff77d91f11daf1d31b4d7542982c96538ead726e73590e353fe65112e9c2"
+  }
+}

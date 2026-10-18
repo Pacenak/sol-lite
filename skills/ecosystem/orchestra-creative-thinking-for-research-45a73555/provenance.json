@@ -1,0 +1,19 @@
+{
+  "name": "orchestra-creative-thinking-for-research-45a73555",
+  "upstream_name": "creative-thinking-for-research",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "21-research-ideation/creative-thinking-for-research/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "SKILL.md": "346280c449f705bb8d46821f731a9f1e0a56190d4b15c7fcb602c50b0bada9f2",
+    "UPSTREAM-SKILL.md": "ec111f9236d7f9d72c895cebbf0f534ac93f4249172607559ad4bf92aefc5310"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-ray-train-7c6f00e5",
+  "upstream_name": "ray-train",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "08-distributed-training/ray-train/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/multi-node.md": "79b7f3cb8264ca2d8897b8e6e2e7bdb4d9207e2a2ea6e4b4d18d8fe073afd401",
+    "SKILL.md": "bba8a1159cd0f0acd5d9bbfbb2b6cefb91fe57244b665d8dc7dce039fddb3933",
+    "UPSTREAM-SKILL.md": "7f88c141557e3f0cc5b456571d1ae99bef4161a9c1765bc725847cfbd0fb1170"
+  }
+}

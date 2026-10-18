@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-patch-management-workflow-a4d95735",
+  "upstream_name": "implementing-patch-management-workflow",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-patch-management-workflow/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-patch-management-workflow/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-patch-management-workflow/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c4052fc1fe5d79139d5afa44fdf3cc046bec327867c4874e6bf4936d3c3f92b9",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d65c16be6e0d0a00cd58709decb0ff7826eb324a84a84de3c70a468e1d769c77",
+    "references/standards.md": "234cfe3047ec85b3bca7084d518481fc2a1412ba3e2c14514da5ca00e0f68581",
+    "references/workflows.md": "0df32cfa4d50a79d4156eee4fc9fede8f72c675334ffa403780520664902fc7e",
+    "scripts/agent.py": "c0edfe3408f9ecd076fe878d19e72ec9d75c7032716bed1fd2efd6a84036888e",
+    "scripts/process.py": "bd03951c6be8230596e80513f681c2cf0a5ef473ae08e1ae0e198066e914c610",
+    "SKILL.md": "a21b3b1a181c2afcaee59736d470ed1ed74ed2df01a01584c35b432de0ccf991",
+    "UPSTREAM-SKILL.md": "6929ede1a11539ddf7f305938184e33fe0501b31f916cd34a6c2f280d3957fdf"
+  }
+}

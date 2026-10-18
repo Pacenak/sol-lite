@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-api-abuse-detection-with-rate-l-9fce5d76",
+  "upstream_name": "implementing-api-abuse-detection-with-rate-limiting",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-api-abuse-detection-with-rate-limiting/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-api-abuse-detection-with-rate-limiting/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-api-abuse-detection-with-rate-limiting/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0ddd9c70b908ea9f861248743c4fba33777b10ed0917a3498ee11bb9009ce0b8",
+    "scripts/agent.py": "9e123a82099905bfde56a9a55ce220d4d7ded55a6d9a34be53b2a6173ecb28c8",
+    "SKILL.md": "bad35c0c2abccc69dbec9c804b56ccc7bd37b0b5f2f1a9ad18dbd8a22eaa6390",
+    "UPSTREAM-SKILL.md": "e3119ac224552c131dcb1fe6b266052408600fd60251ddab49a422dffb822f98"
+  }
+}

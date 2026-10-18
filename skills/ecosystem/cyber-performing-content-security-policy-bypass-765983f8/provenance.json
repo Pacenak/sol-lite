@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-content-security-policy-bypass-765983f8",
+  "upstream_name": "performing-content-security-policy-bypass",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-content-security-policy-bypass/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-content-security-policy-bypass/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-content-security-policy-bypass/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "eed045280e792c2453c042309d83ea9a5e9075b02f27f88f6401caa037442c9f",
+    "scripts/agent.py": "f949e23071646c28afa5f1ec21c91fc9ba473abcd5a1d6651df31b1aa848b877",
+    "SKILL.md": "8a158181a5d4e340f09dd9ade668fa9ba647a6eaa5556b02b4f5c0c5b7d702fa",
+    "UPSTREAM-SKILL.md": "bfb886ccbcd7367f0306c1438396ceac279c1a6198007b59e3342558b3bf5792"
+  }
+}

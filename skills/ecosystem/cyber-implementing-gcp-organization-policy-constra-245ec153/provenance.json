@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-gcp-organization-policy-constra-245ec153",
+  "upstream_name": "implementing-gcp-organization-policy-constraints",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-gcp-organization-policy-constraints/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-gcp-organization-policy-constraints/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-gcp-organization-policy-constraints/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8bb89b788b5f667399b0e67ca7ef409bd7daf9cec2e21db5878e957a3a7528f8",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "43aa87d05c924c6741d8674b8729e246364ef8b6a8e00462a71c1fa5c8c6b9f4",
+    "references/standards.md": "9c479f301fda5008e94b0812ceb90c32ea5c4ee61d90adf066a826a7056a246c",
+    "references/workflows.md": "25017c56c84a971653a0ab512b6fc07efd89f0fad9f9fad261b0053b7ccb0755",
+    "scripts/agent.py": "cbe9c71ff66f0a73d6fe2e60842a77fd6266e9d66ec136ddf486c06b07e7b141",
+    "scripts/process.py": "80e5dcbfb9eab413d91b435e196378d38bd748bdd1bac60ad116a9f2428d011d",
+    "SKILL.md": "82fe8afb597edba2090d584e223ee76e3c20a9b0fc7d382d1327142228a671bd",
+    "UPSTREAM-SKILL.md": "69c8f94dcb51a3317428288cf555778d4ff1752e11a03e051b8b39ad800fd301"
+  }
+}

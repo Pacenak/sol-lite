@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-api-security-testing-with-postman-c01db7f7",
+  "upstream_name": "performing-api-security-testing-with-postman",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-api-security-testing-with-postman/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-api-security-testing-with-postman/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-api-security-testing-with-postman/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5beb24e901864d7d5b0b98b43879860b757a009ccf4ed0a3e3a5098fb85748e1",
+    "scripts/agent.py": "acc39e2ed014831806cba562bdb1c126c566d6104c41a07d00d9b8012446ee61",
+    "SKILL.md": "166bf3829970fbbba9409b1f90efbe04bcbf220799e4599be10ec9c22d5cd74a",
+    "UPSTREAM-SKILL.md": "91e636d5d2282b8d8790652346b6e465b7b1eea8fd0f57da130976d1f9ecfabb"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "anthropic-brand-guidelines-447a6c05",
+  "upstream_name": "brand-guidelines",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/brand-guidelines/SKILL.md",
+  "license_files": [
+    "skills/brand-guidelines/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [],
+  "files": {
+    "_licenses/skills/brand-guidelines/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "SKILL.md": "58dd9387a564d145556347e2339d3bab35305774ce0173a46c77ee9140b80ec7",
+    "UPSTREAM-SKILL.md": "1120b3769e2985cefb3d25be981b1f914abeba57ae079b83c20c666c164fa9fe"
+  }
+}

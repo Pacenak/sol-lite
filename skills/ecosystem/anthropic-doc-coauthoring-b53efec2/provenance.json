@@ -1,0 +1,16 @@
+{
+  "name": "anthropic-doc-coauthoring-b53efec2",
+  "upstream_name": "doc-coauthoring",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/doc-coauthoring/SKILL.md",
+  "license_files": [],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "SKILL.md": "42bdd74a4aa3a405ef1cde6d7d8b2ecc91cdd975353ccc5beafff694cc08f097",
+    "UPSTREAM-SKILL.md": "2e47d78846faeea4a56e9809c52700087a15a2155a3f293a3efbaded81398ef4"
+  }
+}

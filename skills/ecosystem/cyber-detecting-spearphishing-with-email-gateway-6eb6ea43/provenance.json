@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-spearphishing-with-email-gateway-6eb6ea43",
+  "upstream_name": "detecting-spearphishing-with-email-gateway",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-spearphishing-with-email-gateway/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-spearphishing-with-email-gateway/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-spearphishing-with-email-gateway/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e1b5d21af1368a58c84d204156a4baf73591847b56d2eb897a3d99242f8b55e1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "24386dec6f5740e09b4e66740a2a99272cf9fa7ffdfa984bfe2193eff48f8e6c",
+    "references/standards.md": "459b2d134c24c293a4ee7c06755d3a2015f20ded159f6c67e337c45bc412fc8d",
+    "references/workflows.md": "ea7c2dd3fb99e6403c57e29922147e3ddd6c0cf75e07da1ce0f0d0a724f37230",
+    "scripts/agent.py": "6192de9027160096358a47b6b39f7723c279e6d61c7f32e160c809d4ea5a63f5",
+    "scripts/process.py": "b63cd3e0ce25157af41a014ab90ed2e74c2ea76d4708cf85115a74807caac2c5",
+    "SKILL.md": "06363d39c29358fb6b468ff319e77ee806c16c667cb3f821933a4f09b6bef9bc",
+    "UPSTREAM-SKILL.md": "3015374924723812858995f549396019c607837a16d22f32115a41323529ca58"
+  }
+}

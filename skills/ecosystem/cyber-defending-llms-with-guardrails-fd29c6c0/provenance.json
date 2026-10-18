@@ -1,0 +1,27 @@
+{
+  "name": "cyber-defending-llms-with-guardrails-fd29c6c0",
+  "upstream_name": "defending-llms-with-guardrails",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/defending-llms-with-guardrails/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/defending-llms-with-guardrails/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/defending-llms-with-guardrails/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a30473ded329f9b1be77b85d04586fae1d0df7a6f16d5b4f130bd1fe09c4b378",
+    "references/standards.md": "38dfcb563eb9283915d35f43c3b10caf70a01872c8c972602b987a69351b6673",
+    "scripts/agent.py": "6a9b1d189e696c018cdd21ff978393a5d546d8365f3b50bde786778255c32d3a",
+    "SKILL.md": "a31406dd5660dd3dd78ad7ef11c42eb1b7128179acb7b1a40417592439a421fc",
+    "UPSTREAM-SKILL.md": "800fb9260b8690b5af810445660eda128351e2075f0aa307b5262174ebb1e1e2"
+  }
+}

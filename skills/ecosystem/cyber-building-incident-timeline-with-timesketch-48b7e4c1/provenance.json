@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-incident-timeline-with-timesketch-48b7e4c1",
+  "upstream_name": "building-incident-timeline-with-timesketch",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-incident-timeline-with-timesketch/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-incident-timeline-with-timesketch/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-incident-timeline-with-timesketch/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "cbdf30f5beb49683a9646179ffb0deb53974392c767e090a805f7544d3256d42",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6c07c2f4afbcd484b631eca91455cb76f2b8a29fcbbbf13f8c4fda89cf029f20",
+    "references/standards.md": "bd80802e875c6ebc717e2f847f854a6d167fb837c13cc7e1460938cc3147b710",
+    "references/workflows.md": "654cd76f8a4122d7bbf727f64cc405cc776a31e5006f36956696c9dd0d922e82",
+    "scripts/agent.py": "df1267c8f10ccd7507c6b12789b2bedc30272dfdc158f986f521385a53e25777",
+    "scripts/process.py": "5fe6cfa61f66e6bf6d8ddf5dc6cf4d4b643b933231e354e7b0d5fa9226b0acf1",
+    "SKILL.md": "feae3b16503646dafcd78035f7ab4c712a222d6b247fed9761191bdf9ece8af6",
+    "UPSTREAM-SKILL.md": "342cd677f5252a19e92fe0c4b8bc4308c808b7f9d6ba29546cb791a46739bbcf"
+  }
+}

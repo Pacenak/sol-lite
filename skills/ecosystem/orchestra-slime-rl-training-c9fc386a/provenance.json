@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-slime-rl-training-c9fc386a",
+  "upstream_name": "slime-rl-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/slime/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api-reference.md": "4f078938e1c175abeea25d8495dd866d98bb17904b61c02ad7202f58f5277a66",
+    "references/troubleshooting.md": "8ded52e21ebf3737b3366b249abf3c58c3437d485e1f285f26c37cde319ef132",
+    "SKILL.md": "789c305351d0a7c00ccb2ba54b0e90df75783362af4baf5b0cf8d6fe29bb25be",
+    "UPSTREAM-SKILL.md": "117c8fd2d57d878e45c698f9f0485326ed4630aeaec761aa1222d7a36458cc07"
+  }
+}

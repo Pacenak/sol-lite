@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-tls-1-3-for-secure-communication-5361d991",
+  "upstream_name": "configuring-tls-1-3-for-secure-communications",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-tls-1-3-for-secure-communications/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-tls-1-3-for-secure-communications/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-tls-1-3-for-secure-communications/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "db6df91bb9323546f4c506d1957f77a5a2d947353dfd568c0af5aaadea1b1f92",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4153acf04ad627cbca4c3845368ead6400b4d5ea7465a1c80b6206d9898d3be2",
+    "references/standards.md": "d7b3bad39024cf65786bac6c976b506ab8653e1271670cded66adfc374a4eaf9",
+    "references/workflows.md": "db8560e119bd163839ef18ffe79efd175d4445e81bf3bca3e477e65c4bfcaf99",
+    "scripts/agent.py": "a62ceba726a1e70adcb05b0a1a4fcd25d4e86c6f35e462630ca579f5912d1338",
+    "scripts/process.py": "cf1f97ba8d22724566a7117a829ff949b6b578d8b192ce16371a634f034ee8f3",
+    "SKILL.md": "71317e19850a8b16d623f32541633390310d49e494f52ce8293faff484077102",
+    "UPSTREAM-SKILL.md": "d953d35da7393d45f097341eb350a01951e3b3ef5acc3d5a688c8036554271e0"
+  }
+}

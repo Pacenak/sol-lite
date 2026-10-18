@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-google-workspace-phishing-prote-c0da4545",
+  "upstream_name": "implementing-google-workspace-phishing-protection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-google-workspace-phishing-protection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-google-workspace-phishing-protection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-google-workspace-phishing-protection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e36421972aac4d598834bb092919957b9788edb7b63b86f7ae93e52999913bb6",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "87bed493d15632f8755aae4c80a3ae0d19822f4e148c870c54de716108d83f82",
+    "references/standards.md": "0acad27f50967563393bbcb2f8601d6ba6e2b2d155282b138116650464ea01c5",
+    "references/workflows.md": "b33c079d057a8dca7a9e1072518ace4a03e8903251b354ee037086f3c4faa144",
+    "scripts/agent.py": "e13c9cff4259030e99aa3f975098155d5c7ab4887f4912b38f973290c666efa9",
+    "scripts/process.py": "68196832c6258407656cb139af7a7cb9b43a66d0ad479e536d8ad5a80466319e",
+    "SKILL.md": "42bcdd82fb43f35ba0810898d92fb2c6fabd619fb43bfe44a8b507de122454e4",
+    "UPSTREAM-SKILL.md": "02e2ff490534a25d965adbe6132a029885fa6e057efb90c1157a2bd7b7c046d6"
+  }
+}

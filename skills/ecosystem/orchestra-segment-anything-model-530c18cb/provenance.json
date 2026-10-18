@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-segment-anything-model-530c18cb",
+  "upstream_name": "segment-anything-model",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/segment-anything/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "73a46290ac6986333e5ef65b785afc7c9463d6835d8a67c5f74f418fa284fb39",
+    "references/troubleshooting.md": "cbab544d97ddc3813b4f74c805086579e7bd51547ccf9830dd44fa5936b07b4e",
+    "SKILL.md": "9b0de24effb19e04ee44f80506c3f2f1c5e6a020341611e5b8c880b8b5ffd47b",
+    "UPSTREAM-SKILL.md": "6ac5c2f96cf7d0ae5f787164678701266930129aa06cc21818f20f77dacb6a71"
+  }
+}

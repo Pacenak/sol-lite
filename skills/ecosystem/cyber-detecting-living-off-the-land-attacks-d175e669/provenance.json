@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-living-off-the-land-attacks-d175e669",
+  "upstream_name": "detecting-living-off-the-land-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-living-off-the-land-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-living-off-the-land-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-living-off-the-land-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3bc7759d444352b992ccc64b07c51e065c610d0d91f500ac374fda3f5999cd42",
+    "scripts/agent.py": "5afdc714f870fbf3b7463c516872c95c8fdbcbae90498c11d785324ad3f34793",
+    "SKILL.md": "00f6d0f495037be8ef4d5feccc7be9dde9387db590407fe438208fbcda940835",
+    "UPSTREAM-SKILL.md": "54f05bd2f638b6766d0d43e853d2ba8aaaa097c92cf4fc8d105eb6a649de1fc8"
+  }
+}

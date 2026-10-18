@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-mobile-device-forensics-with-cell-dcf82109",
+  "upstream_name": "performing-mobile-device-forensics-with-cellebrite",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-mobile-device-forensics-with-cellebrite/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-mobile-device-forensics-with-cellebrite/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-mobile-device-forensics-with-cellebrite/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "765804b66da557c4e205e0fd42aa3355b6c71273b51c6d6ad84629bedab0e1cb",
+    "scripts/agent.py": "c5db6e0d341988db16f7983d0ecbc84e818491dfa336b0248e13ebf6eaeafd49",
+    "SKILL.md": "283af585edcd1147e0ea65b51b127728fbb8d3663646efc7ee4acd5174a0c528",
+    "UPSTREAM-SKILL.md": "cb146d0e67b09b5726db9ef1017643300dea3499e256b757c466bee10bac386f"
+  }
+}

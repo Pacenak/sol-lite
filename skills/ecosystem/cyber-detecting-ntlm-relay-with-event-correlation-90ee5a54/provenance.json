@@ -1,0 +1,30 @@
+{
+  "name": "cyber-detecting-ntlm-relay-with-event-correlation-90ee5a54",
+  "upstream_name": "detecting-ntlm-relay-with-event-correlation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-ntlm-relay-with-event-correlation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-ntlm-relay-with-event-correlation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/audit_smb_signing.ps1",
+    "scripts/detect_ntlm_relay.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-ntlm-relay-with-event-correlation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f851494565bc4d5ab6d87272bbcab6402df737f6bf89db54fe8c480aeaa72ce0",
+    "scripts/agent.py": "f79da93faf552dceb831fd77114d7dd8891943296c67a89bdcc56834c9daace5",
+    "scripts/audit_smb_signing.ps1": "5c944978c064f6c21bbaa3a88bbf95c051278e38cd5587456b7ebc4ac4615d1b",
+    "scripts/detect_ntlm_relay.py": "81e7d6405975a8b8afe76e229658aac95fdf72f3d201138c75dbdf21a50c4781",
+    "SKILL.md": "87908049f033c919e26cb3b080a926adfeab5b4be9f54d953b2cb99e2ded3961",
+    "UPSTREAM-SKILL.md": "405096113a2c58da5f44560d60232240769652d64c987ef8eeaf78d19a413229"
+  }
+}

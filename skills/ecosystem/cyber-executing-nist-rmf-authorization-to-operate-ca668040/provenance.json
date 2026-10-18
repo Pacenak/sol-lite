@@ -1,0 +1,27 @@
+{
+  "name": "cyber-executing-nist-rmf-authorization-to-operate-ca668040",
+  "upstream_name": "executing-nist-rmf-authorization-to-operate",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/executing-nist-rmf-authorization-to-operate/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/executing-nist-rmf-authorization-to-operate/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/executing-nist-rmf-authorization-to-operate/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8528f3a2a948cf4ed6ca28af146519cdee3168b4b3bf558422dd8c0b658830fe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "cbad00a5c45b3d86cf8fb1be38d2372548e2850aabe991575503db330952844f",
+    "scripts/process.py": "2e59d12da6d38b543f69f777a12b2b2754836fa122d77d78192ff067269547bd",
+    "SKILL.md": "90b766234feeb1846d6db974ea07c70a2b6fbac61fe2fe60b41dcb1d54c84f98",
+    "UPSTREAM-SKILL.md": "48c8e110fd95a5cbf653f50eefe75b1f1f2cdfc40b70ba842dbe035b6519a732"
+  }
+}

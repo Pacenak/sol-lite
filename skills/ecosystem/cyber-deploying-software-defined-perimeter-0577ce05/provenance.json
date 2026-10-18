@@ -1,0 +1,31 @@
+{
+  "name": "cyber-deploying-software-defined-perimeter-0577ce05",
+  "upstream_name": "deploying-software-defined-perimeter",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-software-defined-perimeter/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-software-defined-perimeter/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-software-defined-perimeter/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "bc45725d6efb17995ccdb4f0fff2c8345165457c5d58a6b976f0cf1796e3315c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7210d2471958429c591eb20962feb15d2b0eaebe87ec22b1dbe2132cdf3fada5",
+    "references/standards.md": "32450bf7ac5aecb8e633ca3b4f6b2e3a394e845227f167d253619d57675dcb2b",
+    "references/workflows.md": "b09800d940353649e387ac7953eecd6d49bb400d48526a2cd912c53c9a47412c",
+    "scripts/agent.py": "aa98e0a5654f48c264aae0c811102d4f9df4c42915020b106eb1a591abe59dcc",
+    "scripts/process.py": "90e3c6e2a4e1a4a5815437babfcedfe32800c667ab17c859c2197ff37a80bacc",
+    "SKILL.md": "03f6a4bb4cda06900d4875c78c9eecb07ec21d376ac9ed620d8b3c1901792248",
+    "UPSTREAM-SKILL.md": "a337d29ce9b4c6adf344a6f103d8409e70b67de8a9610b869744c9f63ce2eb31"
+  }
+}

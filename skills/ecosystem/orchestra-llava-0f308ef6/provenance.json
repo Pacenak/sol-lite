@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-llava-0f308ef6",
+  "upstream_name": "llava",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/llava/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/training.md": "6377ab1567ba7d2882bb079233c534fa8e3ff209f2c624f0fbc9db019bc53aa0",
+    "SKILL.md": "28ade80f0d724e8f832ac3bd5d16345eeb074e032cdb73ef23440f4718f469ae",
+    "UPSTREAM-SKILL.md": "e2c915ece2f3e50ea110320b7a364dd36361d3010e102e800416dfa3b4299745"
+  }
+}

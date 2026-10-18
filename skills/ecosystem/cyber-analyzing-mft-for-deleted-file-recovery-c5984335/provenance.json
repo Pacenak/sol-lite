@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-mft-for-deleted-file-recovery-c5984335",
+  "upstream_name": "analyzing-mft-for-deleted-file-recovery",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-mft-for-deleted-file-recovery/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-mft-for-deleted-file-recovery/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-mft-for-deleted-file-recovery/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4462713ed736bb798c1b05ca8b9885c1f347e3015be63272f01c2b59000e2eb3",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a1dd8e1c7ab6787eef422e2317a8671fbf0d71504f56a91d1abbe0d8cb8de048",
+    "references/standards.md": "5b56cd65f5d8c4354677e4af74da82c5374dedcb31c1a3a1b158937f3fcbfa17",
+    "references/workflows.md": "32a3b7328455f3f4252837959760b1d1a59d5e1e3a15eabd1b4aefdc675b5454",
+    "scripts/agent.py": "18c27596ef41ee70180a4302b0658ee518ff252b213a4310c4f764a94bffe077",
+    "scripts/process.py": "a8560e4e886a935c2664e1a49a2eb8323d334807200fa84dd707cf81c4c7af56",
+    "SKILL.md": "d45ef8c9c13b96938fbd4470a3824d60beab9ab7a5afed340067f326a771b854",
+    "UPSTREAM-SKILL.md": "37d49a2017270c1ffcd738ff61c17686fa79be306bfe7165c1fca57e558e763b"
+  }
+}

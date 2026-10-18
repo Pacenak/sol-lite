@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-llm-guardrails-for-security-fff54df9",
+  "upstream_name": "implementing-llm-guardrails-for-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-llm-guardrails-for-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-llm-guardrails-for-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-llm-guardrails-for-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "37fcb04bab7b12727dbb08537c675d2bcdec77a48a093a696fa70946a674bbce",
+    "scripts/agent.py": "7691fd4fd366a7058255daa9ae84851b7ba8f5b6048217a2f32936a9a301d6b4",
+    "SKILL.md": "9c22b50dab46a438b376abf65c87d7b7c1afa2a5c455149647d2658a386d6af3",
+    "UPSTREAM-SKILL.md": "e72d132720a7650e85bdc573596cbae65b286725da82fb7aa84f05286f8a2ec3"
+  }
+}

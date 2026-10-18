@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-entra-offensive-tools-in-graph-log-6e458f39",
+  "upstream_name": "detecting-entra-offensive-tools-in-graph-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-entra-offensive-tools-in-graph-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-entra-offensive-tools-in-graph-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-entra-offensive-tools-in-graph-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6836565b180fde6a2baae1ee489d0d4b6d0a65bff9f46d491f700b4af479bb9d",
+    "references/standards.md": "a47095e26f6cd76c89d4b14796526a727c5e1a0b988a81ef287de4966c2bada0",
+    "scripts/agent.py": "ddced286f525fadebaa85728165ed9a1a55fba922c43661172094f0b4b16e0f9",
+    "SKILL.md": "5c2c5973f6ef2e97a96228e9202ef6aaa0d0cba66849c3fb275770414542e7c4",
+    "UPSTREAM-SKILL.md": "d04798b77601c9485a1f04d7b720eef0747f8fef776ed7450e5092bcf0111646"
+  }
+}

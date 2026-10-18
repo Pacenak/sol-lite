@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-runtime-application-self-protec-91dc9f67",
+  "upstream_name": "implementing-runtime-application-self-protection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-runtime-application-self-protection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-runtime-application-self-protection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-runtime-application-self-protection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9365da2da97e9f59f4cc436a0421804af760622ae9b5da39776f0fcbe2dfb6a7",
+    "scripts/agent.py": "389df3af0e0b54df2bf0545115064f4b452157f8e130db35ac582569076aaf85",
+    "SKILL.md": "f3ed4913a73c6492a6172919e570ba8a16149887c39f6ac7309bcbefa99ceb52",
+    "UPSTREAM-SKILL.md": "54161a1a0f868a2535f344c0b46be7260c66034cb16673ed95d224a97800701b"
+  }
+}

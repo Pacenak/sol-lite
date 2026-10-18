@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-windows-defender-advanced-settin-c03a9a7c",
+  "upstream_name": "configuring-windows-defender-advanced-settings",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-windows-defender-advanced-settings/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-windows-defender-advanced-settings/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-windows-defender-advanced-settings/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8f30f5af848618f70c033221345388bebd647fbb4462858f96c73cd509d5efe3",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6663d36213ee4b469f862d93251ca242a46351c2d0b6f172a64a8a2c2867ecb6",
+    "references/standards.md": "426506a258b4bdb6835fa27925f7c0a1399f90ec36069dced7b36f3f499609e2",
+    "references/workflows.md": "2e83bd1109ce0285aaa843eeb9f396373c4a100db9b8bd533071075fd312a3f1",
+    "scripts/agent.py": "574268394ec18daa318adb9b07be6ad931df7213e0e2b23a4eaeafa25a4411fd",
+    "scripts/process.py": "38f9ca552e3e8a96e7298a6fcce04740fc1dad2ec009f7f645fbbc23e646d8e0",
+    "SKILL.md": "637ae9ddc288cf37fec6106bbea03cd73f159963370dd26ceb8f198b35d06853",
+    "UPSTREAM-SKILL.md": "b61fec85a8be254691a666bbff4bfef12d19ffcbab26efaa9d4a075cfbde1b7b"
+  }
+}

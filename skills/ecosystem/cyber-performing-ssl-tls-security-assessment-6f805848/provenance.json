@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ssl-tls-security-assessment-6f805848",
+  "upstream_name": "performing-ssl-tls-security-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ssl-tls-security-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ssl-tls-security-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ssl-tls-security-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0c8fff6abf6a31b4432a91953e17c34dd20f530fa09d55539877d2f87093de40",
+    "scripts/agent.py": "6efcaf69c8c09c6e4b8beda3de1e438f83b0a2e0df1b463b7fb79162c542d1f4",
+    "SKILL.md": "0fc2a3d634ea3b6c687a6c82021bbe4d8f700d1ec8ae965b7225719b0eaa99ab",
+    "UPSTREAM-SKILL.md": "5429b42e2974be1e744f20107228c316d490024bd6c7eef62c21e370b240d66e"
+  }
+}

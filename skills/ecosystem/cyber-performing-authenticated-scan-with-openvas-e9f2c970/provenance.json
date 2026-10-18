@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-authenticated-scan-with-openvas-e9f2c970",
+  "upstream_name": "performing-authenticated-scan-with-openvas",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-authenticated-scan-with-openvas/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-authenticated-scan-with-openvas/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-authenticated-scan-with-openvas/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "5ad688f860d7a54860df5ccafb4a3863d71f2f673c2773c342a73006506a986e",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15900260ed85e081eada956f343e912348a86a250d660507bb726086fd14eca2",
+    "references/standards.md": "68ee9d821cebd437b2b63871d3e152d0ef3126fe8b760ac70f44ef2876f3c14e",
+    "references/workflows.md": "7d1a27be69530388a3a08f47dcfb5e8858da5cb906fb41781d56effec93df707",
+    "scripts/agent.py": "86f009c6b76c553c760003ac5f33cc11d95a2b0055c41776520aa44fcbda9649",
+    "scripts/process.py": "5fc7f05ac210c4d98ad00cedfdf3630eba006a968a2be44fe15a2e7c50c420bb",
+    "SKILL.md": "0296675f61c35aa0a0ede09b891b88a91059fe2315f54f6afa624e6e1d6b6e61",
+    "UPSTREAM-SKILL.md": "009d5873c6729e4b705921fed2511a80c01887cc5f57789c3f0b01ac80241441"
+  }
+}

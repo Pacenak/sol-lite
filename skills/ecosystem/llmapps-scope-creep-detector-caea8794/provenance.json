@@ -1,0 +1,24 @@
+{
+  "name": "llmapps-scope-creep-detector-caea8794",
+  "upstream_name": "scope-creep-detector",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "agent_skills/scope-creep-detector/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/scope_creep.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "README.md": "b233cc8b6113a01f27f952f37d3bbb1aeaa6f2dda9718efd7bf57ccafb54d6a0",
+    "references/scope-signals.md": "c710c23e004cbc8c1e47b34eeafb41d441b8e7b4f7a37241da98f667a6e3da93",
+    "scripts/scope_creep.py": "d2b9c5f5931617b0065170b1e6a2780b1b0491e5942569acf73a2c6e2c6fb28b",
+    "SKILL.md": "c8c1569a08509369eea6009fdb49d6a052e734616f6890805641d79615be3937",
+    "UPSTREAM-SKILL.md": "a21a28ce59694554c16ddc19cb3b27620b1e3e5040803df0e40b22f6a34da159"
+  }
+}

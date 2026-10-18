@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-kerberoasting-attack-0db32dba",
+  "upstream_name": "performing-kerberoasting-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-kerberoasting-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-kerberoasting-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-kerberoasting-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "97e91ca55fef0b072f78a9ceb8c995004ea252abad739d049d8761d29c8bb90a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "906b590cbb727e0bd2a17f6de7a9c6c3559d07162be4cbe3dbac6e18f19a0d6a",
+    "references/standards.md": "c0f7fb4de26d882e933357579854337165fa5cb7f5164b326c59ea76f1716012",
+    "references/workflows.md": "d116a949b766d8c024547c5e5b275f7b52bf82a184ec37887549835761820a83",
+    "scripts/agent.py": "2162a19ed38a20124f0f2ccd808ac0f144b058e5b617e2d9f643588c70baf4a5",
+    "scripts/process.py": "88a89463c0b80b96ace6a8b84fe3003b81f57a9eefde89a97cb3d2293ddddb2d",
+    "SKILL.md": "968bfff09f34c6fb6f8e02c9d2535b8d65794cf23831775c3411832f21cacae2",
+    "UPSTREAM-SKILL.md": "488b7ae574c24e11e3795394fe75a9bd6cb3976e2cc517c31d63fe6308a861aa"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-fuzzing-with-aflplusplus-147e8081",
+  "upstream_name": "performing-fuzzing-with-aflplusplus",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-fuzzing-with-aflplusplus/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-fuzzing-with-aflplusplus/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-fuzzing-with-aflplusplus/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "77a813b6496c3030ec8566ed0a677c8b457122a83c2e2e23a0e57f9b801efff5",
+    "scripts/agent.py": "cb539c101107f3f7840fbe82f8d3acbf0671febd890608f585f75a3fab82956b",
+    "SKILL.md": "13dd1ed8c20661c8f44f4f36dbb24fee17a468de268c8cde6b59c3902c9c7d4b",
+    "UPSTREAM-SKILL.md": "970e2f4ea4643cdf41044406aa0f4b3452bd086e93aeb8a1f1e1e56633891441"
+  }
+}

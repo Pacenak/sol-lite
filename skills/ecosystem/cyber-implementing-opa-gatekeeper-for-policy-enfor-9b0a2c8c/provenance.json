@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-opa-gatekeeper-for-policy-enfor-9b0a2c8c",
+  "upstream_name": "implementing-opa-gatekeeper-for-policy-enforcement",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-opa-gatekeeper-for-policy-enforcement/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-opa-gatekeeper-for-policy-enforcement/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-opa-gatekeeper-for-policy-enforcement/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "f4762bcf03535c70119ba23249c21a8a43560fc36d74d4f6deaaa4b09986be93",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e3e612669c1aa80f327bea45e266377b04931cd312f87c629cca039c7c66cd04",
+    "references/standards.md": "ad40b40e5020175946e129028c9b33b5e90d6439f4582da5bc0062b91ba783ba",
+    "references/workflows.md": "7863be9b835610d0d55074593de83ebc32149cdd6c2efb6db6c72f12d529c493",
+    "scripts/agent.py": "2c8fcb1d9e190119e87dec8e6be0887854393dfb235dcd57b8158400febd8e4d",
+    "scripts/process.py": "9a577cf81f6cd79e43fe40ee72b46c727f59ef34e9c082470b094349192ab308",
+    "SKILL.md": "1d6ffa3e780672c956acd8cac0fd9d4c7a22ea9a3d373cca28d9e1809dadb43d",
+    "UPSTREAM-SKILL.md": "3095d3be806884c6176eae03764c8d8e755a77ec10de4d7e5d34de77e28c7978"
+  }
+}

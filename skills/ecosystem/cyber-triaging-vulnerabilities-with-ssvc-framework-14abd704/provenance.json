@@ -1,0 +1,30 @@
+{
+  "name": "cyber-triaging-vulnerabilities-with-ssvc-framework-14abd704",
+  "upstream_name": "triaging-vulnerabilities-with-ssvc-framework",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/triaging-vulnerabilities-with-ssvc-framework/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/triaging-vulnerabilities-with-ssvc-framework/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/triaging-vulnerabilities-with-ssvc-framework/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ca467b4a0942dbef33af113ec7236925b55e39c5dfefc9d310f11ea211700ba0",
+    "references/standards.md": "b333bc51e2b903b235fbef965d086836a4f6c7edb333d5def15b5e5478db4695",
+    "references/workflows.md": "651c6dd6847792920bb9f7cea89996ff067009dbe6731a980218530375944544",
+    "scripts/agent.py": "5656ec497a3eb372c98745983a7e49415943cda78f1a74f83f6cb94f5331ab1c",
+    "scripts/process.py": "6bc8db23a4936ab887288798f565a5b61b9adb4afc13328266044856e7b2d7e3",
+    "SKILL.md": "76dae00af9ca1a54d5a4e4d0216183a79b6a5c4bc0455c0ad2b6d36f7c7821b7",
+    "UPSTREAM-SKILL.md": "7ca9a3eae6dfe62746476dbd6104202951829e273714cb18411e9a13a33378de"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-relaying-ntlm-for-adcs-esc8-3695bf8f",
+  "upstream_name": "relaying-ntlm-for-adcs-esc8",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/relaying-ntlm-for-adcs-esc8/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/relaying-ntlm-for-adcs-esc8/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/relaying-ntlm-for-adcs-esc8/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d22e650653e9f479f4579ac364c24282dafc79eea95cd28007a81180b05d0da4",
+    "references/standards.md": "9b7ea1ba2221f6009028951a89ffea319ddebbe04a5d318fcac5aadd60ece30c",
+    "scripts/agent.py": "eb2361c098713a39028cbcc35f080b1b8a2eb6951f69be7b1607df498f9144a9",
+    "SKILL.md": "3e9261d9195f82a585562b8afe858d28a643fde798dbc446de676e2ddecb1a61",
+    "UPSTREAM-SKILL.md": "8d89718485f3bda6df808c6f7807f8aebe3ed53e61278def45fe4add8ff5ae1f"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-threat-hunt-hypothesis-framework-fb6e5408",
+  "upstream_name": "building-threat-hunt-hypothesis-framework",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-threat-hunt-hypothesis-framework/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-threat-hunt-hypothesis-framework/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-threat-hunt-hypothesis-framework/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "31e1b19280d897e57e5a0c7b4b4e2a278d2484c19cce5286fef225e58ea0c3dc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6ce6036bc3575652dc71a618daac54c5da14b15729e23d63b7268abeb6aa30c5",
+    "references/standards.md": "e64bf162ea25fa52597622bbc3648aa5c10c3c425d205113f8c69d8457039806",
+    "references/workflows.md": "d1e619cde2d2c28ba2db5e97882c318cccf45b2765322d4c411aeee85eed5a7d",
+    "scripts/agent.py": "601af6973b2657857cd393bd4aab1d698616bde575a4bc31a474bb969f0b9803",
+    "scripts/process.py": "3e6585207fae2a1e93f85bb1278cdeceae21ad03e7607c8e2d09569d381c67ed",
+    "SKILL.md": "97489beb0a018c24e1d863f5abb935547e1fcd641f8756d2c1a0c8cb51e38a1b",
+    "UPSTREAM-SKILL.md": "839804d8a8f524f558f2909f7901c2de03a8f85f929307a21409c867bec295fb"
+  }
+}

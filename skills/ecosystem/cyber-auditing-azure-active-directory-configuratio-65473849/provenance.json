@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-azure-active-directory-configuratio-65473849",
+  "upstream_name": "auditing-azure-active-directory-configuration",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-azure-active-directory-configuration/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-azure-active-directory-configuration/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-azure-active-directory-configuration/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f59c2676cad86af742040e9936440c4cb45d5bc33bb60ee6185fa0ee1453894c",
+    "scripts/agent.py": "0dc80ee940bef77b2dee3919dd73095a35766ae3362053b3534952fa568696ed",
+    "SKILL.md": "6358c9351b95b11c8124b4b8f4deaf67042ab096a07cd25c1f3e7815bf80ec06",
+    "UPSTREAM-SKILL.md": "b114b06ba5bcdc4c9ef65c1b406e57469dfa80e277f2c4e5409eea1e85297e1f"
+  }
+}

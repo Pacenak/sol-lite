@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-privilege-escalation-attempts-8f4caf6f",
+  "upstream_name": "detecting-privilege-escalation-attempts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-privilege-escalation-attempts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-privilege-escalation-attempts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-privilege-escalation-attempts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "6f4c3deccaec6ca5bc9d1f1269f71ddee5486179c9480ed0e11d53b6833dd63d",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8cd6133bc17249e7a310bcf061249b647b1e14068d55cbb943eeaa9c260dacb3",
+    "references/standards.md": "fd49c96293359aea808e0a730d6eb884eb565028c5cefe5a9da3224479c17ac9",
+    "references/workflows.md": "30ac2aaa556896a354d209b71a4ac6dd5c0185ca417b6be6115f16a8851983d5",
+    "scripts/agent.py": "8c48ec4393210239bd4d27ff1d1c51aa7eb1f03bdbdaf51609395f251ef29d4d",
+    "scripts/process.py": "49c8b82dda1dfdcb06fe940ef9a19d2ce01618bf0ba23872a6d0d7223271b925",
+    "SKILL.md": "c8bb77990f5d5e51f90a700944b8e62ab6d7ffe1addb559d7a46ee00b2969b4b",
+    "UPSTREAM-SKILL.md": "e0e3d75cafd9c7396a7720c0cf44468781135bf9ff9fef5f299ba4f6a1fe7f33"
+  }
+}

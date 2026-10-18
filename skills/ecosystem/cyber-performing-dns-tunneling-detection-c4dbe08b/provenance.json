@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-dns-tunneling-detection-c4dbe08b",
+  "upstream_name": "performing-dns-tunneling-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-dns-tunneling-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-dns-tunneling-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-dns-tunneling-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "57fc6ffff40480a70ca10a24c8c1ff39ca741053aa2d1b85aa2cab4a08a60019",
+    "scripts/agent.py": "d38f2189fd4cb327f43b94e1153b3bb1faae6f67a2380166794de26e39c630f5",
+    "SKILL.md": "5039deca97fd4d6d3be0ec931f62412052e756d5463132ed285456b978734962",
+    "UPSTREAM-SKILL.md": "b6fea1283120e83f7c62a6011d4711e68e3c7b33b61b30419205ce6a08373fdf"
+  }
+}

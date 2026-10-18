@@ -1,0 +1,27 @@
+{
+  "name": "cyber-auditing-entra-id-with-aadinternals-b273f118",
+  "upstream_name": "auditing-entra-id-with-aadinternals",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-entra-id-with-aadinternals/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-entra-id-with-aadinternals/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-entra-id-with-aadinternals/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f0b9f884be11ba44cd2ff0b158a116f2f9e9dea244783381f51e636b07072ca4",
+    "references/standards.md": "9dc185d1251724069ac5c8fff5a4fcb603976f4c876a5f887aaf974f5f702b8e",
+    "scripts/agent.py": "f9602fa3ee3e23bd4dbaa1ed6f444b6475fa216232f8a59a6788445f67e1b4d4",
+    "SKILL.md": "a0ed82be141717a44508c34b28cb5f05e5c27275ca1e1a3bfe5badb241413938",
+    "UPSTREAM-SKILL.md": "fba44cf420cd64854b556d9a97407cd6e1788f4b781888d5b08cc0c6df50115d"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-building-threat-intelligence-platform-815891e7",
+  "upstream_name": "building-threat-intelligence-platform",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-threat-intelligence-platform/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-threat-intelligence-platform/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-threat-intelligence-platform/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "0a9e89e9d7229d04ae4d717def9058d005b9324534ad031ba1b81be06a9d72c6",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7d669245ca46313782664338136551e0ec8f932606ba447593c345d0c7d0f52a",
+    "references/standards.md": "df5a43352a10eaf9ca5e39df48686aff4f6804a888ec4edb1d7e4ad2ececa696",
+    "references/workflows.md": "eb79a4d13b97110a13fad7486851600688a21ea52cfc0e34e417655a9776a84c",
+    "scripts/agent.py": "2d6ea3492379b94b8745078941253feba4183ccfb1358edbd01937b9cd4b4ac3",
+    "scripts/process.py": "17e46b7e99280093914be7ffe364613c6c84b1845a3e85d82774bb948d94b67c",
+    "SKILL.md": "4ec7b7946124da345e174235db45f37546375f33bfb2686d2f9e6c36be3e8ee0",
+    "UPSTREAM-SKILL.md": "76d7f0fab0576bfb36231b203cc4c6a2d7d4a7db7f545d39cdbac9f339048679"
+  }
+}

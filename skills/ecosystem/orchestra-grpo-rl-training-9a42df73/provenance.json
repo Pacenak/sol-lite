@@ -1,0 +1,25 @@
+{
+  "name": "orchestra-grpo-rl-training-9a42df73",
+  "upstream_name": "grpo-rl-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/grpo-rl-training/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "examples/reward_functions_library.py",
+    "templates/basic_grpo_training.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "examples/reward_functions_library.py": "aa2104ebb7bb38df0bd06752998cd9822e47126cf8515f57c1c19545da6364cc",
+    "README.md": "e6c726197d8f97daf8af38489bc0e33f0cf7d224d7279276339e351908abdc8b",
+    "SKILL.md": "2dcf755e04cc40f2fa47357788d3080c87b9782bcc71c30541a0f7201ce8961f",
+    "templates/basic_grpo_training.py": "95abe6a3f69bea79d52c1a36301c7600a1439eb805f442b1cda304812ebced02",
+    "UPSTREAM-SKILL.md": "c9b771c280840f12d0e98749250c35df4a83a21f95465c41e8ae13f0229ecb40"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-implementing-semgrep-for-custom-sast-rules-1bd6dfdd",
+  "upstream_name": "implementing-semgrep-for-custom-sast-rules",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-semgrep-for-custom-sast-rules/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-semgrep-for-custom-sast-rules/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-semgrep-for-custom-sast-rules/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1fd28d2759c939c1cc40d102fc05e7e4d7aea85b92c7c35b76f592a7fdb86b4c",
+    "references/standards.md": "94b6aafdfa9537c170fbc5ffe36991303d3515ffad94db2d7300a881ab71e860",
+    "scripts/agent.py": "a277b2b3e318e5a89394709662e844f904ecb61dede255c7c4c17c1cd1f1961a",
+    "SKILL.md": "d6c740b9c1f7bf9294927333fdd128d5ed339c25843de44821fef7836856eda0",
+    "UPSTREAM-SKILL.md": "1f742a919e99f19d23b36aa66848e5205a4922873be5bae3e45fed84be75d411"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-privileged-access-workstation-0e24fdbf",
+  "upstream_name": "implementing-privileged-access-workstation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-privileged-access-workstation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-privileged-access-workstation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-privileged-access-workstation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7ed098e3d94ac18f21eef3a1acbfb7c1cfb973854534f47ebbadd087c42a51a6",
+    "scripts/agent.py": "6c876b3474253689d3469d8bfae54309a813c9fe6dc3957176e116b6421b779c",
+    "SKILL.md": "8e137ed7e5174a0024e189b90f02fd9d4a77b0b5c2ab5f2c8bceaf2c609a7431",
+    "UPSTREAM-SKILL.md": "43da0ba48b160ba9a3581dd38303003cb4a229d89dd42f8e3ca2ca4023311ce5"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-fine-tuning-openvla-oft-23faa99e",
+  "upstream_name": "fine-tuning-openvla-oft",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/openvla-oft/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/aloha-workflow.md": "9e415dda857631f3413e2036ef0afa7c00e6f877d15e0761f7d49d3ae4019bf6",
+    "references/config-troubleshooting.md": "c6da7ed29b71d1d0f978b624324f5ee83a8f7bcfb672a669a39f40ed16a85aac",
+    "references/libero-workflow.md": "5b54800ed6d484ce65beacb2775d72849de0590159ad3dd1053f22e858c9bda2",
+    "references/paper-and-checkpoints.md": "40bf1ea9a9e0ca94ecbcffd62ac1255cf63d3360e1c12820df22470c240cc8f1",
+    "SKILL.md": "e3d88919d405db9c68e2cc5f8c026a5e5fde9e7adb8634077ae1a324c1cbcd01",
+    "UPSTREAM-SKILL.md": "07492556c7479f18d353c80a4f92450fbe301811e664fc45d0070fcdd9587c9e"
+  }
+}

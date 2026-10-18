@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-identity-aware-proxy-with-google-816fc0b2",
+  "upstream_name": "configuring-identity-aware-proxy-with-google-iap",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-identity-aware-proxy-with-google-iap/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-identity-aware-proxy-with-google-iap/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-identity-aware-proxy-with-google-iap/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "c597ff871952830fe52a8242ab3430498120b9a8567620780b55d941d7d6d6a7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "aab9142fa039b3384426dd64bbea3981c2a33b8bfef5af9705141b2ee0ee1cbf",
+    "references/standards.md": "d55998b392bedbe17d0c6fc4c561e2ed009a5b7116b0958f5e74ca51b0836c31",
+    "references/workflows.md": "b39c31c6f417b2cf6d3a03fcce02da8f29a0614cec8f13304e638c653f2a4e4f",
+    "scripts/agent.py": "176a2e20cc75db2a0348ef7e5ec3112ea78a05afc7720b085a69b61cb4122293",
+    "scripts/process.py": "09847838b39b24fac1aacc2c148100d70e98ef890b270cc160524c785561bb2c",
+    "SKILL.md": "bf8c6fd622674a4c7234340722eb5ee895cee442659d1db962f60ec769a81556",
+    "UPSTREAM-SKILL.md": "03e1364aa2a8c6c8846a4851313db4b60136ef89bceb97bd1c6a9ee5027e7b31"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-gcp-security-assessment-with-fors-03ab035d",
+  "upstream_name": "performing-gcp-security-assessment-with-forseti",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-gcp-security-assessment-with-forseti/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-gcp-security-assessment-with-forseti/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-gcp-security-assessment-with-forseti/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a5fac2c761699f033d299f00898350932c9e107af4999f436c2de9ec026f72c1",
+    "scripts/agent.py": "83b7871ebb015707ad1ed939b608ff791710c3bc8a5245af76179fc272ff5009",
+    "SKILL.md": "5342cbe73df6106716928be4c0ccad1de75fa957726803379036cb49f9dc11f0",
+    "UPSTREAM-SKILL.md": "414468feeab2af7a7a73336311658225ed50919217822cfe386f9dc88636ad68"
+  }
+}

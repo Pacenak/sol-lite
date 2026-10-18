@@ -1,0 +1,29 @@
+{
+  "name": "kdense-waypoint-bio-77fb18df",
+  "upstream_name": "waypoint-bio",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/waypoint-bio/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/profiler_to_waypoint.py",
+    "scripts/vocab_coverage.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/cli-reference.md": "bb6f673ea630f2254258a7a7ce9130529b98c7307e1e3296fd5e30682f639d18",
+    "references/compass-benchmark.md": "b6fe09ffd0c650894fb794ee2dbd9104d7b24a7f9dc384a69c3bfbc3f10d3d47",
+    "references/data-preparation.md": "af09e87aec1f5269ee40611bceedfcaf86c4135088eff11409d864b414f5e80b",
+    "references/python-api.md": "d057e7508b90fb00d0fea7c8d0a882f536e78c4f47c6181848f131fc28338cff",
+    "references/upstream-review.md": "0886fd5b03d73588fa486d127b01b59370898bbc83406c4103640e333ee7e331",
+    "scripts/profiler_to_waypoint.py": "e51ffcc65199c9e48d441f48d56c49b88a4c0af2593e34d8d973691787665875",
+    "scripts/vocab_coverage.py": "6c4f0aca02eeb6363008f527345f2b7e718edd5367f32ca9a5386239eae3fb22",
+    "SKILL.md": "43e36cce2c9909179ec28b3265dac44a20ba23f049163bf5595eed3660956301",
+    "UPSTREAM-SKILL.md": "132d1f33d5d99bd6288a4cb432b277fcbc0f8bc4315e333dcecb840e7adc87a5"
+  }
+}

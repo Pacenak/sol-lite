@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-thick-client-application-penetrat-97ce5a16",
+  "upstream_name": "performing-thick-client-application-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-thick-client-application-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-thick-client-application-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-thick-client-application-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "faaf03e906481bd5e4eba9723363b7ba7a744fd26e64f324f273cad8f6a0cc65",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b2306884da5e0a752481df4b03c1cb73c8fb1043097e1471806c9482a855efb7",
+    "references/standards.md": "52cb3f8e5b97ebb05d4542d151a291e4bef7538e60bfe5ed7fca819b8e0e3e8c",
+    "references/workflows.md": "3e24d294c3fc5e399f5774bdec1af50487d16667e9aad374520f417dfd4927ef",
+    "scripts/agent.py": "181282c9800e93d79836a538a9c17f8896980e32521884b0f2d7908f2a495107",
+    "scripts/process.py": "6d8a34329e41a597059a80cb4d66b9975b6fc576a7455cd1bf19ff3f2112e070",
+    "SKILL.md": "e7b863795cde3e02bef6d063eff9655ac3bba547b6c25323036998f99a25229f",
+    "UPSTREAM-SKILL.md": "7149ad678c2fb057773f1b7556f99cc693f290d0862704173410eb6f883807b8"
+  }
+}

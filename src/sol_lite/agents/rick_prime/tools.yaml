@@ -42,6 +42,7 @@ tools:
   - hosting_pr_status
   - hosting_pr_merge
   - runtime_get_context
+  - skill_read
   - skill_discover
   - skill_install
   - searxng_search

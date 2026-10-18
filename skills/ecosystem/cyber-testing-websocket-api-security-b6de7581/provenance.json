@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-websocket-api-security-b6de7581",
+  "upstream_name": "testing-websocket-api-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-websocket-api-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-websocket-api-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-websocket-api-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d6a6dc838a065b5d7f018a4aed871be951a6b4a09275a3cb9e807010ee03d984",
+    "scripts/agent.py": "25e2bed56a3865fc9bd538576a6705885960c60b15d2b6c77d2ad8c32f5ebe9c",
+    "SKILL.md": "4b9352db0a61c3f02f48b42e47344dd6ea4cb5353b02c3d7b19df968ff361a08",
+    "UPSTREAM-SKILL.md": "18aaa89cb98ea9e3abbfe72862c8af19bf3ee2ab5e8d37d3c997e6484d14368f"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-segmentation-with-firew-7853f869",
+  "upstream_name": "implementing-network-segmentation-with-firewall-zones",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-segmentation-with-firewall-zones/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-segmentation-with-firewall-zones/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-segmentation-with-firewall-zones/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d33d0488e0b3bccbb5ade82e3bf1397f0cf839a16ccff73859b0f8c1270f9fd9",
+    "scripts/agent.py": "9a8a14c833837de2c18fff560c4b3867e5f98d3c6ebd8f395e4d38327c440fcf",
+    "SKILL.md": "a244f88c30a4864203d5f2ab8a1cc5f7d0e5146b81ca98b4b33ddae29e087c8e",
+    "UPSTREAM-SKILL.md": "6051aed18cbccc98d8fc8254eff848c780b96c894c7000a27e76cea347165635"
+  }
+}

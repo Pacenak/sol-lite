@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-sglang-283bf37b",
+  "upstream_name": "sglang",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "12-inference-serving/sglang/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/deployment.md": "e5400d1e6c79d3e95eed16f9d44c7d87595350a9f56a65869c64eec287ebd46e",
+    "references/radix-attention.md": "c47e5a9adfa0b7904373e15e9af5c26dbfc9d4967d0ea1d73d644b4b27e770ba",
+    "references/structured-generation.md": "e5bade39d37dccc2cdd85da8c16bf46e924ba168292271c4b2007c8b472696f1",
+    "SKILL.md": "dbabb6d5484675f48f12a6ecb58de89e5cfe69ff558f2674b14e3b583b0a8934",
+    "UPSTREAM-SKILL.md": "05e664a43bb82df2363ef22ceba81a41394a2b819c3367b2413f661485085c8f"
+  }
+}

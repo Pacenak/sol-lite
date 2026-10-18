@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-log-integrity-with-blockchain-17b2361a",
+  "upstream_name": "implementing-log-integrity-with-blockchain",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-log-integrity-with-blockchain/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-log-integrity-with-blockchain/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-log-integrity-with-blockchain/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b05a44ee4edb70198f8dc305b3363981f3ab4435ce7a66ecc768f7e526736091",
+    "scripts/agent.py": "2b20e36bd6485f5c75202913dbea900f33c75a229ede38ae29dbc195d9654f7b",
+    "SKILL.md": "1fd360e5b6aab3c377010d60f92cfdde6cd98be4382c52e384b98d5eda4a5193",
+    "UPSTREAM-SKILL.md": "c7dd6358dbb9628626a6d88abe29d2ce5968a8baabf4e174609b90ba13abd34a"
+  }
+}

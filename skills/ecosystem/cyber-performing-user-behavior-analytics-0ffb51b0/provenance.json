@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-user-behavior-analytics-0ffb51b0",
+  "upstream_name": "performing-user-behavior-analytics",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-user-behavior-analytics/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-user-behavior-analytics/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-user-behavior-analytics/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6e0e5d5eda8640b804ec3f8f386a4c37097d1a406e33abc42e3bc8bb1ad09386",
+    "scripts/agent.py": "29abe589a05c34f5606bb196399c8ff6614c402ccf6c5de8a7c8a2440e414b69",
+    "SKILL.md": "506ff9c99489cd27f56cff4ee788481dfd8d247cac153a48b0e3f03fa5518fc7",
+    "UPSTREAM-SKILL.md": "442b96b1a1ceb1c3cce3b1a0bb91db1d8894874c852370ac6a0d22738102e848"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-misconfigured-azure-storage-b2d1232c",
+  "upstream_name": "detecting-misconfigured-azure-storage",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-misconfigured-azure-storage/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-misconfigured-azure-storage/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-misconfigured-azure-storage/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e9316fca35604a736d9a01e65bf40a50bf4679d77404f578c363bf7900d6c72c",
+    "scripts/agent.py": "36827333f47e247833a42ea4bec1f005dd16adbca484e87c3d32fbfae3127d2c",
+    "SKILL.md": "30bb52ff3280d6f64ae4aeeaface1b37d19043cc490a1ae70f6a9bf600fe1ea6",
+    "UPSTREAM-SKILL.md": "3fd1f626b8bd6709a3848616512903453e702c228286eae50ffccf9bc9d2ffc7"
+  }
+}

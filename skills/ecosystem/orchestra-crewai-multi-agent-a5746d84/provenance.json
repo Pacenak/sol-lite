@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-crewai-multi-agent-a5746d84",
+  "upstream_name": "crewai-multi-agent",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "14-agents/crewai/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/flows.md": "bb4b104c94ffa8145516d73a1d4af3809723df15d47c2d02b24715bc9a1752f2",
+    "references/tools.md": "fd62a6c2c1ba08fc921cab5dd519c476e38e43f16cbfbba32fd000386ed454f5",
+    "references/troubleshooting.md": "9c55aa955aebe83322bf50e92181ff266f2af9374affbda27dd34e8de79d6fe2",
+    "SKILL.md": "3cfed5016789c98e10354a275d55f91007ef04fb1944ef2e120b5d9c4e3ed14a",
+    "UPSTREAM-SKILL.md": "8760f968af1118e3dde5bc8443613be5ef7046a5639d26079d596fcf6d2483ff"
+  }
+}

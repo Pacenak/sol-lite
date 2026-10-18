@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-pass-the-ticket-attack-c4bf5cbe",
+  "upstream_name": "conducting-pass-the-ticket-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-pass-the-ticket-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-pass-the-ticket-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-pass-the-ticket-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "064730880fc114ce1aac576fd39129fc086e4281556863aee8e5a9838666466c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "571b2f34276675eef6001f5d0d93c394d7868d820edfa0ad2f644aca1e20a824",
+    "references/standards.md": "cafc5a7f77bfde09062143c0b5a30b00f07f0d52ea0b257f189234a7a83d88f7",
+    "references/workflows.md": "33adaf69fe449492186df3a3e827697a18067c10116b99ff30bd41550d6af0e9",
+    "scripts/agent.py": "5f1338fc522988d9f098315a944ed15c7f2105640c194d3e44beba7b36277944",
+    "scripts/process.py": "9f9ba3b057e5495747210f0d5801daaf9f897a29666448f05f997348d85b1aaf",
+    "SKILL.md": "a488bf6cec538f0becac328e57e4854f2a04573053bb6da1261fad31f341115e",
+    "UPSTREAM-SKILL.md": "8de0ea7dbdc76e174c0ea3c7b9d89431116a3298f52ffccd307a5cd888fb74c0"
+  }
+}

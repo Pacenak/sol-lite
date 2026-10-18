@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-zero-trust-network-access-with-3f1332a4",
+  "upstream_name": "implementing-zero-trust-network-access-with-zscaler",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-zero-trust-network-access-with-zscaler/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-zero-trust-network-access-with-zscaler/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-zero-trust-network-access-with-zscaler/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "085ddd59d7ef278748991d32d38b65f9c8f73840776af8e96b22ae8595f6cb9a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4bc8c6f94eee9f968b76b32c963615d75542821863fe77dc3a940e5955242a32",
+    "references/standards.md": "4832bc2bf9d694c7d53eac6784853355f99e3dd9202c3bc17539da2f4bc34570",
+    "references/workflows.md": "0d7aa9b4b69598d5235b9ae80a5e4c56d1012db4adb4e18396a7565dd858beb4",
+    "scripts/agent.py": "613286ac655ed50ebb6cc159186f8feb076f04b9ed99613da0259161d1ad9ad1",
+    "scripts/process.py": "25cdf9a1d748b9ad7a3c4e3ffe02fb5c5caf7ac46c2291951be022d3c034aa6c",
+    "SKILL.md": "b66feaf45d3020c47af610e847e3943a9611c933da883adc76b304ecbe77bd73",
+    "UPSTREAM-SKILL.md": "dbd6939deefac72b9f9cb93106007cc569951e3c21a043626f42de912dec0c17"
+  }
+}

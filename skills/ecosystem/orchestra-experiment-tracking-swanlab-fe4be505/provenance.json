@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-experiment-tracking-swanlab-fe4be505",
+  "upstream_name": "experiment-tracking-swanlab",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "13-mlops/swanlab/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/integrations.md": "19330c5858713313989dfba3b3d00c87929fc29d74ee9a37b97eb5cdc84b7fd2",
+    "references/visualization.md": "9ab81ed4397eff3b3c3db12c0156bf5effae6d856fc00dad6196eb7482b6f610",
+    "SKILL.md": "3bced5d8f4ddf1fff851d8ecb28572c2aaebdc03bda4bf056cc3cb33c0afaad2",
+    "UPSTREAM-SKILL.md": "14b0f74e6383e4e43cc78785706b43f0343801ba96c14b56284142203be48eff"
+  }
+}

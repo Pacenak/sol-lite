@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-campaign-attribution-evidence-cee67ba4",
+  "upstream_name": "analyzing-campaign-attribution-evidence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-campaign-attribution-evidence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-campaign-attribution-evidence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-campaign-attribution-evidence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "45b90266d49ac08a0ec3a50f2165181e5ed7deccd755ea3cd202d46e580bcdee",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3b9a212deead5583c1aea2601797d3e2287732af8170813d692f553d40685278",
+    "references/standards.md": "970ae8703ca53c871f93dd8ffc97992f7e2b2b78a0ad7a670b826f0086ef195c",
+    "references/workflows.md": "f5153b94407f24bea2282572c41d7a6b6e061b8eb426bc5e5016406a5b75b1ef",
+    "scripts/agent.py": "850c546b4eb5513b9fd66c07c9025514d96b29d3c28a0a55861a72880a71a197",
+    "scripts/process.py": "76991e0eaf13ec19a7f7831bd1c7bb0e12cb059b5673674e8ce724e008f4e43d",
+    "SKILL.md": "869b7272752559b5d309c57aa12fe454616ece3f2892faa8dadcee5a22c40e68",
+    "UPSTREAM-SKILL.md": "6b03f30f7b1f13326999ec37a70c00594a20d9f94433e46285b525ff9dece794"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-sql-injection-via-waf-logs-4b69e1dc",
+  "upstream_name": "detecting-sql-injection-via-waf-logs",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-sql-injection-via-waf-logs/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-sql-injection-via-waf-logs/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-sql-injection-via-waf-logs/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a26e5746bb5d4d49377a3b227b4ac453dcc0d528755d79997622459aa3dd0018",
+    "scripts/agent.py": "ed317d50e9877b3e2b830411fa792515b10bd78ffb8cf21915b57b8955947b6e",
+    "SKILL.md": "3c7d2a6fc86d37af75539c15fa01436be5408bea18a1e1e3b4503c23aebb5495",
+    "UPSTREAM-SKILL.md": "00bd344e89268088dfcab400c9e1ffcfc056df1ab5c15f3209cdd02f04a1696a"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cyber-attacking-entra-id-with-roadtools-98b69705",
+  "upstream_name": "attacking-entra-id-with-roadtools",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/attacking-entra-id-with-roadtools/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/attacking-entra-id-with-roadtools/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/attacking-entra-id-with-roadtools/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0976e6ba1fda8d00e41e9914bb2a24270c4218f0fd8c912419c1f8f331098fa0",
+    "references/standards.md": "56151bc65187f3e74dd3fc1e6ad262826cc38d2c2cfb13e8130fdcd93d69aa02",
+    "scripts/agent.py": "fff81383d742dd46e4bc486890234c8f7f5767edcc50c65039f24297189139bf",
+    "SKILL.md": "12cf136090158ab9a408a404add6ca5ff9c8f38fd0f01d96268bda01d99cee51",
+    "UPSTREAM-SKILL.md": "cfdc1d07240f778967ac2c10527d8155d87a1e468505234e7ac13411a1f2eff5"
+  }
+}

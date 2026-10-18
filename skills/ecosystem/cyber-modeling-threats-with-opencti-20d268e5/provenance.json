@@ -1,0 +1,27 @@
+{
+  "name": "cyber-modeling-threats-with-opencti-20d268e5",
+  "upstream_name": "modeling-threats-with-opencti",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/modeling-threats-with-opencti/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/modeling-threats-with-opencti/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/modeling-threats-with-opencti/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b374fa8d062ee6bb0ab3a59e9648cbb37cfc44082081973229ea15faea8845a7",
+    "references/standards.md": "79cc2d27df3b503044fbe94c3943bb305964f020b303b864e6001566edfbc215",
+    "scripts/agent.py": "a1086343c98889713c8a76346c606295630760cb84ad4065a585e02085412fc7",
+    "SKILL.md": "e87e5bbf75aba3525ec43e199a8359dcc473f31a3dc8383c21bf550b4d29c6db",
+    "UPSTREAM-SKILL.md": "948221aaff9974929f52a62581cb9091fb6f2f10b207f8acc19b0f34a112aa9f"
+  }
+}

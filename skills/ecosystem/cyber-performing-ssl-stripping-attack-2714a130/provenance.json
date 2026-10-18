@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-ssl-stripping-attack-2714a130",
+  "upstream_name": "performing-ssl-stripping-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-ssl-stripping-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-ssl-stripping-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-ssl-stripping-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ed5001ebd5c4edfd897985b7deb4bbdcb5841670af943a13e78190aa412b0485",
+    "scripts/agent.py": "57a29071f8060f2a6a1c9fd8ddba94d76e84cf8740bccf6514255943cb09aef5",
+    "SKILL.md": "6fe3b33898e2d0af7aeb4443dfde2c930ec80c40f2d70b2fcd86d0760db0a0a8",
+    "UPSTREAM-SKILL.md": "89178861d97e63d01b3760459a7b4b9c055edf1d119c9f8ec738016198823ff1"
+  }
+}

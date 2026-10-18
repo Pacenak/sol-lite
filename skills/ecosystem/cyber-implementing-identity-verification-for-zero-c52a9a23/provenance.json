@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-identity-verification-for-zero-c52a9a23",
+  "upstream_name": "implementing-identity-verification-for-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-identity-verification-for-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-identity-verification-for-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-identity-verification-for-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8a1f1767114d0db52c5b4529170c5f9490111c0990e65b4bf94b34cff1acad11",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ca0b6b9fb3603cdf349f7d7ec32b7d3f2f97256ebbacad29cd32d63f12dfac6f",
+    "references/standards.md": "7615e1ba228df279547a3a41f0f4a100d812476a56d81a0249467d74337de3bd",
+    "references/workflows.md": "b9621fc34982e951994d6c8a2f0e9117848ea43ae0216dba59b858a66d008f28",
+    "scripts/agent.py": "885ae09ddc4fad17eb777dc320aea261204a012687873f1c96c70a3a0b1c4637",
+    "scripts/process.py": "2b6560fe035b50d00ac0e263855201e80e375b4f5cb5396ab46705695ad4fa0e",
+    "SKILL.md": "b8ab187b72c3f3dd197e0b5d2964fe8af328e335ba2065fc0f1046a5ab3ac500",
+    "UPSTREAM-SKILL.md": "5c1aacff18df6c62c2659234f133c16511629626387c20e23ca6ddd401838f50"
+  }
+}

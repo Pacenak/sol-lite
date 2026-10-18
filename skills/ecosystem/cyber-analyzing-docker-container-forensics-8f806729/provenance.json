@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-docker-container-forensics-8f806729",
+  "upstream_name": "analyzing-docker-container-forensics",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-docker-container-forensics/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-docker-container-forensics/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-docker-container-forensics/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ce78a658017e62e33abceae83b999b6fdfd20f314d94518c3577e468bb9a0c0b",
+    "scripts/agent.py": "e600491a86dbce699c6bfc880c7c19825fd6f645df88cd351a0e9b540666cee9",
+    "SKILL.md": "226a62bbde852a5f36d3fd2ad16e067433488b9dcf94c9ce121c222cdb179490",
+    "UPSTREAM-SKILL.md": "7d1f7b43d2147f9d349d1618f1bc091311c2e074c766e63589571cc29c6fbeed"
+  }
+}

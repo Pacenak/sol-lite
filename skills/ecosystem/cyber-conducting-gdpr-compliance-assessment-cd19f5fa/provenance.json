@@ -1,0 +1,33 @@
+{
+  "name": "cyber-conducting-gdpr-compliance-assessment-cd19f5fa",
+  "upstream_name": "conducting-gdpr-compliance-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-gdpr-compliance-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-gdpr-compliance-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/article30_parser.py",
+    "scripts/article30_validator.py",
+    "scripts/generate_ropa_report.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-gdpr-compliance-assessment/LICENSE": "6253b39e5b94dc600d00aa81d47be96db2118c649155a55553a677798fc2881d",
+    "assets/compliance-scorecard.md": "b041cb7dc38c4a89eced58747d463df29052a28e8fb34ea4c9673bc928de45f9",
+    "LICENSE": "6253b39e5b94dc600d00aa81d47be96db2118c649155a55553a677798fc2881d",
+    "references/api-reference.md": "5f6e68dec0a3f018f54194dcf15bb811b91d12b3da49ce4f5af53a043ff66789",
+    "references/detailed-workflow.md": "a8429be4abf0fdd289df11bc4033d400372584eca29eb6f6db4f599063ffafd7",
+    "references/standards.md": "3355b48bbe85fb0e7671ab5ebcece6e355d0f240ae83eedc7fc20f36c1801598",
+    "scripts/article30_parser.py": "c8304ff60665559487d35a085b68a05c1820f374f5a312da8cdc2d5193815f5f",
+    "scripts/article30_validator.py": "14939f3d677853f3911d853f03178f51618bbd0b1f5c79d6b316a14171916292",
+    "scripts/generate_ropa_report.py": "96ffae50e6a9c59bc730295192d0eef220eb296e6888ef0386080dacf62c5e0b",
+    "SKILL.md": "35ce49bef23b97b5fdcc3999d8366cce0901aaeeffacdbf814168ec0de27469e",
+    "UPSTREAM-SKILL.md": "7fe5870aad9fc430336dd33cb0b2b4200eeda217d8bc04aef296324d13e3b6a5"
+  }
+}

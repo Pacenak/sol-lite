@@ -47,7 +47,11 @@ def install() -> str:
         raise ValueError("Expected mapping 'agents' in existing config/agents.yaml")
     old = data["agents"].get("rick_prime")
     if old is not None:
-        if old != ENTRY:
+        # Descriptive prose is not an operational setting. Preserve local copy
+        # while accepting the equivalent profile shipped with SOL-Lite.
+        if not isinstance(old, dict) or {
+            key: value for key, value in old.items() if key != "description"
+        } != {key: value for key, value in ENTRY.items() if key != "description"}:
             raise ValueError("rick_prime already exists with different settings; reconcile manually")
         return "rick_prime already registered; no change made"
     # Preserve all existing YAML comments and formatting by appending a new peer

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-container-image-hardening-3d3edca7",
+  "upstream_name": "performing-container-image-hardening",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-container-image-hardening/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-container-image-hardening/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-container-image-hardening/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "a8b31197fa86d0ede9d79454c4aa9257dc3a1e71e313979827f86292932b07eb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "28ed9938d7cf9b7508f89dc3692782751a8bd225aa5abd543d1a2c7b5eb90e6b",
+    "references/standards.md": "130ef483951b7c09d6ca71341a9b0221797287fce6481dda30b59c67d2618097",
+    "references/workflows.md": "51a9ae503cd35481e1848c85f7ce292dd14d1dbfff3650e3d58d1103181f405e",
+    "scripts/agent.py": "b571e46d53de2bafd170fc37d7372294dc2d518a1fc2f554a29c3d0d258cb7c0",
+    "scripts/process.py": "7a321de54660fdf8153a5f56493365e6e710382637757f5d1f9e7f5f5b60b762",
+    "SKILL.md": "e056f0f8e1dc173f269ac1fb62b47eeddcba46cfa2b118b926c3d4224aab99ee",
+    "UPSTREAM-SKILL.md": "8e54b13b8cc1f0ef8bfc2c51c335cf1cd3dea49ca1aac28851157844ee2ea6f7"
+  }
+}

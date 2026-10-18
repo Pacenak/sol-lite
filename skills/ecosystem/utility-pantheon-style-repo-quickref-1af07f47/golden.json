@@ -1,0 +1,42 @@
+[
+  {
+    "id": "pantheon-001",
+    "description": "Dark theme tokens applied correctly — accent is cyan #33ffff, bg is #181818",
+    "input": "Создай карточку сервиса для Pantheon дашборда — название, статус, описание, кнопка 'Подробнее'.",
+    "rubric": "Response must: (1) use --bg-raised: #1e1e1e for card background (NOT white), (2) use --accent: #33ffff for button or active accent, (3) use --border: rgba(255,255,255,0.12) for card border, (4) use Instrument Serif italic for heading if applicable, (5) include hover: translateY(-2px) + box-shadow lift on card, (6) NOT use Inter as the heading font, NOT use purple gradient, NOT use a plain white card on black.",
+    "tags": ["dark-theme", "card", "tokens", "hover"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "pantheon-002",
+    "description": "Dialog uses transparent shell + inner panel, not bare dialog element",
+    "input": "Добавь модальное окно подтверждения удаления сервиса на Pantheon. Кнопки: Отмена и Удалить (красная).",
+    "rubric": "Response must: (1) wrap content in <dialog> with background: transparent, border: none, padding: 0, (2) use inner .modal-panel div with background: var(--bg-raised), border, border-radius: 16px, (3) close button (×) must be position: absolute inside .modal-panel — NOT position: fixed in viewport, (4) backdrop: rgba(0,0,0,0.6), (5) Удалить button uses --danger: #f87171 or similar red token, (6) cancel button uses .btn secondary style, (7) NOT style dialog element background directly.",
+    "tags": ["dialog", "modal", "transparent-shell", "inner-panel", "ua-top-layer"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "pantheon-003",
+    "description": "Talk deck does NOT use Pantheon dark — uses your light + teal brand",
+    "input": "Сделай слайд-обложку для доклада the на конференции по AI-маркетингу.",
+    "rubric": "Response must: (1) NOT use Pantheon dark theme (#181818 bg, #33ffff cyan) for the talk deck, (2) load .claude/skills/talk-deck-builder/SKILL.md which references your light + teal palette (#ffffff bg, #0f6677 accent), (3) use brand CSS from talk-deck-builder: --bg-dark: #16252b, --accent: #0f6677, (4) note the distinction: Pantheon is for your tools/dashboards, not your talk decks, (5) mention SSOT is the talk deck playbook.",
+    "tags": ["talk-deck-not-pantheon", "greg-brand", "skill-distinction"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "pantheon-004",
+    "description": "Impeccable quality gate catches contrast failure before shipping",
+    "input": "Проверь этот UI: https://cdn.example.com/screenshots/SCR-20260503-pantheon-review.png — всё ли хорошо с дизайном?",
+    "rubric": "Response must: (1) auto-trigger vision-mcp for cdn.example.com screenshot URL, call prepare_screenshot with task_intent='design_review', (2) after reading vision artifacts, run through Pantheon impeccable quality gate checklist, (3) specifically check: contrast ≥ 4.5:1, Instrument Serif in headings, no purple gradient, border visibility, hover states, (4) if issues found — name specific token fixes (e.g. 'border opacity should be 0.12 not 0.05'), (5) Skill report must list vision-mcp + pantheon-style as loaded.",
+    "tags": ["design-review", "quality-gate", "vision-mcp", "contrast"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "pantheon-005",
+    "description": "Prod deploy runs in same session — NOT just repo edit",
+    "input": "Обнови цвет акцента в Pantheon UI с #33ffff на #00ffee и задеплой.",
+    "rubric": "Response must: (1) edit your-ui/app.css — change --accent value, (2) in the SAME session, run rsync to deploy to Netcup: rsync -avz your-ui/ root@netcup:/opt/pantheon/ui/, (3) run systemctl restart pantheon-api on Netcup if needed, (4) verify with curl: curl -sS https://pantheon.example.com | grep '00ffee', (5) NOT say 'done' without the curl verification step, (6) if SSH is unavailable — state reason and give exact rsync command for the to run manually.",
+    "tags": ["prod-deploy", "same-session", "rsync", "verify"],
+    "difficulty": "medium"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-process-injection-techniques-f5befea3",
+  "upstream_name": "detecting-process-injection-techniques",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-process-injection-techniques/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-process-injection-techniques/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-process-injection-techniques/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4bd55c523c68d2e8a2ed20ecf3e2150fa23c92ad9813e10cd99d27a194e47310",
+    "scripts/agent.py": "71de8f54e570967027837f3cc99697a264471b5a9e7edd9f587f2ee3a7587ae0",
+    "SKILL.md": "dc8be542b18f74c818fc0ae068597c91d2f920978ca2f741c8b08a9668b6cd42",
+    "UPSTREAM-SKILL.md": "ba4c5a849c88ec19a42b09eb195aa28859023ab7977722b13b2640ec480f5f19"
+  }
+}

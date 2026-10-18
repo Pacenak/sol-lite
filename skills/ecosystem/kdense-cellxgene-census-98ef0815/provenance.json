@@ -1,0 +1,23 @@
+{
+  "name": "kdense-cellxgene-census-98ef0815",
+  "upstream_name": "cellxgene-census",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/cellxgene-census/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/api_access.md": "231a947443ea6bd1f3b827951a4db2603a2dc203908f59bfeb24ca55a8f913a9",
+    "references/census_schema.md": "4ddd1a51d473f2402cef91cda2c94cd148837df0e56ce684614d3d0c845b5fb1",
+    "references/common_patterns.md": "0421a761bfccb08419ce14ffffcf3100618aeab84c3a1329cdc7fb136585525f",
+    "references/core_workflow_patterns.md": "28580f45bfeba8c2b1594006956cbd92c7c2c5211fa58fc667bb51bf81b4d455",
+    "SKILL.md": "d9b5cf9144054e7c7570534776bc4550f51a305fd81fe264614f370da2709ba2",
+    "UPSTREAM-SKILL.md": "123b66d6701c7c0587d0a615a2394caee52e62745b3fd31176381ea64aaa794a"
+  }
+}

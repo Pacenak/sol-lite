@@ -1,0 +1,31 @@
+{
+  "name": "cyber-conducting-internal-network-penetration-test-c90f8e49",
+  "upstream_name": "conducting-internal-network-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-internal-network-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-internal-network-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-internal-network-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d0ddaba6bc7ea5fee9687aa8c5968aae0c7eb4afb5a1ca53a4ef6f08b63dd9c1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dc83a5f83224f15fb77850b382247b2674aa96ae93c8116c9de30a9af638022e",
+    "references/standards.md": "943c4baa82de7cc8df93f9fa6d1aebe3e00365f9b00b69f3f6b7e1d33609961e",
+    "references/workflows.md": "a13777d0095a29879d661fc0e8b9fffe37c3cdd0367f814ea2a53384cd714429",
+    "scripts/agent.py": "edf822758b5afdd2a01811f998b985d0e9aec7c3239edcc1046b0ea96ee90d64",
+    "scripts/process.py": "dd315e919555689f17591f3a868dd921e0cc22ce175ee8dcb86227f744758f9f",
+    "SKILL.md": "67d24b11e80e4f6031dd0cea78b75e7174ec1cb4fc1bdc4e07ea91551ef7c3cd",
+    "UPSTREAM-SKILL.md": "b8ee89434c59f0d2f3fb2a24e25b59e85d3e124a54c880a725debfc1a9864cf7"
+  }
+}

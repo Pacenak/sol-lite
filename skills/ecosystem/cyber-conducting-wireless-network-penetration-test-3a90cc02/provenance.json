@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-wireless-network-penetration-test-3a90cc02",
+  "upstream_name": "conducting-wireless-network-penetration-test",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-wireless-network-penetration-test/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-wireless-network-penetration-test/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-wireless-network-penetration-test/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ee87895af2cd201961a8a7584e0b79b790a2bf03a730c440b42de156bc41c5c2",
+    "scripts/agent.py": "dbf19bb827238771cc0cafdbcc16853ed3e924e609cebcc67cdd455f31b2079a",
+    "SKILL.md": "7e045ff6481035855fb437e0fcf6780d55fda864638b05c711a7ca6445ea4f7b",
+    "UPSTREAM-SKILL.md": "513cb626e6ea37735afe62223e2e34953ed327de70a6b379538585c233e07e79"
+  }
+}

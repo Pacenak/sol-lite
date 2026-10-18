@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-dnp3-protocol-anomalies-ea787393",
+  "upstream_name": "detecting-dnp3-protocol-anomalies",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-dnp3-protocol-anomalies/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-dnp3-protocol-anomalies/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-dnp3-protocol-anomalies/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4c35b41d9cde8d6f787a598a27d7e15180e823eaa240ee17d34264a54f68dcae",
+    "scripts/agent.py": "1dfca5ed7e7a97d911f605fc1ebbcb7a588b3e55d62dcff9533c5f072da348c7",
+    "SKILL.md": "380e94a880fc627332d236d7fdc12023f45cd98d36b33f39e91836dc56f17adf",
+    "UPSTREAM-SKILL.md": "09afad4aac8cd41c2a07d9903c2843876975855a7fa1632e61d275530a0daec6"
+  }
+}

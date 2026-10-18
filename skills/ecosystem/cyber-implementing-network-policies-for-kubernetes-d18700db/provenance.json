@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-network-policies-for-kubernetes-d18700db",
+  "upstream_name": "implementing-network-policies-for-kubernetes",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-policies-for-kubernetes/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-policies-for-kubernetes/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-policies-for-kubernetes/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "43314267c24993f15ccf6e358ab1f3beb71de319d7709b52627bc50f0b85fc39",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bb279997faadcc692aca20a1db6be33135a0a8c82262c299912490ae83dfc329",
+    "references/standards.md": "fa5fd60ee79911afc928d616fc87b3403e5b2a7665e7773b32a046a70f567b0b",
+    "references/workflows.md": "5876c4cb2f822723db32c3f718c92765073b52bba2d42b2f18c0892ecb0ea9a6",
+    "scripts/agent.py": "1ed12e1f10f78122402ac202fbc1f3add6033bd4304e1c32b57a813c3fcc32ea",
+    "scripts/process.py": "7bc7833ff0c1efbd748ad4ce95f00663c1be7ff6291659749ffc9c0c236d718d",
+    "SKILL.md": "adb4d7040ff8ce029806de2a98087771f72f711a4c41871d9db0140f2598957b",
+    "UPSTREAM-SKILL.md": "da04b8c5efcd95104a5808fbef6ff745890d35c33a6dad92095c652e9b71c914"
+  }
+}

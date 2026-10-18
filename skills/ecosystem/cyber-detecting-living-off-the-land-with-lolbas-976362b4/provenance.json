@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-living-off-the-land-with-lolbas-976362b4",
+  "upstream_name": "detecting-living-off-the-land-with-lolbas",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-living-off-the-land-with-lolbas/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-living-off-the-land-with-lolbas/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-living-off-the-land-with-lolbas/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a607d049501a47293a55c127c613f11aa280912bffd100b03446d2ff533501a7",
+    "scripts/agent.py": "62d1b5da01297acc1eba7e2c0874768e63c49c9934aa31ec66ac408a2dea005d",
+    "SKILL.md": "be773c44323df5b4cb390aed9dfaf80b7bbc7301f70607ca75a529d4d1cf1c6b",
+    "UPSTREAM-SKILL.md": "917fba9d14858d43226647be864abb9ce3164da3b206303beb75c45041adc515"
+  }
+}

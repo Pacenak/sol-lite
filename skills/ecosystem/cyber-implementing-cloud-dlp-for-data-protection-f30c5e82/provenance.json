@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-cloud-dlp-for-data-protection-f30c5e82",
+  "upstream_name": "implementing-cloud-dlp-for-data-protection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cloud-dlp-for-data-protection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cloud-dlp-for-data-protection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cloud-dlp-for-data-protection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5432d1f21d30edde49f3c38d5b904766eac49d90dec673ebabef4a5ed11d5795",
+    "scripts/agent.py": "053c54c5f260f39ed6a9a7e64028c750d29aa90651c0534311e1f5234ed1adff",
+    "SKILL.md": "1c6c5e8668b1d4b43146dd31e9d94fb9efbeadd0ce1a38358c060723e6561842",
+    "UPSTREAM-SKILL.md": "490332dfbdf096aa59432d8a3346130660fad2f2d858271062bcf2694593b85e"
+  }
+}

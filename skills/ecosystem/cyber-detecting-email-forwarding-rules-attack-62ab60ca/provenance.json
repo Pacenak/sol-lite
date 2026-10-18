@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-email-forwarding-rules-attack-62ab60ca",
+  "upstream_name": "detecting-email-forwarding-rules-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-email-forwarding-rules-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-email-forwarding-rules-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-email-forwarding-rules-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d87cbce32810d54c8aa0cee31ce1ebed01f080c78cd2ff401f9accd79ca38323",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b96f038c917be6a8b39310ae624694aece0ef9ad56fac8325c0d8e7c04dbe58a",
+    "references/standards.md": "2ff2802e4a2ca6fd89a91943e13c74b02c87628ab13be283a6e50cdc81491f5c",
+    "references/workflows.md": "79906136ebf010a8dc46546e6c14e070ffcef86bf2a05a58945464fccfc5b6ae",
+    "scripts/agent.py": "914368aef45d7d2377f9b2d873bbfadffaa4fd0f3a086921f5cf7fec40d5aaf7",
+    "scripts/process.py": "59cbb23db13101ed51c910982cc683d882ca1e60fc2781e5d5996507793b43da",
+    "SKILL.md": "c7862334dacc6200db1a1b22185404906abb3d2598f327e841e9188a100cdbc1",
+    "UPSTREAM-SKILL.md": "1329a9948465b4a654da1aae0ac1113f7b92adc2f492b0d1355757417360ef1f"
+  }
+}

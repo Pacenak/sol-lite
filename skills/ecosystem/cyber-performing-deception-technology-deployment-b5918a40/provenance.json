@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-deception-technology-deployment-b5918a40",
+  "upstream_name": "performing-deception-technology-deployment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-deception-technology-deployment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-deception-technology-deployment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-deception-technology-deployment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "fb85205852508d96426d851719c6c3e494b47ab5a6844c1b0633f2c2607499e4",
+    "scripts/agent.py": "84673555b943d9ae06fd21794c081deaea068c87bc61abd6ee2872aace2df8cd",
+    "SKILL.md": "98c1b32f7c2ff43379c9f5da6e9f65ade9f1082f6162b84b5565c8d86c308075",
+    "UPSTREAM-SKILL.md": "4737ca1cd4b21de74ec4bf472e397e48b1cb7151b1d24e3eafbd713ca533dc7e"
+  }
+}

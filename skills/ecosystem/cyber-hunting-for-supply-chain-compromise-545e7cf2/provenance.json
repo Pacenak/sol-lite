@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-supply-chain-compromise-545e7cf2",
+  "upstream_name": "hunting-for-supply-chain-compromise",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-supply-chain-compromise/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-supply-chain-compromise/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-supply-chain-compromise/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b4739aec6b69f862f6606475d21261abe9132121bba7079f6a0a552fd9599ed7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d4c4a9575788c9ebb353f42d73414d672f5d023febab4f50c32ede3cf5220e87",
+    "references/standards.md": "c547ff28f6710abeac3cb2e88b7a6ad015e78548c7d9e6d9d2a01473def49dd8",
+    "references/workflows.md": "4b360f26cbc981314d6eca66afb218f7771cd235d55ce2de1a6e749895ad6785",
+    "scripts/agent.py": "28ad65d7a3c3398564097437e4b81fb968b4e8ea0c37e5a23bb023e26282c06f",
+    "scripts/process.py": "9fda8ff24a6bd53b978333704805b58b7caeddf6d1759b2e710d96312dcb3f33",
+    "SKILL.md": "cdd0398e5be7a9493967d821d79c69c3ee1ec996dbf734975b05ab5ba4191ccd",
+    "UPSTREAM-SKILL.md": "919a6211e1d03f8d6ddd1725d2d6433310a75d801a0f575e1dcaacd2f88dbac3"
+  }
+}

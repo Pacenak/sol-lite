@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-zscaler-private-access-for-ztna-94594867",
+  "upstream_name": "configuring-zscaler-private-access-for-ztna",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-zscaler-private-access-for-ztna/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-zscaler-private-access-for-ztna/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-zscaler-private-access-for-ztna/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "2c3d019c0222ab0a565f2c7d0c1a2b47d93843ccb48152bea4666b5c9cdf8000",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "1c2fd0cbfc6810a864e17b5ace00e4ece60a82f1ddef29a7ca25bc6b315abe7e",
+    "references/standards.md": "94f13c3006ec1ffcff243637078fa6524bf2294949f9ab37584ae3ff3939d1ec",
+    "references/workflows.md": "d1647153837027dbc444492a736e7c060df0847a14f5b2c717a2a8c62c758fb5",
+    "scripts/agent.py": "b8ec2eb6eacca7b4f7cf14018dbda7c0f569631d3561e34554809b97a91b7621",
+    "scripts/process.py": "c27feb752505ca1adda9f58b670d2208a9d6d934414df3acdc41cf4ac25396f8",
+    "SKILL.md": "fe9a124c39b1c020867ff801e0d826f1ce72e1f3a186a7a5c3c1c4e132d0978a",
+    "UPSTREAM-SKILL.md": "16c2a75229dfb3f1247f74d2f88d126202f64212c9c33e2e7f8c56a6a6762dd4"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "llmapps-chatgpt-app-builder-f38303e8",
+  "upstream_name": "chatgpt-app-builder",
+  "source_id": "llmapps",
+  "group": "examples",
+  "repository": "Shubhamsaboo/awesome-llm-apps",
+  "commit": "fba2c90c568b3a61d8080be5cee38ed6908d8779",
+  "path": "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/LICENSE",
+    "generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/LICENSE.txt"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/apps/mcp-use-server/.agent/skills/chatgpt-app-builder/LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "_licenses/generative_ui_agents/ai-mcp-app-builder/LICENSE": "15a0e5343aea872c0573ad72feb6044b336f162d724cc1673c608e6b37ea071b",
+    "_licenses/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "evals/architecture.json": "4cdba742f2b697501b2ffac211c6f3eb028f050ffd8954df17f8e252e63b4e3e",
+    "evals/discover.json": "2196452ad900e7fd604bd34eafeaec7641a62ac9dcabcce4f8df283a7d10ea88",
+    "evals/README.md": "9cdd33fb52cde04288ab3642673f3638597883cd52e10fe161ef7d39baf139f4",
+    "evals/skill.json": "7c1da1166be7c6d157cc5abdfa6d41560f691c25bb190a588a90385763ac0f52",
+    "evals/state-and-context.json": "6d84a38975c5413b9b04387b48712eedf81c4e05852e6948fe1bffc4b32174f6",
+    "evals/ui-guidelines.json": "e22e50e8b3ccbd4b7d0211c331fc53cbbfe7577e171c9f4ab8e9e124e0428c66",
+    "evals/widgets.json": "809c6b49cda9627d1e08e5e58534a2f6fb2b5732a45d303413c30e803c7fd6e0",
+    "LICENSE.txt": "de698392d1a131731f56937c4491ca0d1eeadddfb245dab1a598c077ad8c4e26",
+    "references/architecture.md": "e924baa115507cd44d883e1df0ad05fee5ad59ff53c46dd68c2f60d9e5c7595a",
+    "references/components-api.md": "a2a047059f6f29d73ac5e22a7da9af714000f359181bec1ff9c86b1839b726d9",
+    "references/csp-and-metadata.md": "660a62df5efa4dacdc2e864bbe854f42c3cf60ed417b5fbf4b5f6859774d4bf0",
+    "references/discover.md": "308553c0157a9851cb532992b0db8872a26b85ddaa0ef185481e9e3d07420f3a",
+    "references/server-and-widgets.md": "cf33f75d2a6aaf11ed9ab71918202ae5d755aea81c936e6ae9d4c349dc9d4451",
+    "references/setup.md": "c12629dac159c8d572bae61acb98771173e69d2d4d492708920439a441fa497e",
+    "references/state-and-context.md": "4c5535c846e42985fb29452981378c44cab845516c105721a9b99f0c8ba850c1",
+    "references/ui-guidelines.md": "052ff2aa104c8043f6753aed99cd4f18fb5255c67ddfa3fee52c6c7e53b84830",
+    "references/widget-patterns.md": "b3ee26c1797dc9901bc996aa39fb9fa303ada77bfe7be0a823867fd40d5ea3b5",
+    "SKILL.md": "b6add137d30befb2f1107eef4fc74b8d61717230bad0d71926a10a465ff89d0f",
+    "UPSTREAM-SKILL.md": "7b8992f5fc17e65e052e6cfae3288d88458a8f86c9f319c8af08646f115ee410"
+  }
+}

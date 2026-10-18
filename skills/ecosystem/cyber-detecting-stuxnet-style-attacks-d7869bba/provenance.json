@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-stuxnet-style-attacks-d7869bba",
+  "upstream_name": "detecting-stuxnet-style-attacks",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-stuxnet-style-attacks/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-stuxnet-style-attacks/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-stuxnet-style-attacks/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f0f6fb0524c0f4be6f91c016123a32fc490f79de5d6449427f1d304856753d96",
+    "scripts/agent.py": "70a2930d2a5e3692039bdd7592e6862ea87e5a27c1d66264e5607014cf81f089",
+    "SKILL.md": "f23ec6862866eac96675224091e96dcaf19e735df78a0d08cb451f4c6e494a9e",
+    "UPSTREAM-SKILL.md": "6bac620942e775e43162315148bd8fa325ff04b1d91fc96432fe86a16892c80c"
+  }
+}

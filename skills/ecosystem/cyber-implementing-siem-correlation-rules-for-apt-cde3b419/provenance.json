@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-siem-correlation-rules-for-apt-cde3b419",
+  "upstream_name": "implementing-siem-correlation-rules-for-apt",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-siem-correlation-rules-for-apt/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-siem-correlation-rules-for-apt/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-siem-correlation-rules-for-apt/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d74385efb3b43d7d4571645902540d8a98674cfd2dbd94a2d8f4e3be70f3b351",
+    "scripts/agent.py": "685f26cf2b27aae31634f1c9fb1eda2163af951d9bab1332f42311375b8524a9",
+    "SKILL.md": "bf5545a9cebddd2fded5225c5f6756d38220a6bf3ca162cf105b01b68217113e",
+    "UPSTREAM-SKILL.md": "9f673de69a07508cc74291425a1b5d2190c600e06e8867dd3f75af3efad2e628"
+  }
+}

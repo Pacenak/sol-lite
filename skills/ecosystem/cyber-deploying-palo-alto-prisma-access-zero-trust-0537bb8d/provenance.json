@@ -1,0 +1,26 @@
+{
+  "name": "cyber-deploying-palo-alto-prisma-access-zero-trust-0537bb8d",
+  "upstream_name": "deploying-palo-alto-prisma-access-zero-trust",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-palo-alto-prisma-access-zero-trust/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-palo-alto-prisma-access-zero-trust/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-palo-alto-prisma-access-zero-trust/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b62f072cfcb90748cd7a44c8706cb12c5597b7142251ce5c907c8c62f32a508b",
+    "scripts/agent.py": "049bf799a8c22e9672201017288269695d3f9e04c12f870bbbff3c6f233bee42",
+    "SKILL.md": "21f9079d7d56fefa76d86107e20b4bb431ebeae330bc6a4a1601a1ee92e93320",
+    "UPSTREAM-SKILL.md": "603f19a709ceed3d6cadc3cb2ee3ff282ee1179cea60d9e8650fb42f945caba1"
+  }
+}

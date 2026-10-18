@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-registry-persistence-mechanisms-40dbc33c",
+  "upstream_name": "hunting-for-registry-persistence-mechanisms",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-registry-persistence-mechanisms/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-registry-persistence-mechanisms/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-registry-persistence-mechanisms/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "e971ca147ca07dab6e09ae13934c0b22141a8ac030ef5424aaf844c4cf709ab1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "beeef34b49a7179889ceeb305bf5159b766b8876d2af632e314b6efe1f13b857",
+    "references/standards.md": "ff9c53b1e4131ab6e00534f484bd7487cbbdb22672437c168b9e61f87f7029e2",
+    "references/workflows.md": "e4d870b32cae794b42237a0aa1fd434c87dbb612e90c7bca5bb83192d3d2311d",
+    "scripts/agent.py": "cc869e56bb5fed99a732e70b56542799586cce27ac77ce53252a271db36d1ff1",
+    "scripts/process.py": "1f96809251da94944d398d2dba2df5bd4877794f3af91ff4f3c9bf5290365a11",
+    "SKILL.md": "8ee1fdad01f81b4b4922c333c0a6c2924c7866f0b58f3f7e68f45a68d63cf3e9",
+    "UPSTREAM-SKILL.md": "7c7233610b10949b8771e9933a8144304e63986fa255b8620c3ef7f92b634405"
+  }
+}

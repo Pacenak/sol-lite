@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-usb-device-connection-history-41b5e0c1",
+  "upstream_name": "analyzing-usb-device-connection-history",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-usb-device-connection-history/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-usb-device-connection-history/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-usb-device-connection-history/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e913f2372feb430b04f45b1bdf056b5a2b996aea921403a237f241e3778ac54f",
+    "scripts/agent.py": "307fd6641a4a9f9fa27fee433dd5ce9890cb2bbf9198867f2ba66806b97265f4",
+    "SKILL.md": "233ee4d0db5c364c8f35f86e5509309f7f1be91964c4eaa3e62dd018243fa48e",
+    "UPSTREAM-SKILL.md": "0b6df7a267f73911c266af5f0812a24a93572150ffcef9e7dbfff8a29b939c00"
+  }
+}

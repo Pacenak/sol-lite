@@ -1,0 +1,29 @@
+{
+  "name": "cyber-extracting-config-from-agent-tesla-rat-8cdfd8a6",
+  "upstream_name": "extracting-config-from-agent-tesla-rat",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/extracting-config-from-agent-tesla-rat/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/extracting-config-from-agent-tesla-rat/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/extracting-config-from-agent-tesla-rat/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "201cf4d0e9fb3aa5ae0b7c3069544d841b1635138e10c217969add43d13c5704",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "23079652c7cf9613c69a426a41cec26a63992d2947be214250d1cccc400546bb",
+    "references/standards.md": "491dd533004eb898aa3b1d2c1d22c31fc763576c5e0879f22113bcfacabe57d5",
+    "references/workflows.md": "7ff4f67b933c7dba57af2572a12f9fa7a915bac41c1dc7cf138924694ae1dd05",
+    "scripts/agent.py": "64d5eb823917bb4e00d7aa8108811f560a8525cc13a041cc8172dbfa75b3cdcf",
+    "SKILL.md": "5a610a97ca454271e25c473b528c97240cd443d9b4c89654409ca6afc73d5b6a",
+    "UPSTREAM-SKILL.md": "4215f749f5b384ccbc762f37a231c9ee90bd5cd5a4357261b719750273935edb"
+  }
+}

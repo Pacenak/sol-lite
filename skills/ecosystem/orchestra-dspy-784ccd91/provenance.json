@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-dspy-784ccd91",
+  "upstream_name": "dspy",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "16-prompt-engineering/dspy/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/examples.md": "a617b7ed15a81fc460eb8e98d19565ce843828554b926265bc8571721258d2d0",
+    "references/modules.md": "a2a1ba76f0b808c40d8d64be689954538ea00e1d53cd413e2a4951758b5aed6f",
+    "references/optimizers.md": "ddf19b520df9741b7f3b5e5c9993a1c381d282608b4e3b2b9359a6a0b8595a78",
+    "SKILL.md": "0b6c3a8a88bc645572fe8c42930f8188e753f2f230e3162da68af4ac33dd0d1f",
+    "UPSTREAM-SKILL.md": "cd01cee93a2228c199c23e77047e4444b0a6eeddd12dcf14104ca2a5de3fa8e2"
+  }
+}

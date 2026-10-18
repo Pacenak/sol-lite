@@ -1,0 +1,19 @@
+{
+  "name": "vercel-pr-labeling-0dcb4a87",
+  "upstream_name": "pr-labeling",
+  "source_id": "vercel",
+  "group": "discovery",
+  "repository": "vercel-labs/skills",
+  "commit": "13e4063a1cf913f5606d57d42ab83a86f5001e04",
+  "path": ".factory/workflows/pr-labeling/skills/pr-labeling/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "661142e53c313d2bb5e1b055f5c0a39001450ff1b5e27b89dc4bc7de9a6352ca",
+    "SKILL.md": "07b03aba6eb21e6ac085cf71f4e4c67cd29ec728353e491fcc50f0bf88424305",
+    "UPSTREAM-SKILL.md": "1f794aeb1e5110008980aff363197f8cf3e37c71eedc498d7c56dc8e7bfbc5a5"
+  }
+}

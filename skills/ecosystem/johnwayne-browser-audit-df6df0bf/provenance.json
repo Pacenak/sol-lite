@@ -1,0 +1,21 @@
+{
+  "name": "johnwayne-browser-audit-df6df0bf",
+  "upstream_name": "browser-audit",
+  "source_id": "johnwayne",
+  "group": "design",
+  "repository": "JohnWayneeee/ai-agent-skills",
+  "commit": "beca879c2d46194c46924527fb5b456145143649",
+  "path": "skills/browser-audit/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "agents/openai.yaml": "ef7e802324b6d929359b24e9798317bc605138daeeb94cfa7719c4181d2a6b4d",
+    "references/audit-criteria.md": "66210538d251d27aa1d3dad99694ab0efeb752356db62b5b66b948852af9b018",
+    "SKILL.md": "a2b17fdc6cb75a21d301d5612d530e9a03bbfde0a2f7a975286cda10a1cc3d3d",
+    "UPSTREAM-SKILL.md": "8c6050d24333796f86579df712e70f9046a4ef9aa628e8650401a1fdd681ec62"
+  }
+}

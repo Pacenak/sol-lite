@@ -1,0 +1,26 @@
+{
+  "name": "cyber-hunting-for-registry-run-key-persistence-68400d72",
+  "upstream_name": "hunting-for-registry-run-key-persistence",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-registry-run-key-persistence/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-registry-run-key-persistence/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-registry-run-key-persistence/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b973ab230fa9766fd03036c0476af5474073f20201d23fd1b6c728b500a69980",
+    "scripts/agent.py": "d9ea07f0727162f45b53700681422979cf3e551d875544c0ed519f0af9b0ed96",
+    "SKILL.md": "c606ac01558aa26a2d9fb8db6ba819a06e78466fa76445d1b3cdabad6ac5312d",
+    "UPSTREAM-SKILL.md": "440e6a7c7760ab38543b839f6625f9d5e9e8b524c6cfd91c232be97f28aeaf99"
+  }
+}

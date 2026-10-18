@@ -1,0 +1,27 @@
+{
+  "name": "cyber-performing-osint-with-spiderfoot-1f8886cb",
+  "upstream_name": "performing-osint-with-spiderfoot",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-osint-with-spiderfoot/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-osint-with-spiderfoot/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-osint-with-spiderfoot/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "96ee92f72cf885c08aa0a49408a935de0b64abf507b8f533df7bb827e723aa89",
+    "scripts/agent.py": "efa9f87d3351e8c6bde5b5434f84ec0763dc0493bcaa9638e2ceb48e4c7f3845",
+    "SKILL.es.md": "85aca32a3eafca3427a230f052448cdf8c9eb66e6f4531320536811b06c94137",
+    "SKILL.md": "867346a87ac90f7d98a3e274932caf54e7747f9cf1474a6bd84424171380239e",
+    "UPSTREAM-SKILL.md": "e27c245dec93a0b39f4b2fe5e30956103c51beea1b14104ae937ae8a86fde977"
+  }
+}

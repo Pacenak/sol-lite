@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-indicator-lifecycle-management-b221bd2d",
+  "upstream_name": "performing-indicator-lifecycle-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-indicator-lifecycle-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-indicator-lifecycle-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-indicator-lifecycle-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "aa353e4361662aa9d8d2d4d8283c7164fe50c57e0e6e45bc6c9145f10021d749",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "87d7507ff3400ee1647f48aeb234f306a2104dd06fc47a1f09d954cf468c9ec7",
+    "references/standards.md": "970ae8703ca53c871f93dd8ffc97992f7e2b2b78a0ad7a670b826f0086ef195c",
+    "references/workflows.md": "97ca298bf2f7fca043f9ecb99761beb3f35e46382c1dcd7dbc7220ecb7484c4e",
+    "scripts/agent.py": "5f9d0335232a4af4536ee367d14df2c0ed97d95be12ef1db48ad93d872600e74",
+    "scripts/process.py": "2c36f19fdb163d87ba71cb7bad0656b2d37d5e969e4779e33b47549b990b2816",
+    "SKILL.md": "24e1fc64cf129f752d4ddfad0b42ef3f2a3e1f836f9c92f1351ef892613edd37",
+    "UPSTREAM-SKILL.md": "ea409108cc560c460bcadf0d0cf503abbc48dfa769a40ea2666536fa05b1f1f4"
+  }
+}

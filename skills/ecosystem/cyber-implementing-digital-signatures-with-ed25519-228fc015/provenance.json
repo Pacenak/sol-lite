@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-digital-signatures-with-ed25519-228fc015",
+  "upstream_name": "implementing-digital-signatures-with-ed25519",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-digital-signatures-with-ed25519/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-digital-signatures-with-ed25519/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-digital-signatures-with-ed25519/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "869e43dad21147b5a66ea13ab3c62c25e5a330bb0e209f3a27b8a821a6d5f85c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3b3914e96f69e2b10a923fb0f5d9c9b08f9eadc3e4884fa755ca1d120dcb67cf",
+    "references/standards.md": "0be896438a5dbdecf3db1e0faee0a504e3c5c09fea2475ce5abf9d91f572ace2",
+    "references/workflows.md": "f98be21d2581e060f3d8b04a58cad99dddb3a159bc4917699a3583e4ac036b31",
+    "scripts/agent.py": "8e179b32104bfd06b5f5475ee1b9e7ac3a4d9b0ff794c97409933c125be47dee",
+    "scripts/process.py": "75ba7622204d4c5a482cc983a3677e447454ef248d4b3faa17993c74dec41222",
+    "SKILL.md": "1c7e287a259ecd5c6f8edbe2a4c10b8649eaa50fec06be029130e8f720090ac5",
+    "UPSTREAM-SKILL.md": "fda6c08cee727a38c50a7d166c8be787fddf0c1d08b55fabd9097863de01e68f"
+  }
+}

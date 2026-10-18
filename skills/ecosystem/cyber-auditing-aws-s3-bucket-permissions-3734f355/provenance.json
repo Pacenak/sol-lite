@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-aws-s3-bucket-permissions-3734f355",
+  "upstream_name": "auditing-aws-s3-bucket-permissions",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-aws-s3-bucket-permissions/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-aws-s3-bucket-permissions/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-aws-s3-bucket-permissions/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "a8e0106606530fe5a3be2afe055a19097f76a4f5e08b8308cbddd660c93b272d",
+    "scripts/agent.py": "0e4c43871a498a77ab7aba3c8c449ffb3fa9f697c017fc14ddfa6dd337867faf",
+    "SKILL.md": "614a87f8908f1fa53d8c881b4c864240f95d8e53c33e67156234025289a19623",
+    "UPSTREAM-SKILL.md": "c0e9a74bfe4c50dece597dfef22e6392a775413863d37e4c29e428c7ccecc1f4"
+  }
+}

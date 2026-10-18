@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ticketing-system-for-incidents-6725f522",
+  "upstream_name": "implementing-ticketing-system-for-incidents",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ticketing-system-for-incidents/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ticketing-system-for-incidents/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ticketing-system-for-incidents/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d7332b79bd9e8b9d04544bdf3cd8adf9cdcf6079312b80558b4b4944c4cf5c8e",
+    "scripts/agent.py": "9b0479dcc1aaa1bf514920cc26c7edae68af895db3707dd4b257f1c9c24dabf4",
+    "SKILL.md": "9363479d49ab40c8723094c851563a1f65165be42bbcbfd3f2a47d7f2ea66536",
+    "UPSTREAM-SKILL.md": "8d20bfb3ba25b6e9f4683f8f326923876aacaaabaaf13fee26afc5455d499066"
+  }
+}

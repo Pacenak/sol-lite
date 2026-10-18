@@ -14,6 +14,8 @@ from pathlib import Path
 
 import yaml
 
+from .catalogue_contract import Catalogue, MAX_RESOURCE_BYTES, safe_path
+
 _SKILL_MATCH_STOPWORDS = frozenset({
     "the", "and", "for", "with", "from", "that", "this", "into", "using",
     "before", "without", "your", "you", "are", "not", "but", "its", "all",
@@ -113,6 +115,8 @@ class SkillManager:
             raise FileNotFoundError(directory)
         records = []
         candidates = [directory / "SKILL.md"] if (directory / "SKILL.md").is_file() else [p for p in sorted(directory.rglob("SKILL.md")) if "/.git/" not in p.as_posix()]
+        if directory == (self.root / "skills").resolve():
+            candidates = [p for p in candidates if not p.is_relative_to(directory / "ecosystem")]
         if len(candidates) > 1000:
             raise ValueError("Skill source contains more than 1000 SKILL.md files.")
         for skill_md in candidates:
@@ -128,6 +132,8 @@ class SkillManager:
                 if executable.suffix.lower() in {".py", ".ps1", ".sh", ".bat", ".cmd", ".js", ".ts"}:
                     warnings.append(f"Executable script present: {executable.relative_to(skill_dir).as_posix()}")
             skill_id = re.sub(r"[^a-z0-9._-]+", "-", name.lower()).strip("-")
+            if not re.fullmatch(r"[a-z0-9][a-z0-9._-]*", skill_id):
+                raise ValueError("Skill name must produce a nonempty safe identifier.")
             values = yaml.safe_load(text[3:text.find("\n---", 3)])
             metadata = values.get("metadata", {})
             triggers = metadata.get("trigger-phrases", "") if isinstance(metadata, dict) else ""
@@ -143,10 +149,10 @@ class SkillManager:
             if path.is_file() and path.suffix.lower() == ".zip":
                 with tempfile.TemporaryDirectory() as tmp:
                     self._safe_extract_zip(path, Path(tmp))
-                    return self.inspect_directory(Path(tmp), "zip", str(path))
+                    return self._stage(self.inspect_directory(Path(tmp), "zip", str(path)))
             if path.is_file() and path.name == "SKILL.md":
-                return self.inspect_directory(path.parent)
-            return self.inspect_directory(path)
+                return self.inspect_directory(path.parent, source=str(path.resolve()))
+            return self.inspect_directory(path, source=str(path.resolve()))
         if str(source).startswith("https://github.com/"):
             return self._discover_git(str(source))
         raise FileNotFoundError(source)
@@ -157,7 +163,21 @@ class SkillManager:
             if completed.returncode:
                 raise RuntimeError(completed.stderr.strip() or "git clone failed")
             commit = subprocess.run(["git", "-C", tmp, "rev-parse", "HEAD"], capture_output=True, text=True, check=False, timeout=30).stdout.strip()
-            return self.inspect_directory(Path(tmp), "git", url, commit)
+            return self._stage(self.inspect_directory(Path(tmp), "git", url, commit))
+
+    def _stage(self, records: list[SkillRecord]) -> list[SkillRecord]:
+        """Retain inspected imports after extraction/clone temporary cleanup.
+
+        Content-addressed directories keep later discoveries from replacing a
+        previously inspected candidate. Pending content is never active.
+        """
+        for record in records:
+            destination = self.pending_root / record.sha256 / record.skill_id
+            if not destination.exists():
+                destination.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copytree(record.path, destination)
+            record.path = str(destination)
+        return records
 
     @staticmethod
     def _safe_extract_zip(source: Path, destination: Path) -> None:
@@ -178,7 +198,10 @@ class SkillManager:
         source = Path(record.path).resolve()
         if not source.is_dir():
             raise FileNotFoundError(source)
-        destination = self.installed_root / record.skill_id
+        self._validate_path(source)
+        if self._hash_tree(source) != record.sha256:
+            raise ValueError("Skill content changed after inspection; discover and review it again.")
+        destination = safe_path(self.installed_root, record.skill_id)
         destination.parent.mkdir(parents=True, exist_ok=True)
         if destination.exists():
             shutil.rmtree(destination)
@@ -190,7 +213,7 @@ class SkillManager:
 
     def quarantine(self, record: SkillRecord) -> SkillRecord:
         source = Path(record.path).resolve()
-        destination = self.quarantine_root / record.skill_id
+        destination = safe_path(self.quarantine_root, record.skill_id)
         destination.parent.mkdir(parents=True, exist_ok=True)
         if destination.exists():
             shutil.rmtree(destination)
@@ -202,6 +225,11 @@ class SkillManager:
 
     def update(self, skill_id: str) -> SkillRecord:
         current = self.records[skill_id]
+        if current.source_type == "catalogue":
+            result = self.install_catalogue(skill_id, update=True)
+            if result["status"] == "local_override":
+                raise ValueError("Local skill edits must be reconciled before updating.")
+            return self.records[skill_id]
         source = current.source
         if current.source_type in {"builtin", "workspace"}:
             raise ValueError(f"Skill '{skill_id}' is not an externally managed installed skill.")
@@ -209,6 +237,8 @@ class SkillManager:
         matches = [record for record in records if record.skill_id == skill_id]
         if not matches:
             raise FileNotFoundError(f"Updated skill '{skill_id}' was not found in {source}.")
+        if matches[0].warnings:
+            raise ValueError("Updated skill has warnings; inspect and review it before importing again.")
         return self.install(matches[0], trust=current.trust, agent_ids=current.agents)
 
     def assign(self, skill_id: str, agent_id: str) -> SkillRecord:
@@ -226,18 +256,136 @@ class SkillManager:
             shutil.rmtree(path)
         self._save()
 
+    def _ecosystem_records(self) -> list[SkillRecord]:
+        """Read the shared release metadata without hashing every asset each turn."""
+        catalog_path = self.root / "config" / "sol-ecosystem-catalog.json"
+        if not catalog_path.is_file():
+            return []
+        catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+        if catalog.get("schema_version") != 1:
+            raise ValueError("Unsupported SOL ecosystem catalog version")
+        records = []
+        base = (self.root / "skills" / "ecosystem").resolve()
+        for row in catalog.get("skills", []):
+            directory = (base / row["name"]).resolve()
+            if not directory.is_relative_to(base) or directory == base:
+                raise ValueError("Ecosystem skill path escapes its root")
+            skill_md = directory / "SKILL.md"
+            if not skill_md.is_file():
+                continue
+            text = skill_md.read_text(encoding="utf-8")
+            name, description = self._frontmatter(text)
+            records.append(SkillRecord(
+                name, name, description, str(directory), "builtin",
+                "https://github.com/" + row["repository"] if row["repository"] else "SOL source discovery adapter", row["commit"],
+                hashlib.sha256(text.encode("utf-8")).hexdigest(),
+                trust="BUILTIN", status="BUILTIN",
+            ))
+        return records
+
+    @staticmethod
+    def _prompt_skill_page(records: list[SkillRecord], task: str, required_names=None) -> list[SkillRecord]:
+        """Keep all skills discoverable, but bound per-turn metadata and details."""
+        words = _skill_terms(task)
+        required_names = set(required_names or ())
+        def rank(record):
+            explicit = bool(re.search(r"(?<![\w-])\$" + re.escape(record.skill_id) + r"(?![\w-])", task, re.IGNORECASE))
+            phrase = any(re.search(r"(?<!\w)" + r"\s+".join(map(re.escape, p.split())) + r"(?!\w)", task, re.I) for p in getattr(record, "trigger_phrases", []))
+            terms = _skill_terms(record.skill_id.replace("-", " ") + " " + record.description)
+            overlap = len(words & terms) / max(1, len(words))
+            ecosystem = "ecosystem" in Path(record.path).parts
+            return (-int(explicit), -int(phrase or record.skill_id in required_names), -overlap, int(ecosystem), record.skill_id)
+        return sorted(records, key=rank)[:48]
+
     def for_agent(self, agent_id: str, workspace_root: Path | None = None) -> list[SkillRecord]:
-        selected = [r for r in self.records.values() if not r.agents or agent_id in r.agents]
+        selected = [r for r in self.records.values()
+                    if r.status == "INSTALLED" and (not r.agents or agent_id in r.agents)]
+        catalogue = self.catalogue()
+        if catalogue:
+            baseline = [self._catalogue_record(entry) for entry in catalogue.entries.values()
+                        if entry["default"] and agent_id in entry["agents"]]
+            selected = baseline + selected
         builtin_root = self.root / "skills"
         if builtin_root.is_dir():
             for record in self.inspect_directory(builtin_root, "builtin", str(builtin_root)):
                 record.trust = "BUILTIN"
                 record.status = "BUILTIN"
                 selected.append(record)
+        selected.extend(self._ecosystem_records())
         if workspace_root:
             selected.extend(self.discover_workspace_skills(Path(workspace_root)))
         unique = {r.skill_id: r for r in selected}
         return sorted(unique.values(), key=lambda r: r.skill_id)
+
+    def catalogue(self):
+        folder = self.root / "skill_catalogue"
+        manifest = folder / "catalogue.json"
+        if not manifest.is_file():
+            return None
+        signature = (str(folder), manifest.stat().st_mtime_ns, manifest.stat().st_size)
+        cached = getattr(self, "_catalogue_cache", None)
+        if cached is None or cached[0] != signature:
+            self._catalogue_cache = (signature, Catalogue(folder))
+        return self._catalogue_cache[1]
+
+    def _catalogue_record(self, entry, path=None):
+        return SkillRecord(
+            entry["name"], entry["name"], entry["description"],
+            str(path or self.root / "skill_catalogue" / "packages" / entry["name"]),
+            "catalogue", "sol-shared-catalogue", self.catalogue().data["release"],
+            self._hash_tree(path or self.root / "skill_catalogue" / "packages" / entry["name"]),
+            trust="REVIEWED", status="INSTALLED" if path else "BUILTIN",
+            agents=list(entry["agents"]), trigger_phrases=entry["triggers"],
+        )
+
+    def install_catalogue(self, name, *, agent_id="", update=False):
+        catalogue = self.catalogue()
+        if catalogue is None:
+            raise FileNotFoundError("No shared catalogue release is installed")
+        entry = catalogue.entries[name]
+        if agent_id and agent_id not in entry["agents"]:
+            raise ValueError("Catalogue skill is not assigned to this agent role")
+        result = catalogue.install(name, self.installed_root, self.state_root / "skills/catalogue", update=update)
+        if result["status"] != "local_override":
+            previous = self.records.get(name)
+            record = self._catalogue_record(entry, self.installed_root / name)
+            record.agents = list(previous.agents) if previous else ([agent_id] if agent_id else list(entry["agents"]))
+            self.records[name] = record
+            self._save()
+        return result
+
+    def rollback_catalogue(self, name):
+        result = Catalogue.rollback(name, self.installed_root, self.state_root / "skills/catalogue")
+        if name in self.records:
+            self.records[name].sha256 = self._hash_tree(self.installed_root / name)
+            receipt = json.loads((self.state_root / "skills/catalogue" / (name + ".json")).read_text(encoding="utf-8"))
+            self.records[name].source_ref = receipt["release"]
+            self._save()
+        return result
+
+    def read_resource(self, agent_id, skill_id, relative="SKILL.md", workspace_root=None):
+        records = self.for_agent(agent_id, workspace_root)
+        matches = [r for r in records if r.skill_id == skill_id and r.status != "QUARANTINED"]
+        if not matches:
+            raise FileNotFoundError("Skill is unavailable for this agent")
+        record = matches[0]
+        path = safe_path(Path(record.path), relative)
+        if not path.is_file():
+            raise FileNotFoundError(relative)
+        if path.stat().st_size > MAX_RESOURCE_BYTES:
+            raise ValueError("Skill resource exceeds context read limit")
+        return path.read_text(encoding="utf-8")
+
+    @staticmethod
+    def _context_page(records, task, required_ids):
+        """Bound discovery metadata; retain explicit and exact phrase routing."""
+        words = _skill_terms(task)
+        def rank(record):
+            explicit = bool(re.search(r"(?<![\w-])\$" + re.escape(record.skill_id) + r"(?![\w-])", task, re.I))
+            phrase = any(re.search(r"(?<!\w)" + r"\s+".join(map(re.escape, p.split())) + r"(?!\w)", task, re.I) for p in record.trigger_phrases)
+            relevance = len(words & _skill_terms(record.skill_id.replace("-", " ") + " " + record.description))
+            return (-int(explicit), -int(phrase or record.skill_id in required_ids), -relevance, record.skill_id)
+        return sorted(records, key=rank)[:16]
 
     def discover_workspace_skills(self, workspace_root: Path) -> list[SkillRecord]:
         records = []
@@ -287,8 +435,14 @@ class SkillManager:
             specialist.update(skills)
             if task_words & triggers:
                 artifact_skills.update(skills)
+        total_skills = len(records)
+        records = self._prompt_skill_page(records, task, required_names=artifact_skills)
+        records = self._context_page(records, task, artifact_skills)
+        lines.append(f"Showing {len(records)} of {total_skills} skills, ranked for this task. "
+                     "For more, read config/sol-ecosystem-catalog.json or use skill_discover on a source. "
+                     "Invoke a specific skill with $skill-id. Inspect prerequisites before execution.")
         for record in records:
-            lines.append(f"- {record.skill_id}: {record.description} [trust={record.trust}; source={record.source}]")
+            lines.append(f"- {record.skill_id}: {record.description} [trust={record.trust}; source={record.source}; path={record.path}]")
             # Manifest phrases use whole-word boundaries and allow whitespace
             # between words. Explicit $skill-name invocation always selects it.
             explicit = re.search(r"(?<![\w-])\$" + re.escape(record.skill_id) + r"(?![\w-])", task, re.IGNORECASE)
@@ -307,9 +461,24 @@ class SkillManager:
                 selected_details.append(record)
         required = [r for r in records if r.skill_id in artifact_skills]
         optional = [r for r in selected_details if r.skill_id not in artifact_skills][:4]
-        for record in required + optional:
+        # Keep explicit catalogue requests ahead of automatic phrase matches;
+        # the shared pack never consumes more than four procedure bodies.
+        catalogue = self.catalogue()
+        shared_selected = []
+        if catalogue:
+            eligible = [r.skill_id for r in records if r.source_type == "catalogue"]
+            picked = {e["name"] for e in catalogue.select(task, runtime="lite", names=eligible)}
+            shared_selected = [r for r in required + optional if r.skill_id in picked]
+            required = [r for r in required if r.source_type != "catalogue"]
+            optional = [r for r in optional if r.source_type != "catalogue"]
+        for record in required + optional + shared_selected:
             skill_md = Path(record.path) / "SKILL.md"
             if skill_md.is_file():
+                if record.source_type == "catalogue":
+                    if record.status == "BUILTIN":
+                        catalogue.verify(catalogue.entries[record.skill_id])
+                    availability = catalogue.availability(catalogue.entries[record.skill_id])
+                    lines.append("CATALOGUE PREREQUISITES: " + json.dumps(availability) + "; tool access remains runtime-gated.")
                 lines.append(f"\nDETAILED SKILL: {record.skill_id}\n{skill_md.read_text(encoding='utf-8').strip()}")
         return "\n".join(lines)
 

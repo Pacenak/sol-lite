@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-weights-and-biases-827ff6b0",
+  "upstream_name": "weights-and-biases",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "13-mlops/weights-and-biases/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/artifacts.md": "3e4c2ebe70b310e74fdadb5e08af9822eba5b585ef6ad1e66012016b8fc6d461",
+    "references/integrations.md": "b11f806e19002e589d959d6f56d9d03986520923ee89ee4328822a6fff190251",
+    "references/sweeps.md": "c59012acf49ec73b0bbf4b2ff7713d0611d1372ba92a9e21337ae76d153a1f0d",
+    "SKILL.md": "83ad01f3e3e5fa2dc98178abe364f8321b3fa24e01ba432fe5f0c9e501207a81",
+    "UPSTREAM-SKILL.md": "3cd5daa7cad70d97c96b2d6fdf8d0fc1ed8a97b1750c4e013e2405389baed3b6"
+  }
+}

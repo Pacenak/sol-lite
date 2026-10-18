@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-saml-sso-with-okta-4933f218",
+  "upstream_name": "implementing-saml-sso-with-okta",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-saml-sso-with-okta/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-saml-sso-with-okta/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-saml-sso-with-okta/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "be82ee459aa88eab17113862db569ba95f9528cf40b39893e458f44718ee9e6f",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4920d5a2e07dc82903527ecf59acd013437af245573e3b66de80c851889ee820",
+    "references/standards.md": "461cd7bc52e4be36e5a84ead5ad89911e39f7556332031aaeb7b40ea0622f9b3",
+    "references/workflows.md": "815ce13923e1b66ad0ded7ac1e4089937b45f5063f117d65c72547d3d4f0ef44",
+    "scripts/agent.py": "b4a372c104382c1045a435180ac9e79c6c904ea8e76e54bbc74747c24ee50ed3",
+    "scripts/process.py": "0656a92ec9cdf0e0c9fd03449badb642bfc763d22f90e7577bfafe1d08d2e665",
+    "SKILL.md": "86a47193d262f6a1909b8906ee3916fb901e66ce92afc64a8cb425994f351912",
+    "UPSTREAM-SKILL.md": "d1a8f18a6dea647cde52c460da7157e4ca8e3a7cf9cd9fcc4e3a14aca225465e"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-immutable-backup-with-restic-6e0c462d",
+  "upstream_name": "implementing-immutable-backup-with-restic",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-immutable-backup-with-restic/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-immutable-backup-with-restic/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-immutable-backup-with-restic/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e81cfc79a758f1d5f8c38671b5faf187b8b0de39c387b00977e2cef8de717232",
+    "scripts/agent.py": "dbc2b9952059250d0e79204381d71b699d77fccc2f67a8191b1dba99cd003bdd",
+    "SKILL.md": "cb2321393ed546bfd03bbf5f428a0eae313e6d3561874e4f7a48c88b05f07b4f",
+    "UPSTREAM-SKILL.md": "8f4b2921bca81b695c103a3bcfd273e7d34cc0f9e893920b7842bfeb8509a390"
+  }
+}

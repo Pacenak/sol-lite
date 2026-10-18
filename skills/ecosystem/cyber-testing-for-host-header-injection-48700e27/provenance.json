@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-host-header-injection-48700e27",
+  "upstream_name": "testing-for-host-header-injection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-host-header-injection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-host-header-injection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-host-header-injection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "eae48f01609d75a19f859cca8e9d00a736e0d8f9df2a2f0c11da048583ad48ca",
+    "scripts/agent.py": "e8f071828d95425049c68364b3fef5f77280d6438bdc23a89f5958cdac534aae",
+    "SKILL.md": "b4ef3d0b1d53099923e6322110309b66a6597f9461d822a6436bb8f454202e04",
+    "UPSTREAM-SKILL.md": "b576bdd3caf3fd11cb56c0b305b34eef992ffd2414be57ead6788189cb3facd6"
+  }
+}

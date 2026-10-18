@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-nerc-cip-compliance-controls-235ad06d",
+  "upstream_name": "implementing-nerc-cip-compliance-controls",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-nerc-cip-compliance-controls/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-nerc-cip-compliance-controls/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-nerc-cip-compliance-controls/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "50af98b42d5fcda4279e9eb6b17c048dc1866e8a708591a1ee22ff0a432bfcd6",
+    "scripts/agent.py": "140463310411c7bbabb8573dad0f3eca68478a3b80661ca793b1b1483b1857f5",
+    "SKILL.md": "cd42a0291c097673e2e191a32e04f8395f03baaf6886c1d49a04dcddc89966e4",
+    "UPSTREAM-SKILL.md": "335495878a4f1094dca523e9fed9393d8a9b04e309b1cf01a9fee05035d55b23"
+  }
+}

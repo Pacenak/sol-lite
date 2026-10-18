@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-pinecone-eeb0bf91",
+  "upstream_name": "pinecone",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "15-rag/pinecone/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/deployment.md": "20b7582d8d8a9fa73b2a7d8dfd76bade640bf0a8683de349224791c33e3855c3",
+    "SKILL.md": "da531c062dd7492dbd699b3a6286d88ce50bdc73254580f018f93b306b9833b4",
+    "UPSTREAM-SKILL.md": "69b0566e8d749acdad2a805ed6980947e5458c96b41bd405e520f2006ff0e7fb"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-lateral-movement-with-splunk-d52f3cd7",
+  "upstream_name": "detecting-lateral-movement-with-splunk",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-lateral-movement-with-splunk/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-lateral-movement-with-splunk/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-lateral-movement-with-splunk/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "030bee011f0e4d766684085f4763539d573b17e42fe5a4f847709f1b38c40f23",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "02576c74afadb4715b00931287aefb3e9a263b5303be5be296c787e2f184dad7",
+    "references/standards.md": "b29b074f6d0304b724e0115c3c3365cf0db3294697474305c2a0ab829194b39e",
+    "references/workflows.md": "08a5449db4cd6dd7165dddd0eb61c8b8664cd7d1ace46d6475279d952aef7759",
+    "scripts/agent.py": "349f78e4fe6a6f2e6959d8e51bc7a498efbd60b004226dd6e8172dddc450efbd",
+    "scripts/process.py": "cb9ba74d64f9c401e46bf60852b41a502fc39b80d190d05ed66d4f444e6b2357",
+    "SKILL.md": "a938b30f99fb2c96294f2cc03038964a1052d60c8f13ccd911c42297671ac3c7",
+    "UPSTREAM-SKILL.md": "887ba5b1d93a9a0813a170e4f2a548e2a9cdd620ab9d64ff07a05c78f804c59b"
+  }
+}

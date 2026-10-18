@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-ara-rigor-reviewer-856e228b",
+  "upstream_name": "ara-rigor-reviewer",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "22-agent-native-research-artifact/rigor-reviewer/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/review-dimensions.md": "423cd73b7b660857811230a7d8eb255fbac954d626e4471e784a1553ff9f5aaa",
+    "SKILL.md": "cae47726fee19b40d538612c5fe72c87ac70f04daa8e5f6a23e18d1c8b916d52",
+    "UPSTREAM-SKILL.md": "5a8169a5d069caf36a30e0106e523503ffba685215c3cd0067a72aa64a7e2dbb"
+  }
+}

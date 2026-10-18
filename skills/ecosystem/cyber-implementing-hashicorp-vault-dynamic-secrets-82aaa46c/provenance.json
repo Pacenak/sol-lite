@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-hashicorp-vault-dynamic-secrets-82aaa46c",
+  "upstream_name": "implementing-hashicorp-vault-dynamic-secrets",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-hashicorp-vault-dynamic-secrets/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-hashicorp-vault-dynamic-secrets/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-hashicorp-vault-dynamic-secrets/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "ba881c9b9d5e3b70fed20e27095f206852ee746940c5434a7bc8f2c7a3ea679a",
+    "scripts/agent.py": "d55a9419fc31907e57a4ecc9cb71648f8a8dc98e00aad7677965a6298988c7b1",
+    "SKILL.md": "ca1eb79ae43a4531ef57ec06227c84180e9d9c5a13a6ffd3de80c939e41a5b17",
+    "UPSTREAM-SKILL.md": "87b69115ab6f8b51e5c1799df6f1cfed3cf11b2ad9ec9edaa4080039f35ccb90"
+  }
+}

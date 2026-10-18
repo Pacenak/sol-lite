@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-cloud-asset-inventory-with-cartog-91de37b8",
+  "upstream_name": "performing-cloud-asset-inventory-with-cartography",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cloud-asset-inventory-with-cartography/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cloud-asset-inventory-with-cartography/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cloud-asset-inventory-with-cartography/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8f8d815cb17c8d5ae1cfc8e1a6ebdebcb8c8a18f6d05cdf22859492c5e5e9eda",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "dc099990650ad314a15e57eaa85ff875db3ef867aac6331f3823cb17b818b4d6",
+    "references/standards.md": "421ff2d03fe07d8553ebaf32c954d1b37fe16b18fb64ff533c46d015d0671223",
+    "references/workflows.md": "e3383e7ef877dcca4c6ab3a16b3276c0d72bf4b59d8c6a66824a6108ca0b4bff",
+    "scripts/agent.py": "990e2816215f6360967b03187f263093d62555a6e5beab2b6f931a38d6127b20",
+    "scripts/process.py": "709822f50b89344910cf4c1f48ee870c2823306623066fdb46f5b3af4d75349a",
+    "SKILL.md": "4c55f932ceb8d0b548e651680791e38f2a1da661c3abbd6b7297a0446154109c",
+    "UPSTREAM-SKILL.md": "c038df8ab2e9821c83be28a9014058445fbd54ed98d711f27143615072e42018"
+  }
+}

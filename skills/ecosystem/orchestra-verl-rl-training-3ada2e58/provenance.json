@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-verl-rl-training-3ada2e58",
+  "upstream_name": "verl-rl-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/verl/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/api-reference.md": "727954fb3944142a7c5c3b7078cb203e0a47efb8c2ad373f7df11800e147fe5a",
+    "references/troubleshooting.md": "7cf3f25831ad686151485a753c18faebbf7fcbeb6b2d683156a4514e7d27131c",
+    "SKILL.md": "0bc3dcb882fa514374f4dc31cd771c5a13c858c7a4e08102678f20af4ab907fd",
+    "UPSTREAM-SKILL.md": "1167e2b2994c9b0780edc44d5bc3a3eef69dc816af08af8f28ef9c19163d1285"
+  }
+}

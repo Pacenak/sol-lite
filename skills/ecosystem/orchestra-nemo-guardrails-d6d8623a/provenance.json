@@ -1,0 +1,19 @@
+{
+  "name": "orchestra-nemo-guardrails-d6d8623a",
+  "upstream_name": "nemo-guardrails",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "07-safety-alignment/nemo-guardrails/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "SKILL.md": "68d7fc95d617ac643f5a52e9f649550da56ae4606f0b1bb120cc1152381270a5",
+    "UPSTREAM-SKILL.md": "d0d91892eaba80cf829ef6bb1b37f3b5fa8cc31ba1fa89d162ab380b90ca2762"
+  }
+}

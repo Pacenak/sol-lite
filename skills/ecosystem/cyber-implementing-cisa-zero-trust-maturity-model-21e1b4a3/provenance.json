@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-cisa-zero-trust-maturity-model-21e1b4a3",
+  "upstream_name": "implementing-cisa-zero-trust-maturity-model",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cisa-zero-trust-maturity-model/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cisa-zero-trust-maturity-model/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cisa-zero-trust-maturity-model/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b232ebac7012cac82006cd5ca91d736abcbadd5eefdae8917a733b2120a7d0f1",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8bd35566627af8fcbd2fedb8e3fee5a7b3389ae6928fc2b1b557b98a5f32dc3c",
+    "references/standards.md": "a5c373e027a1ab4973eb018930cb880063ec967370ba49ee0301e437a31daaa6",
+    "references/workflows.md": "5ae0e96d5ab18e93aabb8d5fd6575aba4223b1ceb162739d531e7ac67ed232ab",
+    "scripts/agent.py": "0fcc78f8b03d00164b0555164889d8b3afeff2dd03a64217f0445cf41ff36257",
+    "scripts/process.py": "b3f23c18cc233c106c82066b55cbea1e4db2420c7d7b741894634e8a765a3b9a",
+    "SKILL.md": "004fed4d841b36b0a9c803308108a60d1ab436cda928049415b626e730b06fd0",
+    "UPSTREAM-SKILL.md": "eb79238c55630a2b4bdf77497404ca7b9a46841e5d94aa09f0e78b704271b2e3"
+  }
+}

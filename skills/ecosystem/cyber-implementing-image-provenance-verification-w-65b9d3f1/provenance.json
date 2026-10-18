@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-image-provenance-verification-w-65b9d3f1",
+  "upstream_name": "implementing-image-provenance-verification-with-cosign",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-image-provenance-verification-with-cosign/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-image-provenance-verification-with-cosign/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-image-provenance-verification-with-cosign/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "1c7ce97503c4a0ae88c9e3a8a2f5ee0cfed29dfeb5e4dc6a38d0470d823c08bb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "76104659cd7d676bc4cb2ebf01f15acd6224ac98f2f5549ff20913eb42358163",
+    "references/standards.md": "0960bfc3ebfad3e48f6bf330851bb2ad7880e8848d3907a11efd95de2aaeb0ae",
+    "references/workflows.md": "073e46aacd3cbd4c2e365d4495bd1001c68a32431ba59d886300766bd6ce14e7",
+    "scripts/agent.py": "6f4f3200e795cb358de84d870ac93e398a148430238688f320203a24f7899dbf",
+    "scripts/process.py": "71667eba94410bc175308cc1fe74a1ae6e18b046e79b5c49f9f306e8226d4489",
+    "SKILL.md": "cb9b4e7b26650c5c14444d65d848728ed07a886efbcc94c3799d61e4136f30be",
+    "UPSTREAM-SKILL.md": "e836d42f10ea144f32cf5975936a071848edcc93e66f8cfa6328a24c2b091015"
+  }
+}

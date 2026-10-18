@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-audiocraft-audio-generation-dd51d26c",
+  "upstream_name": "audiocraft-audio-generation",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "18-multimodal/audiocraft/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "5efe98c6ebcd0107e48c809cadc0e48591f9c235ac47014f39a40772fc45116d",
+    "references/troubleshooting.md": "af0c56aca0902aca6f05350caab3750de608cf904a4e6bb9dd0967c664d8de0e",
+    "SKILL.md": "75a1a4daf78183f857bfdfeb1fb3ab510efecb994db14b9c23ae669b164e5764",
+    "UPSTREAM-SKILL.md": "3f9efaebd7331bea86022a101329074c6eab8af2d33591e691c565fcba641a5f"
+  }
+}

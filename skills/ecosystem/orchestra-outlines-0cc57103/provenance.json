@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-outlines-0cc57103",
+  "upstream_name": "outlines",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "16-prompt-engineering/outlines/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/backends.md": "b2e1698429b8c0a2425493a1d7f82cc36623d40503e8d414b5d66bd0b99167a1",
+    "references/examples.md": "1055815c239a3b9f266f0c80a2eeb0e94c4e1275f243aab4807a3a74ab684431",
+    "references/json_generation.md": "5392ed2d69970778ff18b81b510f5c3f3f4fae00856bd967dd6b596357cd117e",
+    "SKILL.md": "2443d1071aacc820732b0a1652bd0b3a8b470c93840a80f8c5c1338c4a6a42e7",
+    "UPSTREAM-SKILL.md": "1a797a1bb4d7fae753e4fbf1895beb36f63b8e75c7fba50e940cd1ef1a372574"
+  }
+}

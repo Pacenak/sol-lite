@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-cryptographic-audit-of-applicatio-faa23f68",
+  "upstream_name": "performing-cryptographic-audit-of-application",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-cryptographic-audit-of-application/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-cryptographic-audit-of-application/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-cryptographic-audit-of-application/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "7c3117afb1850923a676d67efb96b7cb794af54dfee4b8088ac30806519f3031",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "860a5d30df6de5005c4ad537721ab20937007f938f679e00806dc56c26fab22a",
+    "references/standards.md": "ad28b077f2aac53de5459f29af41d1152ea07ab4b7d0792dca9c962014d22016",
+    "references/workflows.md": "540b96361ade8f708313cdec8765c880da9f5b5dfa60fcf76c6a8a02266239d7",
+    "scripts/agent.py": "45b1fb3b0277818d49c2e00896854635bb7ea01835b4ed5b24ec248ba40392fa",
+    "scripts/process.py": "76ecc404d9fecf47119ccc5f7000ee0fabfcc6001f1147a4da09097bbacfc8d8",
+    "SKILL.md": "d70649c01fcac5ed8a16edd0a128634e391c8b9389b0a5f3fb5d23ed000ad63d",
+    "UPSTREAM-SKILL.md": "c39ca781b08e121cb8f439090078bacff3cfb629cbe524c40e2de203aa4f86f9"
+  }
+}

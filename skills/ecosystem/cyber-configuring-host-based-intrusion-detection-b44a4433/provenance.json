@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-host-based-intrusion-detection-b44a4433",
+  "upstream_name": "configuring-host-based-intrusion-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-host-based-intrusion-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-host-based-intrusion-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-host-based-intrusion-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "3a7b143fb8e8e4622551963bd3072ac44bb2696d5f3c2c2eebf509bda7a00677",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "f05d9d3e0fef8488321299d58891d658134eff7f8253533c77d1718fb200e490",
+    "references/standards.md": "be29e0b6656737eee67f8d8011c87c887730292f7f3d619b32facc1629c0e893",
+    "references/workflows.md": "3b47432c86a24f1288db6221539c415e2cd76be515e70da33649d539c2657bd0",
+    "scripts/agent.py": "1bb967c52f81a064c5cfe84303301db5f9e624624ae3a2b5f72e35693ac119b0",
+    "scripts/process.py": "7a0339918562cc5542336c9e6b36cd2a5709c835c9c88ed56189aced4e4d2598",
+    "SKILL.md": "ea1afb0b809b2b60a3447bc20261f4f579971be1146ebb49c2aa386682f7acee",
+    "UPSTREAM-SKILL.md": "59f10898da82139c24a6cb175a7fd6605be72da22ad56f11b023290f3c564b01"
+  }
+}

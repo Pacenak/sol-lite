@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-security-monitoring-with-datado-fc611fe7",
+  "upstream_name": "implementing-security-monitoring-with-datadog",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-security-monitoring-with-datadog/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-security-monitoring-with-datadog/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-security-monitoring-with-datadog/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4159d5eb820d01db8dcdeabc7fa9d8f19a0a766ed6bd5c4f743c9e94122f30c0",
+    "scripts/agent.py": "1300d56c31f96acc3d5200728cf94777dbef324d6a1ce0bfeeae042d2c450382",
+    "SKILL.md": "72470eb1602e4906de88e64857f7a9966c66e760679e0e32639beaf01f474b15",
+    "UPSTREAM-SKILL.md": "a1f0e225d6e80f5f70e5e5667c4e6b8e6f767891130529f93a8b6e0301b76ca7"
+  }
+}

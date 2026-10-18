@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-ics-firewall-with-tofino-8a18c4ed",
+  "upstream_name": "implementing-ics-firewall-with-tofino",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-ics-firewall-with-tofino/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-ics-firewall-with-tofino/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-ics-firewall-with-tofino/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "99d5aef3b3126821024fcf8b5b99a6ae0c105b87250f91ee3db26bce17cbbc97",
+    "scripts/agent.py": "a726ed9c7b2d3fa9724c42b934a92cb21ce5c22fb03d3fdae018d78f1a5736c2",
+    "SKILL.md": "0a05c560b9fe94a53371f074eefa089c90819bb36953b21839fdaeecc347a084",
+    "UPSTREAM-SKILL.md": "42a1f77ed91aa3dfe34058aa7ed04cbdbcac6f6755f13a8e7ee5cb38abd22f63"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-memory-protection-with-dep-aslr-f8f8318b",
+  "upstream_name": "implementing-memory-protection-with-dep-aslr",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-memory-protection-with-dep-aslr/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-memory-protection-with-dep-aslr/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-memory-protection-with-dep-aslr/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "06cce26d3b7be8445866cd5afa2e7bfab7eb3cef4849354e3290e9e10fb32325",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "0bba78c16e79257f14bc0a0a4c98fb001b87802421b5af4e3ac3de8c4ce697d0",
+    "references/standards.md": "87a7ca65858359b28cf6af714646ed0ba859a1a6669b7a1c699b31f749cbdcf9",
+    "references/workflows.md": "75c8b613abbb137a510f23d15c4426cbadffe94edfd16830d3c3062da8528e11",
+    "scripts/agent.py": "a72e608e842eb485b1441fc87fe52629a3cdea7f461655396a424a840ec33339",
+    "scripts/process.py": "6f52d8932c300b1fbb222ebb87598db3651d3b2211c6c40fb651137e07da61f5",
+    "SKILL.md": "85a8aaa71f1bf5e54312d4f9eb7e6b7ccc6aff0e8253062d17df1316a60e2ade",
+    "UPSTREAM-SKILL.md": "8ad41b6cea0bc59a16b5cace8c3054cf5c71dc895916c51b3e2241ebe17869e8"
+  }
+}

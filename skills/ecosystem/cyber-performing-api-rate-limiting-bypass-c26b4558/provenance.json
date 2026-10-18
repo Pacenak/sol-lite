@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-api-rate-limiting-bypass-c26b4558",
+  "upstream_name": "performing-api-rate-limiting-bypass",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-api-rate-limiting-bypass/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-api-rate-limiting-bypass/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-api-rate-limiting-bypass/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "72519401e0a95f89a76ded480aaa69f05162433f82dd50288444c91ebdb1c861",
+    "scripts/agent.py": "dfa488b05da72bfcc1a870a77e933cabbff9e6dd7a167396bc29fe2db912c0c5",
+    "SKILL.md": "d247dae603f4c8f5070959e4c3dfb32120458a044bba536b99b01fc27a245b29",
+    "UPSTREAM-SKILL.md": "1d6004343a9cd9794f3feca8f5b716fd84190cc548e1be99bfe0ec8e9a469382"
+  }
+}

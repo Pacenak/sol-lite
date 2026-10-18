@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-spearphishing-indicators-72c18351",
+  "upstream_name": "hunting-for-spearphishing-indicators",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-spearphishing-indicators/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-spearphishing-indicators/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-spearphishing-indicators/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ee1b2628cc72671d2d218d214cb3a00bd0b1edf2499429d0881f82002c7a753a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "87e1f291da03ede5ca5a39f0574253314d0bba54a120e33cfe3907293c899086",
+    "references/standards.md": "cafc75be50ec5db6f929f0fdfeddcba68755c12a58f5cee1dadb9926d2afcc89",
+    "references/workflows.md": "490485218a379563080d79a2f6ac7a47ea0256af1dc4adbd582bd9837bde9008",
+    "scripts/agent.py": "e565d5afee1b305bcb2bfe98513c7dfbe83a9cf47ce20b1007978c81cb09162d",
+    "scripts/process.py": "c876512e3e9bf06aea2421d6db2d70be71e11f2306ead22a1d74b6e8ddeb513a",
+    "SKILL.md": "bf02f743995b7b8ba7943e3e843d102f4bf8b81690aa11160f7d1148fd7a4ee2",
+    "UPSTREAM-SKILL.md": "91278c4f16d596985c13afa5bf7ac8ab8a0c2552f613578178837c598fb40efc"
+  }
+}

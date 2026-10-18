@@ -1,0 +1,5 @@
+# Release manifests hash exact bytes, including upstream licence evidence.
+skill_catalogue/** -text
+src/sol_lite/skills/catalogue_contract.py text eol=lf
+skills/ecosystem/** -text
+config/sol-ecosystem-catalog.json -text

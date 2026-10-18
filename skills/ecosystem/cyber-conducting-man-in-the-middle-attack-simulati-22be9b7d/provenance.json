@@ -1,0 +1,26 @@
+{
+  "name": "cyber-conducting-man-in-the-middle-attack-simulati-22be9b7d",
+  "upstream_name": "conducting-man-in-the-middle-attack-simulation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/conducting-man-in-the-middle-attack-simulation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/conducting-man-in-the-middle-attack-simulation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/conducting-man-in-the-middle-attack-simulation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "55a697c60ab7da673d180080d40e31d7adc2d5369def2efe7b575c906d72a6b1",
+    "scripts/agent.py": "6c7dcbcae627745527c8853c0e8fd73f1445ea36a2b549275a3bc89a3822badb",
+    "SKILL.md": "4d7ca6a87645b63bd7efefee59530a1899129022c451e76c9943c324bace893a",
+    "UPSTREAM-SKILL.md": "e15514bfe8bcb35c8ab4f246cf368cca1e1e6167cd9145de615a01733a6af1fb"
+  }
+}

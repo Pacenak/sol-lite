@@ -1,0 +1,27 @@
+{
+  "name": "cyber-testing-prompt-injection-in-rag-pipelines-20c6e063",
+  "upstream_name": "testing-prompt-injection-in-rag-pipelines",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-prompt-injection-in-rag-pipelines/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-prompt-injection-in-rag-pipelines/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-prompt-injection-in-rag-pipelines/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "577d67331b55a397e615bcde2dffe3caad37781a10de010bc5b8f8ca19168c9b",
+    "references/standards.md": "8a3f5c7e1f6f8ec1efd93fa7a70bdf5a676d9910484ff3ce47161d8eeeaaf8e7",
+    "scripts/agent.py": "b1f65cd649947a5feeb97f50701b1de272240f3acf9e2c046a8717379689430c",
+    "SKILL.md": "b95e15b2b0293069f20d008aa45c3f044037959e80c0e7b5fdb238d40c528e5e",
+    "UPSTREAM-SKILL.md": "a67bd9fa2545a18c89b19e4c0805ad8c265b6042f20a0e5ccc0e73b5a4bc5ae0"
+  }
+}

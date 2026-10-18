@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-network-segmentation-for-ot-b7dc2691",
+  "upstream_name": "implementing-network-segmentation-for-ot",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-network-segmentation-for-ot/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-network-segmentation-for-ot/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-network-segmentation-for-ot/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2f6cef3e489eb99d3f2a4b93268ee1df5158e1ce230760e85f7b83b8ee1557e5",
+    "scripts/agent.py": "5849061a19857efc9268167f0a81fdae00f57708c8efc0fbce577deca48a802b",
+    "SKILL.md": "959552e3cd435f1d6f3f9a54b747e218ca86817d5dcde78fa038081322322d69",
+    "UPSTREAM-SKILL.md": "ceffda990cfdb7f2d6234fc67aedbe9f132071103606ce7cf8680a76b76c31b5"
+  }
+}

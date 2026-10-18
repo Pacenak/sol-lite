@@ -1,0 +1,31 @@
+{
+  "name": "cyber-analyzing-windows-shellbag-artifacts-65ce3c18",
+  "upstream_name": "analyzing-windows-shellbag-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-windows-shellbag-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-windows-shellbag-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-windows-shellbag-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d44541e3a405ed0e73d7fb002e301a3a8b7836795b057dacb47efff5b754b83c",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "91ff207c1a6ae795e764123e8ac864c2da6cf3849ade09d20cbd57439833bd4e",
+    "references/standards.md": "c4777dbd33dca12ed5c49d60df168c612222284b2a95f1049ed9e3802144cf1f",
+    "references/workflows.md": "93e51932b2ae7c094a8a38eb9e4c8b791b708e3f78627e8923c843e25c967dd5",
+    "scripts/agent.py": "3a580aedf637accf2d2f4e03993d6575da508f1386f1d27d40e15b37d62f1215",
+    "scripts/process.py": "968ac94ee38734df1fc975c1a573257927f73fb8c4a9c1be62b3cf389650f610",
+    "SKILL.md": "ea35bc91608b3697ca365546be15007fed0dc46d46c75f5d411ab29147e41483",
+    "UPSTREAM-SKILL.md": "2dad3ed6445c6fb67a8273aec43d25e9d42acbda8956521ee2f82c0536885a42"
+  }
+}

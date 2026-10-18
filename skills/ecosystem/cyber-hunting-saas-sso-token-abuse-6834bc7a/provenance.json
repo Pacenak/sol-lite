@@ -1,0 +1,27 @@
+{
+  "name": "cyber-hunting-saas-sso-token-abuse-6834bc7a",
+  "upstream_name": "hunting-saas-sso-token-abuse",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-saas-sso-token-abuse/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-saas-sso-token-abuse/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-saas-sso-token-abuse/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "67b36ec33f0c9b403b757bea5ca02a5d78304569a8f93bc0ecb43cd392b5ad08",
+    "references/standards.md": "b86ab38bf09693753d603bfb0791e71ec48390e5a3363e012f00050a3a7a0a24",
+    "scripts/agent.py": "de18286bbc6342aa0f9e0ce157e1d449c27c84849178580aaf0cc7bf2ec6fd20",
+    "SKILL.md": "4b798ceec711270bf488402967f71dd8f73a3484ebf88e4b278699256f5fa755",
+    "UPSTREAM-SKILL.md": "66851481f372bae50bf9a35a0fcc8b4c3172847cb5d646a5cfe6d7b7505eb49c"
+  }
+}

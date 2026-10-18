@@ -12,7 +12,7 @@ def runtime_get_context(ctx, args):
     ctx.permission_engine.check(READ)
     workspace = Path(ctx.workspace_root).resolve()
     project = Path(ctx.project_root).resolve() if ctx.project_root else workspace
-    if project == workspace and not (project / ".git").exists():
+    if not ctx.project_root and not (project / ".git").exists():
         for parent in (project, *project.parents):
             if (parent / ".git").exists():
                 project = parent

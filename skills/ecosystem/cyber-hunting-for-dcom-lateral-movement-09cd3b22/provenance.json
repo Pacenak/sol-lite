@@ -1,0 +1,28 @@
+{
+  "name": "cyber-hunting-for-dcom-lateral-movement-09cd3b22",
+  "upstream_name": "hunting-for-dcom-lateral-movement",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-dcom-lateral-movement/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-dcom-lateral-movement/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/detect_dcom_lateral_movement.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-dcom-lateral-movement/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "55bfea0ebc70fa38f1e9f5d06566221411003ea265d3fabe62c60d990715e7ce",
+    "scripts/agent.py": "daa942659ddcc406f92e0538ce0ced064464537692ed2f38ad085015368e2fd2",
+    "scripts/detect_dcom_lateral_movement.py": "952b84997d634689e61329fecd50326478bdf61991f096c539f3320d256b8987",
+    "SKILL.md": "0c3e3166faf7effbcd67e2af8f2a593676f78cf79543f88c8b02a6665df36e3e",
+    "UPSTREAM-SKILL.md": "3358c28c24aea31f168c417e450ee8fc912e9d7f70afd7941524fea81f159c77"
+  }
+}

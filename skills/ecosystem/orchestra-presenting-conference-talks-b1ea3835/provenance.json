@@ -1,0 +1,20 @@
+{
+  "name": "orchestra-presenting-conference-talks-b1ea3835",
+  "upstream_name": "presenting-conference-talks",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "20-ml-paper-writing/presenting-conference-talks/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/slide-templates.md": "4b2b95e5141a671f7e790b77bc467c4ab13092512506e38e6c5644e37552907e",
+    "SKILL.md": "2e80727d660aba0a8c60174530822b71f1a8272ce28bb04ba1e23720e749b197",
+    "UPSTREAM-SKILL.md": "5fb6b8f9e5b7690dcb0d783ff1e07c6d3f6b950b8f1238e0672e1f3c53bad57f"
+  }
+}

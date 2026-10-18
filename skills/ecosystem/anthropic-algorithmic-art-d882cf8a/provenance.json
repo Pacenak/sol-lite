@@ -1,0 +1,24 @@
+{
+  "name": "anthropic-algorithmic-art-d882cf8a",
+  "upstream_name": "algorithmic-art",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/algorithmic-art/SKILL.md",
+  "license_files": [
+    "skills/algorithmic-art/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [
+    "templates/generator_template.js"
+  ],
+  "files": {
+    "_licenses/skills/algorithmic-art/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "SKILL.md": "6ea57aeebeae3dc7049dd7095b0411112d37ded07764c1f37a33d6e8ac07f365",
+    "templates/generator_template.js": "9ee0f1da52ef8f7bbfde1917123654880890d43f2d388642d71eab6dd78f94c4",
+    "templates/viewer.html": "86c79d7ce97d2599ebe4bd9b97fdeb7295c9d3ed61ceeb513cbe1b2bb5d1ce29",
+    "UPSTREAM-SKILL.md": "3bc4092c09804853186524c826bc0621b940bb6122c05b84496dff95388e6eef"
+  }
+}

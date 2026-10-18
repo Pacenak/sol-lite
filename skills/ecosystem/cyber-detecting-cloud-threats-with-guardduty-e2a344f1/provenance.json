@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-cloud-threats-with-guardduty-e2a344f1",
+  "upstream_name": "detecting-cloud-threats-with-guardduty",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-cloud-threats-with-guardduty/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-cloud-threats-with-guardduty/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-cloud-threats-with-guardduty/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "28d5eec184b44da6abc43e8df1b36ffd2fe33cc7a20026ebbf9063f1e41cb9fa",
+    "scripts/agent.py": "55d99da57a93763e59c0dd3c7ed4e3c9135193231e46f9f2342962b5661e6ff1",
+    "SKILL.md": "6bd5894cd7b4ff7f062c5fe817b03ce8579b4e72ff73a43bbb66d3499b295ec5",
+    "UPSTREAM-SKILL.md": "f3e00211295dbcb5047987d2a4e23056fac8577b456fca27713f6346a7680397"
+  }
+}

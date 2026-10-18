@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-evaluating-code-models-4e53ee6b",
+  "upstream_name": "evaluating-code-models",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "11-evaluation/bigcode-evaluation-harness/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/benchmarks.md": "50c5640497be1861dc69ef886f2e4f4684162c28d57ee928111f1c4c71e4be2d",
+    "references/custom-tasks.md": "4f868c5c84d1889fbd6e3f09297ce439be70a9af6f8694bd274481ab09677272",
+    "references/issues.md": "09832ab736fec29fc949101f81b806c0c6fc366124eada17967aac72ea5a63a1",
+    "SKILL.md": "344ead81c276a1bc80225f9b1eba7f0ec0a3ce08ffde34dcff1d973fdb98f16a",
+    "UPSTREAM-SKILL.md": "7c46e8eb3ca8d4f51769162d16d87a7dff5ec0c4609131fd3c62fcb463522874"
+  }
+}

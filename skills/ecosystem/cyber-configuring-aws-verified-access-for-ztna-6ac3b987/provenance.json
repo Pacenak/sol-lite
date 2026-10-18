@@ -1,0 +1,31 @@
+{
+  "name": "cyber-configuring-aws-verified-access-for-ztna-6ac3b987",
+  "upstream_name": "configuring-aws-verified-access-for-ztna",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/configuring-aws-verified-access-for-ztna/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/configuring-aws-verified-access-for-ztna/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/configuring-aws-verified-access-for-ztna/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "2e310bae527f21b5bd6d36bf3c5a4dca9ca29565440ee3090adb44109775eb50",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "033866aac7d9fc2ba66521a5f419ddb3f0b16bc0d648ee5be4e4a7b1b2ae64d7",
+    "references/standards.md": "5cf88c0a01859a75881b20e428f2c5232ebbc95f0b521183ca0082cdccbdb8f1",
+    "references/workflows.md": "22b3aec21f9fc589a3d5ab4f27aa5510d5e92b8433987f078c40f0ad46da47d7",
+    "scripts/agent.py": "357203218175a2620caf2e5d97b1b3bb8770f1dc5be423107cb87895306677ce",
+    "scripts/process.py": "44163c3a485a1905df19356acbe2a6890c544e071b9e59e5643ea1390075a36f",
+    "SKILL.md": "7aacbb1c96e7295ebbcdc207758bd9f2ffaeb343d0c86b3d4f60337bd86c5b00",
+    "UPSTREAM-SKILL.md": "56f38fc1977e1f4918dc5c2df94edc272a4cc69eba8fadb512441c840abbd56f"
+  }
+}

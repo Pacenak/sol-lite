@@ -1,0 +1,31 @@
+{
+  "name": "cyber-securing-container-registry-with-harbor-07e3c384",
+  "upstream_name": "securing-container-registry-with-harbor",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/securing-container-registry-with-harbor/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/securing-container-registry-with-harbor/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/securing-container-registry-with-harbor/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "b620831ad3407bbff0c853d01f72e0be8c46376c57025c8845eb4e769ae8d4f7",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "4b25f1caaf75d7c2cb91ecdcd8a6a47f16cd6152fa130a0cedd2137e03b5bc17",
+    "references/standards.md": "74f065d3beb2a0d9254a820642fb6b8e5aa7263be2dee25db55e27790ae79424",
+    "references/workflows.md": "e2857e3d8816e53748a0f76f35eedf56b2d9589ac1947b99ada37e2555149f49",
+    "scripts/agent.py": "68d965ecdff0a638b5b9c77850f569aebf03cb7a6683a01e07b0a5247dc5b476",
+    "scripts/process.py": "0f92536724b32748907fd9241fb568e6bfcd9ec49fada782302eccf47920f6cb",
+    "SKILL.md": "b14212993bfe3899e42e68af4a982226edcb8333d10a72aaf274b18ef18d4cdf",
+    "UPSTREAM-SKILL.md": "7a848d19da4f0ad949f8ce14f8b991fa939119b2e9fe93181ff31fef8258ae44"
+  }
+}

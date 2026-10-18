@@ -1,0 +1,1191 @@
+{
+  "schema_version": 1,
+  "release": "2026.10.18.1",
+  "sources": [
+    {
+      "repository": "JohnWayneeee/ai-agent-skills",
+      "url": "https://github.com/JohnWayneeee/ai-agent-skills",
+      "role": "adapted-procedures",
+      "commit": "beca879c2d46194c46924527fb5b456145143649",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/JohnWayneeee--ai-agent-skills/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "role": "adapted-procedures",
+      "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/K-Dense-AI--scientific-agent-skills/LICENSE.md.txt"
+      ]
+    },
+    {
+      "repository": "Orchestra-Research/AI-Research-SKILLs",
+      "url": "https://github.com/Orchestra-Research/AI-Research-SKILLs",
+      "role": "adapted-procedures",
+      "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/Orchestra-Research--AI-Research-SKILLs/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "role": "adapted-procedures",
+      "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/addyosmani--agent-skills/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "anthropics/skills",
+      "url": "https://github.com/anthropics/skills",
+      "role": "adapted-procedures",
+      "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "license": "Apache-2.0",
+      "license_evidence": [
+        "upstream/anthropics--skills/skills/frontend-design/LICENSE.txt.txt",
+        "upstream/anthropics--skills/skills/mcp-builder/LICENSE.txt.txt",
+        "upstream/anthropics--skills/skills/skill-creator/LICENSE.txt.txt",
+        "upstream/anthropics--skills/skills/webapp-testing/LICENSE.txt.txt"
+      ]
+    },
+    {
+      "repository": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "role": "adapted-procedures",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/mattpocock--skills/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+      "url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+      "role": "adapted-procedures",
+      "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+      "license": "Apache-2.0",
+      "license_evidence": [
+        "upstream/mukul975--Anthropic-Cybersecurity-Skills/LICENSE.txt",
+        "upstream/mukul975--Anthropic-Cybersecurity-Skills/skills/hardening-docker-containers-for-production/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "role": "adapted-procedures",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/obra--superpowers/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "phuryn/pm-skills",
+      "url": "https://github.com/phuryn/pm-skills",
+      "role": "adapted-procedures",
+      "commit": "07b34f64ee828df08953f505b7f747aef85ae7c6",
+      "license": "MIT",
+      "license_evidence": [
+        "upstream/phuryn--pm-skills/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "trailofbits/skills",
+      "url": "https://github.com/trailofbits/skills",
+      "role": "adapted-procedures",
+      "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+      "license": "CC-BY-SA-4.0",
+      "license_evidence": [
+        "upstream/trailofbits--skills/LICENSE.txt"
+      ]
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "role": "adapted-procedures",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "license": "MIT",
+      "license_evidence": [
+        "Skill frontmatter at pinned path"
+      ]
+    },
+    {
+      "repository": "VoltAgent/awesome-agent-skills",
+      "url": "https://github.com/VoltAgent/awesome-agent-skills",
+      "role": "discovery"
+    },
+    {
+      "repository": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "role": "installer-reference"
+    },
+    {
+      "repository": "VoltAgent/awesome-design-md",
+      "url": "https://github.com/VoltAgent/awesome-design-md",
+      "role": "design-reference"
+    },
+    {
+      "repository": "ai-boost/awesome-harness-engineering",
+      "url": "https://github.com/ai-boost/awesome-harness-engineering",
+      "role": "architecture-reference"
+    },
+    {
+      "repository": "Shubhamsaboo/awesome-llm-apps",
+      "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "role": "application-reference"
+    },
+    {
+      "repository": "punkpeye/awesome-mcp-servers",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "role": "connector-discovery"
+    },
+    {
+      "repository": "ripienaar/free-for-dev",
+      "url": "https://github.com/ripienaar/free-for-dev",
+      "role": "service-discovery"
+    },
+    {
+      "repository": "g-shevchenko/utility-skills",
+      "url": "https://github.com/g-shevchenko/utility-skills",
+      "role": "deferred-unverified"
+    }
+  ],
+  "skills": [
+    {
+      "id": "sol/engineering-evidence",
+      "name": "sol-engineering-evidence",
+      "description": "Implement, repair or refactor software with an evidence-backed plan and validation.",
+      "pack": "engineering",
+      "version": "1.0.0",
+      "default": true,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "fix broken code",
+        "implement a feature",
+        "refactor code",
+        "debug software",
+        "create software"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "addyosmani/agent-skills",
+          "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+          "path": "skills/browser-testing-with-devtools/SKILL.md",
+          "license": "MIT",
+          "sha256": "4e3aacd6a380cd25bc6c2d67fdd1c926a9b22535b8a62109ecd33cefd909e3d9",
+          "evidence": "upstream/addyosmani--agent-skills/skills/browser-testing-with-devtools/SKILL.md.txt"
+        },
+        {
+          "repository": "addyosmani/agent-skills",
+          "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+          "path": "skills/code-review-and-quality/SKILL.md",
+          "license": "MIT",
+          "sha256": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e",
+          "evidence": "upstream/addyosmani--agent-skills/skills/code-review-and-quality/SKILL.md.txt"
+        },
+        {
+          "repository": "addyosmani/agent-skills",
+          "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+          "path": "skills/spec-driven-development/SKILL.md",
+          "license": "MIT",
+          "sha256": "c4b97ce3d7f24be0e67fd612c7595f65504872e3a9f8d338d098b2363fdb66ef",
+          "evidence": "upstream/addyosmani--agent-skills/skills/spec-driven-development/SKILL.md.txt"
+        },
+        {
+          "repository": "addyosmani/agent-skills",
+          "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+          "path": "skills/test-driven-development/SKILL.md",
+          "license": "MIT",
+          "sha256": "a3aa6ba95638497025577469eda10ed17918698209615aeafbc26f131bf2469d",
+          "evidence": "upstream/addyosmani--agent-skills/skills/test-driven-development/SKILL.md.txt"
+        },
+        {
+          "repository": "obra/superpowers",
+          "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+          "path": "skills/verification-before-completion/SKILL.md",
+          "license": "MIT",
+          "sha256": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+          "evidence": "upstream/obra--superpowers/skills/verification-before-completion/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "540ca2b9285727243ecd07fe12318d7730d10b7d598a1508f0d9a8a24abf7836"
+      },
+      "sha256": "c92b7ed774e6b666e6c9c48fe3c86da19ad91f9b8a05aca5c32a0c0c7e3cc4e7",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/requirements-discovery",
+      "name": "sol-requirements-discovery",
+      "description": "Resolve requirements and acceptance criteria without inventing user decisions.",
+      "pack": "engineering",
+      "version": "1.0.0",
+      "default": true,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "clarify requirements",
+        "discover requirements",
+        "review this specification"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "mattpocock/skills",
+          "commit": "49dd158d1076134a641b33efb035946536778336",
+          "path": "skills/productivity/grill-me/SKILL.md",
+          "license": "MIT",
+          "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+          "evidence": "upstream/mattpocock--skills/skills/productivity/grill-me/SKILL.md.txt"
+        },
+        {
+          "repository": "mattpocock/skills",
+          "commit": "49dd158d1076134a641b33efb035946536778336",
+          "path": "skills/productivity/grilling/SKILL.md",
+          "license": "MIT",
+          "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+          "evidence": "upstream/mattpocock--skills/skills/productivity/grilling/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "0f9f193f007ca1c15ae7e8ed1b991bcf8c0e938cdd86d2cdf0ddf923ba7fa959"
+      },
+      "sha256": "4e8f7d5c83574a222e6a32a6f94d347ed44331d896e43e255a01e4c7a7d6abf1",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/skill-authoring",
+      "name": "sol-skill-authoring",
+      "description": "Create and evaluate a portable SOL skill with precise routing and bounded resources.",
+      "pack": "engineering",
+      "version": "1.0.0",
+      "default": true,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "create a skill",
+        "author a skill",
+        "edit a skill"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/frontend-design/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+          "evidence": "upstream/anthropics--skills/skills/frontend-design/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/mcp-builder/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+          "evidence": "upstream/anthropics--skills/skills/mcp-builder/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/skill-creator/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+          "evidence": "upstream/anthropics--skills/skills/skill-creator/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/webapp-testing/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+          "evidence": "upstream/anthropics--skills/skills/webapp-testing/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "bcc00a61c162ffde7b417220546baf6035363b383146039b21fb09b2082a8837"
+      },
+      "sha256": "b499abcab1fd8c31112a55b15a8b643253fff651b1b7d9f02a324fcc35b64a54",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/web-performance",
+      "name": "sol-web-performance",
+      "description": "Investigate React or Next.js performance using the installed stack and measured evidence.",
+      "pack": "web",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "react performance",
+        "next.js performance",
+        "reduce frontend bundle"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "vercel-labs/agent-skills",
+          "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+          "path": "skills/react-best-practices/SKILL.md",
+          "license": "MIT",
+          "sha256": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355",
+          "evidence": "upstream/vercel-labs--agent-skills/skills/react-best-practices/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [
+        "node"
+      ],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "e97203f37fba653612f2a416d965e7ba84452f80ea77cf87f453b214f5eaad5a"
+      },
+      "sha256": "3f160d8fa4a3c9eaacecdbe190533910445b9e1981de5661abd4c3b4f41f5428",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/ui-polish",
+      "name": "sol-ui-polish",
+      "description": "Polish an existing UI while preserving the approved visual direction and project tokens.",
+      "pack": "design",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_pa",
+        "sol_business",
+        "sol_docs",
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "polish this ui",
+        "improve ui spacing",
+        "review visual design"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "JohnWayneeee/ai-agent-skills",
+          "commit": "beca879c2d46194c46924527fb5b456145143649",
+          "path": "skills/ui-final-polish/SKILL.md",
+          "license": "MIT",
+          "sha256": "16022d6063f0b110ba1a8624bf86dd5e5567e43e74dbbb187886dc1ee47a64b2",
+          "evidence": "upstream/JohnWayneeee--ai-agent-skills/skills/ui-final-polish/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/frontend-design/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+          "evidence": "upstream/anthropics--skills/skills/frontend-design/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/mcp-builder/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+          "evidence": "upstream/anthropics--skills/skills/mcp-builder/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/skill-creator/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+          "evidence": "upstream/anthropics--skills/skills/skill-creator/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/webapp-testing/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+          "evidence": "upstream/anthropics--skills/skills/webapp-testing/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "11cc590fdb9898091ca224fc7d91dc0135fd0c2a29312282f425783d02a50930"
+      },
+      "sha256": "e5d25005510a344ea1db90e0d495da9728caed3614665997128d735e46e36e91",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/product-production",
+      "name": "sol-product-production",
+      "description": "Create source-grounded product briefs, priorities and production milestones.",
+      "pack": "business",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_pa",
+        "sol_business"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "write a prd",
+        "plan product production",
+        "prioritize product features"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "phuryn/pm-skills",
+          "commit": "07b34f64ee828df08953f505b7f747aef85ae7c6",
+          "path": "pm-execution/skills/create-prd/SKILL.md",
+          "license": "MIT",
+          "sha256": "e3aa10a437ed7f748a957bd5d1eb06d8fa3f56dc728dcb93ce484387ecc3fa13",
+          "evidence": "upstream/phuryn--pm-skills/pm-execution/skills/create-prd/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "b35a8c1f5fb3e297af9196ee8e0f189197ab14696cf29c49322e5f98e5915bc5"
+      },
+      "sha256": "490d444ce0b65292df686f5ee2bb5e7f2269df4140252edf3153109f90beb14f",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/statistical-research",
+      "name": "sol-statistical-research",
+      "description": "Analyze supplied research data with explicit sampling assumptions and reproducible uncertainty estimates.",
+      "pack": "science",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "rick_prime",
+        "sol_engineer"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "analyze statistical data",
+        "compare experimental groups",
+        "statistical power analysis"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "K-Dense-AI/scientific-agent-skills",
+          "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+          "path": "skills/statistical-analysis/SKILL.md",
+          "license": "MIT",
+          "sha256": "e112848726b3713267cac65e4e2c15491a0a26ee1ed628db01195f7e43f97997",
+          "evidence": "upstream/K-Dense-AI--scientific-agent-skills/skills/statistical-analysis/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "terminal"
+      ],
+      "requires_python": [
+        "numpy",
+        "scipy"
+      ],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "e2d5fcbb0732bab46b37c72f20dfbf5005dd6a0f293ed671b1a27bd82eca8413"
+      },
+      "sha256": "ef7ea73695fdc14e2979001e14d00d9af34cfff6c408073f8e19c1794e2e4acd",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/model-evaluation",
+      "name": "sol-model-evaluation",
+      "description": "Compare model or harness changes with reproducible tasks and recorded execution evidence.",
+      "pack": "research",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "rick_prime",
+        "sol_engineer"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "evaluate a model",
+        "benchmark model quality",
+        "compare agent harnesses"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "Orchestra-Research/AI-Research-SKILLs",
+          "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+          "path": "11-evaluation/lm-evaluation-harness/SKILL.md",
+          "license": "MIT",
+          "sha256": "891b77bc09118393f9bd1235404ee3f0cf412f56e57dc4b454e2fbd8fd507bc3",
+          "evidence": "upstream/Orchestra-Research--AI-Research-SKILLs/11-evaluation/lm-evaluation-harness/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "terminal"
+      ],
+      "requires_python": [
+        "lm_eval"
+      ],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "171cfad5b85e6f3f9bac159fe6ff2f2a61bb32053c92bf11b0416747c85ebece"
+      },
+      "sha256": "3967ba4e0e1586a19b2cd634cd70c4163205c63e13f3a5ac4c3f03c6052ad048",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/security-diff",
+      "name": "sol-security-diff",
+      "description": "Review an authorized code diff for concrete security regressions and bounded coverage.",
+      "pack": "security",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "immune"
+      ],
+      "triggers": [
+        "security review this diff",
+        "audit security changes"
+      ],
+      "license": "CC-BY-SA-4.0",
+      "upstream": [
+        {
+          "repository": "trailofbits/skills",
+          "commit": "5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0",
+          "path": "plugins/differential-review/skills/differential-review/SKILL.md",
+          "license": "CC-BY-SA-4.0",
+          "sha256": "f9af6a8193fc1a9f8ca3c54bb8d19095a5f20c9472ca6d014488bbde50b67da0",
+          "evidence": "upstream/trailofbits--skills/plugins/differential-review/skills/differential-review/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "653237ecea5448eb70dc5d3a62b74b6b5eeacf3bc971df7c1aacba13b38dc6e2"
+      },
+      "sha256": "dff737484974dde3aef160ce1f387b0fa4822f10fba9406d07eb65665db5ff4a",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/container-hardening",
+      "name": "sol-container-hardening",
+      "description": "Review container configuration and propose verified hardening for an authorized environment.",
+      "pack": "security",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "immune"
+      ],
+      "triggers": [
+        "harden docker containers",
+        "review container security"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+          "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+          "path": "skills/hardening-docker-containers-for-production/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "ba3eff77d91f11daf1d31b4d7542982c96538ead726e73590e353fe65112e9c2",
+          "evidence": "upstream/mukul975--Anthropic-Cybersecurity-Skills/skills/hardening-docker-containers-for-production/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [
+        "docker"
+      ],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "d755b547590bfa76e37a42b6a68fef23ef0f7022b1e45218255dfa8b944478a0"
+      },
+      "sha256": "c1f118b2cc2140857625438a3a2f6b33e65a310fc6000543dd7411d6308f9901",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/game-production",
+      "name": "sol-game-production",
+      "description": "Plan and validate a game vertical slice using the actual engine project and available build tools.",
+      "pack": "game",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev"
+      ],
+      "triggers": [
+        "plan a game vertical slice",
+        "debug game build",
+        "validate game assets"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "91706ec570868143ffb18867cb5a1ac41d75647459633cce28f15d632792f334"
+      },
+      "sha256": "ad0c59b0eaaca0808a8134757b88f468124ba0fc9c225cb9639db82e1f4b5e7e",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/accounting-evidence",
+      "name": "sol-accounting-evidence",
+      "description": "Prepare auditable budgets and ledger reconciliations from supplied records.",
+      "pack": "accounting",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_pa",
+        "sol_business"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "reconcile a ledger",
+        "prepare production budget",
+        "audit invoice totals"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "8d2d0f128d1cbc1539dcc1737ff09df8f0c86c53ef6038c16080ad862e89b348"
+      },
+      "sha256": "35817e419e81f56c320b785d2f670495c989287332b2297f88b85418dad88bf8",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/infrastructure-change",
+      "name": "sol-infrastructure-change",
+      "description": "Plan and validate authorized host or operating-system configuration changes with rollback.",
+      "pack": "infrastructure",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "immune"
+      ],
+      "triggers": [
+        "plan infrastructure changes",
+        "diagnose server configuration",
+        "plan os maintenance"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "00fc88bb68502c4ac1093727f8933d35c04ae52b1dd425ecf0a4e4ff6be371bd"
+      },
+      "sha256": "c2e03de725b291cb45c7427614fb523736c23f6fd43132324fdf4718e47843d8",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/context-handoff",
+      "name": "sol-context-handoff",
+      "description": "Preserve grounded requirements, decisions and tool evidence across sessions or fleet handoffs.",
+      "pack": "coordination",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_pa",
+        "sol_business",
+        "sol_docs",
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "prepare an agent handoff",
+        "summarize task context",
+        "audit skill pack sync"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "ce8eb4010998fde49a5f20834a1223d0cf8456b2ab28e2437b7cb174776b8268"
+      },
+      "sha256": "7aad4d5c8b59072ac26e06effdd44ff55bf6bb7b1660709d9f4b8bb8c7de31cf",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    },
+    {
+      "id": "sol/mcp-adapter",
+      "name": "sol-mcp-adapter",
+      "description": "Build an MCP adapter against actual schemas while preserving SOL permissions and native hosting.",
+      "pack": "integration",
+      "version": "1.0.0",
+      "default": false,
+      "runtimes": [
+        "lite",
+        "full"
+      ],
+      "agents": [
+        "sol_engineer",
+        "rick_prime"
+      ],
+      "sectors": [
+        "plg-studio",
+        "dev",
+        "client",
+        "home",
+        "ventures",
+        "red-echo",
+        "plg-film",
+        "project-spicy",
+        "immune",
+        "anvil"
+      ],
+      "triggers": [
+        "build an mcp adapter",
+        "integrate an mcp server"
+      ],
+      "license": "LicenseRef-SOL",
+      "upstream": [
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/frontend-design/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+          "evidence": "upstream/anthropics--skills/skills/frontend-design/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/mcp-builder/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+          "evidence": "upstream/anthropics--skills/skills/mcp-builder/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/skill-creator/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+          "evidence": "upstream/anthropics--skills/skills/skill-creator/SKILL.md.txt"
+        },
+        {
+          "repository": "anthropics/skills",
+          "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "path": "skills/webapp-testing/SKILL.md",
+          "license": "Apache-2.0",
+          "sha256": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+          "evidence": "upstream/anthropics--skills/skills/webapp-testing/SKILL.md.txt"
+        }
+      ],
+      "adaptation": "Native SOL procedure; upstream scripts/resources are not execution dependencies.",
+      "requires_tools": [
+        "filesystem.read",
+        "filesystem.write",
+        "terminal"
+      ],
+      "requires_python": [],
+      "requires_commands": [],
+      "files": {
+        "references/acceptance.md": "8231c86ebea4e90ea21357746e546c63c8bd414eb673eaa2248e530004933394",
+        "SKILL.md": "151916bf7dfa7f5ea29bc50d760757c275d56e6cafa3d7b67910198a065103b2"
+      },
+      "sha256": "4e1bde12a6e1f04adcf5c062e472893623849cb430a0abc8f4a4b95880e8ae98",
+      "evaluation": {
+        "contract": "tests/unit/test_shared_catalogue.py and Full tests/test_shared_skill_catalogue.py",
+        "live_model": "unverified",
+        "external_services": "unverified"
+      }
+    }
+  ],
+  "evidence_files": {
+    "upstream/addyosmani--agent-skills/LICENSE.txt": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "upstream/addyosmani--agent-skills/skills/browser-testing-with-devtools/SKILL.md.txt": "4e3aacd6a380cd25bc6c2d67fdd1c926a9b22535b8a62109ecd33cefd909e3d9",
+    "upstream/addyosmani--agent-skills/skills/code-review-and-quality/SKILL.md.txt": "2db1e850379f255fd3091ef278cde24cd6c7d2ba23e360cc52ea522c40d4396e",
+    "upstream/addyosmani--agent-skills/skills/spec-driven-development/SKILL.md.txt": "c4b97ce3d7f24be0e67fd612c7595f65504872e3a9f8d338d098b2363fdb66ef",
+    "upstream/addyosmani--agent-skills/skills/test-driven-development/SKILL.md.txt": "a3aa6ba95638497025577469eda10ed17918698209615aeafbc26f131bf2469d",
+    "upstream/anthropics--skills/skills/frontend-design/LICENSE.txt.txt": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+    "upstream/anthropics--skills/skills/frontend-design/SKILL.md.txt": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+    "upstream/anthropics--skills/skills/mcp-builder/LICENSE.txt.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "upstream/anthropics--skills/skills/mcp-builder/SKILL.md.txt": "0f4592dcb53cf2b5d6b7febee6b4152018b565551a1c29e3c612f57b218ab295",
+    "upstream/anthropics--skills/skills/skill-creator/LICENSE.txt.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "upstream/anthropics--skills/skills/skill-creator/SKILL.md.txt": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+    "upstream/anthropics--skills/skills/webapp-testing/LICENSE.txt.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "upstream/anthropics--skills/skills/webapp-testing/SKILL.md.txt": "51b7349e77ec63b7744a6f63647e7566a0b4d2e301121cc10e8c2113af6556a2",
+    "upstream/JohnWayneeee--ai-agent-skills/LICENSE.txt": "ba22414499d2ec22a5179353d663911967492138487963a3e4701abbaf8c539a",
+    "upstream/JohnWayneeee--ai-agent-skills/skills/ui-final-polish/SKILL.md.txt": "16022d6063f0b110ba1a8624bf86dd5e5567e43e74dbbb187886dc1ee47a64b2",
+    "upstream/K-Dense-AI--scientific-agent-skills/LICENSE.md.txt": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "upstream/K-Dense-AI--scientific-agent-skills/skills/statistical-analysis/SKILL.md.txt": "e112848726b3713267cac65e4e2c15491a0a26ee1ed628db01195f7e43f97997",
+    "upstream/mattpocock--skills/LICENSE.txt": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+    "upstream/mattpocock--skills/skills/productivity/grill-me/SKILL.md.txt": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+    "upstream/mattpocock--skills/skills/productivity/grilling/SKILL.md.txt": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+    "upstream/mukul975--Anthropic-Cybersecurity-Skills/LICENSE.txt": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "upstream/mukul975--Anthropic-Cybersecurity-Skills/skills/hardening-docker-containers-for-production/LICENSE.txt": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "upstream/mukul975--Anthropic-Cybersecurity-Skills/skills/hardening-docker-containers-for-production/SKILL.md.txt": "ba3eff77d91f11daf1d31b4d7542982c96538ead726e73590e353fe65112e9c2",
+    "upstream/obra--superpowers/LICENSE.txt": "a37e0e9697144819e1d965176ac4ae5bc3fa02d11e7812036bbcadf6dafe2400",
+    "upstream/obra--superpowers/skills/verification-before-completion/SKILL.md.txt": "2befe7fc55bcadaa3d97dd9e8efeb633d2561c0ebe74c5a8b17c4d9e7e4520b3",
+    "upstream/Orchestra-Research--AI-Research-SKILLs/11-evaluation/lm-evaluation-harness/SKILL.md.txt": "891b77bc09118393f9bd1235404ee3f0cf412f56e57dc4b454e2fbd8fd507bc3",
+    "upstream/Orchestra-Research--AI-Research-SKILLs/LICENSE.txt": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "upstream/phuryn--pm-skills/LICENSE.txt": "a2c922f9b81b4f40347ddfa79c38eda0f1278b5a6d108bd4099b4da254c774ee",
+    "upstream/phuryn--pm-skills/pm-execution/skills/create-prd/SKILL.md.txt": "e3aa10a437ed7f748a957bd5d1eb06d8fa3f56dc728dcb93ce484387ecc3fa13",
+    "upstream/trailofbits--skills/LICENSE.txt": "7abe19ec9bb73b36141b999b861d24ad855e808bafe0f81e84cce28556f6c297",
+    "upstream/trailofbits--skills/plugins/differential-review/skills/differential-review/SKILL.md.txt": "f9af6a8193fc1a9f8ca3c54bb8d19095a5f20c9472ca6d014488bbde50b67da0",
+    "upstream/vercel-labs--agent-skills/skills/react-best-practices/SKILL.md.txt": "71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355"
+  },
+  "background_reading": [
+    "https://www.linkedin.com/pulse/ai-engineering-skills-map-software-fundamentals-andrew-ng-7lnac/",
+    "https://agnt.gg/articles/agents/100-best-ai-agent-skills"
+  ],
+  "release_sha256": "bd67a1f5e0099e7163a24a6e6cfdbc29592a3c9202a2612cc8181fa7d18fe9c2"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-building-identity-governance-lifecycle-proce-22c37191",
+  "upstream_name": "building-identity-governance-lifecycle-process",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/building-identity-governance-lifecycle-process/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/building-identity-governance-lifecycle-process/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/building-identity-governance-lifecycle-process/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "d78a22d409c0464699624652323c6c172d990227e71ab713fec9aa69e0d8422d",
+    "scripts/agent.py": "2dac4fdb6b4fe79a985485fcb8bbe61b828f5ccd0cc879af9a70544c69600621",
+    "SKILL.md": "acabd35995203815bef67bf2ccf3388a9b8adb1abc79aaef653cb7ac009de731",
+    "UPSTREAM-SKILL.md": "c4cd985b7a8a3f3313051534e3a4723751e6e1897867145f545268be37fcbda6"
+  }
+}

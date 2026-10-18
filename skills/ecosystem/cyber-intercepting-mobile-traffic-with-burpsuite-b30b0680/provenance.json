@@ -1,0 +1,31 @@
+{
+  "name": "cyber-intercepting-mobile-traffic-with-burpsuite-b30b0680",
+  "upstream_name": "intercepting-mobile-traffic-with-burpsuite",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/intercepting-mobile-traffic-with-burpsuite/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/intercepting-mobile-traffic-with-burpsuite/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/intercepting-mobile-traffic-with-burpsuite/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "70732e44a3d02ea144ded4edc2ac1ffb0c86b80d348a8aa6982ef9920d1abffd",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "9be87c5c8f7c417ff42f64eb58abb5c35d13e5d2472fec845ab710a2f7c1d463",
+    "references/standards.md": "89bbacf3cd6f098fbe654f6f92b579236ea97979f4cffb7b1cc841ef524ef088",
+    "references/workflows.md": "b46d97e2e438a0fcc55ad287608b087b33103f307493018a4f7cf3773bbd01bd",
+    "scripts/agent.py": "5984e4dd26e7d3d4d41c2c7a0062b41a1ec529dcf89577f42ea4beadd9f69f3d",
+    "scripts/process.py": "3307d7d6cbb18ccd6ae211bc53b57f41fd7036a5bf8c7d323db04acda2dd8ad5",
+    "SKILL.md": "3ac94b79dccb0382a99ef9f75cabac91bd1597e742375489e034ec38420c8914",
+    "UPSTREAM-SKILL.md": "b3c61ea86f063d96d8a7fa9dd13f79e9fa76a49ec29fb8a53efff835bdde142e"
+  }
+}

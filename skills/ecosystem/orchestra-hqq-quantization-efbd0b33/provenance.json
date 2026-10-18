@@ -1,0 +1,21 @@
+{
+  "name": "orchestra-hqq-quantization-efbd0b33",
+  "upstream_name": "hqq-quantization",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "10-optimization/hqq/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/advanced-usage.md": "69da7e0061315e1a4054c4aaa4131b9cdb045f7f3e5266a7336ddcd82daa5870",
+    "references/troubleshooting.md": "a32a80d1d392eea56cd903ccdc0b256f96a38711f737cee5cc05f5cf980ee3c2",
+    "SKILL.md": "53cefb58b916986bba1e7c1ac781ff449f2f41c8511247727c84a69bee0f6eb7",
+    "UPSTREAM-SKILL.md": "4feba64227f6db505044663cd5432bf9c0599c5c8984d94d3b2d1598711a1f80"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-web-cache-poisoning-attack-6f467ac5",
+  "upstream_name": "performing-web-cache-poisoning-attack",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-web-cache-poisoning-attack/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-web-cache-poisoning-attack/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-web-cache-poisoning-attack/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3a84036f32e84ddb1aa4a1d090560f7b64bef3e22d252df52054f86a3501747d",
+    "scripts/agent.py": "c248709bd6393b936c332ca31b3c42aff003cfff384c2c7c216fbe698481be9e",
+    "SKILL.md": "69f8a1b8dd9963c2830297202f1d0c31ea17c1e105a3d29d1382f89e94a22b2c",
+    "UPSTREAM-SKILL.md": "52c72a075c6c2c150cd7f30f5a484117060141baa70b43b2ba3912c1c355f587"
+  }
+}

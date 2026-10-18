@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-nist-csf-maturity-assessment-4202e84e",
+  "upstream_name": "performing-nist-csf-maturity-assessment",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-nist-csf-maturity-assessment/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-nist-csf-maturity-assessment/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-nist-csf-maturity-assessment/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "fb01efbe0885c7885513c91baab7d211f62c50111075ca4aae6aa0e069e2c631",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2e1bc61e319d8bfe18b44988ec4024f3b904c828582ef08e3755832c4cb57091",
+    "references/standards.md": "0fcb0ed911af6c176f097fce66eea4a47828b95f6b89acb515c129aa3e89937a",
+    "references/workflows.md": "d2b38147e0b40e21f24aca65cfcf5c473ff01ceed07d91935b7bd0a253692bd4",
+    "scripts/agent.py": "118e115bd77050efe5c869e8455aebc42b030eaf50707848e7dc73fb0a0b288b",
+    "scripts/process.py": "f154bbac53e0abcc8278419515bc12c9ed36f06b2277d2a1990fd9b0b97dce8d",
+    "SKILL.md": "163988cdc2e2e65b38199e26c84081c6442aab27f6d6c3688ad47cbfa4308cb0",
+    "UPSTREAM-SKILL.md": "a76cd7a57f6efd5b57ae9d9138c08d385fba8f6383da9aa19fb126751e7281c0"
+  }
+}

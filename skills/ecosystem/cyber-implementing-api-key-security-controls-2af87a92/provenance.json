@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-api-key-security-controls-2af87a92",
+  "upstream_name": "implementing-api-key-security-controls",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-api-key-security-controls/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-api-key-security-controls/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-api-key-security-controls/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3d0ae60e5436615d8290d197f0f1703e244caa99c9915ca4f0a248254a3084c3",
+    "scripts/agent.py": "4224525aa37ddbf149dab2beb25409b95b2bcdffed5a11dec1635ced13dc1a55",
+    "SKILL.md": "eb021f171a73d34221d8e31fc8bc7779c7267fd8d6b5a2ef7ed6f55a23454d31",
+    "UPSTREAM-SKILL.md": "9998619fb80ac400d63f496607816f1d943c370aa1dd868a2f954f6acfc4fd13"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-linux-system-artifacts-637413b4",
+  "upstream_name": "analyzing-linux-system-artifacts",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-linux-system-artifacts/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-linux-system-artifacts/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-linux-system-artifacts/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "965f675c920085a7a68dcc41a7effc5eb5dc59b957194405d2b1d028d288c668",
+    "scripts/agent.py": "1075135007001b405b49bd5549cd0a3069f44fbc82715b8d312129cb677213dd",
+    "SKILL.md": "ea84bb49b327c56d7e699e0cacbc4f479bb13596bec068ff71f881b794eb1753",
+    "UPSTREAM-SKILL.md": "6e8d44dc4f4a5c60084f25a95552fbdd387f4b2830383cd1f6a3ce6f9021bf48"
+  }
+}

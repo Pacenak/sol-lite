@@ -1,0 +1,31 @@
+{
+  "name": "cyber-implementing-aqua-security-for-container-sca-446f8d34",
+  "upstream_name": "implementing-aqua-security-for-container-scanning",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-aqua-security-for-container-scanning/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-aqua-security-for-container-scanning/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-aqua-security-for-container-scanning/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "ad65504a5f8d3c27edc5d307d85280568f47a6154acdcdcebeae17ada8348a0a",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5eb81166212e765052cd557d16118daf11b34baba1d6d4c1c569b4749e4a5258",
+    "references/standards.md": "4d731bac7263106232533644ca47574bc93b069be95527113e735ea15d5f48d5",
+    "references/workflows.md": "a55331c904987b7ccd0233489896a689dfcbacc2a0ac8dcea7457045410e72fd",
+    "scripts/agent.py": "27408b4f54ef80338c483303c87401cf89fbf554d51001362597a104e40eeca7",
+    "scripts/process.py": "a56757c2c7e824bfdbf3e3700623f0cb992a376063dda9b9b8b642f13b29b1f2",
+    "SKILL.md": "9124922bc5a60dc994cd6fc3dc080da4e3cceedc84ece2b2a84bd0137046d862",
+    "UPSTREAM-SKILL.md": "37d6bcd5314eeda63fc292b8bc1ed6772ca37ecfae9821866aed150e922c67dd"
+  }
+}

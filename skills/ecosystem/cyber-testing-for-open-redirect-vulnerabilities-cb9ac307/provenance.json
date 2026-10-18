@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-open-redirect-vulnerabilities-cb9ac307",
+  "upstream_name": "testing-for-open-redirect-vulnerabilities",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-open-redirect-vulnerabilities/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-open-redirect-vulnerabilities/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-open-redirect-vulnerabilities/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2b14c8aa367d3d01378fe2da639d1037e8070fe525e6c67024aaa4c7af7e6468",
+    "scripts/agent.py": "76d4c49b6338b24ed551165bccdaadfb1ec7a35b808728684ac4cdf7a822446a",
+    "SKILL.md": "d0c3a79de7f76cb258b9a31183b0d14e9986f07e6c4210eeb9255ed52a38ade0",
+    "UPSTREAM-SKILL.md": "55fbe533fada32ba427ac1a1b61ffae4838b29c1a77a5c3453cfbc8d2f83366e"
+  }
+}

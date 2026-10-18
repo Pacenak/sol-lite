@@ -1,0 +1,25 @@
+{
+  "name": "utility-pdf-signing-7f22836c",
+  "upstream_name": "pdf-signing",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/pdf-signing/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [
+    "scripts/apply_pdf_sign_asset.py",
+    "scripts/prepare_sign_asset.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "golden.json": "7fa481edf5c47168d1948f654cdfac83190d8114456482acce80e8356d26a640",
+    "scripts/apply_pdf_sign_asset.py": "d6f653963ff5ecfd80c67bb4a7e191dd1ea85fa0fc389dd024005e9a85eeaef9",
+    "scripts/prepare_sign_asset.py": "46ca7171410a25fd9c0af1949ed239da70da46896b22822eff5915fd08555169",
+    "SKILL.md": "77da4488f59a3958c2a77ca2cf49c8e8411413b9100600dbb39a913b378ac65e",
+    "UPSTREAM-SKILL.md": "d065f34b9f18d69576bb0b5865dd39691582e72791740794faf4925222079277"
+  }
+}

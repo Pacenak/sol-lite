@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-gdpr-data-subject-access-reques-9eaee88f",
+  "upstream_name": "implementing-gdpr-data-subject-access-request",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-gdpr-data-subject-access-request/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-gdpr-data-subject-access-request/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-gdpr-data-subject-access-request/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7f0f22da9192332c013da1f3f7d6215a5712427348e88f76867cf552c5d2a0f4",
+    "scripts/agent.py": "e9b67fc1fc8f557c891b7507e68946f3a4e6cd5e1c081e8bb96f46030f9937f0",
+    "SKILL.md": "02b59628edc025044b34d27f30bb5404d57b7579dfc5a38e6c4cecf00211adf9",
+    "UPSTREAM-SKILL.md": "df6727d144a9d926647a39cf2b860915f129ff43566383e77042e5715885e950"
+  }
+}

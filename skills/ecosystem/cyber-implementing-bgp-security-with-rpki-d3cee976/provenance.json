@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-bgp-security-with-rpki-d3cee976",
+  "upstream_name": "implementing-bgp-security-with-rpki",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-bgp-security-with-rpki/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-bgp-security-with-rpki/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-bgp-security-with-rpki/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3393dc2160373069ae438ac3995fd37524b5bd59c4f2ecf0cbf32a095a908749",
+    "scripts/agent.py": "3671551d40cc6778569a08e45dee8e892746955f2223f56c46c17fac9be249ce",
+    "SKILL.md": "04edad1517f73cc7954ae8e5d096cdca406a5ed72542e42986e0217e7fd7729d",
+    "UPSTREAM-SKILL.md": "780b4456c00b8d31bfacea48cbaee0c0a174de2a87ff02362c7943acec6752c8"
+  }
+}

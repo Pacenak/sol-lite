@@ -1,0 +1,31 @@
+{
+  "name": "cyber-scanning-docker-images-with-trivy-26af9597",
+  "upstream_name": "scanning-docker-images-with-trivy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/scanning-docker-images-with-trivy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/scanning-docker-images-with-trivy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/scanning-docker-images-with-trivy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "aa5442725680a8cd85ebedfb828f8395e4f1d31fb828dc5d2989064e7de364bb",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "15113aa1078081dbcfc6feabeeaa4c8ca7c0529ef1975172339e2465cd2b2f94",
+    "references/standards.md": "34e3082eca2597c5e3171f1cf045a7b1581097156f8cbf3796482ce120ef1ef8",
+    "references/workflows.md": "804d16cccbbf68b66aa48a7d5dd3eecd593970cb490547906c9b3a8c3983e0c4",
+    "scripts/agent.py": "a1ef5c5be761e8a976875f37905f2dc599d16dd9b1e631b89cfca5ac923e925e",
+    "scripts/process.py": "aed9738f18840a4115790303ae4db7dec18bb5d34d96a5439b8bf22df81037c1",
+    "SKILL.md": "9004206799b0097b1606a2f4b0842f60f95fcf2f96b0b5c9a8912f078668adde",
+    "UPSTREAM-SKILL.md": "f72fe3c07d19f7956416bc4dd46e732d04f936c7fb121b003cb52633da96c42b"
+  }
+}

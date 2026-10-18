@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-directory-traversal-testing-6ebd7262",
+  "upstream_name": "performing-directory-traversal-testing",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-directory-traversal-testing/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-directory-traversal-testing/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-directory-traversal-testing/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6429a28b843309b6f93a513037691a5752b9dfd3be9caf5c1fbe51b719032f68",
+    "scripts/agent.py": "95c45019c0e7e561347a5887a8de0611355e2e87ef418ca13811aece1b7d4714",
+    "SKILL.md": "975ac0a76d8f0caf4fcad1d30ffc6b898663a2e80ae5d3072c826147b2cab4a5",
+    "UPSTREAM-SKILL.md": "c69bf819ae5dde76d5c11bb645f22888686bf6e7fc88c967a376104c97b959d4"
+  }
+}

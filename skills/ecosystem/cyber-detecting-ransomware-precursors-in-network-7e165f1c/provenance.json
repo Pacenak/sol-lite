@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-ransomware-precursors-in-network-7e165f1c",
+  "upstream_name": "detecting-ransomware-precursors-in-network",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-ransomware-precursors-in-network/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-ransomware-precursors-in-network/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-ransomware-precursors-in-network/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "4ac5fae96f2d1b9630f121a1558795992d8f8cbfff9cf2c8d986671ec6095a48",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bfbe8238cb6812bdee6417e178876928a1aae97771a23539091366d377539c43",
+    "references/standards.md": "2f0396528384b0c422bfad83a7079b80c3f34287d2b93794f09b8f0a7fb25063",
+    "references/workflows.md": "7630b362e383b4880edfe233e12a541dd072ceca3ece670b9f5386e35397a048",
+    "scripts/agent.py": "dba7bd06fe782f2fa8b23f55f69bdbbb95ee4f166fbcc703247ca225d8278917",
+    "scripts/process.py": "bf1d0ce94205dd3ce8d05d06a9df835d6e6438035d28d7ce0919ca819af81d1f",
+    "SKILL.md": "c918de4a5a6ec201d48f4b52ffe9f98f2951e449e11669475c2821decd61aa2b",
+    "UPSTREAM-SKILL.md": "29925505b82958f5d2b7feac8b6a481c263a93e1ccdbf421019c4d26fe5b8711"
+  }
+}

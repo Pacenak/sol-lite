@@ -1,0 +1,27 @@
+{
+  "name": "cyber-implementing-attack-surface-management-b9a53cf5",
+  "upstream_name": "implementing-attack-surface-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-attack-surface-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-attack-surface-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-attack-surface-management/LICENSE": "6c5dcaae2f4abb80eb4ea27408b8d4e0eaab3e1760d5cda77b43b7696c05089f",
+    "LICENSE": "6c5dcaae2f4abb80eb4ea27408b8d4e0eaab3e1760d5cda77b43b7696c05089f",
+    "references/api-reference.md": "7d8e7eeb956faa62d860b4b910fb255cdfcb04f6d3b68627f92d76a643f71922",
+    "references/asm-reference.md": "b7182a25241956edbb044e2b477e72901e8f7c95b2d4bab86c2e7558f567696d",
+    "scripts/agent.py": "ea713d224b41bbbe7f45aec1387715d4f515ab2cd381842c1d0dc4de8a9698c6",
+    "SKILL.md": "2df72c2f75869cb6d1459892e13a933bbbe4c391ec153198bb78d638bf8675f3",
+    "UPSTREAM-SKILL.md": "425776aa4f183491d9241f0954152cf0744010067bbd7bfeadaf504796e88085"
+  }
+}

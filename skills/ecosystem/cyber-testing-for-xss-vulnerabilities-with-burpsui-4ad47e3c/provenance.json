@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-xss-vulnerabilities-with-burpsui-4ad47e3c",
+  "upstream_name": "testing-for-xss-vulnerabilities-with-burpsuite",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-xss-vulnerabilities-with-burpsuite/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-xss-vulnerabilities-with-burpsuite/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-xss-vulnerabilities-with-burpsuite/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "494f77dc3c36d7ac5f95581d8a875ae71f3502c33002dc0f9e7a3f6c869be90f",
+    "scripts/agent.py": "d3f8b4701335f75b4f6537e062f4faba93ec1eefde7fd36dbb7af3d65eb1ffad",
+    "SKILL.md": "253bb3dddcb42db992afc2f6c40aab0969aeb46a7727bf9f353cf98db19fdf94",
+    "UPSTREAM-SKILL.md": "58815cbe46601c7587cd2f071858cd26f2ef0094f17003532d9303d71d679781"
+  }
+}

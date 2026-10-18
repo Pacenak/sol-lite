@@ -1,0 +1,26 @@
+{
+  "name": "cyber-analyzing-memory-dumps-with-volatility-28972675",
+  "upstream_name": "analyzing-memory-dumps-with-volatility",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/analyzing-memory-dumps-with-volatility/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/analyzing-memory-dumps-with-volatility/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/analyzing-memory-dumps-with-volatility/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "8db2070d70d88582d7fbe8ba9e9c622d36a90056a4de59832760640b451d7421",
+    "scripts/agent.py": "8a5483f3ab480387e58bb1e9358b4b3d13bfa3e37a984c21fc7b0e3a3e28ea68",
+    "SKILL.md": "1449870ac3b171ecf9c89d2c8aaf67f725f2802114a17abca0a6de0b0a214a9a",
+    "UPSTREAM-SKILL.md": "59e91aebae4dbc1f6f7bc980118e7ec5e7bfe0f0e679f3202e8bddf74933a84b"
+  }
+}

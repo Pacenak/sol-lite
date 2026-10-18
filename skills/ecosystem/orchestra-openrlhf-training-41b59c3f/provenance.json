@@ -1,0 +1,23 @@
+{
+  "name": "orchestra-openrlhf-training-41b59c3f",
+  "upstream_name": "openrlhf-training",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "06-post-training/openrlhf/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/algorithm-comparison.md": "422092fcee7e6343e78239e97f41fff34ca22990c9cc65d95343b9d861655342",
+    "references/custom-rewards.md": "2409844debc1f2c4a084f33b14e1fcb7ed0d652d65ef62e2bfce0739c34e0665",
+    "references/hybrid-engine.md": "6e992f67a2392c297dfa57632319bbb6549b6df4f129f61e2811297f86ae3e48",
+    "references/multi-node-training.md": "0f051f0db1260d8df6d01371fa90de8fa00d9dae7cef407f03d5b39efc5653b7",
+    "SKILL.md": "e99435b8bcbac88782799fc6afc5cd091bb76a575537735bc137ed567b64151d",
+    "UPSTREAM-SKILL.md": "eb9da6a1a81c492fb143cde0714f355ab042fcfe967b31bdb1fc78a5cb0e761f"
+  }
+}

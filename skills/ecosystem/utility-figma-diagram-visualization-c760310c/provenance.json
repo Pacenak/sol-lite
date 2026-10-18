@@ -1,0 +1,19 @@
+{
+  "name": "utility-figma-diagram-visualization-c760310c",
+  "upstream_name": "figma-diagram-visualization",
+  "source_id": "utility",
+  "group": "utilities",
+  "repository": "g-shevchenko/utility-skills",
+  "commit": "44878323b3034c1dc70fad646c8297f893da4821",
+  "path": "skills/figma-diagram-visualization/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "67884ecc2aa0e35ec23d6b4199d408bf259cec1c08e92f2d65c5a89984e85a95",
+    "SKILL.md": "cf415c0fd1101461f5b61aae8dfa06e0e92338e0fdef836515f034819ad377c7",
+    "UPSTREAM-SKILL.md": "066b0316f651482d72a96a3a9cd192cb814781d617309e01b48777de8750282c"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-deploying-tailscale-for-zero-trust-vpn-8b2f99a9",
+  "upstream_name": "deploying-tailscale-for-zero-trust-vpn",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/deploying-tailscale-for-zero-trust-vpn/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/deploying-tailscale-for-zero-trust-vpn/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/deploying-tailscale-for-zero-trust-vpn/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "323951763e5184d0197b8198196703e79951b8cabb97d9bfb8159e691e546342",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "08632e8bbb9261cf73d024eae98f9eae38239a380d002f54f0b7061d8136f74c",
+    "references/standards.md": "89fb02c69271495ce0c3676a663dd15a87a2b345b923ee377a41924dedafecfc",
+    "references/workflows.md": "eed2b760d4cf5f5f1d9583cfae66cb9e0550423807ac70bd554ed347902bdddb",
+    "scripts/agent.py": "e0a004e06a3b0ce1cbbb2c5255a7c769dcc21396a43bba2af4fc0126c191be37",
+    "scripts/process.py": "a8ffff5cf223f78eb0ff3662fb55cf37e9ecc4ea6d8db94dd0c42305ec766017",
+    "SKILL.md": "3491702ee422af4428fdc23235ae4dcae0b693e943cc2a563a1f316bd2351ce8",
+    "UPSTREAM-SKILL.md": "425f34d310b04d775551121d917edb99e521a0de4b48113ee7b2f2893660a6fb"
+  }
+}

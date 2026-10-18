@@ -1,0 +1,26 @@
+{
+  "name": "cyber-performing-container-security-scanning-with-8dea2eca",
+  "upstream_name": "performing-container-security-scanning-with-trivy",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-container-security-scanning-with-trivy/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-container-security-scanning-with-trivy/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-container-security-scanning-with-trivy/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bcbd2a79ce835ec414232774bf74be5598261be95b59a20891f8be0346b48a1c",
+    "scripts/agent.py": "72b4b63c99d22d31f1e6cd185ab59a8b854d4731878a7302bb32a0d1e325800c",
+    "SKILL.md": "255a3b5a4fd6c4c6bb2ebe39cadf6dd28f32033f3e084766aaf08d2108a7c542",
+    "UPSTREAM-SKILL.md": "df0f442f21daaedb9a69edce88afafe40fa72930f95d17eb0f9f93464517ea96"
+  }
+}

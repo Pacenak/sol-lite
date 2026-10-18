@@ -1,0 +1,26 @@
+{
+  "name": "anthropic-web-artifacts-builder-c8250044",
+  "upstream_name": "web-artifacts-builder",
+  "source_id": "anthropic",
+  "group": "general",
+  "repository": "anthropics/skills",
+  "commit": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+  "path": "skills/web-artifacts-builder/SKILL.md",
+  "license_files": [
+    "skills/web-artifacts-builder/LICENSE.txt"
+  ],
+  "declared_license": "Complete terms in LICENSE.txt",
+  "scripts": [
+    "scripts/bundle-artifact.sh",
+    "scripts/init-artifact.sh"
+  ],
+  "files": {
+    "_licenses/skills/web-artifacts-builder/LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "LICENSE.txt": "bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362",
+    "scripts/bundle-artifact.sh": "abf0e480bf6585b56fab8526a407dfb7dc740812bddd70c636e1e8f3df5f9618",
+    "scripts/init-artifact.sh": "355e5dd4382aaaee91f01f1627eaeab30b2676ffa8d9b3ec328a1ae450ebccaa",
+    "scripts/shadcn-components.tar.gz": "1296f069e825de7933de7e8ac63672495cacce3f88f2dc45554dbcddbcbca60f",
+    "SKILL.md": "6cac674e54c379b5cd87839df113c3a7f4cb3da24ff4d6f8f27db02d2d904b5d",
+    "UPSTREAM-SKILL.md": "81c5002c6643b0de7b8710b00e7a9038daa6fb9b68d59870ee6adb12da8d10f8"
+  }
+}

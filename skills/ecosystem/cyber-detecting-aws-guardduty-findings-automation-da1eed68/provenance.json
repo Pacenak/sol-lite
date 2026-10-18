@@ -1,0 +1,31 @@
+{
+  "name": "cyber-detecting-aws-guardduty-findings-automation-da1eed68",
+  "upstream_name": "detecting-aws-guardduty-findings-automation",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-aws-guardduty-findings-automation/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-aws-guardduty-findings-automation/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-aws-guardduty-findings-automation/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "8011e3792d2b113cdd3b85fc144d1fd1e8b8b5ea4ef5e771fb5b57fb8b8d55fc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "b874db08cfc1ed42d02fc671226e68aea80f36a7d917bf2452ce7eda7181592c",
+    "references/standards.md": "6f53bcae2e10cffd7d61b00295072baee19b9a39cf1111e60fa76dd6ae0eec1a",
+    "references/workflows.md": "57dd4d36898ad75909905c9f98127215c5682b965f31b40bd49237072cd3d137",
+    "scripts/agent.py": "173c4b249aec62a719b9d1d49f3b2f3ab40cd12b2dd6c14a5556d9d28240cbb0",
+    "scripts/process.py": "277cf18501e7af7fe57a0e9c9f9b9f53bc438213f2bed05da422aa94e52eb00f",
+    "SKILL.md": "4c1d04e97685fa665dc6d91791ffe6c1335504aaa2a90e49829c8c9897148719",
+    "UPSTREAM-SKILL.md": "9e727be15e52ae2ac3d81dc30dc580bf343ecaed7564aff15544c29c7366e5e4"
+  }
+}

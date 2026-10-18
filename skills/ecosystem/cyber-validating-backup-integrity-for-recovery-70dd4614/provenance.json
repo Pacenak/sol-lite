@@ -1,0 +1,26 @@
+{
+  "name": "cyber-validating-backup-integrity-for-recovery-70dd4614",
+  "upstream_name": "validating-backup-integrity-for-recovery",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/validating-backup-integrity-for-recovery/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/validating-backup-integrity-for-recovery/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/validating-backup-integrity-for-recovery/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "2bad7b5e46de3061c8757021f0d03f1c03b5ebf03e204281b281d37bfbf7b537",
+    "scripts/agent.py": "052dfd4b91473c23d42a4f608b015566aa5be70fe9adb90086e4fb69bcbfee5d",
+    "SKILL.md": "46aa9a400bf5bf628829b96fbaae38185ee724304e2f0b7e70ab5fb11e34ad48",
+    "UPSTREAM-SKILL.md": "81bba3e34a6c091117440392ca3bca25d8c22abafdaa22e59ea71dd021c9b41b"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "kdense-qiime2-amplicon-00bdbc50",
+  "upstream_name": "qiime2-amplicon",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/qiime2-amplicon/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "MIT",
+  "scripts": [
+    "scripts/amplicon_workflow.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/runtime-and-interpretation.md": "d364d7f4ae66d3481168f71ce677e188c6135db349d498744ebf387223cd9741",
+    "scripts/amplicon_workflow.py": "4f781d70594f8624af3ad71e3cdedc0f5cbcd285ed630a3277cae2fe8a94827a",
+    "SKILL.md": "9ffd0cde8af36cee7dd25842ee9ce5351cb9fc616f17932d32ea9d66c75bd151",
+    "UPSTREAM-SKILL.md": "605ae0581620f654ca9e12122a2bdb1d62a813841c5fea61b0eacb2031377cf7"
+  }
+}

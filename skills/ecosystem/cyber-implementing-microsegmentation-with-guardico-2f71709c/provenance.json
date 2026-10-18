@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-microsegmentation-with-guardico-2f71709c",
+  "upstream_name": "implementing-microsegmentation-with-guardicore",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-microsegmentation-with-guardicore/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-microsegmentation-with-guardicore/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-microsegmentation-with-guardicore/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7e26c6c44b8f8f907feb92fe0556339031ed99469b30d70623eb85cd59bfbef7",
+    "scripts/agent.py": "031fc1d8d1cc1086c1bee3129929cdf798c76230f59613d29c2c7db02c499177",
+    "SKILL.md": "ff68f2867df55e814370f2108dd996a0df6669c45df7723b3c71b9a1e7b5b7bf",
+    "UPSTREAM-SKILL.md": "7beaa1e666b73f08742b3457eb313619a53439ab39e38a948b8475df75f50646"
+  }
+}

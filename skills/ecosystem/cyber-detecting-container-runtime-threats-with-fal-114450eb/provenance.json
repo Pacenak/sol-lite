@@ -1,0 +1,27 @@
+{
+  "name": "cyber-detecting-container-runtime-threats-with-fal-114450eb",
+  "upstream_name": "detecting-container-runtime-threats-with-falco",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-container-runtime-threats-with-falco/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-container-runtime-threats-with-falco/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-container-runtime-threats-with-falco/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "50a2d03da82a88d9692f4cdf72d708ee02ac0cd2667a64c4ff7011f0381d52f6",
+    "references/standards.md": "592033dc23ad868c8a379fb75508602e67ceeb1975c9fef64d8e292f8e3f5aa8",
+    "scripts/agent.py": "b1f7f91ba5b7dd799dc32ae9991f08503f7cb9e94bee579c092cea945b38c3d6",
+    "SKILL.md": "f9df4dcdd31dc00a9221f6746f536906f2f24f51d2b0c095e498b99443195d74",
+    "UPSTREAM-SKILL.md": "55a26d45bc8cf745d8df2b72288f1c81647dd633985c7c8abe41460a10ae7cc0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-testing-for-json-web-token-vulnerabilities-29bd0848",
+  "upstream_name": "testing-for-json-web-token-vulnerabilities",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-for-json-web-token-vulnerabilities/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-for-json-web-token-vulnerabilities/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-for-json-web-token-vulnerabilities/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "bbf484ac67455911caaa57927d4d0339103222bb3b3d469ae703d88d8774d13d",
+    "scripts/agent.py": "657ddf3d243b60da0006d30a8d728afb59f5406c8749c74c53ba3be71099b0de",
+    "SKILL.md": "537e64f4f449644bed6ef9b8a776925d0e5c5ed2be7b8abf05d1822a66d8ba66",
+    "UPSTREAM-SKILL.md": "980a30a4b83f2ca001d768a7da4fa7e51ec6acb8b4a74ce74c4250455f561da2"
+  }
+}

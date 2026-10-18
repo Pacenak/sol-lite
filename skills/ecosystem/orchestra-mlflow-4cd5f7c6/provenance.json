@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-mlflow-4cd5f7c6",
+  "upstream_name": "mlflow",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "13-mlops/mlflow/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/deployment.md": "e3fbee780f5b8dddedadd53bbe3db490eb2611bea920ea52849e10262841539d",
+    "references/model-registry.md": "fdfdfb609e1fa3123c5948ecce3275eef8ce0b9437ca2e957bb22a6eb29372eb",
+    "references/tracking.md": "e2b63991f10bf208d8444791c62b0a83c049c37da0c5722e4124805dfb1ba405",
+    "SKILL.md": "c80a1a8a1712b46d6b5d9c2fdf02663f882f7be08fe7e615862a4e0efe3c1ef0",
+    "UPSTREAM-SKILL.md": "36d2581f7d8beb8b27f66bbef5c94df7e9604b917c3aa15e4183a48a2b1f3f96"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "cyber-hunting-for-living-off-the-cloud-techniques-33d5aabc",
+  "upstream_name": "hunting-for-living-off-the-cloud-techniques",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/hunting-for-living-off-the-cloud-techniques/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/hunting-for-living-off-the-cloud-techniques/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/hunting-for-living-off-the-cloud-techniques/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9a3e111b95adb414aa65ee3bdcc6bcce6e29a865f982e8c3985e909ca9243bdc",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "6de879a0a200517ec0f4c43c1ebd76b1bdae807eac93ed5438dbd57f9d53f5da",
+    "references/standards.md": "80bb219aeeb62b8a6cd59df5e9b3c8f7308f68b28448826fd84a112ee928b269",
+    "references/workflows.md": "e86fe701fe95aff39ef58e61b9436eaaf8f92296c4d38d695d8a3471f2070cb9",
+    "scripts/agent.py": "090c4a7fe46f400a5793958ed71117990a1588992aa7ea37200bccb627f3ea50",
+    "scripts/process.py": "dde4a221c8e93e9f795efcef844e77ec0a0b8e6bdf4879ec252fdd7de6085e7a",
+    "SKILL.md": "dc0670e51c35593bada6806c8575b269c883175c3c1c0cc9ddab01fb3c0b48d3",
+    "UPSTREAM-SKILL.md": "301f9148b2301da8a8005a30e59617b51af6ba84d1f1966bcece39c26a6895c4"
+  }
+}

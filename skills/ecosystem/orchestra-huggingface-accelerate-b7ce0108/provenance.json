@@ -1,0 +1,22 @@
+{
+  "name": "orchestra-huggingface-accelerate-b7ce0108",
+  "upstream_name": "huggingface-accelerate",
+  "source_id": "orchestra",
+  "group": "research",
+  "repository": "Orchestra-Research/AI-Research-SKILLs",
+  "commit": "773a52944ba4747a18bd4ae9ade53fff041adcbc",
+  "path": "08-distributed-training/accelerate/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "MIT",
+  "scripts": [],
+  "files": {
+    "_licenses/LICENSE": "80b5899a9ab121a2d4aae63724f0c11defba7f23da487086932bb9abfb0f2a00",
+    "references/custom-plugins.md": "1b2f1cf5d70a155f7792cad12a466be4315b787fe21e01b36d32bf374693c020",
+    "references/megatron-integration.md": "69dedcc3c78c197defa86531412541b96a624090c0afd787a967cf865117273d",
+    "references/performance.md": "559ea051c23773d3a7227610018429a0e12e49795949a6e9adfa91b305182a37",
+    "SKILL.md": "b7d613567bf5a4f81459cea8c0d16e8f14de4def873c7dfcd9abc18169a6d06b",
+    "UPSTREAM-SKILL.md": "e94cea7a174f395df02d935065fe05db8ecb637c52e443b6380c703963758d7a"
+  }
+}

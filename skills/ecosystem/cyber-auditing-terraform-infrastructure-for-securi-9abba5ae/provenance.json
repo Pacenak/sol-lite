@@ -1,0 +1,26 @@
+{
+  "name": "cyber-auditing-terraform-infrastructure-for-securi-9abba5ae",
+  "upstream_name": "auditing-terraform-infrastructure-for-security",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/auditing-terraform-infrastructure-for-security/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/auditing-terraform-infrastructure-for-security/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/auditing-terraform-infrastructure-for-security/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "c8e0e6cb8adab90058d2c5eecf3ea136d1698f00b995d8fd20c1bf8843d67398",
+    "scripts/agent.py": "cf7c21f1bd3ff95fa9b03682cf66dd1765531ac4379051a6ca6f1d3ff1a4f69f",
+    "SKILL.md": "11e093e7039217d56fae7d95879b5b94f1eb710929a53bdbed6822b76d9ff73c",
+    "UPSTREAM-SKILL.md": "0ccb9490f13f53099ac90917cffb98e103efb080409c280c85184e0610c4e95a"
+  }
+}

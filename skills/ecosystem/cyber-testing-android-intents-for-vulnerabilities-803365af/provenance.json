@@ -1,0 +1,31 @@
+{
+  "name": "cyber-testing-android-intents-for-vulnerabilities-803365af",
+  "upstream_name": "testing-android-intents-for-vulnerabilities",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/testing-android-intents-for-vulnerabilities/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/testing-android-intents-for-vulnerabilities/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/testing-android-intents-for-vulnerabilities/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "9580def5aa9049b1a8f744eef188131c98136ee9ae22ecb7b7d1c86541397346",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "5ac621a8d8c46a389c1e6674d0e43489dcbec6fa49678446c127f0dd2c92fc49",
+    "references/standards.md": "9c9a908faf65adae8a3479d912ec1b1ea8e975b292ad4006e7d921304809427c",
+    "references/workflows.md": "9d4b67df8b01448b86b7958cd3c7555a7ca4d6ebd668066909b94d868c139960",
+    "scripts/agent.py": "79440bb193d3178e54fcc175ce8ef18b0dee10a0783b15735803d4cbc4474daa",
+    "scripts/process.py": "71f57b8c05e09852961d9c60c929a344e48baf9db5a7df94020a99b77cad4de0",
+    "SKILL.md": "7d74fb689e509bbd1abaefbda3e1ebb4e635a0331edbabc01b7b8f84d58e29bd",
+    "UPSTREAM-SKILL.md": "ea3aba349b2dc4f8d65a1e3422cd49f20042dbba0750815af6f9cb99846b9df1"
+  }
+}

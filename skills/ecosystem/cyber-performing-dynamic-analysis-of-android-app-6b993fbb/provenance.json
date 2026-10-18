@@ -1,0 +1,31 @@
+{
+  "name": "cyber-performing-dynamic-analysis-of-android-app-6b993fbb",
+  "upstream_name": "performing-dynamic-analysis-of-android-app",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/performing-dynamic-analysis-of-android-app/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/performing-dynamic-analysis-of-android-app/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py",
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/performing-dynamic-analysis-of-android-app/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "d28804f4cd900cf6f5bede15aeec51e18881647025271f8c36e75b6e0d701f53",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "19016c585594512f5ab69fe4608ee3202d8097222463907254a50e924f060a3b",
+    "references/standards.md": "751e5aa8ddf5b9f1b3acb7dd37a5f61cdc8b1f5d11692630187097a5916c31d3",
+    "references/workflows.md": "0343db65e1990e1c629f17d10cb34732c72a0ebb64279629a2a7c10159a3e919",
+    "scripts/agent.py": "fdcd56c61b187b190c6110f709655a9f399e00f2dfc7b4d0b3a0d111b639f1c8",
+    "scripts/process.py": "c60603eebfcda993b3b8bccd19865ddce3d5fa796610cd5154b78b8a66d3a2c4",
+    "SKILL.md": "2a474b04c33b0c347bdc07287634ca552e7321213a827c6bb7d7bef1f38e9350",
+    "UPSTREAM-SKILL.md": "e90aa7b42fb2ecba0d0d9cd585b529db9f26ebc7c1c66606bea69ce3dfce4a8b"
+  }
+}

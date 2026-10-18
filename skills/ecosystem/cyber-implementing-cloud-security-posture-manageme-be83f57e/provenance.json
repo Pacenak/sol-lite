@@ -1,0 +1,27 @@
+{
+  "name": "cyber-implementing-cloud-security-posture-manageme-be83f57e",
+  "upstream_name": "implementing-cloud-security-posture-management",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-cloud-security-posture-management/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-cloud-security-posture-management/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-cloud-security-posture-management/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "3a2e6132675d57743c9ee6ffa1027c746d9e39acc86391f18f3dc5786050c91a",
+    "scripts/agent.py": "9a605a3120bafc77eced57f30d47f92fcd14e8b357d95fa44d6accee782caf1b",
+    "SKILL.es.md": "da0b7530d09a2c7f57766f288b53842785eec1f2c6e63fe4bd409e77d83e0e8a",
+    "SKILL.md": "6ee31a6f33b11638f2f6ac72a4889d159849dd7e05180617375f1dcd7dbdc0a0",
+    "UPSTREAM-SKILL.md": "8fb8740263de5456d96bd4ec667a54489198d2b3d259736ea5a6df790b56effb"
+  }
+}

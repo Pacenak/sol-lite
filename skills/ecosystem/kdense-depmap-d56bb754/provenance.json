@@ -1,0 +1,23 @@
+{
+  "name": "kdense-depmap-d56bb754",
+  "upstream_name": "depmap",
+  "source_id": "kdense",
+  "group": "research",
+  "repository": "K-Dense-AI/scientific-agent-skills",
+  "commit": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "path": "skills/depmap/SKILL.md",
+  "license_files": [
+    "LICENSE.md"
+  ],
+  "declared_license": "CC-BY-4.0",
+  "scripts": [
+    "scripts/depmap_data.py"
+  ],
+  "files": {
+    "_licenses/LICENSE.md": "09b02a3c9df3053c55531d503357a9c7cde275970e6c3ceaa1ddf5f0e90b40c1",
+    "references/dependency_analysis.md": "4bf745e94ff70da89f8c3d67c3de625d2d06b24812012fe446fa9d9c2422cd96",
+    "scripts/depmap_data.py": "28604159f7c87d7e5a5002a0512af100a440d73f0fa5f2ba6794ccafce66ebfb",
+    "SKILL.md": "de537cd743ef38d0e097cee3163600d844a07c8dd007c22cbd6b5234ea9cab2c",
+    "UPSTREAM-SKILL.md": "893eb02a2dc8a77e61260dfb74b2acdf6c85e08f33028329d73657a23d398586"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cyber-implementing-honeytokens-for-breach-detectio-40c9efed",
+  "upstream_name": "implementing-honeytokens-for-breach-detection",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/implementing-honeytokens-for-breach-detection/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/implementing-honeytokens-for-breach-detection/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/implementing-honeytokens-for-breach-detection/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "e7e6be69ca17b0d8d90ac76af47971eaedfe3632e882b0a4748c957a10ca0b5b",
+    "scripts/agent.py": "507f530f7c1dc81a187d0cc835ddbb7976887e31b5b1f808e6469ed57593eab3",
+    "SKILL.md": "149238fb522bd387366327af30fb0ac43e28bf6de53ad6decfc685e273caa9ce",
+    "UPSTREAM-SKILL.md": "78196ffb70b3ec8f72ff1a9b8ea77dd3e242759ebeb0734a8df827167d1c450d"
+  }
+}

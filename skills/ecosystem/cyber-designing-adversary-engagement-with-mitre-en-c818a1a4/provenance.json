@@ -1,0 +1,27 @@
+{
+  "name": "cyber-designing-adversary-engagement-with-mitre-en-c818a1a4",
+  "upstream_name": "designing-adversary-engagement-with-mitre-engage",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/designing-adversary-engagement-with-mitre-engage/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/designing-adversary-engagement-with-mitre-engage/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/process.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/designing-adversary-engagement-with-mitre-engage/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "assets/template.md": "94cc580a52262cef8386ca9e7fa8d7d3df4e0b1957cd3753b43a725ccb005a46",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/standards.md": "fec4c38f054a2cc8b853339e359117d54c6bf23897058d6f5471509d3fab1c31",
+    "scripts/process.py": "589b2aa8920abf5329c6d7b8a8b0e9d5d091fabbbc66825c8e37e855b1fd16e0",
+    "SKILL.md": "4a06847ebf04bb143e2e4158b0f1115c1f5b8855e237242f6612114f913e89f5",
+    "UPSTREAM-SKILL.md": "6f9230b7a8d4c29657d053af7453080e8dd47dca39458e0f22741e999ccdd41c"
+  }
+}

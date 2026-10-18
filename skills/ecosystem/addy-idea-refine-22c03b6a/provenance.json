@@ -1,0 +1,32 @@
+{
+  "name": "addy-idea-refine-22c03b6a",
+  "upstream_name": "idea-refine",
+  "source_id": "addy",
+  "group": "engineering",
+  "repository": "addyosmani/agent-skills",
+  "commit": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+  "path": "skills/idea-refine/SKILL.md",
+  "license_files": [
+    "LICENSE"
+  ],
+  "declared_license": "See retained upstream license files",
+  "scripts": [
+    "scripts/idea-refine.sh"
+  ],
+  "files": {
+    "_licenses/LICENSE": "6f202f8bd568cd730dbb2b0d1f8e243bc74c2fa1f64dbce9b2c7ea08bd5c9fd7",
+    "examples.md": "563204bfbf2f80a444151695205af4cb759e722b3d1e5460e08f278a69c89ba1",
+    "frameworks.md": "161ebc18fdf2d996bc62a87a2d747cf1bf53548354f8925de25c732c27f00309",
+    "references/accessibility-checklist.md": "61c759d94d52296231f5f310b92b401f56c44e4430dc3cc95ebac5d7b1d5ffac",
+    "references/definition-of-done.md": "d1c75d2ae65d2c7a9cd01f93fa8de63e00e75f2fe5d08be224d576157054dcee",
+    "references/observability-checklist.md": "25fcd0e854596a5ab6f11b002050d245bf78f5ae0fcbd1df699b89451ae0e1e8",
+    "references/orchestration-patterns.md": "61e543d86f19f86b83074f8c1c769455c7085a2c72dd47b1da21a8c63785be4a",
+    "references/performance-checklist.md": "fffc38b8f3b328a973aab8b1a2efdd72b65710d8f4b57f28f8374ddae7f8a88b",
+    "references/security-checklist.md": "37774056502fe8970dcd2fd27dca5fa31f2a55232649fc3056c89c3af7d62755",
+    "references/testing-patterns.md": "f0bf05acd0edcadc27297ad5b74f104c8103ccfedba1a05cd6d6ae4af8364c56",
+    "refinement-criteria.md": "1ca2973a4d01b5cb37ab7ddb2eff77fa4e792634a33d0ce44961c068fc88d51a",
+    "scripts/idea-refine.sh": "f02a52408a4218047c032d221483abfbb48d11f090bb4915965c7419bf2e0e47",
+    "SKILL.md": "fb3f96cdd1797755e59e0bb6b969d331e1480e011af3ab758edf429fd2df76a6",
+    "UPSTREAM-SKILL.md": "21ef828e3a2144245b67f840cc3805f761e98c9acce9a96670b7cd7441353463"
+  }
+}

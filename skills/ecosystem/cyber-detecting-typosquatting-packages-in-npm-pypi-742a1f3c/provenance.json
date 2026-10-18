@@ -1,0 +1,26 @@
+{
+  "name": "cyber-detecting-typosquatting-packages-in-npm-pypi-742a1f3c",
+  "upstream_name": "detecting-typosquatting-packages-in-npm-pypi",
+  "source_id": "cyber",
+  "group": "security",
+  "repository": "mukul975/Anthropic-Cybersecurity-Skills",
+  "commit": "54a798831d2266a3ca61ce68a7acb80b81160d57",
+  "path": "skills/detecting-typosquatting-packages-in-npm-pypi/SKILL.md",
+  "license_files": [
+    "LICENSE",
+    "skills/detecting-typosquatting-packages-in-npm-pypi/LICENSE"
+  ],
+  "declared_license": "Apache-2.0",
+  "scripts": [
+    "scripts/agent.py"
+  ],
+  "files": {
+    "_licenses/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "_licenses/skills/detecting-typosquatting-packages-in-npm-pypi/LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "LICENSE": "a941b58ef0ba43a31e24ae7ece1b743a585efed9e37792b9ca063e0798be1cbe",
+    "references/api-reference.md": "7268e827935fc224e4d45566f9884b4addfe44bf292e237d0a044fc0c122d625",
+    "scripts/agent.py": "b947788626593fbfe9eb3b4ed90499b6064ba683a7bacc33c9be5e74842a27f4",
+    "SKILL.md": "a15c1595f9da7b39317dd4c41b5de313fa51151cda0a841669022f2ea069709b",
+    "UPSTREAM-SKILL.md": "b3d46c0184c4a0993b1c31f0e1d91e368d14a47063dd0083e9e51f87d4cfe0ed"
+  }
+}
