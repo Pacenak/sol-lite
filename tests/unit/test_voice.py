@@ -59,6 +59,40 @@ def test_probe_selects_local_engines_when_they_import():
     assert settings["tts_provider"] == "local"
     assert settings["stt_enabled"] is True
     assert settings["tts_enabled"] is True
+    assert settings["listen"] is False
+    assert settings["speak"] is False
+
+
+def test_platform_discovery_keeps_voice_switches_off():
+    settings = settings_from_probe({"platform_speech": True})
+    assert settings["tts_provider"] == "platform"
+    assert settings["listen"] is False
+    assert settings["speak"] is False
+
+
+def test_terminal_launch_resets_saved_switches_before_banner(tmp_path):
+    import pytest
+
+    from sol_lite.agents.shell import AgentShell
+    from sol_lite.voice.settings import load_settings
+
+    settings = settings_from_probe({"platform_speech": True})
+    settings.update(listen=True, speak=True, stt_model="medium", tts_voice="am_adam")
+    save_settings(tmp_path / "data", settings)
+    shell = object.__new__(AgentShell)
+    shell.root = tmp_path
+
+    class BannerReached(Exception):
+        pass
+
+    def banner():
+        current = load_settings(tmp_path / "data")
+        assert current == {**settings, "listen": False, "speak": False}
+        raise BannerReached
+
+    shell.print_banner = banner
+    with pytest.raises(BannerReached):
+        shell.run()
 
 
 def test_python_313_uses_the_operating_system_voice_when_kokoro_is_missing(monkeypatch):
@@ -112,11 +146,13 @@ def test_windows_platform_voice_returns_a_wav(monkeypatch):
 
 
 def test_listen_returns_the_transcribed_text(tmp_path):
-    save_settings(tmp_path, settings_from_probe({
+    settings = settings_from_probe({
         "faster_whisper_import": True,
         "kokoro_import": False,
         "espeak_ok": False,
-    }))
+    })
+    settings["listen"] = True
+    save_settings(tmp_path, settings)
     heard = listen(
         tmp_path,
         recorder=lambda: b"RIFFaudio",
@@ -163,6 +199,7 @@ def test_switches_stay_off_after_discovery(tmp_path, monkeypatch):
 def test_agent_voice_is_passed_to_synthesizer(tmp_path, monkeypatch):
     from sol_lite.voice.session import speak_reply
     settings = settings_from_probe({"platform_speech": True})
+    settings["speak"] = True
     settings["agent_voices"] = {"sol_pa": "am_adam"}
     save_settings(tmp_path, settings)
     monkeypatch.setattr(probe, "probe_voice", lambda root: {})

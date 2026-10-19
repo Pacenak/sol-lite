@@ -30,3 +30,4 @@ tools:
   - remote_execute
   - workspace_pack_status
   - workspace_pack_append
+  - search_knowledge_index

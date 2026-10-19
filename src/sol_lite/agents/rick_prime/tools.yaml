@@ -67,3 +67,4 @@ tools:
   - jira_update
   - jira_comment
   - jira_transition
+  - search_knowledge_index

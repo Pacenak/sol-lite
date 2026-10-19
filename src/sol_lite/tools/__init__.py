@@ -4,6 +4,7 @@ from .base import ToolContext, ToolDefinition
 from .filesystem import filesystem_tools
 from .google_workspace import google_workspace_tools
 from .hosting import hosting_tools
+from .indexing import indexing_tools
 from .jira import jira_tools
 from .notes import notes_tools
 from .procedure import procedure_tools
@@ -37,6 +38,7 @@ def build_tool_registry():
     tools += studio_sec_tools()
     tools += artifact_tools()
     tools += workspace_pack_tools()
+    tools += indexing_tools()
     for tool in tools:
         registry.register(tool)
     return registry

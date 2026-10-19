@@ -6,6 +6,8 @@ from __future__ import annotations
 import re
 
 WORKSPACE_EVIDENCE_TOOL_NAMES = frozenset({
+    "search_knowledge_index",
+    "consolidate_inbox_preview",
     "workspace_pack_status",
     "inventory_workspace",
     "list_project_structure",
@@ -152,7 +154,8 @@ CHANGE_TOOL_NAMES = (
 )
 
 OPT_IN_TOOL_NAMES = (
-    COMMAND_TOOL_NAMES
+    frozenset({"consolidate_inbox_apply"})
+    | COMMAND_TOOL_NAMES
     | GOOGLE_TOOL_NAMES
     | JIRA_TOOL_NAMES
     | STUDIO_TOOL_NAMES
@@ -165,6 +168,10 @@ OPT_IN_TOOL_NAMES = (
 )
 
 _TASK_TOOLS = {
+    "knowledge_retrieval": WORKSPACE_EVIDENCE_TOOL_NAMES,
+    "inbox_consolidation": frozenset({"search_knowledge_index", "consolidate_inbox_preview",
+                                      "consolidate_inbox_apply", "workspace_pack_status",
+                                      "workspace_pack_append", "read_workspace_file"}),
     "workspace_pack": WORKSPACE_PACK_TOOL_NAMES | WORKSPACE_EVIDENCE_TOOL_NAMES | NOTES_TOOL_NAMES,
     "procedure": PROCEDURE_TOOL_NAMES,
     "directory_listing": DIRECTORY_LISTING_TOOL_NAMES,
@@ -377,6 +384,10 @@ _CHANGE_PATTERNS = (
 )
 
 _CLASS_PATTERNS = (
+    ("knowledge_retrieval", (r"\bwhat does (?:the |this )?doc(?:ument(?:ation)?)? say about\b",
+                             r"\blist items in\b", r"\bfind in (?:the )?docs\b",
+                             r"\bknowledge index\b", r"\bquote (?:the |this )?(?:docs?|documentation)\b")),
+    ("inbox_consolidation", (r"\bconsolidat\w* (?:the )?inbox\b", r"\bmerge (?:the )?inbox\b")),
     ("workspace_pack", (r"\bstarter pack\b", r"\bworkspace (?:docs|pack|intake)\b",
                         r"\bset ?up (?:the |this |a )?workspace\b",
                         r"\badd (?:a |the )?project to (?:the |this )?workspace\b")),
@@ -494,6 +505,11 @@ def permitted_tools(
     neither a recognized task nor an allowlist.
     """
     tasks = matching_tasks(user_text)
+
+    if "inbox_consolidation" in tasks and not re.search(
+        r"\b(?:email|gmail|calendar)\b", user_text, re.IGNORECASE
+    ):
+        tasks = [name for name in tasks if name != "google"]
 
     if (
         "directory_listing" in tasks

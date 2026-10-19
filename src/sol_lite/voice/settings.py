@@ -16,7 +16,7 @@ def default_settings() -> dict:
         "stt_enabled": False,
         "stt_provider": "disabled",
         "stt_model": "small",
-        "listen": True,
+        "listen": False,
         "agent_voices": {},
         "stt_language": "",
         "tts_enabled": False,
@@ -38,12 +38,10 @@ def settings_from_probe(probe: dict) -> dict:
         settings["tts_enabled"] = True
         settings["tts_provider"] = "local"
         settings["tts_voice"] = DEFAULT_VOICE
-        settings["speak"] = True
     elif probe.get("platform_speech"):
         settings["tts_enabled"] = True
         settings["tts_provider"] = "platform"
         settings["tts_voice"] = DEFAULT_VOICE
-        settings["speak"] = True
     return settings
 
 
@@ -64,6 +62,14 @@ def save_settings(data_root, settings: dict) -> None:
     path = settings_path(data_root)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(settings, indent=2) + "\n", encoding="utf-8")
+
+
+def reset_session_switches(data_root) -> dict:
+    """Require explicit voice opt-in on each terminal launch; keep engine choices."""
+    settings = load_settings(data_root)
+    settings.update(listen=False, speak=False)
+    save_settings(data_root, settings)
+    return settings
 
 
 def apply_probe_defaults(data_root, probe: dict) -> dict:

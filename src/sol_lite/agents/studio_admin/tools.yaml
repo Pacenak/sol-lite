@@ -38,3 +38,4 @@ tools:
   - procedure_status
   - procedure_advance
   - procedure_acknowledge
+  - search_knowledge_index

@@ -77,7 +77,7 @@ def test_pair_claim_stores_keyring_secret(monkeypatch):
 
     class Backend:
         def get(self, provider, key):
-            raise KeyError(key)
+            return stored[(provider, key)]
         def set(self, provider, key, value):
             stored[(provider, key)] = value
         def delete(self, provider, key):
@@ -103,13 +103,74 @@ def test_pair_claim_stores_keyring_secret(monkeypatch):
             "credentials": {"instance_id": "i-9", "api_key": "k-9", "sectors": ["ops"]},
         })
 
+    messages = []
     result = SolCommandClient.pair(
         "https://command.example", "invite", wait_seconds=30,
-        transport=httpx.MockTransport(handler), poll_interval=0.05,
+        transport=httpx.MockTransport(handler), poll_interval=0.05, progress=messages.append,
     )
     assert result == {"ok": True, "instance_id": "i-9", "sectors": ["ops"]}
     assert "k-9" in stored[("SOL-Lite", "sol-command")]
     assert "api_key" not in str(result)
+    assert len(stored) == 1
+    assert len(messages) == 4
+    assert "Waiting" in messages[1]
+    assert "k-9" not in str(messages)
+
+
+@pytest.mark.parametrize("path", ["/setup", "/api", "/command/pair/"])
+def test_pair_rejects_page_urls(path):
+    with pytest.raises(ValueError, match="base URL"):
+        SolCommandConfig("https://command.example" + path, "id", "key")
+
+
+def test_pair_keyring_failure_does_not_submit_invite(monkeypatch):
+    class Backend:
+        def set(self, *args):
+            raise RuntimeError("secret-backend-error")
+        def delete(self, *args):
+            pass
+    monkeypatch.setattr("sol_lite.credentials.manager.KeyringBackend", Backend)
+    def handler(request):
+        pytest.fail("Must not register when credential storage is unavailable")
+    with pytest.raises(RuntimeError, match="before registration") as error:
+        SolCommandClient.pair("https://command.example", "private-invite",
+                              transport=httpx.MockTransport(handler))
+    assert "secret-backend-error" not in str(error.value)
+
+
+@pytest.mark.parametrize("failure", ["unknown", "html", "register400", "claim409", "storage"])
+def test_pair_failures_are_actionable_and_do_not_leak_secrets(monkeypatch, failure):
+    saved = {}
+    class Backend:
+        def get(self, provider, key):
+            return saved[key]
+        def set(self, provider, key, value):
+            if key == "sol-command" and failure == "storage":
+                raise RuntimeError("private-key")
+            saved[key] = value
+        def delete(self, provider, key):
+            saved.pop(key, None)
+    monkeypatch.setattr("sol_lite.credentials.manager.KeyringBackend", Backend)
+    def handler(request):
+        if request.url.path.endswith("register"):
+            if failure == "register400":
+                return httpx.Response(400, json={"detail": "private-invite"})
+            if failure == "html":
+                return httpx.Response(200, text="<html>private-invite</html>")
+            return httpx.Response(200, json={"state": "pending"})
+        if request.url.path.endswith("status"):
+            return httpx.Response(200, json={"state": "unknown" if failure == "unknown" else "approved"})
+        if failure == "claim409":
+            return httpx.Response(409, json={"detail": "private-key"})
+        return httpx.Response(200, json={"credentials": {"instance_id": "id", "api_key": "private-key"}})
+    expected = {"unknown": "expired", "html": "registration returned invalid JSON",
+                "register400": "registration returned HTTP 400", "claim409": "credential claim returned HTTP 409",
+                "storage": "claimed but could not be saved"}
+    with pytest.raises(RuntimeError, match=expected[failure]) as error:
+        SolCommandClient.pair("https://command.example", "private-invite",
+                              transport=httpx.MockTransport(handler))
+    assert "private-invite" not in str(error.value)
+    assert "private-key" not in str(error.value)
 
 
 def test_stage_synced_skills_keeps_sector_names_with_spaces(tmp_path: Path):

@@ -1,4 +1,4 @@
-SOL-Lite v0.2.6 project files — workspace starter pack Stage 1
+SOL-Lite v0.2.6 project files — workspace starter pack and knowledge index v1
 
 .env.example
 .gitattributes
@@ -6,6 +6,8 @@ SOL-Lite v0.2.6 project files — workspace starter pack Stage 1
 .gitignore
 BUILD_MANIFEST.json
 CHANGELOG.md
+KNOWLEDGE_INDEX_FILES.json
+KNOWLEDGE_INDEX_INSTALL.md
 LICENSE
 LICENSE.md
 MCP-PHASE11-12-README.md
@@ -76,6 +78,7 @@ docs/debugging/startup-failures.md
 docs/debugging/task-failures.md
 docs/debugging/tool-failures.md
 docs/debugging/workspace-failures.md
+docs/design/2026-10-19-knowledge-index-consolidation-design.md
 docs/design/2026-10-19-workspace-starter-pack-design.md
 docs/design/colour-system.md
 docs/design/colour-wheel-reference.md
@@ -144,6 +147,7 @@ docs/superpowers/plans/2026-10-13-host-git-repos.md
 docs/superpowers/plans/2026-10-13-portable-brain-stick.md
 docs/superpowers/plans/2026-10-13-studio-admin-toolbelt-stick.md
 docs/superpowers/plans/2026-10-18-shared-skill-catalogue.md
+docs/superpowers/plans/2026-10-19-knowledge-index-consolidation.md
 docs/superpowers/plans/2026-10-19-workspace-starter-pack.md
 docs/superpowers/specs/2026-10-10-sol-lite-standalone-command-link-design.md
 docs/superpowers/specs/2026-10-12-sol-lite-lead-procedures-design.md
@@ -157,6 +161,12 @@ docs/testing/failure-matrix.md
 docs/testing/first-full-battle-run.md
 docs/testing/infrastructure-automation-results.md
 docs/testing/infrastructure-automation.md
+docs/testing/knowledge-index-consolidation.md
+docs/testing/knowledge-index/focused-pytest.txt
+docs/testing/knowledge-index/full-pytest.txt
+docs/testing/knowledge-index/preflight.txt
+docs/testing/knowledge-index/ruff-full.txt
+docs/testing/knowledge-index/ruff-new.txt
 docs/testing/personal-assistant-planner-results.md
 docs/testing/personal-assistant-planner.md
 docs/testing/shared-skill-acceptance-results.json
@@ -183,6 +193,7 @@ docs/user/dummies-admin-stick-m2.md
 docs/user/dummies-command-link.md
 docs/user/dummies-command-list.md
 docs/user/dummies-studio-odoo.md
+docs/user/knowledge-index-consolidation.md
 docs/user/permissions.md
 docs/user/personal-assistant-planner.md
 docs/user/sessions.md
@@ -12498,6 +12509,7 @@ skills/infrastructure-automation/references/command-catalog.md
 skills/infrastructure-automation/references/tool-schemas.json
 skills/infrastructure-automation/references/windows-network-machine-facts.md
 skills/infrastructure-discovery/SKILL.md
+skills/knowledge-index/SKILL.md
 skills/mermaid-diagrams/SKILL.md
 skills/open-code-review/SKILL.md
 skills/performance-investigation/SKILL.md
@@ -12678,6 +12690,7 @@ src/sol_lite/tools/context.py
 src/sol_lite/tools/filesystem.py
 src/sol_lite/tools/google_workspace.py
 src/sol_lite/tools/hosting.py
+src/sol_lite/tools/indexing.py
 src/sol_lite/tools/jira.py
 src/sol_lite/tools/notes.py
 src/sol_lite/tools/procedure.py
@@ -12734,6 +12747,7 @@ tests/fixtures/workspace-pack/golden/README.md
 tests/integration/test_agent_runtime_wiring.py
 tests/integration/test_artifact_renderers.py
 tests/integration/test_filesystem_tools.py
+tests/integration/test_indexing_runtime.py
 tests/integration/test_runtime.py
 tests/integration/test_workspace_pack_runtime.py
 tests/unit/bridge/.gitkeep
@@ -12755,6 +12769,7 @@ tests/unit/test_command_guard.py
 tests/unit/test_composer.py
 tests/unit/test_flare.py
 tests/unit/test_hosting_pr.py
+tests/unit/test_indexing.py
 tests/unit/test_infrastructure_automation_contract.py
 tests/unit/test_installation.py
 tests/unit/test_jira.py

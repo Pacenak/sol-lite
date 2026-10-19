@@ -1246,7 +1246,7 @@ class AgentShell:
         try:
             settings = ensure_voice_settings(data_root)
             if not parts or parts == ["status"]:
-                print(f"Listening: {settings.get('listen', True)}; "
+                print(f"Listening: {settings.get('listen', False)}; "
                       f"spoken replies: {settings.get('speak')}; "
                       f"STT: {settings['stt_provider']} ({settings['stt_model']}); "
                       f"TTS: {settings['tts_provider']} ({settings['tts_voice']})")
@@ -1455,6 +1455,9 @@ class AgentShell:
                 line = exc.command
 
     def run(self):
+        from ..voice.settings import reset_session_switches
+
+        reset_session_switches(self.root / "data")
         self.print_banner()
         self._accept_commands = True
         queued = None

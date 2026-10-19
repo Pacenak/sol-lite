@@ -1,5 +1,23 @@
 # Changelog
 
+## Unreleased — workspace initialization template kit
+
+- Added copy-ready workspace, project, documentation and planning templates
+  adapted from the supplied Studio reference documents.
+- Added placeholder guidance, agent responsibilities and worked setup/editing
+  examples, including compatibility notes for the existing managed shared pack.
+- Kept template creation separate from initialization of actual user workspaces.
+
+## Unreleased — knowledge index and inbox consolidation
+
+- Added exact Markdown retrieval with physical-line citations, text/regex/header
+  modes, bounded search, explicit completeness notices and an in-memory parse cache.
+- Added conflict-blocking inbox preview and approved atomic consolidation that
+  preserves original target content/order, line endings, BOM and final-newline state.
+- Added sync tools, asyncio wrappers, PA/Docs mutation roles, search for all agents,
+  task routing, runtime change evidence, a knowledge-index skill and regression tests.
+- Consolidation never deletes inbox files, creates targets or mutates managed pack files.
+
 ## Unreleased — workspace starter pack Stage 1
 
 - Added deterministic workspace and project documentation, fixed resumable intake,

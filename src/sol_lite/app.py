@@ -66,7 +66,7 @@ def build_parser():
 
     pair = sub.add_parser("connect", help="Pair SOL-Lite with SOL-Command.")
     pair.add_argument("--command-url", required=True)
-    pair.add_argument("--invite-code", required=True)
+    pair.add_argument("--invite-code", help="Command invite; prompts securely when omitted.")
     pair.add_argument("--name", default="SOL-Lite")
 
     sub.add_parser("disconnect", help="Remove the saved SOL-Command credential from the OS keyring.")
@@ -310,9 +310,12 @@ def main():
         return
 
     if args.command == "connect":
+        import getpass
         from .integrations.sol_command import SolCommandClient
         try:
-            result = SolCommandClient.pair(args.command_url, args.invite_code, name=args.name)
+            invite = args.invite_code or getpass.getpass("Fresh Command pairing invite: ")
+            result = SolCommandClient.pair(args.command_url, invite, name=args.name,
+                                          progress=lambda message: print(message, flush=True))
         except Exception as exc:
             print(f"SOL-Command connection failed: {exc}", file=sys.stderr)
             raise SystemExit(1) from exc

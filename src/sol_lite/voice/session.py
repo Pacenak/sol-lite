@@ -11,7 +11,7 @@ from .settings import ensure_voice_settings
 
 def listen(data_root, *, recorder=None, transcriber=None) -> str:
     settings = ensure_voice_settings(data_root)
-    if not settings.get("listen", True):
+    if not settings.get("listen", False):
         raise RuntimeError("Listening is off. Use /listen on.")
     if not settings.get("stt_enabled"):
         raise RuntimeError("Speech-to-text is disabled. Run the SOL-Lite installer or sol-lite voice-status.")

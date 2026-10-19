@@ -22,3 +22,6 @@ tools:
   - searxng_search
   - workspace_pack_status
   - workspace_pack_append
+  - search_knowledge_index
+  - consolidate_inbox_preview
+  - consolidate_inbox_apply

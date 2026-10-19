@@ -21,7 +21,15 @@
     },
     {
       "path": "CHANGELOG.md",
-      "sha256": "6e577f1906020563d66e3a15427c0b18c34e4e611e428c5f62ce4e07ec45548c"
+      "sha256": "a3f5abf7abd77863003f58a78661f8cca99575d3e614b71fbbfe431c20905e6d"
+    },
+    {
+      "path": "KNOWLEDGE_INDEX_FILES.json",
+      "sha256": "2a9e95964ce22d3d1c2a2526907ff197081e5450c38b4e931653f37483943e9d"
+    },
+    {
+      "path": "KNOWLEDGE_INDEX_INSTALL.md",
+      "sha256": "efaeb09524c9aa57e7243ec1016c9194db954656b46c068cac5cd9c9f07a5174"
     },
     {
       "path": "LICENSE",
@@ -57,7 +65,7 @@
     },
     {
       "path": "PROJECT_FILES.txt",
-      "sha256": "d32ab2c3e395f0a879e9c5fb34f6dbd164101dc428d1202bc0666bdbcaff40e2"
+      "sha256": "cbfcf9c75cb9e1546d496860aa8ca943a5fe2b2ef02763dbe41a7e457101f870"
     },
     {
       "path": "README.md",
@@ -145,7 +153,7 @@
     },
     {
       "path": "docs/README.md",
-      "sha256": "fb28d62be99a6be1064f1b9b352c33f341503a2b2ed5e6fb573f505f6c3ae5ca"
+      "sha256": "d65f981018f8fc46ac9eb925ff0c153b317266225cfcad100af86a829c9160dd"
     },
     {
       "path": "docs/architecture/CHANGE-CHECK-ADMIN-TOOLBELT-FULL-SETUP-2026-10-13.md",
@@ -302,6 +310,10 @@
     {
       "path": "docs/debugging/workspace-failures.md",
       "sha256": "cdda36299c11a4a3c5d823c0d806b6d119930395153e96d3fd156ebdd734acc6"
+    },
+    {
+      "path": "docs/design/2026-10-19-knowledge-index-consolidation-design.md",
+      "sha256": "611c521a3c714a9012e2ec0c52830da7a46eea8e74ce8b8d4457b16d929e186a"
     },
     {
       "path": "docs/design/2026-10-19-workspace-starter-pack-design.md",
@@ -576,6 +588,10 @@
       "sha256": "fb5256c2f14abac5111aa0445e0f32c13f0168a665faf0684d84a7608d2f788c"
     },
     {
+      "path": "docs/superpowers/plans/2026-10-19-knowledge-index-consolidation.md",
+      "sha256": "bc21975efa6bc835d3c1949ed2e8659cf368be0482b3571c204f1e50fa2888aa"
+    },
+    {
       "path": "docs/superpowers/plans/2026-10-19-workspace-starter-pack.md",
       "sha256": "2d802d3b658c42ebc0f2ca11039e970c35653389e98053ef5ef5313e306961f6"
     },
@@ -626,6 +642,30 @@
     {
       "path": "docs/testing/infrastructure-automation.md",
       "sha256": "4abc7fe3f9dad30e9e2448612748784a94b23528627ea4c79302f9ee43b91684"
+    },
+    {
+      "path": "docs/testing/knowledge-index-consolidation.md",
+      "sha256": "621c0bbc1d50e6d7cbe7322d4d098c5dd1b80564ea0e75bb99adb18768a17b17"
+    },
+    {
+      "path": "docs/testing/knowledge-index/focused-pytest.txt",
+      "sha256": "f9eefd82130ac0b5e610020e09e26cc3f0ca9aacbbb245256cea4930c78f725a"
+    },
+    {
+      "path": "docs/testing/knowledge-index/full-pytest.txt",
+      "sha256": "1e30d502eac0cf38de9642d485c093626c4d9701d1425f9384ae351dfed37f9c"
+    },
+    {
+      "path": "docs/testing/knowledge-index/preflight.txt",
+      "sha256": "066c29090e8757886d06978a6586d527a9cf1085e520299b86f0d738806c7740"
+    },
+    {
+      "path": "docs/testing/knowledge-index/ruff-full.txt",
+      "sha256": "5ee22dfa398d2afac33b382cfb920efc857b493b46fabb1bbf2f74b1a4e18339"
+    },
+    {
+      "path": "docs/testing/knowledge-index/ruff-new.txt",
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
     },
     {
       "path": "docs/testing/personal-assistant-planner-results.md",
@@ -732,6 +772,10 @@
       "sha256": "b54a5f651118f81c8c8e436039f88fba4042aa9b54fff1887de142c648f4a6e1"
     },
     {
+      "path": "docs/user/knowledge-index-consolidation.md",
+      "sha256": "084a5cf5918a95e4998a655bc153a94259d79cc138d83558ed88066904f2466c"
+    },
+    {
       "path": "docs/user/permissions.md",
       "sha256": "2abf57a41bc42c58a1965a97da2a0968bbf493f21ce67f508ccc5cb40af9cb54"
     },
@@ -777,7 +821,7 @@
     },
     {
       "path": "docs/user/voice.md",
-      "sha256": "6abeb33ad442b200e53cc05ba9e42ae0eb9094a74670ef0765de8bde3dfe52d6"
+      "sha256": "583e1d2323a930b4db864ac1d86f82f0b3e03407c4c5f94c4b37d13f69c825e7"
     },
     {
       "path": "docs/user/workspace-starter-pack.md",
@@ -1129,7 +1173,7 @@
     },
     {
       "path": "scripts/preflight.py",
-      "sha256": "797010a7f65f5f84bc22004d1e510b71abaf8bdf4f0bd275d78c21947820c991"
+      "sha256": "cf55b00d55b667b8eead146c0ba34333116067aaa3284691f475e47f2d529141"
     },
     {
       "path": "scripts/repair.bat",
@@ -49992,6 +50036,10 @@
       "sha256": "3b216c422517bba6d7dea9fa4085ee41e8243a6648ee37a556a392023e6d80b1"
     },
     {
+      "path": "skills/knowledge-index/SKILL.md",
+      "sha256": "104f0fb98f3ac9f52d17fe18d20edc8793dbddaf250977efa4c27ba16870c14a"
+    },
+    {
       "path": "skills/mermaid-diagrams/SKILL.md",
       "sha256": "9141ea7302ee6b2b5d86bff5219d5d3d19d0bd326ecb45d8264bf0bf0f222b44"
     },
@@ -50161,7 +50209,7 @@
     },
     {
       "path": "src/sol_lite/agents/business/tools.yaml",
-      "sha256": "1746df16d72ef235c5d0fa200c930a7353534db5c721fd67515174c52cb63a9a"
+      "sha256": "e7d24bdfecd5d98cacc33f643c42b9fc9792a40b6f4eced203b7b60a8ec0e011"
     },
     {
       "path": "src/sol_lite/agents/docs/__init__.py",
@@ -50177,7 +50225,7 @@
     },
     {
       "path": "src/sol_lite/agents/docs/tools.yaml",
-      "sha256": "6966b4b3bd002fbdda043cfd1765020f29d12db3dffd81a78ecd8ec05630ba19"
+      "sha256": "7ec7859eea16e92615013c950dbc9160546c955eb1e1322e6789a5629cb12988"
     },
     {
       "path": "src/sol_lite/agents/engineer/__init__.py",
@@ -50193,7 +50241,7 @@
     },
     {
       "path": "src/sol_lite/agents/engineer/tools.yaml",
-      "sha256": "91abd2197c9a37b28984a834f4e0090b90d5be1d7c2300c908c9e05f2c194125"
+      "sha256": "bdd280d578f73dc440b1300da013c0b5d8ecaeeacd96f25b928496d33dd46b20"
     },
     {
       "path": "src/sol_lite/agents/flare.py",
@@ -50217,7 +50265,7 @@
     },
     {
       "path": "src/sol_lite/agents/pa/tools.yaml",
-      "sha256": "17e53c43c6933ff1b6a9a1237dc889becb179524ca0c3161035cf48fa2a4eff9"
+      "sha256": "26b713337fca968042d03f26672c27fba2d3bafde2da329edf03e8ee7394060a"
     },
     {
       "path": "src/sol_lite/agents/project_brief.py",
@@ -50245,15 +50293,15 @@
     },
     {
       "path": "src/sol_lite/agents/rick_prime/tools.yaml",
-      "sha256": "2f01a4ccf5a0884c0ddd3deee527c0b280cfa8dcd1b9c6bb7ab5b7d10ca3a013"
+      "sha256": "6e178853c40096e1cbb7742cbfd78e17187f544bddf056a204504d4a29c0e288"
     },
     {
       "path": "src/sol_lite/agents/runtime.py",
-      "sha256": "600367fc414f2f6b6bfb5dbfa1908ab73602e60eeacf4ec35ab960e2b512921f"
+      "sha256": "715a9d6d817b678a156913c7d36248a37676e5f83ba9b9d419a0ba54e66747c7"
     },
     {
       "path": "src/sol_lite/agents/shell.py",
-      "sha256": "e395146f3adfbfef623ace630e3c99b1a3438b712a8a767ed46498dd8d496a8f"
+      "sha256": "43e3a88075eca4dcca9232bb5e0cd2e711a40bf25ca267824edd95e20747b30f"
     },
     {
       "path": "src/sol_lite/agents/status.py",
@@ -50273,11 +50321,11 @@
     },
     {
       "path": "src/sol_lite/agents/studio_admin/tools.yaml",
-      "sha256": "f7ec95d002e3fe3aa0a0bcd8361690cf2b096206675c1bfaeea9b0290c04f24e"
+      "sha256": "325c9608a632c16256f9f8629fdc09c77ce9532c9e2e6db2ec80a7f0edd5390e"
     },
     {
       "path": "src/sol_lite/agents/task_fit.py",
-      "sha256": "6458ef38e4fbbf226d3505bc665a8eb1fd3f28382692d8574aef7af5cbd8f78c"
+      "sha256": "a2ed74f331ad23c5925e8d1548c2962aded790670d3e37b73c7b58ea8ddc5819"
     },
     {
       "path": "src/sol_lite/agents/tool_allowlist.py",
@@ -50537,7 +50585,7 @@
     },
     {
       "path": "src/sol_lite/permissions/scopes.py",
-      "sha256": "870db7e53e99c3b75b9d6aa8ee09add9f8a42cf7d74b086059ae3dbd7ac5a576"
+      "sha256": "beff139d2b967cd3ceaff65a4cf92dedcb39bc2c5638487c7192d8943b0f4257"
     },
     {
       "path": "src/sol_lite/platform/__init__.py",
@@ -50685,7 +50733,7 @@
     },
     {
       "path": "src/sol_lite/tools/__init__.py",
-      "sha256": "cb176856f90501a334ec15bf49c99dcf1e8eed3ed0dc9e97355c8d89bd2b4676"
+      "sha256": "14c3de58c0eb0b6024f104814ec4cbf7b08adf2d063d3a41439cf05caf7511d0"
     },
     {
       "path": "src/sol_lite/tools/artifacts.py",
@@ -50710,6 +50758,10 @@
     {
       "path": "src/sol_lite/tools/hosting.py",
       "sha256": "485f0f2795ffc68daf95dfcb2348697b3f4ba006148eed5d3aea51e9328d77b9"
+    },
+    {
+      "path": "src/sol_lite/tools/indexing.py",
+      "sha256": "9eceb6894908bc71c198b59fdfc1686a78941958014400885d967960ea70a8b0"
     },
     {
       "path": "src/sol_lite/tools/jira.py",
@@ -50809,11 +50861,11 @@
     },
     {
       "path": "src/sol_lite/voice/session.py",
-      "sha256": "f76944319026dcfcafde6faf3ff64ea2b6735a875c92e87fef8964f6c44d1eae"
+      "sha256": "a780ac0684ea523a65116e6eed39ec23be62166ec956028a03f7f09f7c9f49d1"
     },
     {
       "path": "src/sol_lite/voice/settings.py",
-      "sha256": "796fd3e594875edf53e3d47e14b9a5b0d716b503759f5c820d065c8e0763edf3"
+      "sha256": "393f99b95cb5a734727726f0c608c0b568d2ea4f8cdf5e218efd25180f547041"
     },
     {
       "path": "src/sol_lite/voice/setup.py",
@@ -50936,6 +50988,10 @@
       "sha256": "0271b7105b45e6d0d510f4df75866857c88105446a338bb204a83cd0aa424b78"
     },
     {
+      "path": "tests/integration/test_indexing_runtime.py",
+      "sha256": "6c5bc22c7953eb0e0badb13cc3630050ec29648857c728ec7fec1c378cf6bbe1"
+    },
+    {
       "path": "tests/integration/test_runtime.py",
       "sha256": "723036c7e2a9b4e8ed9b19ead6508759472ee3fac7c93efb464428fdc746f8c8"
     },
@@ -51020,6 +51076,10 @@
       "sha256": "92da4eb8910544749f7cf60634b6748cfaeb120ff8961c97f81a45b58f6694fb"
     },
     {
+      "path": "tests/unit/test_indexing.py",
+      "sha256": "8a14b150d5ab345a3b1ae900d7b621455f6f9bb10828c7a176b845816d2a0280"
+    },
+    {
       "path": "tests/unit/test_infrastructure_automation_contract.py",
       "sha256": "755bb9f097d830c848c1b1845f201a684a93c078cc8cca458721a785a45776dc"
     },
@@ -51101,7 +51161,7 @@
     },
     {
       "path": "tests/unit/test_registry.py",
-      "sha256": "0369dc97b12f7a316d40022698e1dceec059354c40d49b1a7cf35d0be9146af9"
+      "sha256": "0ebb40f9a7a5c5bb405dbb03bf60685cea582766435ac27052b972c71837a572"
     },
     {
       "path": "tests/unit/test_remote_infrastructure.py",
@@ -51225,7 +51285,7 @@
     },
     {
       "path": "tests/unit/test_voice.py",
-      "sha256": "49b62f9dcb5d1eda0733b0455ef235b677220031eac968570fe54d89103875cf"
+      "sha256": "97c9f5b4e978fc2a2cdef088fedd3bb0d8ea78c7ae79dc17d81c418e96931605"
     },
     {
       "path": "tests/unit/test_workspace_answer.py",

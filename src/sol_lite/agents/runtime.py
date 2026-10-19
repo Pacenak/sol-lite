@@ -83,6 +83,7 @@ _MODEL_XML_ERROR = re.compile(
 )
 _MODEL_TIMEOUT = re.compile(r"timed out|timeout", re.IGNORECASE)
 _PROOF_TOOLS = frozenset({
+    "consolidate_inbox_apply",
     "workspace_pack_intake",
     "workspace_pack_init",
     "workspace_pack_append",
@@ -1587,6 +1588,8 @@ class AgentRuntime:
                     pack_write = not name.startswith("workspace_pack_") or bool(
                         isinstance(result, dict) and result.get("written")
                     )
+                    if name == "consolidate_inbox_apply":
+                        pack_write = bool(isinstance(result, dict) and result.get("applied"))
                     if successful and name in _PROOF_TOOLS and pack_write:
                         change_proved = True
                     elif not successful and name in _PROOF_TOOLS:

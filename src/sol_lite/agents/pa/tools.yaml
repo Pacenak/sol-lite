@@ -60,3 +60,6 @@ tools:
   - workspace_pack_intake
   - workspace_pack_init
   - workspace_pack_index_refresh
+  - search_knowledge_index
+  - consolidate_inbox_preview
+  - consolidate_inbox_apply

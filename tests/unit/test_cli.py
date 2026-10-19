@@ -15,6 +15,7 @@ def test_command_and_google_cli_commands_exist():
     ])
     assert connect.command == "connect"
     assert connect.command_url == "https://command.example"
+    assert parser.parse_args(["connect", "--command-url", "https://command.example"]).invite_code is None
     assert parser.parse_args(["command-status"]).command == "command-status"
     assert parser.parse_args(["sync-skills"]).command == "sync-skills"
     assert parser.parse_args(["disconnect"]).command == "disconnect"
@@ -23,3 +24,19 @@ def test_command_and_google_cli_commands_exist():
     assert parser.parse_args(["voice-status"]).command == "voice-status"
     jira = parser.parse_args(["jira-disconnect", "--name", "work"])
     assert jira.name == "work"
+
+
+def test_connect_prompts_and_prints_progress(monkeypatch, capsys):
+    from sol_lite.app import main
+    monkeypatch.setattr("sys.argv", ["sol-lite", "connect", "--command-url", "https://command.example"])
+    monkeypatch.setattr("getpass.getpass", lambda prompt: "secret-invite")
+    def pair(url, invite, *, name, progress):
+        assert invite == "secret-invite"
+        progress("Registered. Waiting for approval.")
+        return {"instance_id": "test-id", "sectors": ["home"]}
+    monkeypatch.setattr("sol_lite.integrations.sol_command.SolCommandClient.pair", pair)
+    main()
+    output = capsys.readouterr().out
+    assert "Waiting for approval" in output
+    assert "Paired with SOL-Command" in output
+    assert "secret-invite" not in output
