@@ -1,0 +1,480 @@
+{
+  "format": 1,
+  "project": "SOL-Lite",
+  "version": "0.2.6",
+  "feature": "knowledge-index-v1",
+  "date": "2026-10-19",
+  "baseline_git_commit": "c6bfce4bb3a6b36de83e466882a824aaa6101b40",
+  "baseline_authority": "User-authorized local checkout; GitHub main not verified",
+  "delivery": "Cumulative full-file overlay including workspace starter-pack Stage 1",
+  "before_git_hash_representation": "Git blob bytes; normalized text can differ from Windows CRLF checkout bytes",
+  "metadata_exclusions": [
+    "BUILD_MANIFEST.json",
+    "KNOWLEDGE_INDEX_FILES.json"
+  ],
+  "host_blocked_baseline_files": [
+    {
+      "path": "skills/ecosystem/cyber-detecting-fileless-malware-techniques-d292c534/UPSTREAM-SKILL.md",
+      "expected_sha256": "eb069039f9f19fdad27d0d427ded461006e1a01ab5055d62b6ed97bd8b20ed0e",
+      "digest_source": "skills/ecosystem/cyber-detecting-fileless-malware-techniques-d292c534/provenance.json",
+      "error": "[Errno 2] No such file or directory: 'E:\\\\git\\\\plg-sol\\\\PLG_Ai_Lite\\\\skills\\\\ecosystem\\\\cyber-detecting-fileless-malware-techniques-d292c534\\\\UPSTREAM-SKILL.md'"
+    }
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "operation": "replace",
+      "before_git_sha256": "ed45993fc6c011f48c8a8ed1d9173b446c7c9c69bb1961051f46aadad391729f",
+      "before_this_task_sha256": "6e577f1906020563d66e3a15427c0b18c34e4e611e428c5f62ce4e07ec45548c",
+      "sha256": "a3f5abf7abd77863003f58a78661f8cca99575d3e614b71fbbfe431c20905e6d"
+    },
+    {
+      "path": "KNOWLEDGE_INDEX_INSTALL.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "efaeb09524c9aa57e7243ec1016c9194db954656b46c068cac5cd9c9f07a5174"
+    },
+    {
+      "path": "PROJECT_FILES.txt",
+      "operation": "replace",
+      "before_git_sha256": "f6a731c3631532d200ff28663b67f88ef018ee3609c600a0f79f54ec8fadadf9",
+      "before_this_task_sha256": "d32ab2c3e395f0a879e9c5fb34f6dbd164101dc428d1202bc0666bdbcaff40e2",
+      "sha256": "cbfcf9c75cb9e1546d496860aa8ca943a5fe2b2ef02763dbe41a7e457101f870"
+    },
+    {
+      "path": "WORKSPACE_STARTER_PACK_FILES.json",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "2b369c9299a9df9cd263254def523bef887efce9817a080457332dc9581f32b5",
+      "sha256": "2b369c9299a9df9cd263254def523bef887efce9817a080457332dc9581f32b5"
+    },
+    {
+      "path": "WORKSPACE_STARTER_PACK_INSTALL.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "8c18749764b9f5095d8337032d534bd3173b418f20645fe8283abdce8f4db556",
+      "sha256": "8c18749764b9f5095d8337032d534bd3173b418f20645fe8283abdce8f4db556"
+    },
+    {
+      "path": "docs/README.md",
+      "operation": "replace",
+      "before_git_sha256": "19f5cdb539a89dd59b4cfc669dc057d516660d28dbeba94228a5c9fd6c1ac08a",
+      "before_this_task_sha256": "fb28d62be99a6be1064f1b9b352c33f341503a2b2ed5e6fb573f505f6c3ae5ca",
+      "sha256": "d65f981018f8fc46ac9eb925ff0c153b317266225cfcad100af86a829c9160dd"
+    },
+    {
+      "path": "docs/design/2026-10-19-knowledge-index-consolidation-design.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "611c521a3c714a9012e2ec0c52830da7a46eea8e74ce8b8d4457b16d929e186a"
+    },
+    {
+      "path": "docs/design/2026-10-19-workspace-starter-pack-design.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "84fbf4f49b90665d96b7fe30e6356fc0988d341bbe015db65a4c2d05b90af98d",
+      "sha256": "84fbf4f49b90665d96b7fe30e6356fc0988d341bbe015db65a4c2d05b90af98d"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-19-knowledge-index-consolidation.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "bc21975efa6bc835d3c1949ed2e8659cf368be0482b3571c204f1e50fa2888aa"
+    },
+    {
+      "path": "docs/superpowers/plans/2026-10-19-workspace-starter-pack.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "2d802d3b658c42ebc0f2ca11039e970c35653389e98053ef5ef5313e306961f6",
+      "sha256": "2d802d3b658c42ebc0f2ca11039e970c35653389e98053ef5ef5313e306961f6"
+    },
+    {
+      "path": "docs/testing/knowledge-index-consolidation.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "621c0bbc1d50e6d7cbe7322d4d098c5dd1b80564ea0e75bb99adb18768a17b17"
+    },
+    {
+      "path": "docs/testing/knowledge-index/focused-pytest.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "f9eefd82130ac0b5e610020e09e26cc3f0ca9aacbbb245256cea4930c78f725a"
+    },
+    {
+      "path": "docs/testing/knowledge-index/full-pytest.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "1e30d502eac0cf38de9642d485c093626c4d9701d1425f9384ae351dfed37f9c"
+    },
+    {
+      "path": "docs/testing/knowledge-index/preflight.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "066c29090e8757886d06978a6586d527a9cf1085e520299b86f0d738806c7740"
+    },
+    {
+      "path": "docs/testing/knowledge-index/ruff-full.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "5ee22dfa398d2afac33b382cfb920efc857b493b46fabb1bbf2f74b1a4e18339"
+    },
+    {
+      "path": "docs/testing/knowledge-index/ruff-new.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack-validation.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "6c433e5102a3b6a41c2c96cfc641af78acb6625ce457d3eb89a5b0a9efdf8ac3",
+      "sha256": "6c433e5102a3b6a41c2c96cfc641af78acb6625ce457d3eb89a5b0a9efdf8ac3"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/pytest-baseline-catalogue.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "5fc79a5bb1a4e56ea0450be5990136d6701e6157d03c85d3479a169c94877327",
+      "sha256": "5fc79a5bb1a4e56ea0450be5990136d6701e6157d03c85d3479a169c94877327"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/pytest-baseline-extra.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "ddbd423888a145dea3a3c1053a9307b9f0d5865452eb62b41a90892647ea67f7",
+      "sha256": "ddbd423888a145dea3a3c1053a9307b9f0d5865452eb62b41a90892647ea67f7"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/pytest-baseline.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "9349dccdbb08266bf423916686207d53da41469fb7feda499b7272b0a688b5a1",
+      "sha256": "9349dccdbb08266bf423916686207d53da41469fb7feda499b7272b0a688b5a1"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/pytest-focused.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "2681c9a7fb9f9ee99457d15e4b5543ed2d64da3583ffdb470b676cc1b90103f9",
+      "sha256": "2681c9a7fb9f9ee99457d15e4b5543ed2d64da3583ffdb470b676cc1b90103f9"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/pytest-full.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "e5915b79ce02638e14f190d8647cfa01699fdbb3030b6e0f90c703682cb13d05",
+      "sha256": "e5915b79ce02638e14f190d8647cfa01699fdbb3030b6e0f90c703682cb13d05"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/ruff-baseline.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "90cb42c75452444fc6903a0049c83c250aa8838c69aecead7e09999773b1715c",
+      "sha256": "90cb42c75452444fc6903a0049c83c250aa8838c69aecead7e09999773b1715c"
+    },
+    {
+      "path": "docs/testing/workspace-starter-pack/ruff-full.txt",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "ce758bbf5ff1a070107e56af3dd441ef5748764ec86fa5be10e56bd137e16fad",
+      "sha256": "ce758bbf5ff1a070107e56af3dd441ef5748764ec86fa5be10e56bd137e16fad"
+    },
+    {
+      "path": "docs/user/knowledge-index-consolidation.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "084a5cf5918a95e4998a655bc153a94259d79cc138d83558ed88066904f2466c"
+    },
+    {
+      "path": "docs/user/workspace-starter-pack.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "9009da1657837d690d9b6bf695a9b6e53d492de364cca9a6002893d5d22b694c",
+      "sha256": "9009da1657837d690d9b6bf695a9b6e53d492de364cca9a6002893d5d22b694c"
+    },
+    {
+      "path": "scripts/audit-pack.py",
+      "operation": "replace",
+      "before_git_sha256": "e49b49ed2095ff0983667797a4d895e4f12a3a3cbb6252901e9d9d8c8893d0dd",
+      "before_this_task_sha256": "6b745b0a6712445d51a7d146fdaa97174157d0f15cdeafcf181712f98bc6cb69",
+      "sha256": "6b745b0a6712445d51a7d146fdaa97174157d0f15cdeafcf181712f98bc6cb69"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "operation": "replace",
+      "before_git_sha256": "797010a7f65f5f84bc22004d1e510b71abaf8bdf4f0bd275d78c21947820c991",
+      "before_this_task_sha256": "797010a7f65f5f84bc22004d1e510b71abaf8bdf4f0bd275d78c21947820c991",
+      "sha256": "cf55b00d55b667b8eead146c0ba34333116067aaa3284691f475e47f2d529141"
+    },
+    {
+      "path": "skills/knowledge-index/SKILL.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "104f0fb98f3ac9f52d17fe18d20edc8793dbddaf250977efa4c27ba16870c14a"
+    },
+    {
+      "path": "skills/workspace-pack/SKILL.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "e42fb3339e83632f18defd1997e96b678ba40b2e3d74b67f473efa156836a16b",
+      "sha256": "e42fb3339e83632f18defd1997e96b678ba40b2e3d74b67f473efa156836a16b"
+    },
+    {
+      "path": "src/sol_lite/agents/business/prompt.md",
+      "operation": "replace",
+      "before_git_sha256": "89c91f5768473da44dccc810c6cc857999ea76ead88132cd1a398b1638cb1158",
+      "before_this_task_sha256": "998acbb7e34194aa705418d2857a937034f21309f12bdf425971340bbe59c3e9",
+      "sha256": "998acbb7e34194aa705418d2857a937034f21309f12bdf425971340bbe59c3e9"
+    },
+    {
+      "path": "src/sol_lite/agents/business/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "0b4f3f8df2fe148b1f51a7a6a3a6a2a648a93ecb53b8fdce093ea2e420808346",
+      "before_this_task_sha256": "1746df16d72ef235c5d0fa200c930a7353534db5c721fd67515174c52cb63a9a",
+      "sha256": "e7d24bdfecd5d98cacc33f643c42b9fc9792a40b6f4eced203b7b60a8ec0e011"
+    },
+    {
+      "path": "src/sol_lite/agents/docs/prompt.md",
+      "operation": "replace",
+      "before_git_sha256": "22427c3e6a207ce9221842f3800a29df55487cf2dcaca68864480bdb4bdbab04",
+      "before_this_task_sha256": "9d793cdc71c2f71592f248f2af12cf6f31efd316bd8038314d0eadf677f79cf6",
+      "sha256": "9d793cdc71c2f71592f248f2af12cf6f31efd316bd8038314d0eadf677f79cf6"
+    },
+    {
+      "path": "src/sol_lite/agents/docs/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "26e24cb5bf48ef61b5ff22a9dc38f89a44ecaf84f376dbcc99937534b109c050",
+      "before_this_task_sha256": "6966b4b3bd002fbdda043cfd1765020f29d12db3dffd81a78ecd8ec05630ba19",
+      "sha256": "7ec7859eea16e92615013c950dbc9160546c955eb1e1322e6789a5629cb12988"
+    },
+    {
+      "path": "src/sol_lite/agents/engineer/prompt.md",
+      "operation": "replace",
+      "before_git_sha256": "5538f9c294be0d021ee9c3471e1c16fdc6f4db8886b8eac67b068ea17fdf860b",
+      "before_this_task_sha256": "2cc60fa5e195b44c760a65ad7a1fb9532881c02e42f8ddbdb0e7076ca12e6a89",
+      "sha256": "2cc60fa5e195b44c760a65ad7a1fb9532881c02e42f8ddbdb0e7076ca12e6a89"
+    },
+    {
+      "path": "src/sol_lite/agents/engineer/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "16c762eac4dc48abe0a5344b2808a59d91e9e1706bb79ea7a324dd8f0fbe3c51",
+      "before_this_task_sha256": "91abd2197c9a37b28984a834f4e0090b90d5be1d7c2300c908c9e05f2c194125",
+      "sha256": "bdd280d578f73dc440b1300da013c0b5d8ecaeeacd96f25b928496d33dd46b20"
+    },
+    {
+      "path": "src/sol_lite/agents/pa/prompt.md",
+      "operation": "replace",
+      "before_git_sha256": "7acacc3ec14da7ec84d94d29a3c1ac81210130e461c9cff43c2080b94d189f95",
+      "before_this_task_sha256": "9db64828968a759a0026eccc41bbd819209f52394fc32cf4ab54b418b2029d7d",
+      "sha256": "9db64828968a759a0026eccc41bbd819209f52394fc32cf4ab54b418b2029d7d"
+    },
+    {
+      "path": "src/sol_lite/agents/pa/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "737b3a6721e1ca37494699340493706231f01675c590837dcccf797e3904a5cb",
+      "before_this_task_sha256": "17e53c43c6933ff1b6a9a1237dc889becb179524ca0c3161035cf48fa2a4eff9",
+      "sha256": "26b713337fca968042d03f26672c27fba2d3bafde2da329edf03e8ee7394060a"
+    },
+    {
+      "path": "src/sol_lite/agents/rick_prime/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "16c762eac4dc48abe0a5344b2808a59d91e9e1706bb79ea7a324dd8f0fbe3c51",
+      "before_this_task_sha256": "2f01a4ccf5a0884c0ddd3deee527c0b280cfa8dcd1b9c6bb7ab5b7d10ca3a013",
+      "sha256": "6e178853c40096e1cbb7742cbfd78e17187f544bddf056a204504d4a29c0e288"
+    },
+    {
+      "path": "src/sol_lite/agents/runtime.py",
+      "operation": "replace",
+      "before_git_sha256": "9172b8b7a23e634d076d826004184f6bd1db20b59566eec3d0b2b9bce82ba163",
+      "before_this_task_sha256": "600367fc414f2f6b6bfb5dbfa1908ab73602e60eeacf4ec35ab960e2b512921f",
+      "sha256": "715a9d6d817b678a156913c7d36248a37676e5f83ba9b9d419a0ba54e66747c7"
+    },
+    {
+      "path": "src/sol_lite/agents/shell.py",
+      "operation": "replace",
+      "before_git_sha256": "d65d784a91daa920509a9fd33eb02a97228ccbc8658f2bdd2fd2ff7ef0b9b7a0",
+      "before_this_task_sha256": "e395146f3adfbfef623ace630e3c99b1a3438b712a8a767ed46498dd8d496a8f",
+      "sha256": "e395146f3adfbfef623ace630e3c99b1a3438b712a8a767ed46498dd8d496a8f"
+    },
+    {
+      "path": "src/sol_lite/agents/studio_admin/tools.yaml",
+      "operation": "replace",
+      "before_git_sha256": "ad7c305e58f350f76dfdf7a96f0fae7ba05049514d9114912b71ffa8ec40d062",
+      "before_this_task_sha256": "f7ec95d002e3fe3aa0a0bcd8361690cf2b096206675c1bfaeea9b0290c04f24e",
+      "sha256": "325c9608a632c16256f9f8629fdc09c77ce9532c9e2e6db2ec80a7f0edd5390e"
+    },
+    {
+      "path": "src/sol_lite/agents/task_fit.py",
+      "operation": "replace",
+      "before_git_sha256": "6d07d73ced95030ed0b1b29665f2458db79189587fa26c59c55df3df1b724508",
+      "before_this_task_sha256": "6458ef38e4fbbf226d3505bc665a8eb1fd3f28382692d8574aef7af5cbd8f78c",
+      "sha256": "a2ed74f331ad23c5925e8d1548c2962aded790670d3e37b73c7b58ea8ddc5819"
+    },
+    {
+      "path": "src/sol_lite/permissions/scopes.py",
+      "operation": "replace",
+      "before_git_sha256": "b3a31e6e831b31c8a43459dc6fca68409921109482f857346d0a6829d12d6edd",
+      "before_this_task_sha256": "870db7e53e99c3b75b9d6aa8ee09add9f8a42cf7d74b086059ae3dbd7ac5a576",
+      "sha256": "beff139d2b967cd3ceaff65a4cf92dedcb39bc2c5638487c7192d8943b0f4257"
+    },
+    {
+      "path": "src/sol_lite/tools/__init__.py",
+      "operation": "replace",
+      "before_git_sha256": "6dc53f83ba359d1f9a536abca1c32ee87053d5e56c2951622bca96bf07e63fd3",
+      "before_this_task_sha256": "cb176856f90501a334ec15bf49c99dcf1e8eed3ed0dc9e97355c8d89bd2b4676",
+      "sha256": "14c3de58c0eb0b6024f104814ec4cbf7b08adf2d063d3a41439cf05caf7511d0"
+    },
+    {
+      "path": "src/sol_lite/tools/filesystem.py",
+      "operation": "replace",
+      "before_git_sha256": "933ed822d837554751634b542ecb6581adeb3bd4740d91bf615ecdfeae782f86",
+      "before_this_task_sha256": "30f4c104516e2e48d05534a91508ec223a1294f4434a92a3ef62b006ea36f777",
+      "sha256": "30f4c104516e2e48d05534a91508ec223a1294f4434a92a3ef62b006ea36f777"
+    },
+    {
+      "path": "src/sol_lite/tools/indexing.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "9eceb6894908bc71c198b59fdfc1686a78941958014400885d967960ea70a8b0"
+    },
+    {
+      "path": "src/sol_lite/tools/notes.py",
+      "operation": "replace",
+      "before_git_sha256": "a7034114197e9a399d80933d3f50d798cdcac3dcf9b1fcfcb2e65f04485d70d6",
+      "before_this_task_sha256": "6b8e8e0525c8f29f153855907e911766f142c309b7e3ddee8e6ca2dbab3ee4b5",
+      "sha256": "6b8e8e0525c8f29f153855907e911766f142c309b7e3ddee8e6ca2dbab3ee4b5"
+    },
+    {
+      "path": "src/sol_lite/tools/workspace_pack.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "81797a65c5fb4f240ebbf5cf57f2626b2c6dd8b924957cc0dd09adc7eebff994",
+      "sha256": "81797a65c5fb4f240ebbf5cf57f2626b2c6dd8b924957cc0dd09adc7eebff994"
+    },
+    {
+      "path": "src/sol_lite/workspace_pack/__init__.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "14f75ffc985b79a5727656458cb1d97909d94fee5de54f0bfe109887cd314386",
+      "sha256": "14f75ffc985b79a5727656458cb1d97909d94fee5de54f0bfe109887cd314386"
+    },
+    {
+      "path": "src/sol_lite/workspace_pack/context.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "5803bf62a831842cbdfdf2467b584eb97fcc5d9d132332b9fd01710049990c25",
+      "sha256": "5803bf62a831842cbdfdf2467b584eb97fcc5d9d132332b9fd01710049990c25"
+    },
+    {
+      "path": "src/sol_lite/workspace_pack/pack.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "a6ba732650e8941a8a5087a131601fa0769cd4c937c6df18bf7aaaf64d9ce546",
+      "sha256": "a6ba732650e8941a8a5087a131601fa0769cd4c937c6df18bf7aaaf64d9ce546"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/CHANGELOG.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "556a2a2fb24b6f94c73c39f167ee172c4aef0c3953e0d6f4a5016221d957b533",
+      "sha256": "556a2a2fb24b6f94c73c39f167ee172c4aef0c3953e0d6f4a5016221d957b533"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/CONVERSATIONS.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "6321501eab9c80a8d935dc9e46aa34463baaf5fa9afffe6ac4ddb79f4350d22c",
+      "sha256": "6321501eab9c80a8d935dc9e46aa34463baaf5fa9afffe6ac4ddb79f4350d22c"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/INDEX.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "4e1f3e0f95494da64c92eb2ef91a8bc51b137ace8dc98a9e8c91c2bc5c853a9e",
+      "sha256": "4e1f3e0f95494da64c92eb2ef91a8bc51b137ace8dc98a9e8c91c2bc5c853a9e"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/INTAKE.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "ebcedee93a78c2fc37a37656aa4cf2844c67be5da9c94a03aa886b5a5f941e37",
+      "sha256": "ebcedee93a78c2fc37a37656aa4cf2844c67be5da9c94a03aa886b5a5f941e37"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/PLAN.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "b8f888ea20779ca559c4aa2a5f77ab2ab065a135da01874aec0a6698b0f51198",
+      "sha256": "b8f888ea20779ca559c4aa2a5f77ab2ab065a135da01874aec0a6698b0f51198"
+    },
+    {
+      "path": "tests/fixtures/workspace-pack/golden/README.md",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "6bbd22d99a0117474580a79b17af349a12569623d4c6eeae339a925e010eb3a4",
+      "sha256": "6bbd22d99a0117474580a79b17af349a12569623d4c6eeae339a925e010eb3a4"
+    },
+    {
+      "path": "tests/integration/test_indexing_runtime.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "6c5bc22c7953eb0e0badb13cc3630050ec29648857c728ec7fec1c378cf6bbe1"
+    },
+    {
+      "path": "tests/integration/test_workspace_pack_runtime.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "89d3f0893a35ffc01b2fc61429bab0a83d239ec8b390d99d38c80898fbc90957",
+      "sha256": "89d3f0893a35ffc01b2fc61429bab0a83d239ec8b390d99d38c80898fbc90957"
+    },
+    {
+      "path": "tests/unit/test_indexing.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": null,
+      "sha256": "8a14b150d5ab345a3b1ae900d7b621455f6f9bb10828c7a176b845816d2a0280"
+    },
+    {
+      "path": "tests/unit/test_project_brief.py",
+      "operation": "replace",
+      "before_git_sha256": "0879d4bdcf0ae7bdda3355b161b295d0b243a1cb4b56c146c268b5765dd88136",
+      "before_this_task_sha256": "cd4de3a3a11177229056e6bb9db89d7d75e342027c047f2b0339bd6b7622a9d7",
+      "sha256": "cd4de3a3a11177229056e6bb9db89d7d75e342027c047f2b0339bd6b7622a9d7"
+    },
+    {
+      "path": "tests/unit/test_registry.py",
+      "operation": "replace",
+      "before_git_sha256": "2012156f4853abb02d9407b81d41c1fea4119c8f5a1b74978a99864eb343c208",
+      "before_this_task_sha256": "0369dc97b12f7a316d40022698e1dceec059354c40d49b1a7cf35d0be9146af9",
+      "sha256": "0ebb40f9a7a5c5bb405dbb03bf60685cea582766435ac27052b972c71837a572"
+    },
+    {
+      "path": "tests/unit/test_workspace_answer.py",
+      "operation": "replace",
+      "before_git_sha256": "ee4f468f89c72dc4ab02e68d37a656b5eefc61a98d536a249601449fbe84b3bd",
+      "before_this_task_sha256": "0bef70c94ad10acfb0d58cf139376f37e9cdc5feaaed418b4c58e9146982bbed",
+      "sha256": "0bef70c94ad10acfb0d58cf139376f37e9cdc5feaaed418b4c58e9146982bbed"
+    },
+    {
+      "path": "tests/unit/test_workspace_pack.py",
+      "operation": "add",
+      "before_git_sha256": null,
+      "before_this_task_sha256": "d82def7b8a30eb20c02bb55a220d008168e1bb06cb18d181e97ef924e2d96108",
+      "sha256": "d82def7b8a30eb20c02bb55a220d008168e1bb06cb18d181e97ef924e2d96108"
+    }
+  ]
+}

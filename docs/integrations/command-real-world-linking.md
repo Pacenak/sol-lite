@@ -1,5 +1,20 @@
 # Link terminal SOL-Lite to SOL-Command: real-world operator guide
 
+## Update: 19 October 2026 client repair
+
+The updated client prompts securely when `--invite-code` is omitted, checks the OS keyring before submitting the invite, prints registration/wait/claim/storage progress, and identifies failed HTTP stages without printing secrets. Removed/expired requests stop immediately. Page URLs such as `/setup` are rejected; use the canonical Command HTTPS origin. The historical silence and generic-error descriptions below apply to older clients.
+
+From PowerShell in the installed Lite folder, outside agent chat:
+
+```powershell
+.\.venv\Scripts\python.exe -m sol_lite connect --command-url https://YOUR_COMMAND_HOST --name 'Desk SOL-Lite'
+# Paste the fresh Command invite at the hidden prompt, then keep this running.
+# Administrator: approve the matching SOL-Lite client on Command's Pair page.
+.\.venv\Scripts\python.exe -m sol_lite command-status
+```
+
+The same Command pairing invite supports both client types. Lite must register itself as `sol-lite`; an already-issued Outpost instance key is not an invite and cannot authenticate Lite APIs. Deploy the updated Lite client and rebuild/deploy Command's frontend to see the corrected operator instructions. These repairs were checked locally with mocked HTTP/keyring tests; a live host pairing still requires the real host, fresh invite and administrator approval.
+
 Source checked on 17 October 2026 in both `PLG_Ai_Lite` and the neighbouring `PLG_Ai_Interface` Command checkout. No live host was probed and no pairing was attempted while writing this guide. Local source is not evidence that the deployed host runs the same version.
 
 **SOL-Lite is a terminal application. It has no `/setup` webpage.** Only the Command administrator uses a browser. The Lite operator runs a shell subcommand, then waits while the administrator approves the registered client. Being a terminal app does not prevent its Python HTTP client calling Command.

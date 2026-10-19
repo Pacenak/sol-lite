@@ -1,6 +1,6 @@
 # Voice and listening
 
-Use `/voice status` to see your selected engines and switches. `/voice on` enables listening and spoken replies when both engines are available; `/voice off` disables both. Settings persist across restarts.
+Listening and spoken replies start **off on every terminal launch**, including when they were enabled in the previous session. Use `/voice status` to see your selected engines and switches. `/voice on` enables listening and spoken replies when both engines are available; `/voice off` disables both. Engine, model, language, and voice choices persist across restarts. Enable `/listen on` or `/speak on` separately when wanted.
 
 - `/listen`: record one message, print the transcript, and send it to the active agent.
 - `/listen off` / `/listen on`: disable or enable microphone recording. Enabling does not start recording.

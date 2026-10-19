@@ -1,0 +1,9 @@
+........................................................................ [ 64%]
+s.......................................                                 [100%]
+============================= slowest 3 durations =============================
+3.31s call     tests/unit/test_indexing.py::test_performance_2000_markdown_files_no_nonmatch_parse
+0.55s call     tests/unit/test_workspace_pack.py::test_project_intake_depth_cap_and_first_log
+0.30s call     tests/unit/test_workspace_pack.py::test_index_new_removed_and_purposes
+=========================== short test summary info ===========================
+SKIPPED [1] tests\unit\test_workspace_pack.py:250: Windows symlink privilege unavailable
+111 passed, 1 skipped in 7.50s

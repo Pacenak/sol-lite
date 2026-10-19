@@ -2,11 +2,16 @@
 
 **New operator: start with [Zero-to-battle beginner runbook](getting-started/zero-to-battle-noob-runbook.md).** It explains terminal/admin access, configuration editing, agent setup, integration prerequisites and owner-only administration. Continue to [First full battle run](testing/first-full-battle-run.md) for exact fixtures, logs, checks and scoring.
 
-**Current source blockers:** preflight hard-codes 39 built-in skills and the expanded catalogue exceeds that count; changed source-pack payloads also require maintainer-reviewed manifest reconciliation. Enumerate the current tree rather than relying on historical counts. See the runbook's stop conditions. These docs do not claim a working installation or passing battle.
+**Current verification limits:** preflight passes with 56 built-in skills. The full test suite retains documented baseline failures, and source auditing reports an unchanged upstream file quarantined by Windows antivirus. See [knowledge index validation](testing/knowledge-index-consolidation.md) for exact results; a passing full suite or full source audit is not claimed.
 
 SOL-Lite is a local-first, multi-agent engineering runtime for Windows and macOS.
 
 ## Documentation map
+
+- [Workspace initialization templates and editing examples](../templates/workspace-init/README.md)
+
+- [Exact knowledge retrieval and inbox consolidation](user/knowledge-index-consolidation.md)
+- [Knowledge index implementation plan](superpowers/plans/2026-10-19-knowledge-index-consolidation.md)
 
 - [Shared workspace starter pack (Stage 1)](user/workspace-starter-pack.md)
 

@@ -3,6 +3,10 @@
 Stage 1 creates shared Markdown documentation inside the selected workspace.
 It does not run schedules or create background tasks.
 
+For optional Studio-style folder documents, project overviews, sprint templates
+and worked editing examples, see the [workspace initialization template kit](../../templates/workspace-init/README.md).
+These manual companion templates do not replace the managed pack below.
+
 ## Set up a workspace
 
 Select the intended workspace and ask SOL PA: “Set up the workspace starter pack.”

@@ -1,0 +1,1 @@
+SOL-Lite preflight: PASS (version=0.2.6, Rich=15.0.0, skills=56)

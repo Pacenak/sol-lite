@@ -1,0 +1,544 @@
+...........................................s............................ [ 10%]
+...............................s..s......................sss.ss......... [ 21%]
+...s.s..................................FFFFF........................... [ 32%]
+........................................................................ [ 43%]
+........................................................................ [ 54%]
+...........................................s......F..................... [ 65%]
+........................................................................ [ 76%]
+.........FFFFFFFFFFFFFF................................................. [ 87%]
+.................................................F...................... [ 97%]
+...s..........                                                           [100%]
+================================== FAILURES ===================================
+_________________ test_flare_is_off_until_the_session_command _________________
+tests\unit\test_flare.py:35: in test_flare_is_off_until_the_session_command
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+__________________ test_flare_on_adds_the_active_agents_tone __________________
+tests\unit\test_flare.py:44: in test_flare_on_adds_the_active_agents_tone
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______________________ test_flare_off_removes_the_tone _______________________
+tests\unit\test_flare.py:61: in test_flare_off_removes_the_tone
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+___________________ test_flare_rejects_an_unknown_argument ____________________
+tests\unit\test_flare.py:71: in test_flare_rejects_an_unknown_argument
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+________________________ test_new_session_keeps_flare _________________________
+tests\unit\test_flare.py:78: in test_new_session_keeps_flare
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______ test_follow_command_classifies_without_running_install_commands _______
+tests\unit\test_procedure_follow.py:89: in test_follow_command_classifies_without_running_install_commands
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______________ test_settings_command_saves_general_and_search ________________
+tests\unit\test_shell_commands.py:186: in test_settings_command_saves_general_and_search
+    shell = _shell(tmp_path, search_config={"enabled": False, "url": "http://env.example"})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+____________________ test_documented_commands_are_handled _____________________
+tests\unit\test_shell_commands.py:197: in test_documented_commands_are_handled
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______________ test_listen_queues_transcript_as_the_user_line ________________
+tests\unit\test_shell_commands.py:232: in test_listen_queues_transcript_as_the_user_line
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______ test_follow_command_classifies_without_running_install_commands _______
+tests\unit\test_shell_commands.py:243: in test_follow_command_classifies_without_running_install_commands
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+___________ test_documented_commands_run_without_calling_the_agent ____________
+tests\unit\test_shell_commands.py:268: in test_documented_commands_run_without_calling_the_agent
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+___________ test_slash_command_from_settings_menu_runs_that_command ___________
+tests\unit\test_shell_commands.py:308: in test_slash_command_from_settings_menu_runs_that_command
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_________ test_settings_typed_at_the_prompt_is_not_sent_to_the_agent __________
+tests\unit\test_shell_commands.py:320: in test_settings_typed_at_the_prompt_is_not_sent_to_the_agent
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_____________ test_settings_typed_during_approval_opens_the_menu ______________
+tests\unit\test_shell_commands.py:338: in test_settings_typed_during_approval_opens_the_menu
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+__________________ test_composed_chat_keeps_paragraph_breaks __________________
+tests\unit\test_shell_commands.py:360: in test_composed_chat_keeps_paragraph_breaks
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______________ test_settings_without_store_reports_unavailable _______________
+tests\unit\test_shell_commands.py:369: in test_settings_without_store_reports_unavailable
+    shell = _shell(tmp_path)
+            ^^^^^^^^^^^^^^^^
+tests\unit\test_shell_commands.py:163: in _shell
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+________________ test_shell_accepts_task_manager_and_event_bus ________________
+tests\unit\test_shell_wiring.py:69: in test_shell_accepts_task_manager_and_event_bus
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+__________________ test_shell_context_uses_the_active_agent ___________________
+tests\unit\test_shell_wiring.py:96: in test_shell_context_uses_the_active_agent
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_______________ test_use_command_rebuilds_context_for_new_agent _______________
+tests\unit\test_shell_wiring.py:131: in test_use_command_rebuilds_context_for_new_agent
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_____________ test_shell_skill_listing_uses_active_agent_context ______________
+tests\unit\test_shell_wiring.py:165: in test_shell_skill_listing_uses_active_agent_context
+    shell = AgentShell(
+src\sol_lite\agents\shell.py:106: in __init__
+    self.workspace = self._select_workspace(initial_workspace)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:259: in _select_workspace
+    return self._register_workspace_path(requested)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src\sol_lite\agents\shell.py:244: in _register_workspace_path
+    answer = self._prompt(
+src\sol_lite\agents\shell.py:162: in _prompt
+    answer = self.ui.console.input(prompt)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\rich\console.py:2189: in input
+    result = input()
+             ^^^^^^^
+.venv\Lib\site-packages\_pytest\capture.py:229: in read
+    raise OSError(
+E   OSError: pytest: reading from stdin while output is captured!  Consider using `-s`.
+---------------------------- Captured stdout call -----------------------------
+Detected Git repository root: E:\\git\\plg-sol\\PLG_Ai_Lite\nOpen the repository root so Git tools stay inside the workspace.\nUse Git root as workspace? [Y/n] \u276f 
+_________ test_workspace_prompt_does_not_load_unrelated_skill_denials _________
+tests\unit\test_workspace_answer.py:204: in test_workspace_prompt_does_not_load_unrelated_skill_denials
+    assert "DETAILED SKILL:" not in text
+E   AssertionError: assert 'DETAILED SKILL:' not in 'ACTIVE SKIL...atterns\n```'
+E     
+E     'DETAILED SKILL:' is contained here:
+E       lanning]
+E       
+E       DETAILED SKILL: anthropic-docx-117510b8
+E     ? +++++++++++++++
+E       ---...
+E     
+E     ...Full output truncated (502 lines hidden), use '-vv' to show
+=========================== short test summary info ===========================
+SKIPPED [1] tests\battle\test_security_paths.py:96: Symlinks are unavailable on this platform.
+SKIPPED [1] tests\integration\test_artifact_renderers.py:33: Optional artifact authoring/rendering dependencies are not installed.
+SKIPPED [1] tests\integration\test_filesystem_tools.py:34: Symlinks unavailable.
+SKIPPED [1] tests\unit\test_artifacts.py:101: could not import 'docx': No module named 'docx'
+SKIPPED [1] tests\unit\test_artifacts.py:101: could not import 'pptx': No module named 'pptx'
+SKIPPED [1] tests\unit\test_artifacts.py:101: could not import 'openpyxl': No module named 'openpyxl'
+SKIPPED [1] tests\unit\test_artifacts.py:117: could not import 'docx': No module named 'docx'
+SKIPPED [1] tests\unit\test_artifacts.py:151: could not import 'openpyxl': No module named 'openpyxl'
+SKIPPED [1] tests\unit\test_artifacts.py:337: could not import 'docx': No module named 'docx'
+SKIPPED [1] tests\unit\test_artifacts.py:375: could not import 'openpyxl': No module named 'openpyxl'
+SKIPPED [1] tests\unit\test_platform_adapters.py:32: Linux execution test
+SKIPPED [1] tests\unit\test_workspace_pack.py:250: Windows symlink privilege unavailable
+FAILED tests/unit/test_flare.py::test_flare_is_off_until_the_session_command
+FAILED tests/unit/test_flare.py::test_flare_on_adds_the_active_agents_tone - ...
+FAILED tests/unit/test_flare.py::test_flare_off_removes_the_tone - OSError: p...
+FAILED tests/unit/test_flare.py::test_flare_rejects_an_unknown_argument - OSE...
+FAILED tests/unit/test_flare.py::test_new_session_keeps_flare - OSError: pyte...
+FAILED tests/unit/test_procedure_follow.py::test_follow_command_classifies_without_running_install_commands
+FAILED tests/unit/test_shell_commands.py::test_settings_command_saves_general_and_search
+FAILED tests/unit/test_shell_commands.py::test_documented_commands_are_handled
+FAILED tests/unit/test_shell_commands.py::test_listen_queues_transcript_as_the_user_line
+FAILED tests/unit/test_shell_commands.py::test_follow_command_classifies_without_running_install_commands
+FAILED tests/unit/test_shell_commands.py::test_documented_commands_run_without_calling_the_agent
+FAILED tests/unit/test_shell_commands.py::test_slash_command_from_settings_menu_runs_that_command
+FAILED tests/unit/test_shell_commands.py::test_settings_typed_at_the_prompt_is_not_sent_to_the_agent
+FAILED tests/unit/test_shell_commands.py::test_settings_typed_during_approval_opens_the_menu
+FAILED tests/unit/test_shell_commands.py::test_composed_chat_keeps_paragraph_breaks
+FAILED tests/unit/test_shell_commands.py::test_settings_without_store_reports_unavailable
+FAILED tests/unit/test_shell_wiring.py::test_shell_accepts_task_manager_and_event_bus
+FAILED tests/unit/test_shell_wiring.py::test_shell_context_uses_the_active_agent
+FAILED tests/unit/test_shell_wiring.py::test_use_command_rebuilds_context_for_new_agent
+FAILED tests/unit/test_shell_wiring.py::test_shell_skill_listing_uses_active_agent_context
+FAILED tests/unit/test_workspace_answer.py::test_workspace_prompt_does_not_load_unrelated_skill_denials
+21 failed, 629 passed, 12 skipped in 141.69s (0:02:21)
